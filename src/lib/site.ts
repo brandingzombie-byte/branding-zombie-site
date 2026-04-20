@@ -16,7 +16,7 @@ export const PHONE_DISPLAY = "(770) 744-2536";
 export const PHONE_E164 = "+17707442536";
 export const PHONE_HREF = "tel:+17707442536";
 export const EMAIL = "brandingzombie@gmail.com";
-export const CALENDLY_URL = "https://calendly.com/brandingzombie/free-audit";
+export const CALENDLY_URL = "https://calendly.com/brandingzombie/15min";
 
 export const CITY = "Cumming";
 export const REGION = "GA";
