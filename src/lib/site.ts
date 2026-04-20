@@ -10,11 +10,11 @@ export const ORG_ID = `${SITE_URL}/#organization`;
 export const LOCALBIZ_ID = `${SITE_URL}/#localbusiness`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
-export const PHONE_DISPLAY = "(786) 848-1522";
-export const PHONE_E164 = "+17868481522";
-export const PHONE_HREF = "tel:+17868481522";
+export const PHONE_DISPLAY = "(770) 744-2536";
+export const PHONE_E164 = "+17707442536";
+export const PHONE_HREF = "tel:+17707442536";
 export const EMAIL = "brandingzombie@gmail.com";
-export const CALENDLY_URL = "https://calendly.com/brandingzombie/discovery";
+export const CALENDLY_URL = "https://calendly.com/brandingzombie/free-audit";
 
 export const LAT = 34.2073;
 export const LON = -84.1401;

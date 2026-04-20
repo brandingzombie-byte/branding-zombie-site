@@ -23,8 +23,8 @@ const displayFont = localFont({
 const SITE_URL = "https://brandingzombiedesigns.com";
 const ORG_ID = `${SITE_URL}/#organization`;
 const LOCALBIZ_ID = `${SITE_URL}/#localbusiness`;
-const PHONE_DISPLAY = "(786) 848-1522";
-const PHONE_E164 = "+17868481522";
+const PHONE_DISPLAY = "(770) 744-2536";
+const PHONE_E164 = "+17707442536";
 const EMAIL = "brandingzombie@gmail.com";
 const LAT = 34.2073;
 const LON = -84.1401;
@@ -264,7 +264,7 @@ export const metadata: Metadata = {
     template: "%s | Branding Zombie Designs",
   },
   description:
-    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (786) 848-1522 for a free audit.",
+    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 for a free audit.",
   applicationName: "Branding Zombie Designs",
   authors: [{ name: "Gerry Betancourt", url: SITE_URL }],
   creator: "Branding Zombie Designs",
@@ -315,7 +315,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Zombie Designs | Your Brand. Resurrected.",
     description:
-      "Web design, AI workflows, branding & print for small businesses in Cumming, GA & North Metro Atlanta. Call (786) 848-1522.",
+      "Web design, AI workflows, branding & print for small businesses in Cumming, GA & North Metro Atlanta. Call (770) 744-2536.",
     images: ["/assets/og-image.png"],
   },
   robots: {
@@ -488,13 +488,6 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "CPG Packaging Design" } },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "50",
-    bestRating: "5",
-    worstRating: "1",
-  },
   sameAs: [
     "https://www.instagram.com/brandingzombie",
     "https://www.facebook.com/brandingzombie",

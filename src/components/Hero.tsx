@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Section from "@/components/Section";
-import { ArrowUpRight } from "@/components/icons";
+import { ArrowUpRight, Phone } from "@/components/icons";
+import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -101,7 +102,9 @@ export default function Hero() {
           {/* CTAs */}
           <div className="animate-fade-up mt-10 flex flex-col items-start gap-4 opacity-0 [animation-delay:700ms] sm:flex-row sm:items-center">
             <a
-              href="#contact"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               role="button"
               className="group inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
             >
@@ -109,17 +112,26 @@ export default function Hero() {
               <ArrowUpRight size={18} weight="bold" />
             </a>
             <a
-              href="#portfolio"
-              className="group inline-flex items-center gap-2 px-3 py-2 text-sm font-medium uppercase tracking-wider text-[var(--color-dark-text-secondary)] hover:text-[var(--color-toxic-text)]"
+              href={PHONE_HREF}
+              className="tabular group inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
             >
-              See the work
-              <span className="h-px w-6 bg-current transition-all duration-200 group-hover:w-10" />
+              <Phone size={16} weight="bold" />
+              Call Now · {PHONE_DISPLAY}
             </a>
           </div>
 
+          {/* Tertiary link */}
+          <a
+            href="#portfolio"
+            className="animate-fade-up mt-5 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:780ms] hover:text-[var(--color-toxic-text)]"
+          >
+            See the work
+            <span className="h-px w-6 bg-current transition-all duration-200 hover:w-10" />
+          </a>
+
           {/* Trust strip */}
           <div className="animate-fade-up mt-14 flex flex-wrap items-center gap-x-6 gap-y-2 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)] opacity-0 [animation-delay:880ms]">
-            <span className="tabular">15-min call</span>
+            <span>Free audit</span>
             <span aria-hidden className="h-3 w-px bg-[var(--color-dark-border-strong)]" />
             <span>No commitment</span>
             <span aria-hidden className="h-3 w-px bg-[var(--color-dark-border-strong)]" />

@@ -10,6 +10,7 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const faqs = [
   {
@@ -84,11 +85,11 @@ export default function FAQ() {
               Can&apos;t find what you&apos;re looking for?
             </p>
             <a
-              href="tel:+17868481522"
+              href={PHONE_HREF}
               className="mt-3 inline-flex items-center gap-2 text-[length:var(--text-body)] font-semibold text-[var(--color-neon-text)] hover:underline"
             >
               <Phone size={18} weight="regular" />
-              <span className="tabular">(786) 848-1522</span>
+              <span className="tabular">{PHONE_DISPLAY}</span>
             </a>
           </div>
         </aside>

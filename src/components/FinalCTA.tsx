@@ -4,25 +4,31 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Phone, Envelope, Calendar, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import {
+  CALENDLY_URL,
+  EMAIL,
+  PHONE_DISPLAY,
+  PHONE_HREF,
+} from "@/lib/site";
 
 const contactOptions = [
   {
     Icon: Envelope,
     label: "Email",
-    detail: "brandingzombie@gmail.com",
-    href: "mailto:brandingzombie@gmail.com",
+    detail: EMAIL,
+    href: `mailto:${EMAIL}`,
   },
   {
     Icon: Phone,
     label: "Call / Text",
-    detail: "(786) 848-1522",
-    href: "tel:+17868481522",
+    detail: PHONE_DISPLAY,
+    href: PHONE_HREF,
   },
   {
     Icon: Calendar,
     label: "Book a call",
     detail: "Pick a time that works",
-    href: "https://calendly.com/brandingzombie/30min",
+    href: CALENDLY_URL,
   },
 ];
 
@@ -68,7 +74,7 @@ export default function FinalCTA() {
         {/* Primary CTA — single button, no breathe, no shadow soup */}
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
           <a
-            href="https://calendly.com/brandingzombie/30min"
+            href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
             role="button"
@@ -78,10 +84,11 @@ export default function FinalCTA() {
             <ArrowRight size={18} weight="bold" />
           </a>
           <a
-            href="#portfolio"
-            className="text-[length:var(--text-secondary)] uppercase tracking-wider text-[var(--color-dark-text-secondary)] underline decoration-[var(--color-dark-border-strong)] decoration-1 underline-offset-4 hover:text-[var(--color-toxic-text)] hover:decoration-[var(--color-toxic)]"
+            href={PHONE_HREF}
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
           >
-            Or browse the work first
+            <Phone size={16} weight="bold" />
+            <span className="tabular">Call Now · {PHONE_DISPLAY}</span>
           </a>
         </div>
 

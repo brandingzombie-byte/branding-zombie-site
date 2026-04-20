@@ -355,7 +355,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Web Design in Cumming, GA — Small-Business Websites in 10 Days",
       seoDescription:
-        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. From $1,500. Call (786) 848-1522.",
+        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. From $1,500. Call (770) 744-2536.",
       keywords: [
         "web design Cumming GA",
         "web designer Forsyth County",
@@ -594,7 +594,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "AI Workflow Integration for Small Businesses in Cumming, GA",
       seoDescription:
-        "AI chatbots, automation, lead capture & scheduling for small businesses in Cumming, GA & North Atlanta. Practical AI from $500. Call (786) 848-1522.",
+        "AI chatbots, automation, lead capture & scheduling for small businesses in Cumming, GA & North Atlanta. Practical AI from $500. Call (770) 744-2536.",
       keywords: [
         "AI workflow integration Cumming GA",
         "AI chatbot small business Georgia",
@@ -829,7 +829,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Graphic Design & Logo Design in Cumming, GA — From $150",
       seoDescription:
-        "Logo design, brand identity, menus & collateral for small businesses in Cumming, GA & Forsyth County. From $150. Call (786) 848-1522 for a free brand review.",
+        "Logo design, brand identity, menus & collateral for small businesses in Cumming, GA & Forsyth County. From $150. Call (770) 744-2536 for a free brand review.",
       keywords: [
         "graphic design Cumming GA",
         "graphic designer Forsyth County",
@@ -1306,7 +1306,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Social Media Management in Cumming, GA — $400/month",
       seoDescription:
-        "Done-for-you Instagram, Facebook & TikTok content for small businesses in Cumming, GA & Forsyth County. $400/month. Call (786) 848-1522 for a free audit.",
+        "Done-for-you Instagram, Facebook & TikTok content for small businesses in Cumming, GA & Forsyth County. $400/month. Call (770) 744-2536 for a free audit.",
       keywords: [
         "social media management Cumming GA",
         "social media marketing Forsyth County",
@@ -1537,7 +1537,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Shopify Ecommerce Developer in Cumming, GA — From $3,000",
       seoDescription:
-        "Custom Shopify & BigCommerce store design for small businesses in Cumming, GA & North Atlanta. Catalog, checkout, payments, launch. From $3,000. Call (786) 848-1522.",
+        "Custom Shopify & BigCommerce store design for small businesses in Cumming, GA & North Atlanta. Catalog, checkout, payments, launch. From $3,000. Call (770) 744-2536.",
       keywords: [
         "Shopify ecommerce Georgia",
         "Shopify designer Cumming GA",

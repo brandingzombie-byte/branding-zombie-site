@@ -6,6 +6,7 @@ import {
   FacebookLogo,
   TiktokLogo,
 } from "@/components/icons";
+import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/site";
 
 const services = [
   "Web Design",
@@ -110,18 +111,18 @@ export default function Footer() {
             <li className="text-text-secondary">Cumming, GA 30041</li>
             <li>
               <a
-                href="mailto:brandingzombie@gmail.com"
+                href={`mailto:${EMAIL}`}
                 className="text-text-secondary hover:text-[var(--color-neon-text)]"
               >
-                brandingzombie@gmail.com
+                {EMAIL}
               </a>
             </li>
             <li>
               <a
-                href="tel:+17868481522"
+                href={PHONE_HREF}
                 className="tabular text-text-secondary hover:text-[var(--color-neon-text)]"
               >
-                (786) 848-1522
+                {PHONE_DISPLAY}
               </a>
             </li>
           </ul>
