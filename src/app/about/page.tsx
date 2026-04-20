@@ -2,15 +2,12 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
-import { ArrowRight, Phone } from "@/components/icons";
+import AboutCtaRow from "./AboutCtaRow";
 import {
   SITE_URL,
   BUSINESS_NAME,
   FOUNDER_NAME,
   ORG_ID,
-  CALENDLY_URL,
-  PHONE_DISPLAY,
-  PHONE_HREF,
 } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/about`;
@@ -150,24 +147,8 @@ export default function AboutPage() {
               job&apos;s been the same: make small brands look and sell like
               the ones you envy.
             </p>
-            <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="button"
-                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
-              >
-                Book a free audit
-                <ArrowRight size={16} weight="bold" />
-              </a>
-              <a
-                href={PHONE_HREF}
-                className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
-              >
-                <Phone size={14} weight="bold" />
-                Call Now · {PHONE_DISPLAY}
-              </a>
+            <div className="mt-10">
+              <AboutCtaRow primaryLabel="Book a free audit" size="sm" />
             </div>
           </div>
         </Section>
@@ -350,25 +331,7 @@ export default function AboutPage() {
               Branding Zombie is the right move — or point you somewhere
               better if it isn&apos;t.
             </p>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="button"
-                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
-              >
-                Book the 15-minute call
-                <ArrowRight size={18} weight="bold" />
-              </a>
-              <a
-                href={PHONE_HREF}
-                className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
-              >
-                <Phone size={16} weight="bold" />
-                Or call · {PHONE_DISPLAY}
-              </a>
-            </div>
+            <AboutCtaRow primaryLabel="Book the 15-minute call" size="lg" />
           </div>
         </Section>
       </main>
