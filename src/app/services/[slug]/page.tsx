@@ -12,6 +12,10 @@ import ServiceFAQ from "@/components/services/ServiceFAQ";
 import RelatedServices from "@/components/services/RelatedServices";
 import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
 import ServiceJsonLd from "@/components/services/ServiceJsonLd";
+import WhoThisIsFor from "@/components/services/WhoThisIsFor";
+import TierCards from "@/components/services/TierCards";
+import BrandTrackRecord from "@/components/services/BrandTrackRecord";
+import CrossSellBlock from "@/components/services/CrossSellBlock";
 import { getServiceBySlug, getAllSlugs } from "@/data/services";
 import { SITE_URL } from "@/lib/site";
 
@@ -89,12 +93,26 @@ export default async function ServicePage({
       <main>
         <ServicePageClient>
           <ServiceHero service={service} />
+          {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (
+            <WhoThisIsFor items={service.whoThisIsFor} />
+          )}
           <ServicePainPoints service={service} />
           <ServiceOffer service={service} />
+          {service.tiers && service.tiers.length > 0 && (
+            <TierCards
+              eyebrow="Pricing"
+              headline="Three tiers,"
+              highlight="zero hidden fees"
+              subhead="Pick the level that matches where you are. Upgrade later if the business outgrows it — we don't charge to re-open a project."
+              tiers={service.tiers}
+            />
+          )}
+          {service.tiers && <BrandTrackRecord />}
           <ServiceGallery service={service} />
           <ServiceProcess service={service} />
           <ServiceFAQ service={service} />
           <RelatedServices slug={service.slug} />
+          {service.tiers && <CrossSellBlock currentSlug={service.slug} />}
           <ServiceFinalCTA service={service} />
         </ServicePageClient>
       </main>

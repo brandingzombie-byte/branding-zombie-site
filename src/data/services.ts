@@ -8,11 +8,18 @@ import type { Gallery4Item } from "@/components/ui/gallery4";
 
 export type ServiceSlug =
   | "web-design"
-  | "ai-workflows"
-  | "graphic-design"
-  | "print-services"
+  | "logo-design"
+  | "branding"
+  | "ecommerce"
+  | "print-design"
   | "social-media"
-  | "ecommerce";
+  | "digital-marketing"
+  | "ai-workflows"
+  | "launch-package"
+  // Legacy slugs — kept during migration so existing SERVICES entries still
+  // satisfy the union. Removed once data entries are renamed/retired.
+  | "graphic-design"
+  | "print-services";
 
 // Phosphor icon names available via @/components/icons
 export type ServiceIconName =
@@ -86,6 +93,28 @@ export interface ServiceSchemaFields {
   description: string;
 }
 
+// ─── Phase C additions: tiered pricing + brand track record ────────────────
+
+// Standard 3-tier card used on all non-Print service pages.
+export interface Tier {
+  name: string;               // "Starter" | "Growth" | "Premium"
+  price: string;              // "$2,500" or "$499/mo"
+  priceNote?: string;         // "+ $149/mo" (AI setup+monthly) or "One-time"
+  timeline: string;           // "2 weeks", "Ongoing", "Monthly"
+  deliverables: string[];
+  bestFor: string;
+  ctaLabel: string;
+  isFeature?: boolean;        // Growth tier: larger card + accent + badge
+}
+
+// Print Design uses 4 category bands instead of 3 tiers — spec exception.
+export interface ServiceCategoryBand {
+  name: string;               // "Simple" | "Medium" | "Complex" | "Print + Source bundle"
+  priceRange: string;         // "$75–$250"
+  examples: string[];
+  timeline: string;
+}
+
 export interface Service {
   slug: ServiceSlug;
   name: string;
@@ -95,6 +124,11 @@ export interface Service {
   themeAccent: ThemeAccent;
   homeCardPrice: string;
   homeCardDescription: string;
+  hook?: string;              // one-line value prop per spec Section 5.A
+  whoThisIsFor?: string[];    // 3–4 bullets per spec Section 5.B
+  tiers?: Tier[];             // 3-tier structure; Growth isFeature=true
+  categoryBands?: ServiceCategoryBand[];  // Print only
+  calloutText?: string;       // "15+ years of production-ready design..."
   hero: ServiceHero;
   painPointsEyebrow: string;
   painPointsHeadline: string;
@@ -145,16 +179,76 @@ export const SERVICES: Service[] = [
     slug: "web-design",
     name: "Web Design",
     shortName: "Web",
-    tagline: "Custom small-business websites in 10–14 days",
+    tagline: "Custom small-business websites, built to convert",
     iconSvg: "/assets/SVG/web-design-icon.svg",
     themeAccent: "neon",
-    homeCardPrice: "from $1,500",
+    homeCardPrice: "from $2,500",
     homeCardDescription:
       "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
+    hook: "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
+    whoThisIsFor: [
+      "Local businesses replacing a tired DIY or Wix-era site",
+      "New businesses launching their first real web presence",
+      "CPG and DTC brands who need a professional storefront (Ecommerce for full stores)",
+      "Owners who want agency-caliber work without the agency timeline and price",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$2,500",
+        timeline: "2 weeks",
+        deliverables: [
+          "5-page responsive site",
+          "CMS you can actually update",
+          "Contact form wired to your inbox",
+          "On-page SEO foundation",
+          "Mobile-optimized, Core Web Vitals pass",
+          "SSL, domain, hosting setup",
+        ],
+        bestFor:
+          "Small local businesses that need a professional web presence without overbuilding.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$4,500",
+        timeline: "3 weeks",
+        isFeature: true,
+        deliverables: [
+          "Up to 10 pages, fully custom (never a template)",
+          "Integrations — Calendly, Mailchimp, Klaviyo, Stripe",
+          "On-page SEO + Google Analytics 4 events",
+          "Form routing + auto-reply + CRM handoff",
+          "Blog / CMS setup with editor training",
+          "30-day post-launch polish window",
+        ],
+        bestFor:
+          "Most local businesses ready for a real online presence that brings in real work.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Premium",
+        price: "$7,500+",
+        timeline: "4–6 weeks",
+        deliverables: [
+          "Unlimited pages, scroll animations, custom interactions",
+          "Custom functionality (calculators, quizzes, portals)",
+          "Multi-language ready",
+          "Ecommerce-ready foundation",
+          "Advanced performance optimization",
+          "60 days of post-launch support",
+        ],
+        bestFor:
+          "Businesses that need a site to function like a sales asset — not a brochure.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "Built in Next.js or Webflow — fast, secure, and easy to update. No theme marketplaces, no plugin chaos.",
     hero: {
       eyebrow: "Web Design · Cumming, GA",
       headline: "Websites that actually make you money — shipped in",
-      highlightWord: "10 days",
+      highlightWord: "weeks, not months",
       subhead:
         "Custom small-business websites built in Next.js, Webflow, or Shopify. Fast, mobile-first, search-engine friendly, and tuned to turn visitors into customers. Based in Cumming, GA — serving Forsyth County, Alpharetta, Roswell, and North Metro Atlanta.",
       ctaLabel: "Book a free site audit",
@@ -163,7 +257,7 @@ export const SERVICES: Service[] = [
         src: "/assets/services/web-design/hero.png",
         alt: "Modern small-business website design being built on a dark editorial desktop — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "10–14 day delivery · from $1,500 · 50+ launched",
+      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your website is",
@@ -307,40 +401,52 @@ export const SERVICES: Service[] = [
     faqHighlight: "actually ask",
     faqs: [
       {
+        q: "Do you use templates?",
+        a: "No. Every site is custom designed for your brand, your customers, and your goals. We build on strong frameworks like Next.js and Webflow, but the design on top is never a reskinned template. If a theme marketplace can deliver what you need, honestly, save the money — we'll tell you.",
+      },
+      {
+        q: "Will I own the site and the domain?",
+        a: "Yes. You own the domain, the site files, the content, and the accounts. On handoff we transfer everything into your name. If you ever want to walk away, you take it all with you — no proprietary lock-in, no vendor-hostage scenarios.",
+      },
+      {
+        q: "Can I update the site myself after launch?",
+        a: "Yes. Every site ships with a CMS and a short training so you can change headlines, photos, hours, and posts without writing code. Monthly care plans are available if you'd rather hand updates off to us — starting at $100/month, no lock-in.",
+      },
+      {
+        q: "How is this different from a $99/month Wix or Squarespace site?",
+        a: "Speed, SEO, and ownership. Template builders lock you into their platform, drag your Core Web Vitals down, and still leave you paying a monthly fee forever. Our builds are faster, rank better, and cost you nothing after launch besides hosting — usually around $20/month if that.",
+      },
+      {
         q: "How fast can you actually build my website?",
-        a: "Most websites are completed in 10–14 days from discovery call to launch. Traditional agencies take 4–8 weeks because they're managing three layers of account managers. We move faster because we have a proven process, modern tools, and no agency overhead.",
-      },
-      {
-        q: "What platforms do you build on?",
-        a: "Next.js for custom builds where performance and SEO really matter, Webflow when you want a visual CMS, and Shopify for ecommerce. We pick the platform that fits your business — not the other way around.",
-      },
-      {
-        q: "Can you redesign my existing site or do I have to start over?",
-        a: "Either. We can redesign in place, migrate you to a better platform, or build fresh. We'll audit what you've got on the discovery call and recommend the cheapest path to a result that actually works.",
+        a: "Starter sites launch in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
       },
       {
         q: "What does a website cost?",
-        a: "Custom builds start at $1,500 for a focused 5-page site. Our most popular package is the Digital Makeover at $4,500 — full site plus AI chatbot integration. Larger projects (10+ pages, ecommerce, multi-location) are quoted after the discovery call so you only pay for what you actually need.",
+        a: "Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
       },
       {
         q: "Will it rank on Google for my town?",
-        a: "Local SEO is built into every site we ship — page-level schema markup, Google Business Profile integration, fast Core Web Vitals, and per-location landing pages when that fits. Ranking isn't magic, but starting with a site built for it helps enormously.",
+        a: "Local SEO is built into every site — schema markup, Google Business Profile integration, fast Core Web Vitals, per-service landing pages when that fits. Ranking isn't magic, it's months of content + signals. But starting with a site built for it is the difference between fighting uphill and fighting downhill.",
       },
       {
         q: "Do you help with content and copy?",
-        a: "Yes. We'll write the first draft of every page based on the discovery call, then refine with you. You don't have to show up with a Word doc full of copy.",
+        a: "Yes. We write the first draft of every page based on the discovery call, then refine with you. You don't need to show up with a Word doc full of copy — just answer our questions on the call and we'll turn it into something that sells.",
       },
       {
-        q: "What happens after launch?",
-        a: "You own the site, the domain, and the content. We offer optional monthly care plans starting at $100/month (hosting, updates, backups, minor edits). No lock-in, cancel anytime.",
+        q: "I got a cheaper quote. What am I actually paying for here?",
+        a: "Fifteen-plus years, thirty-plus brands launched, and a designer who does it all himself — no sub-contractor chain, no offshore handoffs, no junior designer pretending to be a senior. If the cheaper quote comes from someone who can show you comparable launched work, follow your gut. If they can't, that's usually why it's cheaper.",
+      },
+      {
+        q: "What happens if I don't love the design?",
+        a: "Every tier includes revisions, and we sign off on direction at wireframe stage — before a single pixel is designed — specifically so we don't end up there. If something's off, we fix it. The Growth tier also includes a 30-day post-launch polish window so if things reveal themselves in the wild, we sort them.",
       },
     ],
     pricing: {
       label: "Websites start at",
-      price: "$1,500",
+      price: "$2,500",
       unit: "/ project",
-      note: "Scope, timeline, and final investment confirmed on your free discovery call.",
-      numericPrice: "1500",
+      note: "Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
+      numericPrice: "2500",
     },
     finalCta: {
       eyebrow: "Ready when you are",
@@ -355,7 +461,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Web Design in Cumming, GA — Small-Business Websites in 10 Days",
       seoDescription:
-        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. From $1,500. Call (770) 744-2536.",
+        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
       keywords: [
         "web design Cumming GA",
         "web designer Forsyth County",
@@ -384,7 +490,7 @@ export const SERVICES: Service[] = [
       serviceType: "Web Design",
       category: "Web Design Services",
       description:
-        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 10–14 day delivery from $1,500.",
+        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 2–6 week delivery. Starter $2,500 · Growth $4,500 · Premium $7,500+.",
     },
   },
 
