@@ -1,11 +1,6 @@
 "use client";
 
 import Section from "@/components/Section";
-import {
-  InstagramLogo,
-  FacebookLogo,
-  TiktokLogo,
-} from "@/components/icons";
 import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/site";
 
 const services = [
@@ -18,17 +13,11 @@ const services = [
 ];
 
 const company = [
-  { label: "About", href: "#" },
-  { label: "Work", href: "#portfolio" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
-];
-
-const socials = [
-  { Icon: InstagramLogo, label: "Instagram", href: "#" },
-  { Icon: FacebookLogo, label: "Facebook", href: "#" },
-  { Icon: TiktokLogo, label: "TikTok", href: "#" },
+  { label: "About", href: "/about" },
+  { label: "Work", href: "/#portfolio" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -126,18 +115,6 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <div className="mt-6 flex items-center gap-2">
-            {socials.map(({ Icon, label, href }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="flex h-9 w-9 items-center justify-center rounded-full text-text-dim hover:bg-[var(--color-cloud)] hover:text-[var(--color-neon-text)]"
-              >
-                <Icon size={18} weight="regular" />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
 

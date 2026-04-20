@@ -6,11 +6,11 @@ import { cn } from "@/lib/utils";
 import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Work", href: "#portfolio" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/#portfolio" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

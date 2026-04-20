@@ -1,9 +1,11 @@
 // ─── Site-wide constants ────────────────────────────────────────────────────
 // Single source of truth for SEO, metadata, and Schema.org @id references.
-// Keep in sync with src/app/layout.tsx — any change here should be reflected
-// there (or imported from here).
+// layout.tsx, lib files, and components all import from here — do not
+// redefine these anywhere else.
 
 export const SITE_URL = "https://brandingzombiedesigns.com";
+export const BUSINESS_NAME = "Branding Zombie Designs";
+export const FOUNDER_NAME = "Gerry Betancourt";
 
 // Schema.org @id references for graph linking across pages.
 export const ORG_ID = `${SITE_URL}/#organization`;
@@ -16,8 +18,18 @@ export const PHONE_HREF = "tel:+17707442536";
 export const EMAIL = "brandingzombie@gmail.com";
 export const CALENDLY_URL = "https://calendly.com/brandingzombie/free-audit";
 
+export const CITY = "Cumming";
+export const REGION = "GA";
+export const POSTAL_CODE = "30041";
+export const COUNTRY = "US";
+
 export const LAT = 34.2073;
 export const LON = -84.1401;
+
+// Social profile URLs — populate when profiles are live. Empty array keeps
+// schema.org sameAs honest (claiming profiles that don't exist triggers a
+// Google verification 404 and hurts E-E-A-T).
+export const SOCIAL_URLS: string[] = [];
 
 // ─── Service area — every town we want to show up for ─────────────────────
 export const AREAS_SERVED = [

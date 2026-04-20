@@ -2,8 +2,9 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllSlugs } from "@/data/services";
 
-// Dynamic sitemap. Derives service URLs from SERVICES so renaming or adding
-// a service never requires touching the sitemap by hand.
+// Dynamic sitemap. Canonical pages only — Google does not index URL
+// fragments (#services, #pricing, etc.) as separate entries, so they are
+// omitted here.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -15,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
-    // Primary pages
     {
       url: SITE_URL,
       lastModified: now,
@@ -35,39 +35,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    // Homepage anchor targets — keep parity with old hand-rolled sitemap
     {
-      url: `${SITE_URL}/#services`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/#process`,
+      url: `${SITE_URL}/about`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}/#portfolio`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/#pricing`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/#faq`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/#contact`,
+      url: `${SITE_URL}/contact`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
