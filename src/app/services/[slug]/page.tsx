@@ -14,6 +14,7 @@ import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
 import ServiceJsonLd from "@/components/services/ServiceJsonLd";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
+import PrintCategoryBands from "@/components/services/PrintCategoryBands";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
 import { getServiceBySlug, getAllSlugs } from "@/data/services";
@@ -107,12 +108,17 @@ export default async function ServicePage({
               tiers={service.tiers}
             />
           )}
-          {service.tiers && <BrandTrackRecord />}
+          {service.categoryBands && service.categoryBands.length > 0 && (
+            <PrintCategoryBands bands={service.categoryBands} />
+          )}
+          {(service.tiers || service.categoryBands) && <BrandTrackRecord />}
           <ServiceGallery service={service} />
           <ServiceProcess service={service} />
           <ServiceFAQ service={service} />
           <RelatedServices slug={service.slug} />
-          {service.tiers && <CrossSellBlock currentSlug={service.slug} />}
+          {(service.tiers || service.categoryBands) && (
+            <CrossSellBlock currentSlug={service.slug} />
+          )}
           <ServiceFinalCTA service={service} />
         </ServicePageClient>
       </main>

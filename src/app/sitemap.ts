@@ -30,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...servicePages,
     {
+      url: `${SITE_URL}/services/launch-package`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${SITE_URL}/cpg-launch`,
       lastModified: now,
       changeFrequency: "weekly",
