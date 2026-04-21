@@ -1,15 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import Section from "@/components/Section";
 import { ArrowUpRight, Phone } from "@/components/icons";
 import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 export default function Hero() {
+  const shouldReduceMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 600], [0, 120]);
-  const handY = useTransform(scrollY, [0, 600], [0, 60]);
 
   return (
     <Section
@@ -19,23 +18,38 @@ export default function Hero() {
       bleed
       className="relative isolate min-h-[100dvh] overflow-hidden"
     >
-      {/* Background: graveyard photo, desaturated to sit under the dark theme */}
+      {/* Background video — parallax layer. Oversized + negative-insets so the
+          120px translate never reveals an empty edge above the fold. */}
       <motion.div
-        className="absolute inset-0 -z-10"
-        style={{ y: bgY }}
+        className="absolute -inset-y-[140px] inset-x-0 -z-10"
+        style={{ y: shouldReduceMotion ? 0 : bgY }}
         aria-hidden
       >
-        <Image
-          src="/assets/branding-zombie-hero.png"
-          alt=""
-          fill
-          className="object-cover opacity-30 [filter:saturate(0.4)_brightness(0.45)]"
-          priority
-          sizes="100vw"
-        />
+        <video
+          className="h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
+          poster="/assets/branding-zombie-hero.png"
+          autoPlay={!shouldReduceMotion}
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
+          <source src="/assets/branding-zombie-hero.mp4" type="video/mp4" />
+        </video>
       </motion.div>
 
-      {/* Ambient drift — replaces the WebGL smoke shader */}
+      {/* Readability scrim — top-down on mobile (text stacks vertically),
+          left-to-right on md+ (text lives in the left columns). */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-[var(--color-grave)]/85 via-[var(--color-grave)]/55 to-[var(--color-grave)]/25 md:hidden"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 hidden bg-gradient-to-r from-[var(--color-grave)]/90 via-[var(--color-grave)]/45 to-transparent md:block"
+      />
+
+      {/* Ambient toxic/teal drift */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 animate-ambient"
@@ -45,13 +59,13 @@ export default function Hero() {
         }}
       />
 
-      {/* Top vignette that fades from grave to transparent so the navbar floats */}
+      {/* Top vignette — keeps nav floating cleanly over video */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 -z-[5] h-40 bg-gradient-to-b from-[var(--color-grave)] via-[var(--color-grave)]/60 to-transparent"
       />
 
-      {/* Bottom hard cut — 1px toxic seam into the next section */}
+      {/* Bottom hard cut — 1px toxic seam into next section */}
       <div
         aria-hidden
         className="absolute inset-x-0 bottom-0 h-px bg-[var(--color-toxic)]/60"
@@ -69,14 +83,20 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Headline — display weight contrast on noun */}
-          <h1 className="mt-6 font-[family-name:var(--font-display)] leading-[0.92] tracking-tight">
-            <span className="animate-rise block text-[length:var(--text-display)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:160ms]">
+          {/* Headline — display weight contrast on noun.
+              Size is scoped to the hero (slightly smaller than --text-display)
+              so the headline fits on narrow mobile without getting clipped,
+              and the leading is loosened to 1.05 so the two lines never kiss. */}
+          <h1 className="mt-6 font-[family-name:var(--font-display)] leading-[1.05] tracking-tight">
+            <span className="animate-rise block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:160ms]">
               Small businesses
             </span>
-            <span className="animate-rise mt-2 block text-[length:var(--text-display)] opacity-0 [animation-delay:280ms]">
-              <span className="relative inline-block text-[var(--color-dark-text-primary)]">
-                resurrected
+            <span className="animate-rise mt-3 block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] opacity-0 [animation-delay:280ms]">
+              {/* Period lives inside the underlined inline-block so the
+                  toxic-green line extends under the full "resurrected." —
+                  matches the underline treatment used on other page headers. */}
+              <span className="relative inline-block whitespace-nowrap text-[var(--color-dark-text-primary)]">
+                resurrected.
                 <span
                   aria-hidden
                   className="absolute -bottom-1 left-0 h-[3px] w-full origin-left scale-x-0 bg-[var(--color-toxic)]"
@@ -86,7 +106,6 @@ export default function Hero() {
                   }}
                 />
               </span>
-              .
             </span>
           </h1>
 
@@ -138,24 +157,6 @@ export default function Hero() {
             <span>100% free</span>
           </div>
         </div>
-
-        {/* RIGHT: zombie hand spans cols 8–12, anchored bottom-right with overflow */}
-        <motion.div
-          className="pointer-events-none relative col-span-12 mt-10 flex items-end justify-end md:col-span-4 md:mt-0 lg:col-span-5"
-          style={{ y: handY }}
-          aria-hidden
-        >
-          <div className="animate-float relative aspect-[3/4] w-[60%] sm:w-[55%] md:absolute md:-right-4 md:bottom-[-6%] md:w-[120%] lg:-right-8 lg:w-[130%]">
-            <Image
-              src="/assets/1x/hand-hero.png"
-              alt="Zombie hand holding creative tools"
-              fill
-              className="object-contain drop-shadow-[0_30px_50px_rgba(191,255,0,0.18)]"
-              priority
-              sizes="(min-width: 1024px) 40vw, (min-width: 768px) 35vw, 60vw"
-            />
-          </div>
-        </motion.div>
       </div>
     </Section>
   );

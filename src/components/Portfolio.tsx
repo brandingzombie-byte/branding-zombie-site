@@ -115,7 +115,7 @@ export default function Portfolio() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
               Selected work
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Real brands.{" "}
               <span className="relative inline-block">
                 Real numbers

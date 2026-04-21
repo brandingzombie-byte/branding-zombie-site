@@ -41,7 +41,7 @@ export default function PainPoints() {
             weight="duotone"
             className="text-[var(--color-neon-text)]"
           />
-          <h2 className="mt-5 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+          <h2 className="mt-5 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
             If your website looks like it&apos;s from{" "}
             <span className="relative inline-block">
               2016

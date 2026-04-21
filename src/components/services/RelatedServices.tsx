@@ -29,7 +29,7 @@ export default function RelatedServices({ slug }: { slug: ServiceSlug }) {
             Keep exploring
           </span>
         </div>
-        <h2 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+        <h2 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
           Other ways we can{" "}
           <span className="relative inline-block">
             help
@@ -52,7 +52,7 @@ export default function RelatedServices({ slug }: { slug: ServiceSlug }) {
                 <span className="tabular text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-[var(--color-cyan-text)]">
                   {r.shortName}
                 </span>
-                <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+                <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
                   {r.name}
                 </h3>
                 <p className="mt-3 text-[length:var(--text-secondary)] leading-relaxed text-[var(--color-dark-text-secondary)]">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import LaunchPackageCtas from "./LaunchPackageCtas";
 import IncludedList from "./IncludedList";
@@ -204,6 +205,8 @@ export default function LaunchPackagePage() {
           </div>
         </Section>
 
+        <SectionSeparator id={7} />
+
         {/* What's inside */}
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -211,7 +214,7 @@ export default function LaunchPackagePage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 What&apos;s inside
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Four pieces of the same{" "}
                 <span className="relative inline-block">
                   brand
@@ -239,6 +242,8 @@ export default function LaunchPackagePage() {
           </div>
         </Section>
 
+        <SectionSeparator id={1} />
+
         {/* Who this is for */}
         <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -246,7 +251,7 @@ export default function LaunchPackagePage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Who this is for
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Two kinds of{" "}
                 <span className="relative inline-block">
                   founders
@@ -282,6 +287,8 @@ export default function LaunchPackagePage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={2} />
 
         {/* Timeline */}
         <Section theme="light" pad="spacious" topRule>
@@ -338,7 +345,11 @@ export default function LaunchPackagePage() {
           </ol>
         </Section>
 
+        <SectionSeparator id={4} />
+
         <BrandTrackRecord />
+
+        <SectionSeparator id={6} />
 
         {/* Final CTA */}
         <Section theme="dark" pad="spacious" topRule>

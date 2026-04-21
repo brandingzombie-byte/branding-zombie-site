@@ -32,7 +32,7 @@ export default function ServicesIndexGrid() {
               className="h-px flex-1 bg-[var(--color-hairline-strong)]"
             />
           </div>
-          <h3 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+          <h3 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
             {feature.name}
           </h3>
           <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import ServicesIndexGrid from "@/components/services/ServicesIndexGrid";
 import { SERVICES } from "@/data/services";
 import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
@@ -135,13 +136,15 @@ export default function ServicesIndexPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={7} />
+
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 What we do
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Browse{" "}
                 <span className="relative inline-block">
                   every service

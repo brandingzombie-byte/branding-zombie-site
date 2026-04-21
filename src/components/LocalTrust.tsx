@@ -33,7 +33,7 @@ export default function LocalTrust() {
   const { ref, isInView } = useInView(0.1);
 
   return (
-    <Section theme="light" pad="tight">
+    <Section theme="light" pad="standard">
       <div
         ref={ref}
         className={cn(

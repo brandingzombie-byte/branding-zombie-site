@@ -506,7 +506,7 @@ export default function RootLayout({
       lang="en-US"
       className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-mist text-text-primary">
+      <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

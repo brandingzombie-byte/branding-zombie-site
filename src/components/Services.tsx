@@ -35,7 +35,7 @@ export default function Services() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               What we do
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
               Everything your business needs to{" "}
               <span className="relative inline-block">
                 show up online
@@ -67,7 +67,7 @@ export default function Services() {
                 </span>
                 <span aria-hidden className="h-px flex-1 bg-[var(--color-hairline-strong)]" />
               </div>
-              <h3 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h3 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 {feature.name}
               </h3>
               <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
@@ -151,6 +151,22 @@ export default function Services() {
               </Link>
             );
           })}
+
+          {/* Brand filler — last bento cell. Decorative spinning logo on the
+              grave-dark tile reinforces the brand against the lighter cards. */}
+          <div
+            aria-hidden
+            className="flex min-h-[14rem] items-center justify-center bg-[var(--color-grave)] p-6"
+          >
+            <Image
+              src="/assets/branding-zombie-turntable.gif"
+              alt=""
+              width={400}
+              height={400}
+              unoptimized
+              className="h-auto w-full max-w-[11rem] object-contain"
+            />
+          </div>
         </div>
       </div>
     </Section>

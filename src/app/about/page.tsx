@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import AboutCtaRow from "./AboutCtaRow";
 import {
   SITE_URL,
@@ -153,6 +154,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={7} />
+
         {/* The story */}
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -160,7 +163,7 @@ export default function AboutPage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 The backstory
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Fort Lauderdale{" "}
                 <span className="relative inline-block">
                   taught me
@@ -197,6 +200,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={1} />
+
         {/* Why Cumming */}
         <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -204,7 +209,7 @@ export default function AboutPage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Now based in
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Cumming,{" "}
                 <span className="relative inline-block">
                   Georgia
@@ -241,6 +246,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={2} />
+
         {/* Facts */}
         <Section theme="light" pad="standard" topRule>
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-baseline sm:justify-between">
@@ -265,6 +272,8 @@ export default function AboutPage() {
           </ul>
         </Section>
 
+        <SectionSeparator id={4} />
+
         {/* The philosophy + personal */}
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -272,7 +281,7 @@ export default function AboutPage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 How I work
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Good design{" "}
                 <span className="relative inline-block">
                   should make money
@@ -308,6 +317,8 @@ export default function AboutPage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={3} />
 
         {/* Final CTA */}
         <Section theme="dark" pad="spacious" topRule>
