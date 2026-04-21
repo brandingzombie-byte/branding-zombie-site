@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import { Warning } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
-const stats = [
+const stats: { value: string; label: string; source?: string }[] = [
   {
     value: "75%",
     label: "of people judge a business by its website.",
@@ -19,7 +19,6 @@ const stats = [
   {
     value: "24/7",
     label: "your competitor's chatbot is open. Yours isn't.",
-    source: "Forsyth County survey",
   },
 ];
 
@@ -77,9 +76,11 @@ export default function PainPoints() {
                 <p className="text-[length:var(--text-body)] font-medium leading-snug text-text-primary">
                   {s.label}
                 </p>
-                <p className="mt-1 text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
-                  {s.source}
-                </p>
+                {s.source && (
+                  <p className="mt-1 text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
+                    {s.source}
+                  </p>
+                )}
               </div>
             </li>
           ))}

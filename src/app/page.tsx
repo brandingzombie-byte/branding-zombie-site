@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
-import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
 import AIShowcase from "@/components/AIShowcase";
@@ -21,7 +20,6 @@ export default function Home() {
         <PainPoints />
         <Services />
         <Process />
-        <Testimonials />
         <Portfolio />
         <Pricing />
         <AIShowcase />

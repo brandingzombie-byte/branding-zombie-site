@@ -8,11 +8,14 @@ import type { Gallery4Item } from "@/components/ui/gallery4";
 
 export type ServiceSlug =
   | "web-design"
-  | "ai-workflows"
-  | "graphic-design"
-  | "print-services"
+  | "logo-design"
+  | "branding"
+  | "ecommerce"
+  | "print-design"
   | "social-media"
-  | "ecommerce";
+  | "digital-marketing"
+  | "ai-workflows"
+  | "launch-package";
 
 // Phosphor icon names available via @/components/icons
 export type ServiceIconName =
@@ -86,6 +89,28 @@ export interface ServiceSchemaFields {
   description: string;
 }
 
+// ─── Phase C additions: tiered pricing + brand track record ────────────────
+
+// Standard 3-tier card used on all non-Print service pages.
+export interface Tier {
+  name: string;               // "Starter" | "Growth" | "Premium"
+  price: string;              // "$2,500" or "$499/mo"
+  priceNote?: string;         // "+ $149/mo" (AI setup+monthly) or "One-time"
+  timeline: string;           // "2 weeks", "Ongoing", "Monthly"
+  deliverables: string[];
+  bestFor: string;
+  ctaLabel: string;
+  isFeature?: boolean;        // Growth tier: larger card + accent + badge
+}
+
+// Print Design uses 4 category bands instead of 3 tiers — spec exception.
+export interface ServiceCategoryBand {
+  name: string;               // "Simple" | "Medium" | "Complex" | "Print + Source bundle"
+  priceRange: string;         // "$75–$250"
+  examples: string[];
+  timeline: string;
+}
+
 export interface Service {
   slug: ServiceSlug;
   name: string;
@@ -95,6 +120,11 @@ export interface Service {
   themeAccent: ThemeAccent;
   homeCardPrice: string;
   homeCardDescription: string;
+  hook?: string;              // one-line value prop per spec Section 5.A
+  whoThisIsFor?: string[];    // 3–4 bullets per spec Section 5.B
+  tiers?: Tier[];             // 3-tier structure; Growth isFeature=true
+  categoryBands?: ServiceCategoryBand[];  // Print only
+  calloutText?: string;       // "15+ years of production-ready design..."
   hero: ServiceHero;
   painPointsEyebrow: string;
   painPointsHeadline: string;
@@ -145,16 +175,76 @@ export const SERVICES: Service[] = [
     slug: "web-design",
     name: "Web Design",
     shortName: "Web",
-    tagline: "Custom small-business websites in 10–14 days",
+    tagline: "Custom small-business websites, built to convert",
     iconSvg: "/assets/SVG/web-design-icon.svg",
     themeAccent: "neon",
-    homeCardPrice: "from $1,500",
+    homeCardPrice: "from $2,500",
     homeCardDescription:
       "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
+    hook: "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
+    whoThisIsFor: [
+      "Local businesses replacing a tired DIY or Wix-era site",
+      "New businesses launching their first real web presence",
+      "CPG and DTC brands who need a professional storefront (Ecommerce for full stores)",
+      "Owners who want agency-caliber work without the agency timeline and price",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$2,500",
+        timeline: "2 weeks",
+        deliverables: [
+          "5-page responsive site",
+          "CMS you can actually update",
+          "Contact form wired to your inbox",
+          "On-page SEO foundation",
+          "Mobile-optimized, Core Web Vitals pass",
+          "SSL, domain, hosting setup",
+        ],
+        bestFor:
+          "Small local businesses that need a professional web presence without overbuilding.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$4,500",
+        timeline: "3 weeks",
+        isFeature: true,
+        deliverables: [
+          "Up to 10 pages, fully custom (never a template)",
+          "Integrations — Calendly, Mailchimp, Klaviyo, Stripe",
+          "On-page SEO + Google Analytics 4 events",
+          "Form routing + auto-reply + CRM handoff",
+          "Blog / CMS setup with editor training",
+          "30-day post-launch polish window",
+        ],
+        bestFor:
+          "Most local businesses ready for a real online presence that brings in real work.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Premium",
+        price: "$7,500+",
+        timeline: "4–6 weeks",
+        deliverables: [
+          "Unlimited pages, scroll animations, custom interactions",
+          "Custom functionality (calculators, quizzes, portals)",
+          "Multi-language ready",
+          "Ecommerce-ready foundation",
+          "Advanced performance optimization",
+          "60 days of post-launch support",
+        ],
+        bestFor:
+          "Businesses that need a site to function like a sales asset — not a brochure.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "Built in Next.js or Webflow — fast, secure, and easy to update. No theme marketplaces, no plugin chaos.",
     hero: {
       eyebrow: "Web Design · Cumming, GA",
       headline: "Websites that actually make you money — shipped in",
-      highlightWord: "10 days",
+      highlightWord: "weeks, not months",
       subhead:
         "Custom small-business websites built in Next.js, Webflow, or Shopify. Fast, mobile-first, search-engine friendly, and tuned to turn visitors into customers. Based in Cumming, GA — serving Forsyth County, Alpharetta, Roswell, and North Metro Atlanta.",
       ctaLabel: "Book a free site audit",
@@ -163,7 +253,7 @@ export const SERVICES: Service[] = [
         src: "/assets/services/web-design/hero.png",
         alt: "Modern small-business website design being built on a dark editorial desktop — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "10–14 day delivery · from $1,500 · 50+ launched",
+      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your website is",
@@ -307,40 +397,52 @@ export const SERVICES: Service[] = [
     faqHighlight: "actually ask",
     faqs: [
       {
+        q: "Do you use templates?",
+        a: "No. Every site is custom designed for your brand, your customers, and your goals. We build on strong frameworks like Next.js and Webflow, but the design on top is never a reskinned template. If a theme marketplace can deliver what you need, honestly, save the money — we'll tell you.",
+      },
+      {
+        q: "Will I own the site and the domain?",
+        a: "Yes. You own the domain, the site files, the content, and the accounts. On handoff we transfer everything into your name. If you ever want to walk away, you take it all with you — no proprietary lock-in, no vendor-hostage scenarios.",
+      },
+      {
+        q: "Can I update the site myself after launch?",
+        a: "Yes. Every site ships with a CMS and a short training so you can change headlines, photos, hours, and posts without writing code. Monthly care plans are available if you'd rather hand updates off to us — starting at $100/month, no lock-in.",
+      },
+      {
+        q: "How is this different from a $99/month Wix or Squarespace site?",
+        a: "Speed, SEO, and ownership. Template builders lock you into their platform, drag your Core Web Vitals down, and still leave you paying a monthly fee forever. Our builds are faster, rank better, and cost you nothing after launch besides hosting — usually around $20/month if that.",
+      },
+      {
         q: "How fast can you actually build my website?",
-        a: "Most websites are completed in 10–14 days from discovery call to launch. Traditional agencies take 4–8 weeks because they're managing three layers of account managers. We move faster because we have a proven process, modern tools, and no agency overhead.",
-      },
-      {
-        q: "What platforms do you build on?",
-        a: "Next.js for custom builds where performance and SEO really matter, Webflow when you want a visual CMS, and Shopify for ecommerce. We pick the platform that fits your business — not the other way around.",
-      },
-      {
-        q: "Can you redesign my existing site or do I have to start over?",
-        a: "Either. We can redesign in place, migrate you to a better platform, or build fresh. We'll audit what you've got on the discovery call and recommend the cheapest path to a result that actually works.",
+        a: "Starter sites launch in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
       },
       {
         q: "What does a website cost?",
-        a: "Custom builds start at $1,500 for a focused 5-page site. Our most popular package is the Digital Makeover at $4,500 — full site plus AI chatbot integration. Larger projects (10+ pages, ecommerce, multi-location) are quoted after the discovery call so you only pay for what you actually need.",
+        a: "Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
       },
       {
         q: "Will it rank on Google for my town?",
-        a: "Local SEO is built into every site we ship — page-level schema markup, Google Business Profile integration, fast Core Web Vitals, and per-location landing pages when that fits. Ranking isn't magic, but starting with a site built for it helps enormously.",
+        a: "Local SEO is built into every site — schema markup, Google Business Profile integration, fast Core Web Vitals, per-service landing pages when that fits. Ranking isn't magic, it's months of content + signals. But starting with a site built for it is the difference between fighting uphill and fighting downhill.",
       },
       {
         q: "Do you help with content and copy?",
-        a: "Yes. We'll write the first draft of every page based on the discovery call, then refine with you. You don't have to show up with a Word doc full of copy.",
+        a: "Yes. We write the first draft of every page based on the discovery call, then refine with you. You don't need to show up with a Word doc full of copy — just answer our questions on the call and we'll turn it into something that sells.",
       },
       {
-        q: "What happens after launch?",
-        a: "You own the site, the domain, and the content. We offer optional monthly care plans starting at $100/month (hosting, updates, backups, minor edits). No lock-in, cancel anytime.",
+        q: "I got a cheaper quote. What am I actually paying for here?",
+        a: "Fifteen-plus years, thirty-plus brands launched, and a designer who does it all himself — no sub-contractor chain, no offshore handoffs, no junior designer pretending to be a senior. If the cheaper quote comes from someone who can show you comparable launched work, follow your gut. If they can't, that's usually why it's cheaper.",
+      },
+      {
+        q: "What happens if I don't love the design?",
+        a: "Every tier includes revisions, and we sign off on direction at wireframe stage — before a single pixel is designed — specifically so we don't end up there. If something's off, we fix it. The Growth tier also includes a 30-day post-launch polish window so if things reveal themselves in the wild, we sort them.",
       },
     ],
     pricing: {
       label: "Websites start at",
-      price: "$1,500",
+      price: "$2,500",
       unit: "/ project",
-      note: "Scope, timeline, and final investment confirmed on your free discovery call.",
-      numericPrice: "1500",
+      note: "Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
+      numericPrice: "2500",
     },
     finalCta: {
       eyebrow: "Ready when you are",
@@ -350,12 +452,12 @@ export const SERVICES: Service[] = [
         "Book a free 15-minute site audit. We'll look at what you've got, tell you what's broken, and give you a clear path to a site that actually works — whether we end up building it or not.",
       ctaLabel: "Book a free site audit",
     },
-    related: ["ai-workflows", "graphic-design", "ecommerce"],
+    related: ["ai-workflows", "logo-design", "ecommerce"],
     meta: {
       seoTitle:
         "Web Design in Cumming, GA — Small-Business Websites in 10 Days",
       seoDescription:
-        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. From $1,500. Call (786) 848-1522.",
+        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
       keywords: [
         "web design Cumming GA",
         "web designer Forsyth County",
@@ -384,7 +486,7 @@ export const SERVICES: Service[] = [
       serviceType: "Web Design",
       category: "Web Design Services",
       description:
-        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 10–14 day delivery from $1,500.",
+        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 2–6 week delivery. Starter $2,500 · Growth $4,500 · Premium $7,500+.",
     },
   },
 
@@ -395,12 +497,73 @@ export const SERVICES: Service[] = [
     slug: "ai-workflows",
     name: "AI Workflows",
     shortName: "AI",
-    tagline: "Business automation that actually earns its keep",
+    tagline: "Automate the busywork so you can focus on what you love",
     iconSvg: "/assets/SVG/ai-workflows-icon.svg",
     themeAccent: "cyan",
-    homeCardPrice: "from $500",
+    homeCardPrice: "from $750",
     homeCardDescription:
       "Automate the busywork so you can focus on what you love.",
+    hook: "Automate the busywork so you can focus on what you love.",
+    whoThisIsFor: [
+      "Local businesses drowning in repeat customer questions",
+      "Service businesses losing hours to scheduling and intake back-and-forth",
+      "Owners who've heard 'use AI' a hundred times and don't know where to start",
+      "Teams still answering the same five questions by phone, text, and DM every day",
+    ],
+    tiers: [
+      {
+        name: "Chatbot Starter",
+        price: "$750",
+        priceNote: "+ $149/mo hosting & tuning",
+        timeline: "1–2 weeks",
+        deliverables: [
+          "FAQ + lead capture bot on one channel (website or SMS)",
+          "Trained on your services, pricing, hours, and real content",
+          "Lead email notifications + CRM drop",
+          "Monthly optimization + content refresh",
+          "Full handoff + easy-edit dashboard",
+        ],
+        bestFor:
+          "Local service businesses that want to capture leads 24/7 without hiring a night shift.",
+        ctaLabel: "Start with Chatbot Starter",
+      },
+      {
+        name: "Customer Service Suite",
+        price: "$1,500",
+        priceNote: "+ $349/mo",
+        timeline: "2–3 weeks",
+        isFeature: true,
+        deliverables: [
+          "Multi-channel bot — web, SMS, and email inbox",
+          "FAQ automation + intelligent routing",
+          "Appointment booking with calendar integration",
+          "Human-handoff with context passed to you",
+          "CRM integration (HubSpot, Pipedrive, Go High Level, Notion)",
+          "Monthly performance reporting + tuning",
+        ],
+        bestFor:
+          "Businesses with real customer-inquiry volume that need the front door handled.",
+        ctaLabel: "Choose Customer Service Suite",
+      },
+      {
+        name: "Custom Automation",
+        price: "$2,500+",
+        priceNote: "One-time build",
+        timeline: "2–4 weeks",
+        deliverables: [
+          "Email sequence builds — Klaviyo, Mailchimp, ActiveCampaign",
+          "Zapier / Make / n8n workflow orchestration",
+          "CRM + operations integrations (Stripe, Square, QuickBooks, Sheets)",
+          "Written SOPs so your team can run it after handoff",
+          "Optional monthly management add-on ($150/mo)",
+        ],
+        bestFor:
+          "Businesses with specific automation needs that don't fit a chatbot mold.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "Not another SaaS tool. These are real, working systems tailored to your business — and you own every workflow we build.",
     hero: {
       eyebrow: "AI Workflows · Cumming, GA",
       headline: "Let AI handle the busywork while you",
@@ -550,36 +713,52 @@ export const SERVICES: Service[] = [
     faqHighlight: "before they commit",
     faqs: [
       {
-        q: "What is AI workflow integration, really?",
-        a: "It's automating the repetitive parts of your business using chatbots, form flows, scheduling tools, and AI assistants — so customer questions get answered, leads get followed up, and appointments get booked while you're doing something more valuable. No sci-fi, no hype.",
+        q: "What do you actually build this on?",
+        a: "Claude and OpenAI for language models, n8n or Make for workflow orchestration, and direct integrations with the tools you already use — Gmail, Google Calendar, Stripe, Square, Shopify, QuickBooks, HubSpot, Go High Level, whatever. We're not trying to sell you a platform; we're wiring up what you've got.",
+      },
+      {
+        q: "Can it integrate with my existing systems?",
+        a: "Yes — that's the whole point. If your current stack has a public API (almost everything does now), we can connect it. Appointment booking that feeds your calendar. Lead forms that drop into your CRM. Invoice reminders that pull from QuickBooks. We use what you've got.",
+      },
+      {
+        q: "What happens if the AI gives a wrong answer?",
+        a: "Two safeguards. First: we narrow the bot's scope to only answer from your approved knowledge base — it doesn't hallucinate about pricing or hours it wasn't given. Second: anything outside scope triggers a human handoff with full conversation context passed to you. Monthly reviews catch anything that slipped through.",
       },
       {
         q: "Do I need to understand AI to use this?",
-        a: "No. We build the workflow, you use the result. If a customer asks your chatbot something, you see the conversation. If a lead fills out a form, you get notified. It's ordinary software that happens to use AI in the right places.",
+        a: "No. We build the workflow, you use the result. If a customer chats with your bot, you see the conversation. If a form gets filled, you get notified. It's ordinary software — it just happens to use AI in the places where AI is the right tool.",
       },
       {
-        q: "What tools and platforms do you use?",
-        a: "OpenAI / Anthropic for language models, n8n or Make for workflow orchestration, and direct integrations with Gmail, Google Calendar, Stripe, Square, Shopify, QuickBooks, and whatever CRM you're already on. We use your existing stack, not a new platform you have to learn.",
-      },
-      {
-        q: "What does it cost?",
-        a: "Single-workflow projects start at $500 (one chatbot, one automation, one scheduling flow). Full-audit engagements with 3–5 workflows run $1,500–$3,000 depending on complexity. Monthly hosting for chatbots and workflow runs is typically $30–$100 depending on volume.",
+        q: "Is there a contract?",
+        a: "Setup is a one-time project fee. Monthly hosting and tuning is month-to-month — cancel anytime, take the workflow with you. If it stops working or stops earning its keep, you're not locked in.",
       },
       {
         q: "Is my customer data safe?",
-        a: "Yes. We use enterprise-grade providers with SOC 2 compliance, and customer data is never used to train public models. We can also run fully on-premise for regulated industries (healthcare, legal) if that's a requirement.",
+        a: "Yes. We use enterprise-grade providers with SOC 2 compliance. Customer data is never used to train public models — your conversation history stays yours. For regulated industries (healthcare, legal) we can run on-premise or on HIPAA-compliant infrastructure when that's the requirement.",
       },
       {
-        q: "Can you maintain this for me after launch?",
-        a: "Yes. Monthly care plans start at $150/month and include chatbot retraining as your services change, workflow monitoring, error alerts, and monthly optimization reports. Cancel anytime.",
+        q: "What does this actually cost?",
+        a: "Chatbot Starter is $750 setup + $149/mo. Customer Service Suite is $1,500 setup + $349/mo. Custom Automation projects start at $2,500 one-time. Hosting on the monthly tiers covers the model API costs, monitoring, and monthly content refreshes — no surprise bills at scale.",
+      },
+      {
+        q: "Will it replace my front-desk person?",
+        a: "No. It replaces the three hours a day your front-desk person spends answering the same five questions, so they can do the work that actually needs a human. Most clients see fewer repetitive calls, not fewer employees.",
+      },
+      {
+        q: "Can you maintain and retrain it as my business changes?",
+        a: "Yes — that's baked into the monthly tiers. New service added? New pricing? New location? Tell us; we retrain the bot within a week. If you prefer to manage it yourself, the dashboard makes that doable too.",
+      },
+      {
+        q: "How is this different from an off-the-shelf chatbot from Intercom or Drift?",
+        a: "Those tools are great if you have the staff to configure and maintain them. Our builds are custom-trained on your content from day one, integrated with your existing tools (not a new dashboard to learn), and maintained monthly by us. No per-seat pricing, no upsell to the \"AI Suite\" tier — one flat fee, handled.",
       },
     ],
     pricing: {
-      label: "Workflows start at",
-      price: "$500",
-      unit: "/ workflow",
-      note: "Full automation audits and multi-workflow engagements scoped on your discovery call.",
-      numericPrice: "500",
+      label: "Setup starts at",
+      price: "$750",
+      unit: "+ $149/mo",
+      note: "Customer Service Suite $1,500 + $349/mo · Custom Automation from $2,500 one-time. All tiers month-to-month after setup.",
+      numericPrice: "750",
     },
     finalCta: {
       eyebrow: "Ready to stop doing everything yourself",
@@ -592,9 +771,9 @@ export const SERVICES: Service[] = [
     related: ["web-design", "social-media", "ecommerce"],
     meta: {
       seoTitle:
-        "AI Workflow Integration for Small Businesses in Cumming, GA",
+        "AI Chatbots & Automation for Small Business — Cumming, GA",
       seoDescription:
-        "AI chatbots, automation, lead capture & scheduling for small businesses in Cumming, GA & North Atlanta. Practical AI from $500. Call (786) 848-1522.",
+        "Custom AI chatbots, lead capture, scheduling, and business automation for small businesses in Cumming, GA & North Atlanta. Chatbot Starter $750+$149/mo · Customer Service Suite $1,500+$349/mo · Custom Automation from $2,500. Call (770) 744-2536.",
       keywords: [
         "AI workflow integration Cumming GA",
         "AI chatbot small business Georgia",
@@ -624,268 +803,93 @@ export const SERVICES: Service[] = [
   },
 
   // ════════════════════════════════════════════════════════════════════════
-  // GRAPHIC DESIGN
+  // PRINT DESIGN
   // ════════════════════════════════════════════════════════════════════════
   {
-    slug: "graphic-design",
-    name: "Graphic Design",
-    shortName: "Graphic",
-    tagline: "Logo & brand identity for small businesses",
-    iconSvg: "/assets/SVG/graphic-design-icon.svg",
-    themeAccent: "neon",
-    homeCardPrice: "from $150",
-    homeCardDescription:
-      "Look as professional as the big brands at a fraction of the cost.",
-    hero: {
-      eyebrow: "Graphic Design · Cumming, GA",
-      headline: "Look like a brand, not",
-      highlightWord: "a side project",
-      subhead:
-        "Logos, brand identity systems, menus, brochures, pitch decks, and social media graphics — designed for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Big-brand quality, small-business price.",
-      ctaLabel: "Book a free brand review",
-      ctaHref: CALENDLY_URL,
-      heroImage: {
-        src: "/assets/services/graphic-design/hero.png",
-        alt: "Dark studio table covered in brand collateral and design mockups — Branding Zombie Designs graphic design in Cumming, GA",
-      },
-      microProof: "Starting at $150 · 5–10 day delivery · 30+ brands shipped",
-    },
-    painPointsEyebrow: "Sound familiar?",
-    painPointsHeadline: "Your brand looks like",
-    painPointsHighlight: "you made it yourself",
-    painPointsIntro:
-      "Customers decide whether you're worth their money in about 7 seconds. If your logo looks like a free template, your menu looks like a Word document, and your Instagram looks like a mood board, that decision is already made.",
-    painPoints: [
-      { text: "Your logo was a $50 Fiverr job and it shows — and now you can't find the source files." },
-      { text: "Your business card, website, and Instagram all use different fonts and colors like they belong to three different companies." },
-      { text: "You need a pitch deck by Tuesday and the best you've got is a PowerPoint template from 2014." },
-      { text: "Your menu looks like it was laminated at Staples — and the food is way better than the design suggests." },
-      { text: "You can't describe your brand to a contractor because you've never actually written it down anywhere." },
-    ],
-    offerEyebrow: "One engagement · A brand you can actually use",
-    offerHeadline: "Everything your brand needs to",
-    offerHighlight: "show up consistently",
-    offerSubhead:
-      "From single pieces to full identity systems. Pick what you need today, add the rest as you grow.",
-    deliverables: [
-      {
-        title: "Logo Design",
-        description:
-          "3 custom concepts, 2 revision rounds, final delivered as vector, PNG, and favicon. Not a template. Never a template.",
-      },
-      {
-        title: "Brand Identity System",
-        description:
-          "Logo, color palette, typography, voice, and usage rules — written down in a one-page brand guide you and your team can actually follow.",
-      },
-      {
-        title: "Print Collateral",
-        description:
-          "Business cards, letterhead, flyers, brochures, postcards, yard signs. All designed to the brand guide. Print-ready files on handoff.",
-      },
-      {
-        title: "Menu & Signage Design",
-        description:
-          "Restaurants, cafes, and service businesses. Print menus, QR-code menus, window signs, and wall graphics that match the brand.",
-      },
-      {
-        title: "Social Media Graphics",
-        description:
-          "Instagram templates, story highlights, Facebook covers, and campaign assets. Sized correctly, on-brand, easy for you to customize.",
-      },
-      {
-        title: "Pitch Deck & Presentations",
-        description:
-          "Investor decks, sales decks, and capabilities overviews. Designed like you're raising money from a firm that's seen 300 pitches this quarter.",
-      },
-    ],
-    gallery: {
-      title: "Brand work shipped from Cumming.",
-      description:
-        "Logos, identity systems, menus, and collateral for small businesses across North Metro Atlanta.",
-      items: [
-        {
-          id: "graphic-gallery-1",
-          title: "Restaurant Brand Identity",
-          description:
-            "Full identity system for a Forsyth County restaurant — logo, menu, signage, and social templates.",
-          href: portfolioHref,
-          image: "/assets/services/graphic-design/gallery-1.png",
-        },
-        {
-          id: "graphic-gallery-2",
-          title: "Startup Logo & Guide",
-          description:
-            "Logo mark, wordmark, palette, and 1-page brand guide for a Cumming-based service startup.",
-          href: portfolioHref,
-          image: "/assets/services/graphic-design/gallery-2.png",
-        },
-        {
-          id: "graphic-gallery-3",
-          title: "Menu & Signage System",
-          description:
-            "Printed menus, window signs, and A-frame collateral for an Alpharetta cafe.",
-          href: portfolioHref,
-          image: "/assets/services/graphic-design/gallery-3.png",
-        },
-        {
-          id: "graphic-gallery-4",
-          title: "Pitch Deck Design",
-          description:
-            "18-slide investor deck for a Georgia wellness brand — editorial typography, custom iconography.",
-          href: portfolioHref,
-          image: "/assets/services/graphic-design/gallery-4.png",
-        },
-        {
-          id: "graphic-gallery-5",
-          title: "Full Rebrand",
-          description:
-            "Complete identity refresh for a North Atlanta contractor — logo, trucks, cards, website launch.",
-          href: portfolioHref,
-          image: "/assets/services/graphic-design/gallery-5.png",
-        },
-      ],
-    },
-    processEyebrow: "How it works",
-    processHeadline: "From scattered",
-    processHighlight: "to set in stone",
-    process: [
-      {
-        step: "01",
-        title: "Discovery Call",
-        subtitle: "Free",
-        description:
-          "15 minutes to understand your business, your customers, and what makes you different from every other company in your category.",
-        icon: "ChatCircle",
-      },
-      {
-        step: "02",
-        title: "Mood & Direction",
-        description:
-          "We pull together visual references — not a Pinterest dump, but 2–3 distinct creative directions we'd actually recommend based on your strategy.",
-        icon: "Lightning",
-      },
-      {
-        step: "03",
-        title: "Design",
-        description:
-          "3 logo concepts or design variations in the direction you picked. Real mockups on real collateral, not a white background.",
-        icon: "PencilSimple",
-      },
-      {
-        step: "04",
-        title: "Refine & Deliver",
-        description:
-          "Two rounds of revisions included. Final files delivered in every format you'll ever need — vector, PNG, favicon, print-ready PDFs.",
-        icon: "Wrench",
-      },
-    ],
-    faqEyebrow: "FAQ",
-    faqHeadline: "Questions we get",
-    faqHighlight: "almost every time",
-    faqs: [
-      {
-        q: "How much does a logo cost?",
-        a: "Standalone logos start at $500. Full brand identity systems (logo + palette + typography + guide + basic collateral) start at $1,200. A simple piece of collateral like a single flyer or business card is $150. We quote transparently after the discovery call based on what you actually need.",
-      },
-      {
-        q: "How long does it take?",
-        a: "Single deliverables (a flyer, a menu, a business card) are typically 3–5 business days. Logos and brand systems run 1–2 weeks including revision rounds. Rush jobs accommodated when possible — ask on the discovery call.",
-      },
-      {
-        q: "How many revisions do I get?",
-        a: "Two rounds of revisions are included in every project. We've found that's plenty when the discovery call and mood board are done properly. Additional rounds are billed hourly if needed.",
-      },
-      {
-        q: "What file formats do I get?",
-        a: "Everything — vector (AI, SVG, EPS), raster (PNG, JPG at multiple sizes), print-ready PDF, favicon, and a simple usage guide. You own the files outright. No watermarks, no subscriptions, no surprises.",
-      },
-      {
-        q: "Can you design for print too?",
-        a: "Yes — and we can handle the actual printing through our wholesale trade accounts. See our Print Services page for the full list.",
-      },
-      {
-        q: "Do you work with restaurants and local businesses specifically?",
-        a: "A lot of our clients are restaurants, contractors, medical practices, salons, and other local service businesses in Cumming, Forsyth County, and North Metro Atlanta. We understand small-business budgets and move accordingly.",
-      },
-    ],
-    pricing: {
-      label: "Projects start at",
-      price: "$150",
-      unit: "/ piece",
-      note: "Full identity systems from $1,200. Scope confirmed on your discovery call.",
-      numericPrice: "150",
-    },
-    finalCta: {
-      eyebrow: "Ready to look like a real business",
-      headline: "First impressions happen",
-      highlightWord: "whether you're ready or not",
-      subhead:
-        "Book a free 15-minute brand review. We'll look at what you've got, tell you what's working and what's hurting you, and give you a clear recommendation — whether we end up designing it or not.",
-      ctaLabel: "Book a free brand review",
-    },
-    related: ["print-services", "web-design", "social-media"],
-    meta: {
-      seoTitle:
-        "Graphic Design & Logo Design in Cumming, GA — From $150",
-      seoDescription:
-        "Logo design, brand identity, menus & collateral for small businesses in Cumming, GA & Forsyth County. From $150. Call (786) 848-1522 for a free brand review.",
-      keywords: [
-        "graphic design Cumming GA",
-        "graphic designer Forsyth County",
-        "logo design Cumming GA",
-        "logo designer Forsyth County",
-        "logo design Atlanta",
-        "brand identity Cumming Georgia",
-        "brand identity designer Atlanta",
-        "brand guidelines Cumming GA",
-        "rebranding Cumming GA",
-        "small business branding North Atlanta",
-        "menu design Cumming GA",
-        "restaurant menu design Atlanta",
-        "pitch deck design Cumming",
-        "brochure design Forsyth County",
-        "business card design Forsyth County",
-        "freelance graphic designer Cumming",
-      ],
-      ogImage: "/assets/services/graphic-design/hero.png",
-      ogImageAlt:
-        "Graphic design and brand identity work from Branding Zombie Designs in Cumming, GA",
-    },
-    schema: {
-      serviceType: "Graphic Design",
-      category: "Graphic Design & Brand Identity Services",
-      description:
-        "Logo design, brand identity systems, print collateral, menu design, social graphics, and pitch decks for small businesses in Cumming, GA and across North Metro Atlanta. Projects from $150; full identity systems from $1,200.",
-    },
-  },
-
-  // ════════════════════════════════════════════════════════════════════════
-  // PRINT SERVICES
-  // ════════════════════════════════════════════════════════════════════════
-  {
-    slug: "print-services",
-    name: "Print Services",
+    slug: "print-design",
+    name: "Print Design",
     shortName: "Print",
-    tagline: "Cards, banners, wraps — wholesale pricing",
+    tagline: "Packaging, signage, and collateral — designed by someone who knows print",
     iconSvg: "/assets/SVG/print-services-icon.svg",
     themeAccent: "toxic",
     homeCardPrice: "from $75",
     homeCardDescription:
-      "Cards, banners, vehicle wraps. Wholesale pricing, no middleman.",
+      "Packaging, signage, and collateral designed by someone who actually knows print production.",
+    hook: "Packaging, signage, and print collateral — designed by someone who actually knows print production.",
+    whoThisIsFor: [
+      "Product brands that need label, box, or packaging design (with FDA/FTC compliance when required)",
+      "Restaurants needing menus, table tents, tablecloths, or takeout materials",
+      "Local businesses needing signage, flyers, brochures, magnets, or vehicle wraps",
+      "Anyone who's sent a 'print-ready' file to a printer only to have it rejected",
+    ],
+    categoryBands: [
+      {
+        name: "Simple",
+        priceRange: "$75–$250",
+        examples: [
+          "Business cards",
+          "Single flyer or postcard",
+          "Fridge magnet",
+          "Single social graphic",
+          "Door hanger",
+          "Appointment card",
+        ],
+        timeline: "2–4 days",
+      },
+      {
+        name: "Medium",
+        priceRange: "$300–$650",
+        examples: [
+          "Bi-fold or tri-fold brochure",
+          "Restaurant menu (1–2 pages)",
+          "Event banner or retractable display",
+          "Table tent or tablecloth",
+          "10-template social pack",
+          "Rack card / sell sheet",
+        ],
+        timeline: "4–7 days",
+      },
+      {
+        name: "Complex",
+        priceRange: "$750–$2,500",
+        examples: [
+          "CPG / supplement packaging label",
+          "Vehicle wrap design",
+          "Retractable banner stand display",
+          "Motion graphic or short-form video",
+          "Trade show booth graphics",
+          "Multi-panel packaging die",
+        ],
+        timeline: "1–3 weeks",
+      },
+      {
+        name: "Print + Source Bundle",
+        priceRange: "Design fee + 15–20% on production",
+        examples: [
+          "We design AND source the printing via Ink Spatter Studio",
+          "One invoice for design + production",
+          "Vendor-managed — we handle proofs, fulfillment, and delivery",
+          "Wholesale trade pricing passed through",
+          "Available on any of the above deliverables",
+        ],
+        timeline: "Varies by scope",
+      },
+    ],
+    calloutText:
+      "15+ years of production-ready design. Dielines printers love. File prep that doesn't come back with questions. Label experience that meets FDA/FTC compliance when it counts.",
     hero: {
-      eyebrow: "Print Services · Cumming, GA",
-      headline: "Real print, wholesale pricing,",
-      highlightWord: "no middleman",
+      eyebrow: "Print Design · Cumming, GA",
+      headline: "Designed for print,",
+      highlightWord: "not just Canva",
       subhead:
-        "Business cards, flyers, banners, yard signs, vehicle wraps, menus, stickers, and custom apparel. Designed in-house and produced through our trade accounts, so you get wholesale pricing and files your printer actually accepts. Delivered across Cumming, Forsyth County, and North Metro Atlanta.",
+        "Packaging, labels, menus, signage, brochures, vehicle wraps, and branded collateral. Designed in-house with real dielines, real CMYK, and real press experience. Printing sourced through Ink Spatter Studio when you want one invoice — or print-ready files sent to your vendor when you don't.",
       ctaLabel: "Get a print quote",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/print-services/hero.png",
-        alt: "Custom vehicle wrap and printed collateral in dark warehouse — Branding Zombie Designs print services in Cumming, GA",
+        alt: "Custom packaging label and printed collateral in a studio — Branding Zombie Designs print design in Cumming, GA",
       },
-      microProof: "From $75 · 3–7 day turnaround · Wholesale trade accounts",
+      microProof: "From $75 · 2 days to 3 weeks · 30+ brands shipped",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Print shouldn't be",
@@ -1022,28 +1026,44 @@ export const SERVICES: Service[] = [
     faqHighlight: "at every quote",
     faqs: [
       {
-        q: "Why is your pricing cheaper than my local print shop?",
-        a: "We're not a print shop — we're a design studio with wholesale trade accounts. We pass the wholesale pricing through to you plus a small production fee. You save the retail markup and get better design at the same time.",
+        q: "Do you handle printing too, or just design?",
+        a: "Both — your choice. The Print + Source Bundle means we design it AND source the printing through Ink Spatter Studio, our production arm. One invoice, we manage the vendor, you get it delivered. Or you can take the print-ready files and send them to your own vendor. Same files either way.",
+      },
+      {
+        q: "Can you design regulated product labels — supplements, food, cosmetics?",
+        a: "Yes. 15+ years of FDA/FTC-compliant label design across supplements, food, beverage, and cosmetics. Nutrition Facts and Supplement Facts panels built to spec. FDA font size, allergen disclosures, country-of-origin, and net-weight placement handled correctly the first time. This is the work we're known for.",
+      },
+      {
+        q: "Do you do dielines and print-ready files?",
+        a: "Yes. Custom dielines for packaging (boxes, labels, blisters, sleeves) built in Illustrator. Print-ready PDFs with proper bleed, trim, safety margins, CMYK color, and embedded fonts. Our files don't come back from printers with 'please fix' questions.",
+      },
+      {
+        q: "What software do you design in?",
+        a: "Adobe Illustrator for vector (logos, labels, packaging, dielines). InDesign for multi-page (brochures, menus, catalogs, guidelines). Photoshop for raster (retouching, image manipulation, composites). Also Figma when it makes sense. Source files delivered on request.",
+      },
+      {
+        q: "Why is the Print + Source bundle cheaper than my local print shop?",
+        a: "We're not a print shop — we're a design studio with wholesale trade accounts via Ink Spatter Studio. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
       },
       {
         q: "What are your minimums?",
-        a: "Most items have very low minimums: 100 business cards, 25 flyers, 1 yard sign, 1 banner, 6 t-shirts. Custom apparel minimums vary by style and decoration method (DTF vs screen print).",
+        a: "Low: 100 business cards, 25 flyers, 1 yard sign, 1 banner, 6 t-shirts. Most packaging starts at 250 units — supplement labels sometimes at 100. We quote to your volume honestly and flag when a different print method would save you money.",
       },
       {
         q: "How fast is turnaround?",
-        a: "Standard business cards and flyers ship in 3–5 business days. Banners and yard signs 5–7 days. Vehicle wraps 10–14 days including install coordination. Rush options available on most items — ask when you request a quote.",
-      },
-      {
-        q: "Do you need print-ready files, or do you design too?",
-        a: "Either works. We prefer to design in-house so we control the files and the outcome, but if you've got print-ready files that actually work, we can quote print-only. If your \u201Cprint-ready\u201D file isn't actually print-ready (it usually isn't), we can fix it for a small file-prep fee.",
+        a: "Design: 2 days (Simple) to 3 weeks (Complex packaging). Print (when sourced through us): business cards and flyers 3–5 business days; banners and signs 5–7 days; vehicle wraps 10–14 including install coordination; packaging 2–4 weeks depending on volume and finishing. Rush options usually available — just ask.",
       },
       {
         q: "Do you deliver in Cumming and Forsyth County?",
-        a: "Yes. Free local delivery within a 30-mile radius for orders over $250. For smaller orders, shipping is at cost. Anywhere outside North Metro Atlanta ships via UPS Ground.",
+        a: "Yes. Free local delivery within 30 miles on Source-bundle orders over $250. Smaller orders ship at cost. Outside North Metro Atlanta, UPS Ground. Same-day pickup in Cumming available on completed local runs.",
       },
       {
         q: "Can you handle custom apparel and embroidery?",
-        a: "Yes — screen print, DTF transfer, and embroidery on t-shirts, hoodies, polos, hats, and uniforms. Low minimums, wholesale pricing, branded to your colors and logo.",
+        a: "Yes — screen print, DTF transfer, and embroidery on t-shirts, hoodies, polos, hats, and uniforms. Low minimums, wholesale pricing, branded to your colors and logo. Included in the Simple-to-Medium category bands depending on complexity.",
+      },
+      {
+        q: "Can you work from my existing brand files?",
+        a: "Yes. If you've got a brand guide (or a logo and color palette), we design inside those rules. If you don't have one and the project is bigger than a single card, we can build a short brand sheet as part of the job — or point you to the Branding service if you want the full system.",
       },
     ],
     pricing: {
@@ -1061,12 +1081,12 @@ export const SERVICES: Service[] = [
         "Send us what you need and we'll come back with a real quote — usually within one business day. Design + print, wholesale pricing, delivered to your door.",
       ctaLabel: "Get a print quote",
     },
-    related: ["graphic-design", "web-design", "social-media"],
+    related: ["branding", "logo-design", "web-design"],
     meta: {
       seoTitle:
-        "Print Services in Cumming, GA — Cards, Banners & Vehicle Wraps",
+        "Print Design in Cumming, GA — Packaging, Labels, Signage & Collateral",
       seoDescription:
-        "Business cards, flyers, banners, yard signs, vehicle wraps, menus, and custom apparel for Cumming, GA & North Atlanta businesses. Wholesale pricing from $75.",
+        "Packaging, labels, menus, business cards, signage, and vehicle wraps for Cumming, GA & North Atlanta businesses. FDA-compliant label design, dielines, wholesale print sourcing via Ink Spatter Studio. From $75.",
       keywords: [
         "print services Cumming GA",
         "business card printing Cumming GA",
@@ -1110,22 +1130,84 @@ export const SERVICES: Service[] = [
     tagline: "Consistent content without the grind",
     iconSvg: "/assets/icon-social.svg",
     themeAccent: "cyan",
-    homeCardPrice: "$400/mo",
+    homeCardPrice: "from $699/mo",
     homeCardDescription:
-      "Show up consistently without spending nights on Instagram.",
+      "Show up consistently without spending your nights on Instagram.",
+    hook: "Show up consistently without spending your nights on Instagram.",
+    whoThisIsFor: [
+      "Local businesses whose social feed is three months stale",
+      "Brands posting randomly without a strategy or a voice",
+      "Owners who know they 'should' be posting but genuinely don't have time",
+      "DTC brands ready to treat social as a real sales channel, not an afterthought",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$699/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        deliverables: [
+          "1 platform (Instagram OR Facebook OR LinkedIn)",
+          "12 posts per month, custom-designed in your brand",
+          "Caption copy in your voice",
+          "Content calendar delivered monthly for your approval",
+          "Monthly performance report",
+        ],
+        bestFor:
+          "Local businesses keeping a consistent presence without the burn-out.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$1,299/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        isFeature: true,
+        deliverables: [
+          "2 platforms (Instagram + Facebook, or Instagram + LinkedIn, etc.)",
+          "20 posts per month — mix of grid posts, stories, and reels",
+          "DM and comment monitoring with 48-hour response SLA",
+          "Bi-weekly performance reports",
+          "Quarterly strategy + content-pillar review",
+          "One light photo shoot per quarter (existing locations)",
+        ],
+        bestFor:
+          "Businesses actively growing a social audience — where consistency compounds.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Full Management",
+        price: "$2,499/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        deliverables: [
+          "3 platforms + TikTok or YouTube Shorts",
+          "30+ posts per month including video content",
+          "Active community management — comments, DMs, tags",
+          "Paid ad management (ad spend separate to Meta/Google)",
+          "Weekly reporting + monthly strategy call",
+          "Quarterly studio shoot for fresh content",
+        ],
+        bestFor:
+          "Brands treating social as a real sales channel and wanting someone to own the whole stack.",
+        ctaLabel: "Book a strategy call",
+      },
+    ],
+    calloutText:
+      "Content designed by someone with 15+ years in CPG and ecommerce design — not recycled Canva templates.",
     hero: {
       eyebrow: "Social Media · Cumming, GA",
       headline: "Show up consistently without",
       highlightWord: "losing your nights to Instagram",
       subhead:
-        "Done-for-you content creation, scheduling, and community management for Instagram, Facebook, and TikTok — for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Real content, real engagement, in your voice.",
+        "Done-for-you content creation, scheduling, and community management for Instagram, Facebook, LinkedIn, and TikTok — for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Real content, real engagement, in your voice.",
       ctaLabel: "Book a free content audit",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/social-media/hero.png",
         alt: "Dark editorial Instagram content grid floating in 3D — Branding Zombie Designs social media in Cumming, GA",
       },
-      microProof: "$400/mo · 12 posts per month · No contracts",
+      microProof: "From $699/mo · Month-to-month · 30+ brands built up",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your feed looks",
@@ -1262,36 +1344,52 @@ export const SERVICES: Service[] = [
     faqHighlight: "ask before they sign up",
     faqs: [
       {
-        q: "What's included in the $400/month plan?",
-        a: "12 designed and scheduled posts per month across Instagram and Facebook, 4 story posts per week, 2 short-form videos per month, comment/DM monitoring, and a monthly performance report. All in your brand, approved by you before anything publishes.",
+        q: "Which platforms do you support?",
+        a: "Instagram, Facebook, LinkedIn, TikTok, and Pinterest. Starter covers one platform of your choice; Growth covers two; Full Management covers three plus TikTok or YouTube Shorts. We don't push every platform on every business — we recommend where your customers actually are.",
       },
       {
-        q: "Which platforms do you cover?",
-        a: "Instagram and Facebook come standard. TikTok, LinkedIn, and YouTube Shorts can be added for $150/month each — we don't force them on you because not every business needs every platform.",
-      },
-      {
-        q: "Is there a contract?",
-        a: "No long-term contract. Month-to-month. 30 days notice to cancel. We'd rather earn your business each month than lock you in.",
+        q: "Do I need to provide photos?",
+        a: "Helpful, not required. Growth tier includes one light photo shoot per quarter of your existing locations, products, or team. Full Management includes a full quarterly studio shoot. We can also design graphics, infographics, and motion-graphic content from scratch when you don't have imagery to pull from.",
       },
       {
         q: "Who writes the captions?",
-        a: "We do, in your voice. You give us a voice sample during onboarding (or we figure it out from your existing content), and then every caption gets approved by you before it goes live. You never wake up to something you didn't sign off on.",
+        a: "We do, in your voice. Onboarding includes a short voice-sample interview (or we reverse-engineer from your existing best posts). Every month, you see the whole calendar and approve captions before anything publishes. No midnight surprises.",
       },
       {
-        q: "Do you provide photography?",
-        a: "Basic product and service photography is included — we'll come by once a quarter to shoot. Custom shoots, food photography, or lifestyle shoots are billed separately based on scope.",
+        q: "Can you respond to comments and DMs?",
+        a: "Yes — Growth tier and above. We monitor with a 48-hour response SLA on Growth, same-day on Full Management. We'll agree on boundaries at kickoff (what we answer, what gets escalated, what tone to hold) so nothing goes sideways.",
       },
       {
-        q: "Can you run ads too?",
-        a: "Yes, but it's billed separately. Ad management starts at $300/month on top of organic content, plus ad spend. We recommend 3 months of consistent organic content before layering in paid.",
+        q: "What's included in \"ad management\" on Full Management?",
+        a: "Campaign strategy, audience setup, creative production, pixel + conversion tracking, weekly optimization, and monthly reporting. Ad spend is paid separately directly to Meta, Google, TikTok, or LinkedIn — we never mark it up. As a rule of thumb, most local businesses start with $500–$2,000/mo in spend on top of our fee.",
+      },
+      {
+        q: "Is there a contract?",
+        a: "No long-term lock-in. Month-to-month, 30 days notice to cancel. Social is a relationship, and we'd rather earn the next month than hold you hostage for twelve.",
+      },
+      {
+        q: "How long until I see results?",
+        a: "Consistency shows up in reach at 30 days, engagement at 60, and follower growth at 90. Local businesses often see bookings from social in month 2 once the algorithm recognizes the consistency. If nothing is moving by month 3, something's wrong and we'll name it honestly.",
+      },
+      {
+        q: "What if I hate the first month of content?",
+        a: "The first 30 days are a calibration period — we over-communicate, you over-correct, and we hit voice + visual by month 2. If after month 1 you want out, you cancel and keep every piece of content we made. No hostage-taking, no argument.",
+      },
+      {
+        q: "Can you help with TikTok even if we've never touched it?",
+        a: "Yes. TikTok is in Full Management. We handle account setup, content format strategy, trending-audio awareness, and editing — you don't need to dance or be on camera unless you want to. Local businesses are consistently under-indexed on TikTok and that's opportunity.",
+      },
+      {
+        q: "Do I own the content if we stop working together?",
+        a: "Yes. Every asset we design, every caption we write, every edited photo — yours. Delivered in a shared drive at the end of each month. If you ever leave, you take the whole archive.",
       },
     ],
     pricing: {
       label: "Monthly plans start at",
-      price: "$400",
+      price: "$699",
       unit: "/ month",
-      note: "No contract. 30 days notice to cancel. Custom scopes quoted on the discovery call.",
-      numericPrice: "400",
+      note: "Month-to-month. Growth at $1,299 and Full Management at $2,499 cover more platforms, video, community management, and ads. Also available: one-time Strategy + 90-day Content Calendar — $499.",
+      numericPrice: "699",
     },
     finalCta: {
       eyebrow: "Ready to stop ghosting your feed",
@@ -1301,12 +1399,12 @@ export const SERVICES: Service[] = [
         "Book a free 20-minute content audit. We'll look at your current feeds, your competitors, and what your audience actually wants — and give you an honest plan either way.",
       ctaLabel: "Book a free content audit",
     },
-    related: ["graphic-design", "ai-workflows", "web-design"],
+    related: ["logo-design", "ai-workflows", "web-design"],
     meta: {
       seoTitle:
-        "Social Media Management in Cumming, GA — $400/month",
+        "Social Media Management in Cumming, GA — From $699/mo",
       seoDescription:
-        "Done-for-you Instagram, Facebook & TikTok content for small businesses in Cumming, GA & Forsyth County. $400/month. Call (786) 848-1522 for a free audit.",
+        "Done-for-you Instagram, Facebook, LinkedIn, and TikTok content for small businesses in Cumming, GA & Forsyth County. Starter $699/mo · Growth $1,299/mo · Full Management $2,499/mo. Call (770) 744-2536.",
       keywords: [
         "social media management Cumming GA",
         "social media marketing Forsyth County",
@@ -1338,12 +1436,72 @@ export const SERVICES: Service[] = [
     slug: "ecommerce",
     name: "Ecommerce",
     shortName: "Ecom",
-    tagline: "Shopify stores that actually convert",
+    tagline: "Shopify stores built to actually move product",
     iconSvg: "/assets/icon-ecommerce.svg",
     themeAccent: "neon",
     homeCardPrice: "from $3,000",
     homeCardDescription:
-      "Selling online without the tech stress. We handle Shopify or custom.",
+      "Selling online without the tech stress. Shopify, WooCommerce, or custom — we handle it.",
+    hook: "Selling online without the tech stress. Shopify, WooCommerce, or custom — we handle it.",
+    whoThisIsFor: [
+      "Product brands launching their first real online store",
+      "Service businesses selling digital products, bookings, or gift cards",
+      "Businesses graduating from Etsy, Square, or Marketplaces to their own storefront",
+      "Shops stuck on a Shopify theme that looks like everyone else's and won't convert",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$3,000",
+        timeline: "3 weeks",
+        deliverables: [
+          "Shopify or WooCommerce setup + launch",
+          "Up to 25 products loaded with SEO-ready copy",
+          "Theme customized to your brand (not a stock template)",
+          "Payment gateway + tax + shipping configured",
+          "Basic on-page SEO + GA4 event tracking",
+          "Launch training + written cheat sheet",
+        ],
+        bestFor:
+          "Small product lines getting online fast without overbuilding.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$5,500",
+        timeline: "4 weeks",
+        isFeature: true,
+        deliverables: [
+          "Up to 100 products, fully custom theme (never a stock skin)",
+          "Klaviyo email flows — welcome, abandoned cart, post-purchase",
+          "Conversion rate optimization — CTAs, trust blocks, reviews, upsell",
+          "Product photo retouching — up to 40 images cleaned and sized",
+          "Abandoned cart recovery + checkout optimization",
+          "30-day post-launch tuning window",
+        ],
+        bestFor:
+          "DTC brands building a real direct-to-consumer channel.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Premium",
+        price: "$8,500+",
+        timeline: "5–8 weeks",
+        deliverables: [
+          "Unlimited products + multi-collection architecture",
+          "Custom functionality — subscriptions, bundles, quizzes, gifting",
+          "Advanced analytics + A/B testing setup",
+          "Wholesale / B2B portal with tiered pricing",
+          "3D product visualization (Blender) where it helps sell",
+          "60 days of post-launch support + performance tuning",
+        ],
+        bestFor:
+          "Brands scaling DTC, launching subscription, or adding a wholesale channel.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "Klaviyo-certified. Shopify Partner. 30+ brands launched — from single-SKU garage startups to brands doing real volume across DTC and wholesale.",
     hero: {
       eyebrow: "Ecommerce · Cumming, GA",
       headline: "Sell online without",
@@ -1493,28 +1651,44 @@ export const SERVICES: Service[] = [
     faqHighlight: "always ask",
     faqs: [
       {
-        q: "Shopify or BigCommerce?",
-        a: "For most small businesses in Cumming and North Atlanta, Shopify is the right call — easier to run day-to-day, bigger app ecosystem, better themes. BigCommerce is better if you need more complex B2B pricing, multi-storefront, or no transaction fees at higher volume. We recommend on the discovery call based on what fits you best.",
+        q: "Shopify vs WooCommerce vs custom — which is right for me?",
+        a: "For most small businesses in Cumming and North Atlanta, Shopify wins — easier day-to-day, bigger app ecosystem, better themes, faster launch. WooCommerce wins if you're already deep in WordPress or need total control over every checkout byte. Custom only when you're doing something genuinely unusual. We recommend on the discovery call based on what you're actually trying to sell.",
       },
       {
         q: "Can you migrate my existing store?",
-        a: "Yes. We migrate from Etsy, Square, Wix, WooCommerce, Squarespace, and custom platforms. Products, customers, orders, and URLs (with proper 301 redirects so you don't lose SEO). Migration is usually $1,000–$2,500 on top of the build depending on catalog size.",
+        a: "Yes. We migrate from Etsy, Square, Wix, WooCommerce, Squarespace, BigCommerce, and custom platforms. Products, customers, orders, and URLs — with proper 301 redirects so you don't lose SEO. Migration fee usually $1,000–$2,500 on top of the build, depending on catalog size and data hygiene.",
       },
       {
-        q: "What does a Shopify build cost?",
-        a: "Starter builds (custom theme + up to 50 products + checkout) start at $3,000. More complex stores (subscriptions, B2B, multi-location, custom functionality) run $5,000–$10,000. We scope transparently after the discovery call — no padding.",
+        q: "What does a Shopify build actually cost?",
+        a: "Starter (25 products, custom theme, full launch) is $3,000. Growth (100 products + Klaviyo flows + CRO) is $5,500 — our most popular tier. Premium (subscriptions, wholesale, B2B, custom functionality) starts at $8,500. Every tier is flat-priced, no hourly surprises. Discovery call is free.",
       },
       {
-        q: "Do I need to provide product photos?",
-        a: "Yes, but we can help. Basic product shots (you send products, we photograph) run $25/product. Lifestyle photography and editorial shoots are quoted separately. Or if you've got decent phone shots, we can edit them to look consistent.",
+        q: "Do you handle product photography?",
+        a: "Yes — two paths. Traditional studio photography for product shots (you ship us samples, we shoot) runs $25–$75 per image depending on complexity. Or, where it makes sense, we do 3D product visualization in Blender — especially useful for packaging mockups, color variants, or products that don't physically exist yet. That's unusual in our market and it's a real differentiator.",
+      },
+      {
+        q: "What about email marketing setup?",
+        a: "Yes. Klaviyo and Mailchimp are both in scope. Growth tier includes three core flows configured — welcome series, abandoned cart recovery, and post-purchase. Premium expands into segmentation, win-back, and replenishment flows. Ad spend and subscription fees are separate.",
+      },
+      {
+        q: "Can you do subscriptions, bundles, or quizzes?",
+        a: "Yes. Subscription boxes via Recharge or Shopify Subscriptions. Bundle + upsell via Bold or native Shopify. Quiz-driven product recommendations via Octane AI or a custom build. These sit in the Premium tier — they pay for themselves fast when executed right.",
+      },
+      {
+        q: "Can you set up a wholesale or B2B portal?",
+        a: "Yes. Tiered pricing, gated collections, net-30 terms, minimum order quantities, buyer-specific catalogs, the works. Shopify Plus has this built in; on regular Shopify we use apps like Wholesale Gorilla or a custom-coded portal. Scoped in Premium.",
       },
       {
         q: "How does sales tax work?",
-        a: "We set up automated sales tax through Shopify Tax or TaxJar on launch. It handles the rates automatically. You still need to register for sales tax permits in the states where you have nexus — we'll explain that and point you to an accountant if you don't have one.",
+        a: "Automated through Shopify Tax or TaxJar on launch — rates, remittance rules, and marketplace-facilitator handling all wired in. You still need to register for sales tax permits in the states where you have nexus; we explain that on launch and point you to an accountant if you don't have one.",
       },
       {
         q: "Will you help me run the store after launch?",
-        a: "Yes. Monthly care plans start at $200/month and cover theme updates, product additions, content changes, performance monitoring, and minor customizations. Or you can run it yourself — the training and cheat sheet make that doable.",
+        a: "Yes. Monthly care plans from $200/month cover theme updates, product additions, content changes, performance monitoring, and minor customizations. Month-to-month, cancel anytime. Or run it yourself — the training and written cheat sheet make that genuinely doable.",
+      },
+      {
+        q: "How is this different from a $99/month Shopify template or a $399 Shopify Launchpad agency?",
+        a: "Templates get you a store; they don't get you conversions. Templated agencies run hundreds of stores on the same five themes — yours will look like four other companies in your category. We build custom, we know Klaviyo, and we've launched 30+ brands including real DTC winners. When that math doesn't work for you, we'll say so on the call.",
       },
     ],
     pricing: {
@@ -1532,12 +1706,12 @@ export const SERVICES: Service[] = [
         "Book a free 20-minute store audit. We'll look at what you've got, tell you what platform fits, and give you a clear price and timeline — whether we build it or you do.",
       ctaLabel: "Book a free store audit",
     },
-    related: ["web-design", "ai-workflows", "graphic-design"],
+    related: ["web-design", "ai-workflows", "logo-design"],
     meta: {
       seoTitle:
-        "Shopify Ecommerce Developer in Cumming, GA — From $3,000",
+        "Shopify & Ecommerce Developer in Cumming, GA — From $3,000",
       seoDescription:
-        "Custom Shopify & BigCommerce store design for small businesses in Cumming, GA & North Atlanta. Catalog, checkout, payments, launch. From $3,000. Call (786) 848-1522.",
+        "Custom Shopify & WooCommerce stores for small businesses in Cumming, GA & North Atlanta. Catalog, checkout, Klaviyo flows, subscriptions, wholesale. Starter $3,000 · Growth $5,500 · Premium $8,500+. Call (770) 744-2536.",
       keywords: [
         "Shopify ecommerce Georgia",
         "Shopify designer Cumming GA",
@@ -1562,6 +1736,904 @@ export const SERVICES: Service[] = [
       category: "Ecommerce Development Services",
       description:
         "Custom Shopify and BigCommerce store design and development for small businesses in Cumming, GA and across North Metro Atlanta — theme design, catalog setup, checkout optimization, payment integration, and launch training. Builds from $3,000.",
+    },
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // LOGO DESIGN
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    slug: "logo-design",
+    name: "Logo Design",
+    shortName: "Logo",
+    tagline: "A logo that earns a second look — not a second draft",
+    iconSvg: "/assets/SVG/graphic-design-icon.svg",
+    themeAccent: "neon",
+    homeCardPrice: "from $750",
+    homeCardDescription:
+      "A real identity for your business — not a Fiverr logo or an AI generator mistake.",
+    hook: "A logo that earns a second look — not a second draft.",
+    whoThisIsFor: [
+      "Startups and new businesses that need a real mark — not a generator logo",
+      "Established businesses whose logo is showing its age",
+      "Anyone who's been burned by Fiverr and wants it done right the first time",
+      "Founders prepping for print, signage, or a site launch and tired of the placeholder",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$750",
+        timeline: "7 days",
+        deliverables: [
+          "Single logo mark (primary lockup)",
+          "2 concept directions to pick from",
+          "2 rounds of revision on the chosen direction",
+          "Full file package — PNG, JPG, SVG, PDF in color and mono",
+        ],
+        bestFor:
+          "New businesses that need a clean, professional mark without overbuilding the identity.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$1,500",
+        timeline: "10 days",
+        isFeature: true,
+        deliverables: [
+          "Full logo suite — primary, secondary, icon, horizontal, and stacked",
+          "3 concept directions to pick from",
+          "Unlimited revisions on the chosen direction",
+          "Every file format you'll ever need — and a handful you won't",
+          "Basic style sheet — color hex codes and typography",
+        ],
+        bestFor:
+          "Businesses that need a logo to work across signage, web, social, packaging, and print without compromise.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Premium",
+        price: "$2,500",
+        timeline: "14 days",
+        deliverables: [
+          "Everything in Growth",
+          "Custom typography exploration — a wordmark that isn't on Google Fonts",
+          "8–10 page mini brand guide",
+          "Social avatar set (IG, FB, LinkedIn, TikTok, YouTube)",
+          "Favicon + app icon",
+          "Printed mockups on real collateral (cards, shirts, signage)",
+        ],
+        bestFor:
+          "Brands that want a polished, distinctive identity that feels considered from day one.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "30+ brands launched across CPG, retail, restaurants, service, and DTC. A logo from someone who knows how it has to work at 1200px on a website — and at 1 inch on a business card.",
+    hero: {
+      eyebrow: "Logo Design · Cumming, GA",
+      headline: "A logo that",
+      highlightWord: "earns a second look",
+      subhead:
+        "Custom logo design for startups and small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Real concepts from a human. Full file packages. No AI generators, no Fiverr templates, no regrets.",
+      ctaLabel: "Book a free logo consultation",
+      ctaHref: CALENDLY_URL,
+      heroImage: {
+        src: "/assets/services/logo-design/hero.png",
+        alt: "Logo design sketches and vector explorations on a dark editorial desk — Branding Zombie Designs in Cumming, GA",
+      },
+      microProof: "From $750 · 7–14 day delivery · 30+ brands launched",
+    },
+    painPointsEyebrow: "Sound familiar?",
+    painPointsHeadline: "Your logo is",
+    painPointsHighlight: "holding you back",
+    painPointsIntro:
+      "A weak logo isn't just a visual problem. It's a trust problem. Customers clock it in the first half-second and their wallet gets five seconds slower.",
+    painPoints: [
+      { text: "You bought a $50 logo on Fiverr and every time you see it on a business card, you wince." },
+      { text: "You paid ChatGPT or Midjourney to 'design' something and your logo has six fingers." },
+      { text: "Your logo looked fine on your first flyer and horrible the minute you had to put it on a shirt." },
+      { text: "Your current mark is fifteen years old and nobody under forty is taking you seriously." },
+      { text: "You've got a beautiful business and a logo that looks like a clip-art placeholder." },
+    ],
+    offerEyebrow: "What you get",
+    offerHeadline: "A real mark,",
+    offerHighlight: "built to hold up",
+    offerSubhead:
+      "Every logo project starts with the business, not the mood board. We figure out what your customers see first, what they remember, and what sets you apart — then we design a mark that carries that into every place your brand shows up.",
+    deliverables: [
+      {
+        title: "Real Design, No Generators",
+        description:
+          "Every concept is drawn from scratch in vector software by a human with 15+ years doing this. No AI, no templates, no recycled marks.",
+      },
+      {
+        title: "Multiple Concepts",
+        description:
+          "You pick from real options — not one direction we hope you like. 2 on Starter, 3 on Growth and Premium.",
+      },
+      {
+        title: "Full File Package",
+        description:
+          "PNG, JPG, SVG, PDF. Color, mono, and reverse. Print-ready and web-ready. Delivered in a single organized folder.",
+      },
+      {
+        title: "Variations That Actually Work",
+        description:
+          "Primary lockup, stacked, horizontal, icon-only, wordmark-only. So your logo works on signage and on a tiny social avatar.",
+      },
+      {
+        title: "Full Ownership",
+        description:
+          "Full rights transferred on final payment. Trademark, reproduce, resell the business — the logo is yours, period.",
+      },
+      {
+        title: "Clear Revision Process",
+        description:
+          "Starter gets 2 rounds, Growth and Premium are unlimited on the chosen direction. Scope is clear upfront so nobody loses their mind.",
+      },
+    ],
+    gallery: {
+      title: "Marks we've launched from Cumming.",
+      description:
+        "Logos for restaurants, retail, supplements, service businesses, and DTC brands across North Atlanta and beyond.",
+      items: [
+        {
+          id: "logo-gallery-1",
+          title: "Restaurant Identity",
+          description:
+            "Full logo suite for a family-owned diner — primary mark, menu lockup, and signage adaptation.",
+          href: portfolioHref,
+          image: "/assets/services/logo-design/gallery-1.png",
+        },
+        {
+          id: "logo-gallery-2",
+          title: "Local Tech Brand",
+          description:
+            "Custom wordmark + icon for a Cumming-based custom PC builder — bold, angular, merchandise-ready.",
+          href: portfolioHref,
+          image: "/assets/services/logo-design/gallery-2.png",
+        },
+        {
+          id: "logo-gallery-3",
+          title: "CPG Supplement Mark",
+          description:
+            "Shelf-ready logo system for a supplement brand — primary, icon, and label-safe variants.",
+          href: portfolioHref,
+          image: "/assets/services/logo-design/gallery-3.png",
+        },
+        {
+          id: "logo-gallery-4",
+          title: "Service Business Refresh",
+          description:
+            "Rebrand for a North Atlanta contractor — modernized without losing the original equity.",
+          href: portfolioHref,
+          image: "/assets/services/logo-design/gallery-4.png",
+        },
+        {
+          id: "logo-gallery-5",
+          title: "Streetwear Wordmark",
+          description:
+            "Custom typographic wordmark for a streetwear label — tight letterforms designed to live on garments.",
+          href: portfolioHref,
+          image: "/assets/services/logo-design/gallery-5.png",
+        },
+      ],
+    },
+    processEyebrow: "How it works",
+    processHeadline: "From brief",
+    processHighlight: "to files delivered",
+    process: [
+      {
+        step: "01",
+        title: "Brief",
+        subtitle: "Free",
+        description:
+          "A 30-minute call covers your business, customers, competitors, and the gut-feeling words that should come to mind when someone sees your mark.",
+        icon: "ChatCircle",
+      },
+      {
+        step: "02",
+        title: "Concepts",
+        description:
+          "2–3 real directions, each with rationale — not 'here are ten fonts on a circle.' You pick the one that feels right for the business, not the one your cousin liked.",
+        icon: "Lightning",
+      },
+      {
+        step: "03",
+        title: "Refine",
+        description:
+          "Chosen direction gets refined through rounds of revision — weight, spacing, proportion, color. We stop when it's right, not when we hit the clock.",
+        icon: "PencilSimple",
+      },
+      {
+        step: "04",
+        title: "Deliver",
+        description:
+          "Full file package in a tidy folder. Color, mono, print-ready, web-ready, transparency everywhere you need it. Plus the bonus deliverables at the Growth and Premium tiers.",
+        icon: "RocketLaunch",
+      },
+    ],
+    faqEyebrow: "FAQ",
+    faqHeadline: "Questions people ask",
+    faqHighlight: "right before they book",
+    faqs: [
+      {
+        q: "How is this different from a $50 logo on Fiverr?",
+        a: "A Fiverr logo is a gig-economy mashup — fast, cheap, and usually recycled across twelve other businesses without you knowing. Here you're paying for fifteen-plus years of real launches, 2–3 custom concepts drawn by a human, a real revision process, and a mark that was designed specifically for your business. You can absolutely get cheaper. You cannot usually get different.",
+      },
+      {
+        q: "Do I own the logo after you design it?",
+        a: "Yes — full rights transferred on final payment. Trademark it, sell the business with it, put it on a billboard. It's yours, no royalties, no licensing fees, no fine print.",
+      },
+      {
+        q: "What if I don't like any of the concepts?",
+        a: "It's rare, but it happens. The brief phase is specifically designed to prevent it — we align on direction words and visual mood before we design anything. If we still miss, we do one more round of concepts at no charge. If we miss twice, we refund 50% of the deposit and wish you well.",
+      },
+      {
+        q: "Can I upgrade to a full brand package later?",
+        a: "Yes. If you start with Starter or Growth and later want a full brand identity (colors, typography, guidelines, collateral), we credit your logo fee toward the Branding service. You're never paying for work twice.",
+      },
+      {
+        q: "How many revisions do I get?",
+        a: "Starter: 2 rounds of revision on your chosen concept. Growth and Premium: unlimited on the chosen direction. Revisions are on the picked direction — not starting over with a new concept after round 3, which is how scope creep kills logo projects.",
+      },
+      {
+        q: "How fast can you actually turn this around?",
+        a: "Starter: 7 days from brief to final files. Growth: 10 days. Premium: 14 days. Rush timelines (48–72 hours) are available for a 50% rush fee if you've got a signage deadline or a pitch.",
+      },
+      {
+        q: "Will I get a trademark-ready logo?",
+        a: "We design for trademarkability — distinctive, not generic — but we don't do the trademark filing itself. We can refer you to a trademark attorney in North Atlanta if you want to pursue registration.",
+      },
+      {
+        q: "What file formats do I get?",
+        a: "SVG and PDF (vector, scale infinitely), PNG with transparent background (web and digital), JPG (email attachments, Office docs), and EPS if your print vendor asks for it. Color, mono/black, and reverse/white versions of each.",
+      },
+      {
+        q: "Can you redesign my existing logo instead of starting from scratch?",
+        a: "Yes. Logo refresh is a common project — we keep what has equity (color, silhouette, letterforms) and modernize what's dated. Usually quoted at the Growth tier. If the existing mark has no equity worth keeping, we'll tell you and scope a full redesign.",
+      },
+      {
+        q: "I've been burned by a cheap logo before. How do I know this will be different?",
+        a: "Two ways. One: see the work at /#portfolio — 30+ brands launched across industries, with real URLs and real marks. Two: the 30-minute discovery brief is free. If after that call you don't believe we're the right fit, you don't owe a dollar.",
+      },
+    ],
+    pricing: {
+      label: "Logo projects start at",
+      price: "$750",
+      unit: "/ project",
+      note: "Growth at $1,500 is our most requested tier. Premium at $2,500 includes a mini brand guide and printed mockups.",
+      numericPrice: "750",
+    },
+    finalCta: {
+      eyebrow: "Ready for a logo that actually works",
+      headline: "Stop apologizing for your old logo.",
+      highlightWord: "Start showing up like the brand you are.",
+      subhead:
+        "Book a free 30-minute brief. Walk away with a clear plan, a clear timeline, and a clear price — whether we end up designing it or not.",
+      ctaLabel: "Book a free logo consultation",
+    },
+    related: ["branding", "web-design", "print-design"],
+    meta: {
+      seoTitle: "Logo Design in Cumming, GA — From $750",
+      seoDescription:
+        "Custom logo design for small businesses in Cumming, GA & Forsyth County. No templates, no generators — 30+ brands launched. Starter $750 · Growth $1,500 · Premium $2,500. Call (770) 744-2536.",
+      keywords: [
+        "logo design Cumming GA",
+        "custom logo designer Forsyth County",
+        "small business logo design Georgia",
+        "logo designer North Atlanta",
+        "professional logo Cumming",
+      ],
+      ogImage: "/assets/services/logo-design/hero.png",
+      ogImageAlt:
+        "Custom logo design for small businesses in Cumming, GA — Branding Zombie Designs",
+    },
+    schema: {
+      serviceType: "Logo Design",
+      category: "Logo & Identity Design",
+      description:
+        "Custom logo design for startups and small businesses in Cumming, GA and across North Metro Atlanta — primary marks, full logo suites, custom typography, and mini brand guides. Real concepts from a human designer with 15+ years in the trenches. From $750.",
+    },
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // BRANDING (FULL IDENTITY)
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    slug: "branding",
+    name: "Branding",
+    shortName: "Brand",
+    tagline: "A complete identity — logo, colors, voice, and the rules that hold it together",
+    iconSvg: "/assets/SVG/graphic-design-icon.svg",
+    themeAccent: "neon",
+    homeCardPrice: "from $2,500",
+    homeCardDescription:
+      "A full brand identity — not just a logo. Colors, voice, typography, and the guidelines that keep it consistent.",
+    hook: "A complete brand identity — logo, colors, voice, and the rules that keep it all consistent.",
+    whoThisIsFor: [
+      "Founders launching a new product or service brand",
+      "Small businesses tired of looking inconsistent across touchpoints",
+      "Companies preparing to scale — and needing guidelines in place before they do",
+      "Restaurants, salons, and service businesses that want to look like a brand, not a storefront",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$2,500",
+        timeline: "2 weeks",
+        deliverables: [
+          "Full logo suite (from Logo Growth tier)",
+          "Color palette — primary, secondary, accents (with hex, CMYK, Pantone)",
+          "Typography system — display, body, and fallback web fonts",
+          "1-page brand sheet — the one-pager your team can share",
+        ],
+        bestFor:
+          "Solo operators and micro-businesses that need a consistent look across a handful of touchpoints.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$4,500",
+        timeline: "3 weeks",
+        isFeature: true,
+        deliverables: [
+          "Everything in Starter",
+          "10–15 page brand guidelines document",
+          "Brand voice + messaging guide (tone, do's and don'ts, sample copy)",
+          "3 collateral templates — business card, letterhead, and one social template",
+          "Reusable Figma or Canva library for your team",
+        ],
+        bestFor:
+          "Small businesses ready to scale their visual presence without it fracturing along the way.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Premium",
+        price: "$7,500+",
+        timeline: "4–6 weeks",
+        deliverables: [
+          "Everything in Growth",
+          "Brand strategy — positioning, audience definition, messaging framework",
+          "20+ page comprehensive guidelines document",
+          "6+ collateral assets (pick from cards, postcards, packaging, presentation deck, social, email)",
+          "Launch support — rollout plan + asset templates for the first 90 days",
+        ],
+        bestFor:
+          "Growing brands with funding, multiple stakeholders, or scaling plans that need the strategy and the system.",
+        ctaLabel: "Book a scoping call",
+      },
+    ],
+    calloutText:
+      "Built by a creative director with 15+ years across CPG, retail, restaurants, and service businesses — a system that holds up when your business grows faster than your design team.",
+    hero: {
+      eyebrow: "Branding · Cumming, GA",
+      headline: "Look like a brand,",
+      highlightWord: "not a side project",
+      subhead:
+        "Full brand identity for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Logo, colors, voice, typography, and the guidelines that keep everything consistent when you're not the one making the next asset.",
+      ctaLabel: "Book a free brand review",
+      ctaHref: CALENDLY_URL,
+      heroImage: {
+        src: "/assets/services/branding/hero.png",
+        alt: "Brand identity system pages and collateral mockups — Branding Zombie Designs in Cumming, GA",
+      },
+      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
+    },
+    painPointsEyebrow: "Sound familiar?",
+    painPointsHeadline: "Your brand looks like",
+    painPointsHighlight: "five different companies",
+    painPointsIntro:
+      "You've got a logo. A website. A Facebook page. A storefront. Business cards from 2019. And none of them feel like they belong to the same business — because they don't, not really.",
+    painPoints: [
+      { text: "Your website, your Instagram, and your business card use three different versions of your logo." },
+      { text: "You can't answer the question 'what colors is your brand' without looking at something." },
+      { text: "Every new piece of collateral starts from scratch because you can't find the file from last time." },
+      { text: "You hired a new designer and they asked 'what's your brand' and you realized you had no good answer." },
+      { text: "Your business is growing and the visual inconsistency is starting to look like a tell." },
+    ],
+    offerEyebrow: "What you get",
+    offerHeadline: "A system,",
+    offerHighlight: "not a mood board",
+    offerSubhead:
+      "Branding isn't a logo plus three mood-board images. It's the operating manual for how your business shows up in the world — written down, easy to use, impossible to misinterpret.",
+    deliverables: [
+      {
+        title: "Full Logo Suite",
+        description:
+          "Primary, secondary, icon, and wordmark variations. Delivered across color, mono, and reverse. Ready for every medium you'll ever use.",
+      },
+      {
+        title: "Color System",
+        description:
+          "Primary, secondary, and accent colors. Hex for web, CMYK for print, Pantone for branded merch. Plus guidance on when to use which.",
+      },
+      {
+        title: "Typography System",
+        description:
+          "Display and body pairings. Web-safe fallbacks. A hierarchy for headlines, body, captions, and CTAs — so every page you ever make looks like it belongs.",
+      },
+      {
+        title: "Brand Voice Guide",
+        description:
+          "How your brand talks. Tone words, do's and don'ts, example copy. The thing you hand a new hire or a freelancer so they don't write something that sounds like three other companies.",
+      },
+      {
+        title: "Collateral Templates",
+        description:
+          "Business cards, letterhead, social post templates, and more at Growth and Premium. Editable in Figma or Canva so your team can run with them.",
+      },
+      {
+        title: "Written Guidelines",
+        description:
+          "A proper PDF guide — 10–15 pages at Growth, 20+ at Premium. Logo usage, spacing, clear space, color pairings, photography style, what never to do. The document that saves you every future argument.",
+      },
+    ],
+    gallery: {
+      title: "Brand systems we've built from Cumming.",
+      description:
+        "Full identity systems for CPG, retail, restaurants, service businesses, and DTC brands.",
+      items: [
+        {
+          id: "brand-gallery-1",
+          title: "Supplement Brand Identity",
+          description:
+            "Complete brand system for a supplement label — logo suite, color palette, typography, and 20-page guidelines.",
+          href: portfolioHref,
+          image: "/assets/services/branding/gallery-1.png",
+        },
+        {
+          id: "brand-gallery-2",
+          title: "Restaurant Rebrand",
+          description:
+            "Brand refresh for a family-owned restaurant — new identity, menu system, signage, and social templates.",
+          href: portfolioHref,
+          image: "/assets/services/branding/gallery-2.png",
+        },
+        {
+          id: "brand-gallery-3",
+          title: "Streetwear Launch",
+          description:
+            "Full brand system for a streetwear label — logo, typography, color, photography direction, and merch templates.",
+          href: portfolioHref,
+          image: "/assets/services/branding/gallery-3.png",
+        },
+        {
+          id: "brand-gallery-4",
+          title: "Service Business System",
+          description:
+            "Brand refresh for a North Atlanta service business — modernized mark, voice guidelines, and vehicle wrap design.",
+          href: portfolioHref,
+          image: "/assets/services/branding/gallery-4.png",
+        },
+        {
+          id: "brand-gallery-5",
+          title: "DTC Ecommerce Brand",
+          description:
+            "Brand identity + ecommerce-ready asset kit for a DTC brand — packaging templates, social kit, email templates.",
+          href: portfolioHref,
+          image: "/assets/services/branding/gallery-5.png",
+        },
+      ],
+    },
+    processEyebrow: "How it works",
+    processHeadline: "From scattered assets",
+    processHighlight: "to one coherent system",
+    process: [
+      {
+        step: "01",
+        title: "Brand Brief",
+        subtitle: "Free",
+        description:
+          "A 45-minute working session. We cover your business, customers, competitors, current state, and where you want this brand to be in two years. Real answers, no mood-board fluff.",
+        icon: "ChatCircle",
+      },
+      {
+        step: "02",
+        title: "Strategy",
+        description:
+          "Positioning, audience, messaging, voice. The thinking happens before the design — so what we make is grounded in something you can defend in a meeting.",
+        icon: "Lightning",
+      },
+      {
+        step: "03",
+        title: "System Design",
+        description:
+          "Logo suite, colors, typography, brand voice, collateral. Every decision logged in the guidelines doc as we go, so we're not re-explaining choices at handoff.",
+        icon: "PencilSimple",
+      },
+      {
+        step: "04",
+        title: "Guidelines & Handoff",
+        description:
+          "Finished guidelines PDF + all source files + a one-page cheat sheet your team can print and pin up. We walk you through the system so you can actually use it.",
+        icon: "RocketLaunch",
+      },
+    ],
+    faqEyebrow: "FAQ",
+    faqHeadline: "Questions founders ask",
+    faqHighlight: "before they commit",
+    faqs: [
+      {
+        q: "Why do I need 'brand guidelines' — I just want a logo?",
+        a: "A logo without guidelines ends up being used ten different ways by ten different people within six months. Guidelines are the operating manual that keeps your brand consistent across your website, your Instagram, your employee's Canva design, and the signage your new freelancer is making. If you're a one-person show forever, skip the guidelines. If you're building something, you'll need them eventually — and it's cheaper to do it now than to untangle inconsistency later.",
+      },
+      {
+        q: "What's the difference between branding and just a logo?",
+        a: "A logo is one asset. Branding is the system every asset lives in — colors, typography, voice, imagery style, collateral templates, and rules for how they fit together. Logo design answers 'what's your mark?' Branding answers 'what does your business feel like across every place it shows up?'",
+      },
+      {
+        q: "Can you work with my existing logo and build out from there?",
+        a: "Yes — and we often recommend it when the logo has equity worth keeping. We'll audit the mark at kickoff and either build the system around it (if it's working) or propose a refresh (if it isn't). You keep whatever we've kept; any refresh work rolls into the project scope transparently.",
+      },
+      {
+        q: "Do you also handle packaging, print, and signage?",
+        a: "Yes — see the Print Design service page for the full catalog. We handle labels, packaging, business cards, signage, vehicle wraps, menus, trade show booths, the lot. Having the same designer do both the brand system and the collateral keeps everything tight.",
+      },
+      {
+        q: "How does this interact with the Web Design and Ecommerce services?",
+        a: "The brand system is the input; the website is one of the outputs. When you do both with us, the web design draws from the brand guidelines directly — same colors, same typography, same voice. If you do only the brand with us and take the brand file to another web designer, everything they need is documented in the guidelines so they can execute faithfully.",
+      },
+      {
+        q: "What industries have you done brand work for?",
+        a: "Supplements, packaged goods, restaurants, streetwear, construction, custom PC builds, service businesses, DTC ecommerce, medical practices. Thirty-plus brands total. We don't specialize in any one industry — we specialize in launching brands that have to work across web, print, and in-person at the same time.",
+      },
+      {
+        q: "Will I own everything?",
+        a: "Yes. Full rights transferred on final payment. Source files (Illustrator, Figma, Photoshop) included. If you want to take the system to a different designer later — for execution or scaling — they'll have everything they need.",
+      },
+      {
+        q: "What's the timeline?",
+        a: "Starter: 2 weeks. Growth: 3 weeks. Premium: 4–6 weeks, depending on strategy depth and collateral count. Complex projects (multi-product brand architecture, regulated industries) can take longer — we scope honestly on the discovery call.",
+      },
+      {
+        q: "Can you do a brand refresh instead of a full rebuild?",
+        a: "Yes. A refresh is usually a Growth-tier scope that keeps strategic direction intact and modernizes the visual system — letterforms, color, typography, collateral templates. Your customers recognize you, but you look like 2026 instead of 2012.",
+      },
+      {
+        q: "I got a cheaper quote from someone on Upwork. What's the difference?",
+        a: "Usually experience, depth, and continuity. A $500 brand is someone following a template they've run a hundred times. Here you're getting 15+ years of real launches, a strategy pass before design, actual guidelines written in plain English, and a system that was designed for your business specifically. If the cheaper quote has portfolio work that matches what you need, follow your gut. If it doesn't, that's usually the reason.",
+      },
+    ],
+    pricing: {
+      label: "Brand systems start at",
+      price: "$2,500",
+      unit: "/ project",
+      note: "Growth at $4,500 is our most requested tier. Premium from $7,500 includes strategy and 6+ collateral assets.",
+      numericPrice: "2500",
+    },
+    finalCta: {
+      eyebrow: "Ready to look like one company",
+      headline: "Stop looking like five different businesses.",
+      highlightWord: "Start looking like one.",
+      subhead:
+        "Book a free 45-minute brand brief. Walk away with a clear plan, a clear scope, and a clear price — whether we end up building it or not.",
+      ctaLabel: "Book a free brand review",
+    },
+    related: ["logo-design", "web-design", "print-design"],
+    meta: {
+      seoTitle: "Brand Identity Design in Cumming, GA — From $2,500",
+      seoDescription:
+        "Full brand identity systems for small businesses in Cumming, GA & Forsyth County. Logo suites, color, typography, voice, and guidelines. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
+      keywords: [
+        "brand identity Cumming GA",
+        "brand identity designer Forsyth County",
+        "branding agency North Atlanta",
+        "rebranding Cumming Georgia",
+        "small business branding North Atlanta",
+      ],
+      ogImage: "/assets/services/branding/hero.png",
+      ogImageAlt:
+        "Brand identity design for small businesses in Cumming, GA — Branding Zombie Designs",
+    },
+    schema: {
+      serviceType: "Brand Identity Design",
+      category: "Brand Identity & Guidelines",
+      description:
+        "Full brand identity systems for small businesses in Cumming, GA and across North Metro Atlanta — logo suites, color palettes, typography systems, brand voice guides, collateral templates, and written guidelines. Built by a creative director with 15+ years across CPG, retail, and service businesses. From $2,500.",
+    },
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // DIGITAL MARKETING / SEO
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    slug: "digital-marketing",
+    name: "Digital Marketing",
+    shortName: "SEO",
+    tagline: "Get found on Google — and on ChatGPT",
+    iconSvg: "/assets/SVG/ai-workflows-icon.svg",
+    themeAccent: "cyan",
+    homeCardPrice: "from $499/mo",
+    homeCardDescription:
+      "Local SEO built for how people actually search in 2026 — Google, ChatGPT, and everything in between.",
+    hook: "Get found on Google — and on ChatGPT. Local SEO built for how people actually search in 2026.",
+    whoThisIsFor: [
+      "Local Cumming and Forsyth County businesses wanting to show up in 'near me' searches",
+      "Businesses that have a website but get zero organic traffic from it",
+      "Anyone who's been burned by cheap SEO services that never actually delivered",
+      "Owners who've noticed customers saying 'ChatGPT recommended you' and want more of that",
+    ],
+    tiers: [
+      {
+        name: "Local SEO Starter",
+        price: "$499/mo",
+        priceNote: "3-month minimum",
+        timeline: "Ongoing",
+        deliverables: [
+          "Google Business Profile optimization",
+          "10 local citations (directories, listings, NAP consistency)",
+          "1 blog post per month (750–1,200 words, SEO-ready)",
+          "Review monitoring + response guidance",
+          "Monthly performance report",
+        ],
+        bestFor:
+          "Micro-businesses getting the local SEO foundation in place for the first time.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Local SEO Growth",
+        price: "$999/mo",
+        priceNote: "3-month minimum",
+        timeline: "Ongoing",
+        isFeature: true,
+        deliverables: [
+          "Everything in Starter",
+          "On-page SEO audit + fixes across your site",
+          "4 blog posts per month",
+          "Review response management (we reply; you approve)",
+          "ChatGPT / Perplexity / AI-search (GEO) optimization",
+          "Quarterly strategy call",
+        ],
+        bestFor:
+          "Local businesses serious about dominating 'near me' searches and showing up in AI answers.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Full SEO + GEO",
+        price: "$1,999/mo",
+        priceNote: "3-month minimum",
+        timeline: "Ongoing",
+        deliverables: [
+          "Everything in Growth",
+          "Authority-building link outreach",
+          "8 blog posts per month + 2 cornerstone pages",
+          "Competitor tracking + gap analysis",
+          "Conversion rate optimization on landing pages",
+          "Monthly strategy call with actual recommendations",
+        ],
+        bestFor:
+          "Businesses competing in harder markets, multiple service areas, or a national niche.",
+        ctaLabel: "Book a strategy call",
+      },
+    ],
+    calloutText:
+      "One of the only agencies in Forsyth County actively optimizing for AI answer engines — not just Google. Your customers are asking ChatGPT for recommendations. Getting mentioned is the new ranking.",
+    hero: {
+      eyebrow: "Digital Marketing · Cumming, GA",
+      headline: "Get found on Google —",
+      highlightWord: "and on ChatGPT",
+      subhead:
+        "Local SEO and AI-search optimization for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Ranking in the maps pack is still the core — but in 2026 you also need to show up when your customer asks Claude or ChatGPT.",
+      ctaLabel: "Book a free SEO audit",
+      ctaHref: CALENDLY_URL,
+      heroImage: {
+        src: "/assets/services/digital-marketing/hero.png",
+        alt: "Local SEO dashboard with rising traffic graph — Branding Zombie Designs digital marketing in Cumming, GA",
+      },
+      microProof: "From $499/mo · 3-month minimum · GEO-ready",
+    },
+    painPointsEyebrow: "Sound familiar?",
+    painPointsHeadline: "Your competitor",
+    painPointsHighlight: "shows up, you don't",
+    painPointsIntro:
+      "Local search is brutal. You can have the better business, the better prices, and the better reviews, and still lose because your competitor hired someone who actually knows what they're doing.",
+    painPoints: [
+      { text: "You Google your own business and your competitor shows up in the maps pack above you." },
+      { text: "Your Google Business Profile is set up but 'not maximized' — whatever that means." },
+      { text: "You hired an SEO guy two years ago, paid him $300/mo for eight months, and nothing happened." },
+      { text: "A customer told you 'ChatGPT recommended your competitor' and you didn't know that was even a thing." },
+      { text: "Your website gets two visits a day and they're both you, on your phone, checking the website." },
+    ],
+    offerEyebrow: "What you get",
+    offerHeadline: "Local SEO,",
+    offerHighlight: "honestly executed",
+    offerSubhead:
+      "No 'submit your site to 500 directories' nonsense. We focus on the 20% of work that drives 80% of local ranking — and the new work (AI-search) that most of your competitors haven't caught on to yet.",
+    deliverables: [
+      {
+        title: "Google Business Profile",
+        description:
+          "Full GBP optimization — photos, posts, services, attributes, Q&A seeded, review request flow. The foundation of local SEO nobody bothers to maximize.",
+      },
+      {
+        title: "Local Citations + NAP Consistency",
+        description:
+          "Your business listed and consistent across Google, Bing, Yelp, Apple Maps, Nextdoor, Alignable, industry directories — so Google trusts that you are where you say you are.",
+      },
+      {
+        title: "On-Page SEO",
+        description:
+          "Page-level optimization — titles, metas, schema markup, internal linking, Core Web Vitals. The technical fundamentals done right, not chased every time Google sneezes.",
+      },
+      {
+        title: "Content Strategy + Blog",
+        description:
+          "A calendar of blog posts and cornerstone pages targeting the searches your customers actually make. Written in your voice, SEO-ready without reading like keyword stuffing.",
+      },
+      {
+        title: "AI Answer-Engine Optimization",
+        description:
+          "Structuring your content, schema, and entity signals so ChatGPT, Claude, and Perplexity can cite you when a customer asks for recommendations. This is the new SEO — we're already in it.",
+      },
+      {
+        title: "Review Management",
+        description:
+          "Systems to ask for reviews the right way. Timely responses to every review (in your voice). Reputation defense when something sideways shows up.",
+      },
+    ],
+    gallery: {
+      title: "SEO work, done quietly in the background.",
+      description:
+        "Local and niche SEO campaigns for small businesses across North Atlanta — no vanity-metric dashboards, just rankings and leads.",
+      items: [
+        {
+          id: "seo-gallery-1",
+          title: "Local Service Business Climb",
+          description:
+            "Took a Cumming service business from page 3 to the top 3 of the maps pack in 4 months.",
+          href: portfolioHref,
+          image: "/assets/services/digital-marketing/gallery-1.png",
+        },
+        {
+          id: "seo-gallery-2",
+          title: "Restaurant Local Dominance",
+          description:
+            "Monthly content + GBP work for a local restaurant — now ranked #1 for the category in their town.",
+          href: portfolioHref,
+          image: "/assets/services/digital-marketing/gallery-2.png",
+        },
+        {
+          id: "seo-gallery-3",
+          title: "AI-Search Breakthrough",
+          description:
+            "Early GEO work for a supplement brand — mentioned by name in 6 of 10 ChatGPT queries for the category.",
+          href: portfolioHref,
+          image: "/assets/services/digital-marketing/gallery-3.png",
+        },
+        {
+          id: "seo-gallery-4",
+          title: "Multi-City Service Business",
+          description:
+            "Per-city landing page build + GBP optimization for a regional contractor — rankings in 6 North Atlanta cities.",
+          href: portfolioHref,
+          image: "/assets/services/digital-marketing/gallery-4.png",
+        },
+        {
+          id: "seo-gallery-5",
+          title: "Review Flywheel",
+          description:
+            "Review request automation for a Forsyth County service business — from 12 reviews to 80 in 90 days.",
+          href: portfolioHref,
+          image: "/assets/services/digital-marketing/gallery-5.png",
+        },
+      ],
+    },
+    processEyebrow: "How it works",
+    processHeadline: "From invisible",
+    processHighlight: "to found",
+    process: [
+      {
+        step: "01",
+        title: "Audit",
+        subtitle: "Free",
+        description:
+          "A 20-minute audit of your current SEO posture — GBP, on-page, citations, content, and AI-search presence. You get an honest read whether you hire us or not.",
+        icon: "ChatCircle",
+      },
+      {
+        step: "02",
+        title: "Foundation",
+        description:
+          "First 30 days — GBP max, citation cleanup, technical fixes, content calendar. The stuff that has to be right before monthly content can compound.",
+        icon: "Lightning",
+      },
+      {
+        step: "03",
+        title: "Monthly Work",
+        description:
+          "Content published, reviews managed, GBP posted weekly, rankings tracked, schema maintained, AI-search optimization iterated. Real SEO is a monthly discipline.",
+        icon: "Wrench",
+      },
+      {
+        step: "04",
+        title: "Report & Iterate",
+        description:
+          "Monthly report with rankings, traffic, leads, and what we're adjusting. Quarterly call to zoom out and plan the next 90 days.",
+        icon: "RocketLaunch",
+      },
+    ],
+    faqEyebrow: "FAQ",
+    faqHeadline: "Questions owners ask",
+    faqHighlight: "before they sign",
+    faqs: [
+      {
+        q: "How long does SEO take to actually work?",
+        a: "90 days for early signals, 6–9 months for meaningful traction, 12+ months for compounding authority. Anyone promising page-1 rankings in 30 days is either lying or breaking Google's guidelines in a way that'll bite you later. Local SEO (GBP) can move faster — sometimes 60 days — because the ranking factors are different.",
+      },
+      {
+        q: "What is GEO / AI-search optimization?",
+        a: "GEO is Generative Engine Optimization — getting your business mentioned or cited when someone asks ChatGPT, Claude, Perplexity, or Google's AI Overviews. It's structurally different from traditional SEO (different signals, different content structure, different entity work). Almost no local agency is doing this yet. We've been doing it for six months and it's starting to pay off.",
+      },
+      {
+        q: "Is there a contract?",
+        a: "3-month minimum on all tiers, then month-to-month. 3 months is the minimum for SEO work to show any measurable signal — anything shorter is setting both of us up to fail. After that, stay month-to-month as long as it's working.",
+      },
+      {
+        q: "Do I own the blog content you write?",
+        a: "Yes. Full rights transferred as it's published. Keep the posts on your site, reuse them, repurpose them for email. If you stop working with us, every piece of content we've written stays with you.",
+      },
+      {
+        q: "What if I already have a website and blog — can you just optimize what's there?",
+        a: "Yes. Most of our engagements start that way. On-page SEO, technical fixes, content refreshes, and GBP work are all front-loaded into month 1. Then the monthly content calendar adds on top of what's already there.",
+      },
+      {
+        q: "Do you do paid ads (Google, Meta)?",
+        a: "Paid ads are under Social Media Full Management. Organic SEO and paid acquisition are different disciplines; we keep them clean. Most local businesses should have organic SEO working first — it compounds, paid doesn't.",
+      },
+      {
+        q: "How do I know it's actually working?",
+        a: "Four signals in order of trustworthiness: organic Google Business Profile calls and direction requests (real demand), organic traffic in GA4 (did people find the site?), keyword rankings (are we visible for searches that matter?), and impressions in Search Console (are we getting in front of people at all?). We report on all four monthly.",
+      },
+      {
+        q: "What if my business is too small for SEO to matter?",
+        a: "Usually it isn't, but sometimes you're right — if you're a one-table restaurant in a town of 200 people, SEO is overkill and we'll tell you. Most Cumming/North Atlanta service businesses are a good fit starting at $499/mo; the break-even is roughly 'can I afford to pay for one more customer a month?' If yes, the math usually works.",
+      },
+      {
+        q: "I was burned by an SEO agency before. How is this different?",
+        a: "Most agencies burn clients in two ways: (1) they sell you on vanity metrics like keyword positions without tying it to leads, or (2) they take $300/mo and outsource everything to a template factory. We report on actual business signals, we do the work ourselves, and the 3-month minimum plus month-to-month structure means we can't afford not to deliver.",
+      },
+      {
+        q: "Can you optimize for 'near me' searches specifically?",
+        a: "Yes — that's most of local SEO. GBP is the biggest lever, then on-page with location schema, then citations for NAP consistency, then reviews, then local content. We work all five at once. Within 60–90 days, 'near me' visibility should improve measurably in most markets.",
+      },
+    ],
+    pricing: {
+      label: "Local SEO plans start at",
+      price: "$499",
+      unit: "/ month",
+      note: "Growth at $999/mo is our most requested tier. Also available: one-time GBP Audit + Setup at $499 (no monthly commitment).",
+      numericPrice: "499",
+    },
+    finalCta: {
+      eyebrow: "Ready to get found",
+      headline: "Your next customer is searching for you right now.",
+      highlightWord: "Be in the first three results.",
+      subhead:
+        "Book a free 20-minute SEO audit. We'll tell you honestly where you rank, where you're leaking, and what the path to the top 3 looks like — whether we're the ones who execute it or not.",
+      ctaLabel: "Book a free SEO audit",
+    },
+    related: ["ai-workflows", "web-design", "social-media"],
+    meta: {
+      seoTitle: "Local SEO + GEO for Cumming, GA — From $499/mo",
+      seoDescription:
+        "Local SEO and AI-search (GEO) optimization for small businesses in Cumming, GA & Forsyth County. Google Business Profile, on-page, content, AI answer-engine optimization. Starter $499/mo · Growth $999/mo · Full $1,999/mo. Call (770) 744-2536.",
+      keywords: [
+        "local SEO Cumming GA",
+        "SEO Forsyth County",
+        "AI search optimization North Atlanta",
+        "Google Business Profile Cumming",
+        "GEO optimization Atlanta",
+      ],
+      ogImage: "/assets/services/digital-marketing/hero.png",
+      ogImageAlt:
+        "Local SEO and AI-search optimization for Cumming, GA small businesses — Branding Zombie Designs",
+    },
+    schema: {
+      serviceType: "Local SEO & Digital Marketing",
+      category: "Digital Marketing & SEO",
+      description:
+        "Local SEO and AI answer-engine optimization (GEO) for small businesses in Cumming, GA and across North Metro Atlanta — Google Business Profile management, on-page SEO, local citations, monthly content, review management, and ChatGPT/Perplexity citation strategy. From $499/mo.",
     },
   },
 ];

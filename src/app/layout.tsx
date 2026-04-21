@@ -2,6 +2,25 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import {
+  SITE_URL,
+  BUSINESS_NAME,
+  FOUNDER_NAME,
+  ORG_ID,
+  LOCALBIZ_ID,
+  WEBSITE_ID,
+  PHONE_E164,
+  EMAIL,
+  CITY,
+  REGION,
+  POSTAL_CODE,
+  COUNTRY,
+  LAT,
+  LON,
+  AREAS_SERVED,
+  NORTH_GA_COUNTIES,
+  SOCIAL_URLS,
+} from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,232 +38,6 @@ const displayFont = localFont({
   variable: "--font-display",
   display: "swap",
 });
-
-const SITE_URL = "https://brandingzombiedesigns.com";
-const ORG_ID = `${SITE_URL}/#organization`;
-const LOCALBIZ_ID = `${SITE_URL}/#localbusiness`;
-const PHONE_DISPLAY = "(786) 848-1522";
-const PHONE_E164 = "+17868481522";
-const EMAIL = "brandingzombie@gmail.com";
-const LAT = 34.2073;
-const LON = -84.1401;
-
-// ─── Service area — every town we want to show up for ─────────────────────
-const AREAS_SERVED = [
-  "Cumming",
-  "Forsyth County",
-  "Alpharetta",
-  "Johns Creek",
-  "Milton",
-  "Roswell",
-  "Woodstock",
-  "Canton",
-  "Marietta",
-  "Dawsonville",
-  "Buford",
-  "Suwanee",
-  "Sugar Hill",
-  "Duluth",
-  "Lawrenceville",
-  "Gainesville",
-  "Flowery Branch",
-  "Oakwood",
-  "Braselton",
-  "Jefferson",
-  "Hoschton",
-  "Ball Ground",
-  "Holly Springs",
-  "Kennesaw",
-  "Acworth",
-  "Norcross",
-  "Peachtree Corners",
-  "Sandy Springs",
-  "Dunwoody",
-  "Atlanta",
-];
-
-const NORTH_GA_COUNTIES = [
-  "Forsyth County",
-  "Fulton County",
-  "Cherokee County",
-  "Hall County",
-  "Gwinnett County",
-  "Cobb County",
-  "Dawson County",
-  "Jackson County",
-];
-
-// ─── Keyword matrix — cities × services × verticals ───────────────────────
-const KEYWORDS = [
-  // Core brand
-  "Branding Zombie Designs",
-  "Branding Zombie Cumming",
-  "Branding Zombie GA",
-  "brand designer near me",
-
-  // Web design × cities
-  "web design Cumming GA",
-  "website design Cumming Georgia",
-  "web designer Forsyth County",
-  "web design Alpharetta GA",
-  "web design Johns Creek GA",
-  "web design Milton GA",
-  "web design Roswell GA",
-  "web design Woodstock GA",
-  "web design Canton GA",
-  "web design Marietta GA",
-  "web design Dawsonville GA",
-  "web design Buford GA",
-  "web design Suwanee GA",
-  "web design Sugar Hill GA",
-  "web design Gainesville GA",
-  "web design Duluth GA",
-  "web design Lawrenceville GA",
-  "web design Braselton GA",
-  "web design Atlanta GA",
-  "web design North Atlanta",
-  "web design North Metro Atlanta",
-  "custom website design Georgia",
-  "affordable web design Cumming",
-  "small business web design Georgia",
-  "Next.js web designer Georgia",
-  "Webflow designer Atlanta",
-  "Shopify designer Georgia",
-  "Squarespace designer Cumming",
-  "WordPress designer North Atlanta",
-
-  // Business-type specific web design
-  "restaurant website design Cumming",
-  "dental website design Forsyth County",
-  "medical practice website Atlanta",
-  "chiropractor website design Georgia",
-  "HVAC website design Cumming",
-  "plumber website design Georgia",
-  "electrician website Atlanta",
-  "roofer website design Forsyth",
-  "landscaper website Cumming GA",
-  "real estate website design Atlanta",
-  "salon website design Cumming",
-  "barbershop website Forsyth County",
-  "gym website design Atlanta",
-  "law firm website design Cumming",
-  "contractor website design Georgia",
-  "boutique website design Atlanta",
-  "coffee shop website design Cumming",
-  "auto repair website design Atlanta",
-  "fitness studio website Georgia",
-  "wedding photographer website Cumming",
-  "nonprofit website design Atlanta",
-  "church website design Forsyth County",
-
-  // AI & automation
-  "AI workflow integration Cumming GA",
-  "AI chatbot small business Georgia",
-  "AI automation Atlanta",
-  "business automation Forsyth County",
-  "ChatGPT integration Atlanta",
-  "AI lead capture Cumming",
-  "automated booking system Georgia",
-  "AI customer service small business",
-  "marketing automation Cumming",
-  "workflow automation Atlanta",
-
-  // Branding & graphic design
-  "graphic design Cumming GA",
-  "graphic designer Forsyth County",
-  "graphic design Atlanta",
-  "logo design Cumming GA",
-  "logo designer Forsyth County",
-  "logo design Atlanta",
-  "brand identity Cumming Georgia",
-  "brand identity designer Atlanta",
-  "brand guidelines Cumming GA",
-  "rebranding Cumming GA",
-  "rebrand agency Atlanta",
-  "small business branding North Atlanta",
-  "startup branding Cumming",
-  "visual identity design Georgia",
-  "brand strategy Forsyth County",
-  "menu design Cumming GA",
-  "restaurant menu design Atlanta",
-  "packaging design Cumming",
-  "label design Cumming GA",
-  "t-shirt design Cumming",
-  "apparel design Atlanta",
-  "pitch deck design Cumming",
-  "infographic design Atlanta",
-  "brochure design Forsyth County",
-  "social media graphics Cumming",
-  "Instagram template design",
-  "illustration services Atlanta",
-
-  // Ecommerce
-  "Shopify ecommerce Georgia",
-  "Shopify designer Cumming GA",
-  "Shopify developer Atlanta",
-  "ecommerce website Cumming GA",
-  "online store design Forsyth County",
-  "ecommerce development Alpharetta",
-  "custom Shopify theme Atlanta",
-  "BigCommerce Cumming GA",
-  "WooCommerce developer Georgia",
-  "product photography setup Cumming",
-
-  // Print
-  "print services Cumming GA",
-  "business card design Forsyth County",
-  "business card printing Cumming GA",
-  "flyer design Cumming",
-  "flyer printing Atlanta",
-  "brochure printing Cumming",
-  "banner printing Forsyth County",
-  "retractable banner Cumming",
-  "yard sign printing Cumming GA",
-  "vehicle wrap design Atlanta",
-  "vehicle magnet Cumming",
-  "rack card printing Cumming",
-  "postcard printing Forsyth County",
-  "poster printing Atlanta",
-  "menu printing Cumming GA",
-  "trade show display Atlanta",
-  "sticker printing Cumming",
-  "label printing Forsyth County",
-  "t-shirt printing Cumming GA",
-  "custom apparel Cumming GA",
-  "custom hats Cumming",
-  "table throw printing",
-  "door hanger printing Atlanta",
-  "print design North Atlanta",
-  "wholesale print Cumming",
-
-  // Social media
-  "social media management Cumming GA",
-  "social media marketing Forsyth County",
-  "Instagram management Cumming",
-  "TikTok content creation Atlanta",
-  "Facebook ads Cumming GA",
-  "content creation small business Georgia",
-
-  // CPG packaging (for the /cpg-launch subpage cross-surface)
-  "CPG packaging design",
-  "supplement label design",
-  "supplement packaging designer",
-  "FDA compliant label design",
-  "print-ready packaging files",
-  "nutrition facts panel design",
-  "product packaging designer Georgia",
-
-  // General local intent
-  "marketing agency Cumming GA",
-  "digital marketing Forsyth County",
-  "creative agency Atlanta",
-  "freelance designer Cumming",
-  "get a website Cumming GA",
-  "hire web designer near me",
-  "small business website Georgia",
-  "local design agency Cumming",
-  "North Atlanta design studio",
-];
 
 export const viewport: Viewport = {
   themeColor: [
@@ -264,14 +57,13 @@ export const metadata: Metadata = {
     template: "%s | Branding Zombie Designs",
   },
   description:
-    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (786) 848-1522 for a free audit.",
+    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 for a free audit.",
   applicationName: "Branding Zombie Designs",
   authors: [{ name: "Gerry Betancourt", url: SITE_URL }],
   creator: "Branding Zombie Designs",
   publisher: "Branding Zombie Designs",
   category: "Design Agency",
   classification: "Business",
-  keywords: KEYWORDS,
   alternates: {
     canonical: SITE_URL,
   },
@@ -284,12 +76,7 @@ export const metadata: Metadata = {
     google: "_h7e7IWOEOw2IEojHGS4K9FWJzlUqt76vz2oQH4bB7I",
   },
   icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
-    ],
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
     shortcut: "/favicon.ico",
   },
@@ -315,7 +102,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Branding Zombie Designs | Your Brand. Resurrected.",
     description:
-      "Web design, AI workflows, branding & print for small businesses in Cumming, GA & North Metro Atlanta. Call (786) 848-1522.",
+      "Web design, AI workflows, branding & print for small businesses in Cumming, GA & North Metro Atlanta. Call (770) 744-2536.",
     images: ["/assets/og-image.png"],
   },
   robots: {
@@ -376,12 +163,7 @@ const organizationSchema = {
   },
   email: EMAIL,
   telephone: PHONE_E164,
-  sameAs: [
-    "https://www.instagram.com/brandingzombie",
-    "https://www.facebook.com/brandingzombie",
-    "https://www.tiktok.com/@brandingzombie",
-    "https://www.linkedin.com/company/branding-zombie-designs",
-  ],
+  sameAs: SOCIAL_URLS,
 };
 
 // ─── Schema.org — LocalBusiness ────────────────────────────────────────────
@@ -488,19 +270,7 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "CPG Packaging Design" } },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "50",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  sameAs: [
-    "https://www.instagram.com/brandingzombie",
-    "https://www.facebook.com/brandingzombie",
-    "https://www.tiktok.com/@brandingzombie",
-    "https://www.linkedin.com/company/branding-zombie-designs",
-  ],
+  sameAs: SOCIAL_URLS,
 };
 
 // ─── Schema.org — WebSite + SearchAction ──────────────────────────────────

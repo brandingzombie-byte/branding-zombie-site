@@ -9,6 +9,26 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
+    title: "Papa's Kitchen Diner",
+    url: "papaskitchendinerga.com",
+    category: "Local GA · Restaurant · Ecommerce",
+    description:
+      "Family-owned diner in Georgia. Built full online ordering with checkout and a monthly subscription service to drive recurring revenue from regulars.",
+    result: "Online orders + subscriptions live",
+    tags: ["Local GA", "Restaurant", "Subscriptions"],
+    image: "/assets/portfolio-papaskitchen.png",
+  },
+  {
+    title: "Enigma Computers",
+    url: "enigma-computers-site.vercel.app",
+    category: "Local Cumming · Branding · RFQ Platform",
+    description:
+      "Custom PC build company in Cumming, GA. Full branding and a request-for-quote workflow that converts visitors into qualified leads through a guided build process.",
+    result: "Full RFQ funnel · branded experience",
+    tags: ["Local Cumming", "Branding", "Custom Builds"],
+    image: "/assets/portfolio-enigma.png",
+  },
+  {
     title: "Planters Etc.",
     url: "plantersetc.com",
     category: "Branding · Ecommerce",
@@ -67,26 +87,6 @@ const projects = [
     result: "Government-ready · digital presence",
     tags: ["Construction", "Web Design", "Government"],
     image: "/assets/portfolio-sharpedge.png",
-  },
-  {
-    title: "Papa's Kitchen Diner",
-    url: "papaskitchendinerga.com",
-    category: "Ecommerce · Subscriptions",
-    description:
-      "Local family-owned restaurant and cafe in Georgia. Built full online ordering with checkout and a monthly subscription service to drive recurring revenue.",
-    result: "Online orders + subscriptions live",
-    tags: ["Restaurant", "Ecommerce", "Subscriptions"],
-    image: "/assets/portfolio-papaskitchen.png",
-  },
-  {
-    title: "Enigma Computers",
-    url: "enigma-computers-site.vercel.app",
-    category: "Branding · RFQ Platform",
-    description:
-      "Custom PC build company with full branding and a request-for-quote workflow. Designed to convert visitors into qualified leads through a guided build process.",
-    result: "Full RFQ funnel · branded experience",
-    tags: ["Branding", "Custom Builds", "RFQ"],
-    image: "/assets/portfolio-enigma.png",
   },
 ];
 

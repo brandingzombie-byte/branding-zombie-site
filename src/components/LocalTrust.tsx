@@ -2,7 +2,7 @@
 
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
-import { MapPin, Handshake, Coffee } from "@/components/icons";
+import { MapPin, Coffee } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
 const trustItems = [
@@ -10,11 +10,6 @@ const trustItems = [
     Icon: MapPin,
     label: "Based in Cumming",
     detail: "GA-400 corridor. In-person, real handshakes.",
-  },
-  {
-    Icon: Handshake,
-    label: "Chamber Member",
-    detail: "Cumming-Forsyth County Chamber of Commerce.",
   },
   {
     Icon: Coffee,
@@ -65,7 +60,7 @@ export default function LocalTrust() {
         </div>
 
         {/* One horizontal row of icon-label pairs separated by hairline pipes */}
-        <ul className="mt-10 grid grid-cols-1 divide-y divide-[var(--color-hairline-strong)] border-y border-[var(--color-hairline-strong)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        <ul className="mt-10 grid grid-cols-1 divide-y divide-[var(--color-hairline-strong)] border-y border-[var(--color-hairline-strong)] sm:grid-cols-2 sm:divide-x sm:divide-y-0">
           {trustItems.map(({ Icon, label, detail }) => (
             <li
               key={label}

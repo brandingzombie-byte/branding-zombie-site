@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { List, X } from "@/components/icons";
+import { List, X, Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Work", href: "#portfolio" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/#portfolio" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -125,12 +126,24 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://calendly.com/brandingzombie/30min"
+            href={PHONE_HREF}
+            className={cn(
+              "ml-3 tabular inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider",
+              dark
+                ? "border border-[var(--color-dark-border-strong)] text-[var(--color-dark-text-primary)] hover:border-[var(--color-toxic)] hover:text-[var(--color-toxic-text)]"
+                : "border border-[var(--color-hairline-strong)] text-[var(--color-text-primary)] hover:border-[var(--color-neon-text)] hover:text-[var(--color-neon-text)]",
+            )}
+          >
+            <Phone size={14} weight="bold" />
+            {PHONE_DISPLAY}
+          </a>
+          <a
+            href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
             role="button"
             className={cn(
-              "ml-3 inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-wider",
+              "ml-2 inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-wider",
               dark
                 ? "bg-[var(--color-toxic)] text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
                 : "bg-[var(--color-text-primary)] text-[var(--color-cloud)] hover:bg-[var(--color-neon-text)]",
@@ -140,17 +153,31 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setMobileOpen((v) => !v)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          className={cn(
-            "flex h-10 w-10 items-center justify-center rounded-md md:hidden",
-            dark ? "text-[var(--color-dark-text-primary)]" : "text-[var(--color-text-primary)]",
-          )}
-        >
-          {mobileOpen ? <X size={22} weight="bold" /> : <List size={22} weight="bold" />}
-        </button>
+        {/* Mobile right-side actions: tap-to-call + menu toggle */}
+        <div className="flex items-center gap-1 md:hidden">
+          <a
+            href={PHONE_HREF}
+            aria-label={`Call ${PHONE_DISPLAY}`}
+            className={cn(
+              "flex h-10 w-10 items-center justify-center rounded-full",
+              dark
+                ? "bg-[var(--color-toxic)] text-[var(--color-grave)]"
+                : "bg-[var(--color-text-primary)] text-[var(--color-cloud)]",
+            )}
+          >
+            <Phone size={18} weight="bold" />
+          </a>
+          <button
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            className={cn(
+              "flex h-10 w-10 items-center justify-center rounded-md",
+              dark ? "text-[var(--color-dark-text-primary)]" : "text-[var(--color-text-primary)]",
+            )}
+          >
+            {mobileOpen ? <X size={22} weight="bold" /> : <List size={22} weight="bold" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -185,12 +212,25 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://calendly.com/brandingzombie/30min"
+              href={PHONE_HREF}
+              onClick={() => setMobileOpen(false)}
+              className={cn(
+                "mt-5 inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-wider tabular",
+                dark
+                  ? "border-[var(--color-toxic)] text-[var(--color-toxic-text)]"
+                  : "border-[var(--color-text-primary)] text-[var(--color-text-primary)]",
+              )}
+            >
+              <Phone size={14} weight="bold" />
+              Call Now · {PHONE_DISPLAY}
+            </a>
+            <a
+              href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
               role="button"
               onClick={() => setMobileOpen(false)}
-              className="mt-5 inline-flex items-center justify-center rounded-full bg-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-grave)]"
+              className="mt-3 inline-flex items-center justify-center rounded-full bg-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-grave)]"
             >
               Get a free audit
             </a>

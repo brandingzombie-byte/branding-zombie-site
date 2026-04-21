@@ -158,15 +158,15 @@ export default function AIShowcase() {
             your business.
           </p>
 
-          {/* Stats — caption-typed strip, hairline-separated, no card chrome */}
+          {/* Benefits — caption-typed strip, hairline-separated, no card chrome */}
           <ul className="mt-10 grid grid-cols-3 divide-x divide-[var(--color-dark-border-strong)] border-y border-[var(--color-dark-border-strong)]">
             {[
-              { value: "24/7", label: "Response time" },
-              { value: "3×", label: "More qualified leads" },
-              { value: "$0", label: "Extra staff" },
+              { value: "Always on", label: "Capture leads while you sleep" },
+              { value: "Instant", label: "A chatbot that never goes to voicemail" },
+              { value: "Hands-off", label: "Follow-up runs without you" },
             ].map((s) => (
               <li key={s.label} className="px-4 py-5">
-                <div className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-none text-[var(--color-cyan-text)]">
+                <div className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-none text-[var(--color-cyan-text)]">
                   {s.value}
                 </div>
                 <div className="mt-2 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
