@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import ServicesIndexGrid from "@/components/services/ServicesIndexGrid";
 import { SERVICES } from "@/data/services";
 import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
@@ -134,6 +135,8 @@ export default function ServicesIndexPage() {
             </p>
           </div>
         </Section>
+
+        <SectionSeparator id={7} />
 
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">

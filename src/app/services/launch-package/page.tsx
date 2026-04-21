@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import LaunchPackageCtas from "./LaunchPackageCtas";
 import IncludedList from "./IncludedList";
@@ -204,6 +205,8 @@ export default function LaunchPackagePage() {
           </div>
         </Section>
 
+        <SectionSeparator id={7} />
+
         {/* What's inside */}
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -238,6 +241,8 @@ export default function LaunchPackagePage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={1} />
 
         {/* Who this is for */}
         <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]" topRule>
@@ -282,6 +287,8 @@ export default function LaunchPackagePage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={2} />
 
         {/* Timeline */}
         <Section theme="light" pad="spacious" topRule>
@@ -338,7 +345,11 @@ export default function LaunchPackagePage() {
           </ol>
         </Section>
 
+        <SectionSeparator id={4} />
+
         <BrandTrackRecord />
+
+        <SectionSeparator id={6} />
 
         {/* Final CTA */}
         <Section theme="dark" pad="spacious" topRule>

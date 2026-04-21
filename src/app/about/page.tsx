@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import AboutCtaRow from "./AboutCtaRow";
 import {
   SITE_URL,
@@ -153,6 +154,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={7} />
+
         {/* The story */}
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
@@ -196,6 +199,8 @@ export default function AboutPage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={1} />
 
         {/* Why Cumming */}
         <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]" topRule>
@@ -241,6 +246,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
+        <SectionSeparator id={2} />
+
         {/* Facts */}
         <Section theme="light" pad="standard" topRule>
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-baseline sm:justify-between">
@@ -264,6 +271,8 @@ export default function AboutPage() {
             ))}
           </ul>
         </Section>
+
+        <SectionSeparator id={4} />
 
         {/* The philosophy + personal */}
         <Section theme="light" pad="spacious" topRule>
@@ -308,6 +317,8 @@ export default function AboutPage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={3} />
 
         {/* Final CTA */}
         <Section theme="dark" pad="spacious" topRule>

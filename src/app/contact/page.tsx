@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import ContactForm from "./ContactForm";
 import ContactOptions from "./ContactOptions";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
@@ -114,6 +115,8 @@ export default function ContactPage() {
             </p>
           </div>
         </Section>
+
+        <SectionSeparator id={7} />
 
         <Section theme="light" pad="spacious" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-12">

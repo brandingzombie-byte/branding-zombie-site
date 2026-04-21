@@ -17,6 +17,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import SectionSeparator from "@/components/SectionSeparator";
 import { Gallery4 } from "@/components/ui/gallery4";
 import {
   Accordion,
@@ -692,11 +693,16 @@ export default function CPGLaunchPage() {
       <main>
         <CPGHero />
         <CPGProblem />
+        <SectionSeparator id={8} />
         <CPGOffer />
+        <SectionSeparator id={7} />
         <CPGCaseStudies />
         <CPGAuthority />
+        <SectionSeparator id={3} />
         <CPGProcess />
+        <SectionSeparator id={2} />
         <CPGFAQ />
+        <SectionSeparator id={6} />
         <CPGFinalCTA />
       </main>
       <Footer />

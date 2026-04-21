@@ -10,20 +10,31 @@ import LocalTrust from "@/components/LocalTrust";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import SectionSeparator from "@/components/SectionSeparator";
 
+// Separator placement is driven by hex-match between SVG fill and an adjacent
+// section's background token — see SectionSeparator.tsx for the fill catalog.
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
         <Hero />
+        <SectionSeparator id={7} />
         <PainPoints />
+        <SectionSeparator id={1} />
         <Services />
+        <SectionSeparator id={2} />
         <Process />
+        <SectionSeparator id={4} />
         <Portfolio />
+        <SectionSeparator id={8} />
         <Pricing />
+        <SectionSeparator id={3} />
         <AIShowcase />
+        <SectionSeparator id={5} />
         <LocalTrust />
+        <SectionSeparator id={6} />
         <FAQ />
         <FinalCTA />
       </main>

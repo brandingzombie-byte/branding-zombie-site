@@ -17,6 +17,7 @@ import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
+import SectionSeparator from "@/components/SectionSeparator";
 import { getServiceBySlug, getAllSlugs } from "@/data/services";
 import { SITE_URL } from "@/lib/site";
 
@@ -95,29 +96,57 @@ export default async function ServicePage({
         <ServicePageClient>
           <ServiceHero service={service} />
           {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (
-            <WhoThisIsFor items={service.whoThisIsFor} />
+            <>
+              <SectionSeparator id={7} />
+              <WhoThisIsFor items={service.whoThisIsFor} />
+              <SectionSeparator id={1} />
+            </>
           )}
           <ServicePainPoints service={service} />
+          <SectionSeparator id={8} />
           <ServiceOffer service={service} />
           {service.tiers && service.tiers.length > 0 && (
-            <TierCards
-              eyebrow="Pricing"
-              headline="Three tiers,"
-              highlight="zero hidden fees"
-              subhead="Pick the level that matches where you are. Upgrade later if the business outgrows it — we don't charge to re-open a project."
-              tiers={service.tiers}
-            />
+            <>
+              <SectionSeparator id={5} />
+              <TierCards
+                eyebrow="Pricing"
+                headline="Three tiers,"
+                highlight="zero hidden fees"
+                subhead="Pick the level that matches where you are. Upgrade later if the business outgrows it — we don't charge to re-open a project."
+                tiers={service.tiers}
+              />
+            </>
           )}
           {service.categoryBands && service.categoryBands.length > 0 && (
-            <PrintCategoryBands bands={service.categoryBands} />
+            <>
+              {!(service.tiers && service.tiers.length > 0) && (
+                <SectionSeparator id={5} />
+              )}
+              <PrintCategoryBands bands={service.categoryBands} />
+            </>
           )}
-          {(service.tiers || service.categoryBands) && <BrandTrackRecord />}
+          {(service.tiers || service.categoryBands) ? (
+            <>
+              <SectionSeparator id={2} />
+              <BrandTrackRecord />
+              <SectionSeparator id={4} />
+            </>
+          ) : (
+            <SectionSeparator id={8} />
+          )}
           <ServiceGallery service={service} />
+          <SectionSeparator id={3} />
           <ServiceProcess service={service} />
+          <SectionSeparator id={1} />
           <ServiceFAQ service={service} />
+          <SectionSeparator id={6} />
           <RelatedServices slug={service.slug} />
           {(service.tiers || service.categoryBands) && (
-            <CrossSellBlock currentSlug={service.slug} />
+            <>
+              <SectionSeparator id={5} />
+              <CrossSellBlock currentSlug={service.slug} />
+              <SectionSeparator id={8} />
+            </>
           )}
           <ServiceFinalCTA service={service} />
         </ServicePageClient>
