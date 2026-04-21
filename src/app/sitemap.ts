@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllSlugs } from "@/data/services";
+import { getAllPosts } from "@/data/posts";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
@@ -13,6 +14,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
+  }));
+
+  // Blog posts use their own published date so Google can tell when a post
+  // actually changed vs when the site last deployed.
+  const blogPosts = getAllPosts().map((p) => ({
+    url: `${SITE_URL}/blog/${p.meta.slug}`,
+    lastModified: new Date(p.meta.dateModified ?? p.meta.datePublished),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
   }));
 
   return [
@@ -41,6 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...blogPosts,
     {
       url: `${SITE_URL}/about`,
       lastModified: now,
