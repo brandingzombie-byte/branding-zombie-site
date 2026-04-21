@@ -158,7 +158,7 @@ const Gallery4 = ({
             </span>
             <h2
               className={cn(
-                "font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight",
+                "font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight",
                 dark ? "text-[var(--color-dark-text-primary)]" : "text-text-primary",
               )}
             >

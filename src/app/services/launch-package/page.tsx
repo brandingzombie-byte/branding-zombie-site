@@ -214,7 +214,7 @@ export default function LaunchPackagePage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 What&apos;s inside
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Four pieces of the same{" "}
                 <span className="relative inline-block">
                   brand
@@ -251,7 +251,7 @@ export default function LaunchPackagePage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Who this is for
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Two kinds of{" "}
                 <span className="relative inline-block">
                   founders

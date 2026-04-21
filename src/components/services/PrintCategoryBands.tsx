@@ -33,7 +33,7 @@ export default function PrintCategoryBands({
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               Pricing
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
               Four bands.{" "}
               <span className="relative inline-block">
                 One vendor for design and print

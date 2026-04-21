@@ -125,7 +125,7 @@ export default function ContactPage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Fastest paths in
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Pick your weapon.
               </h2>
               <div className="mt-8">
@@ -141,7 +141,7 @@ export default function ContactPage() {
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Or send a note
               </span>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 Tell us what&apos;s{" "}
                 <span className="relative inline-block">
                   broken

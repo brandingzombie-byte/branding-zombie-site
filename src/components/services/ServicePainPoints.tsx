@@ -22,7 +22,7 @@ export default function ServicePainPoints({ service }: { service: Service }) {
           <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-cyan-text)]">
             {service.painPointsEyebrow}
           </span>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
             {service.painPointsHeadline}{" "}
             <span className="relative inline-block">
               {service.painPointsHighlight}

@@ -170,7 +170,7 @@ function CPGProblem() {
           <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-cyan-text)]">
             The problem
           </span>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
             Sound{" "}
             <span className="relative inline-block">
               familiar
@@ -265,7 +265,7 @@ function CPGOffer() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               One engagement · Everything you need
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
               The{" "}
               <span className="relative inline-block">
                 shelf-ready package
@@ -382,7 +382,7 @@ function CPGAuthority() {
           <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-cyan-text)]">
             Why me
           </span>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
             15 years inside the industry you&apos;re trying to{" "}
             <span className="relative inline-block">
               break into
@@ -490,7 +490,7 @@ function CPGProcess() {
           <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
             How it works
           </span>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
             No mystery,{" "}
             <span className="relative inline-block">
               no surprises
@@ -584,7 +584,7 @@ function CPGFAQ() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               FAQ
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
               Questions founders{" "}
               <span className="relative inline-block">
                 usually ask
