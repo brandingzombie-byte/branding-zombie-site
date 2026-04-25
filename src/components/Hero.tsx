@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import Section from "@/components/Section";
 import { ArrowUpRight, Phone } from "@/components/icons";
-import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -121,9 +121,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="animate-fade-up mt-10 flex flex-col items-start gap-4 opacity-0 [animation-delay:700ms] sm:flex-row sm:items-center">
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/free-site-audit"
               role="button"
               className="group inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
             >

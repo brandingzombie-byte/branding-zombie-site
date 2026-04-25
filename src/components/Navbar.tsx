@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { List, X, Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
-import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const navLinks = [
   { label: "Services", href: "/services" },
@@ -138,9 +138,7 @@ export default function Navbar() {
             {PHONE_DISPLAY}
           </a>
           <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/free-site-audit"
             role="button"
             className={cn(
               "ml-2 inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-wider",
@@ -225,9 +223,7 @@ export default function Navbar() {
               Call Now · {PHONE_DISPLAY}
             </a>
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/free-site-audit"
               role="button"
               onClick={() => setMobileOpen(false)}
               className="mt-3 inline-flex items-center justify-center rounded-full bg-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-grave)]"
