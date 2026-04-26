@@ -134,8 +134,12 @@ export default async function ServicePage({
           ) : (
             <SectionSeparator id={8} />
           )}
-          <ServiceGallery service={service} />
-          <SectionSeparator id={3} />
+          {service.gallery.items.length >= 3 && (
+            <>
+              <ServiceGallery service={service} />
+              <SectionSeparator id={3} />
+            </>
+          )}
           <ServiceProcess service={service} />
           <SectionSeparator id={1} />
           <ServiceFAQ service={service} />
