@@ -109,7 +109,7 @@ export default function FreeSiteAuditPage() {
                 Free Pulse Check · No commitment
               </span>
             </div>
-            <h1 className="mt-6 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.95] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Is your site{" "}
               <span className="relative inline-block">
                 dead

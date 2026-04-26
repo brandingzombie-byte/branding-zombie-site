@@ -159,7 +159,7 @@ export default function LaunchPackagePage() {
                 Launch Package · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Launch the{" "}
               <span className="relative inline-block">
                 whole business
@@ -182,7 +182,7 @@ export default function LaunchPackagePage() {
 
             {/* Price banner */}
             <div className="mt-10 inline-flex flex-col items-start gap-2 rounded-md border border-[var(--color-dark-border-strong)] bg-[var(--color-grave)]/60 px-7 py-5 sm:flex-row sm:items-baseline sm:gap-6">
-              <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-none text-[var(--color-toxic-text)]">
+              <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none text-[var(--color-toxic-text)]">
                 $4,500
               </span>
               <div className="flex flex-col gap-1">
@@ -357,7 +357,7 @@ export default function LaunchPackagePage() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
               Ready to launch
             </span>
-            <h2 className="max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h2 className="max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Pick a week.{" "}
               <span className="relative inline-block">
                 Come out the other side with a brand

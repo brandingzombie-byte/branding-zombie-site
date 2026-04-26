@@ -80,7 +80,7 @@ export default function BlogIndexPage() {
                 Field Notes
               </span>
             </div>
-            <h1 className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-text-primary">
+            <h1 className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-text-primary">
               The Blog.
             </h1>
             <p className="measure mt-2 text-[length:var(--text-lead)] leading-relaxed text-text-secondary">

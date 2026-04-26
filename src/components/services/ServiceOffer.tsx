@@ -75,7 +75,7 @@ export default function ServiceOffer({ service }: { service: Service }) {
             <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               {service.pricing.label}
             </p>
-            <p className="mt-2 tabular font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-none tracking-tight text-text-primary">
+            <p className="mt-2 tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none tracking-tight text-text-primary">
               {service.pricing.price}
               {service.pricing.unit && (
                 <span className="text-[length:var(--text-h4)] font-normal text-text-dim">

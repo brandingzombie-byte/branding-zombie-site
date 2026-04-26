@@ -28,7 +28,7 @@ export default function BlogHero({ meta }: { meta: PostMeta }) {
         </div>
 
         {/* Headline */}
-        <h1 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[0.95] tracking-tight text-text-primary">
+        <h1 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.1] tracking-tight text-text-primary">
           {meta.title}
         </h1>
 

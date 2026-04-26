@@ -131,7 +131,7 @@ export default async function BlogPostPage({
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
                 Keep reading
               </span>
-              <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[0.95] tracking-tight text-text-primary">
+              <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
                 More from the blog.
               </h2>
             </div>

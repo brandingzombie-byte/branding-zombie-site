@@ -25,7 +25,7 @@ export default function ServiceFinalCTA({ service }: { service: Service }) {
           </span>
         </div>
 
-        <h2 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[18ch]">
+        <h2 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[18ch]">
           {service.finalCta.headline}{" "}
           <span className="relative inline-block">
             {service.finalCta.highlightWord}
