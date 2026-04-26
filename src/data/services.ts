@@ -5,6 +5,7 @@
 
 import { SITE_URL, CALENDLY_URL } from "@/lib/site";
 import type { Gallery4Item } from "@/components/ui/gallery4";
+import { getServiceGalleryItems } from "@/data/portfolio";
 
 export type ServiceSlug =
   | "web-design"
@@ -305,51 +306,24 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Recent websites built from right here in Cumming.",
+      title: "Recent sites we've shipped — restaurants, DTC, B2B, construction.",
       description:
-        "Small-business sites across North Metro Atlanta — restaurants, contractors, professional services, and retail.",
-      items: [
-        {
-          id: "web-gallery-1",
-          title: "Modern Small-Business Homepage",
-          description:
-            "Conversion-focused landing built in Next.js — under 2 second load, mobile-first, integrated booking.",
-          href: portfolioHref,
-          image: "/assets/services/web-design/gallery-1.png",
-        },
-        {
-          id: "web-gallery-2",
-          title: "Local Service Business Redesign",
-          description:
-            "Complete rebuild for a North Atlanta contractor — new brand system, lead forms, service area pages.",
-          href: portfolioHref,
-          image: "/assets/services/web-design/gallery-2.png",
-        },
-        {
-          id: "web-gallery-3",
-          title: "Restaurant Menu & Ordering",
-          description:
-            "Full menu, reservation flow, and Google Business sync for a Forsyth County restaurant.",
-          href: portfolioHref,
-          image: "/assets/services/web-design/gallery-3.png",
-        },
-        {
-          id: "web-gallery-4",
-          title: "Professional Services Firm",
-          description:
-            "Editorial-style site for a Cumming law practice — case studies, intake forms, SEO landing pages per practice area.",
-          href: portfolioHref,
-          image: "/assets/services/web-design/gallery-4.png",
-        },
-        {
-          id: "web-gallery-5",
-          title: "Multi-Page Service Business",
-          description:
-            "10-page build with per-service landing pages and individual city targets across North Metro Atlanta.",
-          href: portfolioHref,
-          image: "/assets/services/web-design/gallery-5.png",
-        },
-      ],
+        "Real launches across small business, ecommerce, and B2B. Every one built to convert before it's built to look pretty.",
+      items: getServiceGalleryItems("web-design", {
+        pinned: [
+          "papas-kitchen",
+          "enigma-computers",
+          "jay-scotts",
+          "sharp-edge",
+          "muscleology",
+          "pure-blanco",
+          "planters-etc",
+          "squeeze-me-skinny",
+          "ezbeauty-banner",
+          "goape-banner",
+        ],
+        limit: 10,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "No mystery,",
@@ -631,48 +605,13 @@ export const SERVICES: Service[] = [
       title: "AI workflows running quietly in the background.",
       description:
         "Chatbots, automation pipelines, and lead capture flows built for small businesses in Cumming and across North Atlanta.",
-      items: [
-        {
-          id: "ai-gallery-1",
-          title: "Website Chatbot Integration",
-          description:
-            "Custom-trained chatbot answering service questions, quoting ballpark prices, and booking appointments 24/7.",
-          href: portfolioHref,
-          image: "/assets/services/ai-workflows/gallery-1.png",
-        },
-        {
-          id: "ai-gallery-2",
-          title: "Lead Capture Automation",
-          description:
-            "Instant-reply flow — form fills go to CRM, trigger follow-up, and book discovery calls without human touch.",
-          href: portfolioHref,
-          image: "/assets/services/ai-workflows/gallery-2.png",
-        },
-        {
-          id: "ai-gallery-3",
-          title: "Scheduling & Booking Flow",
-          description:
-            "Calendar integration for a Forsyth County medical practice — patients self-book and get automated reminders.",
-          href: portfolioHref,
-          image: "/assets/services/ai-workflows/gallery-3.png",
-        },
-        {
-          id: "ai-gallery-4",
-          title: "Review & Reputation Loop",
-          description:
-            "Post-service SMS asking for Google reviews — shipped one client from 12 reviews to 80 in three months.",
-          href: portfolioHref,
-          image: "/assets/services/ai-workflows/gallery-4.png",
-        },
-        {
-          id: "ai-gallery-5",
-          title: "Invoice & Payment Reminder Flow",
-          description:
-            "Automated invoice chasing and payment reminders for a local service business — cut AR by 40% in the first month.",
-          href: portfolioHref,
-          image: "/assets/services/ai-workflows/gallery-5.png",
-        },
-      ],
+      // No portfolio gallery for AI workflows yet — case studies are
+      // under NDA and screenshots get stale fast. The slug page hides
+      // the gallery section when items is empty.
+      items: getServiceGalleryItems("ai-workflows", {
+        pinned: ["jay-scotts"],
+        limit: 4,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From overwhelmed",
@@ -941,51 +880,26 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Printed work shipped across North Atlanta.",
+      title: "Print work that actually goes to press.",
       description:
-        "Real projects for restaurants, contractors, service businesses, and retailers.",
-      items: [
-        {
-          id: "print-gallery-1",
-          title: "Custom Business Cards",
-          description:
-            "Soft-touch, foiled, and spot-UV business cards for a Cumming-based consulting firm.",
-          href: portfolioHref,
-          image: "/assets/services/print-services/gallery-1.png",
-        },
-        {
-          id: "print-gallery-2",
-          title: "Vehicle Wrap",
-          description:
-            "Full vehicle wrap for an HVAC company serving Forsyth County — design, print, and install coordination.",
-          href: portfolioHref,
-          image: "/assets/services/print-services/gallery-2.png",
-        },
-        {
-          id: "print-gallery-3",
-          title: "Yard Signs & Banners",
-          description:
-            "Weatherproof yard signs and retractable banners for a North Atlanta contractor.",
-          href: portfolioHref,
-          image: "/assets/services/print-services/gallery-3.png",
-        },
-        {
-          id: "print-gallery-4",
-          title: "Printed Menu System",
-          description:
-            "Printed dine-in menus, takeout cards, and to-go sleeves for a Forsyth County cafe.",
-          href: portfolioHref,
-          image: "/assets/services/print-services/gallery-4.png",
-        },
-        {
-          id: "print-gallery-5",
-          title: "Custom Apparel",
-          description:
-            "Branded t-shirts and hoodies for a North Atlanta fitness studio — low minimums, fast turnaround.",
-          href: portfolioHref,
-          image: "/assets/services/print-services/gallery-5.png",
-        },
-      ],
+        "Brochures, business cards, flyers, mailers, book jackets, and CPG labels — production-ready files delivered to your printer's specs.",
+      items: getServiceGalleryItems("print-design", {
+        pinned: [
+          "ans-brochure",
+          "bloodstone-book",
+          "gentlemencutz-flyer",
+          "kls-flyer",
+          "pruvit-mailer",
+          "vpm-pools-flyer",
+          "xm-cigars-cards",
+          "scalehouse-cards",
+          "musclehype-rage",
+          "miracle-eyes-print",
+          "simply-aminos-flavors",
+          "total-holistic-tincture",
+        ],
+        limit: 12,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From file",
@@ -1259,51 +1173,25 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Feeds we've built and maintained.",
+      title: "Paid + organic creative we've shipped.",
       description:
-        "Consistent, on-brand social content for local businesses in Cumming and across North Atlanta.",
-      items: [
-        {
-          id: "social-gallery-1",
-          title: "Restaurant Feed Rebuild",
-          description:
-            "Monthly Instagram feed for a Forsyth County restaurant — food photography, menu highlights, daily specials.",
-          href: portfolioHref,
-          image: "/assets/services/social-media/gallery-1.png",
-        },
-        {
-          id: "social-gallery-2",
-          title: "Service Business Consistency",
-          description:
-            "12-posts-a-month Instagram and Facebook calendar for a Cumming-based contractor. Booked leads from the feed in month 2.",
-          href: portfolioHref,
-          image: "/assets/services/social-media/gallery-2.png",
-        },
-        {
-          id: "social-gallery-3",
-          title: "Boutique Launch Campaign",
-          description:
-            "Pre-launch content strategy and post series for an Alpharetta boutique opening — from empty account to 1,200 local followers.",
-          href: portfolioHref,
-          image: "/assets/services/social-media/gallery-3.png",
-        },
-        {
-          id: "social-gallery-4",
-          title: "Fitness Studio Reels",
-          description:
-            "Weekly short-form video content for a North Atlanta fitness studio — class previews, member features, form tips.",
-          href: portfolioHref,
-          image: "/assets/services/social-media/gallery-4.png",
-        },
-        {
-          id: "social-gallery-5",
-          title: "Medical Practice Trust Content",
-          description:
-            "Education-focused Instagram and Facebook for a Forsyth County practice — patient stories, FAQs, practice updates.",
-          href: portfolioHref,
-          image: "/assets/services/social-media/gallery-5.png",
-        },
-      ],
+        "Lifestyle banners, IG-feed posts, influencer UGC, and campaign work for supplement, beauty, and lifestyle brands. The kind of post that stops a thumb.",
+      items: getServiceGalleryItems("social-media", {
+        pinned: [
+          "yanzopanzo-ugc",
+          "josh-bnox-banner",
+          "rita-carnitine",
+          "ans-ad",
+          "bnox-tropical",
+          "swet-campaign",
+          "dmax10-watermelon",
+          "test-pro-multivitamin",
+          "simply-aminos-lifestyle",
+          "shield-labs-multi",
+          "betancourt-intro",
+        ],
+        limit: 11,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From ghosting your feed",
@@ -1566,51 +1454,24 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Stores we've launched from Cumming.",
+      title: "Stores we've launched and scaled.",
       description:
-        "Shopify and custom ecommerce builds for small brands across North Metro Atlanta.",
-      items: [
-        {
-          id: "ecom-gallery-1",
-          title: "Boutique Shopify Store",
-          description:
-            "Full Shopify theme and catalog for a North Atlanta boutique — 60+ products, abandoned cart recovery, local pickup.",
-          href: portfolioHref,
-          image: "/assets/services/ecommerce/gallery-1.png",
-        },
-        {
-          id: "ecom-gallery-2",
-          title: "Wellness Brand Launch",
-          description:
-            "Supplement brand ecommerce launch — Shopify custom theme, subscription setup, Shop Pay, tax automation.",
-          href: portfolioHref,
-          image: "/assets/services/ecommerce/gallery-2.png",
-        },
-        {
-          id: "ecom-gallery-3",
-          title: "Food & Beverage Store",
-          description:
-            "Local food producer moving from Etsy to Shopify — catalog migration, shipping rules for perishables, subscription box.",
-          href: portfolioHref,
-          image: "/assets/services/ecommerce/gallery-3.png",
-        },
-        {
-          id: "ecom-gallery-4",
-          title: "Service + Product Hybrid",
-          description:
-            "Hybrid store for a Cumming service business — booking appointments and shipping products from the same checkout.",
-          href: portfolioHref,
-          image: "/assets/services/ecommerce/gallery-4.png",
-        },
-        {
-          id: "ecom-gallery-5",
-          title: "Custom Apparel Store",
-          description:
-            "Print-on-demand apparel store with integrated fulfillment and live product mockups for a North Atlanta brand.",
-          href: portfolioHref,
-          image: "/assets/services/ecommerce/gallery-5.png",
-        },
-      ],
+        "Shopify and custom builds across DTC supplements, streetwear, food, and home goods. From single-SKU launches to 75-product catalogs.",
+      items: getServiceGalleryItems("ecommerce", {
+        pinned: [
+          "planters-etc",
+          "squeeze-me-skinny",
+          "muscleology",
+          "pure-blanco",
+          "papas-kitchen",
+          "jay-scotts",
+          "solaravita-amazon",
+          "vyotech-b4u",
+          "possema-package-print",
+          "365-functional-foods",
+        ],
+        limit: 10,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From \u201CI should sell online\u201D",
@@ -1873,51 +1734,24 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Marks we've launched from Cumming.",
+      title: "Marks we've drawn — healthcare, fitness, retail, CPG.",
       description:
-        "Logos for restaurants, retail, supplements, service businesses, and DTC brands across North Atlanta and beyond.",
-      items: [
-        {
-          id: "logo-gallery-1",
-          title: "Restaurant Identity",
-          description:
-            "Full logo suite for a family-owned diner — primary mark, menu lockup, and signage adaptation.",
-          href: portfolioHref,
-          image: "/assets/services/logo-design/gallery-1.png",
-        },
-        {
-          id: "logo-gallery-2",
-          title: "Local Tech Brand",
-          description:
-            "Custom wordmark + icon for a Cumming-based custom PC builder — bold, angular, merchandise-ready.",
-          href: portfolioHref,
-          image: "/assets/services/logo-design/gallery-2.png",
-        },
-        {
-          id: "logo-gallery-3",
-          title: "CPG Supplement Mark",
-          description:
-            "Shelf-ready logo system for a supplement brand — primary, icon, and label-safe variants.",
-          href: portfolioHref,
-          image: "/assets/services/logo-design/gallery-3.png",
-        },
-        {
-          id: "logo-gallery-4",
-          title: "Service Business Refresh",
-          description:
-            "Rebrand for a North Atlanta contractor — modernized without losing the original equity.",
-          href: portfolioHref,
-          image: "/assets/services/logo-design/gallery-4.png",
-        },
-        {
-          id: "logo-gallery-5",
-          title: "Streetwear Wordmark",
-          description:
-            "Custom typographic wordmark for a streetwear label — tight letterforms designed to live on garments.",
-          href: portfolioHref,
-          image: "/assets/services/logo-design/gallery-5.png",
-        },
-      ],
+        "Real logo systems delivered with full file kits. Some standalone marks; some leading full brand families on shelf.",
+      items: getServiceGalleryItems("logo-design", {
+        pinned: [
+          "kids-life-solutions-logo",
+          "hospital2home-logo",
+          "miami-pavement-logo",
+          "macefit-logo",
+          "thrasher-beard-oil",
+          "calipharms-cbd",
+          "ultra-shred",
+          "electro-shock",
+          "goodlife-creatine",
+          "elan-immuno",
+        ],
+        limit: 10,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From brief",
@@ -2170,51 +2004,26 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "Brand systems we've built from Cumming.",
+      title: "Full brand systems — from logo to label to launch.",
       description:
-        "Full identity systems for CPG, retail, restaurants, service businesses, and DTC brands.",
-      items: [
-        {
-          id: "brand-gallery-1",
-          title: "Supplement Brand Identity",
-          description:
-            "Complete brand system for a supplement label — logo suite, color palette, typography, and 20-page guidelines.",
-          href: portfolioHref,
-          image: "/assets/services/branding/gallery-1.png",
-        },
-        {
-          id: "brand-gallery-2",
-          title: "Restaurant Rebrand",
-          description:
-            "Brand refresh for a family-owned restaurant — new identity, menu system, signage, and social templates.",
-          href: portfolioHref,
-          image: "/assets/services/branding/gallery-2.png",
-        },
-        {
-          id: "brand-gallery-3",
-          title: "Streetwear Launch",
-          description:
-            "Full brand system for a streetwear label — logo, typography, color, photography direction, and merch templates.",
-          href: portfolioHref,
-          image: "/assets/services/branding/gallery-3.png",
-        },
-        {
-          id: "brand-gallery-4",
-          title: "Service Business System",
-          description:
-            "Brand refresh for a North Atlanta service business — modernized mark, voice guidelines, and vehicle wrap design.",
-          href: portfolioHref,
-          image: "/assets/services/branding/gallery-4.png",
-        },
-        {
-          id: "brand-gallery-5",
-          title: "DTC Ecommerce Brand",
-          description:
-            "Brand identity + ecommerce-ready asset kit for a DTC brand — packaging templates, social kit, email templates.",
-          href: portfolioHref,
-          image: "/assets/services/branding/gallery-5.png",
-        },
-      ],
+        "Identity work for CPG, supplements, beauty, fashion, and B2B. Most of these went from blank page to retail shelf or live storefront.",
+      items: getServiceGalleryItems("branding", {
+        pinned: [
+          "betancourt-family",
+          "pure-blanco",
+          "luxury-life",
+          "calipharms-cbd",
+          "coolto-nutrition",
+          "thrasher-beard-oil",
+          "sea-la-bella",
+          "total-holistic-tincture",
+          "breath-rox-family",
+          "solaravita-amazon",
+          "shield-labs-multi",
+          "planters-etc",
+        ],
+        limit: 12,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From scattered assets",
@@ -2473,51 +2282,24 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: {
-      title: "SEO work, done quietly in the background.",
+      title: "Campaigns and creative we've shipped.",
       description:
-        "Local and niche SEO campaigns for small businesses across North Atlanta — no vanity-metric dashboards, just rankings and leads.",
-      items: [
-        {
-          id: "seo-gallery-1",
-          title: "Local Service Business Climb",
-          description:
-            "Took a Cumming service business from page 3 to the top 3 of the maps pack in 4 months.",
-          href: portfolioHref,
-          image: "/assets/services/digital-marketing/gallery-1.png",
-        },
-        {
-          id: "seo-gallery-2",
-          title: "Restaurant Local Dominance",
-          description:
-            "Monthly content + GBP work for a local restaurant — now ranked #1 for the category in their town.",
-          href: portfolioHref,
-          image: "/assets/services/digital-marketing/gallery-2.png",
-        },
-        {
-          id: "seo-gallery-3",
-          title: "AI-Search Breakthrough",
-          description:
-            "Early GEO work for a supplement brand — mentioned by name in 6 of 10 ChatGPT queries for the category.",
-          href: portfolioHref,
-          image: "/assets/services/digital-marketing/gallery-3.png",
-        },
-        {
-          id: "seo-gallery-4",
-          title: "Multi-City Service Business",
-          description:
-            "Per-city landing page build + GBP optimization for a regional contractor — rankings in 6 North Atlanta cities.",
-          href: portfolioHref,
-          image: "/assets/services/digital-marketing/gallery-4.png",
-        },
-        {
-          id: "seo-gallery-5",
-          title: "Review Flywheel",
-          description:
-            "Review request automation for a Forsyth County service business — from 12 reviews to 80 in 90 days.",
-          href: portfolioHref,
-          image: "/assets/services/digital-marketing/gallery-5.png",
-        },
-      ],
+        "Paid social, mailers, banners, and lifecycle work for DTC supplement brands, service businesses, and B2B teams. Real assets that ran in real markets.",
+      items: getServiceGalleryItems("digital-marketing", {
+        pinned: [
+          "pruvit-mailer",
+          "ans-ad",
+          "swet-campaign",
+          "rita-carnitine",
+          "shield-labs-multi",
+          "bnox-tropical",
+          "dmax10-watermelon",
+          "test-pro-multivitamin",
+          "vpm-pools-flyer",
+          "jay-scotts",
+        ],
+        limit: 10,
+      }),
     },
     processEyebrow: "How it works",
     processHeadline: "From invisible",

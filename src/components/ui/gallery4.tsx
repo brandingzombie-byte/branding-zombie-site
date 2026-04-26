@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowLeft, ArrowRight } from "@/components/icons";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -226,40 +227,80 @@ const Gallery4 = ({
               >
                 <a
                   href={item.href}
-                  className="group block"
+                  className="group block focus-visible:outline-none"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div
                     className={cn(
-                      "group relative h-full min-h-[26rem] max-w-full overflow-hidden border md:aspect-[5/4] lg:aspect-[16/9]",
+                      "group relative flex h-[26rem] max-w-full flex-col overflow-hidden border lg:h-[28rem]",
                       dark
-                        ? "border-[var(--color-dark-border)] bg-[var(--color-surface)]"
-                        : "border-[var(--color-hairline-strong)] bg-[var(--color-cloud)]",
+                        ? "border-[var(--color-dark-border)] bg-[var(--color-surface)] group-hover:border-[var(--color-dark-border-strong)]"
+                        : "border-[var(--color-hairline-strong)] bg-[var(--color-cloud)] group-hover:border-[var(--color-text-primary)]/30",
                     )}
                   >
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      loading="lazy"
-                      className="absolute h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
+                    {/* Image plate — object-contain so varied aspect
+                        ratios (tall bottles, wide banners, square labels)
+                        all sit center-stage on a consistent backdrop. */}
                     <div
                       className={cn(
-                        "absolute inset-0 h-full",
+                        "relative flex flex-1 items-center justify-center overflow-hidden",
                         dark
-                          ? "bg-gradient-to-t from-[var(--color-grave)] via-[var(--color-grave)]/40 to-transparent"
-                          : "bg-gradient-to-t from-[var(--color-text-primary)]/85 via-[var(--color-text-primary)]/30 to-transparent",
+                          ? "bg-gradient-to-br from-[var(--color-grave)] via-[var(--color-surface)] to-[var(--color-elevated)]"
+                          : "bg-gradient-to-br from-[var(--color-cloud)] via-[var(--color-fog)] to-[var(--color-mist)]",
                       )}
-                    />
-                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-7">
-                      <h3 className="text-[length:var(--text-h4)] font-semibold leading-tight text-white drop-shadow">
+                    >
+                      {/* Soft radial spotlight */}
+                      <span
+                        aria-hidden
+                        className={cn(
+                          "pointer-events-none absolute inset-0",
+                          dark
+                            ? "bg-[radial-gradient(circle_at_50%_45%,rgba(191,255,0,0.06),transparent_60%)]"
+                            : "bg-[radial-gradient(circle_at_50%_45%,rgba(124,184,124,0.12),transparent_60%)]",
+                        )}
+                      />
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="(min-width: 1024px) 400px, 320px"
+                        className="object-contain p-6 transition-transform duration-500 group-hover:scale-[1.04]"
+                      />
+                    </div>
+
+                    {/* Caption strip — separate from the image so we
+                        never overlap critical packaging detail. */}
+                    <div
+                      className={cn(
+                        "flex flex-col gap-1.5 border-t p-5 md:p-6",
+                        dark
+                          ? "border-[var(--color-dark-border)] bg-[var(--color-grave)]"
+                          : "border-[var(--color-hairline-strong)] bg-[var(--color-cloud)]",
+                      )}
+                    >
+                      <h3
+                        className={cn(
+                          "text-[length:var(--text-h4)] font-semibold leading-tight",
+                          dark ? "text-[var(--color-dark-text-primary)]" : "text-text-primary",
+                        )}
+                      >
                         {item.title}
                       </h3>
-                      <p className="mt-2 line-clamp-2 text-[length:var(--text-secondary)] text-white/75">
+                      <p
+                        className={cn(
+                          "line-clamp-2 text-[length:var(--text-secondary)] leading-snug",
+                          dark ? "text-[var(--color-dark-text-secondary)]" : "text-text-secondary",
+                        )}
+                      >
                         {item.description}
                       </p>
-                      <span className="mt-5 inline-flex items-center gap-1.5 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-[var(--color-toxic-text)]">
+                      <span
+                        className={cn(
+                          "mt-2 inline-flex items-center gap-1.5 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em]",
+                          dark ? "text-[var(--color-toxic-text)]" : "text-[var(--color-neon-text)]",
+                        )}
+                      >
                         View project
                         <ArrowRight size={13} weight="bold" className="transition-transform group-hover:translate-x-0.5" />
                       </span>
@@ -270,23 +311,31 @@ const Gallery4 = ({
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="mt-8 flex justify-center gap-2">
+        {/* Pagination dots — wrapped in 44px tap targets per WCAG /
+            mobile-design touch-target guidelines. */}
+        <div className="mt-8 flex justify-center gap-1">
           {items.map((_, index) => (
             <button
               key={index}
-              className={cn(
-                "h-1.5 w-6 rounded-full transition-colors",
-                currentSlide === index
-                  ? dark
-                    ? "bg-[var(--color-toxic)]"
-                    : "bg-[var(--color-neon-text)]"
-                  : dark
-                  ? "bg-[var(--color-dark-border-strong)]"
-                  : "bg-[var(--color-hairline-strong)]",
-              )}
+              className="group flex h-11 w-11 items-center justify-center"
               onClick={() => carouselApi?.scrollTo(index)}
               aria-label={`Go to slide ${index + 1}`}
-            />
+              aria-current={currentSlide === index}
+            >
+              <span
+                aria-hidden
+                className={cn(
+                  "h-1.5 rounded-full transition-all",
+                  currentSlide === index
+                    ? dark
+                      ? "w-7 bg-[var(--color-toxic)]"
+                      : "w-7 bg-[var(--color-neon-text)]"
+                    : dark
+                    ? "w-3 bg-[var(--color-dark-border-strong)] group-hover:bg-[var(--color-dark-text-dim)]"
+                    : "w-3 bg-[var(--color-hairline-strong)] group-hover:bg-[var(--color-text-dim)]",
+                )}
+              />
+            </button>
           ))}
         </div>
       </div>
