@@ -72,7 +72,7 @@ function CPGHero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]"
+            className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]"
           >
             Your product deserves to look like it{" "}
             <span className="relative inline-block">
@@ -316,7 +316,7 @@ function CPGOffer() {
             <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
               Engagement starts at
             </p>
-            <p className="mt-2 tabular font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-none tracking-tight text-text-primary">
+            <p className="mt-2 tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none tracking-tight text-text-primary">
               $5,000{" "}
               <span className="text-[length:var(--text-h4)] font-normal text-text-dim">
                 / product line
@@ -647,7 +647,7 @@ function CPGFinalCTA() {
           </span>
         </div>
 
-        <h2 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[16ch]">
+        <h2 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[16ch]">
           Your launch date isn&apos;t waiting for you to figure out{" "}
           <span className="relative inline-block">
             packaging

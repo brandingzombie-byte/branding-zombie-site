@@ -130,7 +130,7 @@ export default function AboutPage() {
                 About · {FOUNDER_NAME}
               </span>
             </div>
-            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               15 years.{" "}
               <span className="relative inline-block">
                 30+ brands
@@ -326,7 +326,7 @@ export default function AboutPage() {
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
               Ready when you are
             </span>
-            <h2 className="max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h2 className="max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Want to see if we&apos;re{" "}
               <span className="relative inline-block">
                 a fit

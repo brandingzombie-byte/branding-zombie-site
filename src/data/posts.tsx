@@ -494,7 +494,7 @@ function WebsiteCostingCustomersContent() {
         <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
           Ready to Stop Leaking Customers?
         </p>
-        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[0.95] tracking-tight">
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
           Free 15-minute audit. No pitch, no pressure.
         </h3>
         <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
@@ -973,7 +973,7 @@ function GoogleAICallingBusinessContent() {
         <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
           Want to Stop Losing AI-Routed Leads?
         </p>
-        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[0.95] tracking-tight">
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
           Free 15-minute AI-readiness audit.
         </h3>
         <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">

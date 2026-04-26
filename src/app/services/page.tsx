@@ -117,7 +117,7 @@ export default function ServicesIndexPage() {
                 Services · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
               Everything your business needs to{" "}
               <span className="relative inline-block">
                 show up online

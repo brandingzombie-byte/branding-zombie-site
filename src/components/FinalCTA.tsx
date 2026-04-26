@@ -53,7 +53,7 @@ export default function FinalCTA() {
         </div>
 
         {/* Headline — intentionally NOT axis-centered, offset to the left */}
-        <h2 className="mt-6 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[0.92] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[14ch]">
+        <h2 className="mt-6 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)] lg:max-w-[14ch]">
           Stop losing customers{" "}
           <span className="relative inline-block">
             today

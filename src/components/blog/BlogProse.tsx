@@ -33,7 +33,7 @@ export default function BlogProse({
         // components for internal/external, but bare <a>s still look right.
         "[&_a]:text-[var(--color-neon-text)] [&_a]:underline [&_a]:decoration-[var(--color-neon)]/40 [&_a]:decoration-2 [&_a]:underline-offset-4 hover:[&_a]:decoration-[var(--color-neon)]",
         // H2 — section header
-        "[&_h2]:font-[family-name:var(--font-display)] [&_h2]:mt-16 [&_h2]:mb-6 [&_h2]:text-[length:var(--text-h2)] [&_h2]:leading-[0.95] [&_h2]:tracking-tight [&_h2]:text-text-primary [&_h2]:scroll-mt-24",
+        "[&_h2]:font-[family-name:var(--font-display)] [&_h2]:mt-16 [&_h2]:mb-6 [&_h2]:text-[length:var(--text-h2)] [&_h2]:leading-[1.1] [&_h2]:tracking-tight [&_h2]:text-text-primary [&_h2]:scroll-mt-24",
         // H3 — subsection header
         "[&_h3]:font-[family-name:var(--font-display)] [&_h3]:mt-12 [&_h3]:mb-4 [&_h3]:text-[length:var(--text-h3)] [&_h3]:leading-[1] [&_h3]:tracking-tight [&_h3]:text-text-primary [&_h3]:scroll-mt-24",
         // H4 — minor header

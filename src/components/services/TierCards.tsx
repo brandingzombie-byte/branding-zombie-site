@@ -154,7 +154,7 @@ function TierCard({ tier, desktopOrder }: { tier: Tier; desktopOrder: number }) 
       <div className="mt-6">
         <div
           className={cn(
-            "tabular font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-none tracking-tight",
+            "tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none tracking-tight",
             feature ? "text-[var(--color-toxic-text)]" : "text-text-primary",
           )}
         >
