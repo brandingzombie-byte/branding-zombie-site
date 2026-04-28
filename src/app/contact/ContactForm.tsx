@@ -1,7 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { submitContact, type ContactState } from "./actions";
+import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "@/components/icons";
 
@@ -9,6 +10,14 @@ const INITIAL: ContactState = { ok: false, message: "" };
 
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContact, INITIAL);
+  const trackedRef = useRef(false);
+
+  useEffect(() => {
+    if (state.ok && !trackedRef.current) {
+      trackedRef.current = true;
+      trackEvent("generate_lead", { form: "contact", value: 1 });
+    }
+  }, [state.ok]);
 
   if (state.ok) {
     return (

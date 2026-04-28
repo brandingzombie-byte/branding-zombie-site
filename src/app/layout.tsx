@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
+import AnalyticsClickListener from "@/components/AnalyticsClickListener";
 import "./globals.css";
 import {
   SITE_URL,
@@ -20,6 +22,7 @@ import {
   AREAS_SERVED,
   NORTH_GA_COUNTIES,
   SOCIAL_URLS,
+  GA_MEASUREMENT_ID,
 } from "@/lib/site";
 
 const geistSans = Geist({
@@ -532,6 +535,19 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         {children}
+        <AnalyticsClickListener />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
