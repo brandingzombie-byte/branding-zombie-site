@@ -1,8 +1,9 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { runPulseCheck, type AuditState } from "./actions";
 import AuditReport from "./AuditReport";
+import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Lightning } from "@/components/icons";
 
@@ -10,6 +11,24 @@ const INITIAL: AuditState = { ok: false, message: "" };
 
 export default function AuditForm() {
   const [state, formAction, pending] = useActionState(runPulseCheck, INITIAL);
+  const trackedRef = useRef(false);
+
+  useEffect(() => {
+    if (state.ok && !trackedRef.current) {
+      trackedRef.current = true;
+      const score = state.result?.overallScore;
+      const pulse = state.result?.overallPulse;
+      trackEvent("audit_requested", {
+        form: "free_site_audit",
+        score: typeof score === "number" ? score : undefined,
+        pulse,
+        value: 1,
+      });
+      // Also fire generate_lead so this counts in the same key-event bucket
+      // as contact-form leads — they're both qualified prospects.
+      trackEvent("generate_lead", { form: "free_site_audit", value: 1 });
+    }
+  }, [state.ok, state.result]);
 
   if (state.ok && state.result) {
     return (

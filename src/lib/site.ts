@@ -18,6 +18,10 @@ export const PHONE_HREF = "tel:+17707442536";
 export const EMAIL = "brandingzombie@gmail.com";
 export const CALENDLY_URL = "https://calendly.com/brandingzombie/15min";
 
+// Google Analytics 4 measurement ID. Public by design (visible in browser
+// network tab) — safe to commit. Update here, propagates everywhere.
+export const GA_MEASUREMENT_ID = "G-07JZLLX2JT";
+
 export const CITY = "Cumming";
 export const REGION = "GA";
 export const POSTAL_CODE = "30041";
