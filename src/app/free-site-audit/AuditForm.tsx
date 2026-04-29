@@ -61,12 +61,14 @@ export default function AuditForm() {
         label="Site to check"
         hint="Just the URL — yourdomain.com is fine."
         name="url"
-        type="url"
+        type="text"
         autoComplete="url"
         required
         maxLength={400}
         placeholder="example.com"
         inputMode="url"
+        autoCapitalize="none"
+        spellCheck={false}
       />
       <Field
         label="Your name"
