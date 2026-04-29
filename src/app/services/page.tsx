@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
 import ServicesIndexGrid from "@/components/services/ServicesIndexGrid";
+import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import { SERVICES } from "@/data/services";
 import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
 
@@ -164,6 +165,15 @@ export default function ServicesIndexPage() {
 
           <ServicesIndexGrid />
         </Section>
+
+        <SectionSeparator id={4} />
+
+        <CustomQuoteCta
+          eyebrow="Don't see your exact need?"
+          headline="Get a quote built around"
+          highlight="whatever's on your list"
+          copy="Most projects don't fit neatly into one service. Tell us the mix — branding plus a website, print plus social, a custom build we haven't listed — and we'll come back with a tailored quote within 24 hours."
+        />
       </main>
       <Footer />
     </>

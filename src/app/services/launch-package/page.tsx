@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
+import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import LaunchPackageCtas from "./LaunchPackageCtas";
 import IncludedList from "./IncludedList";
 import { SITE_URL, LOCALBIZ_ID, BUSINESS_NAME } from "@/lib/site";
@@ -241,6 +242,16 @@ export default function LaunchPackagePage() {
             </div>
           </div>
         </Section>
+
+        <SectionSeparator id={4} />
+
+        <CustomQuoteCta
+          serviceSlug="launch-package"
+          eyebrow="Need a different mix?"
+          headline="Get a quote built around"
+          highlight="just the pieces you need"
+          copy="The Launch Package bundles four services for $4,500. If you only need two, or you need extras (a second site, custom illustration, ongoing social), tell us — we'll quote a custom build within 24 hours."
+        />
 
         <SectionSeparator id={1} />
 

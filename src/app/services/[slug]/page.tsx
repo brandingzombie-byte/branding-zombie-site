@@ -15,6 +15,7 @@ import ServiceJsonLd from "@/components/services/ServiceJsonLd";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
+import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
 import SectionSeparator from "@/components/SectionSeparator";
@@ -127,12 +128,18 @@ export default async function ServicePage({
           )}
           {(service.tiers || service.categoryBands) ? (
             <>
+              <SectionSeparator id={4} />
+              <CustomQuoteCta serviceSlug={service.slug} />
               <SectionSeparator id={2} />
               <BrandTrackRecord />
               <SectionSeparator id={4} />
             </>
           ) : (
-            <SectionSeparator id={8} />
+            <>
+              <SectionSeparator id={4} />
+              <CustomQuoteCta serviceSlug={service.slug} />
+              <SectionSeparator id={8} />
+            </>
           )}
           {service.gallery.items.length >= 3 && (
             <>
