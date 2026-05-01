@@ -93,6 +93,26 @@ export default function CustomQuoteForm() {
     );
   }
 
+  // Sync the underlying <input>'s FileList to a given set of files using
+  // DataTransfer — the only Web API that lets us set input.files
+  // programmatically. Browser support: Chrome 13+, Firefox 62+, Safari 14.1+,
+  // Edge 79+ — well within our mobile audience.
+  function syncInputFiles(next: File[]) {
+    if (typeof window === "undefined") return;
+    const input = fileInputRef.current;
+    if (!input) return;
+    const dt = new DataTransfer();
+    next.forEach((f) => dt.items.add(f));
+    input.files = dt.files;
+  }
+
+  // Keep input.files mirrored to React state on every render so form
+  // submission carries everything the user picked. Without this, the
+  // input is empty at submit time and the server receives no attachments.
+  useEffect(() => {
+    syncInputFiles(files);
+  }, [files]);
+
   function handleFileChange(e: ChangeEvent<HTMLInputElement>) {
     setClientFileError(null);
     const incoming = Array.from(e.target.files ?? []);
@@ -101,20 +121,22 @@ export default function CustomQuoteForm() {
     const merged = [...files, ...incoming];
     if (merged.length > MAX_FILES) {
       setClientFileError(`Max ${MAX_FILES} files. Drop a few before adding more.`);
-      // Reset the input so the user can try again
-      if (fileInputRef.current) fileInputRef.current.value = "";
+      // The picker already replaced input.files with [incoming]; roll it
+      // back to the prior valid state so a stale selection doesn't sneak
+      // into form submission.
+      syncInputFiles(files);
       return;
     }
     const tooBig = merged.find((f) => f.size > MAX_FILE_BYTES);
     if (tooBig) {
       setClientFileError(`"${tooBig.name}" is over 10MB — try compressing it.`);
-      if (fileInputRef.current) fileInputRef.current.value = "";
+      syncInputFiles(files);
       return;
     }
 
     setFiles(merged);
-    // Clear input so re-selecting the same file later still triggers change.
-    if (fileInputRef.current) fileInputRef.current.value = "";
+    // The useEffect above re-syncs input.files from React state on the next
+    // render, so we don't manually touch input.value here.
   }
 
   function removeFile(name: string, size: number) {
