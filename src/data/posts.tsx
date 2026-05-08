@@ -1091,9 +1091,791 @@ function GoogleAICallingBusinessContent() {
   );
 }
 
+// ─── Post #3 — How Much Does a Small-Business Website Actually Cost in Cumming, GA? ──
+
+function WebsiteCostCummingGA2026Content() {
+  return (
+    <>
+      <p>
+        <strong>
+          &quot;What does a website cost?&quot; is the first question we get
+          on every single discovery call.
+        </strong>
+      </p>
+
+      <p>
+        It&apos;s also the hardest one to get a straight answer to anywhere
+        else. Google it and you get five Reddit threads, four agency blogs
+        full of agency-speak, and one results page where the cheapest quote
+        is $499 and the most expensive is $80,000 — for what looks like the
+        same thing.
+      </p>
+
+      <p>
+        So here&apos;s the actual answer, with actual numbers, for actual
+        small businesses in Cumming, Forsyth County, Dawsonville, and the
+        rest of North Metro Atlanta. No jargon, no &quot;it depends&quot;
+        cop-outs, no fake-cheap teaser quotes.
+      </p>
+
+      <p>
+        Just what real websites cost in 2026, what changes the price up or
+        down, and where our shop fits on the spectrum.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>DIY (Wix / Squarespace):</strong> $200–$800/year if you
+            build it yourself. Real cost: 40–80 hours of your time and a site
+            that looks like a template.
+          </li>
+          <li>
+            <strong>Freelancer in Cumming or Forsyth:</strong> $800–$3,500
+            for a basic 5-page site, depending on experience.
+          </li>
+          <li>
+            <strong>Small studio (us, and a few others in town):</strong>{" "}
+            $2,500–$8,000 for a custom, fast, SEO-ready small-business site.
+          </li>
+          <li>
+            <strong>Atlanta agency:</strong> $8,000–$30,000+ for the same
+            scope, plus a longer timeline and a project manager you&apos;ll
+            never meet.
+          </li>
+          <li>
+            <strong>Our pricing:</strong> Starter $2,500. Growth $4,500
+            (most popular). Premium $7,500+. Or the Launch Package — site +
+            logo + brand + content calendar — bundled at $4,500.
+          </li>
+          <li>
+            <strong>Custom budget?</strong> Tell us the number and what
+            matters most. We&apos;ll quote a build that fits — within 24
+            hours.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="why-pricing-varies">Why Web Design Pricing Is All Over the Map</h2>
+
+      <p>
+        Same question, ten different answers — because &quot;website&quot;
+        means ten different things.
+      </p>
+
+      <p>
+        A 1-page Linktree replacement is not the same product as a 30-page
+        contractor site with quote forms, online booking, a service-area
+        map, and Google reviews syndicated in. They share a URL bar and
+        nothing else.
+      </p>
+
+      <p>
+        On the supply side, the people building them range from a high
+        schooler with Wix to a 40-person Atlanta agency billing $200/hour.
+        The directory of web developers on{" "}
+        <ExternalLink href="https://clutch.co/web-developers">
+          Clutch
+        </ExternalLink>{" "}
+        shows shops listing rates from <strong>under $25/hour to
+        $150–$199/hour</strong>, with most clustering between $25 and $99.
+        That&apos;s a 6× spread on labor before scope even enters the
+        conversation.
+      </p>
+
+      <p>So when you see a quote, the real questions are:</p>
+
+      <ul>
+        <li>What&apos;s the actual scope (page count, features, integrations)?</li>
+        <li>Who&apos;s building it (skill level, location, overhead)?</li>
+        <li>What&apos;s included after launch (hosting, edits, SEO, support)?</li>
+        <li>Is it a one-time fee or a forever-monthly trap?</li>
+      </ul>
+
+      <p>
+        Two quotes can both say &quot;website — $5,000&quot; and mean
+        completely different things. The point of this guide is to make the
+        comparison apples-to-apples.
+      </p>
+
+      <h2 id="five-buckets">The 5 Real Pricing Buckets in 2026</h2>
+
+      <p>
+        Every small-business website built in North Metro Atlanta in 2026
+        falls into one of these five buckets. Pick the one that matches your
+        situation, then read the trade-offs.
+      </p>
+
+      <h3 id="bucket-diy">1. DIY Builder (Wix, Squarespace, GoDaddy) — $200–$800/year</h3>
+      <p>
+        You build it yourself. Pick a template, drag some blocks, add your
+        logo (or use the AI one). Site goes live in a weekend.
+      </p>
+      <p>
+        <strong>Real cost:</strong> 40–80 hours of your time, plus
+        $20–$70/month forever. The platform owns your site — try moving it
+        and watch the URLs explode. SEO is mediocre out of the box, page
+        speed is template-bound, and your &quot;custom&quot; design is
+        sharing a layout with 8,000 other small businesses on the same
+        template.
+      </p>
+      <p>
+        <strong>Best for:</strong> hobby projects, very early-stage testing,
+        and people who genuinely enjoy futzing with builders. Not a real
+        long-term play once revenue is on the line.
+      </p>
+
+      <h3 id="bucket-freelancer">2. Local Freelancer — $800–$3,500</h3>
+      <p>
+        A solo developer or designer in Cumming, Forsyth, Dawsonville, or
+        somewhere on Craigslist. They build on WordPress (usually
+        Elementor), Wix, or Squarespace. Often a side hustle.
+      </p>
+      <p>
+        <strong>What you get:</strong> a 5–8 page site, a contact form, a
+        logo if you&apos;re lucky, and a launch in 3–8 weeks. Quality is
+        wildly inconsistent — some local freelancers ship beautiful work,
+        others vanish mid-project with your $1,500 deposit. Reference
+        checks matter more here than in any other bucket.
+      </p>
+      <p>
+        <strong>Watch for:</strong> &quot;Free hosting forever&quot; that
+        becomes $50/month after year one. No source code handoff. No
+        ownership of the domain. Page speed scores in the 30s.
+      </p>
+
+      <h3 id="bucket-small-studio">3. Small Studio (Branding Zombie tier) — $2,500–$8,000</h3>
+      <p>
+        A real shop — usually 1–4 people — that ships a few sites a month
+        and has a portfolio you can actually call references on. Builds are
+        custom, fast (
+        <ExternalLink href="https://pagespeed.web.dev/">
+          PageSpeed
+        </ExternalLink>{" "}
+        scores 90+), and SEO-ready out of the gate. Timelines are{" "}
+        <strong>2–6 weeks</strong>, not 4 months.
+      </p>
+      <p>
+        <strong>What you get:</strong> 5–15 pages, a real strategy
+        conversation, mobile-first design, structured data, Google Business
+        Profile setup, analytics, a CMS you can actually edit, and a human
+        who picks up the phone after launch. Most studios in this tier
+        bundle in branding, copy, and at least some local SEO.
+      </p>
+      <p>
+        This is the bucket Branding Zombie lives in. It&apos;s also where
+        most North Metro Atlanta small businesses get the best
+        dollar-for-dollar outcome — agency-caliber work without the agency
+        timeline or invoice.
+      </p>
+
+      <h3 id="bucket-boutique">4. Boutique Atlanta Agency — $8,000–$25,000</h3>
+      <p>
+        A 5–25 person agency in Atlanta, Buckhead, or Midtown. Often
+        industry-specialized (medical, legal, real estate). Real designers,
+        real developers, real account managers.
+      </p>
+      <p>
+        <strong>What you get:</strong> 10–30 pages, brand workshops, custom
+        photography, more polished copy, a project manager, longer
+        timelines (2–4 months), and significantly more meetings. Quality is
+        usually high. So is the price.
+      </p>
+      <p>
+        <strong>Best for:</strong> businesses with $1M+ revenue and a real
+        budget for marketing. Overkill for a roofer in Cumming, on point
+        for a multi-location dental group in Alpharetta.
+      </p>
+
+      <h3 id="bucket-enterprise">5. Full-Service Agency — $25,000–$80,000+</h3>
+      <p>
+        Mid-size agencies, big-name studios, anyone with a Buckhead office
+        tower. Custom CMS, custom design system, deep integrations,
+        multiple stakeholders, six-month timelines, and a contract longer
+        than your lease.
+      </p>
+      <p>
+        <strong>Best for:</strong> regional chains, franchise systems, and
+        venture-funded startups. Almost never the right call for a Main
+        Street small business — the math doesn&apos;t work.
+      </p>
+
+      <h2 id="going-rates">Going Rates in Cumming, Forsyth & Dawsonville</h2>
+
+      <p>
+        Specific, observed numbers — what we see locally on actual quotes
+        homeowners and shop owners forward to us when they&apos;re
+        comparing.
+      </p>
+
+      <h3 id="rate-cumming">Cumming, GA</h3>
+      <p>
+        Highest density of options because of population. Freelancers
+        running off Bald Ridge Marina or out of a co-working space on
+        Buford Highway typically quote <strong>$1,200–$3,000</strong> for a
+        basic site. Two or three established small studios (us included)
+        quote in the <strong>$2,500–$7,500</strong> range. A handful of
+        bigger Atlanta-adjacent shops will travel up here for{" "}
+        <strong>$8,000+</strong>.
+      </p>
+
+      <h3 id="rate-forsyth">Forsyth County (Suwanee, Sugar Hill, Coal Mountain)</h3>
+      <p>
+        Same general spread as Cumming, slightly lower at the freelance
+        end (<strong>$800–$2,500</strong> is common because more
+        moonlighters). Established studios still land{" "}
+        <strong>$2,500–$8,000</strong>. The county&apos;s median household
+        income is well above the Georgia average, which is why agency
+        quotes from Atlanta show up here more than they should — the
+        spend is there even when the scope doesn&apos;t need it.
+      </p>
+
+      <h3 id="rate-dawsonville">Dawsonville & Dawson County</h3>
+      <p>
+        Smaller market, fewer in-town options. Most local freelancers
+        quote <strong>$800–$2,500</strong>. Custom small-studio work is
+        usually contracted from Cumming or Gainesville at{" "}
+        <strong>$2,500–$6,000</strong>. The North Georgia Premium Outlets
+        bring traffic that punches above the population, so retail and
+        restaurant owners up here often need ecommerce or online ordering —
+        which moves the price into the $4,500–$8,000 band.
+      </p>
+
+      <h3 id="rate-alpharetta">Alpharetta, Johns Creek, Milton</h3>
+      <p>
+        Highest going rates in our area. Lots of corporate spillover from
+        north Fulton, lots of agencies. Freelancers <strong>$1,500–$4,000</strong>.
+        Studios <strong>$3,500–$10,000</strong>. Boutique agencies{" "}
+        <strong>$10,000–$30,000</strong>. Same site, different ZIP code,
+        sometimes 2× the quote.
+      </p>
+
+      <h3 id="rate-gainesville">Gainesville, Flowery Branch, Oakwood</h3>
+      <p>
+        Mostly served from Gainesville and Cumming. Freelancers{" "}
+        <strong>$800–$2,500</strong>. Studios{" "}
+        <strong>$2,500–$6,500</strong>. Lower density of options means
+        timelines run longer at the freelance end.
+      </p>
+
+      <h2 id="branding-zombie-pricing">What Branding Zombie Charges (and What&apos;s Inside)</h2>
+
+      <p>
+        Three flat-priced{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+        tiers. Every one is quoted up-front, no hourly billing, no surprise
+        invoices.
+      </p>
+
+      <h3 id="bz-starter">Starter — $2,500</h3>
+      <p>
+        Up to 5 pages. Custom design, mobile-first, Next.js or Webflow
+        build, contact form, basic analytics, on-page SEO, and a Google
+        Business Profile setup. Launches in <strong>2–3 weeks</strong>.
+        Best for new businesses, single-location service shops, and anyone
+        replacing a sad WordPress site that&apos;s been limping along
+        since 2018.
+      </p>
+
+      <h3 id="bz-growth">Growth — $4,500 (most popular)</h3>
+      <p>
+        Up to 10 pages. Everything in Starter plus integrations (Calendly,
+        CRM, Mailchimp/Klaviyo, etc.), expanded local SEO, schema markup,
+        an analytics dashboard, and a 30-day post-launch polish window.
+        Launches in <strong>3–4 weeks</strong>. About 7 in 10 of our
+        web-design projects land here — it&apos;s the sweet spot for
+        established small businesses with real revenue and real customers
+        to keep happy.
+      </p>
+
+      <h3 id="bz-premium">Premium — $7,500+</h3>
+      <p>
+        Unlimited pages, custom functionality, ecommerce-ready, deeper
+        integrations (membership areas, booking systems, multi-location
+        directories, custom calculators). Quoted on the discovery call
+        because scope varies. Launches in <strong>4–6 weeks</strong>.
+      </p>
+
+      <h3 id="bz-launch-package">Launch Package — $4,500 (everything bundled)</h3>
+      <p>
+        Site + logo + brand identity + 90-day content calendar — all built
+        as one connected system in 4 weeks. À-la-carte these four pieces
+        run <strong>$6,499</strong>. Bundled, $4,500. Designed for
+        founders launching for the first time, or established businesses
+        doing a full refresh after years of duct-taping logos and websites
+        together.
+      </p>
+      <p>
+        Details on the{" "}
+        <InternalLink href="/services/launch-package">
+          Launch Package page
+        </InternalLink>
+        .
+      </p>
+
+      <h3 id="bz-related">Other services priced separately</h3>
+      <ul>
+        <li>
+          <InternalLink href="/services/ecommerce">Shopify ecommerce</InternalLink>{" "}
+          — Starter $3,000, Growth $5,500, Premium $8,500+
+        </li>
+        <li>
+          <InternalLink href="/services/ai-workflows">AI workflows</InternalLink>{" "}
+          (chatbot, lead capture, automation) — from $750 setup + $149/mo
+        </li>
+        <li>
+          <InternalLink href="/services/branding">Logo &amp; brand identity</InternalLink>{" "}
+          (without the bundle) — from $1,500
+        </li>
+        <li>
+          <InternalLink href="/services/digital-marketing">Local SEO &amp; ongoing marketing</InternalLink>{" "}
+          — month-to-month
+        </li>
+      </ul>
+
+      <p>
+        Every quote we send out includes a one-page scope, a one-page
+        timeline, and the total. No retainers required. No
+        &quot;forever-monthly&quot; trap.
+      </p>
+
+      <h2 id="custom-quote">When None of the Tiers Fit — Custom Quotes</h2>
+
+      <p>
+        About a quarter of the projects we book don&apos;t fit a tier
+        cleanly. Real examples from the last few months:
+      </p>
+
+      <ul>
+        <li>
+          A nonprofit that needed 30 pages but had a $3,800 ceiling — we
+          built a stripped-down Growth with a content-entry workflow they
+          could finish themselves.
+        </li>
+        <li>
+          A second-generation HVAC shop that wanted just a 3-page site
+          plus a CRM-connected quote form — under Starter scope but with a
+          custom integration. Quoted at $1,950.
+        </li>
+        <li>
+          A boutique fitness studio that wanted ecommerce + member portal
+          + a public class schedule — between Growth and Premium ecommerce.
+          Quoted at $6,800.
+        </li>
+        <li>
+          A specialty food brand that needed{" "}
+          <InternalLink href="/cpg-launch">CPG packaging</InternalLink>{" "}
+          + Shopify + Klaviyo flows + the website to match — bundled
+          across multiple services into one number.
+        </li>
+      </ul>
+
+      <p>
+        <strong>If your situation doesn&apos;t map to a tier, tell us
+        what you actually need and what budget you&apos;re working with.</strong>{" "}
+        We&apos;ll quote a build sized to that — usually within 24 hours,
+        always flat-priced, never with a &quot;starting at&quot; that
+        balloons by invoice three.
+      </p>
+
+      <h2 id="what-moves-price">What Moves the Price Up or Down</h2>
+
+      <p>
+        Same studio, same designer — five things drive 80% of the variance
+        between quotes.
+      </p>
+
+      <h3 id="moves-pages">Page count and content depth</h3>
+      <p>
+        5 pages vs 30 pages is real labor. Content that&apos;s already
+        written shaves days off; content we have to interview, draft, and
+        revise adds them.
+      </p>
+
+      <h3 id="moves-integrations">Integrations</h3>
+      <p>
+        Calendly, HubSpot, QuickBooks, ServiceTitan, Jobber, Mindbody,
+        Toast, Square, Klaviyo — each one is a real chunk of work. One or
+        two are usually included; six aren&apos;t.
+      </p>
+
+      <h3 id="moves-ecommerce">Ecommerce</h3>
+      <p>
+        Selling 5 products is one quote. Selling 500 with variants,
+        wholesale tiers, subscriptions, and a Klaviyo flow is a different
+        quote. See our{" "}
+        <InternalLink href="/services/ecommerce">
+          ecommerce pricing
+        </InternalLink>{" "}
+        for the breakdown.
+      </p>
+
+      <h3 id="moves-content">Whether we&apos;re writing the copy</h3>
+      <p>
+        If you have draft copy, we polish and ship. If we&apos;re writing
+        the homepage, services pages, FAQ, and 4 location pages from
+        scratch, that&apos;s a real chunk of the timeline — and it
+        deserves to be priced.
+      </p>
+
+      <h3 id="moves-photography">Photography &amp; brand assets</h3>
+      <p>
+        Stock photography is fine for some sites. Custom photography of
+        your shop, your team, and your work is what makes a small-business
+        site actually feel <em>local</em>. We coordinate it but the day
+        rate sits separately on the quote so there are no surprises.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Need a Custom Quote?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Tell us your scope and budget. We&apos;ll send a flat quote in 24
+          hours.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          15 minutes on the phone, no pitch, no &quot;starting at&quot;
+          fakery. You walk away with a real number, a real timeline, and
+          a real scope you can take to anyone else for a second opinion.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book the call
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="how-to-budget">How to Set a Budget by Business Type</h2>
+
+      <p>
+        Rough working numbers based on the small businesses we&apos;ve
+        shipped sites for in North Metro Atlanta. Spend within reason — a
+        site that pays for itself in 1–2 customers is a fine investment;
+        one that takes 14 months to break even isn&apos;t.
+      </p>
+
+      <ul className="checklist">
+        <li>
+          <strong>Solo service pro</strong> (handyman, lawn care, mobile
+          detailer): $1,500–$3,500. Small site, big focus on phone calls
+          and Google Business Profile.
+        </li>
+        <li>
+          <strong>Local restaurant or cafe</strong>: $2,500–$5,500. Menu,
+          ordering link, hours, photos, Toast/Square integration. Budget
+          for real photography.
+        </li>
+        <li>
+          <strong>Trades &amp; home services</strong> (HVAC, roofing,
+          electric, plumbing): $3,500–$7,500. Service-area pages, quote
+          forms, financing widget, after-hours{" "}
+          <InternalLink href="/services/ai-workflows">AI chatbot</InternalLink>.
+        </li>
+        <li>
+          <strong>Boutique retail or product brand</strong>:
+          $4,500–$10,000+. Shopify build, product photography, Klaviyo,
+          paid-ad ready landing pages. See{" "}
+          <InternalLink href="/services/ecommerce">ecommerce</InternalLink>.
+        </li>
+        <li>
+          <strong>Professional services</strong> (dental, legal, medical,
+          financial): $5,000–$12,000. More pages, compliance review,
+          integrations with practice-management tools.
+        </li>
+        <li>
+          <strong>Multi-location franchise or chain</strong>:
+          $8,000–$25,000. Location pages, central CMS, regional SEO,
+          ongoing maintenance.
+        </li>
+        <li>
+          <strong>Brand-new launch (no logo, no brand, nothing)</strong>:
+          the{" "}
+          <InternalLink href="/services/launch-package">
+            Launch Package
+          </InternalLink>{" "}
+          at $4,500 is almost always the right move.
+        </li>
+      </ul>
+
+      <h2 id="hidden-costs">The Hidden Costs Nobody Quotes Up Front</h2>
+
+      <p>Watch the line items below the &quot;website build&quot; total.</p>
+
+      <ul>
+        <li>
+          <strong>Hosting:</strong> $0–$300/month depending on stack. Our
+          Next.js builds usually run $0–$20/month on Vercel. WordPress
+          shops often charge $50–$150/month for &quot;managed&quot;
+          hosting that&apos;s mostly margin.
+        </li>
+        <li>
+          <strong>Domain:</strong> $12–$30/year. You should own this
+          directly. If your developer registers it under their account,
+          fix that on day one.
+        </li>
+        <li>
+          <strong>SSL certificate:</strong> $0 in 2026. If you&apos;re
+          quoted for one, that&apos;s a flag.
+        </li>
+        <li>
+          <strong>Edits after launch:</strong> $0 if you have a real CMS;
+          $100–$200/hour if your shop locked the site down. Always ask.
+        </li>
+        <li>
+          <strong>Plugins / subscriptions:</strong> WordPress sites often
+          carry $200–$1,200/year in plugin licenses (Yoast, Elementor Pro,
+          forms, security, backups). Modern Next.js builds usually have
+          zero.
+        </li>
+        <li>
+          <strong>Email:</strong> Google Workspace runs $7/user/month for
+          a real <code>@yourbusiness.com</code> address. Worth it.
+        </li>
+        <li>
+          <strong>Ad spend / SEO retainer:</strong> separate line item.
+          The{" "}
+          <ExternalLink href="https://www.sba.gov/business-guide/manage-your-business/marketing-sales">
+            SBA&apos;s marketing guidance
+          </ExternalLink>{" "}
+          recommends most small businesses budget marketing as its own
+          chunk on top of the build.
+        </li>
+      </ul>
+
+      <p>
+        Total ongoing cost on a Branding Zombie build runs about{" "}
+        <strong>$20–$40/month</strong> for a service-business site after
+        launch. That&apos;s hosting + email + domain renewal. No retainer,
+        no plugin tax, no &quot;managed care plan.&quot;
+      </p>
+
+      <h2 id="value-context">Is It Worth It? The Quick Math.</h2>
+
+      <p>
+        A Cumming HVAC company we shipped a Growth-tier site for in 2025
+        averages one extra service call a week traceable to the new site
+        and the connected{" "}
+        <InternalLink href="/services/digital-marketing">
+          Google Business Profile
+        </InternalLink>
+        . Average ticket: about $380. That&apos;s ~$19,800/year in
+        recovered revenue against a $4,500 one-time build.
+      </p>
+
+      <p>
+        That&apos;s a real number from a real client. It&apos;s not what
+        every business will see — but the pattern holds: a site that loads
+        fast, ranks locally, and answers questions clearly pays for itself
+        inside the first quarter for any service business with real
+        customer demand.
+      </p>
+
+      <p>
+        Industry research backs the &quot;design quality matters&quot;
+        side of the math:{" "}
+        <ExternalLink href="https://credibility.stanford.edu/">
+          Stanford&apos;s Web Credibility Project
+        </ExternalLink>{" "}
+        found that 75% of users judge a business&apos;s credibility from
+        its website design alone, and{" "}
+        <ExternalLink href="https://www.brightlocal.com/research/local-consumer-review-survey/">
+          BrightLocal
+        </ExternalLink>{" "}
+        finds 87% of consumers use Google to evaluate local businesses
+        before they call. The website is the salesperson on shift 24/7.
+      </p>
+
+      <h2 id="cumming-angle">Why Pricing Looks Different in Cumming &amp; Forsyth Specifically</h2>
+
+      <p>
+        North Metro Atlanta is one of the most economically active small
+        markets in the country. Forsyth County alone has been one of the
+        fastest-growing counties in Georgia for a decade. Median household
+        income runs well above the state average, and small businesses
+        here compete against Atlanta-spillover marketing budgets.
+      </p>
+
+      <p>
+        That changes two things about pricing locally:
+      </p>
+
+      <ol>
+        <li>
+          <strong>The bottom of the market is unusually thin.</strong>{" "}
+          $500–$1,000 web sites that work in rural Georgia barely exist
+          here. Most quotes start at $1,500.
+        </li>
+        <li>
+          <strong>The middle is unusually crowded.</strong> Plenty of
+          small studios — us included — fight for the same
+          $2,500–$8,000 builds. That&apos;s good for buyers. Compare
+          three quotes, ask for portfolio links, call references.
+        </li>
+      </ol>
+
+      <p>
+        If you&apos;re a small business in Cumming, Forsyth County,
+        Dawsonville, Alpharetta, Roswell, Woodstock, Buford, Suwanee,
+        Gainesville, or anywhere else in the area — the right answer
+        almost always lives in bucket #3 (small studio, $2,500–$8,000).
+        Not bucket #1 (DIY, you&apos;ll regret it), not bucket #5 (full
+        agency, you&apos;ll overpay).
+      </p>
+
+      <p>
+        We&apos;re happy to be one of the three quotes you compare. The
+        first call is free, fifteen minutes, and you&apos;ll walk away
+        with a number whether you hire us or not.
+      </p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cheapest">What&apos;s the cheapest you&apos;ll build a website for?</h3>
+      <p>
+        Our floor is $2,500 for the Starter tier (5-page custom site).
+        Below that, you&apos;re better off on Squarespace — and we&apos;ll
+        say that on the call. We don&apos;t take projects we can&apos;t
+        ship well.
+      </p>
+
+      <h3 id="faq-financing">Do you offer payment plans?</h3>
+      <p>
+        Yes. Standard split is 50% to start, 50% on launch. For larger
+        projects ($7,500+) we can split into thirds. We also work with
+        net-30 invoicing for established businesses.
+      </p>
+
+      <h3 id="faq-vs-wix">How do you compare to Wix or Squarespace?</h3>
+      <p>
+        Speed, SEO, and ownership. Template builders lock you into their
+        platform, drag your{" "}
+        <ExternalLink href="https://pagespeed.web.dev/">
+          Core Web Vitals
+        </ExternalLink>{" "}
+        scores down, and still leave you paying $25–$70/month forever.
+        Our builds are typically faster, rank better, and cost about
+        $20/month after launch — and you own the source code.
+      </p>
+
+      <h3 id="faq-ongoing">Are there ongoing fees after launch?</h3>
+      <p>
+        Just hosting (usually $0–$20/month on Vercel) and your domain
+        ($12–$30/year). No retainer required. You can hand the site off to
+        another shop or your in-house person on day one if you want — the
+        code is yours.
+      </p>
+
+      <h3 id="faq-research">How does your pricing compare to industry averages?</h3>
+      <p>
+        Industry research from{" "}
+        <ExternalLink href="https://www.webfx.com/web-design/pricing/">
+          WebFX
+        </ExternalLink>{" "}
+        puts &quot;basic web design&quot; at $6,500–$15,000 nationally.
+        Our Growth tier at $4,500 lands well below that mid-market band
+        for comparable scope — because we&apos;re a small shop with low
+        overhead in Cumming, not a 30-person agency in Buckhead.
+      </p>
+
+      <h3 id="faq-everything">Do I have to do everything at once?</h3>
+      <p>
+        No. You can start with the website, add{" "}
+        <InternalLink href="/services/ai-workflows">
+          AI workflows
+        </InternalLink>{" "}
+        in month two, layer in{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO
+        </InternalLink>{" "}
+        when you&apos;re ready. The Launch Package exists for owners who
+        want the whole thing done once — but it&apos;s a choice, not a
+        requirement.
+      </p>
+
+      <h3 id="faq-quote">How do I actually get a quote?</h3>
+      <p>
+        Three options: book a free 15-minute call, request a custom quote
+        through the form on any service page, or call{" "}
+        <a href={PHONE_HREF} className="font-medium underline">
+          {PHONE_DISPLAY}
+        </a>
+        . We answer during normal hours and respond to forms within 24
+        hours, usually faster.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, Creative Director at Branding Zombie
+        Designs. Based in Cumming, GA. Building modern small-business
+        websites, AI workflows, and brand systems across North Metro
+        Atlanta since 2019.
+      </p>
+    </>
+  );
+}
+
 // ─── POSTS registry ───────────────────────────────────────────────────────
 
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "website-cost-cumming-ga-2026",
+      title:
+        "How Much Does a Small-Business Website Actually Cost in Cumming, GA? (2026 Pricing Guide)",
+      seoTitle:
+        "Small Business Website Cost in Cumming, GA — 2026 Pricing Guide | Branding Zombie Designs",
+      seoDescription:
+        "What a real small-business website costs in Cumming, Forsyth, and Dawsonville in 2026. Going rates, hidden fees, our flat tiers ($2,500 / $4,500 / $7,500+), and custom quotes.",
+      excerpt:
+        "What a small-business website actually costs in Cumming, Forsyth County, and Dawsonville in 2026 — going rates, the 5 real pricing buckets, hidden fees, and where our $2,500 / $4,500 / $7,500+ tiers fit. Custom quotes welcome.",
+      keywords: [
+        "small business website cost Cumming GA",
+        "website pricing Forsyth County",
+        "web design cost Dawsonville",
+        "how much does a website cost",
+        "website cost 2026",
+        "small business web design pricing",
+        "Cumming web designer pricing",
+        "North Metro Atlanta web design cost",
+        "custom website quote Cumming",
+        "Launch Package pricing",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-05-08",
+      readingTimeMinutes: 10,
+      category: "Web Design",
+      tags: [
+        "website cost",
+        "web design pricing",
+        "small business websites",
+        "Cumming GA",
+        "Forsyth County",
+        "Dawsonville",
+        "Launch Package",
+        "Branding Zombie pricing",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Small business website cost in Cumming, GA — 2026 pricing guide — Branding Zombie Designs",
+    },
+    Content: WebsiteCostCummingGA2026Content,
+  },
   {
     meta: {
       slug: "google-ai-is-calling-your-business",
