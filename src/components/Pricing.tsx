@@ -240,15 +240,26 @@ export default function Pricing() {
           })}
         </div>
 
-        <p className="mt-8 text-[length:var(--text-secondary)] text-text-dim">
-          Custom quote for unique projects.{" "}
-          <a
-            href="#contact"
-            className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
-          >
-            Tell us what you need →
-          </a>
-        </p>
+        <div className="mt-8 flex flex-col gap-3 text-[length:var(--text-secondary)] text-text-dim sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            Custom quote for unique projects.{" "}
+            <a
+              href="#contact"
+              className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
+            >
+              Tell us what you need →
+            </a>
+          </p>
+          <p>
+            Just launching?{" "}
+            <a
+              href="/startup-special"
+              className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
+            >
+              See the $997 Startup Special →
+            </a>
+          </p>
+        </div>
       </div>
     </Section>
   );
