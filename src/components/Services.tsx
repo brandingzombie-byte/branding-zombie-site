@@ -4,17 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
-import { ArrowRight, ArrowUpRight, Clock, CurrencyDollar, Code } from "@/components/icons";
+import { ArrowUpRight, Clock, CurrencyDollar, Code } from "@/components/icons";
 import { SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
 
-type Meta = { Icon: typeof Clock; text: string };
-
-const featureMeta: Meta[] = [
+const featureMeta = [
   { Icon: Clock, text: "10–14 days" },
   { Icon: CurrencyDollar, text: "from $1,500" },
   { Icon: Code, text: "Next.js · Webflow" },
 ];
+
+// Alternating top-offset to break grid-cookie-cutter feel on the support cards
+const cardOffsets = [0, 36, 0, 36, 0];
 
 export default function Services() {
   const { ref, isInView } = useInView(0.05);
@@ -25,17 +26,17 @@ export default function Services() {
       <div
         ref={ref}
         className={cn(
-          "transition-all duration-700",
+          "transition-[opacity,transform] duration-[var(--duration-slower)] ease-[var(--ease-out-expo)] motion-reduce:transition-none",
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
         )}
       >
-        {/* Header — left-aligned, not centered, anti-AI-template */}
-        <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
+        {/* ── Header — left-aligned, anti-template ── */}
+        <div className="grid grid-cols-1 gap-x-12 gap-y-6 border-b-2 border-[var(--color-text-primary)] pb-8 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
+            <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
               What we do
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.15] tracking-tight text-text-primary">
               Everything your business needs to{" "}
               <span className="relative inline-block">
                 show up online
@@ -47,126 +48,138 @@ export default function Services() {
               .
             </h2>
           </div>
-          <p className="measure text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
+          <p className="text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
             Six services, one team, no agency hand-offs. Pick what you need
             today and add the rest as you grow.
           </p>
         </div>
 
-        {/* Bento grid */}
-        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-[var(--color-hairline-strong)] bg-[var(--color-hairline-strong)] sm:grid-cols-2 lg:grid-cols-4">
-          {/* Feature card spans 2x2 */}
-          <Link
-            href={`/services/${feature.slug}`}
-            className="group relative flex min-h-[20rem] flex-col justify-between bg-[var(--color-cloud)] p-8 transition-colors hover:bg-[var(--color-mist)] sm:col-span-2 sm:row-span-2 lg:p-10"
+        {/* ── Featured card — full-width brutalist tile with flood-on-hover ── */}
+        <Link
+          href={`/services/${feature.slug}`}
+          className={cn(
+            "group relative flex min-h-[22rem] flex-col justify-between overflow-hidden",
+            "border-x-2 border-b-2 border-[var(--color-text-primary)] bg-[var(--color-fog)]",
+            "p-8 lg:p-12",
+            "transition-[background-color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)]",
+            "hover:bg-[var(--color-neon)] active:scale-[0.997]",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-neon-text)] focus-visible:ring-offset-2",
+            "motion-reduce:transition-none motion-reduce:active:scale-100",
+          )}
+        >
+          {/* Ghost watermark numeral */}
+          <span
+            aria-hidden
+            className="pointer-events-none absolute right-6 bottom-0 select-none font-[family-name:var(--font-display)] leading-none text-text-primary opacity-[0.05] transition-opacity duration-[var(--duration-base)] group-hover:opacity-[0.1]"
+            style={{ fontSize: "clamp(8rem, 20vw, 18rem)" }}
           >
+            01
+          </span>
+
+          {/* Top row — label + arrow chip */}
+          <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="flex items-center gap-3">
-                <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
-                  Most popular
-                </span>
-                <span aria-hidden className="h-px flex-1 bg-[var(--color-hairline-strong)]" />
-              </div>
-              <h3 className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+              <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-neon-text)] transition-colors duration-[var(--duration-base)] group-hover:text-[var(--color-text-primary)]">
+                Most popular
+              </span>
+              <h3 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.0] tracking-tight text-text-primary">
                 {feature.name}
               </h3>
-              <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
-                {feature.homeCardDescription}
-              </p>
             </div>
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center border-2 border-[var(--color-text-primary)] transition-[background-color] duration-[var(--duration-base)] group-hover:bg-[var(--color-text-primary)]">
+              <ArrowUpRight
+                size={20}
+                weight="bold"
+                className="text-text-primary transition-[color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)] group-hover:text-[var(--color-neon)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </div>
+          </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-              {featureMeta.map(({ Icon, text }) => (
-                <span
-                  key={text}
-                  className="inline-flex items-center gap-2 text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-text-dim"
-                >
-                  <Icon size={14} weight="regular" />
-                  <span className="tabular">{text}</span>
-                </span>
-              ))}
-              <span className="ml-auto inline-flex items-center gap-2 text-[length:var(--text-secondary)] font-semibold text-text-primary group-hover:text-[var(--color-neon-text)]">
-                Explore
-                <ArrowUpRight
-                  size={16}
-                  weight="bold"
-                  className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                />
+          {/* Description */}
+          <p className="relative z-10 max-w-[60ch] text-[length:var(--text-lead)] leading-relaxed text-text-secondary transition-colors duration-[var(--duration-base)] group-hover:text-text-primary">
+            {feature.homeCardDescription}
+          </p>
+
+          {/* Meta strip */}
+          <div className="relative z-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-[var(--color-hairline-strong)] pt-5 transition-colors duration-[var(--duration-base)] group-hover:border-[var(--color-text-primary)]/30">
+            {featureMeta.map(({ Icon, text }) => (
+              <span
+                key={text}
+                className="inline-flex items-center gap-2 font-mono text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-text-dim transition-colors duration-[var(--duration-base)] group-hover:text-text-primary"
+              >
+                <Icon size={13} weight="regular" />
+                <span className="tabular">{text}</span>
               </span>
-            </div>
+            ))}
+          </div>
+        </Link>
 
-            {/* Decorative SVG icon, anchored bottom-right of feature card */}
-            <Image
-              src={feature.iconSvg}
-              alt=""
-              width={128}
-              height={128}
-              className="pointer-events-none absolute -right-2 -top-2 h-32 w-32 opacity-15 sm:h-40 sm:w-40"
-            />
-          </Link>
-
-          {/* Supporting cards */}
+        {/* ── Supporting cards — 3-col grid, zigzag top-offset, flood hover ── */}
+        <div className="grid grid-cols-1 border-x-2 border-b-2 border-[var(--color-text-primary)] sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((s, i) => {
-            // Alternate background tints for material variation
-            const tint =
-              i % 3 === 0
-                ? "bg-[var(--color-cloud)]"
-                : i % 3 === 1
-                ? "bg-[var(--color-surface-0)]"
-                : "bg-[var(--color-fog)]";
+            const offset = cardOffsets[i] ?? 0;
+            const cardNum = String(i + 2).padStart(2, "0");
+
             return (
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
                 className={cn(
-                  "group relative flex min-h-[14rem] flex-col justify-between p-7 transition-colors hover:bg-[var(--color-mist)]",
-                  tint,
+                  "group relative flex min-h-[16rem] flex-col justify-between overflow-hidden",
+                  "border-b-2 border-[var(--color-text-primary)] bg-[var(--color-surface-1)]",
+                  "p-7",
+                  // Inter-card vertical dividers — last in each row has no right border
+                  "sm:[&:not(:nth-child(2n))]:border-r-2 sm:[&:not(:nth-child(2n))]:border-[var(--color-text-primary)]",
+                  "lg:[&:not(:nth-child(3n))]:border-r-2 lg:[&:not(:nth-child(3n))]:border-[var(--color-text-primary)] lg:[&:nth-child(2n)]:!border-r-2 lg:[&:nth-child(3n)]:!border-r-0",
+                  "transition-[background-color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)]",
+                  "hover:bg-[var(--color-neon)] active:scale-[0.997]",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-neon-text)] focus-visible:ring-offset-2",
+                  "motion-reduce:transition-none motion-reduce:active:scale-100",
                 )}
+                style={{ paddingTop: `${(offset || 28) + 28}px` }}
               >
-                <div>
-                  <Image
-                    src={s.iconSvg}
-                    alt=""
-                    width={36}
-                    height={36}
-                    className="h-9 w-9 opacity-90"
-                  />
-                  <h3 className="mt-5 text-[length:var(--text-h4)] font-semibold text-text-primary">
+                {/* Ghost numeral */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute right-3 bottom-2 select-none font-[family-name:var(--font-display)] leading-none text-text-primary opacity-[0.04] transition-opacity duration-[var(--duration-base)] group-hover:opacity-[0.09]"
+                  style={{ fontSize: "clamp(5rem, 10vw, 8rem)" }}
+                >
+                  {cardNum}
+                </span>
+
+                {/* Icon — inverts to black on flood */}
+                <Image
+                  src={s.iconSvg}
+                  alt=""
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 opacity-80 transition-[filter,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)] group-hover:[filter:brightness(0)] group-hover:-translate-y-0.5"
+                />
+
+                {/* Content */}
+                <div className="relative z-10 mt-6">
+                  <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.05] tracking-tight text-text-primary">
                     {s.name}
                   </h3>
-                  <p className="mt-2 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
+                  <p className="mt-3 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary transition-colors duration-[var(--duration-base)] group-hover:text-text-primary">
                     {s.homeCardDescription}
                   </p>
                 </div>
-                <div className="mt-6 flex items-center justify-between border-t border-[var(--color-hairline)] pt-3">
-                  <span className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-text-dim">
+
+                {/* Footer */}
+                <div className="relative z-10 mt-6 flex items-center justify-between border-t border-[var(--color-hairline)] pt-3 transition-colors duration-[var(--duration-base)] group-hover:border-[var(--color-text-primary)]/30">
+                  <span className="tabular font-mono text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-text-dim transition-colors duration-[var(--duration-base)] group-hover:text-text-primary">
                     {s.homeCardPrice}
                   </span>
-                  <ArrowRight
-                    size={14}
+                  <ArrowUpRight
+                    size={16}
                     weight="bold"
-                    className="text-text-dim transition-transform group-hover:translate-x-0.5 group-hover:text-[var(--color-neon-text)]"
+                    className="text-text-dim transition-[color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)] group-hover:text-text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                   />
                 </div>
               </Link>
             );
           })}
-
-          {/* Brand filler — last bento cell. Decorative spinning logo on the
-              grave-dark tile reinforces the brand against the lighter cards. */}
-          <div
-            aria-hidden
-            className="flex min-h-[14rem] items-center justify-center bg-[var(--color-grave)] p-6"
-          >
-            <Image
-              src="/assets/branding-zombie-turntable.gif"
-              alt=""
-              width={400}
-              height={400}
-              unoptimized
-              className="h-auto w-full max-w-[11rem] object-contain"
-            />
-          </div>
         </div>
       </div>
     </Section>
