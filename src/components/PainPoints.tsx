@@ -1,91 +1,166 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Warning } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
-const stats: { value: string; label: string; source?: string }[] = [
+// ── Count-up hook ─────────────────────────────────────────────────────────────
+// Ease-out-quart ramp via requestAnimationFrame. Honors reduced-motion by
+// jumping straight to the final value.
+function useCountUp(target: number, isActive: boolean, duration = 1400) {
+  const [count, setCount] = useState(0);
+  const rafRef = useRef<number>(0);
+  const reduce = useReducedMotion();
+
+  useEffect(() => {
+    if (!isActive) return;
+    if (reduce) {
+      setCount(target);
+      return;
+    }
+    const start = performance.now();
+    const tick = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4); // ease-out-quart
+      setCount(Math.round(eased * target));
+      if (progress < 1) rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [isActive, target, duration, reduce]);
+
+  return count;
+}
+
+// ── Stat data ─────────────────────────────────────────────────────────────────
+interface StatRow {
+  numericValue?: number;
+  suffix?: string;
+  special?: string;
+  label: string;
+  source?: string;
+}
+
+const stats: StatRow[] = [
   {
-    value: "75%",
+    numericValue: 75,
+    suffix: "%",
     label: "of people judge a business by its website.",
     source: "Stanford Web Credibility Project",
   },
   {
-    value: "53%",
+    numericValue: 53,
+    suffix: "%",
     label: "leave if your site takes over 3 seconds to load.",
     source: "Google / SOASTA",
   },
   {
-    value: "24/7",
+    special: "24/7",
     label: "your competitor's chatbot is open. Yours isn't.",
   },
 ];
 
-export default function PainPoints() {
-  const { ref, isInView } = useInView(0.15);
+// ── Single stat row — own in-view trigger so each animates as it lands ───────
+function StatRowItem({ stat, index }: { stat: StatRow; index: number }) {
+  const { ref, isInView } = useInView(0.35);
+  const count = useCountUp(stat.numericValue ?? 0, isInView && !!stat.numericValue);
+  const display = stat.special ?? `${count}${stat.suffix ?? ""}`;
 
   return (
-    <Section theme="light" pad="standard" className="bg-[var(--color-fog)]">
+    <li className="border-t border-[var(--color-hairline-strong)]">
       <div
         ref={ref}
         className={cn(
-          "grid grid-cols-1 gap-x-12 gap-y-10 lg:grid-cols-12 transition-all duration-700",
-          isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
+          "grid grid-cols-1 gap-y-3 gap-x-8 py-10 sm:grid-cols-[auto_1fr]",
+          "transition-[opacity,transform] duration-[var(--duration-slower)] ease-[var(--ease-out-expo)] motion-reduce:transition-none",
+          isInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-4",
+        )}
+        style={{ transitionDelay: `${index * 90}ms` }}
+      >
+        {/* Big numeric/value */}
+        <div
+          className="tabular font-[family-name:var(--font-display)] leading-[0.9] tracking-tight text-[var(--color-neon-text)]"
+          style={{ fontSize: "clamp(4rem, 7.5vw, 8rem)" }}
+          aria-label={display}
+        >
+          {display}
+        </div>
+
+        {/* Label + source */}
+        <div className="flex flex-col justify-center gap-2 sm:border-l sm:border-[var(--color-hairline-strong)] sm:pl-6">
+          <p className="text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+            {stat.label}
+          </p>
+          {stat.source && (
+            <p className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-text-dim">
+              — {stat.source}
+            </p>
+          )}
+        </div>
+      </div>
+    </li>
+  );
+}
+
+// ── Section ───────────────────────────────────────────────────────────────────
+export default function PainPoints() {
+  const { ref: headRef, isInView: headInView } = useInView(0.2);
+
+  return (
+    <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]">
+      {/* Header — editorial splash */}
+      <div
+        ref={headRef}
+        className={cn(
+          "transition-[opacity,transform] duration-[var(--duration-slower)] ease-[var(--ease-out-expo)] motion-reduce:transition-none",
+          headInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
         )}
       >
-        {/* LEFT: editorial statement card spans 6 columns */}
-        <div className="lg:col-span-6">
+        <div className="flex items-center gap-3">
           <Warning
-            size={28}
+            size={22}
             weight="duotone"
             className="text-[var(--color-neon-text)]"
           />
-          <h2 className="mt-5 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
-            If your website looks like it&apos;s from{" "}
-            <span className="relative inline-block">
-              2016
-              <span
-                aria-hidden
-                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
-              />
-            </span>
-            , your customers already noticed.
-          </h2>
-          <p className="measure mt-6 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
-            You&apos;re not losing customers because your product isn&apos;t
-            good. You&apos;re losing them in the seven seconds it takes to load
-            your homepage on a phone.
-          </p>
+          <span className="h-px w-8 bg-[var(--color-neon-text)]" />
+          <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-text-dim">
+            The truth
+          </span>
         </div>
 
-        {/* RIGHT: stat rows, hairline separators, no card chrome */}
-        <ul className="lg:col-span-6 lg:col-start-7">
-          {stats.map((s, i) => (
-            <li
-              key={s.value}
-              className={cn(
-                "grid grid-cols-[auto_1fr] gap-x-6 py-7",
-                i > 0 && "border-t border-[var(--color-hairline-strong)]",
-              )}
-            >
-              <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-none text-[var(--color-neon-text)]">
-                {s.value}
-              </span>
-              <div className="flex min-w-0 flex-col justify-center">
-                <p className="text-[length:var(--text-body)] font-medium leading-snug text-text-primary">
-                  {s.label}
-                </p>
-                {s.source && (
-                  <p className="mt-1 text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
-                    {s.source}
-                  </p>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
+        <h2
+          className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] leading-[1.0] tracking-tight text-text-primary"
+          style={{ fontSize: "clamp(2rem, 4vw + 0.5rem, 3.25rem)" }}
+        >
+          If your website looks like it&apos;s from{" "}
+          <span className="relative inline-block">
+            2016
+            <span
+              aria-hidden
+              className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
+            />
+          </span>
+          , your customers already noticed.
+        </h2>
+
+        <p className="measure mt-6 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
+          You&apos;re not losing customers because your product isn&apos;t good.
+          You&apos;re losing them in the seven seconds it takes to load your
+          homepage on a phone.
+        </p>
       </div>
+
+      {/* Stats — editorial data spread */}
+      <ul className="mt-10" aria-label="Industry statistics">
+        {stats.map((stat, i) => (
+          <StatRowItem key={stat.label} stat={stat} index={i} />
+        ))}
+      </ul>
     </Section>
   );
 }

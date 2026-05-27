@@ -47,4 +47,5 @@ export {
   Quotes,
   Sparkle,
   Lightning,
+  Star,
 } from "@phosphor-icons/react";
