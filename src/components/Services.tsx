@@ -36,7 +36,7 @@ export default function Services() {
             <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
               What we do
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.05] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.15] tracking-tight text-text-primary">
               Everything your business needs to{" "}
               <span className="relative inline-block">
                 show up online

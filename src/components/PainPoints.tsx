@@ -134,7 +134,7 @@ export default function PainPoints() {
         </div>
 
         <h2
-          className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] leading-[1.0] tracking-tight text-text-primary"
+          className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] leading-[1.15] tracking-tight text-text-primary"
           style={{ fontSize: "clamp(2rem, 4vw + 0.5rem, 3.25rem)" }}
         >
           If your website looks like it&apos;s from{" "}
