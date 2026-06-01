@@ -12,14 +12,59 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import SectionSeparator from "@/components/SectionSeparator";
+import { REVIEWS } from "@/data/reviews";
+import { FAQS } from "@/data/faqs";
+import { LOCALBIZ_ID, BUSINESS_NAME } from "@/lib/site";
+
+// FAQPage schema generated from the SAME data the visible accordion renders, so
+// the structured data always matches on-page text (Google FAQ-rich-result rule).
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+
+// Individual Review schema for the homepage testimonials. aggregateRating lives
+// on the LocalBusiness node in layout.tsx; these Review objects reference it by
+// @id so the proof is machine-readable for AI answer engines and rich results.
+const reviewsSchema = REVIEWS.map((r) => ({
+  "@context": "https://schema.org",
+  "@type": "Review",
+  itemReviewed: {
+    "@type": "LocalBusiness",
+    "@id": LOCALBIZ_ID,
+    name: BUSINESS_NAME,
+  },
+  author: { "@type": "Person", name: r.name },
+  datePublished: r.datePublished,
+  reviewRating: {
+    "@type": "Rating",
+    ratingValue: "5",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  reviewBody: r.quote,
+}));
 
 // Separator placement is driven by hex-match between SVG fill and an adjacent
 // section's background token — see SectionSeparator.tsx for the fill catalog.
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero />
         <SectionSeparator id={7} />
         <PainPoints />

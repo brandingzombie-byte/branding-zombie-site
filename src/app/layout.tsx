@@ -24,6 +24,7 @@ import {
   SOCIAL_URLS,
   GA_MEASUREMENT_ID,
 } from "@/lib/site";
+import { REVIEW_AVG, REVIEW_COUNT } from "@/data/reviews";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -273,6 +274,13 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "CPG Packaging Design" } },
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: REVIEW_AVG,
+    reviewCount: REVIEW_COUNT,
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: SOCIAL_URLS,
 };
 
@@ -297,193 +305,13 @@ const websiteSchema = {
   },
 };
 
-// ─── Schema.org — Service catalog ─────────────────────────────────────────
-const buildService = (
-  name: string,
-  description: string,
-  serviceType: string,
-  price: string,
-) => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name,
-  description,
-  provider: { "@id": LOCALBIZ_ID },
-  areaServed: AREAS_SERVED.map((n) => ({ "@type": "City", name: n })),
-  serviceType,
-  offers: {
-    "@type": "Offer",
-    price,
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
-  },
-});
+// Service catalog JSON-LD removed from global scope to avoid asserting Service
+// offers on every URL (incl. the blog). /services carries an ItemList of all
+// services, and each /services/[slug] page carries its own Service schema.
 
-const servicesSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    buildService(
-      "Web Design",
-      "Custom, conversion-focused website design for small businesses in Cumming, GA, Forsyth County and North Metro Atlanta. Sites delivered in 10–14 days starting at $1,500. Next.js, Webflow, Shopify and Squarespace.",
-      "Web Design",
-      "1500",
-    ),
-    buildService(
-      "AI Workflow Integration",
-      "Business automation and AI-powered workflows — chatbots, lead capture, email follow-up, scheduling, and customer service automation — for small businesses in Cumming, GA and across North Atlanta.",
-      "Business Automation",
-      "500",
-    ),
-    buildService(
-      "Graphic Design",
-      "Logos, brand identity systems, style guides, menus, brochures, pitch decks, social media graphics and illustration for small businesses in Cumming, Forsyth County and Atlanta.",
-      "Graphic Design",
-      "150",
-    ),
-    buildService(
-      "Logo Design & Brand Identity",
-      "Custom logo design and full brand identity systems — logo, color palette, typography, brand guidelines and launch kit — for Cumming and North Atlanta small businesses.",
-      "Logo Design",
-      "500",
-    ),
-    buildService(
-      "Print Services",
-      "Business cards, flyers, brochures, banners, yard signs, vehicle wraps, menus, rack cards, postcards, posters, stickers, labels, custom apparel and trade show displays. Wholesale trade pricing, fast turnaround, delivered throughout Forsyth County and North Atlanta.",
-      "Print Services",
-      "75",
-    ),
-    buildService(
-      "Business Card Printing",
-      "Premium business card design and printing in Cumming, GA — matte, gloss, spot UV, soft-touch and luxe stocks. Wholesale trade pricing, fast turnaround, local delivery.",
-      "Business Card Printing",
-      "75",
-    ),
-    buildService(
-      "Vehicle Wrap Design",
-      "Custom vehicle wrap design and installation coordination for service businesses in Forsyth County and North Metro Atlanta — contractors, HVAC, plumbers, landscapers and mobile services.",
-      "Vehicle Graphics",
-      "800",
-    ),
-    buildService(
-      "Social Media Management",
-      "Consistent social media presence for small businesses in Cumming, GA. Content creation, scheduling, Instagram, Facebook and TikTok management starting at $400/mo.",
-      "Social Media Management",
-      "400",
-    ),
-    buildService(
-      "Shopify Ecommerce Development",
-      "Full Shopify and BigCommerce store setup with custom theme design, product catalog, checkout optimization and payment integration. Starting at $3,000.",
-      "Ecommerce Development",
-      "3000",
-    ),
-    buildService(
-      "CPG & Supplement Packaging Design",
-      "CPG and supplement packaging design with FDA/FTC compliance review, die-line matched print-ready files, and vendor coordination. Shelf-ready in 30 days. Starting at $5,000 per product line.",
-      "Packaging Design",
-      "5000",
-    ),
-    buildService(
-      "Restaurant Menu Design & Printing",
-      "Full menu design and printing for restaurants, cafes and food trucks in Cumming, Alpharetta, Roswell and North Metro Atlanta. Print and digital menus, QR code menus, takeout menus.",
-      "Menu Design",
-      "250",
-    ),
-    buildService(
-      "Local SEO & Google Business Setup",
-      "Google Business Profile optimization, local schema markup, citation building and on-page SEO for small businesses across Cumming, Forsyth County and North Metro Atlanta.",
-      "Local SEO",
-      "300",
-    ),
-  ],
-};
-
-// ─── Schema.org — FAQ ─────────────────────────────────────────────────────
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How fast can you build my website?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most websites are completed in 10–14 days. Traditional agencies take 4–8 weeks — we move faster because we have a proven process and use modern AI-assisted tools.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you serve businesses outside of Cumming, GA?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We serve small businesses across Forsyth County, Alpharetta, Johns Creek, Milton, Roswell, Woodstock, Canton, Marietta, Buford, Suwanee, Sugar Hill, Duluth, Lawrenceville, Dawsonville, Gainesville and all of North Metro Atlanta.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you work with my existing website?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We can redesign your existing site, migrate it to a new platform, or build fresh from scratch — whatever makes the most sense for your goals and budget.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What does a website cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our websites start at $1,500 for a 5-page custom site. Our most popular package, the Digital Makeover, is $4,500 and includes AI chatbot integration. We have no hidden fees and everything is clearly quoted upfront.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is AI workflow integration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AI workflows automate repetitive tasks like answering customer questions, booking appointments, sending follow-up emails, and managing leads — so your business keeps working even when you're not.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What kind of businesses do you work with?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Restaurants, cafes, dental practices, medical clinics, chiropractors, salons, barbershops, gyms, HVAC companies, plumbers, electricians, roofers, contractors, landscapers, realtors, law firms, boutiques, auto repair shops, photographers, fitness studios and any small business in North Metro Atlanta that needs a stronger online presence.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer ongoing support after launch?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We offer monthly maintenance plans starting at $100/month that include updates, backups, security monitoring, and minor edits. You'll also get priority support and a monthly performance report.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you design and print business cards, flyers, and banners?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. We handle business cards, flyers, brochures, banners, yard signs, vehicle wraps, custom apparel, menus, rack cards, postcards, posters, stickers and trade show displays. Everything is designed in-house and produced through our wholesale trade accounts so your print materials match your brand perfectly.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you design supplement labels and CPG packaging?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Our CPG Launch Package takes supplement and packaged-goods brands from concept to shelf-ready in 30 days, including FDA-compliant label design, die-line matched print-ready files and vendor coordination. See our /cpg-launch page for details.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer free consultations?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Every project starts with a free 15-minute discovery call. No commitment, no pressure — just a clear picture of what's costing you customers and what we'd do about it.",
-      },
-    },
-  ],
-};
+// FAQ JSON-LD now lives on the homepage (app/page.tsx), generated from the same
+// src/data/faqs.ts the visible accordion uses — so the markup always matches the
+// on-page text (Google requires this for FAQ rich results).
 
 // ─── Schema.org — Breadcrumb ─────────────────────────────────────────────
 const breadcrumbSchema = {
@@ -510,6 +338,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[var(--color-grave)] focus:px-4 focus:py-2 focus:text-[length:var(--text-secondary)] focus:font-semibold focus:text-[var(--color-toxic)] focus:outline-none focus:ring-2 focus:ring-[var(--color-toxic)]"
+        >
+          Skip to content
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -521,14 +355,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <script
           type="application/ld+json"

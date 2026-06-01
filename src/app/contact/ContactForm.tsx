@@ -45,6 +45,7 @@ export default function ContactForm() {
           name="company_website"
           tabIndex={-1}
           autoComplete="off"
+          aria-hidden="true"
         />
       </label>
 

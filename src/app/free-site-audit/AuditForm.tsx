@@ -54,7 +54,7 @@ export default function AuditForm() {
       {/* Honeypot */}
       <label className="sr-only" aria-hidden>
         Company website
-        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       </label>
 
       <Field

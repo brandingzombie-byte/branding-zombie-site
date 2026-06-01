@@ -278,7 +278,7 @@ export default function StartupSpecialPage() {
         </div>
       </header>
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         {/* ─── HERO ─────────────────────────────────────────────────────── */}
         <Section theme="dark" pad="spacious" topScanline>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">

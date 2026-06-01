@@ -58,11 +58,11 @@
   --color-cloud: #FFFFFF;
   --color-parchment: #F5FAF5;
   --color-neon: #C0ED08;
-  --color-neon-text: #4D7A00;
+  --color-neon-text: #3D6200;
   --color-sage-dark: #7CB87C;
   --color-text-primary: #333333;
   --color-text-secondary: #566856;
-  --color-text-dim: #5C6E60;
+  --color-text-dim: #4A5A4E;        /* WCAG AA on mist/fog (was #5C6E60, 4.2:1) */
 
   /* === Necro Vitalism — dark island palette === */
   --color-void: #0A0A0A;
@@ -88,8 +88,8 @@
   --color-hairline-strong: rgba(31, 41, 33, 0.16);
 
   /* === Fluid type scale === */
-  --text-caption: clamp(0.72rem, 0.69rem + 0.15vw, 0.78rem);
-  --text-secondary: clamp(0.82rem, 0.79rem + 0.18vw, 0.9rem);
+  --text-caption: clamp(0.78rem, 0.74rem + 0.18vw, 0.84rem);
+  --text-secondary: clamp(0.9rem, 0.85rem + 0.22vw, 1rem);
   --text-body: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
   --text-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
   --text-h4: clamp(1.25rem, 1.15rem + 0.6vw, 1.625rem);
@@ -139,7 +139,7 @@
   --destructive: #FF3366;
   --border: rgba(51, 51, 51, 0.10);
   --input: rgba(51, 51, 51, 0.12);
-  --ring: #4D7A00;
+  --ring: #3D6200;
   --chart-1: #C0ED08;
   --chart-2: #7CB87C;
   --chart-3: #5A6B5A;
@@ -153,7 +153,7 @@
   --sidebar-accent: #D4E7D4;
   --sidebar-accent-foreground: #333333;
   --sidebar-border: rgba(51, 51, 51, 0.10);
-  --sidebar-ring: #4D7A00;
+  --sidebar-ring: #3D6200;
 }
 
 html, body {

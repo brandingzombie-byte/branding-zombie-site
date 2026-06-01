@@ -20,6 +20,7 @@ export default function ServicesIndexGrid() {
       {/* Feature card spans 2x2 */}
       <Link
         href={`/services/${feature.slug}`}
+        aria-label={feature.name}
         className="group relative flex min-h-[20rem] flex-col justify-between bg-[var(--color-cloud)] p-8 transition-colors hover:bg-[var(--color-mist)] sm:col-span-2 sm:row-span-2 lg:p-10"
       >
         <div>
@@ -72,6 +73,7 @@ export default function ServicesIndexGrid() {
           <Link
             key={s.slug}
             href={`/services/${s.slug}`}
+            aria-label={s.name}
             className={cn(
               "group relative flex min-h-[14rem] flex-col justify-between p-7 transition-colors hover:bg-[var(--color-mist)]",
               tint,

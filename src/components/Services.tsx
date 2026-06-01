@@ -57,6 +57,7 @@ export default function Services() {
         {/* ── Featured card — full-width brutalist tile with flood-on-hover ── */}
         <Link
           href={`/services/${feature.slug}`}
+          aria-label={feature.name}
           className={cn(
             "group relative flex min-h-[22rem] flex-col justify-between overflow-hidden",
             "border-x-2 border-b-2 border-[var(--color-text-primary)] bg-[var(--color-fog)]",
@@ -124,6 +125,7 @@ export default function Services() {
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
+                aria-label={s.name}
                 className={cn(
                   "group relative flex min-h-[16rem] flex-col justify-between overflow-hidden",
                   "border-b-2 border-[var(--color-text-primary)] bg-[var(--color-surface-1)]",

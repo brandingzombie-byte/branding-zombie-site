@@ -50,7 +50,8 @@ export default function Footer() {
           </a>
           <p className="measure mt-5 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
             Bringing brands back from the dead. Modern websites, AI workflows,
-            and killer design for Cumming &amp; Forsyth County businesses.
+            and brand design — built in days, not months — for Cumming &amp;
+            Forsyth County businesses.
           </p>
         </div>
 

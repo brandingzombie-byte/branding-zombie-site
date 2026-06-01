@@ -94,7 +94,7 @@ export default function ServicesIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
           pad="spacious"
