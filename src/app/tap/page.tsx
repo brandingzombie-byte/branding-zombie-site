@@ -94,9 +94,9 @@ function TapHero() {
             transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
             className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.08] tracking-tight text-[var(--color-dark-text-primary)]"
           >
-            Go ahead.{" "}
+            Meet{" "}
             <span className="relative inline-block whitespace-nowrap">
-              Poke&nbsp;it.
+              Fteven.
               <span
                 aria-hidden
                 className="absolute -bottom-1 left-0 h-[4px] w-full bg-[var(--color-toxic)]"
@@ -110,9 +110,10 @@ function TapHero() {
             transition={{ duration: 0.7, delay: 0.2, ease: EASE }}
             className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]"
           >
-            That sticker dropped you into a 3D toy you can spin, drag, and shove
-            around with your thumb. No app. No download. Just a tap and something
-            undead in your hand.
+            That sticker pulled Fteven out of the ground — and now he won&apos;t
+            take his eyes off you. Move your cursor or finger and he follows
+            along. No app, no download. Just an undead little face with a
+            staring problem.
           </motion.p>
 
           <motion.p
@@ -157,8 +158,8 @@ function TapHero() {
           className="order-1 lg:order-2 lg:col-span-7"
         >
           <div
-            onPointerDown={() => setTouched(true)}
-            className="group relative h-[52vh] min-h-[340px] w-full overflow-hidden rounded-2xl border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)]/60 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] lg:h-[72vh]"
+            onPointerMove={() => setTouched(true)}
+            className="group relative h-[68vh] min-h-[460px] w-full overflow-hidden rounded-2xl border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)]/60 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] sm:h-[60vh] lg:h-[72vh]"
           >
             {/* Corner brackets — techy frame */}
             <Corner className="left-3 top-3 border-l-2 border-t-2" />
@@ -173,14 +174,14 @@ function TapHero() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--color-toxic)]" />
               </span>
               <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-secondary)]">
-                Live · it&apos;s alive
+                Fteven · live
               </span>
             </div>
 
             {/* The scene */}
             <SplineScene scene={ZOMBIE_SCENE} className="h-full w-full" />
 
-            {/* Drag hint — fades once they grab it */}
+            {/* Follow hint — fades once they start moving */}
             <div
               className={cn(
                 "pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 transition-all duration-500",
@@ -190,8 +191,8 @@ function TapHero() {
               )}
             >
               <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-dark-border-strong)] bg-[var(--color-grave)]/80 px-4 py-2 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.16em] text-[var(--color-dark-text-primary)] backdrop-blur-sm">
-                <HandTap size={15} weight="bold" className="text-[var(--color-toxic-text)]" />
-                Drag to spin · tap to poke
+                <Eye size={15} weight="bold" className="text-[var(--color-toxic-text)]" />
+                Move around — he follows
               </span>
             </div>
           </div>
@@ -231,7 +232,7 @@ function TapConcept() {
     {
       Icon: Cube,
       label: "Play",
-      text: "They spin your 3D thing, laugh, and remember exactly who put it there.",
+      text: "They lock eyes with your 3D mascot, laugh, and remember exactly who put it there.",
     },
   ];
 
@@ -372,7 +373,7 @@ function TapBuild() {
     {
       Icon: Cube,
       title: "Interactive 3D heroes",
-      text: "A banner like the one up top, living on your homepage. Spin-able, draggable, impossible to scroll past.",
+      text: "A banner like the one up top, living on your homepage. It watches every visitor and is impossible to scroll past.",
     },
     {
       Icon: Sticker,
