@@ -15,6 +15,7 @@ import ServiceJsonLd from "@/components/services/ServiceJsonLd";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
+import PrintCatalog from "@/components/services/PrintCatalog";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
@@ -124,6 +125,12 @@ export default async function ServicePage({
                 <SectionSeparator id={5} />
               )}
               <PrintCategoryBands bands={service.categoryBands} />
+            </>
+          )}
+          {service.slug === "print-design" && (
+            <>
+              <SectionSeparator id={4} />
+              <PrintCatalog />
             </>
           )}
           {(service.tiers || service.categoryBands) ? (

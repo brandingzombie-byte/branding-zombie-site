@@ -463,7 +463,7 @@ const faqSchema = {
       name: "Can you design and print business cards, flyers, and banners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. We handle business cards, flyers, brochures, banners, yard signs, vehicle wraps, custom apparel, menus, rack cards, postcards, posters, stickers and trade show displays. Everything is designed in-house and produced through our wholesale trade accounts so your print materials match your brand perfectly.",
+        text: "Absolutely. Our in-house catalog covers 30+ products — business cards, flyers, brochures, postcards, letterhead, presentation folders, door hangers, magnets, indoor and outdoor banners, mesh banners, retractable stands, posters, yard signs, vehicle wraps, menus, custom apparel, stickers, custom tablecloths, feather and teardrop flags, SEG display frames, trade-show booths, branded handouts, and promo giveaways. Everything is designed in our Cumming studio and produced through our in-house print pipeline at wholesale pricing so your collateral matches your brand perfectly.",
       },
     },
     {

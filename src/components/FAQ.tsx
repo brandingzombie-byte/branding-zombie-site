@@ -46,7 +46,7 @@ const faqs = [
   {
     question: "Can you help with print materials too?",
     answer:
-      "Absolutely. We have wholesale trade accounts that let us produce business cards, flyers, banners, yard signs, vehicle wraps, custom apparel, and more — often faster and cheaper than your local print shop.",
+      "Absolutely. Our in-house catalog covers 30+ products — business cards, flyers, brochures, banners, retractable stands, posters, custom tablecloths, feather flags, SEG display frames, trade-show booths, yard signs, vehicle wraps, custom apparel, and more — designed and produced under one roof at wholesale pricing, often faster and cheaper than your local print shop.",
   },
 ];
 

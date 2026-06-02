@@ -78,7 +78,6 @@ export const metadata: Metadata = {
 
     // Branding
     "Branding Zombie CPG",
-    "Ink Spatter Studio",
     "Gerry Betancourt packaging designer",
   ],
   openGraph: {
@@ -236,10 +235,6 @@ const personSchema = {
     "Co-packer coordination",
     "Brand identity",
   ],
-  alumniOf: {
-    "@type": "Organization",
-    name: "Ink Spatter Studio",
-  },
   description:
     "15+ years of in-house CPG experience. Has managed full product launches from formulation to shelf for supplement brands, and built packaging systems for 30+ companies.",
 };
