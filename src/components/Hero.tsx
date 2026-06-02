@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import Section from "@/components/Section";
 import { ArrowUpRight, Phone } from "@/components/icons";
@@ -9,6 +10,15 @@ export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 600], [0, 120]);
+
+  // The 9MB background video only mounts on desktop with motion allowed. On
+  // mobile/4G and reduced-motion, the ~29KB webp poster is all that loads —
+  // keeping it the (cheap) LCP element instead of a multi-megabyte download.
+  const [mountVideo, setMountVideo] = useState(false);
+  useEffect(() => {
+    if (shouldReduceMotion || typeof window === "undefined") return;
+    if (window.matchMedia("(min-width: 768px)").matches) setMountVideo(true);
+  }, [shouldReduceMotion]);
 
   return (
     <Section
@@ -25,17 +35,28 @@ export default function Hero() {
         style={{ y: shouldReduceMotion ? 0 : bgY }}
         aria-hidden
       >
-        <video
-          className="h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
-          poster="/assets/branding-zombie-hero.png"
-          autoPlay={!shouldReduceMotion}
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/assets/branding-zombie-hero.mp4" type="video/mp4" />
-        </video>
+        {/* Lightweight poster — always the LCP element (~29KB webp). */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/hero-poster.webp"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
+        />
+        {mountVideo && (
+          <video
+            className="absolute inset-0 h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
+            poster="/assets/hero-poster.webp"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+          >
+            <source src="/assets/branding-zombie-hero.mp4" type="video/mp4" />
+          </video>
+        )}
       </motion.div>
 
       {/* Readability scrim — top-down on mobile (text stacks vertically),
@@ -83,6 +104,12 @@ export default function Hero() {
             </span>
           </div>
 
+          {/* Cheeky setup line — pairs with the "resurrected." H1 payoff.
+              Swap the wording freely; keep it to one joke. */}
+          <p className="animate-fade-up mt-5 text-[length:var(--text-body)] font-medium leading-snug text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:120ms]">
+            Most local websites are already dead.
+          </p>
+
           {/* Headline — display weight contrast on noun.
               Size is scoped to the hero (slightly smaller than --text-display)
               so the headline fits on narrow mobile without getting clipped,
@@ -111,7 +138,8 @@ export default function Hero() {
 
           {/* Lead */}
           <p className="animate-fade-up measure mt-8 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:520ms]">
-            Modern websites, AI workflows, and killer brand systems —{" "}
+            Modern websites, AI workflows, and brand systems that outlive
+            trends —{" "}
             <span className="text-[var(--color-dark-text-primary)]">
               built in days, not months,
             </span>{" "}

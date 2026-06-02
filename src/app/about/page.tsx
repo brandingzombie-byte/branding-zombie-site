@@ -109,7 +109,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
           pad="spacious"

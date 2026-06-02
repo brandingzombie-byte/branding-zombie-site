@@ -14,7 +14,7 @@ export default function AuditForm() {
   const trackedRef = useRef(false);
 
   useEffect(() => {
-    if (state.ok && !trackedRef.current) {
+    if (state.ok && state.leadId && !trackedRef.current) {
       trackedRef.current = true;
       const score = state.result?.overallScore;
       const pulse = state.result?.overallPulse;
@@ -26,9 +26,14 @@ export default function AuditForm() {
       });
       // Also fire generate_lead so this counts in the same key-event bucket
       // as contact-form leads — they're both qualified prospects.
-      trackEvent("generate_lead", { form: "free_site_audit", value: 1 });
+      trackEvent("generate_lead", {
+        form: "free_site_audit",
+        value: state.value ?? 1,
+        currency: "USD",
+        transaction_id: state.leadId,
+      });
     }
-  }, [state.ok, state.result]);
+  }, [state.ok, state.leadId, state.value, state.result]);
 
   if (state.ok && state.result) {
     return (
@@ -54,7 +59,7 @@ export default function AuditForm() {
       {/* Honeypot */}
       <label className="sr-only" aria-hidden>
         Company website
-        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       </label>
 
       <Field

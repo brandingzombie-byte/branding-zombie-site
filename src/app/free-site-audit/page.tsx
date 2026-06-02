@@ -9,7 +9,7 @@ import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/free-site-audit`;
 
 export const metadata: Metadata = {
-  title: "Free Website Pulse Check — Site Audit in Cumming, GA | Branding Zombie",
+  title: "Free Website Pulse Check — Site Audit in Cumming, GA",
   description:
     "Drop your URL, get a candid 6-pillar site audit in 10 seconds — speed, SEO, architecture, brand voice, visual clarity, trust signals. Free. Cumming, GA.",
   keywords: [
@@ -88,7 +88,7 @@ export default function FreeSiteAuditPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
           pad="spacious"

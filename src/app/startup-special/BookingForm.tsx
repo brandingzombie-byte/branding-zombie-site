@@ -1,14 +1,31 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useEffect, useRef, useState } from "react";
 import { ArrowRight, CalendarPlus, CheckCircle, Lightning } from "@phosphor-icons/react/dist/ssr";
 import { bookStartupSpecial, type BookingState } from "./actions";
+import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const INITIAL: BookingState = { ok: false, message: "" };
 
 export default function BookingForm() {
   const [state, formAction, pending] = useActionState(bookStartupSpecial, INITIAL);
+  const trackedRef = useRef(false);
+
+  // The $997 Startup Special is the highest-value lead on the site — fire
+  // generate_lead so it isn't invisible in analytics. Gated on leadId so the
+  // honeypot decoy (ok:true, no leadId) never counts.
+  useEffect(() => {
+    if (state.ok && state.leadId && !trackedRef.current) {
+      trackedRef.current = true;
+      trackEvent("generate_lead", {
+        form: "startup_special",
+        value: state.value ?? 997,
+        currency: "USD",
+        transaction_id: state.leadId,
+      });
+    }
+  }, [state.ok, state.leadId, state.value]);
 
   if (state.ok && state.calendlyUrl) {
     return (
@@ -69,7 +86,7 @@ function FormFields({
       {/* Honeypot */}
       <label className="sr-only" aria-hidden>
         Company website
-        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       </label>
 
       <Field

@@ -70,7 +70,7 @@ export default function BlogIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         {/* Header */}
         <Section theme="light" pad="standard" className="pt-32 lg:pt-40">
           <div className="flex flex-col gap-4">

@@ -1,5 +1,6 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { EMAIL } from "@/lib/site";
 
 // Server action invoked by the contact form. Sends the lead directly to the
@@ -9,6 +10,11 @@ import { EMAIL } from "@/lib/site";
 export type ContactState = {
   ok: boolean;
   message: string;
+  // Set ONLY on a genuine lead (not the honeypot decoy). The client fires
+  // generate_lead gated on leadId, and uses it as the GA4 transaction_id so
+  // resubmits/remounts dedupe. value/currency give the lead a real weight.
+  leadId?: string;
+  value?: number;
 };
 
 const ZERO_WIDTH = /[\u200B-\u200D\uFEFF]/g;
@@ -116,5 +122,7 @@ export async function submitContact(
     ok: true,
     message:
       "Got it — your note is in our inbox. We'll be in touch within one business day (usually same day).",
+    leadId: randomUUID(),
+    value: 50,
   };
 }

@@ -94,7 +94,7 @@ export default async function ServicePage({
     <>
       <Navbar />
       <ServiceJsonLd service={service} />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <ServicePageClient>
           <ServiceHero service={service} />
           {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (

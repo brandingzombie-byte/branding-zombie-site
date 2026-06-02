@@ -690,7 +690,7 @@ export default function CPGLaunchPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <CPGHero />
         <CPGProblem />
         <SectionSeparator id={8} />

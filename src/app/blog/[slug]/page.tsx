@@ -99,7 +99,7 @@ export default async function BlogPostPage({
     <>
       <Navbar />
       <BlogJsonLd post={post} />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <article>
           <BlogHero meta={post.meta} />
 
