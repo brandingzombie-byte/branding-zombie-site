@@ -48,4 +48,17 @@ export {
   Sparkle,
   Lightning,
   Star,
+
+  // Interactive / NFC landing page
+  HandTap,
+  CursorClick,
+  Sticker,
+  Cube,
+  Eye,
+  ChartLineUp,
+  WifiHigh,
+  Storefront,
+  Package,
+  MagicWand,
+  IdentificationBadge,
 } from "@phosphor-icons/react";

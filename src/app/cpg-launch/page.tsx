@@ -399,8 +399,8 @@ function CPGAuthority() {
               not as an outside agency, but inside the building. I&apos;ve
               worked in-house at supplement brands, managed full product
               launches from formulation to shelf, run production logistics
-              between brands and trade printers, and built packaging systems
-              for 30+ companies through Ink Spatter Studio.
+              between brands and printers, and built packaging systems for
+              30+ companies.
             </p>
             <p>
               I don&apos;t just make things look good. I make sure your files

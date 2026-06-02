@@ -805,7 +805,7 @@ export const SERVICES: Service[] = [
         name: "Print + Source Bundle",
         priceRange: "Design fee + 15–20% on production",
         examples: [
-          "We design AND source the printing via Ink Spatter Studio",
+          "We design AND source the printing — all under one roof",
           "One invoice for design + production",
           "Vendor-managed — we handle proofs, fulfillment, and delivery",
           "Wholesale trade pricing passed through",
@@ -821,7 +821,7 @@ export const SERVICES: Service[] = [
       headline: "Designed for print,",
       highlightWord: "not just Canva",
       subhead:
-        "Packaging, labels, menus, signage, brochures, vehicle wraps, and branded collateral. Designed in-house with real dielines, real CMYK, and real press experience. Printing sourced through Ink Spatter Studio when you want one invoice — or print-ready files sent to your vendor when you don't.",
+        "Packaging, labels, menus, signage, brochures, vehicle wraps, and branded collateral. Designed in-house with real dielines, real CMYK, and real press experience. Printing sourced through our in-house production pipeline when you want one invoice — or print-ready files sent to your vendor when you don't.",
       ctaLabel: "Get a print quote",
       ctaHref: CALENDLY_URL,
       heroImage: {
@@ -931,7 +931,7 @@ export const SERVICES: Service[] = [
         step: "04",
         title: "Print & Deliver",
         description:
-          "Printed through our wholesale trade accounts, delivered to your door in Cumming, Forsyth County, or anywhere in North Metro Atlanta.",
+          "Produced through our in-house print pipeline at wholesale pricing, then delivered to your door in Cumming, Forsyth County, or anywhere across North Metro Atlanta.",
         icon: "RocketLaunch",
       },
     ],
@@ -941,7 +941,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: "Do you handle printing too, or just design?",
-        a: "Both — your choice. The Print + Source Bundle means we design it AND source the printing through Ink Spatter Studio, our production arm. One invoice, we manage the vendor, you get it delivered. Or you can take the print-ready files and send them to your own vendor. Same files either way.",
+        a: "Both — your choice. The Print + Source Bundle means we design it AND source the printing through our in-house production pipeline. One invoice, we manage production, you get it delivered. Or you can take the print-ready files and send them to your own vendor. Same files either way.",
       },
       {
         q: "Can you design regulated product labels — supplements, food, cosmetics?",
@@ -957,7 +957,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Why is the Print + Source bundle cheaper than my local print shop?",
-        a: "We're not a print shop — we're a design studio with wholesale trade accounts via Ink Spatter Studio. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
+        a: "We're not a retail print shop — we're a design studio with a wholesale production pipeline in-house. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
       },
       {
         q: "What are your minimums?",
@@ -1000,7 +1000,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Print Design in Cumming, GA — Packaging, Labels, Signage & Collateral",
       seoDescription:
-        "Packaging, labels, menus, business cards, signage, and vehicle wraps for Cumming, GA & North Atlanta businesses. FDA-compliant label design, dielines, wholesale print sourcing via Ink Spatter Studio. From $75.",
+        "Packaging, labels, menus, business cards, signage, and vehicle wraps for Cumming, GA & North Atlanta businesses. FDA-compliant label design, dielines, in-house wholesale print sourcing. From $75.",
       keywords: [
         "print services Cumming GA",
         "business card printing Cumming GA",
@@ -1030,7 +1030,7 @@ export const SERVICES: Service[] = [
       serviceType: "Print Services",
       category: "Print Design & Production",
       description:
-        "Business cards, flyers, brochures, banners, yard signs, vehicle wraps, menus, rack cards, postcards, posters, stickers, labels, custom apparel, and trade show displays for small businesses in Cumming, GA and North Metro Atlanta. Wholesale trade pricing. Fast local delivery.",
+        "Business cards, flyers, brochures, postcards, letterhead, presentation folders, door hangers, magnets, indoor and outdoor banners, mesh banners, holiday banners, retractable stands, posters, yard signs, vehicle wraps, menus, stickers, labels, custom apparel, custom tablecloths, feather and teardrop flags, SEG display frames, trade show booths, pop-up displays, branded handouts, and promo giveaways for small businesses in Cumming, GA and North Metro Atlanta. Designed in-house and produced at wholesale pricing through our in-house print pipeline. Fast local delivery.",
     },
   },
 
