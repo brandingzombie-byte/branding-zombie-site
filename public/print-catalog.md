@@ -1,6 +1,6 @@
 # Print catalog — Branding Zombie Designs
 
-Branding Zombie Designs is a full-service design + print studio in Cumming, GA (Forsyth County). We design and produce 30+ print products under one roof at wholesale pricing. Production is handled through Ink Spatter Studio, our in-house print arm. Local delivery within 30 miles of Cumming; UPS Ground elsewhere.
+Branding Zombie Designs is a full-service design + print studio in Cumming, GA (Forsyth County). We design and produce 30+ print products under one roof at wholesale pricing. Production is handled in-house through our wholesale print pipeline. Local delivery within 30 miles of Cumming; UPS Ground elsewhere.
 
 - **Studio**: Cumming, GA
 - **Service area**: Forsyth County, North Metro Atlanta (Alpharetta, Roswell, Johns Creek, Woodstock, Buford, Suwanee, Cumming, Dawsonville)
