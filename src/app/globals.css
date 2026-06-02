@@ -287,6 +287,97 @@ html, body {
   animation: spotlight 2s var(--ease-out-expo) 0.6s 1 forwards;
 }
 
+/* ============================================
+   Print catalog motion (Emil-grade detail layer)
+   - Card enter: opacity + small translateY, strong ease-out, stagger first 6
+   - Image hover: subtle scale, gated by pointer:fine (no touch false-hovers)
+   - Pill press: scale(0.97) via global :active rule
+   - All transitions name exact properties (never `all`)
+   ============================================ */
+
+@keyframes catalog-card-in {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.catalog-card {
+  opacity: 0;
+  animation: catalog-card-in 320ms var(--ease-out-quart) forwards;
+  transition:
+    box-shadow 200ms var(--ease-out-quart),
+    border-color 200ms var(--ease-out-quart);
+}
+
+.catalog-card-img {
+  transition: transform 480ms var(--ease-out-quart);
+  transform-origin: center;
+}
+
+.catalog-card-arrow {
+  transition:
+    transform 200ms var(--ease-out-quart);
+}
+
+/* Hover affordances — gated on devices that can actually hover */
+@media (hover: hover) and (pointer: fine) {
+  .catalog-card:hover {
+    box-shadow: 0 18px 40px -24px rgba(31, 41, 33, 0.45);
+    border-color: var(--color-hairline-strong);
+  }
+  .catalog-card:hover .catalog-card-img {
+    transform: scale(1.04);
+  }
+  .catalog-card:hover .catalog-card-arrow {
+    transform: translate(2px, -2px);
+  }
+}
+
+/* Filter pills — explicit transition properties, no transition:all */
+.catalog-filter-pill {
+  transition:
+    background-color 200ms var(--ease-out-quart),
+    color 200ms var(--ease-out-quart),
+    border-color 200ms var(--ease-out-quart);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .catalog-filter-pill:hover {
+    border-color: var(--color-neon-text);
+    color: var(--color-neon-text);
+  }
+}
+
+/* Mobile filter pill rail — edge mask + snap so first/last pill stays reachable */
+.catalog-filter-track {
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline-start: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.catalog-filter-track::-webkit-scrollbar { display: none; }
+
+.catalog-filter-pill {
+  scroll-snap-align: start;
+}
+
+/* Reduced motion — keep fade, drop translate; freeze hover scales */
+@media (prefers-reduced-motion: reduce) {
+  .catalog-card {
+    animation: none;
+    opacity: 1;
+  }
+  .catalog-card-img,
+  .catalog-card-arrow,
+  .catalog-filter-pill {
+    transition: none;
+  }
+  .catalog-card:hover .catalog-card-img,
+  .catalog-card:hover .catalog-card-arrow {
+    transform: none;
+  }
+}
+
 /* Suspense loader — used by SplineScene while the 3D runtime boots */
 .loader {
   width: 38px;
