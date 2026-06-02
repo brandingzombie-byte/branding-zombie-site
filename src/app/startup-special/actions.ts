@@ -1,5 +1,6 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF, SITE_URL } from "@/lib/site";
 
 // ─── Server action for the Startup Special booking form ────────────────────
@@ -15,6 +16,9 @@ export type BookingState = {
   ok: boolean;
   message: string;
   calendlyUrl?: string;
+  // Set only on a genuine booking lead (not the honeypot). $997 offer → value 997.
+  leadId?: string;
+  value?: number;
 };
 
 const ZERO_WIDTH = /[​-‍﻿]/g;
@@ -197,6 +201,8 @@ export async function bookStartupSpecial(
       ok: true,
       message: "Got it. Now grab a slot — we'll have your project notes when you show up.",
       calendlyUrl: CALENDLY_URL,
+      leadId: randomUUID(),
+      value: 997,
     };
   }
 
@@ -228,5 +234,7 @@ export async function bookStartupSpecial(
       ? "Got it. Confirmation in your inbox — now grab a kickoff slot."
       : "Got it. (Email delivery hiccup — go ahead and grab a slot, we'll see your details there.)",
     calendlyUrl: CALENDLY_URL,
+    leadId: randomUUID(),
+    value: 997,
   };
 }

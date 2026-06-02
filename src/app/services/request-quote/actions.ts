@@ -1,5 +1,6 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY, SITE_URL } from "@/lib/site";
 import { renderQuoteConfirmation, renderQuoteOwnerNotification } from "@/lib/quoteEmail";
 
@@ -14,6 +15,20 @@ export type QuoteState = {
   ok: boolean;
   message: string;
   fieldErrors?: Partial<Record<"name" | "email" | "description" | "services" | "files", string>>;
+  // Set only on a genuine lead (not the honeypot). transaction_id + value for GA4.
+  leadId?: string;
+  value?: number;
+};
+
+// Rough lead value by budget band (midpoint-ish) so GA4 can rank lead quality
+// instead of treating every quote as worth "1". Falls back to a nominal value.
+const BUDGET_VALUE: Record<string, number> = {
+  "<$1k": 500,
+  "$1k–$3k": 2000,
+  "$3k–$7k": 5000,
+  "$7k–$15k": 11000,
+  "$15k+": 20000,
+  "Not sure yet": 200,
 };
 
 const ZERO_WIDTH = /[\u200B-\u200D\uFEFF]/g;
@@ -302,5 +317,7 @@ export async function submitQuoteRequest(
     message: visitorResp.ok
       ? `Got it — your request is in. We sent a confirmation to ${email}. We'll get back to you within 24 hours, usually same day.`
       : `Got it — your request is in. (Confirmation email had a hiccup, but we have it.) We'll reach out within 24 hours, usually same day.`,
+    leadId: randomUUID(),
+    value: BUDGET_VALUE[safeBudget] ?? 200,
   };
 }

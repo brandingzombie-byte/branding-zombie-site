@@ -77,15 +77,17 @@ export default function CustomQuoteForm() {
   }, [prefilledService]);
 
   useEffect(() => {
-    if (state.ok && !trackedRef.current) {
+    if (state.ok && state.leadId && !trackedRef.current) {
       trackedRef.current = true;
       trackEvent("generate_lead", {
         form: "custom_quote",
         services: services.join(",") || undefined,
-        value: 1,
+        value: state.value ?? 1,
+        currency: "USD",
+        transaction_id: state.leadId,
       });
     }
-  }, [state.ok, services]);
+  }, [state.ok, state.leadId, state.value, services]);
 
   function toggleService(slug: string) {
     setServices((prev) =>

@@ -13,11 +13,16 @@ export default function ContactForm() {
   const trackedRef = useRef(false);
 
   useEffect(() => {
-    if (state.ok && !trackedRef.current) {
+    if (state.ok && state.leadId && !trackedRef.current) {
       trackedRef.current = true;
-      trackEvent("generate_lead", { form: "contact", value: 1 });
+      trackEvent("generate_lead", {
+        form: "contact",
+        value: state.value ?? 1,
+        currency: "USD",
+        transaction_id: state.leadId,
+      });
     }
-  }, [state.ok]);
+  }, [state.ok, state.leadId, state.value]);
 
   if (state.ok) {
     return (
