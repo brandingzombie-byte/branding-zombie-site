@@ -931,7 +931,7 @@ export const SERVICES: Service[] = [
         step: "04",
         title: "Print & Deliver",
         description:
-          "Printed through our wholesale trade accounts, delivered to your door in Cumming, Forsyth County, or anywhere in North Metro Atlanta.",
+          "Produced through Ink Spatter Studio at wholesale pricing, then delivered to your door in Cumming, Forsyth County, or anywhere across North Metro Atlanta.",
         icon: "RocketLaunch",
       },
     ],
@@ -957,7 +957,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Why is the Print + Source bundle cheaper than my local print shop?",
-        a: "We're not a print shop — we're a design studio with wholesale trade accounts via Ink Spatter Studio. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
+        a: "We're not a retail print shop — we're a design studio with a wholesale production pipeline via Ink Spatter Studio. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
       },
       {
         q: "What are your minimums?",
@@ -1030,7 +1030,7 @@ export const SERVICES: Service[] = [
       serviceType: "Print Services",
       category: "Print Design & Production",
       description:
-        "Business cards, flyers, brochures, banners, yard signs, vehicle wraps, menus, rack cards, postcards, posters, stickers, labels, custom apparel, and trade show displays for small businesses in Cumming, GA and North Metro Atlanta. Wholesale trade pricing. Fast local delivery.",
+        "Business cards, flyers, brochures, postcards, letterhead, presentation folders, door hangers, magnets, indoor and outdoor banners, mesh banners, holiday banners, retractable stands, posters, yard signs, vehicle wraps, menus, stickers, labels, custom apparel, custom tablecloths, feather and teardrop flags, SEG display frames, trade show booths, pop-up displays, branded handouts, and promo giveaways for small businesses in Cumming, GA and North Metro Atlanta. Designed in-house, produced at wholesale pricing through Ink Spatter Studio. Fast local delivery.",
     },
   },
 
