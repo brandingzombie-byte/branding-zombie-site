@@ -26,6 +26,20 @@ const nextConfig: NextConfig = {
         destination: "/services/print-design",
         permanent: true,
       },
+      // /work and /portfolio currently surface as an anchor on the homepage.
+      // Real /work page is planned; until then redirect direct visits and
+      // external links so they land on the gallery instead of a 404.
+      // Non-permanent so we can promote /work to a real page later.
+      {
+        source: "/work",
+        destination: "/#portfolio",
+        permanent: false,
+      },
+      {
+        source: "/portfolio",
+        destination: "/#portfolio",
+        permanent: false,
+      },
     ];
   },
 };

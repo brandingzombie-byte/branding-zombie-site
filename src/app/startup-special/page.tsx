@@ -178,7 +178,6 @@ const FOR = [
 ];
 
 const NOT_FOR = [
-  "Existing brands needing a refresh — that's the Launch Package",
   "Anyone shopping the $69/mo subscription agencies",
   "30-page sites with custom databases or e-commerce",
   "Last-week-before-launch panic jobs",
