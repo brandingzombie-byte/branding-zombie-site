@@ -5,7 +5,6 @@ import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/site";
 
 const services = [
   "Web Design",
-  "AI Workflow Integration",
   "Graphic Design",
   "Print Services",
   "Social Media",
