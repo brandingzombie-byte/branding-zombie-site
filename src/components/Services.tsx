@@ -8,18 +8,20 @@ import { ArrowUpRight, Clock, CurrencyDollar, Code } from "@/components/icons";
 import { SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
 
-const featureMeta = [
-  { Icon: Clock, text: "10–14 days" },
-  { Icon: CurrencyDollar, text: "from $1,500" },
-  { Icon: Code, text: "Next.js · Webflow" },
-];
-
 // Alternating top-offset to break grid-cookie-cutter feel on the support cards
 const cardOffsets = [0, 36, 0, 36, 0];
 
 export default function Services() {
   const { ref, isInView } = useInView(0.05);
   const [feature, ...rest] = SERVICES;
+
+  // Price reads from the SERVICES data so it can never drift from the
+  // service-page tier table. Single source of truth lives in services.ts.
+  const featureMeta = [
+    { Icon: Clock, text: "10–14 days" },
+    { Icon: CurrencyDollar, text: feature.homeCardPrice },
+    { Icon: Code, text: "Next.js · Webflow" },
+  ];
 
   return (
     <Section id="services" theme="light" pad="spacious">

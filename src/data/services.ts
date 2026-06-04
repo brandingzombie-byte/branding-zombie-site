@@ -179,7 +179,7 @@ export const SERVICES: Service[] = [
     tagline: "Custom small-business websites, built to convert",
     iconSvg: "/assets/SVG/web-design-icon.svg",
     themeAccent: "neon",
-    homeCardPrice: "from $2,500",
+    homeCardPrice: "from $1,500",
     homeCardDescription:
       "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
     hook: "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
@@ -190,6 +190,22 @@ export const SERVICES: Service[] = [
       "Owners who want agency-caliber work without the agency timeline and price",
     ],
     tiers: [
+      {
+        name: "Landing",
+        price: "$1,500",
+        timeline: "7 days",
+        deliverables: [
+          "1–2 page focused landing site",
+          "Hero, services, contact — all on one scroll",
+          "Mobile-optimized, Core Web Vitals pass",
+          "Contact form wired to your inbox",
+          "On-page SEO foundation",
+          "SSL, domain, hosting setup",
+        ],
+        bestFor:
+          "Single-offer businesses, event landing pages, or owners who need a credible one-pager to send people to.",
+        ctaLabel: "Start with Landing",
+      },
       {
         name: "Starter",
         price: "$2,500",
@@ -254,7 +270,7 @@ export const SERVICES: Service[] = [
         src: "/assets/services/web-design/hero.png",
         alt: "Modern small-business website design being built on a dark editorial desktop — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
+      microProof: "From $1,500 · 1–6 week delivery · 30+ brands launched",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your website is",
@@ -388,11 +404,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "How fast can you actually build my website?",
-        a: "Starter sites launch in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
+        a: "Landing pages launch in 7 days. Starter sites in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
       },
       {
         q: "What does a website cost?",
-        a: "Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
+        a: "Landing (1–2 pages, 7 days) is $1,500. Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
       },
       {
         q: "Will it rank on Google for my town?",
@@ -413,10 +429,10 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       label: "Websites start at",
-      price: "$2,500",
+      price: "$1,500",
       unit: "/ project",
-      note: "Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
-      numericPrice: "2500",
+      note: "Landing $1,500. Starter $2,500. Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
+      numericPrice: "1500",
     },
     finalCta: {
       eyebrow: "Ready when you are",
@@ -431,7 +447,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Web Design in Cumming, GA — Small-Business Websites in 10 Days",
       seoDescription:
-        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
+        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Landing $1,500 · Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
       keywords: [
         "web design Cumming GA",
         "web designer Forsyth County",
@@ -460,7 +476,7 @@ export const SERVICES: Service[] = [
       serviceType: "Web Design",
       category: "Web Design Services",
       description:
-        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 2–6 week delivery. Starter $2,500 · Growth $4,500 · Premium $7,500+.",
+        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 1–6 week delivery. Landing $1,500 · Starter $2,500 · Growth $4,500 · Premium $7,500+.",
     },
   },
 
