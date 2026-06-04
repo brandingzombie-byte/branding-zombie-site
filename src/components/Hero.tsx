@@ -104,26 +104,27 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Cheeky setup line — pairs with the "resurrected." H1 payoff.
-              Swap the wording freely; keep it to one joke. */}
+          {/* Setup line — plain-English framing. Personality lives in the
+              brand mark and tone, not in load-bearing positioning copy. */}
           <p className="animate-fade-up mt-5 text-[length:var(--text-body)] font-medium leading-snug text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:120ms]">
-            Most local websites are already dead.
+            What we do, in plain English.
           </p>
 
-          {/* Headline — display weight contrast on noun.
-              Size is scoped to the hero (slightly smaller than --text-display)
-              so the headline fits on narrow mobile without getting clipped,
-              and the leading is loosened to 1.05 so the two lines never kiss. */}
+          {/* Headline — display weight contrast on the punchline. Two-line
+              structure mirrors the previous hero so the layout (max-w, padding,
+              CTA stack below) stays balanced. Underline lives on the short
+              "you do" phrase so it doesn't overflow narrow viewports. */}
           <h1 className="mt-6 font-[family-name:var(--font-display)] leading-[1.05] tracking-tight">
             <span className="animate-rise block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:160ms]">
-              Small businesses
+              Logos, websites &amp; signs
             </span>
-            <span className="animate-rise mt-3 block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] opacity-0 [animation-delay:280ms]">
+            <span className="animate-rise mt-3 block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:280ms]">
+              that work as hard{" "}
               {/* Period lives inside the underlined inline-block so the
-                  toxic-green line extends under the full "resurrected." —
-                  matches the underline treatment used on other page headers. */}
-              <span className="relative inline-block whitespace-nowrap text-[var(--color-dark-text-primary)]">
-                resurrected.
+                  toxic-green line extends under the full "as you do." —
+                  matches the underline treatment elsewhere on the site. */}
+              <span className="relative inline-block whitespace-nowrap">
+                as you do.
                 <span
                   aria-hidden
                   className="absolute -bottom-1 left-0 h-[3px] w-full origin-left scale-x-0 bg-[var(--color-toxic)]"
@@ -136,14 +137,15 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* Lead */}
+          {/* Lead — leads with audience, surfaces the About-page business-goal
+              line (the strongest copy on the site per the persona audit). */}
           <p className="animate-fade-up measure mt-8 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:520ms]">
-            Modern websites, AI workflows, and brand systems that outlive
-            trends —{" "}
+            For Cumming-area businesses ready to look like a real business.
+            Every project starts with the{" "}
             <span className="text-[var(--color-dark-text-primary)]">
-              built in days, not months,
+              business goal, not the mood board.
             </span>{" "}
-            from right here in Cumming, Georgia.
+            Looking pretty is table stakes — making you money is the job.
           </p>
 
           {/* CTAs */}
