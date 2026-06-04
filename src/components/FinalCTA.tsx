@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Phone, Envelope, Calendar, ArrowRight } from "@/components/icons";
@@ -70,6 +71,25 @@ export default function FinalCTA() {
           picture of what&apos;s costing you customers and what we&apos;d
           do about it.
         </p>
+
+        {/* Real-person reassurance — the call goes to Gerry, not a queue. */}
+        <div className="mt-8 flex items-center gap-4">
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-[var(--color-toxic)]/50">
+            <Image
+              src="/assets/gerry-headshot.png"
+              alt="Gerry Betancourt, owner of Branding Zombie Designs"
+              fill
+              className="object-cover object-top"
+              sizes="56px"
+            />
+          </div>
+          <p className="text-[length:var(--text-secondary)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+            <span className="font-semibold text-[var(--color-dark-text-primary)]">
+              Gerry Betancourt
+            </span>
+            , owner. You&apos;ll talk to me — not a call center.
+          </p>
+        </div>
 
         {/* Primary CTA — single button, no breathe, no shadow soup */}
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">

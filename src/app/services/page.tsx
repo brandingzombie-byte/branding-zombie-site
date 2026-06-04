@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
-import ServicesIndexGrid from "@/components/services/ServicesIndexGrid";
+import ServicesBrutalistGrid from "@/components/services/ServicesBrutalistGrid";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import { SERVICES } from "@/data/services";
 import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
@@ -130,9 +130,9 @@ export default function ServicesIndexPage() {
               .
             </h1>
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              Six services, one team, no agency hand-offs. Pick what you need
-              today and add the rest as you grow — all built from right here in
-              Cumming, Georgia for small businesses across North Metro Atlanta.
+              One team, no agency hand-offs. Pick what you need today and add
+              the rest as you grow — all built from right here in Cumming,
+              Georgia for small businesses across North Metro Atlanta.
             </p>
           </div>
         </Section>
@@ -140,9 +140,10 @@ export default function ServicesIndexPage() {
         <SectionSeparator id={7} />
 
         <Section theme="light" pad="spacious" topRule>
-          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
+          {/* border-b-2 doubles as the top edge of the feature card below. */}
+          <div className="grid grid-cols-1 gap-x-12 gap-y-6 border-b-2 border-[var(--color-text-primary)] pb-8 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
+              <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
                 What we do
               </span>
               <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
@@ -163,7 +164,7 @@ export default function ServicesIndexPage() {
             </p>
           </div>
 
-          <ServicesIndexGrid />
+          <ServicesBrutalistGrid services={SERVICES} />
         </Section>
 
         <SectionSeparator id={4} />
