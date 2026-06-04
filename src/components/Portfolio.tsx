@@ -127,22 +127,9 @@ export default function Portfolio() {
               .
             </h2>
           </div>
-          <div className="flex flex-col items-start gap-3">
-            <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
-              Eight recent projects across construction, ecommerce, and B2B.
-            </p>
-            <a
-              href="/work"
-              className="group inline-flex items-center gap-2 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-[var(--color-toxic-text)] hover:text-[var(--color-toxic)]"
-            >
-              See all 80+ projects
-              <ArrowUpRight
-                size={14}
-                weight="bold"
-                className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-              />
-            </a>
-          </div>
+          <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
+            Eight recent projects across construction, ecommerce, and B2B.
+          </p>
         </div>
 
         {/* 12-col asymmetric grid: 8-col feature image / 4-col vertical thumbs */}
@@ -237,6 +224,26 @@ export default function Portfolio() {
               );
             })}
           </ul>
+        </div>
+
+        {/* Prominent gateway to the full filterable portfolio */}
+        <div className="mt-16 flex flex-col items-center gap-5 border-t border-[var(--color-dark-border)] pt-12 text-center">
+          <p className="measure text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+            And this is just a slice. Browse the full archive — 80+ projects
+            you can filter by branding, packaging, web, social, and print.
+          </p>
+          <a
+            href="/work"
+            role="button"
+            className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            See all 80+ projects
+            <ArrowUpRight
+              size={18}
+              weight="bold"
+              className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
+          </a>
         </div>
       </div>
     </Section>
