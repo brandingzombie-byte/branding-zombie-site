@@ -8,18 +8,25 @@ import { ArrowUpRight, Clock, CurrencyDollar, Code } from "@/components/icons";
 import { SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
 
-const featureMeta = [
-  { Icon: Clock, text: "10–14 days" },
-  { Icon: CurrencyDollar, text: "from $1,500" },
-  { Icon: Code, text: "Next.js · Webflow" },
-];
-
 // Alternating top-offset to break grid-cookie-cutter feel on the support cards
 const cardOffsets = [0, 36, 0, 36, 0];
 
 export default function Services() {
   const { ref, isInView } = useInView(0.05);
-  const [feature, ...rest] = SERVICES;
+  // AI Workflows is intentionally omitted from the homepage "What we do"
+  // grid (the /services/ai-workflows page still exists and is reachable
+  // from the footer). Keeps the homepage focused on the core demand:
+  // logos, sites, print, signage, social.
+  const [feature, ...allServices] = SERVICES;
+  const rest = allServices.filter((s) => s.slug !== "ai-workflows");
+
+  // Price reads from the SERVICES data so it can never drift from the
+  // service-page tier table. Single source of truth lives in services.ts.
+  const featureMeta = [
+    { Icon: Clock, text: "10–14 days" },
+    { Icon: CurrencyDollar, text: feature.homeCardPrice },
+    { Icon: Code, text: "Next.js · Webflow" },
+  ];
 
   return (
     <Section id="services" theme="light" pad="spacious">
@@ -49,8 +56,9 @@ export default function Services() {
             </h2>
           </div>
           <p className="text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
-            Six services, one team, no agency hand-offs. Pick what you need
-            today and add the rest as you grow.
+            One team, no agency hand-offs. Every project starts with the
+            business goal, not the mood board — looking pretty is table
+            stakes, making you money is the job.
           </p>
         </div>
 
