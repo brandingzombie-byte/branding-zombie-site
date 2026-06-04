@@ -14,7 +14,7 @@ const services = [
 
 const company = [
   { label: "About", href: "/about" },
-  { label: "Work", href: "/#portfolio" },
+  { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/#faq" },
@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-12">
         {/* Brand */}
         <div className="col-span-2 lg:col-span-4">
-          <a href="#" className="flex items-start gap-3">
+          <a href="/" aria-label="Branding Zombie Designs — home" className="flex items-start gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/Branding_Zombie_Logo_Icon.svg"

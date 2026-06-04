@@ -127,9 +127,22 @@ export default function Portfolio() {
               .
             </h2>
           </div>
-          <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
-            Eight recent projects across construction, ecommerce, and B2B.
-          </p>
+          <div className="flex flex-col items-start gap-3">
+            <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
+              Eight recent projects across construction, ecommerce, and B2B.
+            </p>
+            <a
+              href="/work"
+              className="group inline-flex items-center gap-2 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-[var(--color-toxic-text)] hover:text-[var(--color-toxic)]"
+            >
+              See all 80+ projects
+              <ArrowUpRight
+                size={14}
+                weight="bold"
+                className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
+          </div>
         </div>
 
         {/* 12-col asymmetric grid: 8-col feature image / 4-col vertical thumbs */}

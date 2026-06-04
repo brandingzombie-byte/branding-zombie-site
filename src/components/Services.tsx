@@ -13,7 +13,12 @@ const cardOffsets = [0, 36, 0, 36, 0];
 
 export default function Services() {
   const { ref, isInView } = useInView(0.05);
-  const [feature, ...rest] = SERVICES;
+  // AI Workflows is intentionally omitted from the homepage "What we do"
+  // grid (the /services/ai-workflows page still exists and is reachable
+  // from the footer). Keeps the homepage focused on the core demand:
+  // logos, sites, print, signage, social.
+  const [feature, ...allServices] = SERVICES;
+  const rest = allServices.filter((s) => s.slug !== "ai-workflows");
 
   // Price reads from the SERVICES data so it can never drift from the
   // service-page tier table. Single source of truth lives in services.ts.
@@ -51,8 +56,9 @@ export default function Services() {
             </h2>
           </div>
           <p className="text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
-            Six services, one team, no agency hand-offs. Pick what you need
-            today and add the rest as you grow.
+            One team, no agency hand-offs. Every project starts with the
+            business goal, not the mood board — looking pretty is table
+            stakes, making you money is the job.
           </p>
         </div>
 

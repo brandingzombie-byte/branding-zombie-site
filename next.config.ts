@@ -26,18 +26,12 @@ const nextConfig: NextConfig = {
         destination: "/services/print-design",
         permanent: true,
       },
-      // /work and /portfolio currently surface as an anchor on the homepage.
-      // Real /work page is planned; until then redirect direct visits and
-      // external links so they land on the gallery instead of a 404.
-      // Non-permanent so we can promote /work to a real page later.
-      {
-        source: "/work",
-        destination: "/#portfolio",
-        permanent: false,
-      },
+      // /work is now a real page (src/app/work). /portfolio is an alias that
+      // forwards to it. Non-permanent (302) so /portfolio could become its
+      // own page later without fighting a cached 301.
       {
         source: "/portfolio",
-        destination: "/#portfolio",
+        destination: "/work",
         permanent: false,
       },
     ];

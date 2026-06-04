@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/work`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
     ...servicePages,
     {
       url: `${SITE_URL}/services/launch-package`,
