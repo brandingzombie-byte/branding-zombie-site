@@ -1,41 +1,45 @@
 # Industry Pages — Image Shot List
 
-Each industry page has image slots that currently render an **on-brand placeholder**
-with the suggested shot. To swap in a real image:
+Image organization now lives **in the project** under
+`public/assets/industries/`, with a `README.md` per industry that lists every
+slot, the exact filename, aspect, export size, and the one-line `src:` change to
+enable it. Start there:
 
-1. Drop the file in `public/assets/industries/` (suggested naming below).
-2. In `src/data/industries.ts`, set the matching `src:` on that industry's
-   `heroImage` or `showcase[]` entry (uncomment the `src` line).
-3. That's it — the placeholder is replaced automatically.
+- `public/assets/industries/README.md` — overview + conventions
+- `public/assets/industries/trades-contractors/README.md`
+- `public/assets/industries/restaurants/README.md`
+- `public/assets/industries/salons-barbershops/README.md`
+- `public/assets/industries/supplement-cpg-brands/README.md`
 
-**Recommended formats:** WebP or PNG. Photographs/renders look best; flat-lays and
-mockups are fine. Keep file sizes reasonable (< 400 KB each ideally).
+Each page has **1 hero + 4 "in the wild" showcase slots**. Until a real image is
+added, the page shows an on-brand placeholder describing the shot. The shoot
+brief for every slot is also the `suggestion` field in
+`src/data/industries.ts` and is shown on the placeholder itself.
 
-| Aspect | Use | Suggested export size |
+## Specs (recap)
+
+| Aspect | Used for | Export size |
 |---|---|---|
-| `square` | hero visual, yard signs | 1200 × 1200 |
-| `wide` | vehicle wraps, flat-lays | 1280 × 800 |
-| `tall` | crew shirts, bottles | 900 × 1200 |
+| `square` | hero + square showcase | 1200 × 1200 |
+| `wide`   | wide showcase | 1280 × 800 |
+| `tall`   | tall showcase | 900 × 1200 |
 
----
+Format: WebP or PNG, ideally < 400 KB each.
 
-## Trades & Contractors  (`/industries/trades-contractors`)
+## AI-generation prompt starters (sample — Trades & Contractors)
 
-| Slot | File (suggested) | Aspect | Shot | AI-gen prompt starter |
-|---|---|---|---|---|
-| Hero | `trades-hero.png` | square | A dual-cab work truck / service van with a clean, freshly-installed wrap — brand colors + phone readable across the street. Golden hour, job site or driveway. | "Photorealistic golden-hour photo of a white service van with a bold vinyl wrap (teal + black), large phone number, parked in a suburban driveway, shallow depth of field" |
-| Vehicle wraps | `trades-wrap.png` | wide | Full-side wrap design mocked onto a white service van — bold colors, big phone number, license #, service icons. | "Side-view product mockup of a cargo van wrap design, bold brand colors, HVAC icons, large phone number, studio background" |
-| Crew shirts | `trades-shirt.png` | tall | Branded crew tee / hi-vis shirt on a contractor — logo on chest, optional back print. | "Studio photo of a contractor wearing a navy crew t-shirt with a chest logo, hi-vis accents, plain background" |
-| Yard signs | `trades-yardsign.png` | square | Corrugated yard sign staked in a front lawn — logo, service line, phone. | "Photo of a corrugated plastic yard sign staked in a green front lawn, company logo, phone number, soft daylight" |
-| Cards & door magnets | `trades-cards.png` | wide | Flat-lay of business cards next to a magnetic truck-door sign in matching brand colors, on a workbench. | "Top-down flat-lay of business cards and a magnetic vehicle door sign in matching brand colors on a wooden workbench" |
+The `suggestion` text on each slot works as a prompt as-is; here are a few
+expanded starters. Mirror this style for the other industries using their slot
+suggestions.
 
----
+| Slot | Prompt starter |
+|---|---|
+| Hero (`hero.png`) | "Photorealistic golden-hour photo of a white service van with a bold vinyl wrap (brand colors), large phone number, parked in a suburban driveway, shallow depth of field, clean and professional" |
+| Vehicle wraps (`1-vehicle-wraps.png`) | "Side-view product mockup of a cargo van wrap design, bold brand colors, trade service icons, large phone number, neutral studio background" |
+| Crew shirts (`2-crew-shirts.png`) | "Studio photo of a contractor wearing a navy crew t-shirt with a chest logo, hi-vis accents, plain background, soft lighting" |
+| Yard signs (`3-yard-signs.png`) | "Photo of a corrugated plastic yard sign staked in a green front lawn, company logo, phone number, soft daylight" |
+| Cards & magnets (`4-cards-magnets.png`) | "Top-down flat-lay of business cards and a magnetic vehicle door sign in matching brand colors on a wooden workbench" |
 
-## Batch 2 industries (Restaurants, Salons & Barbershops, Supplements)
-
-*Image suggestions for these are generated with their page content in Phase B and
-appended here once their `industries.ts` entries land. Each will follow the same
-pattern: 1 hero + 4 "in the wild" showcase slots tuned to that vertical (e.g.
-restaurants → menu, signage, to-go packaging, storefront; salons → window decal,
-price menu, apparel, gift cards; supplements → label render, Amazon A+, shelf shot,
-lifestyle ad).*
+For Restaurants, Salons & Barbershops, and Supplement & CPG Brands, use the
+`suggestion` text in each slot (see that industry's folder README) as the prompt
+— they were written to double as shoot briefs and generation prompts.

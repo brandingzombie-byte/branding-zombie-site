@@ -103,7 +103,7 @@ export const INDUSTRIES: Industry[] = [
       "You do great work. Your brand should prove it before you even pull into the driveway. Flat-rate logos, vehicle graphics, signs, shirts, and websites for HVAC, plumbing, electrical, roofing, and contractor businesses across Cumming and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/trades-hero.png",  // ← add a real image to enable
+      // src: "/assets/industries/trades-contractors/hero.png",  // ← drop hero.png in that folder, then uncomment
       alt: "Branded work truck with a fresh vehicle wrap for a Cumming-area contractor",
       suggestion:
         "A dual-cab work truck or service van with a clean, freshly-installed wrap — brand colors and phone number readable from across the street. Golden hour, job site or driveway.",
@@ -241,7 +241,7 @@ export const INDUSTRIES: Industry[] = [
       "Logos, printed menus, window signage, to-go packaging, and online-ordering websites for independent restaurants, cafés, food trucks, and bakeries across Cumming, Forsyth County, and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/restaurants-hero.png",
+      // src: "/assets/industries/restaurants/hero.png",  // ← drop hero.png in that folder, then uncomment
       alt: "A small restaurant storefront in Cumming, Georgia with a clean painted window logo and a printed menu in the window",
       suggestion:
         "Warm dusk shot of an independent diner storefront with a hand-painted window logo glowing under string lights, a framed menu by the door, and a couple walking in — local, inviting, and clearly not a chain.",
@@ -381,7 +381,7 @@ export const INDUSTRIES: Industry[] = [
       "Logos, window decals, price menus, gift cards, and a website with online booking for barbershops, hair, nail, lash, and spa owners across Cumming, Forsyth, and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/salons-hero.png",
+      // src: "/assets/industries/salons-barbershops/hero.png",  // ← drop hero.png in that folder, then uncomment
       alt: "Barbershop storefront with a clean logo on the window and a stylist working at the chair inside",
       suggestion:
         "Shot through the glass of a Forsyth County barbershop at golden hour — a sharp logo decal on the door, price list visible on the wall, and a barber mid-fade so you can tell it is a real, busy shop and not a stock photo.",
@@ -521,7 +521,7 @@ export const INDUSTRIES: Industry[] = [
       "Label and packaging design, full brand families across SKUs, Amazon and Shopify listings, and print-ready files for supplement, beverage, and packaged-goods founders — from a Cumming, GA studio with 40+ labels under its belt.",
 
     heroImage: {
-      // src: "/assets/industries/supplements-hero.png",
+      // src: "/assets/industries/supplement-cpg-brands/hero.png",  // ← drop hero.png in that folder, then uncomment
       alt: "Lineup of finished supplement bottles and tubs from one brand family standing together",
       suggestion:
         "A clean studio render of five SKUs from a single supplement line — a tub, two bottles, a pouch, and a box — lined up shoulder to shoulder so they obviously read as one family, lit bright on a seamless dark surface.",
