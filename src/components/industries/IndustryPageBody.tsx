@@ -5,6 +5,7 @@ import SectionSeparator from "@/components/SectionSeparator";
 import FinalCTA from "@/components/FinalCTA";
 import IndustryServiceGrid from "@/components/industries/IndustryServiceGrid";
 import IndustryWork from "@/components/industries/IndustryWork";
+import ImageSlot from "@/components/industries/ImageSlot";
 import { ArrowUpRight, ArrowRight, Phone, Check } from "@/components/icons";
 import type { Industry } from "@/data/industries";
 import type { Review } from "@/data/reviews";
@@ -35,42 +36,58 @@ export default function IndustryPageBody({
               "radial-gradient(60% 50% at 25% 32%, rgba(191,255,0,0.10), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(0,255,212,0.07), transparent 70%)",
           }}
         />
-        <div className="pt-20 lg:pt-28">
-          <div className="flex items-center gap-3">
-            <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
-            <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
-              {industry.eyebrow}
-            </span>
+        <div className="grid grid-cols-1 items-center gap-x-12 gap-y-12 pt-20 lg:grid-cols-12 lg:pt-28">
+          {/* Text */}
+          <div className="lg:col-span-7">
+            <div className="flex items-center gap-3">
+              <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
+              <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+                {industry.eyebrow}
+              </span>
+            </div>
+            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.05] tracking-tight text-[var(--color-dark-text-primary)]">
+              {industry.headlineLead}{" "}
+              <span className="relative inline-block">
+                {industry.headlineHighlight}
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
+                />
+              </span>
+            </h1>
+            <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+              {industry.subhead}
+            </p>
+            <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+              <a
+                href="/free-site-audit"
+                role="button"
+                className="group inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+              >
+                Get a free audit
+                <ArrowUpRight size={18} weight="bold" />
+              </a>
+              <a
+                href={PHONE_HREF}
+                className="tabular group inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+              >
+                <Phone size={16} weight="bold" />
+                Call Now · {PHONE_DISPLAY}
+              </a>
+            </div>
           </div>
-          <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.05] tracking-tight text-[var(--color-dark-text-primary)]">
-            {industry.headlineLead}{" "}
-            <span className="relative inline-block">
-              {industry.headlineHighlight}
-              <span
-                aria-hidden
-                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
-              />
-            </span>
-          </h1>
-          <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-            {industry.subhead}
-          </p>
-          <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <a
-              href="/free-site-audit"
-              role="button"
-              className="group inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
-            >
-              Get a free audit
-              <ArrowUpRight size={18} weight="bold" />
-            </a>
-            <a
-              href={PHONE_HREF}
-              className="tabular group inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
-            >
-              <Phone size={16} weight="bold" />
-              Call Now · {PHONE_DISPLAY}
-            </a>
+
+          {/* Hero visual */}
+          <div className="lg:col-span-5">
+            <ImageSlot
+              src={industry.heroImage.src}
+              alt={industry.heroImage.alt}
+              suggestion={industry.heroImage.suggestion}
+              aspect="square"
+              tone="dark"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="lg:ml-auto lg:max-w-md"
+            />
           </div>
         </div>
       </Section>
@@ -104,6 +121,42 @@ export default function IndustryPageBody({
       </Section>
 
       <SectionSeparator id={1} />
+
+      {/* ── Brand in the wild (showcase) — dark so the applications pop ── */}
+      <Section theme="dark" pad="spacious" topRule>
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-baseline sm:justify-between">
+          <div>
+            <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
+              In the wild
+            </span>
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+              {industry.showcaseTitle}
+            </h2>
+          </div>
+          <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
+            {industry.showcaseNote}
+          </p>
+        </div>
+        <div className="mt-12 grid grid-cols-2 items-start gap-6 lg:grid-cols-4">
+          {industry.showcase.map((shot) => (
+            <figure key={shot.label}>
+              <ImageSlot
+                src={shot.src}
+                alt={shot.alt}
+                suggestion={shot.suggestion}
+                aspect={shot.aspect}
+                tone="dark"
+                sizes="(min-width: 1024px) 22vw, 50vw"
+              />
+              <figcaption className="mt-3 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-toxic-text)]">
+                {shot.label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </Section>
+
+      <SectionSeparator id={4} />
 
       {/* ── What we make ── */}
       <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]" topRule>

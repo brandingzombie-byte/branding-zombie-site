@@ -19,6 +19,19 @@ export interface IndustryFaq {
   a: string;
 }
 
+export interface IndustryImage {
+  /** A /public path to use a real image; leave undefined to render a placeholder. */
+  src?: string;
+  alt: string;
+  /** Shown in the on-page placeholder + the image shot list — what goes here. */
+  suggestion: string;
+}
+
+export interface IndustryShot extends IndustryImage {
+  label: string;
+  aspect: "tall" | "wide" | "square";
+}
+
 export interface Industry {
   slug: string;
   /** Full name, e.g. "Trades & Contractors". */
@@ -32,6 +45,9 @@ export interface Industry {
   headlineHighlight: string; // second line — gets the toxic underline
   subhead: string;
 
+  // ── Hero visual (real image when src set, else an on-brand placeholder) ──
+  heroImage: IndustryImage;
+
   // ── Intro / definition block (AEO: direct, self-contained answer) ──
   intro: string;
 
@@ -43,6 +59,11 @@ export interface Industry {
   servicesTitle: string;
   servicesNote: string;
   servicesOffered: ServiceSlug[]; // subset rendered as brutalist cards
+
+  // ── "Brand in the wild" showcase band (image slots / placeholders) ──
+  showcaseTitle: string;
+  showcaseNote: string;
+  showcase: IndustryShot[];
 
   // ── Proof ──
   workTitle: string;
@@ -81,6 +102,13 @@ export const INDUSTRIES: Industry[] = [
     subhead:
       "You do great work. Your brand should prove it before you even pull into the driveway. Flat-rate logos, vehicle graphics, signs, shirts, and websites for HVAC, plumbing, electrical, roofing, and contractor businesses across Cumming and North Metro Atlanta.",
 
+    heroImage: {
+      // src: "/assets/industries/trades-hero.png",  // ← add a real image to enable
+      alt: "Branded work truck with a fresh vehicle wrap for a Cumming-area contractor",
+      suggestion:
+        "A dual-cab work truck or service van with a clean, freshly-installed wrap — brand colors and phone number readable from across the street. Golden hour, job site or driveway.",
+    },
+
     intro:
       "Branding Zombie Designs is a Cumming, GA studio that builds brands for trades and contractors — logos, truck wraps, yard signs, shop shirts, and websites that get you found on Google. Flat prices, fast turnaround, and you talk to the owner directly. No retainers, no account managers.",
 
@@ -102,6 +130,40 @@ export const INDUSTRIES: Industry[] = [
       "web-design",
       "branding",
       "digital-marketing",
+    ],
+
+    showcaseTitle: "Your brand, everywhere it needs to be",
+    showcaseNote:
+      "One logo, applied across every place a homeowner sees you — the truck, the crew, the yard, the mailbox.",
+    showcase: [
+      {
+        label: "Vehicle wraps",
+        aspect: "wide",
+        alt: "Truck wrap design mockup for a trades business",
+        suggestion:
+          "Full-side wrap design mocked onto a white service van — bold brand colors, big phone number, license number, and service icons.",
+      },
+      {
+        label: "Crew shirts",
+        aspect: "tall",
+        alt: "Branded crew shirt for a contractor",
+        suggestion:
+          "Branded crew tee or hi-vis shirt on a contractor — logo on the chest, optional back print. Clean studio or on-site shot.",
+      },
+      {
+        label: "Yard signs",
+        aspect: "square",
+        alt: "Branded yard sign staked in a lawn",
+        suggestion:
+          "Corrugated yard sign staked in a front lawn — logo, service line, and phone. The kind of sign neighbors photograph.",
+      },
+      {
+        label: "Cards & door magnets",
+        aspect: "wide",
+        alt: "Business cards and a magnetic truck-door sign",
+        suggestion:
+          "Flat-lay of business cards next to a magnetic truck-door sign in matching brand colors, on a workbench.",
+      },
     ],
 
     workTitle: "Recent work for trades & local businesses",
