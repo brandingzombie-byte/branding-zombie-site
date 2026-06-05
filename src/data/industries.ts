@@ -665,6 +665,703 @@ export const INDUSTRIES: Industry[] = [
       ],
     },
   },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // GYMS & FITNESS  (Tier 2)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    slug: "gyms-fitness",
+    name: "Gyms & Fitness",
+    navLabel: "Gyms & Fitness",
+
+    eyebrow: "Gyms, studios, boxes, trainers & martial arts",
+    headlineLead: "Logos, sign-up sites & gym walls that",
+    headlineHighlight: "turn walk-ins into members.",
+    subhead:
+      "For independent gyms, CrossFit boxes, trainers, yoga and martial arts schools around Cumming and Forsyth County. One look that hits on the wall, on the tee, and on the phone — plus a site where people can actually sign up.",
+
+    heroImage: {
+      // src: "/assets/industries/gyms-fitness/hero.webp",  // ← drop hero image in that folder, then uncomment
+      alt: "Gym interior with a bold logo painted across the back wall and members training in the foreground",
+      suggestion:
+        "Wide shot of a turf-and-rig gym at golden hour, a huge painted logo filling the back wall while two members do wall-balls in the foreground, chalk dust catching the light.",
+    },
+
+    intro:
+      "Branding Zombie builds the look and the sign-up site for gyms across Cumming, Forsyth County, and North Metro Atlanta — independent gyms, CrossFit boxes, personal trainers, and yoga and martial arts studios. Gerry handles the logo, the signage, the member apparel, and a website where prospects join online instead of walking to the box next door.",
+
+    painsTitle: "Why the gym down the road keeps stealing your walk-ins",
+    pains: [
+      "Your logo looks like every other gym in the plaza — same flexing-arm clip art, same red-and-black, nothing a member would tattoo on their calf.",
+      "No website, so the guy comparing three gyms joins the one with an online sign-up button instead of waiting for you to call back.",
+      "Your class schedule lives in an Instagram story that vanished 18 hours ago, so nobody actually knows when the 6am runs.",
+      "The member tees say one thing, the wall sign says another, and the front desk banner is a third font — it reads like three different gyms.",
+      "Search “gym near me” in Cumming and you're on page two, behind the franchise with the marketing budget.",
+    ],
+
+    servicesTitle: "What gyms and studios actually hire us for",
+    servicesNote:
+      "Flat prices, fast turnaround, and Gerry answers the phone. No retainers, no monthly agency bill eating your membership revenue.",
+    servicesOffered: [
+      "logo-design",
+      "branding",
+      "web-design",
+      "print-design",
+      "social-media",
+      "digital-marketing",
+    ],
+
+    showcaseTitle: "The brand, in the building and on the feed",
+    showcaseNote:
+      "Real gym work in the wild — wall to tee to schedule to the post that fills the 6am class.",
+    showcase: [
+      {
+        label: "Wall logo",
+        aspect: "wide",
+        alt: "Large gym logo painted across an interior brick wall above the squat racks",
+        suggestion:
+          "Eye-level wide shot of a brick gym wall with the logo painted six feet tall above a row of squat racks, barbells loaded and ready underneath.",
+      },
+      {
+        label: "Member hoodies",
+        aspect: "square",
+        alt: "Folded stack of branded gym hoodies and tees in matching colors",
+        suggestion:
+          "Top-down flat lay of folded member hoodies and tees in the gym's colors, a coffee cup and a jump rope just inside the frame for scale.",
+      },
+      {
+        label: "Class schedule board",
+        aspect: "tall",
+        alt: "Printed weekly class schedule and membership board mounted by the front desk",
+        suggestion:
+          "Straight-on shot of a printed weekly class schedule and membership-tier board mounted on the wall by the check-in desk, clean and easy to read from across the room.",
+      },
+      {
+        label: "Workout post",
+        aspect: "square",
+        alt: "High-energy social media post of a member mid-lift with the gym branding overlaid",
+        suggestion:
+          "Punchy Instagram-style frame of a member mid-clean-and-jerk, motion blur on the bar, the gym's logo and class time set into the corner.",
+      },
+    ],
+
+    workTitle: "Fitness brands we've put muscle on",
+    workNote:
+      "Fitness and athletic brand work — logos, apparel, and product campaigns built to look as strong as they are.",
+    featuredWorkIds: [
+      "macefit-logo",
+      "muscleology",
+      "swet-campaign",
+      "dmax10-watermelon",
+    ],
+    testimonialName: "Mitch Marks",
+
+    pricingTitle: "What it runs",
+    pricingNote:
+      "Plain numbers, no surprises. Georgia sales tax added at checkout. Want the logo, the site, and the apparel as one package? Ask and Gerry will quote it together.",
+    priceAnchors: [
+      { label: "Gym logo + brand colors", price: "from $750" },
+      { label: "Sign-up & class-schedule website", price: "from $1,500" },
+      { label: "Member tees & wall signage", price: "from $75" },
+    ],
+
+    faqs: [
+      {
+        q: "How much does a gym logo cost in Cumming, GA?",
+        a: "Gym and studio logos at Branding Zombie start at $750, flat. That covers the main mark, your brand colors, and files ready for wall paint, tees, banners, and your website — so the look matches everywhere a member sees it. No retainer, and Gerry quotes the whole job up front before any work starts.",
+      },
+      {
+        q: "Can you build a website where members sign up or book classes online?",
+        a: "Yes. We build sites with online membership sign-up and class booking wired in, so a prospect comparing gyms can join you on the spot instead of the box next door. Sites start at $1,500. We connect the booking or payment tool you already use, or recommend one that fits a small gym.",
+      },
+      {
+        q: "Can the same brand go on the wall, the tees, and the website?",
+        a: "That's the whole point. Gerry designs one look and delivers files sized for painted wall logos, member tees and hoodies, front-desk signage, and the site — so it reads as one gym everywhere, not three. Apparel and signage start at $75; the logo package includes every format you'll need.",
+      },
+      {
+        q: "Will this help my gym show up on Google for “gym near me”?",
+        a: "It helps. A real website with your location, classes, and services gives Google something to rank — far more than an Instagram page. We set up the basics that get small Cumming and Forsyth gyms found locally, and can take on ongoing local marketing if you want to climb past the franchises.",
+      },
+      {
+        q: "Do you work with CrossFit boxes, trainers, and martial arts studios too?",
+        a: "Yes — independent gyms, CrossFit boxes, personal trainers, yoga, pilates, spin, and martial arts schools around Cumming, Forsyth County, and North Metro Atlanta. The work is the same shape: a strong logo, apparel and signage that match, and a site where people sign up. Solo trainer or a full box, Gerry scopes it to fit.",
+      },
+      {
+        q: "How fast can you turn around a gym rebrand?",
+        a: "Fast — Gerry runs a solo studio, so there's no agency queue. A logo and brand colors typically land in about a week or two; a full rebrand with a sign-up website, apparel, and signage runs longer depending on scope. You'll get a real timeline with your quote, and Gerry answers the phone the whole way through.",
+      },
+    ],
+
+    seo: {
+      title:
+        "Gym & Fitness Branding in Cumming, GA — Logos, Sign-Up Sites & Apparel",
+      description:
+        "Logos, membership sign-up websites, wall signage, and member apparel for gyms, CrossFit boxes, trainers, and studios in Cumming & Forsyth County, GA. Flat prices, fast turnaround.",
+      keywords: [
+        "gym logo design Cumming GA",
+        "fitness branding Forsyth County",
+        "CrossFit box website design",
+        "gym membership sign-up website",
+        "personal trainer branding North Metro Atlanta",
+        "gym apparel and signage design",
+        "martial arts studio logo Georgia",
+      ],
+    },
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // AUTO & REPAIR SHOPS  (Tier 2)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    slug: "auto-repair",
+    name: "Auto & Repair Shops",
+    navLabel: "Auto & Repair",
+
+    eyebrow: "Mechanics · Tire · Detailing · Body Shops",
+    headlineLead: "Signs, websites & shop branding for",
+    headlineHighlight: "the bay that actually fixes cars.",
+    subhead:
+      "Cumming and Forsyth County shops live and die on the lot, the listing, and word of mouth. We give yours a sign people can read from the road, a site that answers “do you work on my truck,” and a Google profile that shows up for “mechanic near me.”",
+
+    heroImage: {
+      // src: "/assets/industries/auto-repair/hero.webp",
+      alt: "Independent auto repair shop at dusk with a new lit sign and two open bays",
+      suggestion:
+        "Shoot the front of an independent shop at golden hour, bay doors open and a clean backlit sign glowing over the lot, one tech wiping his hands by a lifted truck.",
+    },
+
+    intro:
+      "For independent auto repair shops, tire stores, detailers, and body shops in Cumming, Forsyth County, and North Metro Atlanta, this Branding Zombie studio handles the road sign, the website, the shop shirts, and the Google listing. Gerry designs the stuff that gets a stranger off GA-400 and into your bay, flat-priced with fast turnaround.",
+
+    painsTitle: "Sound like your shop?",
+    pains: [
+      "Your sign is sun-faded and twenty years old, so half the cars on the road never register it's a shop.",
+      "You have no website, so people can't tell your hours, your services, or whether you even work on their make.",
+      "Your Google reviews are great, but the listing photo is a blurry shot of the lot with a dumpster in it.",
+      "Five minutes after they leave, a customer can't picture your logo or your shop name — there's nothing consistent enough to stick.",
+      "You don't show up for “mechanic near me” or “Cumming auto repair,” so the new movers never find you.",
+    ],
+
+    servicesTitle: "What a shop usually needs",
+    servicesNote:
+      "Most shops start with the sign and a one-page site, then add shirts and cards. You can do it in one go or piece by piece — no retainer, and Gerry answers the phone.",
+    servicesOffered: [
+      "logo-design",
+      "branding",
+      "web-design",
+      "print-design",
+      "digital-marketing",
+    ],
+
+    showcaseTitle: "What it looks like out on the lot",
+    showcaseNote:
+      "Real-world pieces tuned for a working shop — the sign, the shirts, the window, the front counter.",
+    showcase: [
+      {
+        label: "Shop sign & building front",
+        aspect: "wide",
+        alt: "Fresh exterior sign across the front of an auto repair building",
+        suggestion:
+          "Wide daytime shot of a clean new channel-letter sign spanning the shop facade, bay numbers painted above each door.",
+      },
+      {
+        label: "Branded mechanic shirts",
+        aspect: "square",
+        alt: "Work shirts with an embroidered shop logo on a rack",
+        suggestion:
+          "Flat or hung row of navy work shirts with the shop name embroidered on the chest and a name patch, grease-rag texture in frame.",
+      },
+      {
+        label: "Window & banner graphics",
+        aspect: "wide",
+        alt: "Service banner and window lettering on a tire shop storefront",
+        suggestion:
+          "Storefront glass with crisp vinyl lettering listing brakes, alignment, and tires, an hours decal on the door.",
+      },
+      {
+        label: "Cards & service price board",
+        aspect: "tall",
+        alt: "Business cards next to a printed service and price board at the front counter",
+        suggestion:
+          "Front counter flat-lay of stacked business cards beside a framed printed price menu for oil changes, rotations, and diagnostics.",
+      },
+    ],
+
+    workTitle: "Local & industrial brand work",
+    workNote:
+      "Auto is a newer lane for the studio, so here's the honest version: brand, sign, and web work for local service businesses and industrial trades — the same skills a shop needs, applied to neighbors down the road.",
+    featuredWorkIds: ["miami-pavement-logo", "sharp-edge", "enigma-computers"],
+    testimonialName: "Ismael Medina",
+
+    pricingTitle: "Flat prices, no surprises",
+    pricingNote:
+      "Real numbers, not a “request a quote” runaround. Sign quotes are custom because every facade and city sign permit is different. Georgia sales tax applies.",
+    priceAnchors: [
+      { label: "Shop logo + lettering", price: "from $750" },
+      { label: "Shop website", price: "from $1,500" },
+      { label: "Banners & cards", price: "from $75" },
+    ],
+
+    faqs: [
+      {
+        q: "How much does a logo and sign cost for an auto repair shop?",
+        a: "A shop logo starts at $750, and that includes the files your sign company and shirt printer need. The physical sign itself is a custom quote because it depends on your building, size, and city permit. Banners, decals, and cards start at $75. Everything is flat-priced up front, with Georgia sales tax added.",
+      },
+      {
+        q: "Do I really need a website if my Google reviews are already good?",
+        a: "Yes. Reviews get people to trust you, but a site is where they confirm your hours, your services, and whether you work on their make before they drive over. Without one, you lose the customer who Googles you at 7pm. A simple one-page shop site starts at $1,500 and turns reviews into booked work.",
+      },
+      {
+        q: "Can you help my shop show up for “mechanic near me” in Cumming?",
+        a: "That's mostly your Google Business Profile, and we set it up right — real services, real categories, and clear photos instead of a blurry lot shot. Pair it with a basic site that names your city and services and you start showing up for “Cumming auto repair” and “mechanic near me” instead of getting buried.",
+      },
+      {
+        q: "Do you do branded shirts and uniforms for the shop crew?",
+        a: "Yes. Once your logo is done, we set up matching shirts, the front counter, invoices, and signage so the whole shop looks like one business instead of three. Gerry handles the design and coordinates the embroidery and print, so your techs and your waiting room finally match.",
+      },
+      {
+        q: "Are you local to Forsyth County, or is this a national chain?",
+        a: "Local. Branding Zombie is Gerry Betancourt, a one-person studio in Cumming, GA, working with shops across Forsyth and North Metro Atlanta. You text or call (770) 744-2536 and reach the actual designer, not a call center. Local pickup and drop-off work fine for proofs and printed pieces.",
+      },
+      {
+        q: "How long does it take to get my shop branded?",
+        a: "A logo runs about one to two weeks. A one-page site is usually two to three weeks once we have your hours, services, and photos. Sign production depends on your fabricator and permit, but we hand off print-ready files fast so nothing waits on design. No retainers, no drawn-out timelines.",
+      },
+    ],
+
+    seo: {
+      title: "Auto Repair Shop Branding, Signs & Websites | Cumming, GA",
+      description:
+        "Logos, signage, shirts, and websites for independent auto repair shops, tire stores, detailers, and body shops in Cumming and Forsyth County, GA. Flat prices, fast turnaround, owner answers the phone.",
+      keywords: [
+        "auto repair shop branding Cumming GA",
+        "mechanic logo design Forsyth County",
+        "auto shop website design",
+        "tire shop signage Cumming",
+        "body shop branding North Metro Atlanta",
+        "mechanic near me marketing",
+      ],
+    },
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // HOME SERVICES  (Tier 2)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    slug: "home-services",
+    name: "Home Services",
+    navLabel: "Home Services",
+
+    eyebrow: "Lawn · Cleaning · Pest · Pool · Pressure Washing",
+    headlineLead: "Door hangers, yard signs & quote sites",
+    headlineHighlight: "that book the next house on the street.",
+    subhead:
+      "Logos, branded trucks and trailers, door hangers, yard signs, and websites with a quote button for lawn care, house cleaning, pest control, pool service, pressure washing, junk removal, window cleaning, and handyman businesses around Cumming, Forsyth County, and North Metro Atlanta.",
+
+    heroImage: {
+      // src: "/assets/industries/home-services/hero.webp",
+      alt: "Lawn care trailer with bold logo lettering parked in a Forsyth County subdivision, mower ramps down and a yard sign staked in the cut grass",
+      suggestion:
+        "A landscaping trailer with clean cut-vinyl lettering and a big phone number parked at the curb of a North Metro Atlanta subdivision, ramp down and a fresh-cut lawn behind it with a small branded yard sign staked near the mailbox, shot in late-afternoon light so the neighbors can read it from three doors down.",
+    },
+
+    intro:
+      "For lawn care, house cleaning, pest control, pool, and pressure-washing crews around Cumming, Forsyth County, and North Metro Atlanta, we build the brand neighbors actually see: logos, lettering for the truck and trailer, door hangers, yard signs, and a website with a quote button. Flat prices, fast turnaround, and Gerry answers the phone.",
+
+    painsTitle: "You do the work. The street should know who did it.",
+    pains: [
+      "Your door hangers and flyers look like they came off the home printer, so most of them go straight from the doorknob to the trash.",
+      "You finish a perfect lawn, pull away in a blank white truck, and the three neighbors who noticed have no idea who to call.",
+      "A homeowner wants a quote at 9pm and there's no website, so they fill out the form on the company that does have one.",
+      "Your yard signs are a mix of two old batches and a Sharpie fix, so the one staked in the best lawn on the block looks half-homemade.",
+      "Nobody types your name — they search “lawn care near me” or “house cleaning Cumming,” and you're nowhere on that first screen.",
+    ],
+
+    servicesTitle: "What home-service crews hire us for",
+    servicesNote:
+      "Most owners start with a logo and truck or trailer lettering, then add door hangers, yard signs, and a quote site once the calls pick up. Grab the piece you need now — every job is quoted flat before we start.",
+    servicesOffered: [
+      "logo-design",
+      "branding",
+      "web-design",
+      "print-design",
+      "digital-marketing",
+    ],
+
+    showcaseTitle: "The brand the whole street sees",
+    showcaseNote:
+      "A door hanger, a truck, a yard sign, a crew shirt — the four places a neighbor decides whether to call you or the other guy. We make them match so they add up to one name people remember.",
+    showcase: [
+      {
+        label: "Truck & trailer lettering",
+        aspect: "wide",
+        alt: "Enclosed lawn-care trailer with bold cut-vinyl logo, services, and phone number",
+        suggestion:
+          "A pressure-washing or lawn trailer photographed from the curb with clean cut-vinyl lettering — logo, two or three services, and a phone number big enough to read from a passing car — parked in front of the house that was just serviced.",
+      },
+      {
+        label: "Door hanger on the door",
+        aspect: "tall",
+        alt: "Branded house-cleaning door hanger looped over a suburban front door handle",
+        suggestion:
+          "A printed door hanger hooked over a front-door handle on a brick suburban house, logo and a short offer at the top and a quote QR code at the bottom, shot close so it clearly looks designed and not run off a home printer.",
+      },
+      {
+        label: "Yard sign in the lawn",
+        aspect: "square",
+        alt: "Corrugated yard sign staked in a freshly cut front lawn near the mailbox",
+        suggestion:
+          "A corrugated yard sign on metal stakes pushed into a freshly cut, edged front lawn near the mailbox — logo, service line, and phone — the kind of sign a neighbor stops to photograph before calling.",
+      },
+      {
+        label: "Branded crew shirts",
+        aspect: "square",
+        alt: "Pest-control technician in a branded polo holding a sprayer at a customer's door",
+        suggestion:
+          "A technician in a clean branded polo or tee, logo on the chest, sprayer or mower in hand, standing at a homeowner's door so the brand looks like a real, trustworthy crew showing up — studio-clean but clearly on the job.",
+      },
+    ],
+
+    workTitle: "Brand and web work for local service businesses",
+    workNote:
+      "A contractor's brand and a custom PC shop's site with a built-in request-a-quote flow — real local service businesses, the same build a lawn or cleaning crew needs to capture the 9pm quote.",
+    featuredWorkIds: ["sharp-edge", "enigma-computers", "miami-pavement-logo"],
+    testimonialName: "Mary Jeimz",
+
+    pricingTitle: "Flat prices, quoted before we start",
+    pricingNote:
+      "No hourly surprises and no retainer. You get a flat number before you say yes, Georgia sales tax is the only add-on, and you own every file when we're done. Truck and trailer lettering is quoted by size and surface.",
+    priceAnchors: [
+      { label: "Logo + brand files", price: "from $750" },
+      { label: "Door hangers & yard signs", price: "from $75" },
+      { label: "Website with a quote button", price: "from $1,500" },
+    ],
+
+    faqs: [
+      {
+        q: "How much does a logo for a lawn care or cleaning business cost?",
+        a: "Logos start at $750 and come with the files you'll actually use — vector versions for truck and trailer lettering and yard signs, plus web and print versions for door hangers and your Google profile. That's the difference between a real logo and a cheap file that turns to mush the moment you blow it up on a trailer.",
+      },
+      {
+        q: "Can you get my home service business to show up for “lawn care near me”?",
+        a: "Yes. We set up and clean up your Google Business Profile and build a fast site with local SEO baked in, so you start ranking for “lawn care near me” or “house cleaning Cumming” in the towns you actually serve. Ranking takes a few months, but a site built for it climbs instead of fighting uphill.",
+      },
+      {
+        q: "Do you design door hangers and yard signs that don't look homemade?",
+        a: "Yes — door hangers, flyers, and yard signs are some of the most common pieces we do, starting at $75. We design them to match your logo and print clean, with a quote QR code or phone number front and center, so the one on the door or staked in the lawn looks like a real company, not a home-printer job.",
+      },
+      {
+        q: "Can you put lettering on my truck and trailer?",
+        a: "Yes. We design cut-vinyl lettering and graphics for trucks, vans, and enclosed trailers, delivered print-ready to your installer's specs. A blank truck pulling away from a perfect lawn is a missed call — lettering turns every job into a rolling sign the whole neighborhood reads. No installer? We'll point you to good ones near Cumming.",
+      },
+      {
+        q: "I don't have a website — can a customer request a quote online?",
+        a: "Yes. We build home-service sites with a quote button right up front, starting at $1,500, so a homeowner can ask for a price at 9pm instead of moving on to the crew that has one. It works on phones, shows your services and service area, and sends the request straight to you — no app, no middleman.",
+      },
+      {
+        q: "Do you only work with businesses in Cumming?",
+        a: "Cumming and Forsyth County are home base, but we work with lawn, cleaning, pest, pool, and pressure-washing crews all over North Metro Atlanta — Alpharetta, Johns Creek, Cumming, Buford, Dawsonville, Canton, and the GA-400 corridor. Local means Gerry can meet up, photograph your truck, and get the details right the first time.",
+      },
+    ],
+
+    seo: {
+      title:
+        "Branding & Web Design for Home Service Businesses in Cumming, GA",
+      description:
+        "Logos, truck and trailer lettering, door hangers, yard signs, and quote-button websites for lawn care, cleaning, pest, pool, and pressure-washing businesses in Cumming & North Metro Atlanta. Flat prices, fast turnaround.",
+      keywords: [
+        "lawn care logo design Cumming GA",
+        "house cleaning branding Forsyth County",
+        "pressure washing website design Georgia",
+        "pest control logo design North Metro Atlanta",
+        "door hanger design Cumming GA",
+        "yard sign design home services",
+        "pool service branding Forsyth County",
+        "trailer lettering design North Metro Atlanta",
+      ],
+    },
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // MEDICAL, DENTAL & WELLNESS  (Tier 2)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    slug: "medical-wellness",
+    name: "Medical, Dental & Wellness",
+    navLabel: "Medical & Wellness",
+
+    eyebrow: "Dental · Med Spa · Chiro · Therapy · Clinics",
+    headlineLead: "A brand patients trust before they",
+    headlineHighlight: "say a word.",
+    subhead:
+      "Logos, websites with online booking, signage, and intake that look as careful as the care you give. Built for dentists, med spas, chiropractors, and wellness clinics across Forsyth County.",
+
+    heroImage: {
+      // src: "/assets/industries/medical-wellness/hero.webp",
+      alt: "Calm medical practice reception with a clean logo on the wall behind the front desk",
+      suggestion:
+        "Shoot a tidy clinic reception at eye level: a backlit logo sign on a clean accent wall, two chairs, a plant, and a tablet check-in on the desk, soft daylight from a side window.",
+    },
+
+    intro:
+      "For dentists, med spas, chiropractors, therapy practices, and wellness clinics in Cumming and across North Metro Atlanta, Branding Zombie Designs handles the brand patients judge in seconds: a clean logo, a website with online booking, matching signage, and intake that feels professional. Design and marketing work, run by the owner, with flat prices.",
+
+    painsTitle: "The care is five-star. The brand should say so.",
+    pains: [
+      "Your brand looks dated and clinical, and it doesn't feel as good as the care your patients actually get.",
+      "You have no real website with online booking, so a new patient picks the practice down the road with a nicer site.",
+      "Your signage, intake forms, and the wall behind the front desk all look like three different practices.",
+      "You've earned dozens of 5-star reviews and they're buried where no new patient ever sees them.",
+      "Someone searches your specialty near Cumming and you're nowhere on the first page.",
+    ],
+
+    servicesTitle: "What practices come to us for",
+    servicesNote:
+      "This is design and marketing, not clinical advice. We make your practice look and feel trustworthy, and easy to book.",
+    servicesOffered: [
+      "logo-design",
+      "branding",
+      "web-design",
+      "print-design",
+      "digital-marketing",
+    ],
+
+    showcaseTitle: "Care that looks the part",
+    showcaseNote:
+      "A few of the pieces a patient sees on the way to booking and on the way through your door.",
+    showcase: [
+      {
+        label: "Reception sign",
+        aspect: "wide",
+        alt: "Practice logo sign mounted above a reception desk",
+        suggestion:
+          "Wide shot of a dimensional logo sign on the wall above a front desk, soft uplighting, a row of waiting chairs blurred in the foreground.",
+      },
+      {
+        label: "Booking site",
+        aspect: "square",
+        alt: "Appointment booking page open on a phone and laptop",
+        suggestion:
+          "A laptop and phone side by side on a clean desk, both showing the same practice site with a clear Book Appointment button and an open time-slot picker.",
+      },
+      {
+        label: "Intake folder",
+        aspect: "tall",
+        alt: "Branded intake folder with matching appointment cards",
+        suggestion:
+          "Top-down on a light wood table: a branded intake folder fanned open with new-patient forms and three matching appointment reminder cards beside it.",
+      },
+      {
+        label: "Wellness post",
+        aspect: "square",
+        alt: "Calm social post for a wellness clinic",
+        suggestion:
+          "A soft, calm Instagram post mockup on a phone: muted palette, one clean line of advice, the practice logo small in the corner, plant shadow on the wall behind.",
+      },
+    ],
+
+    workTitle: "Healthcare and wellness brands we've built",
+    workNote:
+      "Real logo, brand, and label work for healthcare and wellness companies. The same eye for trust and clarity goes into a dental or med spa brand.",
+    featuredWorkIds: [
+      "kids-life-solutions-logo",
+      "hospital2home-logo",
+      "sea-la-bella",
+    ],
+    testimonialName: "Liz Marie",
+
+    pricingTitle: "Plain prices, no retainers",
+    pricingNote:
+      "Flat quotes up front. The owner does the work and answers the phone. Georgia sales tax applies where required.",
+    priceAnchors: [
+      { label: "Practice logo", price: "from $750" },
+      { label: "Website with online booking", price: "from $1,500" },
+      { label: "Full practice brand", price: "from $2,500" },
+    ],
+
+    faqs: [
+      {
+        q: "How much does a website with online booking cost for a dental or medical practice?",
+        a: "A practice website with online booking starts around $1,500. That covers a clean, mobile-friendly site, a clear Book Appointment button wired to your scheduler, your services, and your reviews surfaced where new patients see them. You get a flat quote before any work starts, not an hourly meter.",
+      },
+      {
+        q: "Can you design a logo and signage that match my practice's interior?",
+        a: "Yes. We design the logo first, then pull the same colors, type, and feel through your reception sign, exterior signage, intake folders, and appointment cards. Patients should feel one consistent practice from the parking lot to the front desk, not three different ones.",
+      },
+      {
+        q: "Do you work with med spas, chiropractors, and therapy practices, or only dentists?",
+        a: "All of them. We build brands for dentists, med spas, dermatology, optometry, physical therapy, chiropractic, and therapy or ABA practices around Cumming and North Metro Atlanta. The work is design and marketing, not clinical, so the specialty changes the look and the wording, not the process.",
+      },
+      {
+        q: "Can you help my practice show up for searches like “dentist near me”?",
+        a: "Yes, through the design and marketing side. We build a fast, properly structured site, set up the right pages and local details, and surface your reviews so search engines and patients both trust you. We don't promise a ranking, but we fix the basics most practices skip.",
+      },
+      {
+        q: "Where is Branding Zombie Designs located?",
+        a: "In Cumming, Georgia, in Forsyth County, serving practices across North Metro Atlanta. It's a solo studio owned by Gerry Betancourt, so the person you talk to is the person doing your logo, website, and signage. Call (770) 744-2536.",
+      },
+      {
+        q: "How long does it take to rebrand a practice and launch a new site?",
+        a: "Most practice projects run a few weeks, depending on scope. A standalone logo moves faster; a full brand with a booking site, signage, and intake takes a bit longer. We give you a flat price and a timeline up front, and we don't disappear once it's live.",
+      },
+    ],
+
+    seo: {
+      title: "Dental, Med Spa & Wellness Branding in Cumming, GA",
+      description:
+        "Logos, websites with online booking, signage, and intake for dentists, med spas, chiropractors, and wellness clinics in Cumming and North Metro Atlanta. Flat prices, owner-run.",
+      keywords: [
+        "dental logo design Cumming GA",
+        "med spa branding Forsyth County",
+        "medical practice website with online booking",
+        "chiropractor logo and signage North Metro Atlanta",
+        "wellness clinic branding Georgia",
+        "dentist website design Cumming",
+      ],
+    },
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // ECOMMERCE & DTC BRANDS  (Tier 2)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    slug: "ecommerce-dtc",
+    name: "Ecommerce & DTC Brands",
+    navLabel: "Ecommerce & DTC",
+
+    eyebrow: "Shopify · Amazon · DTC · subscription",
+    headlineLead: "Shopify stores and Amazon listings built to",
+    headlineHighlight: "turn carts into orders.",
+    subhead:
+      "A store that looks like your brand, product pages that answer the question before someone bounces, and ads and email that match what they land on. Built in Cumming, GA. The owner answers the phone.",
+
+    heroImage: {
+      // src: "/assets/industries/ecommerce-dtc/hero.webp",
+      alt: "A Shopify store shown on a laptop and phone with an add-to-cart button mid-click",
+      suggestion:
+        "Overhead shot of a laptop and phone on a dark desk showing the same DTC product store, a finger hovering over a glowing add-to-cart button, order-confirmation email faintly visible on the phone.",
+    },
+
+    intro:
+      "Online store owners across Cumming, Forsyth County, and North Metro Atlanta come to Branding Zombie Designs for the storefront itself — Shopify builds, product pages that convert, Amazon listings, and email and ad creative that match the brand. Run by Gerry Betancourt, flat-priced and fast.",
+
+    painsTitle: "If you sell online, you already know these",
+    pains: [
+      "Your Shopify store still reads as the free theme — nice product, generic shell, and nobody trusts it with a card number.",
+      "People add to cart and vanish. The checkout leaks and you have no idea where.",
+      "Your product pages skip the questions that actually close the sale — sizing, shipping, what's inside, why yours.",
+      "A worse product out-clicks you on Amazon because its listing photos and bullets do the selling and yours don't.",
+      "Every click off an ad lands on a store that looks nothing like the ad, so the trust resets and the sale slips away.",
+    ],
+
+    servicesTitle: "What DTC brands actually buy",
+    servicesNote:
+      "Most stores start with the Shopify build and the product pages, then add Amazon, email, and paid creative once the store is converting. Flat quotes, no retainers.",
+    servicesOffered: [
+      "ecommerce",
+      "web-design",
+      "branding",
+      "digital-marketing",
+      "social-media",
+      "logo-design",
+    ],
+
+    showcaseTitle: "Stores in the wild",
+    showcaseNote:
+      "Real DTC builds — the storefront, the page that converts, the creative that drives the click, and what shows up at the door.",
+    showcase: [
+      {
+        label: "Storefront, two screens",
+        aspect: "wide",
+        alt: "A DTC store homepage shown on a laptop and phone side by side",
+        suggestion:
+          "A clean Shopify homepage on a 16-inch laptop with the same store on a phone leaned against it, both on a light studio surface, brand color repeating across both.",
+      },
+      {
+        label: "Product page that converts",
+        aspect: "tall",
+        alt: "A long product page with photos, reviews, and a sticky buy button",
+        suggestion:
+          "A tall phone screenshot of a single product page scrolled to show hero photo, star reviews, an FAQ block, and a sticky add-to-cart bar pinned at the bottom.",
+      },
+      {
+        label: "Email plus paid ad",
+        aspect: "square",
+        alt: "A promo email next to a matching paid social ad",
+        suggestion:
+          "Side-by-side square of an abandoned-cart email and a Meta ad for the same product, identical type and color so they read as one brand.",
+      },
+      {
+        label: "Branded unboxing",
+        aspect: "square",
+        alt: "A customer opening a branded shipping box on a doorstep",
+        suggestion:
+          "Top-down of hands opening a branded mailer box on a porch, tissue and a thank-you card with the store URL, phone in frame showing the shipped-confirmation email.",
+      },
+    ],
+
+    workTitle: "Stores we built that move real money",
+    workNote:
+      "Real DTC and Shopify builds with revenue behind them — first-year sales, monthly run rate, concept-to-live timelines.",
+    featuredWorkIds: [
+      "squeeze-me-skinny",
+      "planters-etc",
+      "pure-blanco",
+      "muscleology",
+    ],
+    testimonialName: "Sandra Allen",
+
+    pricingTitle: "Flat prices for the store",
+    pricingNote:
+      "Real numbers, quoted up front. No monthly retainer, no percentage of sales. Amazon listings, email flows, and paid creative are scoped per project once the store is converting.",
+    priceAnchors: [
+      { label: "Shopify store build", price: "from $3,000" },
+      { label: "Full brand for a new DTC label", price: "from $2,500" },
+      { label: "Store logo", price: "from $750" },
+    ],
+
+    faqs: [
+      {
+        q: "How much does it cost to build a Shopify store?",
+        a: "A full Shopify build starts at $3,000 and is quoted flat before any work begins. That covers theme setup, brand styling, product pages written to convert, and checkout configured to actually close. No monthly retainer and no cut of your sales — you own the store and the numbers it brings in.",
+      },
+      {
+        q: "Can you fix my store instead of rebuilding it from scratch?",
+        a: "Yes. If the bones are fine and the store just looks like the free theme or leaks at checkout, we restyle and tighten what you have instead of starting over. We look at where carts drop, rewrite the product pages, and match the look to your brand. You only rebuild from zero when rebuilding is genuinely cheaper than patching.",
+      },
+      {
+        q: "Do you write Amazon listings too, or just Shopify?",
+        a: "Both. We build Shopify stores and write Amazon listings — titles, bullets, photos, and A+ content that out-clicks the worse products beating you now. Plenty of DTC brands sell on their own store and Amazon at once, so we keep the brand consistent across both instead of letting the listing look like a different company.",
+      },
+      {
+        q: "Why do people add to cart and then leave my store?",
+        a: "Usually the product page didn't answer the question that closes the sale — shipping cost, sizing, what's inside, or why yours over the cheaper one — so the buyer left to think and never came back. We rewrite pages to answer those upfront, add trust signals, and clean up checkout so fewer carts leak on the last step.",
+      },
+      {
+        q: "Do you work with stores outside Cumming, Georgia?",
+        a: "Yes. We're based in Cumming and serve Forsyth County and North Metro Atlanta in person, but ecommerce is online by nature — most of the stores we've built sell nationwide. We've launched DTC brands that cleared $100k in their first year and scaled others to roughly $200k a month, wherever their customers happen to be.",
+      },
+      {
+        q: "How long does it take to launch a DTC store?",
+        a: "A focused brand-and-Shopify build typically goes from concept to live in about four weeks, depending on how many products you're loading and whether photography is ready. We've taken a streetwear label from zero to a live store in four weeks. Bigger catalogs take longer, and you get a real timeline in the quote, not a guess.",
+      },
+    ],
+
+    seo: {
+      title:
+        "Ecommerce & DTC Web Design in Cumming, GA — Shopify & Amazon",
+      description:
+        "Shopify stores, product pages, and Amazon listings built to convert for DTC brands in Cumming & North Metro Atlanta. Flat pricing, fast turnaround. Stores that cleared $100k year one.",
+      keywords: [
+        "Shopify store design Cumming GA",
+        "ecommerce web design North Metro Atlanta",
+        "DTC brand design Georgia",
+        "Amazon listing design",
+        "Shopify developer Forsyth County",
+        "product page conversion design",
+      ],
+    },
+  },
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
