@@ -103,8 +103,8 @@ export const INDUSTRIES: Industry[] = [
       "You do great work. Your brand should prove it before you even pull into the driveway. Flat-rate logos, vehicle graphics, signs, shirts, and websites for HVAC, plumbing, electrical, roofing, and contractor businesses across Cumming and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/trades-contractors/hero.png",  // ← drop hero.png in that folder, then uncomment
-      alt: "Branded work truck with a fresh vehicle wrap for a Cumming-area contractor",
+      src: "/assets/industries/trades-contractors/concrete-pump-truck-wrap-cumming-ga.webp",
+      alt: "Concrete pump truck wrapped with a custom Pumping the Keys logo at a Cumming, GA job site — vehicle wrap design by Branding Zombie Designs",
       suggestion:
         "A dual-cab work truck or service van with a clean, freshly-installed wrap — brand colors and phone number readable from across the street. Golden hour, job site or driveway.",
     },
@@ -139,28 +139,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Vehicle wraps",
         aspect: "wide",
-        alt: "Truck wrap design mockup for a trades business",
+        src: "/assets/industries/trades-contractors/commercial-cleaning-van-wrap-design.webp",
+        alt: "White commercial cleaning van with a full Corporate Sanitation vinyl wrap — van wrap design for trades, North Metro Atlanta",
         suggestion:
           "Full-side wrap design mocked onto a white service van — bold brand colors, big phone number, license number, and service icons.",
       },
       {
         label: "Crew shirts",
         aspect: "tall",
-        alt: "Branded crew shirt for a contractor",
+        src: "/assets/industries/trades-contractors/contractor-branded-crew-shirt-jobsite.webp",
+        alt: "Contractor on a job site in a navy polo with an embroidered KMR Construction logo — branded crew apparel design, Forsyth County GA",
         suggestion:
           "Branded crew tee or hi-vis shirt on a contractor — logo on the chest, optional back print. Clean studio or on-site shot.",
       },
       {
         label: "Yard signs",
         aspect: "square",
-        alt: "Branded yard sign staked in a lawn",
+        src: "/assets/industries/trades-contractors/construction-yard-sign-design-cumming-ga.webp",
+        alt: "Miami Pavement Supply site sign staked at a construction job — contractor yard sign design, Cumming GA",
         suggestion:
           "Corrugated yard sign staked in a front lawn — logo, service line, and phone. The kind of sign neighbors photograph.",
       },
       {
         label: "Cards & door magnets",
         aspect: "wide",
-        alt: "Business cards and a magnetic truck-door sign",
+        src: "/assets/industries/trades-contractors/contractor-business-cards-door-magnet.webp",
+        alt: "Corporate Sanitation business cards and a magnetic truck-door sign — contractor print design by Branding Zombie Designs",
         suggestion:
           "Flat-lay of business cards next to a magnetic truck-door sign in matching brand colors, on a workbench.",
       },
@@ -241,8 +245,8 @@ export const INDUSTRIES: Industry[] = [
       "Logos, printed menus, window signage, to-go packaging, and online-ordering websites for independent restaurants, cafés, food trucks, and bakeries across Cumming, Forsyth County, and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/restaurants/hero.png",  // ← drop hero.png in that folder, then uncomment
-      alt: "A small restaurant storefront in Cumming, Georgia with a clean painted window logo and a printed menu in the window",
+      src: "/assets/industries/restaurants/restaurant-storefront-branding-cumming-ga.webp",
+      alt: "Independent diner storefront at dusk with a hand-painted window logo and string lights — restaurant branding by Branding Zombie Designs, Cumming GA",
       suggestion:
         "Warm dusk shot of an independent diner storefront with a hand-painted window logo glowing under string lights, a framed menu by the door, and a couple walking in — local, inviting, and clearly not a chain.",
     },
@@ -277,28 +281,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Printed dine-in menu",
         aspect: "tall",
-        alt: "A clean printed restaurant menu on a wood table",
+        src: "/assets/industries/restaurants/restaurant-menu-design-cumming-ga.webp",
+        alt: "Clean printed single-page restaurant menu on a wood table — restaurant menu design, Forsyth County GA",
         suggestion:
           "Overhead shot of a single-page printed menu on a butcher-block table, organized and easy to read, next to a coffee mug and a fork — no clip art, clear prices, one consistent typeface.",
       },
       {
         label: "Storefront window sign",
         aspect: "wide",
-        alt: "Restaurant logo painted on a front window",
+        src: "/assets/industries/restaurants/cafe-window-sign-design.webp",
+        alt: "Café front window with a cut-vinyl logo and hours plus a sidewalk A-frame — café signage design, North Metro Atlanta",
         suggestion:
           "Street-level photo of a café window with the logo cut in vinyl and 'OPEN' hours below, sunlight catching the glass, sidewalk and a chalkboard A-frame just outside.",
       },
       {
         label: "Branded to-go cups",
         aspect: "square",
-        alt: "Coffee cups and a take-out box with matching branding",
+        src: "/assets/industries/restaurants/branded-to-go-coffee-cups-design.webp",
+        alt: "Branded to-go coffee cups and a kraft take-out box on a café counter — restaurant packaging design, Cumming GA",
         suggestion:
           "A pair of to-go coffee cups and a kraft take-out box on a counter, all stamped with the same logo, a hand reaching for one — proof the brand follows the food out the door.",
       },
       {
         label: "Mouth-watering social post",
         aspect: "square",
-        alt: "A close-up food photo styled for an Instagram post",
+        src: "/assets/industries/restaurants/restaurant-social-media-food-post.webp",
+        alt: "Close-up food photo styled as a square Instagram post with a restaurant logo — restaurant social media design, Cumming GA",
         suggestion:
           "Tight, well-lit close-up of a signature dish — steam, glossy sauce, a fork pulling a bite — framed as a square Instagram post with the logo subtly in the corner.",
       },
@@ -381,8 +389,8 @@ export const INDUSTRIES: Industry[] = [
       "Logos, window decals, price menus, gift cards, and a website with online booking for barbershops, hair, nail, lash, and spa owners across Cumming, Forsyth, and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/salons-barbershops/hero.png",  // ← drop hero.png in that folder, then uncomment
-      alt: "Barbershop storefront with a clean logo on the window and a stylist working at the chair inside",
+      src: "/assets/industries/salons-barbershops/barbershop-storefront-logo-cumming-ga.webp",
+      alt: "Gentlemens Cutz barbershop storefront with a vinyl logo decal on the window and a barber working inside — barbershop branding in Cumming, GA",
       suggestion:
         "Shot through the glass of a Forsyth County barbershop at golden hour — a sharp logo decal on the door, price list visible on the wall, and a barber mid-fade so you can tell it is a real, busy shop and not a stock photo.",
     },
@@ -417,28 +425,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Window & door decal",
         aspect: "wide",
-        alt: "Vinyl logo and hours decal on a salon's front glass door",
+        src: "/assets/industries/salons-barbershops/barbershop-window-decal-design.webp",
+        alt: "Gentlemens Cutz logo as a cut-vinyl decal on a barbershop glass door — barbershop window decal design, Forsyth County GA",
         suggestion:
           "A clean vinyl decal on a salon's front door — logo, tagline, and hours — photographed from the sidewalk with the lit interior glowing behind the glass.",
       },
       {
         label: "Wall price menu",
         aspect: "tall",
-        alt: "Framed printed price menu mounted on a barbershop wall",
+        src: "/assets/industries/salons-barbershops/barbershop-price-list-menu-design.webp",
+        alt: "Framed Gentlemens Cutz price menu by the mirror station — barbershop price list design, Cumming GA",
         suggestion:
           "A framed price menu on the wall beside the mirror station — services and prices laid out clean enough to read from the waiting bench, no handwriting in sight.",
       },
       {
         label: "Branded apron & towels",
         aspect: "square",
-        alt: "Salon apron and folded towels with an embroidered logo",
+        src: "/assets/industries/salons-barbershops/barbershop-branded-apron-towels.webp",
+        alt: "Barber apron and towels embroidered with the Gentlemens Cutz logo — branded barbershop apparel design",
         suggestion:
           "A folded stack of black towels and a stylist's apron, each with the embroidered shop logo, staged on the station next to the clippers.",
       },
       {
         label: "Gift & loyalty cards",
         aspect: "wide",
-        alt: "Matching printed gift card and loyalty punch card fanned on a counter",
+        src: "/assets/industries/salons-barbershops/barbershop-gift-loyalty-cards-design.webp",
+        alt: "Gentlemens Cutz gift card and loyalty punch card on the counter — barbershop print design by Branding Zombie Designs",
         suggestion:
           "A printed gift card and matching loyalty punch card fanned out on the front counter — thick stock, foil logo, the kind a client actually keeps in their wallet.",
       },
@@ -521,8 +533,8 @@ export const INDUSTRIES: Industry[] = [
       "Label and packaging design, full brand families across SKUs, Amazon and Shopify listings, and print-ready files for supplement, beverage, and packaged-goods founders — from a Cumming, GA studio with 40+ labels under its belt.",
 
     heroImage: {
-      // src: "/assets/industries/supplement-cpg-brands/hero.png",  // ← drop hero.png in that folder, then uncomment
-      alt: "Lineup of finished supplement bottles and tubs from one brand family standing together",
+      src: "/assets/industries/supplement-cpg-brands/supplement-brand-family-lineup-greenleaf.webp",
+      alt: "GreenLeaf CBD Energy, Rest and Stress dropper bottles as a brand-family lineup — supplement label and packaging design, Cumming GA",
       suggestion:
         "A clean studio render of five SKUs from a single supplement line — a tub, two bottles, a pouch, and a box — lined up shoulder to shoulder so they obviously read as one family, lit bright on a seamless dark surface.",
     },
@@ -558,28 +570,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Hero bottle render",
         aspect: "tall",
-        alt: "Photorealistic render of a single supplement bottle on a clean background",
+        src: "/assets/industries/supplement-cpg-brands/body-butter-product-photography-luxury-life.webp",
+        alt: "Luxury Life Fresh Attraction body butter tin styled on a marble vanity — CPG product photography and label design",
         suggestion:
           "A studio-lit hero render of one finished tub or bottle, front label crisp and readable, soft reflection underneath — the shot that goes on the PDP, the pitch deck, and the Amazon main image before a single unit is printed.",
       },
       {
         label: "Amazon listing layout",
         aspect: "wide",
-        alt: "Amazon A-plus content layout showing product callouts and ingredient highlights",
+        src: "/assets/industries/supplement-cpg-brands/supplement-amazon-listing-design-protein.webp",
+        alt: "Pompeii Fit Protein Amazon A+ listing layout with benefit callouts — supplement listing design by Branding Zombie Designs",
         suggestion:
           "A laptop-and-phone mockup of an Amazon A+ listing — main thumbnail, ingredient callout strip, and a comparison block — laid out so the brand holds up at thumbnail size and on a tiny screen.",
       },
       {
         label: "On the retail shelf",
         aspect: "wide",
-        alt: "Supplement products lined up on a lit retail store shelf among competitors",
+        src: "/assets/industries/supplement-cpg-brands/supplement-retail-shelf-design-cumming-ga.webp",
+        alt: "Athletes Only CBD products faced out on a retail wellness shelf — supplement retail packaging design, North Metro Atlanta",
         suggestion:
           "A real-shelf shot of three or four SKUs from one line sitting together in a vitamin aisle, facing out, clearly reading as a family and out-fronting the generic black-and-red tubs beside them.",
       },
       {
         label: "Paid social ad",
         aspect: "square",
-        alt: "Lifestyle ad pairing the product with an athlete and a short headline",
+        src: "/assets/industries/supplement-cpg-brands/supplement-paid-social-ad-design.webp",
+        alt: "Amino supplement paid-social ad set in a gym — supplement ad creative design, Cumming GA",
         suggestion:
           "A scroll-stopping Meta-style ad — product comped into a gym or beach scene with one punchy headline and the flavor cue — built square for feed and ready to run as paid creative.",
       },
