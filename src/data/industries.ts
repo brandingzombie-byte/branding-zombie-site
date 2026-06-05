@@ -828,8 +828,8 @@ export const INDUSTRIES: Industry[] = [
       "Cumming and Forsyth County shops live and die on the lot, the listing, and word of mouth. We give yours a sign people can read from the road, a site that answers “do you work on my truck,” and a Google profile that shows up for “mechanic near me.”",
 
     heroImage: {
-      // src: "/assets/industries/auto-repair/hero.webp",
-      alt: "Independent auto repair shop at dusk with a new lit sign and two open bays",
+      src: "/assets/industries/auto-repair/auto-shop-exterior-branding-cumming-ga.webp",
+      alt: "Independent auto repair shop at golden hour with a lit Redline Auto & Tire sign and a marketing flag out front — auto shop branding by Branding Zombie Designs, Cumming GA",
       suggestion:
         "Shoot the front of an independent shop at golden hour, bay doors open and a clean backlit sign glowing over the lot, one tech wiping his hands by a lifted truck.",
     },
@@ -859,35 +859,39 @@ export const INDUSTRIES: Industry[] = [
 
     showcaseTitle: "What it looks like out on the lot",
     showcaseNote:
-      "Real-world pieces tuned for a working shop — the sign, the shirts, the window, the front counter.",
+      "Real-world pieces tuned for a working shop — the flag, the shirts, the window, the cards.",
     showcase: [
       {
-        label: "Shop sign & building front",
-        aspect: "wide",
-        alt: "Fresh exterior sign across the front of an auto repair building",
-        suggestion:
-          "Wide daytime shot of a clean new channel-letter sign spanning the shop facade, bay numbers painted above each door.",
-      },
-      {
-        label: "Branded mechanic shirts",
-        aspect: "square",
-        alt: "Work shirts with an embroidered shop logo on a rack",
-        suggestion:
-          "Flat or hung row of navy work shirts with the shop name embroidered on the chest and a name patch, grease-rag texture in frame.",
-      },
-      {
-        label: "Window & banner graphics",
-        aspect: "wide",
-        alt: "Service banner and window lettering on a tire shop storefront",
-        suggestion:
-          "Storefront glass with crisp vinyl lettering listing brakes, alignment, and tires, an hours decal on the door.",
-      },
-      {
-        label: "Cards & service price board",
+        label: "Marketing flag",
         aspect: "tall",
-        alt: "Business cards next to a printed service and price board at the front counter",
+        src: "/assets/industries/auto-repair/auto-shop-marketing-flag-design.webp",
+        alt: "Branded swooper marketing flag at an auto repair shop entrance listing oil change, brakes and tires — auto shop flag design, Forsyth County GA",
         suggestion:
-          "Front counter flat-lay of stacked business cards beside a framed printed price menu for oil changes, rotations, and diagnostics.",
+          "A tall swooper feather flag staked at the shop entrance, printed with the logo and a few headline services, fluttering over the lot.",
+      },
+      {
+        label: "Mechanic shirts",
+        aspect: "square",
+        src: "/assets/industries/auto-repair/auto-mechanic-embroidered-shirts-design.webp",
+        alt: "Navy mechanic work shirts with an embroidered shop logo and name patch — auto shop apparel design, Cumming GA",
+        suggestion:
+          "Folded navy work shirts with the shop logo embroidered on the chest and an oval name patch, on a workbench.",
+      },
+      {
+        label: "Window sign",
+        aspect: "wide",
+        src: "/assets/industries/auto-repair/auto-shop-window-sign-design.webp",
+        alt: "Auto repair shop window with cut-vinyl logo and service-list graphics — auto shop window sign design, North Metro Atlanta",
+        suggestion:
+          "Storefront glass with crisp vinyl lettering listing brakes, alignment, and tires, plus an hours decal on the door.",
+      },
+      {
+        label: "Business cards",
+        aspect: "wide",
+        src: "/assets/industries/auto-repair/auto-shop-business-cards-design.webp",
+        alt: "Stack of die-cut auto shop business cards fanned on a workbench — auto shop print design by Branding Zombie Designs",
+        suggestion:
+          "Top-down flat-lay of die-cut business cards fanned on a dark workbench with a set of keys.",
       },
     ],
 
