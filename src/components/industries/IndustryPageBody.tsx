@@ -45,7 +45,7 @@ export default function IndustryPageBody({
                 {industry.eyebrow}
               </span>
             </div>
-            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.05] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.15] tracking-tight text-[var(--color-dark-text-primary)]">
               {industry.headlineLead}{" "}
               <span className="relative inline-block">
                 {industry.headlineHighlight}
@@ -101,7 +101,7 @@ export default function IndustryPageBody({
         </p>
 
         <div className="mt-14 border-t-2 border-[var(--color-text-primary)] pt-10">
-          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-text-primary">
             {industry.painsTitle}
           </h2>
           <ul className="mt-8 grid grid-cols-1 gap-x-12 gap-y-5 lg:grid-cols-2">
@@ -129,7 +129,7 @@ export default function IndustryPageBody({
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
               In the wild
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-[var(--color-dark-text-primary)]">
               {industry.showcaseTitle}
             </h2>
           </div>
@@ -165,7 +165,7 @@ export default function IndustryPageBody({
             <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
               What we do
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-text-primary">
               {industry.servicesTitle}
             </h2>
           </div>
@@ -187,7 +187,7 @@ export default function IndustryPageBody({
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
               Selected work
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-[var(--color-dark-text-primary)]">
               {industry.workTitle}
             </h2>
           </div>
@@ -235,7 +235,7 @@ export default function IndustryPageBody({
             <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
               Pricing
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+            <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-text-primary">
               {industry.pricingTitle}
             </h2>
             <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
@@ -272,7 +272,7 @@ export default function IndustryPageBody({
 
       {/* ── FAQ (AEO — visible Q/A) ── */}
       <Section theme="light" pad="spacious" topRule>
-        <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+        <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.2] tracking-tight text-text-primary">
           Questions {industry.navLabel.toLowerCase()} actually ask.
         </h2>
         <dl className="mt-10 grid grid-cols-1 divide-y divide-[var(--color-hairline-strong)] border-y border-[var(--color-hairline-strong)]">

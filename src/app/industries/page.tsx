@@ -61,7 +61,7 @@ export default function IndustriesIndexPage() {
                 Industries · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.2] tracking-tight text-[var(--color-dark-text-primary)]">
               Built for{" "}
               <span className="relative inline-block">
                 your industry
