@@ -681,8 +681,8 @@ export const INDUSTRIES: Industry[] = [
       "For independent gyms, CrossFit boxes, trainers, yoga and martial arts schools around Cumming and Forsyth County. One look that hits on the wall, on the tee, and on the phone — plus a site where people can actually sign up.",
 
     heroImage: {
-      // src: "/assets/industries/gyms-fitness/hero.webp",  // ← drop hero image in that folder, then uncomment
-      alt: "Gym interior with a bold logo painted across the back wall and members training in the foreground",
+      src: "/assets/industries/gyms-fitness/gym-interior-wall-branding-cumming-ga.webp",
+      alt: "Independent gym interior with the Titan Fitness logo painted across the back wall and a member mid-lift — gym branding and signage by Branding Zombie Designs, Cumming GA",
       suggestion:
         "Wide shot of a turf-and-rig gym at golden hour, a huge painted logo filling the back wall while two members do wall-balls in the foreground, chalk dust catching the light.",
     },
@@ -718,28 +718,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Wall logo",
         aspect: "wide",
-        alt: "Large gym logo painted across an interior brick wall above the squat racks",
+        src: "/assets/industries/gyms-fitness/gym-wall-logo-painted-design.webp",
+        alt: "Titan Fitness logo painted large on a brick gym wall above the squat racks — gym wall-graphic design, Forsyth County GA",
         suggestion:
           "Eye-level wide shot of a brick gym wall with the logo painted six feet tall above a row of squat racks, barbells loaded and ready underneath.",
       },
       {
         label: "Member hoodies",
         aspect: "square",
-        alt: "Folded stack of branded gym hoodies and tees in matching colors",
+        src: "/assets/industries/gyms-fitness/gym-member-apparel-design.webp",
+        alt: "Folded Titan Fitness member hoodies and tees with the chest logo — branded gym apparel design, Cumming GA",
         suggestion:
           "Top-down flat lay of folded member hoodies and tees in the gym's colors, a coffee cup and a jump rope just inside the frame for scale.",
       },
       {
         label: "Class schedule board",
         aspect: "tall",
-        alt: "Printed weekly class schedule and membership board mounted by the front desk",
+        src: "/assets/industries/gyms-fitness/gym-class-schedule-board-design.webp",
+        alt: "Printed Titan Fitness class schedule and membership board by the front desk — gym signage design, North Metro Atlanta",
         suggestion:
           "Straight-on shot of a printed weekly class schedule and membership-tier board mounted on the wall by the check-in desk, clean and easy to read from across the room.",
       },
       {
         label: "Workout post",
         aspect: "square",
-        alt: "High-energy social media post of a member mid-lift with the gym branding overlaid",
+        src: "/assets/industries/gyms-fitness/gym-social-media-workout-post.webp",
+        alt: "Titan Fitness social media workout post of a member mid-lift with the logo overlaid — gym social creative design",
         suggestion:
           "Punchy Instagram-style frame of a member mid-clean-and-jerk, motion blur on the bar, the gym's logo and class time set into the corner.",
       },
@@ -959,8 +963,8 @@ export const INDUSTRIES: Industry[] = [
       "Logos, branded trucks and trailers, door hangers, yard signs, and websites with a quote button for lawn care, house cleaning, pest control, pool service, pressure washing, junk removal, window cleaning, and handyman businesses around Cumming, Forsyth County, and North Metro Atlanta.",
 
     heroImage: {
-      // src: "/assets/industries/home-services/hero.webp",
-      alt: "Lawn care trailer with bold logo lettering parked in a Forsyth County subdivision, mower ramps down and a yard sign staked in the cut grass",
+      src: "/assets/industries/home-services/home-service-branded-vehicle-cumming-ga.webp",
+      alt: "Branded Hospital 2 Home service van in a suburban driveway with a caregiver heading to the door — home-service branding by Branding Zombie Designs, Cumming GA",
       suggestion:
         "A landscaping trailer with clean cut-vinyl lettering and a big phone number parked at the curb of a North Metro Atlanta subdivision, ramp down and a fresh-cut lawn behind it with a small branded yard sign staked near the mailbox, shot in late-afternoon light so the neighbors can read it from three doors down.",
     },
@@ -995,28 +999,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Truck & trailer lettering",
         aspect: "wide",
-        alt: "Enclosed lawn-care trailer with bold cut-vinyl logo, services, and phone number",
+        src: "/assets/industries/home-services/home-service-van-lettering-design.webp",
+        alt: "White service van with Hospital 2 Home cut-vinyl door lettering and phone number — home-service vehicle lettering design, Forsyth County GA",
         suggestion:
           "A pressure-washing or lawn trailer photographed from the curb with clean cut-vinyl lettering — logo, two or three services, and a phone number big enough to read from a passing car — parked in front of the house that was just serviced.",
       },
       {
         label: "Door hanger on the door",
         aspect: "tall",
-        alt: "Branded house-cleaning door hanger looped over a suburban front door handle",
+        src: "/assets/industries/home-services/home-service-door-hanger-design.webp",
+        alt: "Branded Hospital 2 Home door hanger on a suburban front door — home-service door hanger design, North Metro Atlanta",
         suggestion:
           "A printed door hanger hooked over a front-door handle on a brick suburban house, logo and a short offer at the top and a quote QR code at the bottom, shot close so it clearly looks designed and not run off a home printer.",
       },
       {
         label: "Yard sign in the lawn",
         aspect: "square",
-        alt: "Corrugated yard sign staked in a freshly cut front lawn near the mailbox",
+        src: "/assets/industries/home-services/home-service-yard-sign-design.webp",
+        alt: "Branded home-service lawn sign with the Hospital 2 Home logo near a front walkway — home-service yard sign design, Cumming GA",
         suggestion:
           "A corrugated yard sign on metal stakes pushed into a freshly cut, edged front lawn near the mailbox — logo, service line, and phone — the kind of sign a neighbor stops to photograph before calling.",
       },
       {
         label: "Branded crew shirts",
         aspect: "square",
-        alt: "Pest-control technician in a branded polo holding a sprayer at a customer's door",
+        src: "/assets/industries/home-services/home-service-branded-crew-shirts.webp",
+        alt: "Caregiver in a branded Hospital 2 Home polo at a homeowner's door — branded home-service apparel design",
         suggestion:
           "A technician in a clean branded polo or tee, logo on the chest, sprayer or mower in hand, standing at a homeowner's door so the brand looks like a real, trustworthy crew showing up — studio-clean but clearly on the job.",
       },
@@ -1097,8 +1105,8 @@ export const INDUSTRIES: Industry[] = [
       "Logos, websites with online booking, signage, and intake that look as careful as the care you give. Built for dentists, med spas, chiropractors, and wellness clinics across Forsyth County.",
 
     heroImage: {
-      // src: "/assets/industries/medical-wellness/hero.webp",
-      alt: "Calm medical practice reception with a clean logo on the wall behind the front desk",
+      src: "/assets/industries/medical-wellness/medical-clinic-reception-branding-cumming-ga.webp",
+      alt: "Bright children's therapy clinic reception with the Kids Life Solutions logo on the wall — medical practice branding by Branding Zombie Designs, Cumming GA",
       suggestion:
         "Shoot a tidy clinic reception at eye level: a backlit logo sign on a clean accent wall, two chairs, a plant, and a tablet check-in on the desk, soft daylight from a side window.",
     },
@@ -1133,28 +1141,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Reception sign",
         aspect: "wide",
-        alt: "Practice logo sign mounted above a reception desk",
+        src: "/assets/industries/medical-wellness/medical-practice-reception-sign-design.webp",
+        alt: "Dimensional Kids Life Solutions logo sign above a clinic reception desk — medical practice signage design, Forsyth County GA",
         suggestion:
           "Wide shot of a dimensional logo sign on the wall above a front desk, soft uplighting, a row of waiting chairs blurred in the foreground.",
       },
       {
         label: "Booking site",
         aspect: "square",
-        alt: "Appointment booking page open on a phone and laptop",
+        src: "/assets/industries/medical-wellness/medical-website-online-booking-design.webp",
+        alt: "Kids Life Solutions practice website with online appointment booking on a laptop and phone — medical website design, North Metro Atlanta",
         suggestion:
           "A laptop and phone side by side on a clean desk, both showing the same practice site with a clear Book Appointment button and an open time-slot picker.",
       },
       {
         label: "Intake folder",
         aspect: "tall",
-        alt: "Branded intake folder with matching appointment cards",
+        src: "/assets/industries/medical-wellness/medical-intake-folder-appointment-cards.webp",
+        alt: "Branded Kids Life Solutions intake folder with new-patient forms and appointment cards — medical print design, Cumming GA",
         suggestion:
           "Top-down on a light wood table: a branded intake folder fanned open with new-patient forms and three matching appointment reminder cards beside it.",
       },
       {
         label: "Wellness post",
         aspect: "square",
-        alt: "Calm social post for a wellness clinic",
+        src: "/assets/industries/medical-wellness/wellness-clinic-social-media-post.webp",
+        alt: "Calm Kids Life Solutions wellness social media post — healthcare social creative design",
         suggestion:
           "A soft, calm Instagram post mockup on a phone: muted palette, one clean line of advice, the practice logo small in the corner, plant shadow on the wall behind.",
       },
@@ -1236,8 +1248,8 @@ export const INDUSTRIES: Industry[] = [
       "A store that looks like your brand, product pages that answer the question before someone bounces, and ads and email that match what they land on. Built in Cumming, GA. The owner answers the phone.",
 
     heroImage: {
-      // src: "/assets/industries/ecommerce-dtc/hero.webp",
-      alt: "A Shopify store shown on a laptop and phone with an add-to-cart button mid-click",
+      src: "/assets/industries/ecommerce-dtc/ecommerce-shopify-store-design-cumming-ga.webp",
+      alt: "Squeeze Me Skinny DTC store on a laptop and phone with an add-to-cart in progress — ecommerce store design by Branding Zombie Designs, Cumming GA",
       suggestion:
         "Overhead shot of a laptop and phone on a dark desk showing the same DTC product store, a finger hovering over a glowing add-to-cart button, order-confirmation email faintly visible on the phone.",
     },
@@ -1273,28 +1285,32 @@ export const INDUSTRIES: Industry[] = [
       {
         label: "Storefront, two screens",
         aspect: "wide",
-        alt: "A DTC store homepage shown on a laptop and phone side by side",
+        src: "/assets/industries/ecommerce-dtc/dtc-shopify-storefront-laptop-phone.webp",
+        alt: "Squeeze Me Skinny Shopify storefront on a laptop and phone — DTC ecommerce web design, North Metro Atlanta",
         suggestion:
           "A clean Shopify homepage on a 16-inch laptop with the same store on a phone leaned against it, both on a light studio surface, brand color repeating across both.",
       },
       {
         label: "Product page that converts",
         aspect: "tall",
-        alt: "A long product page with photos, reviews, and a sticky buy button",
+        src: "/assets/industries/ecommerce-dtc/ecommerce-product-page-design.webp",
+        alt: "Squeeze Me Skinny product page with reviews and a sticky add-to-cart bar — conversion-focused product page design",
         suggestion:
           "A tall phone screenshot of a single product page scrolled to show hero photo, star reviews, an FAQ block, and a sticky add-to-cart bar pinned at the bottom.",
       },
       {
         label: "Email plus paid ad",
         aspect: "square",
-        alt: "A promo email next to a matching paid social ad",
+        src: "/assets/industries/ecommerce-dtc/dtc-email-paid-ad-creative-design.webp",
+        alt: "Matching Squeeze Me Skinny promotional email and paid social ad — DTC email and ad creative design, Cumming GA",
         suggestion:
           "Side-by-side square of an abandoned-cart email and a Meta ad for the same product, identical type and color so they read as one brand.",
       },
       {
         label: "Branded unboxing",
         aspect: "square",
-        alt: "A customer opening a branded shipping box on a doorstep",
+        src: "/assets/industries/ecommerce-dtc/dtc-branded-packaging-unboxing-design.webp",
+        alt: "Branded Squeeze Me Skinny mailer box unboxing on a porch — DTC packaging design",
         suggestion:
           "Top-down of hands opening a branded mailer box on a porch, tissue and a thank-you card with the store URL, phone in frame showing the shipped-confirmation email.",
       },
