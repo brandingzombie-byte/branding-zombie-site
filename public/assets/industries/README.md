@@ -22,6 +22,11 @@ exist, and nothing looks broken.
 | `restaurants/`           | /industries/restaurants |
 | `salons-barbershops/`    | /industries/salons-barbershops |
 | `supplement-cpg-brands/` | /industries/supplement-cpg-brands |
+| `gyms-fitness/`          | /industries/gyms-fitness |
+| `auto-repair/`           | /industries/auto-repair |
+| `home-services/`         | /industries/home-services |
+| `medical-wellness/`      | /industries/medical-wellness |
+| `ecommerce-dtc/`         | /industries/ecommerce-dtc |
 
 ## Specs
 
