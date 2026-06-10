@@ -4497,6 +4497,1945 @@ function WillAiReplaceDesignersContent() {
   );
 }
 
+function SeoCummingGaContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Most small businesses in Cumming, GA do need SEO — but probably not
+          the expensive, national kind.
+        </strong>{" "}
+        For a local shop in Forsyth County, SEO work usually means local SEO:
+        showing up in the map pack and search results when nearby customers look
+        for what you sell. Real local SEO runs{" "}
+        <strong>$500–$1,500/month as an ongoing service</strong> (not a one-time
+        fix), and the single biggest free lever — your Google Business Profile —
+        costs nothing but attention.
+      </p>
+
+      <p>
+        This is an honest guide from Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA, on what SEO actually is, whether you need
+        it, and what moves rankings in 2026. No jargon, no &quot;guaranteed #1
+        in 30 days&quot; nonsense — just how this works for a real business
+        serving North Metro Atlanta.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Most Cumming businesses need local SEO, not national.</strong>{" "}
+            You&apos;re competing with neighbors, not the whole internet.
+          </li>
+          <li>
+            <strong>Real local SEO runs $500–$1,500/month</strong> as an ongoing
+            service — not a one-time project.
+          </li>
+          <li>
+            <strong>Your Google Business Profile is the #1 free lever.</strong>{" "}
+            Fully built out, it can win the map pack on its own.
+          </li>
+          <li>
+            <strong>Plan on 3 to 6 months</strong> for real movement. Anyone
+            promising results in two weeks is selling ads, not SEO.
+          </li>
+          <li>
+            <strong>SEO isn&apos;t dead with AI search</strong> — answer engines
+            reward the same honest work (AEO/GEO).
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-is-seo">What is SEO, in Plain English?</h2>
+      <p>
+        SEO (search engine optimization) is the work of getting your website and
+        business listings to show up when people search Google for what you do.
+      </p>
+      <p>For a local business, there are two surfaces that matter:</p>
+      <ul>
+        <li>
+          <strong>The map pack</strong> — the little map with three businesses
+          at the top of local searches like &quot;hvac cumming ga&quot; or
+          &quot;tacos near me.&quot;
+        </li>
+        <li>
+          <strong>The blue links</strong> — the regular organic results below
+          it.
+        </li>
+      </ul>
+      <p>
+        You want to appear in both. Ads are a third surface, but ads stop the
+        second you stop paying. SEO builds an asset that keeps working.
+      </p>
+      <p>
+        The honest version: SEO isn&apos;t a magic trick. It&apos;s making your
+        site fast, clear, and trustworthy, getting your Google Business Profile
+        fully built out, earning a few honest reviews and links, and publishing
+        content that answers the questions your customers actually type.
+      </p>
+
+      <h2 id="local-vs-national">
+        Local SEO vs National SEO — and Why You Only Need One
+      </h2>
+      <p>This is where a lot of Cumming businesses get oversold.</p>
+      <p>
+        <strong>National SEO</strong> is trying to rank for broad terms with no
+        location — &quot;best running shoes,&quot; &quot;project management
+        software.&quot; That&apos;s brutally competitive, slow, and expensive.
+        Unless you ship products nationwide, you don&apos;t need it.
+      </p>
+      <p>
+        <strong>Local SEO</strong> is ranking for searches tied to a place —
+        &quot;logo designer Cumming,&quot; &quot;plumber Forsyth County,&quot;
+        &quot;coffee shop near me.&quot; The competition is your neighbors, not
+        the entire internet. It&apos;s far more winnable, and it&apos;s where
+        your actual customers are.
+      </p>
+      <p>
+        If you serve people within driving distance, you want local SEO work —
+        not national. Anyone pitching you a national-scale campaign for a local
+        Forsyth County business is either confused or padding the invoice.
+      </p>
+
+      <h2 id="google-business-profile">
+        Google Business Profile: the #1 Free Lever
+      </h2>
+      <p>
+        If you do one thing this week, do this. Your{" "}
+        <strong>Google Business Profile</strong> (the old &quot;Google My
+        Business&quot; listing) is the most powerful free local SEO tool there
+        is, and most small businesses leave it half-built.
+      </p>
+      <p>A fully optimized profile means:</p>
+      <ul>
+        <li>
+          Correct name, address, phone, and hours — matching your website
+          exactly.
+        </li>
+        <li>The right primary category (and secondary categories).</li>
+        <li>Real photos — your shop, your work, your team. Not stock.</li>
+        <li>
+          A steady trickle of honest reviews, and you replying to them.
+        </li>
+        <li>Posts, products, and services filled in.</li>
+        <li>
+          Service areas set to Cumming, Forsyth County, and the North Metro
+          Atlanta towns you cover.
+        </li>
+      </ul>
+      <p>
+        That&apos;s the difference between showing up in the map pack and being
+        invisible. We wrote more on why Google increasingly drives local
+        discovery in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          how Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+      <p>
+        Here&apos;s the part agencies don&apos;t always say out loud:{" "}
+        <strong>
+          your Google Business Profile and your website are different things.
+        </strong>{" "}
+        A great profile can win the map pack even while your website is weak —
+        and a great website can&apos;t fully rank if your profile is empty. You
+        need both pulling the same direction.
+      </p>
+
+      <h2 id="local-seo-cost">What Does Local SEO Cost in Cumming, GA?</h2>
+      <p>
+        Real, ongoing local SEO work runs{" "}
+        <strong>$500–$1,500 per month</strong>, depending on how competitive
+        your category is and how much content and link work you need.
+      </p>
+      <p>Two things people get wrong about that number:</p>
+      <p>
+        <strong>It&apos;s ongoing, not one-time.</strong> SEO isn&apos;t a
+        project you finish. Competitors keep moving, Google keeps changing, and
+        fresh content + reviews keep compounding. The month you stop, you start
+        sliding. Pay for the months you want to keep winning.
+      </p>
+      <p>
+        <strong>Cheap &quot;SEO&quot; is usually a scam.</strong> A $99/month
+        plan is buying you automated directory spam and a report nobody reads. It
+        can actively hurt you. If a price looks too good, the work behind it
+        isn&apos;t real.
+      </p>
+      <p>
+        At Branding Zombie Designs, SEO lives inside{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing services
+        </InternalLink>
+        , and it pairs naturally with the website itself — because a slow,
+        confusing, or outdated site caps everything SEO can do. If your site is
+        the bottleneck, fixing that comes first; see{" "}
+        <InternalLink href="/services/web-design">web design services</InternalLink>
+        . For a fuller breakdown of how site cost and SEO interact, read{" "}
+        <InternalLink href="/blog/website-design-seo-cost">
+          what website design and SEO cost
+        </InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          Cumming website cost guide for 2026
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="seo-agency-cumming">
+        How Much Does an SEO Agency in Cumming Charge — and How Do You Pick One?
+      </h2>
+      <p>
+        When you compare an SEO agency option, the right questions aren&apos;t
+        about price first. They&apos;re about what you actually get.
+      </p>
+      <p>Ask any SEO company provider:</p>
+      <ul>
+        <li>
+          <strong>What exactly do I get each month?</strong> A real answer lists
+          specifics — profile optimization, content, technical fixes, reviews
+          strategy, reporting. Vague answers mean vague work.
+        </li>
+        <li>
+          <strong>Can you show me local results?</strong> Not national vanity
+          rankings — businesses near here that show up where they should.
+        </li>
+        <li>
+          <strong>Do you guarantee #1?</strong> If they say yes, walk. Nobody
+          controls Google. Honest providers promise effort and process, not a
+          ranking.
+        </li>
+        <li>
+          <strong>Will you explain it to me?</strong> You should understand what
+          you&apos;re paying for without a CS degree.
+        </li>
+        <li>
+          <strong>Who owns the work?</strong> Your website, your Google profile,
+          your accounts should stay yours.
+        </li>
+      </ul>
+      <p>
+        For SEO services buyers, the cleanest setup is one shop that handles your
+        logo, website, and SEO together — one designer, one invoice, everything
+        pointing the same way. When your branding, site, and search work are
+        split across three vendors, the seams show, and so does the cost. That
+        one-roof approach is the whole idea behind{" "}
+        <InternalLink href="/services/launch-package">the Launch Package</InternalLink>
+        .
+      </p>
+
+      <h2 id="diy-vs-hiring">DIY vs Hiring: Can You Do SEO Yourself?</h2>
+      <p>
+        Yes — some of it, and you should, even if you hire help later.
+      </p>
+      <p>
+        <strong>Do this yourself, free, starting today:</strong>
+      </p>
+      <ul>
+        <li>Claim and fully fill out your Google Business Profile.</li>
+        <li>
+          Ask happy customers for reviews (just ask — most will).
+        </li>
+        <li>
+          Make sure your name, address, and phone match everywhere online.
+        </li>
+        <li>Add real photos.</li>
+        <li>
+          Write down the actual questions customers ask you — those are your
+          future content.
+        </li>
+      </ul>
+      <p>
+        <strong>Hire out the parts that eat your week or need expertise:</strong>{" "}
+        technical site fixes, ongoing content, link building, and the strategy
+        that ties it together. Your time is worth more spent running your
+        business than wrestling a sitemap.
+      </p>
+      <p>
+        If you&apos;re weighing whether to DIY your whole web presence,{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          can ChatGPT build a website
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/can-chatgpt-do-seo">
+          can ChatGPT do SEO
+        </InternalLink>{" "}
+        are honest reality checks before you go all-in on tools alone.
+      </p>
+
+      <h2 id="how-long">How Long Does SEO Take to Work?</h2>
+      <p>
+        Plan on <strong>3 to 6 months</strong> to see real movement, and longer
+        in competitive categories. Anyone promising results in two weeks is
+        selling ads dressed up as SEO.
+      </p>
+      <p>
+        The fastest wins usually come from the Google Business Profile — a fully
+        built, reviewed, photo-rich profile can move you into the map pack in
+        weeks. Website and content rankings build slower but last longer.
+      </p>
+      <p>
+        The mental model: SEO is a flywheel, not a switch. Early on it feels
+        like nothing&apos;s happening. Then around month four it starts
+        compounding, and the traffic you build keeps paying out long after —
+        unlike ads, which die the day you stop.
+      </p>
+
+      <h2 id="seo-dead-ai">
+        Is SEO Dead with AI Search? (AEO and GEO in 2026)
+      </h2>
+      <p>
+        No — but it&apos;s changing shape. People now ask ChatGPT, Google&apos;s
+        AI overviews, and other answer engines for recommendations, and those
+        engines pull from the same signals: a clear website, a complete Google
+        Business Profile, real reviews, and content that plainly answers real
+        questions.
+      </p>
+      <p>
+        That&apos;s <strong>AEO</strong> (answer engine optimization) and{" "}
+        <strong>GEO</strong> (generative engine optimization), and the good news
+        is they reward the same honest work local SEO always has — just aimed at
+        getting cited in AI answers, not only ranked in blue links. The
+        businesses winning AI recommendations are the ones with consistent,
+        structured, trustworthy information across the web.
+      </p>
+      <p>
+        So no, SEO isn&apos;t dead. The label is shifting; the fundamentals — be
+        clear, be findable, be trusted — matter more than ever. We dig deeper in{" "}
+        <InternalLink href="/blog/is-seo-dead-2026">
+          is SEO dead in 2026
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          how Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="do-you-need-seo">
+        So — Do You Actually Need SEO in Cumming?
+      </h2>
+      <p>
+        If customers find you mostly by word of mouth and you&apos;re
+        comfortable there, you can start small: just fix your Google Business
+        Profile and ask for reviews. That alone beats most of your competitors.
+      </p>
+      <p>
+        If you want to grow, get found by people who don&apos;t know you yet, and
+        stop renting all your traffic from ads, then yes — ongoing local SEO is
+        one of the best investments a Forsyth County small business can make.
+        Start with the free levers, fix the website if it&apos;s holding you
+        back, then layer in monthly SEO when you&apos;re ready to compound it.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Bring SEO Back from the Dead
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Buried on page two where nobody can find you?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Let&apos;s drag your business back into the light. Start free with a
+          no-cost site audit, then layer in honest, ongoing SEO — local, clear,
+          and no #1-guaranteed snake oil.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-worth-it">
+        Is SEO worth it for a small business in Cumming?
+      </h3>
+      <p>
+        For most local businesses, yes — especially the free parts. A fully
+        optimized Google Business Profile and a steady flow of reviews can win
+        the map pack with little or no spend. Paid ongoing SEO ($500–$1,500/mo)
+        is worth it when you&apos;re ready to grow beyond word of mouth.
+      </p>
+
+      <h3 id="faq-cost">How much does local SEO cost?</h3>
+      <p>
+        Real local SEO in Cumming, GA runs <strong>$500–$1,500 per month</strong>{" "}
+        as an ongoing service, based on how competitive your category is. Avoid
+        $99 &quot;SEO&quot; plans — they&apos;re usually automated spam that can
+        hurt you. SEO is a monthly investment, not a one-time fix.
+      </p>
+
+      <h3 id="faq-how-long">How long does SEO take to work?</h3>
+      <p>
+        Expect <strong>3 to 6 months</strong> for meaningful movement, longer in
+        competitive markets. Google Business Profile improvements show fastest —
+        sometimes within weeks. Website and content rankings build slower but
+        last far longer than ads. Anyone promising results in days is selling
+        something else.
+      </p>
+
+      <h3 id="faq-diy">Can I do SEO myself?</h3>
+      <p>
+        Yes — the basics. Claim and complete your Google Business Profile, ask
+        customers for reviews, keep your name/address/phone consistent
+        everywhere, and add real photos. That free work moves the needle. Hire
+        out technical fixes, ongoing content, and strategy when they start
+        eating your week.
+      </p>
+
+      <h3 id="faq-seo-vs-gbp">
+        What&apos;s the difference between SEO and Google Business Profile?
+      </h3>
+      <p>
+        Your Google Business Profile is your free listing that powers the map
+        pack — name, hours, reviews, photos. SEO is the broader work of ranking
+        your website and listings everywhere. The profile is one (huge) piece of
+        local SEO, not a replacement for it. You want both.
+      </p>
+
+      <h3 id="faq-ai">Is SEO dead with AI search?</h3>
+      <p>
+        No. AI answer engines like ChatGPT and Google&apos;s AI overviews pull
+        from the same signals SEO builds — clear websites, complete profiles,
+        real reviews, helpful content. That&apos;s AEO/GEO. The label is
+        evolving, but being clear, findable, and trusted matters more in 2026,
+        not less.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, websites, SEO, signage, and apparel for small
+        businesses across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function WebDesignCummingGaContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Web design in Cumming, GA typically starts around $1,500
+        </strong>{" "}
+        for a simple landing page and climbs to{" "}
+        <strong>$2,500&ndash;$7,500+</strong> for multi-page and e-commerce
+        sites, depending on how many pages you need and whether you&apos;re
+        starting from scratch. Good local web design isn&apos;t just a pretty
+        homepage — it&apos;s a fast, mobile-first site built to show up in
+        Forsyth County searches, send phone calls and form fills your way, and
+        stay fully owned by you. This guide, from{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>
+        , walks you through what to look for, what it actually costs, and the
+        one question most first-time buyers forget to ask: who owns the site
+        when it&apos;s done?
+      </p>
+
+      <p>
+        If you&apos;re a first-time small business owner comparing your options,
+        this is the complete local buyer&apos;s guide.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Web design in Cumming, GA starts around $1,500</strong> for
+            a 1&ndash;2 page landing site and rises to $2,500, $4,500, and
+            $7,500+ for multi-page and e-commerce builds.
+          </li>
+          <li>
+            <strong>Good local web design</strong> is mobile-first, fast, has
+            local SEO and schema baked in, and gives every page one clear call
+            to action.
+          </li>
+          <li>
+            <strong>Bundles to know:</strong> the $997 Startup Special (1-page
+            site + logo + print) and the $4,500 Launch Package (logo, brand
+            basics, 5-page site).
+          </li>
+          <li>
+            <strong>Ask who owns it.</strong> You should own your finished site
+            and domain outright — get it in writing before you pay anyone.
+          </li>
+          <li>
+            <strong>DIY, Squarespace, and AI</strong> are fine starting points,
+            but a local designer gets you real local SEO, full ownership, and a
+            human who picks up the phone.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-good-web-design-includes">
+        What does good web design in Cumming, GA actually include?
+      </h2>
+      <p>
+        A lot of &quot;websites&quot; are just brochures that sit there. A site
+        worth paying for does a job: it gets found, loads fast, and turns
+        visitors into customers. When you&apos;re shopping for web design in
+        Cumming, GA, make sure these are baked in — not sold as expensive
+        add-ons later.
+      </p>
+      <p>
+        <strong>Mobile-first design.</strong> More than half your visitors are
+        on a phone, and in our experience local searches skew even higher. The
+        site should be built for the small screen first, then scaled up — not
+        the other way around.
+      </p>
+      <p>
+        <strong>Fast load times.</strong> A slow site loses customers and Google
+        rankings at the same time. Pages should feel instant, with compressed
+        images and clean code under the hood.
+      </p>
+      <p>
+        <strong>Local SEO built in.</strong> Your site should name Cumming,
+        Forsyth County, and the towns you serve, with proper page titles,
+        descriptions, and a Google Business Profile connection. If a designer
+        doesn&apos;t mention local SEO, that&apos;s a flag — see our{" "}
+        <InternalLink href="/blog/seo-cumming-ga">
+          SEO guide for Cumming, GA
+        </InternalLink>
+        .
+      </p>
+      <p>
+        <strong>Schema markup.</strong> This is the behind-the-scenes code that
+        tells Google (and AI search) exactly who you are, where you&apos;re
+        located, and what you do. It&apos;s increasingly how you get pulled into
+        AI answers — more on that in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is already calling your business
+        </InternalLink>
+        .
+      </p>
+      <p>
+        <strong>One clear call to action.</strong> Every page should make the
+        next step obvious: call, text, book, or buy. A site that makes people
+        hunt for your phone number is a leaky bucket.
+      </p>
+      <p>
+        If your current site is missing these, it may be quietly costing you
+        customers —{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          here&apos;s how to tell
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="web-design-cost">
+        What does web design cost in Cumming, GA?
+      </h2>
+      <p>
+        Pricing depends on scope, but here&apos;s how it actually breaks down
+        locally instead of vague &quot;it depends&quot; answers. At Branding
+        Zombie Designs,{" "}
+        <InternalLink href="/services/web-design">
+          website design
+        </InternalLink>{" "}
+        projects fall into clear tiers:
+      </p>
+      <ul>
+        <li>
+          <strong>Landing page — from $1,500.</strong> A focused 1&ndash;2 page
+          site, usually turned around in about 7 days. Great for a single
+          service or a launch.
+        </li>
+        <li>
+          <strong>Starter site — around $2,500.</strong> Up to 5 pages. The
+          right fit for most first-time small businesses that need home, about,
+          services, and contact done well.
+        </li>
+        <li>
+          <strong>Growth site — around $4,500.</strong> Our most popular tier.
+          More pages, deeper local SEO, stronger structure for businesses that
+          want the site to actually pull in leads.
+        </li>
+        <li>
+          <strong>Premium / e-commerce — $7,500+.</strong> Online stores,
+          booking systems, and larger custom builds.
+        </li>
+      </ul>
+      <p>Two bundles are worth knowing about if you&apos;re starting from zero:</p>
+      <ul>
+        <li>
+          <strong>The Startup Special — $997.</strong> A budget launch offer:
+          logo + brand kit + 100 business cards + 100 flyers + a 1-page site
+          with domain and a year of hosting, in about 10 days. See the{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink>.
+          (This is the only $997 site — it&apos;s a 1-pager, not a full
+          multi-page build.)
+        </li>
+        <li>
+          <strong>The Launch Package — $4,500.</strong> The full bundle: logo
+          suite, brand basics, a 5-page website, and a 90-day content calendar
+          in roughly 4 weeks. See the{" "}
+          <InternalLink href="/services/launch-package">
+            Launch Package
+          </InternalLink>
+          .
+        </li>
+      </ul>
+      <p>
+        If you also want ongoing search visibility,{" "}
+        <strong>SEO runs $500&ndash;$1,500/mo</strong> depending on how
+        competitive your category is. For a deeper cost breakdown, read{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          what a website really costs in Cumming, GA for 2026
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/website-design-seo-cost">
+          website design + SEO cost explained
+        </InternalLink>
+        .
+      </p>
+      <p>
+        When you see a quote far below these numbers, ask what&apos;s missing —
+        usually it&apos;s ownership, speed, local SEO, or all three.
+      </p>
+
+      <h2 id="diy-vs-local">
+        DIY, Squarespace, or AI vs. a local web designer
+      </h2>
+      <p>
+        You don&apos;t <em>have</em> to hire anyone. So let&apos;s be honest
+        about the trade-offs of small business web design options.
+      </p>
+      <p>
+        <strong>DIY website builders (Wix, Squarespace, GoDaddy).</strong> Cheap
+        monthly fees, real templates, and you can get something live in a
+        weekend. The catch: it looks like a template, the local SEO is shallow,
+        and you&apos;re renting the platform forever. The moment you stop paying,
+        the site can disappear.
+      </p>
+      <p>
+        <strong>AI website tools.</strong> These have gotten genuinely
+        impressive at first drafts. But &quot;impressive demo&quot; and
+        &quot;ranks in Forsyth County and converts&quot; are two different
+        things — AI tends to produce generic copy, weak local signals, and no
+        real strategy. We tested this directly in{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          can ChatGPT build a website?
+        </InternalLink>
+      </p>
+      <p>
+        <strong>A local web designer in Cumming.</strong> You get a site built
+        around <em>your</em> business, real local SEO, a human who picks up the
+        phone, and — critically — full ownership of the finished site and
+        domain. A good web designer locals can actually meet beats a faceless
+        template marketplace when something breaks or your business changes.
+      </p>
+      <p>
+        There&apos;s no shame in starting on Squarespace. But if leads matter, a
+        custom-built site usually pays for itself. If you&apos;re weighing it
+        out,{" "}
+        <InternalLink href="/blog/how-to-pick-a-web-design-company">
+          how to pick a web design company
+        </InternalLink>{" "}
+        digs deeper.
+      </p>
+
+      <h2 id="do-you-own-your-website">
+        Do you own your website? (The question nobody asks)
+      </h2>
+      <p>
+        This is the most important line in this whole guide:{" "}
+        <strong>
+          you should own your website and your domain — completely.
+        </strong>
+      </p>
+      <p>
+        Plenty of cheap shops and &quot;free website&quot; deals quietly keep
+        the keys. Cancel your monthly plan and the site is gone. Want to move to
+        another designer? You can&apos;t take it with you. Try to update your own
+        contact info? Locked out.
+      </p>
+      <p>
+        When you work with Branding Zombie Designs, the finished site is yours.
+        You own the domain, you own the files, and you can host it wherever you
+        want. That&apos;s how it should work everywhere — but it isn&apos;t, so
+        ask the question in writing before you pay anyone.
+      </p>
+      <p>
+        <em>
+          Translation: don&apos;t let a vendor hold your own front door hostage.
+        </em>
+      </p>
+
+      <h2 id="how-long-does-it-take">
+        How long does it take to build a website?
+      </h2>
+      <p>
+        Timelines depend on scope and how fast you get us your content (photos,
+        text, logo). As a rough local guide:
+      </p>
+      <ul>
+        <li>
+          <strong>1-page landing site:</strong> about 7 days.
+        </li>
+        <li>
+          <strong>Starter (up to 5 pages):</strong> roughly 2&ndash;3 weeks.
+        </li>
+        <li>
+          <strong>Growth / Premium:</strong> 4&ndash;6 weeks, sometimes more for
+          e-commerce.
+        </li>
+      </ul>
+      <p>
+        The single biggest delay is almost always waiting on content from the
+        client — not the design itself. Come prepared with your photos and a
+        list of services and you&apos;ll move fast.
+      </p>
+
+      <h2 id="red-flags">
+        Red flags when hiring a web designer in Cumming
+      </h2>
+      <p>Watch for these before you sign anything:</p>
+      <ul>
+        <li>
+          <strong>No ownership.</strong> If you don&apos;t get the site and
+          domain, walk.
+        </li>
+        <li>
+          <strong>Monthly-only &quot;you&apos;ll never own it&quot; pricing</strong>{" "}
+          with no buyout.
+        </li>
+        <li>
+          <strong>No mention of mobile, speed, or local SEO.</strong> That&apos;s
+          a brochure, not a marketing tool.
+        </li>
+        <li>
+          <strong>No portfolio of real local work</strong> you can click
+          through.
+        </li>
+        <li>
+          <strong>Vague pricing that never lands on a number.</strong> A pro can
+          give you tiers like the ones above.
+        </li>
+        <li>
+          <strong>No clear point of contact.</strong> You want one designer, one
+          invoice — not a ticket queue.
+        </li>
+      </ul>
+
+      <h2 id="affordable-web-design">
+        How affordable web design works without cutting corners
+      </h2>
+      <p>
+        &quot;Cheap&quot; and &quot;affordable&quot; aren&apos;t the same thing.
+        Affordable web design services that Cumming business owners actually want
+        means right-sized scope — paying for the pages and features you need now,
+        with room to grow — not a stripped site that quietly omits ownership and
+        SEO.
+      </p>
+      <p>
+        That&apos;s the advantage of a small local studio: one designer who can
+        do your logo, your website, your shirts, and your signs under one roof —
+        one designer, one invoice. You&apos;re not paying agency overhead, and
+        branding and web design stay consistent because the same person builds
+        both. Explore the work at{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> or{" "}
+        <InternalLink href="/services/request-quote">
+          request a quote
+        </InternalLink>
+        .
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Own It, Don&apos;t Rent It
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          A site that&apos;s yours for keeps — no resurrection fees.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Whether you need a clean 1-pager or a full Growth build, you&apos;ll
+          get one designer, one invoice, and a fast, mobile-first site built to
+          show up in Forsyth County — fully owned by you. Let&apos;s build
+          something that actually bites.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cost">How much does web design cost in Cumming, GA?</h3>
+      <p>
+        Web design in Cumming, GA generally starts around $1,500 for a
+        1&ndash;2 page landing site, with multi-page builds running about
+        $2,500, $4,500, and $7,500+ for e-commerce. The $997 Startup Special
+        includes a 1-page site plus logo and print. SEO is a separate
+        $500&ndash;$1,500/mo.
+      </p>
+
+      <h3 id="faq-ownership">Do I own my website?</h3>
+      <p>
+        You should — fully. With Branding Zombie Designs you own the finished
+        site and the domain, and you can host it anywhere. Beware cheap shops
+        and &quot;free website&quot; deals that keep ownership: cancel the plan
+        and the site disappears. Always get ownership confirmed in writing before
+        paying.
+      </p>
+
+      <h3 id="faq-timeline">How long does it take to build a website?</h3>
+      <p>
+        A 1-page site can launch in about 7 days, a 5-page Starter site in
+        2&ndash;3 weeks, and larger Growth or e-commerce builds in 4&ndash;6
+        weeks. The biggest delay is usually waiting on your photos and content,
+        so come prepared to move fast.
+      </p>
+
+      <h3 id="faq-squarespace">Squarespace vs. custom — which is better?</h3>
+      <p>
+        Squarespace is cheap and quick but template-limited, shallow on local
+        SEO, and rented monthly. A custom site is built around your business with
+        real Forsyth County SEO and full ownership. Start on Squarespace if
+        budget is tight; go custom once leads matter.
+      </p>
+
+      <h3 id="faq-ai">Can AI build my website?</h3>
+      <p>
+        AI can draft a decent-looking site fast, but it tends to produce generic
+        copy, weak local signals, and no real strategy for ranking in Cumming.
+        It&apos;s a starting point, not a finished marketing tool. We tested
+        exactly this in our{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          ChatGPT website experiment
+        </InternalLink>
+        .
+      </p>
+
+      <h3 id="faq-pick">How do I pick a web designer?</h3>
+      <p>
+        Look for real local work, clear tiered pricing, mobile-first and fast
+        builds, local SEO and schema included, and — non-negotiable — full
+        ownership of your site and domain. One designer and one invoice beats a
+        faceless template marketplace when something breaks.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, websites, signage, and apparel for small businesses
+        across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function IsSeoDead2026Content() {
+  return (
+    <>
+      <p>
+        <strong>
+          No, SEO is not dead in 2026 — it evolved.
+        </strong>{" "}
+        The honest answer to &quot;is SEO dead or evolving in 2026&quot; is that
+        traditional ranking still matters, but AI answer engines (Google AI
+        Overviews, ChatGPT, Gemini, Perplexity) now sit on top of search and
+        pull the answers people read first. At Branding Zombie Designs, a graphic
+        + web design studio in Cumming, GA serving Forsyth County and North Metro
+        Atlanta, we tell small business owners the same thing: keep doing SEO,
+        and add a new layer — getting cited in the AI answer box.
+      </p>
+
+      <p>
+        So the headline scare (&quot;is SEO dead&quot;) is clickbait. The real
+        shift is that there are now two finish lines instead of one: the blue
+        links you&apos;ve always chased, and the AI-generated summary that
+        quietly steals the click before anyone scrolls.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>SEO didn&apos;t die — it split into two jobs:</strong>{" "}
+            classic ranking (still works) and AEO/GEO (getting cited by AI).
+          </li>
+          <li>
+            <strong>The AI answer box is the new front page.</strong> Google AI
+            Overviews and ChatGPT name two or three businesses before anyone
+            clicks.
+          </li>
+          <li>
+            <strong>Fundamentals still win:</strong> helpful content, local SEO,
+            a fast site, schema markup, and real authority feed both Google and
+            the AI engines.
+          </li>
+          <li>
+            <strong>Citations are the new backlinks.</strong> Being named in an
+            AI answer is becoming as valuable as a top-3 ranking used to be.
+          </li>
+          <li>
+            <strong>For a Cumming, GA business:</strong> stack AEO on top of SEO
+            — don&apos;t throw anything out.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="is-seo-dead-or-evolving">
+        Is SEO dead or evolving in 2026? (the honest take)
+      </h2>
+      <p>SEO didn&apos;t die. It split into two jobs.</p>
+      <p>
+        <strong>Job one — classic SEO — still works.</strong> Google still ranks
+        pages. People still scroll, still click, still compare three local shops
+        before they call. Helpful content, fast websites, local relevance, and
+        real reviews still decide who shows up. None of that went away.
+      </p>
+      <p>
+        <strong>Job two — AEO/GEO — is new.</strong> A growing share of searches
+        now end with an AI-written answer at the very top. Someone types
+        &quot;best HVAC company near Cumming GA,&quot; and Google&apos;s AI
+        Overview hands them a paragraph with two or three businesses named — no
+        clicking required. If you&apos;re not in that paragraph, you may rank #2
+        and still get skipped.
+      </p>
+      <p>
+        That&apos;s the evolution. Ranking gets you the click. Getting cited gets
+        you named before the click even happens. In 2026 you want both.
+      </p>
+      <p>
+        We broke down the AI-citation side in detail in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google AI Is Calling Your Business
+        </InternalLink>{" "}
+        — start there if you only read one follow-up.
+      </p>
+
+      <h2 id="what-still-works">
+        What still works in 2026 (don&apos;t throw this out)
+      </h2>
+      <p>
+        If a &quot;guru&quot; tells you SEO is dead and you should burn it all
+        down, walk away. The fundamentals are now table stakes — they feed both
+        Google and the AI engines.
+      </p>
+      <ul>
+        <li>
+          <strong>Helpful, specific content.</strong> Pages that actually answer
+          a real question, written for humans, in plain language. AI engines lift
+          from clear, well-structured writing — the same writing that ranks.
+        </li>
+        <li>
+          <strong>Local SEO.</strong> For a Cumming, GA business, &quot;local seo
+          cumming&quot; is the whole game. Your Google Business Profile,
+          consistent name/address/phone, local landing pages, and real customer
+          reviews still drive the map pack and feed AI answers about your area.
+        </li>
+        <li>
+          <strong>A fast, clean website.</strong> Slow, messy sites lose rankings
+          and confuse the bots trying to summarize you. (If yours is sluggish,
+          here&apos;s{" "}
+          <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+            how your website is costing you customers
+          </InternalLink>
+          .)
+        </li>
+        <li>
+          <strong>Schema markup.</strong> This is the structured-data code that
+          tells search engines and AI exactly what your page is — a service, a
+          price, a FAQ, a local business. It&apos;s quietly one of the biggest
+          AEO levers, and most small-business sites have none.
+        </li>
+        <li>
+          <strong>Real authority.</strong> Mentions, links, and a consistent
+          brand across the web. AI engines trust entities they see referenced in
+          more than one place.
+        </li>
+      </ul>
+      <p>
+        Notice the overlap: everything that helps you rank also helps you get
+        cited. AEO isn&apos;t a replacement for SEO — it&apos;s SEO done so
+        cleanly that a machine can quote you.
+      </p>
+
+      <h2 id="the-ai-answer-box">What changed: the AI answer box</h2>
+      <p>Here&apos;s the part that&apos;s genuinely new since 2024.</p>
+      <p>
+        When you search now, you often get an{" "}
+        <strong>AI-generated summary first</strong> — Google calls it AI
+        Overviews — and millions of people skip search entirely and just ask{" "}
+        <strong>ChatGPT, Gemini, or Perplexity</strong> directly. Those tools
+        answer with a short list of recommended businesses, products, or steps.
+      </p>
+      <p>
+        That summary is the new front page. It compresses ten blue links into one
+        paragraph. Good if you&apos;re named in it. Brutal if you&apos;re not.
+      </p>
+      <p>Two things follow from that:</p>
+      <ol>
+        <li>
+          <strong>&quot;Zero-click&quot; is real.</strong> More searches end
+          without anyone visiting a website. Your job shifts from &quot;win the
+          click&quot; to &quot;be the answer,&quot; because being named in the
+          summary is its own kind of win — that&apos;s how local people first
+          hear your name.
+        </li>
+        <li>
+          <strong>Citations are the new backlinks.</strong> Getting referenced
+          inside an AI answer is becoming as valuable as a top-3 ranking used to
+          be. The discipline of earning that is{" "}
+          <strong>AEO (Answer Engine Optimization)</strong>, sometimes called{" "}
+          <strong>GEO (Generative Engine Optimization)</strong>.
+        </li>
+      </ol>
+      <p>
+        We tested how good these tools actually are at the build side too — see{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          Can ChatGPT build a website?
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/can-chatgpt-do-seo">
+          Can ChatGPT do SEO?
+        </InternalLink>{" "}
+        — short version: useful assistant, terrible substitute for a strategy.
+      </p>
+
+      <h2 id="what-should-a-cumming-business-do">
+        What should a Cumming small business do now?
+      </h2>
+      <p>
+        You don&apos;t need to panic or rebuild everything. You need to stack the
+        new layer on top of the old one. Here&apos;s the order we&apos;d run it.
+      </p>
+      <p>
+        <strong>1. Fix the foundation.</strong> A fast website with clean
+        structure and schema baked in. If your site is old or DIY, this is where
+        the returns are biggest. Our{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+        builds ship with schema in place, so the AI engines can read you from day
+        one.
+      </p>
+      <p>
+        <strong>2. Lock down local.</strong> Claim and fully fill your Google
+        Business Profile, get consistent across directories, and ask happy
+        customers for reviews. For the full local playbook, see{" "}
+        <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>{" "}
+        and our broader{" "}
+        <InternalLink href="/blog/how-to-advertise-small-business-cumming-georgia">
+          guide to advertising a small business in Cumming, Georgia
+        </InternalLink>
+        .
+      </p>
+      <p>
+        <strong>3. Write answer-shaped content.</strong> Pages that lead with a
+        direct answer, use question-style headings, and include a real FAQ. That
+        format is what AI Overviews and ChatGPT lift from. (It&apos;s literally
+        how this article is built.)
+      </p>
+      <p>
+        <strong>4. Add schema and entity signals.</strong> Mark up your services,
+        prices, location, and FAQs so machines can quote you accurately. Make
+        sure your brand + city pairing — &quot;Branding Zombie Designs, Cumming,
+        GA&quot; — shows up consistently everywhere.
+      </p>
+      <p>
+        <strong>5. Measure both finish lines.</strong> Track rankings and clicks
+        like always, but also literally ask ChatGPT, Gemini, and Perplexity
+        questions your customers would ask and see whether you come up.
+      </p>
+      <p>
+        That&apos;s AEO in practice — and it&apos;s the same care plan that keeps
+        you ranking in classic SEO. One job, two payoffs.
+      </p>
+
+      <h2 id="what-this-costs">What this costs (real numbers, no fluff)</h2>
+      <p>
+        We keep pricing on the live site, so here&apos;s the honest range for a
+        Cumming, GA small business:
+      </p>
+      <ul>
+        <li>
+          <strong>SEO/AEO:</strong> <strong>$500–$1,500/mo</strong>, depending on
+          how competitive your niche is and how much content we&apos;re
+          producing. Details on{" "}
+          <InternalLink href="/services/digital-marketing">
+            digital marketing
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>A new website</strong> (with schema built in): commonly{" "}
+          <strong>$2,500 / $4,500 / $7,500+</strong>, with standalone web design
+          starting around <strong>$1,500</strong>. See{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink>.
+        </li>
+        <li>
+          <strong>Just getting started?</strong> The{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink> is{" "}
+          <strong>$997</strong> — logo, brand kit, 100 business cards, 100
+          flyers, and a 1-page site with domain and a year of hosting, in 10
+          days.
+        </li>
+        <li>
+          <strong>Going all-in?</strong> The{" "}
+          <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
+          is <strong>$4,500</strong> — logo suite, brand basics, a 5-page
+          website, and a 90-day content calendar in 4 weeks.
+        </li>
+        <li>
+          <strong>Need a logo first?</strong> Tiers run{" "}
+          <strong>$750 / $1,500 / $2,500</strong> on{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>.
+        </li>
+      </ul>
+      <p>
+        Not sure where you land? Text Gerry or{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        and we&apos;ll point you at the cheapest thing that actually moves the
+        needle. Want a gut-check on your current site? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink>.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          The Dead Don&apos;t Get Quoted
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Win the ranking AND the AI answer box.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          If your site is invisible to Google AND the answer box, let&apos;s fix
+          both. Let&apos;s get your name into the paragraph that decides who gets
+          called.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-worth-it">Is SEO still worth it in 2026?</h3>
+      <p>
+        Yes. SEO still drives the clicks, calls, and map-pack visibility that
+        small businesses live on. What changed is that AI answer engines now sit
+        on top of search, so you also need AEO. The smart move is doing both —
+        they share the same foundation.
+      </p>
+
+      <h3 id="faq-aeo-geo">What is AEO / GEO?</h3>
+      <p>
+        AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization)
+        mean optimizing so AI tools — Google AI Overviews, ChatGPT, Gemini,
+        Perplexity — name and cite your business in their answers. It&apos;s the
+        new layer that sits on top of traditional SEO, built on clean content and
+        schema.
+      </p>
+
+      <h3 id="faq-replace-google">Will AI replace Google search?</h3>
+      <p>
+        Not entirely — but it&apos;s reshaping it. People increasingly get
+        answers from AI summaries or chatbots instead of scrolling links, so more
+        searches end &quot;zero-click.&quot; Google itself now leads with AI
+        Overviews. The win is being the business the AI names, not just the one
+        that ranks.
+      </p>
+
+      <h3 id="faq-get-cited">How do I get cited by ChatGPT or Gemini?</h3>
+      <p>
+        Publish clear, answer-first content, add schema markup, keep your brand
+        and city consistent everywhere, and earn mentions across the web. AI
+        engines quote sources they can read easily and see referenced in more
+        than one place. That&apos;s exactly what AEO is for.
+      </p>
+
+      <h3 id="faq-local-seo">Does local SEO still matter?</h3>
+      <p>
+        More than ever for a Cumming, GA business. AI answers about
+        &quot;near me&quot; searches pull heavily from Google Business Profiles,
+        reviews, and local relevance signals. Strong local SEO is also what gets
+        you named in AI Overviews for your service area.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, websites, signage, and apparel for small businesses
+        across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function CanChatgptDoSeoContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Can ChatGPT do SEO? Partly.
+        </strong>{" "}
+        ChatGPT is a genuinely useful assistant for parts of SEO — keyword
+        brainstorming, draft copy, meta tags, content outlines, and schema
+        scaffolding — but it cannot do the work that actually moves a small
+        business up Google in Cumming, GA: real Google Business Profile
+        management, local citations and reviews, link building, technical
+        fixes, and live competitor research in Forsyth County. At Branding
+        Zombie Designs, a graphic + web design studio in Cumming, GA, we use AI
+        as a tool every single day, and we&apos;ll tell you exactly where it
+        shines and where it quietly hurts you.
+      </p>
+
+      <p>
+        That&apos;s the honest version. Now let&apos;s break it down so you know
+        what to hand the robot and what to keep human.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>ChatGPT is great at the desk work</strong> — keyword ideas,
+            first-draft content, meta titles, schema scaffolding, and outlines.
+          </li>
+          <li>
+            <strong>It can&apos;t do the real-world execution</strong> — Google
+            Business Profile, local citations, reviews, links, technical fixes,
+            or live competitor research.
+          </li>
+          <li>
+            <strong>AI-written content isn&apos;t automatically bad</strong> —
+            but raw, generic, made-up-fact AI content gets buried.
+          </li>
+          <li>
+            <strong>Best move:</strong> let AI assist with drafting, keep a
+            human on strategy and local execution.
+          </li>
+          <li>
+            <strong>SEO with us runs $500–$1,500/mo</strong> depending on scope
+            — the parts ChatGPT structurally can&apos;t touch.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="overhyped">Can ChatGPT do SEO, or is it overhyped?</h2>
+      <p>
+        Both, kind of. SEO isn&apos;t one task — it&apos;s a stack of about a
+        dozen jobs, and ChatGPT is great at maybe four of them.
+      </p>
+      <p>
+        Think of it like a smart intern. Fast, tireless, never complains, and
+        occasionally makes up a fact with total confidence. You&apos;d let an
+        intern draft something. You wouldn&apos;t let an intern run your whole
+        marketing without checking the work.
+      </p>
+      <p>
+        So before you cancel your SEO budget and &quot;just use AI,&quot; it
+        helps to split SEO into two buckets: the desk work AI is good at, and
+        the real-world execution it can&apos;t touch.
+      </p>
+
+      <h2 id="what-chatgpt-does-well">
+        What ChatGPT actually does well for SEO
+      </h2>
+      <p>
+        Credit where it&apos;s due. These are the things we genuinely use AI
+        for, and they save real hours.
+      </p>
+      <p>
+        <strong>Keyword ideas and grouping.</strong> Ask it for 50 keyword
+        variations around &quot;HVAC repair Cumming&quot; and it&apos;ll spit
+        out a solid starting list, plus group them by intent. It won&apos;t have
+        real search volume — that needs a tool — but as a brainstorm it&apos;s
+        fast.
+      </p>
+      <p>
+        <strong>First-draft content.</strong> Blog outlines, rough drafts, FAQ
+        phrasing, product descriptions. A blank page is the enemy of consistent
+        content, and AI kills the blank page. You still have to rewrite it in
+        your own voice, but the skeleton appears in seconds.
+      </p>
+      <p>
+        <strong>Meta titles and descriptions.</strong> Give it a page and ask
+        for ten title-tag options under 60 characters. Honestly useful. You
+        pick the best, tweak the city in, done.
+      </p>
+      <p>
+        <strong>Schema scaffolding.</strong> Need JSON-LD for an FAQ or
+        LocalBusiness block? ChatGPT will scaffold the structure for you. You
+        still verify it against Google&apos;s rules and plug in real values —
+        but the boilerplate is handled.
+      </p>
+      <p>
+        <strong>Content briefs and outlines.</strong> Heading structures,
+        &quot;people also ask&quot; angles, sections you forgot. Great for
+        organizing a piece before you write it.
+      </p>
+      <p>
+        Notice the pattern: every one of those is a first draft or an idea. AI
+        is excellent at starting things. It is not excellent at finishing them,
+        and it&apos;s terrible at doing anything in the real world.
+      </p>
+
+      <h2 id="where-chatgpt-gets-it-wrong">
+        Where ChatGPT gets SEO dangerously wrong
+      </h2>
+      <p>
+        This is the part nobody selling an &quot;AI SEO tool&quot; wants to say
+        out loud.
+      </p>
+      <p>
+        <strong>It hallucinates facts and citations.</strong> Ask ChatGPT for a
+        statistic or a source and it will sometimes invent one — a study that
+        doesn&apos;t exist, a fake URL, a made-up percentage. Publish that on
+        your site and you&apos;ve damaged your credibility and, increasingly,
+        your rankings. Google rewards trustworthy, accurate content. A confident
+        lie is the opposite.
+      </p>
+      <p>
+        <strong>It can&apos;t touch your Google Business Profile.</strong> For a
+        local business, your Google Business Profile is the single biggest
+        local-SEO lever — your map pack ranking, your reviews, your hours, your
+        photos, your categories. ChatGPT cannot log in, optimize categories,
+        respond to reviews, or post updates. That work is hands-on, and it&apos;s
+        most of what wins local search in Cumming.
+      </p>
+      <p>
+        <strong>No local citations, no reviews, no links.</strong> Getting your
+        business listed consistently across directories, earning real reviews,
+        and getting other sites to link to you — none of that happens in a chat
+        window. These are relationships and submissions in the real world. AI
+        can write the outreach email; it cannot do the outreach.
+      </p>
+      <p>
+        <strong>No live competitor analysis.</strong> ChatGPT doesn&apos;t know
+        who&apos;s ranking for &quot;web design Cumming GA&quot; today, what
+        their pages look like, or where the gaps are. Its training data is
+        frozen and generic. Real local SEO means opening the actual Cumming
+        results and reverse-engineering what&apos;s winning right now.
+      </p>
+      <p>
+        <strong>Generic content that doesn&apos;t rank.</strong> If you publish
+        raw AI output, you&apos;re publishing the same average answer as
+        everyone else who typed the same prompt. Google has plenty of average.
+        What ranks is specific — your jobs, your city, your photos, your
+        opinions. AI can&apos;t supply those because it doesn&apos;t have them.
+      </p>
+      <p>
+        <strong>It ignores the technical layer.</strong> Core Web Vitals, page
+        speed, mobile rendering, crawl issues, broken redirects — the plumbing
+        that decides whether Google can even read your site. ChatGPT can explain
+        these concepts, but it can&apos;t fix them on your actual site.
+        That&apos;s developer work.
+      </p>
+      <p>
+        So: great assistant, not a strategist, and definitely not a
+        local-execution team.
+      </p>
+
+      <h2 id="ai-content-bad-for-seo">Is AI-written content bad for SEO?</h2>
+      <p>
+        Not automatically — but lazy AI content is. Google&apos;s stance is
+        about quality and helpfulness, not whether a human or a machine typed
+        the first draft.
+      </p>
+      <p>
+        The problem is that most AI content is shipped raw. It&apos;s vague, it
+        cites nothing real, it has no point of view, and it reads like every
+        other page on the topic. That&apos;s what gets buried — not because a
+        robot wrote it, but because it&apos;s generic.
+      </p>
+      <p>
+        We use AI to draft, then a human adds the local detail, the real
+        examples, the honest opinion, and the city. That blend ranks. The raw
+        version usually doesn&apos;t.
+      </p>
+      <p>
+        If you want the longer version of this debate, we wrote about whether{" "}
+        <InternalLink href="/blog/will-ai-replace-graphic-designers">
+          AI will replace graphic designers
+        </InternalLink>{" "}
+        and whether{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          ChatGPT can build a website
+        </InternalLink>{" "}
+        — same theme: powerful tool, not a replacement.
+      </p>
+
+      <h2 id="use-chatgpt-or-hire-seo">
+        Should you use ChatGPT or hire an SEO?
+      </h2>
+      <p>
+        Use both, honestly. Use ChatGPT to move faster on the desk work. Hire a
+        human for the strategy and the real-world execution that AI structurally
+        cannot do.
+      </p>
+      <p>Here&apos;s the rough split:</p>
+      <ul>
+        <li>
+          <strong>DIY-with-AI works</strong> if you have time, you&apos;ll edit
+          everything, and you mainly need help writing and organizing. A
+          motivated owner can absolutely use AI to keep a blog alive.
+        </li>
+        <li>
+          <strong>Hire a human</strong> when you need to actually rank in a
+          competitive local market — map pack, reviews, citations, links,
+          technical fixes, and a real content strategy aimed at your customers.
+        </li>
+      </ul>
+      <p>
+        That&apos;s where we come in. Our{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing service
+        </InternalLink>{" "}
+        handles the parts ChatGPT can&apos;t: Google Business Profile, local
+        citations, real competitor research in Cumming, technical SEO, and
+        content that&apos;s actually written for your customers. SEO runs{" "}
+        <strong>$500–$1,500/mo</strong> depending on scope.
+      </p>
+      <p>
+        We&apos;re a one-shop studio — logo, website, shirts, and signs under
+        one roof, one designer, one invoice — so the same person who builds your
+        site also handles its SEO. Pricing for the rest: standalone websites
+        start around <strong>$1,500</strong> (common tiers run{" "}
+        <strong>$2,500 / $4,500 / $7,500+</strong>), logos run{" "}
+        <strong>$750 / $1,500 / $2,500</strong>, and the{" "}
+        <strong>
+          $997{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink>
+        </strong>{" "}
+        bundles a logo, brand kit, cards, flyers, and a 1-page site if
+        you&apos;re just getting off the ground.
+      </p>
+      <p>
+        Want to see where your site actually stands before spending a dollar?
+        Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink>{" "}
+        and we&apos;ll tell you straight — including which parts AI could help
+        you with yourself.
+      </p>
+
+      <h2 id="how-we-use-ai">
+        How we actually use AI for SEO at Branding Zombie Designs
+      </h2>
+      <p>
+        For the record, we&apos;re not anti-AI. We&apos;re anti-shortcut.
+      </p>
+      <p>
+        A normal workflow looks like this: AI helps brainstorm keywords, drafts
+        an outline, and scaffolds the schema. Then a human writes the real
+        content with Cumming-specific detail, verifies every fact, builds the
+        page properly, fixes the technical issues, and does the Google Business
+        Profile and citation work by hand.
+      </p>
+      <p>
+        The AI saved us time on the parts that are safe to speed up. The human
+        did the parts that actually rank. That&apos;s the whole trick — and
+        it&apos;s also why AI search itself is starting to{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          call your business directly
+        </InternalLink>
+        , which makes getting your real information right more important, not
+        less.
+      </p>
+      <p>
+        If you&apos;re weighing this decision for a Cumming small business, the
+        short answer is: let AI assist, keep a human on strategy and local
+        execution, and never publish anything you haven&apos;t checked.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Ready to Outrank the Copy-Paste Crowd?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          AI can fake the first draft. It can&apos;t claw into the Cumming map
+          pack.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          That takes a human with a shovel — real Google Business Profile work,
+          citations, links, and content written for your customers. Let&apos;s
+          build something that actually ranks.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-do-seo">Can ChatGPT do SEO for my website?</h3>
+      <p>
+        Partly. ChatGPT can help with keyword ideas, draft content, meta tags,
+        and schema scaffolding. It cannot manage your Google Business Profile,
+        build local citations or links, do live competitor research, or fix
+        technical issues — the work that actually moves you up Google.
+      </p>
+
+      <h3 id="faq-ai-content-bad">Is AI-written content bad for SEO?</h3>
+      <p>
+        Not automatically. Google judges quality and helpfulness, not who typed
+        it. Raw, generic AI content with made-up facts gets buried. AI drafts
+        that a human edits with real local detail, accurate sources, and a point
+        of view can rank well.
+      </p>
+
+      <h3 id="faq-rank-on-google">Will AI-generated content rank on Google?</h3>
+      <p>
+        It can, if it&apos;s genuinely helpful, accurate, and specific. Published
+        raw, AI content usually reads the same as everyone else&apos;s and ranks
+        poorly. Edited, fact-checked, and localized to Cumming, GA, it competes
+        fine.
+      </p>
+
+      <h3 id="faq-local-seo">Can ChatGPT do local SEO?</h3>
+      <p>
+        No, not the parts that matter. Local SEO lives in your Google Business
+        Profile, reviews, local citations, and links — real-world tasks ChatGPT
+        cannot perform. It can write a review response or a citation listing, but
+        it can&apos;t submit or manage them.
+      </p>
+
+      <h3 id="faq-use-or-hire">Should I use ChatGPT or hire an SEO?</h3>
+      <p>
+        Use both. Use ChatGPT to speed up drafting and brainstorming. Hire a
+        human for strategy, local execution, technical fixes, and competitive
+        markets. If you want to rank in Cumming, GA, the local execution is the
+        part you can&apos;t automate away.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA, building logos, websites, shirts, and signs all
+        under one roof for small businesses across Forsyth County and North
+        Metro Atlanta since 2015 — using AI as a tool, not a crutch.
+      </p>
+    </>
+  );
+}
+
+function HowToPickWebDesignCompanyContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          To pick a web design company in Cumming, GA, ask 10 questions before
+          you pay a dime:
+        </strong>{" "}
+        do I own the finished site and domain, what&apos;s the real total cost
+        including hosting, is it fast and mobile-friendly, is local SEO
+        included, who writes the copy, what&apos;s the timeline, how many
+        revisions, what happens after launch, can I see local references, and is
+        it a template or a custom build. We&apos;re Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA, and below is the honest
+        answer you want to hear for each one. Save yourself the regret of hiring
+        the wrong web designer near you.
+      </p>
+
+      <p>
+        A website is one of the few purchases where you can hand over thousands
+        of dollars and walk away owning nothing. Most first-time small business
+        owners don&apos;t know which questions protect them. These ten do.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Ask 10 questions before you pay</strong> — ownership, real
+            total cost, mobile speed, local SEO, copy, timeline, revisions,
+            post-launch support, references, and template vs. custom.
+          </li>
+          <li>
+            <strong>Ownership is the question that saves people.</strong> If you
+            don&apos;t own the domain and files in writing, you have a rental,
+            not a website.
+          </li>
+          <li>
+            <strong>Get the all-in number</strong> — design, hosting, domain,
+            and any monthly fees. Our standalone web design starts around
+            $1,500, with tiers at $2,500 / $4,500 / $7,500+.
+          </li>
+          <li>
+            <strong>Clarity beats the cheapest quote.</strong> The lowest price
+            often hides the most expensive surprises.
+          </li>
+          <li>
+            <strong>One shop, one invoice.</strong> Logo, website, shirts, and
+            signs from one designer means your brand matches everywhere.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="choose-without-getting-burned">
+        How Do I Choose a Web Design Company Without Getting Burned?
+      </h2>
+      <p>
+        Choosing a web design company comes down to one thing: getting clear,
+        written answers before money changes hands. A good shop answers fast and
+        in plain English. A bad one dodges, upsells, or hides the cost.
+      </p>
+      <p>
+        Use the questions below as a checklist. Ask them by phone, by email, or
+        in person — the answers tell you everything. If a &quot;web design
+        company Cumming GA&quot; search turned up a name and you&apos;re not sure
+        about them, run them through this list first.
+      </p>
+
+      <h3 id="q1-ownership">
+        1. Do I Own the Website and the Domain When It&apos;s Done?
+      </h3>
+      <p>
+        This is the question that saves people. You should fully own your domain
+        name, your website files, and your content the moment the project is
+        paid for. No exceptions.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> &quot;Yes — the domain is
+        registered in your name, and the site is yours.&quot; Watch out for
+        shops that register the domain under <em>their</em> account, build on a
+        locked proprietary platform, or hold your site hostage if you ever
+        leave. The short version is: if you don&apos;t own it, you don&apos;t
+        have a website, you have a rental. We dig into what that costs you in{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how your website is costing you customers
+        </InternalLink>
+        .
+      </p>
+
+      <h3 id="q2-real-cost">
+        2. What&apos;s the Real Total Cost — Including Hosting?
+      </h3>
+      <p>
+        The build price is rarely the whole price. Ask for the all-in number:
+        design, hosting, domain, plugins, and any monthly fees.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> a clear breakdown. At Branding
+        Zombie Designs, standalone web design starts around <strong>$1,500</strong>,
+        with common tiers at <strong>$2,500 / $4,500 / $7,500+</strong>{" "}
+        depending on pages and features. Our <strong>$997</strong>{" "}
+        <InternalLink href="/startup-special">Startup Special</InternalLink>{" "}
+        even bundles a 1-page site <em>with</em> a domain and a full year of
+        hosting so there&apos;s no surprise bill. For a full cost breakdown, see{" "}
+        <InternalLink href="/blog/website-design-seo-cost">
+          website design + SEO cost
+        </InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          website cost in Cumming, GA for 2026
+        </InternalLink>
+        .
+      </p>
+
+      <h3 id="q3-mobile-speed">3. Is the Site Fast and Built for Mobile?</h3>
+      <p>
+        Most of your visitors are on a phone. If your site loads slow or looks
+        broken on mobile, you lose customers before they read a word.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> &quot;We build mobile-first and
+        test page speed before launch.&quot; Ask to see one of their live sites
+        on your own phone. If it stutters, scrolls weird, or the buttons are
+        tiny — that&apos;s what yours will look like too.
+      </p>
+
+      <h3 id="q4-local-seo">4. Is Local SEO Included, or Is It Extra?</h3>
+      <p>
+        A beautiful site nobody finds is a billboard in the desert. You want to
+        show up when someone searches &quot;web designer near me&quot; or your
+        service plus &quot;Cumming, GA.&quot;
+      </p>
+      <p>
+        <strong>The answer you want:</strong> at minimum, basic on-page SEO and
+        a Google Business Profile setup should be baked in. Ongoing local SEO is
+        a separate, optional service — ours runs <strong>$500–$1,500/mo</strong>{" "}
+        depending on how aggressive you want to be (
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>
+        ). Just make sure you know which side of the line your designer puts it
+        on. If you want the deeper picture, read our{" "}
+        <InternalLink href="/blog/seo-cumming-ga">
+          SEO in Cumming, GA guide
+        </InternalLink>
+        .
+      </p>
+
+      <h3 id="q5-copy">5. Who Writes the Copy?</h3>
+      <p>
+        Words sell. Pretty pictures don&apos;t. Find out whether you&apos;re
+        expected to write every page yourself, or whether the designer helps
+        shape the message.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> clarity. Some shops design around
+        copy <em>you</em> provide; others (like us) help write or polish it.
+        Neither is wrong — but &quot;we&apos;ll just drop in placeholder text and
+        you fill it later&quot; usually means the site never actually launches.
+        Get it in writing.
+      </p>
+
+      <h3 id="q6-timeline">6. How Long Should a Website Take?</h3>
+      <p>
+        Timelines tell you whether a shop is organized or overbooked. A small
+        business site shouldn&apos;t take six months.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> a real date. A simple 1-page site
+        can ship in days — our Startup Special lands in <strong>10 days</strong>.
+        A full 5-page build like our <strong>$4,500</strong>{" "}
+        <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
+        runs about <strong>4 weeks</strong>. Bigger custom builds take longer,
+        and that&apos;s fine — as long as someone gives you a schedule instead of
+        a shrug.
+      </p>
+
+      <h3 id="q7-revisions">7. How Many Revisions Do I Get?</h3>
+      <p>
+        &quot;Revisions&quot; is where vague contracts go to die. You make a
+        change, then get hit with an extra invoice you didn&apos;t see coming.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> a defined number of revision
+        rounds spelled out up front, plus a clear hourly or flat rate for
+        anything beyond that. Fair is fair — designers have to eat — but you
+        deserve to know the rules before you start, not after.
+      </p>
+
+      <h3 id="q8-after-launch">
+        8. What Happens After Launch — and Who Maintains It?
+      </h3>
+      <p>
+        Launch day is the beginning, not the end. Software updates, security
+        patches, broken links, and content tweaks are all part of owning a
+        website.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> a clear plan. Either you&apos;re
+        comfortable maintaining it yourself, or the shop offers a maintenance
+        plan — ours starts around <strong>$100/mo</strong>. Avoid anyone who
+        builds the site, disappears, and resurfaces only when something&apos;s
+        already broken. An unmaintained site quietly rots; here&apos;s{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how your website is costing you customers
+        </InternalLink>{" "}
+        when that happens.
+      </p>
+
+      <h3 id="q9-portfolio">9. Can I See a Portfolio and Local References?</h3>
+      <p>
+        Anyone can claim they&apos;re great. A real portfolio and a couple of
+        local references prove it.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> live links to recent work — not
+        stock mockups — and the name of a nearby business you can actually call.
+        A genuine &quot;web design company Cumming GA&quot; should have local
+        examples: restaurants, trades, gyms, realtors, churches. Ask to see two
+        or three live client sites and at least one local reference you can
+        reach by phone.
+      </p>
+
+      <h3 id="q10-template-vs-custom">
+        10. Is It a Template or a Custom Build — and Does It Matter?
+      </h3>
+      <p>
+        Templates aren&apos;t evil. The lie is charging custom prices for a
+        template anyone could buy for $49.
+      </p>
+      <p>
+        <strong>The answer you want:</strong> honesty about what you&apos;re
+        getting. A smart template, customized well, is perfect for a lean
+        budget. A fully custom build makes sense when your needs are specific.
+        The right answer depends on <em>your</em> goals — a good designer will
+        tell you which fits instead of pushing the most expensive option.
+        (Curious whether you could just DIY it? We tested whether{" "}
+        <InternalLink href="/blog/can-chatgpt-build-a-website">
+          ChatGPT can build a website
+        </InternalLink>
+        .)
+      </p>
+
+      <h2 id="why-questions-matter">
+        Why These Questions Matter More Than the Price Tag
+      </h2>
+      <p>
+        Notice that only a few of these are about money. That&apos;s on purpose.
+        The cheapest quote often hides the most expensive surprises — borrowed
+        domains, locked platforms, no SEO, no support.
+      </p>
+      <p>
+        The one-shop advantage is real here too. When your logo, website,
+        shirts, and signs come from one designer under one invoice, your brand
+        actually matches everywhere — and you have one person to call.
+        That&apos;s the wedge we lean into at Branding Zombie Designs. For the
+        bigger picture on building a site here, see our{" "}
+        <InternalLink href="/blog/web-design-cumming-ga-guide">
+          web design in Cumming, GA guide
+        </InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/services/web-design">web design service</InternalLink>
+        .
+      </p>
+      <p>
+        If you&apos;ve already got a designer in mind and just want a gut-check,
+        we&apos;ll give you a free second opinion. Run your current or proposed
+        site through our{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink>{" "}
+        and we&apos;ll flag the ownership, speed, and SEO landmines — no pitch
+        required.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Vet Your Shortlist — or Skip It
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          One designer, one invoice, zero surprise bills.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Bring your top candidate — or your half-dead current site — and
+          we&apos;ll run a brutally honest, free second opinion before you sign
+          anything. No pitch required.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-choose">How do I choose a web design company?</h3>
+      <p>
+        Choose by clarity, not by price. Confirm in writing that you&apos;ll own
+        the site and domain, get the all-in cost including hosting, check that
+        it&apos;s mobile-fast, ask whether local SEO is included, and request
+        live local references. The shop that answers plainly is usually the
+        right one.
+      </p>
+
+      <h3 id="faq-cost">How much should a website cost?</h3>
+      <p>
+        For a small business in Cumming, GA, expect standalone web design to
+        start around $1,500, with common tiers at $2,500, $4,500, and $7,500+
+        depending on pages and features. A 1-page launch site with hosting can
+        run as low as $997. Always confirm the total includes hosting and
+        domain.
+      </p>
+
+      <h3 id="faq-ownership">Do I own my website after it&apos;s built?</h3>
+      <p>
+        You should. With a reputable designer, you own your domain, your files,
+        and your content once the project is paid in full. If a company
+        registers the domain under their own account or locks you into a
+        proprietary platform you can&apos;t export, you don&apos;t truly own your
+        site — confirm ownership in writing first.
+      </p>
+
+      <h3 id="faq-timeline">How long should a website take?</h3>
+      <p>
+        A simple 1-page site can launch in about 10 days. A full 5-page small
+        business site typically takes around 4 weeks. Larger custom builds take
+        longer, and that&apos;s normal — what matters is getting a real schedule
+        with milestones, not a vague &quot;soon.&quot;
+      </p>
+
+      <h3 id="faq-questions">What questions should I ask a web designer?</h3>
+      <p>
+        Ask about ownership, total cost including hosting, mobile speed, whether
+        local SEO is included, who writes the copy, timeline, revision rounds,
+        post-launch maintenance, portfolio with local references, and template
+        versus custom. The ten questions in this article cover all of it.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs. Based
+        in Cumming, GA. Bilingual (English/Spanish), building logos, websites,
+        signage, and apparel for small businesses across Forsyth County and North
+        Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
 // ─── POSTS registry ───────────────────────────────────────────────────────
 
 export const POSTS: Post[] = [
@@ -4539,6 +6478,210 @@ export const POSTS: Post[] = [
         "How much does a logo cost in Cumming, GA — 2026 price ranges — Branding Zombie Designs",
     },
     Content: LogoCostCummingGAContent,
+  },
+  {
+    meta: {
+      slug: "seo-cumming-ga",
+      title:
+        "Do You Need SEO in Cumming, GA? Cost & What Moves Rankings (2026)",
+      seoTitle:
+        "SEO Cumming, GA: Cost & What Moves Rankings 2026 | Branding Zombie Designs",
+      seoDescription:
+        "Local SEO in Cumming, GA runs $500–$1,500/mo. Here's what it is, whether your small business needs it, and what actually moves rankings in 2026.",
+      excerpt:
+        "An honest local guide to SEO in Cumming, GA: what it is, whether your small business needs it, what local SEO costs ($500–$1,500/mo), Google Business Profile, DIY vs hiring, timelines, and AI search.",
+      keywords: [
+        "seo cumming",
+        "seo agency cumming",
+        "seo services cumming",
+        "local seo cumming",
+        "seo company cumming",
+        "how much does local SEO cost",
+        "how long does SEO take to work",
+        "is SEO dead with AI search",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-10",
+      readingTimeMinutes: 8,
+      category: "SEO",
+      tags: [
+        "SEO",
+        "local SEO",
+        "Google Business Profile",
+        "Cumming GA",
+        "Forsyth County",
+        "digital marketing",
+        "AEO",
+        "GEO",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Do you need SEO in Cumming, GA — cost and what moves rankings in 2026 — Branding Zombie Designs",
+    },
+    Content: SeoCummingGaContent,
+  },
+  {
+    meta: {
+      slug: "web-design-cumming-ga-guide",
+      title:
+        "Web Design in Cumming, GA: What to Look For, What It Costs, and Who Owns It",
+      seoTitle:
+        "Web Design in Cumming, GA: Costs & What to Look For | Branding Zombie Designs",
+      seoDescription:
+        "Web design in Cumming, GA starts around $1,500. Here's what good local web design includes, real price tiers, who owns the site, and how to choose right.",
+      excerpt:
+        "Web design in Cumming, GA starts around $1,500. A local buyer's guide to what good web design includes, real price tiers, DIY vs. local, ownership, timelines, and red flags.",
+      keywords: [
+        "web design cumming ga",
+        "website design cumming",
+        "web designer cumming",
+        "small business web design",
+        "affordable web design services cumming",
+        "branding and web design",
+        "web design cost cumming",
+        "do I own my website",
+        "squarespace vs custom",
+        "can AI build my website",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-10",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "website cost",
+        "Cumming GA",
+        "Forsyth County",
+        "small business web design",
+        "website ownership",
+        "local SEO",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Web design in Cumming, GA — costs, what to look for, and who owns it — Branding Zombie Designs",
+    },
+    Content: WebDesignCummingGaContent,
+  },
+  {
+    meta: {
+      slug: "is-seo-dead-2026",
+      title:
+        "Is SEO Dead in 2026? No — But Now You Also Have to Win the AI Answer Box",
+      seoTitle:
+        "Is SEO Dead in 2026? No — Win the AI Answer Box | Branding Zombie Designs",
+      seoDescription:
+        "Is SEO dead or evolving in 2026? It evolved. Cumming, GA businesses still need ranking AND a spot in the AI answer box (AEO/GEO). Here's what works now.",
+      excerpt:
+        "Is SEO dead or evolving in 2026? It evolved. Traditional ranking still matters, but AI answer engines now sit on top — so Cumming, GA businesses need both classic SEO and AEO/GEO to get cited.",
+      keywords: [
+        "is SEO dead or evolving in 2026",
+        "is SEO dead",
+        "is SEO still worth it in 2026",
+        "what is AEO GEO",
+        "how to get cited by ChatGPT",
+        "seo cumming",
+        "local seo cumming",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-10",
+      readingTimeMinutes: 8,
+      category: "SEO",
+      tags: [
+        "SEO",
+        "AEO",
+        "GEO",
+        "AI search",
+        "local SEO",
+        "Cumming GA",
+        "Forsyth County",
+        "small business",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Is SEO dead in 2026? No — win the AI answer box — Branding Zombie Designs",
+    },
+    Content: IsSeoDead2026Content,
+  },
+  {
+    meta: {
+      slug: "can-chatgpt-do-seo",
+      title:
+        "Can ChatGPT Do SEO? What AI Nails and What It Gets Dangerously Wrong",
+      seoTitle:
+        "Can ChatGPT Do SEO? An Honest Take | Branding Zombie Designs",
+      seoDescription:
+        "Can ChatGPT do SEO? Yes for drafts and keyword ideas, no for local ranking, links, and Google Business Profile work. An honest verdict from a Cumming, GA designer.",
+      excerpt:
+        "Can ChatGPT do SEO? Partly. AI nails keyword ideas, drafts, meta tags, and schema — but it can't manage Google Business Profile, build links, fix technical issues, or rank you locally. An honest take from a Cumming, GA designer.",
+      keywords: [
+        "can ChatGPT do SEO",
+        "is AI-written content bad for SEO",
+        "will AI-generated content rank on Google",
+        "can ChatGPT do local SEO",
+        "should I use ChatGPT or hire an SEO",
+        "AI SEO",
+        "seo Cumming GA",
+        "local seo Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-10",
+      readingTimeMinutes: 8,
+      category: "AI Workflows",
+      tags: [
+        "AI",
+        "ChatGPT",
+        "SEO",
+        "local SEO",
+        "content marketing",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Can ChatGPT do SEO? What AI nails and what it gets wrong — Branding Zombie Designs",
+    },
+    Content: CanChatgptDoSeoContent,
+  },
+  {
+    meta: {
+      slug: "how-to-pick-a-web-design-company",
+      title:
+        "How to Pick a Web Design Company in Cumming, GA: 10 Questions to Ask First",
+      seoTitle:
+        "How to Pick a Web Design Company in Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "How to pick a web design company in Cumming, GA: 10 questions to ask before you pay. Do you own the site? Real total cost? Local SEO included? Get the answers.",
+      excerpt:
+        "How to pick a web design company in Cumming, GA — a 10-question checklist covering ownership, real total cost, mobile speed, local SEO, copy, timeline, revisions, maintenance, references, and template vs. custom.",
+      keywords: [
+        "how to pick a web design company",
+        "web design company Cumming GA",
+        "web designer near me",
+        "web design Cumming GA",
+        "small business web design",
+        "questions to ask a web designer",
+        "do I own my website",
+        "how much should a website cost",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-10",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "choosing a web designer",
+        "Cumming GA",
+        "Forsyth County",
+        "small business web design",
+        "website ownership",
+        "local SEO",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "How to pick a web design company in Cumming, GA — 10 questions to ask first — Branding Zombie Designs",
+    },
+    Content: HowToPickWebDesignCompanyContent,
   },
   {
     meta: {
