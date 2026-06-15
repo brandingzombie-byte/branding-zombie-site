@@ -135,3 +135,131 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
 export function getServiceAeo(slug: ServiceSlug): ServiceAeo | undefined {
   return SERVICE_AEO[slug];
 }
+
+// ─── Comparison tables (the 4th GEO lever) ──────────────────────────────────
+// Extractable head-to-head tables — what gets a brand NAMED in "X vs Y" AI
+// queries rather than ghost-cited. Kept fair and honest, not disparaging.
+// Print-design is intentionally absent: it already ships its own
+// "one shop vs designer + print shop" comparison on the page.
+
+export interface ServiceComparisonData {
+  /** Section title, e.g. "Branding Zombie vs. a DIY site builder". */
+  title: string;
+  /** Short intro line for context + AEO. */
+  intro: string;
+  /** Column header for our side. */
+  us: string;
+  /** Column header for the alternative. */
+  them: string;
+  rows: { label: string; us: string; them: string }[];
+}
+
+export const SERVICE_COMPARISON: Partial<
+  Record<ServiceSlug, ServiceComparisonData>
+> = {
+  "web-design": {
+    title: "Branding Zombie vs. a DIY site builder",
+    intro:
+      "How a custom small-business site from Branding Zombie compares to a Wix or Squarespace build you do yourself.",
+    us: "Branding Zombie",
+    them: "Wix / Squarespace DIY",
+    rows: [
+      { label: "Ongoing cost", us: "~$20/mo hosting — you own it", them: "$23–$49/mo forever" },
+      { label: "Speed (Core Web Vitals)", us: "90+ by default", them: "Template bloat slows it" },
+      { label: "Local SEO", us: "Schema + Google Business setup built in", them: "Bolt-on, mostly DIY" },
+      { label: "Design", us: "Custom-built around your brand", them: "Reskinned template" },
+      { label: "Who builds it", us: "A senior designer, 15+ yrs", them: "You, nights and weekends" },
+      { label: "Ownership", us: "You own site, domain, files", them: "Locked to the platform" },
+    ],
+  },
+  "ai-workflows": {
+    title: "Custom automation vs. an off-the-shelf chatbot",
+    intro:
+      "How a Branding Zombie build compares to a SaaS chatbot like Intercom or Drift.",
+    us: "Branding Zombie",
+    them: "Intercom / Drift",
+    rows: [
+      { label: "Training", us: "Trained on your content day one", them: "You configure and maintain it" },
+      { label: "Integration", us: "Wired into tools you already use", them: "Another dashboard to learn" },
+      { label: "Pricing", us: "Flat setup + monthly, no per-seat", them: "Per-seat, upsell tiers" },
+      { label: "Maintenance", us: "We retrain it monthly", them: "On you" },
+      { label: "Accuracy", us: "Locked to approved answers", them: "Depends on your setup" },
+    ],
+  },
+  "social-media": {
+    title: "Done-for-you vs. the intern plan",
+    intro:
+      "How managed social from Branding Zombie compares to handing it to an intern or doing it yourself.",
+    us: "Branding Zombie",
+    them: "Intern / DIY",
+    rows: [
+      { label: "Who designs it", us: "15+ yr CPG designer", them: "Whoever's free" },
+      { label: "Consistency", us: "Month planned and approved", them: "Posts when remembered" },
+      { label: "On-brand", us: "Custom, in your brand", them: "Random Canva templates" },
+      { label: "Strategy", us: "Quarterly pillars + reporting", them: "Vibes" },
+      { label: "Cost", us: "From $699/mo, month-to-month", them: "Cheap, and it shows" },
+    ],
+  },
+  ecommerce: {
+    title: "Custom Shopify vs. a free theme",
+    intro:
+      "How a Branding Zombie store compares to a free theme you set up yourself.",
+    us: "Branding Zombie",
+    them: "Free theme DIY",
+    rows: [
+      { label: "Conversion", us: "Built around what sells", them: "Pretty, not optimized" },
+      { label: "Product pages", us: "Designed to convert", them: "Default layout" },
+      { label: "Integrations", us: "Klaviyo, subscriptions, reviews", them: "Add them yourself" },
+      { label: "Brand fit", us: "Matches your packaging", them: "Generic" },
+      { label: "Built by", us: "15+ yr CPG/DTC designer", them: "You + YouTube" },
+    ],
+  },
+  "logo-design": {
+    title: "Custom logo vs. a $5 or AI logo",
+    intro:
+      "How a Branding Zombie logo compares to a Fiverr gig or an AI logo generator.",
+    us: "Branding Zombie",
+    them: "Fiverr / AI generator",
+    rows: [
+      { label: "Originality", us: "Designed for you, not resold", them: "Templated or AI-recycled" },
+      { label: "Versatility", us: "Works sign to favicon", them: "Falls apart at sizes" },
+      { label: "Files", us: "Full source files, you own", them: "Limited or watermarked" },
+      { label: "Revisions", us: "Real rounds with a designer", them: "Take it or leave it" },
+      { label: "Longevity", us: "Built to last years", them: "Redone within months" },
+    ],
+  },
+  branding: {
+    title: "A full brand system vs. just a logo",
+    intro:
+      "What you get with a complete Branding Zombie identity versus stopping at a logo.",
+    us: "Full brand system",
+    them: "Just a logo",
+    rows: [
+      { label: "Consistency", us: "Rules for every touchpoint", them: "Hope for the best" },
+      { label: "Color & type", us: "Defined palette and fonts", them: "Picked ad hoc each time" },
+      { label: "Voice", us: "Documented tone", them: "Whoever's writing that day" },
+      { label: "Scales", us: "Onboard any vendor fast", them: "Re-explain every time" },
+      { label: "Recognition", us: "Known without the name", them: "Logo only" },
+    ],
+  },
+  "digital-marketing": {
+    title: "Local SEO + AEO vs. doing nothing",
+    intro:
+      "What managed local search from Branding Zombie changes versus leaving it alone.",
+    us: "Branding Zombie",
+    them: "Doing nothing",
+    rows: [
+      { label: "Google map pack", us: "Optimized profile + schema", them: "Invisible to 'near me'" },
+      { label: "AI search", us: "Built to be cited", them: "Not in the answer box" },
+      { label: "Content", us: "Local posts that rank", them: "Silent" },
+      { label: "Reviews", us: "A system to grow them", them: "Whatever trickles in" },
+      { label: "Cost", us: "From $499/mo, no lock-in", them: "$0 — and lost customers" },
+    ],
+  },
+};
+
+export function getServiceComparison(
+  slug: ServiceSlug,
+): ServiceComparisonData | undefined {
+  return SERVICE_COMPARISON[slug];
+}
