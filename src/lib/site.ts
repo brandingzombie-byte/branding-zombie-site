@@ -30,10 +30,22 @@ export const COUNTRY = "US";
 export const LAT = 34.2073;
 export const LON = -84.1401;
 
-// Social profile URLs — populate when profiles are live. Empty array keeps
-// schema.org sameAs honest (claiming profiles that don't exist triggers a
-// Google verification 404 and hurts E-E-A-T).
-export const SOCIAL_URLS: string[] = [];
+// Google Place ID for the live Google Business Profile listing. Source: the
+// Maps URL embedded in src/data/reviews.ts (GOOGLE_REVIEWS_URL).
+export const GOOGLE_PLACE_ID = "ChIJtz05efo8zwwRgsxGksnsJ94";
+export const GOOGLE_MAPS_LISTING_URL = `https://www.google.com/maps/search/?api=1&query=Branding+Zombie+Designs&query_place_id=${GOOGLE_PLACE_ID}`;
+
+// Social + authoritative-reference URLs for schema.org `sameAs`. These are the
+// "this entity is unambiguously us" links AI engines (Gemini, Copilot) ground
+// on, and the single biggest entity signal after the LocalBusiness block.
+// Only list LIVE profiles — a sameAs that 404s hurts E-E-A-T.
+// TODO: add the Google Business Profile dashboard URL + any YouTube/TikTok when live.
+export const SOCIAL_URLS: string[] = [
+  "https://www.instagram.com/brandingzombiedesigns/",
+  "https://www.facebook.com/profile.php?id=61590541448873",
+  "https://www.linkedin.com/company/branding-zombie-designs",
+  GOOGLE_MAPS_LISTING_URL,
+];
 
 // ─── Service area — every town we want to show up for ─────────────────────
 export const AREAS_SERVED = [

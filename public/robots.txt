@@ -23,9 +23,9 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# AI answer-engine crawlers that drive visible citations (users see links)
+# AI answer-engine crawlers that drive visible citations (users see links).
 # These are the bots that put Branding Zombie into ChatGPT / Perplexity / Claude
-# answers when someone asks "who does web design in Cumming GA?"
+# / Gemini answers when someone asks "who does web design in Cumming GA?"
 User-agent: PerplexityBot
 Allow: /
 
@@ -41,21 +41,35 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-# Block low-value training-only scrapers that don't cite back
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Training crawlers — intentionally OPEN. For a lead-gen studio, being baked
+# into a model's memory means we surface even without a live web citation. The
+# upside (recall) outweighs the cost (public content used for training).
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: Amazonbot
-Disallow: /
+Allow: /
 
 Sitemap: https://brandingzombiedesigns.com/sitemap.xml
 Host: https://brandingzombiedesigns.com
