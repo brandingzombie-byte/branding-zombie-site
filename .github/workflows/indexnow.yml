@@ -1,0 +1,29 @@
+name: IndexNow
+
+# Pings IndexNow (Bing/Yandex/etc.) with every live URL after a production deploy,
+# so search engines re-crawl within minutes. Runs on push to master (which is what
+# Vercel auto-deploys to production) and can also be triggered manually.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Avoid overlapping runs if several pushes land close together.
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Give Vercel a moment to finish deploying so the submitted URLs (and the
+      # freshly generated sitemap) are live before we ping IndexNow.
+      - name: Wait for deploy to propagate
+        run: sleep 90
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Submit live sitemap URLs to IndexNow
+        run: node scripts/submit-indexnow.mjs
