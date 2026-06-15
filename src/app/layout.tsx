@@ -23,6 +23,7 @@ import {
   NORTH_GA_COUNTIES,
   SOCIAL_URLS,
   GA_MEASUREMENT_ID,
+  CLARITY_PROJECT_ID,
 } from "@/lib/site";
 import { REVIEW_AVG, REVIEW_COUNT } from "@/data/reviews";
 import { OFFER_CATALOG } from "@/data/offer-catalog";
@@ -402,6 +403,17 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        {CLARITY_PROJECT_ID && (
+          <Script id="clarity-init" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
+            `}
+          </Script>
+        )}
       </body>
     </html>
   );
