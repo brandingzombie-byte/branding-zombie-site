@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
@@ -123,33 +124,54 @@ export default function AboutPage() {
                 "radial-gradient(60% 50% at 22% 30%, rgba(191,255,0,0.10), transparent 70%), radial-gradient(50% 40% at 82% 72%, rgba(0,255,212,0.07), transparent 70%)",
             }}
           />
-          <div className="pt-20 lg:pt-28">
-            <div className="flex items-center gap-3">
-              <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
-              <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
-                About · {FOUNDER_NAME}
-              </span>
+          <div className="grid grid-cols-1 items-center gap-x-12 gap-y-12 pt-20 lg:grid-cols-12 lg:pt-28">
+            {/* Text */}
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-3">
+                <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
+                <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+                  About · {FOUNDER_NAME}
+                </span>
+              </div>
+              <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+                15 years.{" "}
+                <span className="relative inline-block">
+                  30+ brands
+                  <span
+                    aria-hidden
+                    className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
+                  />
+                </span>
+                . Yours is next.
+              </h1>
+              <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+                I&apos;m Gerry Betancourt — the creative director, strategist,
+                and one-man agency behind Branding Zombie Designs. From Fort
+                Lauderdale&apos;s CPG scene to Cumming&apos;s Main Street, the
+                job&apos;s been the same: make small brands look and sell like
+                the ones you envy.
+              </p>
+              <div className="mt-10">
+                <AboutCtaRow primaryLabel="Book a free audit" size="sm" />
+              </div>
             </div>
-            <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
-              15 years.{" "}
-              <span className="relative inline-block">
-                30+ brands
+
+            {/* Headshot */}
+            <div className="lg:col-span-5">
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-md border border-[var(--color-dark-border)] bg-[var(--color-surface)] lg:ml-auto lg:mr-0">
+                <Image
+                  src="/assets/gerry-headshot.png"
+                  alt="Gerry Betancourt, founder of Branding Zombie Designs, in Cumming, GA"
+                  fill
+                  priority
+                  className="object-cover object-top"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
                 <span
                   aria-hidden
-                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
+                  className="absolute inset-x-0 bottom-0 h-px bg-[var(--color-toxic)]/60"
                 />
-              </span>
-              . Yours is next.
-            </h1>
-            <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              I&apos;m Gerry Betancourt — the creative director, strategist,
-              and one-man agency behind Branding Zombie Designs. From Fort
-              Lauderdale&apos;s CPG scene to Cumming&apos;s Main Street, the
-              job&apos;s been the same: make small brands look and sell like
-              the ones you envy.
-            </p>
-            <div className="mt-10">
-              <AboutCtaRow primaryLabel="Book a free audit" size="sm" />
+              </div>
             </div>
           </div>
         </Section>

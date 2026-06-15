@@ -1147,9 +1147,10 @@ function WebsiteCostCummingGA2026Content() {
             never meet.
           </li>
           <li>
-            <strong>Our pricing:</strong> Starter $2,500. Growth $4,500
-            (most popular). Premium $7,500+. Or the Launch Package — site +
-            logo + brand + content calendar — bundled at $4,500.
+            <strong>Our pricing:</strong> Landing $1,500 (1-page).
+            Starter $2,500 (5-page). Growth $4,500 (most popular). Premium
+            $7,500+. Or the Local Business Kit — site + logo + cards +
+            flyers — bundled at $2,800.
           </li>
           <li>
             <strong>Custom budget?</strong> Tell us the number and what
@@ -6932,9 +6933,9 @@ export const POSTS: Post[] = [
       seoTitle:
         "Small Business Website Cost in Cumming, GA — 2026 Pricing Guide | Branding Zombie Designs",
       seoDescription:
-        "What a real small-business website costs in Cumming, Forsyth, and Dawsonville in 2026. Going rates, hidden fees, our flat tiers ($2,500 / $4,500 / $7,500+), and custom quotes.",
+        "What a real small-business website costs in Cumming, Forsyth, and Dawsonville in 2026. Going rates, hidden fees, our flat tiers (Landing $1,500 / Starter $2,500 / Growth $4,500 / Premium $7,500+), and custom quotes.",
       excerpt:
-        "What a small-business website actually costs in Cumming, Forsyth County, and Dawsonville in 2026 — going rates, the 5 real pricing buckets, hidden fees, and where our $2,500 / $4,500 / $7,500+ tiers fit. Custom quotes welcome.",
+        "What a small-business website actually costs in Cumming, Forsyth County, and Dawsonville in 2026 — going rates, the 5 real pricing buckets, hidden fees, and where our Landing / Starter / Growth / Premium tiers (from $1,500) fit. Custom quotes welcome.",
       keywords: [
         "small business website cost Cumming GA",
         "website pricing Forsyth County",

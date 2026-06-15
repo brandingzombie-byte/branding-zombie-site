@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# industry-page raw source design assets (logos/cards/banners used as
+# generation references). Kept locally for re-generation; never committed —
+# some are very large print files. Only the optimized .webp outputs ship.
+public/assets/industries/*/_source/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

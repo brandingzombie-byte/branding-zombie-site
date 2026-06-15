@@ -12,7 +12,7 @@ const PAGE_URL = `${SITE_URL}/contact`;
 export const metadata: Metadata = {
   title: "Contact — Call, Email, or Book a Free Audit in Cumming, GA",
   description:
-    "Talk to a real person in Cumming, GA. Call (770) 744-2536, email brandingzombie@gmail.com, or book a free 15-minute audit. Serving Forsyth County & North Metro Atlanta.",
+    "Talk to a real person in Cumming, GA. Call (770) 744-2536, email hello@brandingzombiedesigns.com, or book a free 15-minute audit. Serving Forsyth County & North Metro Atlanta.",
   keywords: [
     "contact Branding Zombie Designs",
     "web designer Cumming GA contact",

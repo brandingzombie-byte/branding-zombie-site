@@ -6,8 +6,8 @@ Branding Zombie Designs is a full-service design + print studio in Cumming, GA (
 - **Service area**: Forsyth County, North Metro Atlanta (Alpharetta, Roswell, Johns Creek, Woodstock, Buford, Suwanee, Cumming, Dawsonville)
 - **Typical turnaround**: 3–10 business days for most products; 14–21 days for full booth kits
 - **Pricing model**: wholesale production cost passed through plus 15–20% production fee
-- **Phone**: (786) 848-1522
-- **Email**: brandingzombie@gmail.com
+- **Phone**: (770) 744-2536
+- **Email**: hello@brandingzombiedesigns.com
 - **Catalog page**: https://brandingzombiedesigns.com/services/print-design#print-catalog
 
 ---
@@ -186,6 +186,6 @@ Booth-ready kits — tablecloths, flags, frames, and handouts that make a 10×10
 
 ## Custom requests not in the catalog
 
-We also handle yard signs, vehicle wraps, custom apparel (screen print, DTF, embroidery), product packaging, labels, and dielines. Send a description of what you need to brandingzombie@gmail.com or book a 15-minute discovery call at https://calendly.com/brandingzombie/discovery for a real quote — usually back within one business day.
+We also handle yard signs, vehicle wraps, custom apparel (screen print, DTF, embroidery), product packaging, labels, and dielines. Send a description of what you need to hello@brandingzombiedesigns.com or book a 15-minute discovery call at https://calendly.com/brandingzombie/discovery for a real quote — usually back within one business day.
 
 _Last updated: 2026-06-02._

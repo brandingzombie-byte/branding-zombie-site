@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Check, ArrowRight } from "@/components/icons";
@@ -7,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "New Business Launch",
+    name: "Local Business Kit",
     price: "$2,800",
     daily: "≈ $8/day · year one",
     description: "For new businesses that need to look legit, fast.",
@@ -20,16 +21,16 @@ const plans = [
       "Google Business Profile setup",
       "Basic SEO optimization",
     ],
-    cta: "Start the build",
+    cta: "Choose Local Business Kit",
     popular: false,
   },
   {
-    name: "Digital Makeover",
+    name: "Growth Kit",
     price: "$4,500",
     daily: "≈ $13/day · year one",
     description: "Our most-requested package. Built to level up.",
     features: [
-      "Everything in Starter",
+      "Everything in Local Business Kit",
       "Custom website (up to 10 pages)",
       "AI chatbot integration",
       "Google Business optimization",
@@ -38,16 +39,16 @@ const plans = [
       "Blog/CMS setup & training",
       "3 rounds of revisions",
     ],
-    cta: "Choose Digital Makeover",
+    cta: "Choose Growth Kit",
     popular: true,
   },
   {
-    name: "Full Zombie Treatment",
+    name: "Full Brand Kit",
     price: "$8,000+",
     daily: "≈ $22/day · year one",
     description: "For businesses ready to dominate. The complete kit.",
     features: [
-      "Everything in Digital Makeover",
+      "Everything in Growth Kit",
       "Custom-coded web app",
       "Advanced AI workflow automation",
       "Marketing automation setup",
@@ -56,7 +57,7 @@ const plans = [
       "Vehicle wrap design",
       "Priority support & quarterly reviews",
     ],
-    cta: "Go full zombie",
+    cta: "Choose Full Brand Kit",
     popular: false,
   },
 ];
@@ -96,6 +97,42 @@ export default function Pricing() {
             today, add the rest as you grow.
           </p>
         </div>
+
+        {/* $997 promo banner — leads the pricing with the budget-friendly
+            entry so first-time buyers and refresh shoppers don't bounce on
+            the $2,800 floor. Image-left, copy-right on desktop; stacked on
+            mobile. Whole card is the link target. */}
+        <a
+          href="/startup-special"
+          className="group mt-12 grid grid-cols-1 overflow-hidden border-2 border-[var(--color-text-primary)] bg-[var(--color-grave)] lg:grid-cols-5"
+        >
+          <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto lg:col-span-2">
+            <Image
+              src="/assets/startup-special/hero.png"
+              alt="$997 Launch Kit — opening-day package banner"
+              fill
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+            />
+          </div>
+          <div className="flex flex-col justify-center gap-4 p-8 lg:col-span-3 lg:p-12">
+            <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+              Just launching? · Open-day kit
+            </span>
+            <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.05] tracking-tight text-[var(--color-dark-text-primary)]">
+              Launch Kit — $997
+            </h3>
+            <p className="measure text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+              Logo + 1-page website + 100 business cards + 100 flyers.
+              Everything you need for opening day, shipped in 10 days. Five
+              slots per month.
+            </p>
+            <span className="inline-flex items-center gap-2 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] transition-transform duration-200 group-hover:translate-x-1">
+              See the Launch Kit
+              <ArrowRight size={16} weight="bold" />
+            </span>
+          </div>
+        </a>
 
         {/* Cards — middle becomes a dark mini-island */}
         <div className="mt-12 grid grid-cols-1 gap-px border border-[var(--color-hairline-strong)] bg-[var(--color-hairline-strong)] lg:grid-cols-3">
@@ -240,7 +277,9 @@ export default function Pricing() {
           })}
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 text-[length:var(--text-secondary)] text-text-dim sm:flex-row sm:items-center sm:justify-between">
+        {/* Custom-quote escape hatch. The "Just launching?" link that used
+            to live here is now the full-width banner above the cards. */}
+        <div className="mt-8 text-[length:var(--text-secondary)] text-text-dim">
           <p>
             Custom quote for unique projects.{" "}
             <a
@@ -248,15 +287,6 @@ export default function Pricing() {
               className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
             >
               Tell us what you need →
-            </a>
-          </p>
-          <p>
-            Just launching?{" "}
-            <a
-              href="/startup-special"
-              className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
-            >
-              See the $997 Startup Special →
             </a>
           </p>
         </div>

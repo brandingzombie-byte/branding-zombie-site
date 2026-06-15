@@ -26,6 +26,14 @@ const nextConfig: NextConfig = {
         destination: "/services/print-design",
         permanent: true,
       },
+      // /work is now a real page (src/app/work). /portfolio is an alias that
+      // forwards to it. Non-permanent (302) so /portfolio could become its
+      // own page later without fighting a cached 301.
+      {
+        source: "/portfolio",
+        destination: "/work",
+        permanent: false,
+      },
     ];
   },
 };

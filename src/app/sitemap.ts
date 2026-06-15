@@ -19,18 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts use their own published date so Google can tell when a post
   // actually changed vs when the site last deployed.
-  const industryPages = getAllIndustrySlugs().map((slug) => ({
-    url: `${SITE_URL}/industries/${slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  }));
-
   const blogPosts = getAllPosts().map((p) => ({
     url: `${SITE_URL}/blog/${p.meta.slug}`,
     lastModified: new Date(p.meta.dateModified ?? p.meta.datePublished),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const industryPages = getAllIndustrySlugs().map((slug) => ({
+    url: `${SITE_URL}/industries/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
   }));
 
   return [
@@ -46,14 +46,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    ...servicePages,
+    {
+      url: `${SITE_URL}/work`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
     {
       url: `${SITE_URL}/industries`,
       lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     ...industryPages,
+    ...servicePages,
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,

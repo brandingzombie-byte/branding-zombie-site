@@ -8,7 +8,7 @@ import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "Work", href: "/#portfolio" },
+  { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
@@ -69,8 +69,8 @@ export default function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 lg:h-20 lg:px-12">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
+        {/* Logo — links home */}
+        <a href="/" aria-label="Branding Zombie Designs — home" className="flex items-center gap-3">
           <div
             className={cn(
               "flex h-9 w-9 items-center justify-center rounded-md transition-colors",

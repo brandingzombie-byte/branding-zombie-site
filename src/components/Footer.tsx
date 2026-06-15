@@ -2,10 +2,10 @@
 
 import Section from "@/components/Section";
 import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/site";
+import { INDUSTRIES } from "@/data/industries";
 
 const services = [
   "Web Design",
-  "AI Workflow Integration",
   "Graphic Design",
   "Print Services",
   "Social Media",
@@ -14,7 +14,7 @@ const services = [
 
 const company = [
   { label: "About", href: "/about" },
-  { label: "Work", href: "/#portfolio" },
+  { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/#faq" },
@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-12">
         {/* Brand */}
         <div className="col-span-2 lg:col-span-4">
-          <a href="#" className="flex items-start gap-3">
+          <a href="/" aria-label="Branding Zombie Designs — home" className="flex items-start gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/Branding_Zombie_Logo_Icon.svg"
@@ -49,14 +49,14 @@ export default function Footer() {
             </div>
           </a>
           <p className="measure mt-5 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
-            Bringing brands back from the dead. Modern websites, AI workflows,
-            and brand design — built in days, not months — for Cumming &amp;
-            Forsyth County businesses.
+            Big-brand design for small-town businesses — logos, websites,
+            signs, and print built right here in Cumming &amp; Forsyth County,
+            Georgia.
           </p>
         </div>
 
         {/* Services */}
-        <div className="col-span-1 lg:col-span-3 lg:col-start-6">
+        <div className="col-span-1 lg:col-span-2 lg:col-start-5">
           <h4 className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
             Services
           </h4>
@@ -64,13 +64,40 @@ export default function Footer() {
             {services.map((s) => (
               <li key={s}>
                 <a
-                  href="#services"
+                  href="/services"
                   className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
                 >
                   {s}
                 </a>
               </li>
             ))}
+          </ul>
+        </div>
+
+        {/* Industries */}
+        <div className="col-span-1 lg:col-span-2">
+          <h4 className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
+            Industries we serve
+          </h4>
+          <ul className="mt-4 space-y-2.5">
+            {INDUSTRIES.map((ind) => (
+              <li key={ind.slug}>
+                <a
+                  href={`/industries/${ind.slug}`}
+                  className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
+                >
+                  {ind.navLabel}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                href="/industries"
+                className="text-[length:var(--text-secondary)] font-semibold text-[var(--color-neon-text)] hover:underline"
+              >
+                View all →
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -94,7 +121,7 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="col-span-2 lg:col-span-3">
+        <div className="col-span-1 lg:col-span-2">
           <h4 className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
             Get in touch
           </h4>

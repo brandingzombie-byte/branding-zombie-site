@@ -62,7 +62,7 @@ function buildLlmsTxt(): string {
     out.push("");
     for (const ind of INDUSTRIES) {
       out.push(
-        `- [${ind.name}](${SITE_URL}/industries/${ind.slug}): ${ind.answerFirst}`
+        `- [${ind.name}](${SITE_URL}/industries/${ind.slug}): ${ind.intro}`
       );
     }
     out.push("");

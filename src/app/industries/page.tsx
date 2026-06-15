@@ -4,51 +4,26 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
-import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import { INDUSTRIES } from "@/data/industries";
-import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
+import { SITE_URL, BUSINESS_NAME } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 const PAGE_URL = `${SITE_URL}/industries`;
 
 export const metadata: Metadata = {
-  title: "Industries We Serve — Branding & Web Design in Cumming, GA",
+  title: `Industries We Serve — Branding for Local Businesses | ${BUSINESS_NAME}`,
   description:
-    "Industry-specific branding, web design, and print for restaurants, home-service & trade businesses, health & medical practices, and fitness & supplement brands in Cumming, GA and across North Metro Atlanta.",
+    "Branding, web design, and print built for your industry — trades and contractors, restaurants, salons and barbershops, supplement and CPG brands, and more across Cumming, GA and North Metro Atlanta.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: PAGE_URL,
-    siteName: "Branding Zombie Designs",
-    title: "Industries We Serve — Branding Zombie Designs in Cumming, GA",
+    siteName: BUSINESS_NAME,
+    title: `Industries We Serve — ${BUSINESS_NAME}`,
     description:
-      "Tailored branding, websites, and print for restaurants, trades, medical practices, and fitness & supplement brands across North Metro Atlanta.",
-    images: [
-      {
-        url: "/assets/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Branding Zombie Designs — Industries served in Cumming, GA",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Industries We Serve — Branding Zombie Designs",
-    description:
-      "Industry-specific branding, web design, and print for businesses across North Metro Atlanta.",
-    images: ["/assets/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-      "max-snippet": -1,
-    },
+      "Branding, web, and print tailored to your industry — built in Cumming, GA for North Metro Atlanta small businesses.",
+    images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: `${BUSINESS_NAME} — industries served` }],
   },
 };
 
@@ -61,25 +36,6 @@ const breadcrumbSchema = {
   ],
 };
 
-const itemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Industries served by Branding Zombie Designs",
-  itemListElement: INDUSTRIES.map((ind, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    url: `${SITE_URL}/industries/${ind.slug}`,
-    name: ind.name,
-    item: {
-      "@type": "Service",
-      name: ind.name,
-      description: ind.answerFirst,
-      provider: { "@id": LOCALBIZ_ID },
-      url: `${SITE_URL}/industries/${ind.slug}`,
-    },
-  })),
-};
-
 export default function IndustriesIndexPage() {
   return (
     <>
@@ -88,16 +44,8 @@ export default function IndustriesIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
-      />
       <main id="main-content" tabIndex={-1}>
-        <Section
-          theme="dark"
-          pad="spacious"
-          className="min-h-[60dvh] overflow-hidden"
-        >
+        <Section theme="dark" pad="spacious" className="overflow-hidden">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-10 animate-ambient"
@@ -113,10 +61,10 @@ export default function IndustriesIndexPage() {
                 Industries · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[24ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
-              Branding built for{" "}
+            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.2] tracking-tight text-[var(--color-dark-text-primary)]">
+              Built for{" "}
               <span className="relative inline-block">
-                your kind of business
+                your industry
                 <span
                   aria-hidden
                   className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
@@ -125,66 +73,76 @@ export default function IndustriesIndexPage() {
               .
             </h1>
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              A restaurant menu, an HVAC truck wrap, a med-spa website, and a
-              supplement label aren&apos;t the same job. These pages cover the
-              specific branding, web, and print work each industry actually
-              needs — designed and produced from right here in Cumming, Georgia
-              for businesses across North Metro Atlanta.
+              Same studio, same flat prices — but the work, the words, and the
+              proof are tuned to what your customers actually respond to. Find
+              your line of business below.
             </p>
           </div>
         </Section>
 
         <SectionSeparator id={7} />
 
-        <Section theme="dark" pad="spacious" topRule>
-          <div className="grid grid-cols-1 gap-px border border-[var(--color-dark-border-strong)] bg-[var(--color-dark-border-strong)] sm:grid-cols-2">
-            {INDUSTRIES.map((ind) => (
+        <Section theme="light" pad="spacious" topRule>
+          <div className="grid grid-cols-1 border-x-2 border-t-2 border-[var(--color-text-primary)] sm:grid-cols-2 lg:grid-cols-3">
+            {INDUSTRIES.map((ind, i) => (
               <Link
                 key={ind.slug}
                 href={`/industries/${ind.slug}`}
-                className="group relative flex min-h-[15rem] flex-col justify-between bg-[var(--color-surface)] p-8 transition-colors hover:bg-[var(--color-elevated)]"
+                aria-label={ind.name}
+                className={cn(
+                  "group relative flex min-h-[15rem] flex-col justify-between overflow-hidden",
+                  "border-b-2 border-[var(--color-text-primary)] bg-[var(--color-surface-1)] p-7",
+                  "sm:[&:not(:nth-child(2n))]:border-r-2 sm:[&:not(:nth-child(2n))]:border-[var(--color-text-primary)]",
+                  "lg:[&:not(:nth-child(3n))]:border-r-2 lg:[&:not(:nth-child(3n))]:border-[var(--color-text-primary)] lg:[&:nth-child(2n)]:!border-r-2 lg:[&:nth-child(3n)]:!border-r-0",
+                  "transition-[background-color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)]",
+                  "hover:bg-[var(--color-neon)] active:scale-[0.997]",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-neon-text)] focus-visible:ring-offset-2",
+                  "motion-reduce:transition-none",
+                )}
               >
-                <div>
-                  <span className="tabular text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-[var(--color-cyan-text)]">
-                    {ind.shortName}
-                  </span>
-                  <h2 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
-                    {ind.name}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute right-3 bottom-2 select-none font-[family-name:var(--font-display)] leading-none text-text-primary opacity-[0.04] transition-opacity group-hover:opacity-[0.09]"
+                  style={{ fontSize: "clamp(5rem, 10vw, 8rem)" }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-neon-text)] group-hover:text-text-primary">
+                  {ind.eyebrow}
+                </span>
+                <div className="relative z-10 mt-6 flex items-end justify-between gap-4">
+                  <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.05] tracking-tight text-text-primary">
+                    {ind.navLabel}
                   </h2>
-                  <p className="measure mt-3 text-[length:var(--text-secondary)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-                    {ind.tagline}
-                  </p>
-                </div>
-                <div className="mt-6 flex items-center justify-between border-t border-[var(--color-dark-border)] pt-4">
-                  <span className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-[var(--color-dark-text-dim)]">
-                    From {ind.pricing.price}
-                  </span>
+                  {/* Inline SVG (arrow-up-right) — keeps this Server Component
+                      free of the Phosphor icon import, which needs React
+                      context and only works in client components. */}
                   <svg
+                    viewBox="0 0 256 256"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
                     aria-hidden
-                    viewBox="0 0 16 16"
-                    className="h-4 w-4 text-[var(--color-dark-text-dim)] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--color-toxic-text)]"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    className="shrink-0 text-text-dim transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-text-primary"
                   >
-                    <path d="M4 12 12 4M6 4h6v6" />
+                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
                   </svg>
                 </div>
               </Link>
             ))}
           </div>
+
+          <p className="mt-10 text-[length:var(--text-secondary)] text-text-dim">
+            Don&apos;t see your line of business?{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
+            >
+              Tell us what you do
+            </Link>{" "}
+            — we&apos;ve probably branded something close.
+          </p>
         </Section>
-
-        <SectionSeparator id={4} />
-
-        <CustomQuoteCta
-          eyebrow="Don't see your industry?"
-          headline="We work with"
-          highlight="every kind of small business"
-          copy="Retail, professional services, real estate, nonprofits, salons, automotive, e-commerce — if you need branding, a website, or print, we've probably done it. Tell us your business and we'll come back with a tailored quote within 24 hours."
-        />
       </main>
       <Footer />
     </>

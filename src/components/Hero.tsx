@@ -100,30 +100,22 @@ export default function Hero() {
           <div className="animate-fade-up flex items-center gap-3 opacity-0 [animation-delay:80ms]">
             <span className="h-px w-8 bg-[var(--color-toxic)]" />
             <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-dark-text-secondary)]">
-              Cumming · Forsyth County · GA
+              Branding · Web · Print — one shop in Cumming, GA
             </span>
           </div>
 
-          {/* Cheeky setup line — pairs with the "resurrected." H1 payoff.
-              Swap the wording freely; keep it to one joke. */}
-          <p className="animate-fade-up mt-5 text-[length:var(--text-body)] font-medium leading-snug text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:120ms]">
-            Most local websites are already dead.
-          </p>
-
-          {/* Headline — display weight contrast on noun.
-              Size is scoped to the hero (slightly smaller than --text-display)
-              so the headline fits on narrow mobile without getting clipped,
-              and the leading is loosened to 1.05 so the two lines never kiss. */}
-          <h1 className="mt-6 font-[family-name:var(--font-display)] leading-[1.05] tracking-tight">
+          {/* Headline — punchy positioning. Two-line structure keeps the
+              layout (max-w, padding, CTA stack below) balanced. Underline
+              sits on the short word "small-town" so it never overflows a
+              narrow viewport (a nowrap on the full phrase would clip on
+              ~375px screens). */}
+          <h1 className="mt-7 font-[family-name:var(--font-display)] leading-[1.05] tracking-tight">
             <span className="animate-rise block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:160ms]">
-              Small businesses
+              Big-brand design for
             </span>
-            <span className="animate-rise mt-3 block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] opacity-0 [animation-delay:280ms]">
-              {/* Period lives inside the underlined inline-block so the
-                  toxic-green line extends under the full "resurrected." —
-                  matches the underline treatment used on other page headers. */}
-              <span className="relative inline-block whitespace-nowrap text-[var(--color-dark-text-primary)]">
-                resurrected.
+            <span className="animate-rise mt-3 block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:280ms]">
+              <span className="relative inline-block">
+                small-town
                 <span
                   aria-hidden
                   className="absolute -bottom-1 left-0 h-[3px] w-full origin-left scale-x-0 bg-[var(--color-toxic)]"
@@ -132,18 +124,19 @@ export default function Hero() {
                       "underline-reveal var(--duration-slower) var(--ease-out-expo) 700ms forwards",
                   }}
                 />
-              </span>
+              </span>{" "}
+              businesses.
             </span>
           </h1>
 
-          {/* Lead */}
+          {/* Lead — names exactly what we make and who it's for, then closes
+              with the "without the agency tax" contrast that lands the punch. */}
           <p className="animate-fade-up measure mt-8 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)] opacity-0 [animation-delay:520ms]">
-            Modern websites, AI workflows, and brand systems that outlive
-            trends —{" "}
+            Logos, websites, signs, and shirts for Cumming &amp; North Metro
+            Atlanta —{" "}
             <span className="text-[var(--color-dark-text-primary)]">
-              built in days, not months,
-            </span>{" "}
-            from right here in Cumming, Georgia.
+              without the agency price tag or the agency wait.
+            </span>
           </p>
 
           {/* CTAs */}

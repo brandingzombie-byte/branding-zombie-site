@@ -15,7 +15,7 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const PHONE_DISPLAY = "(770) 744-2536";
 export const PHONE_E164 = "+17707442536";
 export const PHONE_HREF = "tel:+17707442536";
-export const EMAIL = "brandingzombie@gmail.com";
+export const EMAIL = "hello@brandingzombiedesigns.com";
 export const CALENDLY_URL = "https://calendly.com/brandingzombie/15min";
 
 // Google Analytics 4 measurement ID. Public by design (visible in browser
