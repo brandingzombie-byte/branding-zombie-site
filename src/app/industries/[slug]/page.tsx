@@ -30,7 +30,10 @@ export async function generateMetadata({
 
   const url = `${SITE_URL}/industries/${industry.slug}`;
   return {
-    title: `${industry.seo.title} | ${BUSINESS_NAME}`,
+    // seo.title carries no brand suffix — the root layout title template
+    // ("%s | Branding Zombie Designs") appends it exactly once. Adding it here
+    // too produced a doubled "… | Branding Zombie Designs | Branding Zombie Designs".
+    title: industry.seo.title,
     description: industry.seo.description,
     keywords: industry.seo.keywords,
     alternates: { canonical: url },
