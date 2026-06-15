@@ -12,6 +12,8 @@ import ServiceFAQ from "@/components/services/ServiceFAQ";
 import RelatedServices from "@/components/services/RelatedServices";
 import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
 import ServiceJsonLd from "@/components/services/ServiceJsonLd";
+import ServiceAuthority from "@/components/services/ServiceAuthority";
+import ServiceComparison from "@/components/services/ServiceComparison";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
@@ -97,6 +99,7 @@ export default async function ServicePage({
       <main id="main-content" tabIndex={-1}>
         <ServicePageClient>
           <ServiceHero service={service} />
+          <ServiceAuthority slug={service.slug} />
           {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (
             <>
               <SectionSeparator id={7} />
@@ -155,6 +158,7 @@ export default async function ServicePage({
             </>
           )}
           <ServiceProcess service={service} />
+          <ServiceComparison slug={service.slug} />
           <SectionSeparator id={1} />
           <ServiceFAQ service={service} />
           <SectionSeparator id={6} />

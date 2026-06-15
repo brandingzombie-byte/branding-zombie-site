@@ -150,6 +150,12 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-[var(--color-hairline)] pt-6 text-[length:var(--text-caption)] text-text-dim sm:flex-row sm:items-center">
         <p className="tabular">© 2026 Branding Zombie Designs. All rights reserved.</p>
+        <a
+          href="/privacy"
+          className="text-text-dim hover:text-[var(--color-neon-text)]"
+        >
+          Privacy Policy
+        </a>
         <p>Cumming · Forsyth County · North Metro Atlanta</p>
       </div>
     </Section>

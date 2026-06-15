@@ -7,6 +7,7 @@ import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const navLinks = [
   { label: "Services", href: "/services" },
+  { label: "Industries", href: "/industries" },
   { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Blog", href: "/blog" },

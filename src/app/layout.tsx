@@ -25,6 +25,7 @@ import {
   GA_MEASUREMENT_ID,
 } from "@/lib/site";
 import { REVIEW_AVG, REVIEW_COUNT } from "@/data/reviews";
+import { OFFER_CATALOG } from "@/data/offer-catalog";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -170,6 +171,30 @@ const organizationSchema = {
   sameAs: SOCIAL_URLS,
 };
 
+// ─── Schema.org — Full offer catalog ──────────────────────────────────────
+// Every named capability, nested by group. Makes the complete offering
+// machine-readable to Google's Knowledge Graph and the indexes AI engines
+// ground on — so "who designs supplement labels near Cumming?" can resolve to
+// us. Built from the single-source-of-truth OFFER_CATALOG.
+const offerCatalogSchema = {
+  "@type": "OfferCatalog",
+  name: "Design, Web & Print Services",
+  itemListElement: OFFER_CATALOG.map((group) => ({
+    "@type": "OfferCatalog",
+    name: group.name,
+    description: group.blurb,
+    itemListElement: group.services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service,
+        provider: { "@id": LOCALBIZ_ID },
+        areaServed: { "@type": "State", name: "Georgia" },
+      },
+    })),
+  })),
+};
+
 // ─── Schema.org — LocalBusiness ────────────────────────────────────────────
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -274,6 +299,9 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "CPG Packaging Design" } },
   ],
+  hasOfferCatalog: offerCatalogSchema,
+  slogan: "Your Brand. Resurrected.",
+  knowsLanguage: ["en-US", "es"],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: REVIEW_AVG,
