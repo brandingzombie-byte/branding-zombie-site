@@ -54,8 +54,10 @@ next-env.d.ts
 # Sensitive business data — never publish
 /BZD Mailing List - leads-cumming-ga-2026-05-07.csv
 /outreach/
-/content/content-queue/
-/content/social-engine/
+# content/ is its own git repo (social-media engine) — keep ALL of it out of the
+# public site repo EXCEPT the published blog posts, which belong to the site.
+/content/*
+!/content/blog/
 /Moody_Brews_Coffee_Partnership_Offer.pdf
 /Moody_Brews_Coffee_Site_Audit_Proposal.pdf
 
