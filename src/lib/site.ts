@@ -25,7 +25,7 @@ export const GA_MEASUREMENT_ID = "G-07JZLLX2JT";
 // Microsoft Clarity project ID (heatmaps + session replay). Public by design.
 // Create a project at https://clarity.microsoft.com, paste the ID here, and it
 // activates on the next deploy. Leave empty to render no Clarity script.
-export const CLARITY_PROJECT_ID = "";
+export const CLARITY_PROJECT_ID = "x7ig4qdtj3";
 
 export const CITY = "Cumming";
 export const REGION = "GA";
