@@ -44,18 +44,18 @@ export async function generateMetadata({
   // the document <title>.
   const title = `${svc.label} in ${cityState} | ${svc.metaTagline} ${svc.priceAnchor}`;
   const ogTitle = `${title} | Branding Zombie Designs`;
-  const description = `${svc.label} for ${loc.city}, ${loc.county} small businesses — custom, fast, local-SEO-ready websites ${svc.priceAnchor}, delivered in ${svc.timeline}. You own every file. Free quote: call us.`;
+  const description = `${svc.label} for ${loc.city}, ${loc.county} businesses, ${svc.priceAnchor} — ${svc.summary}. Free quote from a local studio you can actually call.`;
 
   return {
     title,
     description,
     keywords: [
       `${svc.label.toLowerCase()} ${loc.city} GA`,
-      `${loc.city} web designer`,
-      `${loc.city} website design`,
-      `web design ${loc.county}`,
-      `small business website ${loc.city}`,
-      `website designer near ${loc.city}`,
+      `${loc.city} ${svc.label.toLowerCase()}`,
+      `${svc.label.toLowerCase()} ${loc.county}`,
+      `${svc.label.toLowerCase()} near ${loc.city}`,
+      `${loc.city} ${svc.metaTagline.toLowerCase()}`,
+      `small business ${svc.label.toLowerCase()} ${loc.city}`,
     ],
     alternates: { canonical: url },
     openGraph: {

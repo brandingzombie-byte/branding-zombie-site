@@ -27,7 +27,7 @@ export default function LocationJsonLd({
     "@type": "Service",
     "@id": `${pageUrl}#service`,
     name: serviceName,
-    description: `${svc.label} for ${loc.city}, ${loc.county} businesses — ${svc.summary}. ${svc.priceAnchor}, delivered in ${svc.timeline}. ${svc.ownershipLine}`,
+    description: `${svc.label} for ${loc.city}, ${loc.county} businesses — ${svc.summary}. ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${svc.ownershipLine}`,
     serviceType: svc.schema.serviceType,
     category: svc.schema.category,
     url: pageUrl,

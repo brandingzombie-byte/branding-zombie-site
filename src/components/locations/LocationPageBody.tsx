@@ -48,7 +48,7 @@ export default function LocationPageBody({
   );
   const reviews = (localReviews.length >= 2 ? localReviews : REVIEWS).slice(0, 3);
 
-  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is ${svc.summary}, built for ${loc.city} and ${loc.county} small businesses ${svc.priceAnchor}, and delivered in ${svc.timeline}. ${loc.introHook} ${svc.ownershipLine}`;
+  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is ${svc.summary}, built for ${loc.city} and ${loc.county} small businesses ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${loc.introHook} ${svc.ownershipLine}`;
   const heroSubhead = svc.heroSubhead.replace("{city}", loc.city);
 
   const allFaqs = [...loc.cityFaqs, ...svc.serviceFaqs];
@@ -84,7 +84,7 @@ export default function LocationPageBody({
               </span>
             </h1>
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              {heroSubhead} {svc.priceAnchor}, delivered in {svc.timeline}.
+              {heroSubhead} {svc.priceAnchor}, {svc.deliveryPhrase}.
             </p>
             <p className="mt-4 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-secondary)]/80">
               {svc.priceAnchor} · {svc.timeline} delivery · 5.0★ on Google
