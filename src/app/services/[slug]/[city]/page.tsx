@@ -42,7 +42,7 @@ export async function generateMetadata({
   // brand is intentionally omitted here to avoid a doubled suffix. The og/twitter
   // titles below use `.absolute`-style full strings since the template only wraps
   // the document <title>.
-  const title = `${svc.label} in ${cityState} | Custom Websites ${svc.priceAnchor}`;
+  const title = `${svc.label} in ${cityState} | ${svc.metaTagline} ${svc.priceAnchor}`;
   const ogTitle = `${title} | Branding Zombie Designs`;
   const description = `${svc.label} for ${loc.city}, ${loc.county} small businesses — custom, fast, local-SEO-ready websites ${svc.priceAnchor}, delivered in ${svc.timeline}. You own every file. Free quote: call us.`;
 

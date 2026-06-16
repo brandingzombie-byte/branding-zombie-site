@@ -27,39 +27,6 @@ function Check() {
   );
 }
 
-const PROCESS: { step: string; title: string; body: (noun: string) => string }[] = [
-  {
-    step: "01",
-    title: "Free discovery call",
-    body: (n) =>
-      `We talk through your business, your goals, and what your ${n} needs to do. No pressure, no jargon — and a flat quote before anything starts.`,
-  },
-  {
-    step: "02",
-    title: "Strategy & wireframes",
-    body: () =>
-      "We map the pages, the messaging, and the path to a call or sale, so the design solves a business problem instead of just looking nice.",
-  },
-  {
-    step: "03",
-    title: "Design in the browser",
-    body: () =>
-      "You see real, responsive pages early — not a static mockup — so we can react to how it actually feels on a phone and a desktop.",
-  },
-  {
-    step: "04",
-    title: "Build, copy & QA",
-    body: (n) =>
-      `We write the copy, build it fast and clean, wire up local SEO and analytics, and test the ${n} on every screen before it goes live.`,
-  },
-  {
-    step: "05",
-    title: "You launch — and own it",
-    body: (n) =>
-      `We launch, hand over the domain, hosting, and files, and show you how to run it. The ${n} is yours, free and clear.`,
-  },
-];
-
 export default function LocationPageBody({
   svc,
   loc,
@@ -81,7 +48,8 @@ export default function LocationPageBody({
   );
   const reviews = (localReviews.length >= 2 ? localReviews : REVIEWS).slice(0, 3);
 
-  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is custom, conversion-focused ${svc.noun} design and development for ${loc.city} and ${loc.county} small businesses — mobile-first, local-SEO-ready, ${svc.priceAnchor}, and delivered in ${svc.timeline}. ${loc.introHook} You own the ${svc.noun}, the domain, and every file on handoff.`;
+  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is ${svc.summary}, built for ${loc.city} and ${loc.county} small businesses ${svc.priceAnchor}, and delivered in ${svc.timeline}. ${loc.introHook} ${svc.ownershipLine}`;
+  const heroSubhead = svc.heroSubhead.replace("{city}", loc.city);
 
   const allFaqs = [...loc.cityFaqs, ...svc.serviceFaqs];
 
@@ -116,10 +84,7 @@ export default function LocationPageBody({
               </span>
             </h1>
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              Custom, fast, conversion-built websites for {loc.city} businesses —
-              designed and built by one senior designer, not an agency assembly
-              line. {svc.priceAnchor}, delivered in {svc.timeline}, and you own
-              every file.
+              {heroSubhead} {svc.priceAnchor}, delivered in {svc.timeline}.
             </p>
             <p className="mt-4 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-secondary)]/80">
               {svc.priceAnchor} · {svc.timeline} delivery · 5.0★ on Google
@@ -328,7 +293,7 @@ export default function LocationPageBody({
           How we build your {loc.city} {svc.noun}
         </h2>
         <ol className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-md border border-[var(--color-hairline-strong)] bg-[var(--color-hairline-strong)] sm:grid-cols-2 lg:grid-cols-5">
-          {PROCESS.map((p) => (
+          {svc.process.map((p) => (
             <li key={p.step} className="bg-mist p-6">
               <div className="font-[family-name:var(--font-display)] text-[length:var(--text-h4)] text-[var(--color-neon-text)]">
                 {p.step}
@@ -337,7 +302,7 @@ export default function LocationPageBody({
                 {p.title}
               </h3>
               <p className="mt-2 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
-                {p.body(svc.noun)}
+                {p.body}
               </p>
             </li>
           ))}
