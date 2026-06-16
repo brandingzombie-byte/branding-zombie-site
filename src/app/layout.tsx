@@ -11,6 +11,12 @@ import {
   ORG_ID,
   LOCALBIZ_ID,
   WEBSITE_ID,
+  FOUNDER_ID,
+  FOUNDER_JOB_TITLE,
+  FOUNDER_IMAGE,
+  FOUNDER_DESCRIPTION,
+  FOUNDER_KNOWS_ABOUT,
+  FOUNDER_SAME_AS,
   PHONE_E164,
   EMAIL,
   CITY,
@@ -153,11 +159,7 @@ const organizationSchema = {
   image: `${SITE_URL}/assets/og-image.png`,
   description:
     "Full-service design studio in Cumming, GA — web design, AI workflow integration, logo and brand identity, packaging, print, Shopify ecommerce, and social media for small businesses across North Metro Atlanta.",
-  founder: {
-    "@type": "Person",
-    name: "Gerry Betancourt",
-    jobTitle: "Creative Director",
-  },
+  founder: { "@id": FOUNDER_ID },
   foundingLocation: {
     "@type": "Place",
     address: {
@@ -196,6 +198,34 @@ const offerCatalogSchema = {
   })),
 };
 
+// ─── Schema.org — Person (the founder, canonical site-wide node) ───────────
+// One node, one @id (FOUNDER_ID), referenced by Organization.founder,
+// LocalBusiness.founder, every blog author byline, and the /about ProfilePage.
+// Carries the photo + authoritative sameAs profiles (LinkedIn, Gumroad,
+// Instagram) that let AI engines verify "who is Gerry Betancourt?" and
+// attribute the studio's work to a real, named expert (E-E-A-T).
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": FOUNDER_ID,
+  name: FOUNDER_NAME,
+  url: `${SITE_URL}/about`,
+  image: FOUNDER_IMAGE,
+  jobTitle: FOUNDER_JOB_TITLE,
+  description: FOUNDER_DESCRIPTION,
+  worksFor: { "@id": ORG_ID },
+  founderOf: { "@id": ORG_ID },
+  knowsLanguage: ["en", "es"],
+  knowsAbout: FOUNDER_KNOWS_ABOUT,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: CITY,
+    addressRegion: REGION,
+    addressCountry: COUNTRY,
+  },
+  sameAs: FOUNDER_SAME_AS,
+};
+
 // ─── Schema.org — LocalBusiness ────────────────────────────────────────────
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -211,6 +241,7 @@ const localBusinessSchema = {
   image: `${SITE_URL}/assets/og-image.png`,
   logo: `${SITE_URL}/assets/brand-icon-1024.png`,
   parentOrganization: { "@id": ORG_ID },
+  founder: { "@id": FOUNDER_ID },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cumming",
@@ -380,6 +411,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         <script
           type="application/ld+json"

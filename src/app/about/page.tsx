@@ -9,11 +9,11 @@ import {
   SITE_URL,
   BUSINESS_NAME,
   FOUNDER_NAME,
-  ORG_ID,
+  FOUNDER_ID,
+  WEBSITE_ID,
 } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/about`;
-const PERSON_ID = `${SITE_URL}/#gerry`;
 
 export const metadata: Metadata = {
   title: `About ${FOUNDER_NAME} — ${BUSINESS_NAME} in Cumming, GA`,
@@ -53,33 +53,18 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+// This page is Gerry's authoritative profile. The full Person node (photo,
+// bio, expertise, sameAs) lives site-wide in layout.tsx under FOUNDER_ID; here
+// we declare a ProfilePage that points its mainEntity at that node — the modern,
+// non-duplicated pattern Google recommends for an "about the person" page.
+const profilePageSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": PERSON_ID,
-  name: FOUNDER_NAME,
+  "@type": "ProfilePage",
+  "@id": `${PAGE_URL}#profilepage`,
   url: PAGE_URL,
-  jobTitle: "Creative Director & Brand Strategist",
-  description:
-    "Creative director and marketing strategist with 15+ years launching brands across CPG, ecommerce, service, and local business categories. Founder of Branding Zombie Designs in Cumming, GA.",
-  worksFor: { "@id": ORG_ID },
-  knowsLanguage: ["en", "es"],
-  knowsAbout: [
-    "Brand identity design",
-    "Logo design",
-    "Packaging design",
-    "Shopify ecommerce",
-    "Product photography",
-    "Digital marketing",
-    "AI workflow integration",
-    "Small business branding",
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Cumming",
-    addressRegion: "GA",
-    addressCountry: "US",
-  },
+  name: `About ${FOUNDER_NAME} — ${BUSINESS_NAME}`,
+  mainEntity: { "@id": FOUNDER_ID },
+  isPartOf: { "@id": WEBSITE_ID },
 };
 
 const breadcrumbSchema = {
@@ -108,7 +93,7 @@ export default function AboutPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
       />
       <main id="main-content" tabIndex={-1}>
         <Section
