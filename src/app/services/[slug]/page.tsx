@@ -14,6 +14,7 @@ import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
 import ServiceJsonLd from "@/components/services/ServiceJsonLd";
 import ServiceAuthority from "@/components/services/ServiceAuthority";
 import ServiceComparison from "@/components/services/ServiceComparison";
+import LocationsServed from "@/components/locations/LocationsServed";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
@@ -162,6 +163,7 @@ export default async function ServicePage({
           <SectionSeparator id={1} />
           <ServiceFAQ service={service} />
           <SectionSeparator id={6} />
+          <LocationsServed slug={service.slug} />
           <RelatedServices slug={service.slug} />
           {(service.tiers || service.categoryBands) && (
             <>

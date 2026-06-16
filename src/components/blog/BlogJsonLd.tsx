@@ -1,6 +1,12 @@
 import type { Post } from "@/data/posts";
 import { getPostUrl } from "@/data/posts";
-import { SITE_URL, ORG_ID, BUSINESS_NAME, FOUNDER_NAME } from "@/lib/site";
+import {
+  SITE_URL,
+  ORG_ID,
+  BUSINESS_NAME,
+  FOUNDER_NAME,
+  FOUNDER_ID,
+} from "@/lib/site";
 
 /**
  * BlogPosting + Article JSON-LD for /blog/[slug].
@@ -28,6 +34,7 @@ export default function BlogJsonLd({ post }: { post: Post }) {
     wordCount: undefined, // computed at render time if we ever need it
     author: {
       "@type": "Person",
+      "@id": FOUNDER_ID,
       name: FOUNDER_NAME,
       url: `${SITE_URL}/about`,
     },

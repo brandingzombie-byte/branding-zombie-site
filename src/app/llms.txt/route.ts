@@ -18,11 +18,14 @@ import {
   REGION,
   AREAS_SERVED,
   GOOGLE_MAPS_LISTING_URL,
+  FOUNDER_SAME_AS,
 } from "@/lib/site";
 import { SERVICES } from "@/data/services";
 import { INDUSTRIES } from "@/data/industries";
 import { OFFER_CATALOG } from "@/data/offer-catalog";
 import { getAllPosts } from "@/data/posts";
+import { LOCATION_SERVICES } from "@/data/location-services";
+import { LOCATIONS } from "@/data/locations";
 
 export const dynamic = "force-static";
 
@@ -91,6 +94,38 @@ function buildLlmsTxt(): string {
     }
     out.push("");
   }
+
+  // ── Local / city pages (per-service, per-town landing pages) ──
+  const locServiceSlugs = Object.keys(LOCATION_SERVICES);
+  if (locServiceSlugs.length) {
+    out.push("## Local landing pages by city");
+    out.push("");
+    for (const slug of locServiceSlugs) {
+      const ls = LOCATION_SERVICES[slug as keyof typeof LOCATION_SERVICES];
+      if (!ls) continue;
+      out.push(`### ${ls.label} by town (${ls.priceAnchor}, ${ls.timeline})`);
+      for (const loc of LOCATIONS) {
+        out.push(
+          `- [${ls.label} in ${loc.city}, ${loc.state}](${SITE_URL}/services/${slug}/${loc.slug}): for ${loc.county} businesses — ${loc.localIndustries.slice(0, 3).join(", ")}, and more.`
+        );
+      }
+      out.push("");
+    }
+  }
+
+  // ── About the founder (named expert → E-E-A-T + person-entity grounding) ──
+  out.push(`## About the founder`);
+  out.push("");
+  out.push(
+    `${FOUNDER_NAME} is the creative director and founder of ${BUSINESS_NAME} — 15+ years launching brands across CPG, ecommerce, service, and local-business categories, from Fort Lauderdale's supplement scene to Cumming, Georgia. Every project is handled by ${FOUNDER_NAME} directly; clients work with the owner, not a junior or an offshore chain. Bilingual (English/Spanish).`
+  );
+  out.push("");
+  out.push(`Verified profiles for ${FOUNDER_NAME}:`);
+  for (const url of FOUNDER_SAME_AS) {
+    out.push(`- ${url}`);
+  }
+  out.push(`- About page: ${SITE_URL}/about`);
+  out.push("");
 
   // ── Service area ──
   out.push("## Service area");
