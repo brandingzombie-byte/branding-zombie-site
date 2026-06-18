@@ -88,9 +88,9 @@ export const metadata: Metadata = {
     google: "_h7e7IWOEOw2IEojHGS4K9FWJzlUqt76vz2oQH4bB7I",
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
-    shortcut: "/favicon.ico",
+    icon: [{ url: "/icon.svg?v=2", type: "image/svg+xml" }],
+    apple: { url: "/apple-touch-icon.png?v=2", sizes: "180x180" },
+    shortcut: "/favicon.ico?v=2",
   },
   manifest: "/manifest.json",
   openGraph: {
