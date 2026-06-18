@@ -6,6 +6,7 @@ export {
   List,
   X,
   XCircle,
+  MagnifyingGlass,
   Plus,
   Minus,
   ArrowLeft,
