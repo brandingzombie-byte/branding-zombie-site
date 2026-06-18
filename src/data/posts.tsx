@@ -6439,7 +6439,1273 @@ function HowToPickWebDesignCompanyContent() {
 
 // ─── POSTS registry ───────────────────────────────────────────────────────
 
+function ImproveVisibilityForsythContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          To improve online visibility for a Cumming, GA business, do three
+          things first:
+        </strong>{" "}
+        claim and fully fill out your Google Business Profile, make sure your
+        website clearly says what you do and where you do it, and earn a handful
+        of real local reviews. That combination is what gets you onto
+        Google&apos;s map, into local search results, and now into AI answers
+        when someone asks an assistant for a recommendation. I&apos;m Gerry
+        Betancourt at Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA, and below is the exact order I&apos;d tackle it in if
+        you&apos;re just getting started.
+      </p>
+
+      <p>
+        Most first-time owners think visibility means &quot;rank #1 on
+        Google.&quot; It&apos;s bigger than that now. It means showing up
+        everywhere your future customer is looking: the map, the search results,
+        and AI tools like ChatGPT and Google&apos;s AI Overviews.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Start with your Google Business Profile</strong> — it&apos;s
+            free and the single highest-leverage move for local visibility.
+          </li>
+          <li>
+            <strong>Say your city on your own site.</strong> Google can&apos;t
+            rank you for &quot;Cumming, GA&quot; if your pages never name it.
+          </li>
+          <li>
+            <strong>Write for AI answers too.</strong> Plain, answer-first copy
+            plus consistent NAP gets you recommended by ChatGPT and
+            Google&apos;s AI Overviews.
+          </li>
+          <li>
+            <strong>Earn real reviews and keep your NAP consistent.</strong> Both
+            are free ranking equity most owners leave on the table.
+          </li>
+          <li>
+            <strong>Give it a few months, not days</strong> — and you don&apos;t
+            need to pay for ads to start.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="why-hard">
+        Why Is It So Hard to Improve Online Visibility for a Cumming, GA
+        Business?
+      </h2>
+      <p>
+        Forsyth County is growing fast, and so is the competition. A lot of
+        established shops in Cumming and North Metro Atlanta have a decade-old
+        head start on Google.
+      </p>
+      <p>
+        The good news: most of them are coasting on outdated listings and slow
+        websites. The fundamentals still win, and most small businesses skip the
+        fundamentals. Here&apos;s what actually moves the needle, in priority
+        order.
+      </p>
+
+      <h2 id="step-1-gbp">
+        Step 1: Claim and Complete Your Google Business Profile
+      </h2>
+      <p>
+        This is the single highest-leverage thing you can do, and it&apos;s free.
+      </p>
+      <p>
+        Your Google Business Profile — the box that shows up with your hours,
+        photos, and reviews — is what feeds Google Maps and the &quot;near
+        me&quot; results. If it&apos;s missing, half-filled, or has the wrong
+        category, you&apos;re invisible to people searching right now.
+      </p>
+      <ul>
+        <li>Verify your business (Google mails or texts a code).</li>
+        <li>
+          Pick the most accurate primary category, then add relevant secondary
+          ones.
+        </li>
+        <li>
+          Fill in every field: hours, service area (list Cumming and Forsyth
+          County towns), phone, website.
+        </li>
+        <li>Add real photos — storefront, work, team, finished projects.</li>
+        <li>Post updates and respond to every review.</li>
+      </ul>
+      <p>
+        A complete profile beats a half-empty one almost every time. This is the
+        foundation of{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO in Cumming
+        </InternalLink>
+        , and it&apos;s where I tell every new client to start.
+      </p>
+
+      <h2 id="step-2-say-where">
+        Step 2: Make Your Website Actually Say Where You Are
+      </h2>
+      <p>
+        A surprising number of Cumming websites never mention the city. Google
+        can&apos;t rank you for &quot;Cumming, GA&quot; if your own site never
+        says it.
+      </p>
+      <p>
+        Your homepage should clearly state what you do, the cities you serve, and
+        a way to contact you — all above the fold on a phone. If a stranger
+        can&apos;t tell what you sell in five seconds, neither can Google&apos;s
+        bots or the AI tools reading your page.
+      </p>
+      <p>
+        If your current site is slow, confusing, or doesn&apos;t load right on
+        mobile, that&apos;s costing you. I broke down exactly how in{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how your website is costing you customers
+        </InternalLink>
+        . Clean, fast{" "}
+        <InternalLink href="/services/web-design">
+          small business web design
+        </InternalLink>{" "}
+        with your city woven in naturally does more for visibility than any
+        &quot;SEO hack.&quot; Not sure where your site stands? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> and
+        I&apos;ll tell you straight.
+      </p>
+
+      <h2 id="step-3-ai">Step 3: Get Found in AI Answers, Not Just Google</h2>
+      <p>
+        This is the new one, and it&apos;s already happening in Forsyth County.
+      </p>
+      <p>
+        When someone asks ChatGPT, Gemini, or Google&apos;s AI Overview
+        &quot;who&apos;s a good web designer in Cumming?&quot;, the assistant
+        pulls from your website text, your reviews, and structured info about
+        your business. If your site answers questions clearly and your name is
+        tied to your city across the web, AI tools start recommending you.
+      </p>
+      <p>
+        I wrote a full breakdown of this in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is calling your business
+        </InternalLink>
+        . The short version: write your pages in plain, answer-first language,
+        keep your name-address-phone consistent everywhere, and the same content
+        that helps real humans helps the robots recommend you. That&apos;s AEO
+        (answer engine optimization), and it&apos;s baked into how I build sites
+        now.
+      </p>
+
+      <h2 id="step-4-reviews">Step 4: Collect Real Local Reviews</h2>
+      <p>Reviews are a ranking signal and a trust signal at the same time.</p>
+      <p>
+        A steady trickle of honest reviews mentioning your service and your town
+        does double duty: it nudges your Google ranking up and gives AI tools
+        real human language to quote. Ask every happy customer. Make it easy with
+        a direct link. Reply to all of them, good and bad.
+      </p>
+
+      <h2 id="step-5-nap">Step 5: Stay Consistent Everywhere (NAP)</h2>
+      <p>
+        Your Name, Address, and Phone number need to match exactly across your
+        website, Google, Facebook, Yelp, and any directory.
+      </p>
+      <p>
+        If one listing says &quot;Suite 200&quot; and another doesn&apos;t, or
+        your number is formatted three different ways, Google gets less confident
+        you&apos;re a real, single business. Consistency is boring. It&apos;s
+        also free ranking equity most people leave on the table.
+      </p>
+
+      <h2 id="ads">Do I Need to Pay for Ads to Improve My Visibility?</h2>
+      <p>
+        No, not to start. Everything above is organic, meaning it&apos;s free
+        except your time. That&apos;s the right first investment — and if
+        you&apos;re launching from scratch, the{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        gets the whole foundation up at once.
+      </p>
+      <p>
+        Ads can speed things up once your foundation is solid, and I cover when
+        they make sense in{" "}
+        <InternalLink href="/blog/how-to-advertise-small-business-cumming-georgia">
+          how to advertise your small business in Cumming, Georgia
+        </InternalLink>
+        . But ads on a broken site or empty Google profile just pay to send
+        people somewhere that doesn&apos;t convert. Fix the base first.
+      </p>
+
+      <h2 id="how-long">How Long Does This Take?</h2>
+      <p>
+        Be honest with yourself: local visibility is a few months, not a few
+        days.
+      </p>
+      <p>
+        A complete Google Business Profile can start showing results in 2 to 6
+        weeks. Real ranking movement and AI recommendations usually take 3 to 6
+        months of consistent effort. Anyone promising you page one in a week is
+        selling smoke. I dig deeper into local rankings in{" "}
+        <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>
+        .
+      </p>
+
+      <h2 id="from-zero">What If I&apos;m Starting From Absolute Zero?</h2>
+      <p>
+        If you don&apos;t have a logo, a website, or a Google listing yet, you
+        don&apos;t need to buy eight separate things from eight vendors.
+      </p>
+      <p>
+        My{" "}
+        <InternalLink href="/startup-special">
+          Startup Special is $997
+        </InternalLink>
+        : logo + brand kit + 100 business cards + 100 flyers + a 1-page site with
+        a year of hosting, in about 10 days. It gives a brand-new business
+        everything it needs to be findable on day one, under one roof.
+      </p>
+      <p>
+        Ready to grow into more? Standalone{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+        scales up from there with full multi-page sites. And if you just need the
+        pieces,{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        starts at $750, full{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> ties it
+        together, and{" "}
+        <InternalLink href="/services/print-design">
+          print and signage
+        </InternalLink>{" "}
+        make you visible in the real world too.{" "}
+        <InternalLink href="/industries/trades-contractors">
+          Trades and contractors
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>{" "}
+        each get their own approach.
+      </p>
+      <p>
+        The one-shop advantage: logo, website, shirts, and signs from one
+        designer, one invoice. Your brand looks the same everywhere, which is
+        exactly what helps Google and AI trust who you are.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Still Invisible Out There?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Let&apos;s drag your business out of the search-results graveyard.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Get a free second opinion on what&apos;s holding your visibility back —
+          before your competitors figure it out. One designer, one invoice, zero
+          zombies running your marketing.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-google">
+        How do I get my business to show up on Google in Forsyth County?
+      </h3>
+      <p>
+        Claim and fully complete your Google Business Profile with the right
+        category, your service area, photos, and hours. Then make sure your
+        website names Cumming and Forsyth County, and collect real reviews. Those
+        three things drive most local map and search visibility.
+      </p>
+
+      <h3 id="faq-timeline">
+        How long does it take to improve online visibility?
+      </h3>
+      <p>
+        Expect a few months, not days. A complete Google Business Profile can
+        show early results in 2 to 6 weeks, while meaningful ranking and
+        AI-recommendation gains usually take 3 to 6 months of steady, consistent
+        effort. Anyone guaranteeing page one in a week isn&apos;t being honest.
+      </p>
+
+      <h3 id="faq-ads">Do I need to pay for ads to be found locally?</h3>
+      <p>
+        No. The strongest first steps — your Google Business Profile, a clear
+        local website, and real reviews — are free except your time. Ads can
+        accelerate growth later, but only after your foundation converts. Paying
+        to send traffic to a broken site wastes money.
+      </p>
+
+      <h3 id="faq-local-seo">
+        What is local SEO and do small businesses need it?
+      </h3>
+      <p>
+        Local SEO is optimizing so you appear when nearby people search for what
+        you offer, like &quot;web design Cumming GA.&quot; Yes, small businesses
+        need it. It&apos;s how you compete with bigger names by owning your
+        specific town and service area instead of the whole internet.
+      </p>
+
+      <h3 id="faq-chatgpt">How do I get found in ChatGPT or AI search?</h3>
+      <p>
+        Write your website in clear, answer-first language, keep your name,
+        address, and phone consistent everywhere, and earn real reviews. AI
+        assistants pull from that data to recommend local businesses. The same
+        plain-English content that helps customers is what gets you quoted by AI.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs. Based
+        in Cumming, GA. Bilingual (English/Spanish), building brands, websites,
+        and signage for small businesses across Forsyth County and North Metro
+        Atlanta since 2015. Text or call (770) 744-2536.
+      </p>
+    </>
+  );
+}
+
+function CustomWebsiteVsSquarespaceContent() {
+  return (
+    <>
+      <p>
+        <strong>The honest answer on custom website vs Squarespace:</strong> over
+        three years the costs are closer than they look. Squarespace and Wix win
+        on the first month, but once you add transaction fees, paid apps, the
+        value of your own time, and the SEO ceiling, a custom site built in
+        Cumming, GA often lands in the same ballpark — and you own it for keeps.
+        This breakdown comes from Branding Zombie Designs, a graphic + web design
+        studio in Cumming, GA, and it&apos;s deliberately fair: for some
+        first-time owners, Squarespace is genuinely the right call.
+      </p>
+
+      <p>
+        If you&apos;re a first-time small business owner in Forsyth County staring
+        at a $16/mo plan and wondering why anyone pays thousands for a website,
+        this is the math nobody shows you up front.
+      </p>
+
+      <p>
+        <em>
+          Note: all builder pricing below is approximate public pricing as of
+          2026 — always check the current rate before you sign up.
+        </em>
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>
+              Month one, Squarespace wins. Year three, it&apos;s close.
+            </strong>{" "}
+            Fees, apps, and your time stack up.
+          </li>
+          <li>
+            <strong>A DIY builder often lands in the same 3-year range</strong> as
+            a mid-tier custom site — then keeps charging in year four.
+          </li>
+          <li>
+            <strong>On a builder you rent; with a custom build you own</strong>{" "}
+            the site and the domain.
+          </li>
+          <li>
+            <strong>AI search rewards custom.</strong> Answer-first copy and clean
+            schema help you get picked by ChatGPT and Google&apos;s AI.
+          </li>
+          <li>
+            <strong>Squarespace is a smart first step</strong> — just rarely the
+            forever step once the site needs to earn.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="is-squarespace-cheaper">
+        Is Squarespace Really Cheaper Than a Custom Website?
+      </h2>
+      <p>
+        Month one? Absolutely. Year three? It depends — and &quot;it
+        depends&quot; is the whole point.
+      </p>
+      <p>
+        A DIY builder&apos;s sticker price is the monthly fee. But that fee is
+        rarely the real number. The real number includes the things that quietly
+        stack on top:
+      </p>
+      <ul>
+        <li>Transaction fees on lower-tier plans if you sell anything.</li>
+        <li>
+          Paid third-party apps and plugins to do what the template can&apos;t.
+        </li>
+        <li>
+          The hours <em>you</em> spend building, fixing, and updating it.
+        </li>
+        <li>
+          The cost of leads you don&apos;t get because the site ranks poorly.
+        </li>
+      </ul>
+      <p>
+        A custom site flips the shape of the cost. You pay more up front, then
+        very little after. So the comparison isn&apos;t &quot;$23/mo vs
+        $4,500&quot; — it&apos;s two different 3-year totals. Let&apos;s actually
+        run them.
+      </p>
+
+      <h2 id="squarespace-3-year-cost">
+        How Much Does Squarespace Really Cost Over 3 Years?
+      </h2>
+      <p>
+        Here&apos;s a realistic 3-year picture for a small service or retail
+        business. Builder numbers are approximate public ranges — check current
+        pricing. The custom figures use only Branding Zombie Designs pricing.
+      </p>
+      <ul>
+        <li>
+          <strong>Plan / build:</strong> Squarespace ~$23/mo Business (billed
+          annually) ≈ $828; Wix ~$27/mo ≈ $972; custom is a one-time build from
+          $1,500 (tiers $2,500 / $4,500 / $7,500+).
+        </li>
+        <li>
+          <strong>Transaction fees:</strong> 3% on Squarespace&apos;s Business
+          plan ($0 on higher Commerce tiers); varies on Wix; $0 on a custom build
+          where you pick your own processor.
+        </li>
+        <li>
+          <strong>Paid apps / add-ons:</strong> ~$5–$30/mo each is common on
+          builders (booking, popups, reviews) ≈ $180–$1,080 over three years; on a
+          custom site these are built into scope, not rented monthly.
+        </li>
+        <li>
+          <strong>Hosting:</strong> included in builder plans; on a custom build,
+          optional maintenance runs ~$100/mo and hosting is often bundled.
+        </li>
+        <li>
+          <strong>Your time:</strong> 20–40+ hours to DIY-build and maintain. At
+          $50/hr that&apos;s $1,000–$2,000+. On a custom build it&apos;s done for
+          you.
+        </li>
+        <li>
+          <strong>Rough 3-year total:</strong> Squarespace ~$2,000–$4,000+; Wix
+          ~$2,000–$4,500+; custom ~$1,500–$7,500 one-time plus optional upkeep.
+        </li>
+      </ul>
+      <p>
+        Read that last line twice. The &quot;cheap&quot; builder and a mid-tier
+        custom build can land in the same range over three years — and the
+        builder total keeps climbing in year four, while the custom build is
+        already paid for.
+      </p>
+      <p>
+        The variable that swings it most isn&apos;t the monthly fee. It&apos;s{" "}
+        <strong>your time</strong>, and whether the site actually earns. For a
+        deeper local breakdown, see{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          what a website really costs in Cumming, GA for 2026
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="custom-cost-cumming">
+        What Does a Custom Website Cost in Cumming, GA?
+      </h2>
+      <p>
+        No mystery and no &quot;call us&quot; runaround. At Branding Zombie
+        Designs,{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> is
+        priced in clear tiers:
+      </p>
+      <ul>
+        <li>
+          <strong>From $1,500</strong> — a focused 1–2 page site.
+        </li>
+        <li>
+          <strong>Around $2,500</strong> — up to 5 pages; the right fit for most
+          first-time businesses.
+        </li>
+        <li>
+          <strong>Around $4,500</strong> — our popular Growth tier, deeper local
+          SEO and structure.
+        </li>
+        <li>
+          <strong>$7,500+</strong> — e-commerce, booking systems, larger custom
+          builds.
+        </li>
+      </ul>
+      <p>Two bundles matter if you&apos;re launching from zero:</p>
+      <ul>
+        <li>
+          <strong>The Startup Special — $997.</strong> A budget launch: logo +
+          brand kit + 100 business cards + 100 flyers + a 1-page site with domain
+          and a year of hosting, in about 10 days. See{" "}
+          <InternalLink href="/startup-special">the Startup Special</InternalLink>
+          . (This is a 1-pager — not a full multi-page site.)
+        </li>
+        <li>
+          <strong>The Launch Package — $4,500.</strong> The full bundle: logo
+          suite, brand basics, a 5-page website, and a 90-day content calendar in
+          about 4 weeks. See{" "}
+          <InternalLink href="/services/launch-package">
+            the Launch Package
+          </InternalLink>
+          .
+        </li>
+      </ul>
+      <p>
+        Maintenance, if you want it, runs from about $100/mo. Want a number for
+        your exact scope?{" "}
+        <InternalLink href="/services/request-quote">
+          Request a quote
+        </InternalLink>{" "}
+        or text Gerry — no obligation.
+      </p>
+
+      <h2 id="is-custom-worth-it">
+        Custom Website vs Squarespace: Is the Custom Build Worth It?
+      </h2>
+      <p>
+        For some owners, no — and I&apos;ll say that plainly. For others, it pays
+        for itself in a quarter. The deciding factors:
+      </p>
+      <p>
+        <strong>Transaction and payment fees.</strong> If you sell online, a 3%
+        cut on a builder&apos;s lower tier is a tax on every order. On a custom
+        build you pick your own processor and keep the platform out of it.
+      </p>
+      <p>
+        <strong>App creep.</strong> Booking, reviews, popups, advanced forms — on
+        a builder these are monthly subscriptions that pile up. On a custom site
+        they&apos;re built into the scope once.
+      </p>
+      <p>
+        <strong>Your time.</strong> This is the big one. A DIY build and three
+        years of &quot;I&apos;ll just fix it myself at 11pm&quot; is real money.
+        If your time is worth $50–$100/hr to your business, every hour in the
+        template editor is a cost.
+      </p>
+      <p>
+        <strong>The SEO ceiling.</strong> Builder templates are fine, but they
+        share structure with thousands of identical sites and give you shallow
+        control over the technical SEO that wins local searches. In a competitive
+        Forsyth County category, that ceiling is the difference between getting
+        found and getting buried. If your current site isn&apos;t pulling leads,
+        here&apos;s{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how a weak site quietly costs you customers
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="ai-pick">
+        Will a Squarespace Site Get Picked by ChatGPT and Google AI?
+      </h2>
+      <p>
+        This is the dimension nobody priced into a website three years ago, and
+        it&apos;s now one of the biggest. More people ask ChatGPT, Gemini, and
+        Google&apos;s AI Overview &quot;who&apos;s a good web designer near
+        Cumming?&quot; instead of scrolling ten blue links.
+      </p>
+      <p>
+        To get picked by those answers, your site needs plain, answer-first
+        content and clean, well-structured code with proper schema markup.
+        Builder templates can do <em>some</em> of this, but you&apos;re working
+        within their boxes — and the answer-first writing and schema that AI
+        engines reward are exactly where a thoughtful custom build pulls ahead.
+      </p>
+      <p>
+        This is the single fastest-moving reason the custom website vs Squarespace
+        math is shifting. We broke down what AI search means for local businesses
+        in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is already calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="who-owns">
+        Who Owns Your Website on Squarespace vs a Custom Build?
+      </h2>
+      <p>
+        Here&apos;s the line that should decide more than it does: on Squarespace
+        or Wix, you&apos;re <strong>renting</strong>. Stop paying and the site
+        goes dark. You can export some content, but the design, the structure, and
+        the platform-specific pieces don&apos;t come with you cleanly.
+      </p>
+      <p>
+        With a custom build from Branding Zombie Designs, the finished site and
+        the domain are <strong>yours</strong>. Host it wherever you want, move it
+        whenever you want, hire whoever you want to touch it next. You own your
+        own front door.
+      </p>
+      <p>
+        That doesn&apos;t make Squarespace evil — renting is fine when you&apos;re
+        testing an idea. Just know which one you&apos;re signing up for.
+      </p>
+
+      <h2 id="when-squarespace">
+        So When Is Squarespace Actually the Right Call?
+      </h2>
+      <p>
+        I told you I&apos;d be fair. Here&apos;s the honest framework I&apos;d give
+        a friend in Cumming, GA.
+      </p>
+      <p>
+        <strong>Start on Squarespace or Wix if you are:</strong>
+      </p>
+      <ul>
+        <li>Very early — testing whether the business even has legs.</li>
+        <li>On a tiny budget with no cash for an up-front build.</li>
+        <li>Genuinely willing and able to DIY and keep it updated.</li>
+        <li>Not relying on the site for leads yet (word-of-mouth carries you).</li>
+      </ul>
+      <p>
+        <strong>Go custom when you are:</strong>
+      </p>
+      <ul>
+        <li>Counting on the site to actually generate calls and bookings.</li>
+        <li>Selling online and feeling the transaction-fee bite.</li>
+        <li>Tired of fighting the template editor on nights and weekends.</li>
+        <li>
+          Competing in a crowded Forsyth County category where SEO and AI
+          visibility decide who gets the call.
+        </li>
+        <li>Done renting — you want to own it.</li>
+      </ul>
+      <p>
+        Here&apos;s the pattern I see again and again in Forsyth County. An owner
+        starts on Squarespace to test the idea — smart move. Eighteen months in,
+        the orders are steady, the 3% fees sting, and a few paid apps are stacking
+        up on the monthly bill. That&apos;s the moment moving to an owned custom
+        build pays off — because the site has proven it earns.
+      </p>
+      <p>
+        Squarespace was the right <em>first</em> step. It just wasn&apos;t the
+        right <em>forever</em> step. Most growing businesses graduate — see{" "}
+        <InternalLink href="/blog/how-to-pick-a-web-design-company">
+          how to pick a web design company
+        </InternalLink>{" "}
+        when you do.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Not Sure Which Side of the Math You&apos;re On?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          We&apos;ll tell you straight — even if it&apos;s &quot;stay on
+          Squarespace for now.&quot;
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          When you&apos;re ready to own your site instead of renting it,
+          you&apos;ll get one designer, one invoice, and a build that&apos;s yours
+          for keeps — no monthly resurrection fees.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cheaper">Is Squarespace cheaper than a custom website?</h3>
+      <p>
+        Up front, yes — a Squarespace Business plan runs roughly $23/mo (billed
+        annually, approximate). But over three years, transaction fees, paid apps,
+        and your own build-and-upkeep time push the real total toward
+        $2,000–$4,000+, which often overlaps a mid-tier custom build you own
+        outright.
+      </p>
+
+      <h3 id="faq-switch">Can you switch from Squarespace to a custom site?</h3>
+      <p>
+        Yes. You can export your text content and images and rebuild on an owned
+        custom platform. Design and platform-specific features don&apos;t transfer
+        cleanly, so it&apos;s a rebuild, not a copy-paste. Most owners do this once
+        the site is proven and the monthly fees and limits start to pinch.
+      </p>
+
+      <h3 id="faq-seo">Is Wix or Squarespace better for SEO?</h3>
+      <p>
+        Both can rank, and both have improved. Squarespace tends to feel cleaner
+        structurally; Wix gives more layout freedom. But both share template-level
+        limits on the deep technical SEO and schema that win competitive local
+        searches. For a tough Cumming category, a custom build usually has the
+        higher ceiling.
+      </p>
+
+      <h3 id="faq-own">Do I own my Squarespace website?</h3>
+      <p>
+        You own your content, but not the site itself — you&apos;re renting the
+        platform. Stop paying and the live site comes down. You can export some
+        material, but the design and structure stay behind. With a custom build
+        from Branding Zombie Designs, the finished site and domain are fully yours.
+      </p>
+
+      <h3 id="faq-custom-cost">
+        What does a custom website cost in Cumming, GA?
+      </h3>
+      <p>
+        Custom web design in Cumming, GA starts around $1,500 for a 1–2 page site,
+        with tiers around $2,500, $4,500, and $7,500+ for larger and e-commerce
+        builds. The $997 Startup Special includes a 1-page site plus logo and
+        print. Optional maintenance runs from about $100/mo.
+      </p>
+
+      <h3 id="faq-worth-it">
+        Is a custom website worth it for a brand-new business?
+      </h3>
+      <p>
+        Not always. If you&apos;re testing an idea on a tiny budget and will DIY, a
+        builder is a smart first step. Go custom once the site needs to generate
+        leads, you&apos;re selling online, or you&apos;re done renting and want to
+        own what you built.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs. Based
+        in Cumming, GA. Bilingual (English/Spanish), building logos, websites,
+        signage, and apparel for small businesses across Forsyth County and North
+        Metro Atlanta since 2015. Text or call (770) 744-2536.
+      </p>
+    </>
+  );
+}
+
+function BestPlacesToPrintCummingContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          The short answer on the best places to print marketing materials in
+          Cumming, GA
+        </strong>{" "}
+        is that you have three realistic paths: a big-box office/print chain when
+        you need it cheap and fast, an online printer when you want the lowest
+        unit price and can wait on shipping, or a local design studio that builds
+        your files and runs the print together. Which one is &quot;best&quot;
+        depends entirely on the job. This guide comes from Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA, serving Forsyth
+        County and North Metro Atlanta — and it&apos;s written to help you pick,
+        not to push.
+      </p>
+
+      <p>
+        If you&apos;ve ever uploaded a logo to a print site and gotten back
+        something blurry, off-color, or cropped wrong, this is the breakdown
+        nobody hands you before you hit &quot;order.&quot;
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Big-box chain:</strong> fast and cheap, but you supply the
+            file and they print exactly what you give them.
+          </li>
+          <li>
+            <strong>Online printer:</strong> lowest unit price at volume, but slow
+            shipping and file prep is 100% on you.
+          </li>
+          <li>
+            <strong>Local design studio:</strong> one shop builds the file, proofs
+            the color, and runs the print.
+          </li>
+          <li>
+            <strong>The printer isn&apos;t what decides quality — the file is:</strong>{" "}
+            bleed, 300 DPI, and CMYK color.
+          </li>
+          <li>
+            <strong>Anything large-format or color-critical</strong> (signs,
+            vehicle lettering, labels, apparel) wants a designer.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="three-best-places">
+        The Three Best Places to Print Marketing Materials in Cumming, GA
+      </h2>
+      <p>
+        There&apos;s no single &quot;best&quot; shop — there&apos;s a best fit for
+        the job in front of you. Here are the three categories almost everyone in
+        Forsyth County ends up choosing between.
+      </p>
+      <p>
+        <strong>1. Big-box office and print chains.</strong> The kind of counter
+        you find inside office-supply and shipping stores. They&apos;re fast,
+        they&apos;re everywhere, and they&apos;re cheap for small, simple runs. The
+        catch: it&apos;s generic, the help is limited, and <strong>you</strong>{" "}
+        supply the print-ready file. Hand them a bad file and you&apos;ll get a bad
+        print — they print what you give them.
+      </p>
+      <p>
+        <strong>
+          2. Online print services (&quot;digital printing near me&quot;).
+        </strong>{" "}
+        The lowest unit price, period, especially at volume. Order business cards,
+        flyers, or stickers from your couch. The trade-offs: you wait on shipping
+        (sometimes a week or more), there&apos;s no local human to fix a problem,
+        and file prep is 100% on you. One wrong color profile and you&apos;ve paid
+        for a box of mistakes.
+      </p>
+      <p>
+        <strong>3. A local design studio that does design AND print.</strong> One
+        shop handles the file, the color, the proof, and the actual print run.
+        You&apos;re not gambling that your DIY file is right — the designer who
+        built your brand also manages the print. This is the lane Branding Zombie
+        Designs runs through an in-house{" "}
+        <InternalLink href="/services/print-design">print pipeline</InternalLink>:
+        you approve a proof, we handle the rest.
+      </p>
+      <p>
+        Here&apos;s the honest version: for 50 quick handouts, a chain is fine. For
+        5,000 stickers on a tight budget, online wins. For anything that
+        represents your brand and has to look right the first time, the studio path
+        saves you the do-over.
+      </p>
+
+      <h2 id="what-to-print">
+        What Marketing Materials Do Small Businesses Actually Print?
+      </h2>
+      <p>
+        Not everything needs a designer, and not everything is safe to DIY.
+        Here&apos;s the realistic list and where each one lands.
+      </p>
+      <ul>
+        <li>
+          <strong>Business cards</strong> — small, but the most-handed-out piece
+          you own. Design matters; the file has to be print-ready. Borderline DIY.
+        </li>
+        <li>
+          <strong>Flyers</strong> — easy to design badly, easy to print cheap. A
+          real designer earns their keep here on layout and hierarchy.
+        </li>
+        <li>
+          <strong>Banners and yard signs</strong> — large-format, so resolution
+          and bleed are unforgiving. Get the file wrong and the error is three feet
+          wide. Designer territory.
+        </li>
+        <li>
+          <strong>Vehicle and truck lettering</strong> — measured to your actual
+          vehicle, color-matched, weatherproof. This is not a DIY-from-a-template
+          job.
+        </li>
+        <li>
+          <strong>Labels and packaging</strong> — die-lines, material choice, and
+          color accuracy all matter.{" "}
+          <InternalLink href="/cpg-launch">Packaging design</InternalLink> for CPG
+          and supplement brands is its own craft. Designer required.
+        </li>
+        <li>
+          <strong>Menus</strong> — layout, photography, and durable stock for
+          restaurants. See{" "}
+          <InternalLink href="/industries/restaurants">
+            restaurant branding
+          </InternalLink>
+          . Designer recommended.
+        </li>
+        <li>
+          <strong>Door hangers</strong> — simple format, but layout and a clear
+          call-to-action still decide whether they get read or trashed.
+        </li>
+        <li>
+          <strong>Apparel (screen-print and embroidery)</strong> — shirts, hats,
+          polos. Artwork has to be prepped for the decoration method. Not a DIY
+          upload.
+        </li>
+      </ul>
+      <p>
+        The pattern: anything large-format, color-critical, or material-specific
+        (signs, vehicle lettering, labels, apparel) wants a designer. The small,
+        text-light stuff (a basic flyer, a quick batch of cards) is DIY-able if
+        your file is genuinely print-ready — which brings us to the part that
+        actually decides quality.
+      </p>
+
+      <h2 id="good-print-job">
+        What Makes a Good Print Job? (The Part Nobody Explains)
+      </h2>
+      <p>
+        This is where most &quot;the print came out wrong&quot; stories begin. Five
+        things decide whether your job looks sharp or sad, no matter where you
+        print it.
+      </p>
+      <p>
+        <strong>Print-ready files.</strong> A real print file needs{" "}
+        <strong>bleed</strong> (art extending past the trim line so there&apos;s no
+        white edge), high <strong>resolution</strong> (300 DPI at final size — a
+        logo pulled off your website is usually 72 DPI and will print fuzzy), and{" "}
+        <strong>CMYK</strong> color (print uses cyan-magenta-yellow-black, not the
+        RGB your screen uses). Most DIY disasters trace back to one of these three.
+      </p>
+      <p>
+        <strong>Color accuracy and proofing.</strong> The blue on your screen is
+        rarely the blue that prints. A proper proof — digital or physical — lets
+        you catch a color shift before you pay for 1,000 copies of the wrong shade.
+        Chains and online portals often skip a real proof; a studio builds it in.
+      </p>
+      <p>
+        <strong>Paper and material choice.</strong> Gloss vs. matte, card weight,
+        vinyl vs. coroplast for signs, the stock under your menu. The right
+        material is half the perceived quality. This is where local advice beats an
+        online dropdown menu.
+      </p>
+      <p>
+        <strong>Finishing.</strong> Rounded corners, soft-touch coating, foil,
+        die-cuts, grommets on a banner. Finishing is what makes a card feel
+        expensive — and it&apos;s easy to forget when you&apos;re ordering blind.
+      </p>
+      <p>
+        <strong>Turnaround.</strong> Be honest about your real deadline. Online
+        printing is cheap but slow; a local pipeline can move faster when you
+        actually need it this week. Tell whoever&apos;s printing the date before
+        you start.
+      </p>
+      <p>
+        Get these five right and almost any printer can do good work. Get them
+        wrong and even the best press prints your mistake perfectly.
+      </p>
+
+      <h2 id="same-shop">Why Hand the Files and the Print to the Same Shop?</h2>
+      <p>
+        Here&apos;s the failure mode the studio path is built to avoid. You hire
+        someone to make a logo. You take that file to a chain or an online portal.
+        The file isn&apos;t set up for <em>that</em> product — wrong color space,
+        no bleed, low resolution — and the print comes back off. Now you&apos;re
+        stuck between a designer who says &quot;the printer ruined it&quot; and a
+        printer who says &quot;you gave us the file.&quot;
+      </p>
+      <p>
+        When the designer who built your brand also runs the print, that handoff
+        gap disappears. The file is built correctly for the exact product, the
+        color is proofed against your brand, and one person owns the result.
+        That&apos;s the wedge at Branding Zombie Designs:{" "}
+        <strong>
+          logo + website + shirts + signs under one roof — one designer, one
+          invoice.
+        </strong>{" "}
+        We manage an in-house print pipeline, so your{" "}
+        <InternalLink href="/services/print-design">print and signage</InternalLink>{" "}
+        match your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink> and your{" "}
+        <InternalLink href="/services/web-design">website</InternalLink> instead of
+        drifting apart across three vendors.
+      </p>
+      <p>
+        For a new business especially, that consistency is the whole point of
+        branding. If three vendors each interpret your colors a little differently,
+        you don&apos;t have a brand — you have three close guesses. Keeping it under
+        one roof is also why our{" "}
+        <InternalLink href="/services/branding">branding work</InternalLink> tends
+        to actually look like a brand.
+      </p>
+
+      <h2 id="which-option">
+        When Each Printing Option in Cumming Is the Right Call
+      </h2>
+      <p>
+        To be fair, here&apos;s the framework I&apos;d give a friend in Forsyth
+        County.
+      </p>
+      <p>
+        <strong>Use a big-box chain when:</strong> you need a small run today, the
+        piece is simple, and you already have a clean, print-ready file. Quick
+        internal flyers, a last-minute batch of cards — fine.
+      </p>
+      <p>
+        <strong>Use an online printer when:</strong> unit price is everything,
+        you&apos;re ordering high volume (think a thousand stickers or postcards),
+        you can wait on shipping, and you&apos;re confident your file prep is
+        correct. Great for commodity print where the artwork is locked.
+      </p>
+      <p>
+        <strong>Use a local design studio when:</strong> the piece represents your
+        brand, you want it right the first time, you don&apos;t have a press-ready
+        file, or the job is color-critical or large-format (signs, vehicle
+        lettering, labels, apparel). Also when you&apos;d simply rather hand off the
+        whole thing and approve a proof.
+      </p>
+      <p>
+        If you&apos;re launching from zero and want the branding and the first
+        print run handled together, the{" "}
+        <InternalLink href="/startup-special">
+          Startup Special — $997
+        </InternalLink>{" "}
+        bundles a logo + brand kit + 100 business cards + 100 flyers + a 1-page
+        site with a year of hosting in about 10 days. Bigger launch? The{" "}
+        <InternalLink href="/services/launch-package">
+          Launch Package — $4,500
+        </InternalLink>{" "}
+        adds a logo suite, brand basics, a 5-page website, and a 90-day content
+        calendar. For anything else, just{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        — print is priced by the job, so I won&apos;t pretend there&apos;s a fixed
+        per-card number.
+      </p>
+
+      <h2 id="printing-cost">How Much Does Printing in Cumming, GA Cost?</h2>
+      <p>
+        Straight talk: unit price almost always favors online at high volume, and
+        local wins on convenience, color control, and not eating a botched run. But
+        the cheapest box of cards isn&apos;t cheap if you have to reprint it.
+      </p>
+      <p>
+        I won&apos;t quote a fake &quot;$X for 100 cards&quot; here, because real
+        print pricing depends on quantity, stock, size, finishing, and turnaround.
+        The honest move is to text Gerry your piece and quantity and get a real
+        number for <em>your</em> job. For local trades, restaurants, salons, and
+        CPG brands, that quote also factors in whether your files already exist or
+        need to be built. See{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          how a website costs out in Cumming
+        </InternalLink>{" "}
+        for how I price transparently across services — print works the same way.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Done Gambling on Uploads That Come Back Wrong?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Bring me the piece — I&apos;ll build the file, proof the color, and run
+          it.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          So what you hand out looks exactly like what you approved. No blurry
+          logos clawing their way back from the dead — just print that bites.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cards">Where can I print business cards in Cumming, GA?</h3>
+      <p>
+        You have three routes: a big-box office/print chain for a fast, simple
+        batch; an online printer for the lowest unit price on volume; or a local
+        design studio that builds the file and runs the print together. If your
+        card represents your brand and you want it right the first time, the studio
+        path avoids reprints.
+      </p>
+
+      <h3 id="faq-online-vs-local">Is it cheaper to print online or locally?</h3>
+      <p>
+        Online usually wins on raw unit price, especially at high volume, because
+        you&apos;re buying commodity print and waiting on shipping. Local printing
+        costs a bit more but adds proofing, color control, material advice, and
+        faster turnaround — and it saves the cost of reprinting a botched online
+        order. Cheapest isn&apos;t cheapest if you redo it.
+      </p>
+
+      <h3 id="faq-file-format">What file format do print shops need?</h3>
+      <p>
+        Most printers want a high-resolution PDF (300 DPI at final size) in CMYK
+        color with proper bleed and trim marks. Vector formats like AI or EPS are
+        ideal for logos and signage. A low-res JPG or PNG pulled from a website is
+        usually 72 DPI and prints blurry — that&apos;s the most common DIY mistake.
+      </p>
+
+      <h3 id="faq-design-and-print">Can someone design AND print my flyers?</h3>
+      <p>
+        Yes — that&apos;s the whole point of using a local design studio instead of
+        a chain. At Branding Zombie Designs, the same designer builds your
+        print-ready flyer file, proofs the color against your brand, and manages the
+        print run through our in-house print pipeline. One designer, one invoice, no
+        &quot;the file vs. the printer&quot; finger-pointing.
+      </p>
+
+      <h3 id="faq-how-fast">
+        How fast can I get marketing materials printed in Cumming, GA?
+      </h3>
+      <p>
+        It depends on the piece, the quantity, and the finishing. Simple jobs can
+        move in a few days; large-format signage, vehicle lettering, or custom
+        packaging takes longer. Online printing is cheap but slow once you count
+        shipping. Tell us your real deadline up front and we&apos;ll tell you
+        straight whether it&apos;s doable.
+      </p>
+
+      <h3 id="faq-need-designer">
+        Do I need a designer for yard signs and banners?
+      </h3>
+      <p>
+        For large-format work, yes — usually. Banners and yard signs are
+        unforgiving on resolution and bleed, and a small file error becomes a
+        three-foot-wide one. A designer sets the file up at the right size, color,
+        and material so it prints clean the first time.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs. Based
+        in Cumming, GA. Bilingual (English/Spanish), designing logos, websites,
+        signage, apparel, and print for small businesses across Forsyth County and
+        North Metro Atlanta since 2015. Text or call (770) 744-2536.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "best-places-to-print-marketing-materials-cumming",
+      title: "Best Places to Print Marketing Materials in Cumming, GA",
+      seoTitle:
+        "Best Places to Print Marketing Materials | Cumming GA | Branding Zombie Designs",
+      seoDescription:
+        "Where to print marketing materials in Cumming, GA: compare big-box chains, online printers, and a local design studio that handles your files and the print run.",
+      excerpt:
+        "A buyer's guide to the best places to print marketing materials in Cumming, GA — big-box chains, online printers, and a local studio that builds the file and runs the print together.",
+      keywords: [
+        "best places to print marketing materials in Cumming GA",
+        "print business cards Cumming GA",
+        "digital printing near me",
+        "printing in Cumming",
+        "packaging design",
+        "print design Cumming GA",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-18",
+      readingTimeMinutes: 8,
+      category: "Print & Signage",
+      tags: [
+        "print design",
+        "marketing materials",
+        "business cards",
+        "signage",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Best places to print marketing materials in Cumming, GA — Branding Zombie Designs",
+    },
+    Content: BestPlacesToPrintCummingContent,
+  },
+  {
+    meta: {
+      slug: "custom-website-vs-squarespace",
+      title:
+        "Custom Website vs Squarespace: The Real 3-Year Cost in Cumming, GA",
+      seoTitle:
+        "Custom Website vs Squarespace: 3-Year Cost, Cumming GA | Branding Zombie Designs",
+      seoDescription:
+        'Custom website vs Squarespace in Cumming, GA: over 3 years the "cheap" DIY builder often costs more once you count fees, apps, and your time. Real math inside.',
+      excerpt:
+        "An honest 3-year total-cost comparison of a custom website vs Squarespace (and Wix) for first-time owners in Cumming, GA — fees, apps, your time, SEO, AI visibility, and who owns it.",
+      keywords: [
+        "custom website vs squarespace",
+        "squarespace vs custom website cost",
+        "is squarespace cheaper than a custom website",
+        "wix vs squarespace seo",
+        "do I own my squarespace website",
+        "web design Cumming GA",
+        "website cost Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-17",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "custom website",
+        "Squarespace",
+        "Wix",
+        "website cost",
+        "web design",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Custom website vs Squarespace — the real 3-year cost in Cumming, GA — Branding Zombie Designs",
+    },
+    Content: CustomWebsiteVsSquarespaceContent,
+  },
+  {
+    meta: {
+      slug: "improve-online-visibility-forsyth",
+      title:
+        "How to Improve Your Small Business's Online Visibility in Cumming, GA",
+      seoTitle:
+        "Improve Online Visibility for a Cumming, GA Business | Branding Zombie Designs",
+      seoDescription:
+        "Want to improve online visibility for a Cumming, GA business? Start with your Google Business Profile, local SEO, and AI search. Here's the Forsyth County playbook.",
+      excerpt:
+        "The Forsyth County playbook to improve online visibility for a Cumming, GA business: Google Business Profile, a site that names your city, AI search, real reviews, and consistent NAP.",
+      keywords: [
+        "improve online visibility for a Cumming GA business",
+        "local SEO Cumming",
+        "get found on Google Forsyth County",
+        "Google Business Profile",
+        "AEO Cumming GA",
+        "web design Cumming GA",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-12",
+      readingTimeMinutes: 7,
+      category: "Local SEO",
+      tags: [
+        "local SEO",
+        "Google Business Profile",
+        "online visibility",
+        "Cumming GA",
+        "Forsyth County",
+        "AEO",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "How to improve online visibility for a Cumming, GA business — Branding Zombie Designs",
+    },
+    Content: ImproveVisibilityForsythContent,
+  },
   {
     meta: {
       slug: "logo-cost-cumming-ga",
