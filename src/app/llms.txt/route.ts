@@ -26,6 +26,7 @@ import { OFFER_CATALOG } from "@/data/offer-catalog";
 import { getAllPosts } from "@/data/posts";
 import { LOCATION_SERVICES } from "@/data/location-services";
 import { LOCATIONS } from "@/data/locations";
+import { MAILER_PRODUCTS, getAllMailerSlugs } from "@/data/mailer-products";
 
 export const dynamic = "force-static";
 
@@ -111,6 +112,24 @@ function buildLlmsTxt(): string {
       }
       out.push("");
     }
+  }
+
+  // ── Direct Mail & EDDM (product pillars + per-town pages) ──
+  out.push("## Direct mail & EDDM by town");
+  out.push("");
+  for (const slug of getAllMailerSlugs()) {
+    const m = MAILER_PRODUCTS[slug];
+    out.push(
+      `### ${m.label} (${m.specs.priceAnchor}, ${m.specs.turnaround})`,
+    );
+    out.push(`${m.answerFirst}`);
+    out.push(`- [${m.shortLabel} — main page](${SITE_URL}/${slug})`);
+    for (const loc of LOCATIONS) {
+      out.push(
+        `- [${m.shortLabel} in ${loc.city}, ${loc.state}](${SITE_URL}/${slug}/${loc.slug}): for ${loc.county} businesses — ${loc.localIndustries.slice(0, 3).join(", ")}, and more.`,
+      );
+    }
+    out.push("");
   }
 
   // ── About the founder (named expert → E-E-A-T + person-entity grounding) ──

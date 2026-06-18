@@ -5,6 +5,7 @@ import { getAllPosts } from "@/data/posts";
 import { getAllIndustrySlugs } from "@/data/industries";
 import { getAllLocationServiceSlugs } from "@/data/location-services";
 import { getAllLocationSlugs } from "@/data/locations";
+import { getAllMailerSlugs } from "@/data/mailer-products";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
@@ -45,6 +46,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
+  // Direct Mail & EDDM: pillar pages + one variation per service-area city.
+  const mailerPillars = getAllMailerSlugs().map((slug) => ({
+    url: `${SITE_URL}/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+  const mailerCityPages = getAllMailerSlugs().flatMap((slug) =>
+    getAllLocationSlugs().map((city) => ({
+      url: `${SITE_URL}/${slug}/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    })),
+  );
+
   return [
     {
       url: SITE_URL,
@@ -73,6 +90,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...industryPages,
     ...servicePages,
     ...locationPages,
+    ...mailerPillars,
+    ...mailerCityPages,
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,
