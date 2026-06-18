@@ -61,4 +61,7 @@ export {
   Package,
   MagicWand,
   IdentificationBadge,
+
+  // Direct mail / EDDM
+  Target,
 } from "@phosphor-icons/react";

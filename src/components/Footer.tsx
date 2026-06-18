@@ -71,6 +71,22 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="/direct-mail"
+                className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
+              >
+                Direct Mail
+              </a>
+            </li>
+            <li>
+              <a
+                href="/eddm"
+                className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
+              >
+                EDDM
+              </a>
+            </li>
           </ul>
         </div>
 
