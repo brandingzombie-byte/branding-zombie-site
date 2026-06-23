@@ -10858,7 +10858,7 @@ export const POSTS: Post[] = [
       slug: "best-marketing-agencies-cumming-ga",
       title:
         "Best Marketing Agencies in Cumming, GA: How to Choose the Right Marketing Partner (2026)",
-      seoTitle: "Best Marketing Agencies in Cumming, GA (2026)",
+      seoTitle: "Best Marketing Agencies in Cumming, GA (2026) | Branding Zombie Designs",
       seoDescription:
         "How to pick the best marketing agency in Cumming, GA: agency vs. solo studio vs. freelancer, what each does, and the criteria to weigh for Forsyth County.",
       excerpt:
@@ -10896,7 +10896,7 @@ export const POSTS: Post[] = [
       slug: "marketing-plan-cumming-ga-business",
       title:
         "How to Create a Marketing Plan for a Cumming, GA Business (Step-by-Step, 2026)",
-      seoTitle: "How to Make a Marketing Plan: Cumming, GA",
+      seoTitle: "How to Make a Marketing Plan: Cumming, GA | Branding Zombie Designs",
       seoDescription:
         "How to create a marketing plan for a Cumming, GA business in 7 steps: goals, ICP, budget, local channel mix, and a simple 90-day cadence for Forsyth County.",
       excerpt:
@@ -10933,7 +10933,7 @@ export const POSTS: Post[] = [
       slug: "marketing-strategies-startups-cumming",
       title:
         "Effective Marketing Strategies for Startups & New Businesses in Cumming, GA (2026)",
-      seoTitle: "Startup Marketing Strategies: Cumming, GA",
+      seoTitle: "Startup Marketing Strategies: Cumming, GA | Branding Zombie Designs",
       seoDescription:
         "Marketing strategies for startups in Cumming, GA: free and low-cost levers first, then paid. What a brand-new Forsyth County business should do on a tight budget.",
       excerpt:
@@ -10969,7 +10969,7 @@ export const POSTS: Post[] = [
     meta: {
       slug: "business-signage-cumming-ga",
       title: "Business Signage in Cumming, GA: Types, Costs, and Who Makes It",
-      seoTitle: "Business Signage in Cumming, GA: Types & Costs",
+      seoTitle: "Business Signage in Cumming, GA: Types & Costs | Branding Zombie Designs",
       seoDescription:
         "A plain-English guide to business signage in Cumming, GA: yard signs, truck lettering, banners, and door hangers — what each does, rough costs, one shop.",
       excerpt:
@@ -11007,7 +11007,7 @@ export const POSTS: Post[] = [
       slug: "custom-apparel-embroidery-cumming",
       title:
         "Custom Apparel & Embroidery in Cumming, GA: Screen Print vs Embroidery, Minimums & More",
-      seoTitle: "Custom Apparel & Embroidery in Cumming, GA",
+      seoTitle: "Custom Apparel & Embroidery in Cumming, GA | Branding Zombie Designs",
       seoDescription:
         "Screen print vs embroidery for Cumming, GA businesses: when to use each, minimums, turnaround, and pairing branded apparel with your logo and signs. One shop.",
       excerpt:
@@ -11045,7 +11045,7 @@ export const POSTS: Post[] = [
       slug: "custom-golf-cart-wraps-cumming",
       title:
         "Custom Golf Cart Wraps in Cumming, GA: Wraps vs Paint, Design & Durability",
-      seoTitle: "Custom Golf Cart Wraps in Cumming, GA",
+      seoTitle: "Custom Golf Cart Wraps in Cumming, GA | Branding Zombie Designs",
       seoDescription:
         "Branding golf carts in Cumming, GA & Forsyth County: wraps vs paint, design tips, and durability — plus why a design studio handles the graphics best.",
       excerpt:
