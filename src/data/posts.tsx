@@ -8086,7 +8086,3112 @@ function AiLogoVsDesignerContent() {
   );
 }
 
+function MedSpaBrandingGaContent() {
+  return (
+    <>
+      <p>
+        <strong>Med spa branding</strong> is the complete visual system that
+        makes a medical aesthetics practice look both luxurious and clinically
+        trustworthy — the logo, color palette, typography, signage,
+        treatment-room collateral, and social templates that work together so a
+        first-time patient trusts you before they walk in. At Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA working with med
+        spas across Georgia and metro Atlanta, branding builds from{" "}
+        <strong>$3,000</strong>, with standalone logo design running{" "}
+        <strong>$750&ndash;$2,500</strong>.
+      </p>
+
+      <p>
+        That&apos;s the short answer. If you want to know what real med spa
+        branding includes, why template logos quietly cost you bookings, and
+        where the money actually goes, keep reading.
+      </p>
+
+      <h2 id="what-included">What does med spa branding include?</h2>
+      <p>
+        A med spa isn&apos;t a nail salon and it isn&apos;t a doctor&apos;s
+        office — it lives in between, and your branding has to sell both
+        feelings at once. Patients want pampering <em>and</em> proof you know
+        what you&apos;re doing with a laser.
+      </p>
+      <p>
+        Real <strong>med spa branding services</strong> cover:
+      </p>
+      <ul>
+        <li>
+          <strong>Logo suite.</strong> A primary mark plus stacked, horizontal,
+          icon-only, and one-color versions — so it works on a window, a robe
+          tag, an Instagram avatar, and a receipt.
+        </li>
+        <li>
+          <strong>Color and typography system.</strong> The palette and fonts
+          that signal &quot;luxury + clinical trust&quot; instead of
+          &quot;discount spa day.&quot;
+        </li>
+        <li>
+          <strong>Signage and exterior.</strong> Suite signage, window
+          lettering, and wayfinding that look intentional from the parking lot
+          in.
+        </li>
+        <li>
+          <strong>Interior collateral.</strong> Treatment menus, intake folders,
+          aftercare cards, gift cards, and pricing sheets that match the room.
+        </li>
+        <li>
+          <strong>Social and digital templates.</strong> Post layouts, story
+          frames, and before/after frames that stay on-brand without a designer
+          every time.
+        </li>
+      </ul>
+      <p>
+        When all of that comes from one studio, nothing clashes. Your sign, your
+        menu, and your Instagram all look like the same business — because they
+        are.
+      </p>
+
+      <h2 id="color-type">
+        Why does color and typography matter so much for a med spa?
+      </h2>
+      <p>
+        Because aesthetics <em>is</em> the product. A patient is trusting you
+        with their face. The visual signals do a lot of quiet work before anyone
+        says a word.
+      </p>
+      <p>
+        Get it right and the brand reads as expensive, calm, and competent. Get
+        it wrong — clip-art lotus flower, five competing fonts, a teal that
+        screams 2009 — and even great injectors look like a Groupon.
+      </p>
+      <p>
+        The luxury-clinical balance usually lives in restraint: a tight palette,
+        generous white space, one confident typeface paired with a clean
+        supporting font. The goal is a room a nervous first-timer feels safe in.
+        That&apos;s a design decision, not a coincidence.
+      </p>
+
+      <h2 id="templates-hurt">
+        Why do generic templates hurt med spa conversions?
+      </h2>
+      <p>
+        A $19 template logo and a canned color theme feel like a shortcut.
+        Here&apos;s the catch: every other new med spa in Georgia bought the same
+        shortcut.
+      </p>
+      <p>Generic branding hurts you three ways:</p>
+      <ul>
+        <li>
+          <strong>It looks like everyone else.</strong> When three med spas in
+          the same metro run near-identical &quot;elegant script + gold&quot;
+          templates, none of them stand out — and patients default to
+          whoever&apos;s cheapest.
+        </li>
+        <li>
+          <strong>It breaks on real surfaces.</strong> Template logos rarely
+          ship clean vector or one-color files, so they fall apart on signage,
+          embroidered robes, or a window decal.
+        </li>
+        <li>
+          <strong>It undercuts your prices.</strong> If your brand looks like a
+          $40 facial, patients hesitate at $600 injectables. Premium pricing
+          needs a premium-looking brand to back it up.
+        </li>
+      </ul>
+      <p>
+        You can charge medical-aesthetics prices, or you can look like a
+        template. Doing both is hard. For the practice-wide view of how this
+        fits your site and marketing, see our{" "}
+        <InternalLink href="/industries/medical-wellness">
+          medical &amp; wellness services
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="cost">How much does med spa branding cost in Georgia?</h2>
+      <p>
+        Honest ranges, not a hidden quote. Where you land depends on scope, not
+        vanity.
+      </p>
+      <p>
+        At Branding Zombie Designs,{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        tiers are:
+      </p>
+      <ul>
+        <li>
+          <strong>Starter — around $750.</strong> A clean, original logo with
+          core files. Good for a lean launch or a single-room studio.
+        </li>
+        <li>
+          <strong>Growth — around $1,500.</strong> The logo plus the full set of
+          formats and variations (stacked, horizontal, icon, one-color,
+          embroidery-ready).
+        </li>
+        <li>
+          <strong>Premium — around $2,500.</strong> A full visual identity:
+          logo, color palette, and font system so everything matches.
+        </li>
+      </ul>
+      <p>
+        Full <strong>brand identity</strong> for a med spa — identity plus the
+        collateral, signage layouts, and social templates that make it real
+        across every surface — builds from <strong>$3,000</strong>, scaling with
+        how many touchpoints you need.
+      </p>
+      <p>
+        Every number here is a starting range, not a fixed quote; scope moves
+        it. When you want a real figure for your practice, text Gerry at{" "}
+        <strong>{PHONE_DISPLAY}</strong> or{" "}
+        <InternalLink href="/services">request a quote</InternalLink>.
+      </p>
+
+      <h2 id="from-scratch">How do you brand a med spa from scratch?</h2>
+      <p>
+        If you&apos;re opening a new practice, the order matters. Build the
+        foundation before you buy a single sign.
+      </p>
+      <ol>
+        <li>
+          <strong>Define the position.</strong> Luxury day-spa feel, clinical
+          medical authority, or the blend in between? That decision drives every
+          color and font choice.
+        </li>
+        <li>
+          <strong>Build the logo suite first.</strong> Everything else
+          references it.
+        </li>
+        <li>
+          <strong>Lock the color and type system.</strong> Two or three colors,
+          one or two fonts. Discipline reads as luxury.
+        </li>
+        <li>
+          <strong>Apply it to the high-trust touchpoints.</strong> Signage,
+          treatment menu, intake forms, website — wherever a patient first
+          judges you.
+        </li>
+        <li>
+          <strong>Template the repeatable stuff.</strong> Social frames and
+          aftercare cards so staff can stay on-brand without a designer on call.
+        </li>
+      </ol>
+      <p>
+        Do it in this order and you avoid the expensive trap: rebranding in
+        eighteen months because the cheap logo couldn&apos;t scale to a sign.
+      </p>
+      <p>
+        <em>
+          (Yes, there&apos;s a zombie in our logo. No, we will not let your
+          brand look undead.)
+        </em>
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Make Your Brand Look as Good as Your Results
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          A brand that signals &quot;trust me with your face.&quot;
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          If your logo can&apos;t survive a suite sign, an embroidered robe, and
+          an Instagram grid, it&apos;s already half-dead. Let&apos;s build one
+          that looks as premium as your prices.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-what-is">What is med spa branding?</h3>
+      <p>
+        Med spa branding is the full visual identity of a medical aesthetics
+        practice — logo, colors, typography, signage, treatment-room collateral,
+        and social templates. Done well, it signals both luxury and clinical
+        trust, so patients feel confident before their first appointment.
+        It&apos;s the system that makes premium pricing believable.
+      </p>
+
+      <h3 id="faq-cost">How much does it cost to brand a med spa?</h3>
+      <p>
+        A standalone logo runs $750&ndash;$2,500 depending on tier, and full med
+        spa branding builds from $3,000 — covering the logo suite, color and
+        font system, signage layouts, collateral, and social templates. Final
+        cost depends on how many touchpoints your practice needs. Ranges are
+        starting points, not fixed quotes.
+      </p>
+
+      <h3 id="faq-template">
+        Why not just use a template logo for my med spa?
+      </h3>
+      <p>
+        Template logos look like every other new spa, rarely include clean
+        vector or one-color files, and break on signage or embroidery. Worse, a
+        cheap-looking brand makes patients hesitate at premium prices. Custom
+        branding for medical clinics protects both your differentiation and your
+        pricing power.
+      </p>
+
+      <h3 id="faq-colors">What colors work best for a med spa brand?</h3>
+      <p>
+        There&apos;s no single answer, but the winners use restraint — a tight
+        two-or-three-color palette that balances luxury (soft neutrals, warm
+        metallics, muted tones) with clinical calm. The bigger mistake is too
+        many colors and fonts, which reads cheap. A med spa branding agency in
+        Georgia tailors the palette to your specific positioning.
+      </p>
+
+      <h3 id="faq-full-or-logo">
+        Do I need full branding or just a logo to start?
+      </h3>
+      <p>
+        Start with at least a logo suite (Growth tier) so it scales to signage
+        and apparel. Add full brand identity when you&apos;re investing for the
+        long haul and will appear across a website, suite signage, menus, and
+        social. A logo opens the doors; a full system keeps everything looking
+        like one premium practice.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), he builds logos,
+        websites, signage, and apparel under one roof for small businesses and
+        med spas across Forsyth County, North Metro Atlanta, and Georgia since
+        2015. Text or call {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function MedSpaMarketingGaContent() {
+  return (
+    <>
+      <p>
+        <strong>Med spa marketing</strong> that works in Georgia isn&apos;t one
+        flashy tactic — it&apos;s a stack: a fully built Google Business Profile
+        and local SEO so nearby patients find you, compliant before/after
+        content that earns trust, real reviews, a referral loop, and paid ads
+        layered on once the basics are solid. At Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA working with med spas across
+        Georgia and metro Atlanta, we&apos;ll give you the honest version — not a
+        &quot;guaranteed 50 leads a month&quot; pitch.
+      </p>
+
+      <p>
+        That&apos;s the short answer. Below is what each piece actually does, in
+        the order most med spas should tackle them.
+      </p>
+
+      <h2 id="what-brings-clients">What actually brings in med spa clients?</h2>
+      <p>
+        Most patients book a med spa the same way they pick a restaurant: a
+        quick local search, a glance at reviews and photos, then a tap to book.
+        So the work is making sure you win that 30-second decision.
+      </p>
+      <p>The honest priority order for most Georgia med spas:</p>
+      <ol>
+        <li>
+          <strong>Google Business Profile + local SEO</strong> — the foundation.
+        </li>
+        <li>
+          <strong>Reviews</strong> — the trust multiplier, mostly free.
+        </li>
+        <li>
+          <strong>Before/after and educational content</strong> — proof you can
+          deliver.
+        </li>
+        <li>
+          <strong>Referrals and retention</strong> — your cheapest growth.
+        </li>
+        <li>
+          <strong>Paid ads and social</strong> — fuel, once the above is
+          working.
+        </li>
+      </ol>
+      <p>
+        Skip to paid ads first and you&apos;re pouring traffic into a leaky
+        bucket. Fix the foundation, then add fuel.
+      </p>
+
+      <h2 id="gbp">
+        Why is Google Business Profile the #1 med spa marketing tool?
+      </h2>
+      <p>
+        Because &quot;med spa near me&quot; and &quot;botox [your town]&quot;
+        searches are decided in the map pack — that little map with three
+        businesses at the top. Your <strong>Google Business Profile</strong>{" "}
+        (the old &quot;Google My Business&quot;) is what gets you there, and
+        it&apos;s free.
+      </p>
+      <p>A fully built profile for a med spa means:</p>
+      <ul>
+        <li>
+          Correct name, address, phone, and hours — matching your website
+          exactly.
+        </li>
+        <li>
+          The right primary category (e.g., &quot;Medical spa&quot;) plus
+          relevant secondary categories.
+        </li>
+        <li>Real photos: your suite, your team, your results — not stock.</li>
+        <li>Every service listed with descriptions.</li>
+        <li>
+          A steady trickle of honest reviews, and you replying to them.
+        </li>
+        <li>Service areas set to the Georgia towns you actually cover.</li>
+      </ul>
+      <p>
+        Most practices leave this half-built, which is great news — it&apos;s
+        the easiest place to beat competitors this week. For the deeper local
+        SEO playbook, see our{" "}
+        <InternalLink href="/blog/seo-cumming-ga">
+          SEO guide for Cumming, GA
+        </InternalLink>
+        . And because patients increasingly ask ChatGPT and Google&apos;s AI for
+        recommendations, a complete, consistent profile is also how you get
+        cited there — more in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          how Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="seo">How does med spa SEO work?</h2>
+      <p>
+        <strong>Med spa SEO</strong> is making your website and listings show up
+        when nearby patients search for treatments you offer. For a local
+        practice, that means local SEO — not national.
+      </p>
+      <p>The levers that move it:</p>
+      <ul>
+        <li>
+          <strong>Service pages.</strong> A real page for each major treatment
+          (Botox, fillers, laser, facials) instead of one vague
+          &quot;Services&quot; page. People search by treatment.
+        </li>
+        <li>
+          <strong>Location signals.</strong> Your town and county named
+          naturally across the site, plus a consistent name/address/phone
+          everywhere online.
+        </li>
+        <li>
+          <strong>Reviews and profile.</strong> They feed both rankings and
+          trust.
+        </li>
+        <li>
+          <strong>Helpful content.</strong> Answering the questions patients
+          actually type (&quot;how long does Botox last,&quot; &quot;is
+          microneedling worth it&quot;) earns rankings and AI citations.
+        </li>
+      </ul>
+      <p>
+        SEO is a flywheel, not a switch — plan on 3 to 6 months for real
+        movement. At Branding Zombie Designs, SEO lives inside{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing services
+        </InternalLink>{" "}
+        and pairs with the site itself, since a slow or confusing website caps
+        everything SEO can do.
+      </p>
+
+      <h2 id="before-after">
+        What are the before/after photo rules for med spas?
+      </h2>
+      <p>
+        Before/after content is the single most persuasive thing a med spa can
+        post — and the easiest to get wrong. Treat it carefully, because
+        you&apos;re handling sensitive patient information and medical claims.
+      </p>
+      <p>
+        Practical cautions (not legal advice — confirm with your own counsel and
+        your platform&apos;s rules):
+      </p>
+      <ul>
+        <li>
+          <strong>Get written consent.</strong> Always. A signed photo-release
+          that specifically covers marketing use, by channel.
+        </li>
+        <li>
+          <strong>Treat patient images as sensitive.</strong> A patient&apos;s
+          image tied to a treatment is identifiable, so clear written consent is
+          what makes sharing it appropriate.
+        </li>
+        <li>
+          <strong>Watch platform policies.</strong> Meta and Google restrict
+          &quot;before/after&quot; health and cosmetic-result ads. Organic posts
+          have more room than paid; know the line before you boost.
+        </li>
+        <li>
+          <strong>Avoid guarantees.</strong> &quot;Results vary&quot; isn&apos;t
+          filler — implying guaranteed outcomes invites trouble with both
+          regulators and unhappy patients.
+        </li>
+        <li>
+          <strong>Keep them real.</strong> No heavy filtering or borrowed stock
+          results. Patients and platforms both punish fakes.
+        </li>
+      </ul>
+      <p>
+        We keep your public site to non-PHI contact only, and we keep marketing
+        imagery to what you have clear, written consent to use — simple rules
+        that keep your site low-risk. Need full HIPAA-aware patient intake? We
+        can build or integrate that on request.
+      </p>
+      <p>
+        Done right, a consistent, on-brand before/after frame (part of your{" "}
+        <InternalLink href="/blog/med-spa-branding-georgia">
+          branding system
+        </InternalLink>
+        ) becomes your best salesperson.
+      </p>
+
+      <h2 id="reviews-referrals">
+        How do reviews and referrals grow a med spa?
+      </h2>
+      <p>
+        These are the cheapest, highest-trust growth levers you have, and most
+        practices under-use both.
+      </p>
+      <p>
+        <strong>Reviews.</strong> Just ask — at checkout, in a follow-up text,
+        on the aftercare card. Most happy patients will leave one if you make it
+        a two-tap process. Reply to every review, good or bad; it signals
+        you&apos;re present and professional. A steady flow beats a burst.
+      </p>
+      <p>
+        <strong>Referrals.</strong> Aesthetics runs on word of mouth. A simple
+        structured referral perk — a credit toward the next treatment for both
+        the referrer and the new patient — turns happy clients into a quiet
+        sales force. Pair it with a branded referral card at the front desk.
+      </p>
+      <p>
+        Retention matters just as much: a membership or rebooking nudge keeps a
+        patient&apos;s lifetime value climbing, which is what makes paid
+        acquisition pencil out later.
+      </p>
+
+      <h2 id="paid-ads">When should a med spa run paid ads?</h2>
+      <p>
+        After the foundation is solid — not before. Paid is fuel, and fuel on a
+        leaky bucket just burns money faster.
+      </p>
+      <p>
+        You&apos;re ready for <strong>med spa marketing services</strong> with
+        paid layered in when:
+      </p>
+      <ul>
+        <li>
+          Your Google Business Profile is fully built and collecting reviews.
+        </li>
+        <li>
+          Your website loads fast, looks the part, and lets people book online.
+        </li>
+        <li>
+          You have a clear offer (a new-patient promo, a seasonal package).
+        </li>
+      </ul>
+      <p>
+        Then paid search and social can amplify what&apos;s already converting.
+        Just remember the compliance line on cosmetic before/after ads, and
+        track real bookings — not vanity clicks. Honest providers promise
+        process and reporting, not a magic lead number.
+      </p>
+      <p>
+        <em>
+          (We do honest marketing. The only thing we resurrect is your booking
+          calendar.)
+        </em>
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Stop Renting All Your Traffic from Ads
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Build the foundation that books patients while you sleep.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Profile, reviews, a fast site, and content that earns trust. Local,
+          honest, no guaranteed-leads snake oil.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-how-market">How do I market a med spa in Georgia?</h3>
+      <p>
+        Start with the free foundation: fully build your Google Business
+        Profile, list every service, add real photos, and ask happy patients for
+        reviews. Then layer in local SEO, compliant before/after content, a
+        referral perk, and paid ads once the basics convert. Foundation first,
+        fuel second.
+      </p>
+
+      <h3 id="faq-most-effective">
+        What is the most effective med spa marketing?
+      </h3>
+      <p>
+        For most practices, a complete Google Business Profile plus a steady
+        stream of real reviews is the highest-ROI move — it wins the local map
+        pack with little or no spend. Compliant before/after content and
+        referrals come next. Paid ads work best layered on top, not as the
+        starting point.
+      </p>
+
+      <h3 id="faq-before-after-legal">
+        Can med spas post before-and-after photos legally?
+      </h3>
+      <p>
+        Generally yes, with written, marketing-specific patient consent, since a
+        treatment image is identifiable patient information. Avoid implying
+        guaranteed results, keep images unfiltered and real, and note that Meta
+        and Google restrict before/after health ads — organic posts have more
+        latitude than paid. Confirm specifics with your own counsel.
+      </p>
+
+      <h3 id="faq-cost">How much does med spa marketing cost in Georgia?</h3>
+      <p>
+        The free levers (Google Business Profile, reviews, referrals) cost only
+        time. Ongoing local SEO typically runs as a monthly service, and paid
+        ads add media spend on top. A medical spa marketing company in Georgia
+        should quote based on your scope and reporting — and never promise a
+        guaranteed lead count.
+      </p>
+
+      <h3 id="faq-how-long">How long until med spa marketing works?</h3>
+      <p>
+        Reviews and Google Business Profile improvements can move you in the map
+        pack within weeks. SEO and content build over 3 to 6 months and
+        compound. Paid ads can produce bookings quickly but stop the day you
+        stop paying. The mix gives you both quick wins and lasting growth.
+      </p>
+
+      <h3 id="faq-agency-or-diy">
+        Do I need an agency or can I do med spa marketing myself?
+      </h3>
+      <p>
+        Do the free basics yourself today — profile, reviews, consistent
+        name/address/phone, real photos. Hire out what eats your week or needs
+        expertise: ongoing SEO, content, ad management, and the strategy tying
+        it together. Many practices keep DIY basics and outsource the heavy
+        lifting.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), he handles branding,
+        websites, SEO, and print under one roof for small businesses and med
+        spas across Forsyth County, North Metro Atlanta, and Georgia since 2015.
+        Text or call {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function MedSpaWebDesignGaContent() {
+  return (
+    <>
+      <p>
+        A converting <strong>med spa website design</strong> in Georgia needs
+        five things working together: online booking front and center, a real
+        page for each service, before/after galleries, privacy-minded contact
+        and intake forms, and fast mobile load times. At Branding Zombie Designs,
+        a graphic + web design studio in Cumming, GA building sites for med spas
+        across Georgia and metro Atlanta, web design starts around{" "}
+        <strong>$1,500</strong>, with most med spa sites landing in the{" "}
+        <strong>$2,500 / $4,500 / $7,500+</strong> range depending on scope.
+      </p>
+
+      <p>
+        That&apos;s the short answer. Here&apos;s what each piece does, why it
+        matters for a med spa specifically, and what it costs.
+      </p>
+
+      <h2 id="what-needs">What does a converting med spa website need?</h2>
+      <p>
+        Your website has one job: turn a curious searcher into a booked
+        appointment. For a med spa, that means earning trust fast and removing
+        every excuse not to book.
+      </p>
+      <p>The non-negotiables:</p>
+      <ul>
+        <li>
+          <strong>Online booking</strong> — visible, fast, one or two taps.
+        </li>
+        <li>
+          <strong>Service pages</strong> — one per major treatment, with what it
+          does and roughly what it costs.
+        </li>
+        <li>
+          <strong>Before/after galleries</strong> — proof, handled compliantly.
+        </li>
+        <li>
+          <strong>Privacy-minded forms</strong> — contact and intake that
+          protect patient information.
+        </li>
+        <li>
+          <strong>Mobile speed</strong> — because most patients arrive on a
+          phone.
+        </li>
+        <li>
+          <strong>Trust signals</strong> — reviews, credentials, real photos of
+          your space and team.
+        </li>
+      </ul>
+      <p>
+        Miss any one and you leak bookings. Nail all six and the site quietly
+        sells for you around the clock. This ties directly to your{" "}
+        <InternalLink href="/services/web-design">web design service</InternalLink>
+        .
+      </p>
+
+      <h2 id="online-booking">
+        Why does online booking make or break a med spa site?
+      </h2>
+      <p>
+        Because the patient is ready <em>now</em>, and every extra step loses
+        some of them. A &quot;Call us during business hours&quot; site asks a
+        nervous first-timer to pick up the phone — many won&apos;t.
+      </p>
+      <p>
+        A real <strong>med spa booking website</strong> lets someone choose a
+        treatment, see open times, and lock an appointment in under a minute, on
+        their phone, at 11pm. That convenience is often the whole difference
+        between you and the competitor down the road.
+      </p>
+      <p>
+        Best practice: put a &quot;Book Now&quot; button in the header, repeat it
+        after every service description, and make sure it works flawlessly on
+        mobile. If booking is buried or clunky, the prettiest site in Georgia
+        still loses.
+      </p>
+
+      <h2 id="service-pages">
+        How should med spa service and pricing pages work?
+      </h2>
+      <p>
+        People search by treatment — &quot;Botox [town],&quot; &quot;laser hair
+        removal near me&quot; — not by your brand name. One catch-all
+        &quot;Services&quot; page can&apos;t rank for all of that, and it
+        doesn&apos;t answer the patient&apos;s specific question.
+      </p>
+      <p>Give each major treatment its own page:</p>
+      <ul>
+        <li>
+          <strong>What it is</strong> and what it treats, in plain language.
+        </li>
+        <li>
+          <strong>What to expect</strong> — time, downtime, sessions.
+        </li>
+        <li>
+          <strong>Roughly what it costs.</strong> A range or &quot;starting
+          at&quot; builds trust and filters tire-kickers. Hiding all pricing
+          makes people bounce.
+        </li>
+        <li>
+          <strong>A booking button</strong> right there.
+        </li>
+      </ul>
+      <p>
+        These pages do double duty: they answer real questions <em>and</em> give
+        search engines (and AI answer engines) something specific to rank and
+        cite. More on that angle in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          how Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="galleries-forms">
+        How do you handle before/after galleries and intake forms?
+      </h2>
+      <p>
+        This is where med spa sites differ from a normal small-business site —
+        you&apos;re handling sensitive patient information, so build with care.
+      </p>
+      <p>
+        <strong>Before/after galleries.</strong> Powerful, but only with
+        written, marketing-specific patient consent, since a treatment image is
+        identifiable patient information. Keep them real and unfiltered, and
+        avoid implying guaranteed results. We go deeper on the rules in{" "}
+        <InternalLink href="/blog/med-spa-marketing-georgia">
+          med spa marketing
+        </InternalLink>
+        .
+      </p>
+      <p>
+        <strong>Privacy-minded forms.</strong> A standard contact form emailing
+        intake details around in plain text is a problem. For anything
+        collecting health info, you want forms and a booking/intake flow built
+        with privacy in mind — secure handling, no sensitive data dumped into an
+        inbox, and a clear privacy notice.
+      </p>
+      <p>
+        For now, we keep your public website to non-PHI contact only — general
+        inquiries and booking requests, with no sensitive health information
+        collected on the page itself. That keeps your site clean and low-risk.
+        If your practice needs full patient intake, we can build or integrate a
+        more advanced, HIPAA-aware booking and intake solution — just ask, and
+        we&apos;ll scope it to what you actually need.
+      </p>
+
+      <h2 id="mobile-speed">
+        Why does mobile speed and design matter so much?
+      </h2>
+      <p>
+        Because the majority of &quot;med spa near me&quot; searches happen on a
+        phone, and a slow site loses people in seconds. If your homepage takes
+        five seconds to load on mobile data, a chunk of patients are gone before
+        they see your work.
+      </p>
+      <p>Mobile-first for a med spa means:</p>
+      <ul>
+        <li>Fast load — compressed images, clean code, no bloat.</li>
+        <li>A thumb-friendly &quot;Book Now&quot; always in reach.</li>
+        <li>
+          Galleries and service pages that look great on a small screen, not
+          just desktop.
+        </li>
+        <li>Tap-to-call and tap-for-directions that just work.</li>
+      </ul>
+      <p>
+        A gorgeous desktop site that crawls on a phone is a luxury brand with
+        its front door stuck. For the full breakdown on cost tiers and what
+        drives them, see{" "}
+        <InternalLink href="/blog/website-design-seo-cost">
+          what website design and SEO cost
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="best-sites">What makes the best med spa websites stand out?</h2>
+      <p>
+        The <strong>best med spa websites</strong> all do the same quiet things
+        well: they look as premium as the prices, they make booking effortless,
+        and they back it up with proof — real photos, real reviews, real
+        results. No stock-photo models in a generic template.
+      </p>
+      <p>
+        The thread tying it together is consistency. When your site, signage,
+        and social all share one visual identity, the brand feels established and
+        trustworthy — which is exactly what someone trusting you with their face
+        wants to feel. That&apos;s why site, branding, and marketing work best
+        from one studio: one designer, one invoice, everything pointing the same
+        direction.
+      </p>
+
+      <h2 id="cost">How much does a med spa website cost in Georgia?</h2>
+      <p>
+        Honest ranges. Standalone{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+        starts around <strong>$1,500</strong>, and most med spa sites land in
+        these tiers:
+      </p>
+      <ul>
+        <li>
+          <strong>Around $2,500</strong> — a clean, mobile-fast site with core
+          service pages and booking. Good for a new single-location practice.
+        </li>
+        <li>
+          <strong>Around $4,500</strong> — more service pages, galleries,
+          stronger SEO foundation, and polish.
+        </li>
+        <li>
+          <strong>$7,500+</strong> — larger multi-treatment practices, deeper
+          functionality, and integrations.
+        </li>
+      </ul>
+      <p>
+        Scope moves the number — page count, galleries, booking/intake
+        integrations, and how custom the design is. Every figure here is a
+        starting range, not a fixed quote. For a real number, text Gerry at{" "}
+        <strong>{PHONE_DISPLAY}</strong> or{" "}
+        <InternalLink href="/services">request a quote</InternalLink>.
+      </p>
+      <p>
+        <em>
+          (We build sites that book appointments while you sleep. The only thing
+          dead around here is the logo&apos;s expression.)
+        </em>
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          A Site That Books Patients While You Sleep
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Slow, hard to book on, or looks like a template?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          That&apos;s appointments handed to the competition. Let&apos;s fix it
+          — a fast, mobile-first med spa site built to convert.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cost">How much does a med spa website cost in Georgia?</h3>
+      <p>
+        Standalone web design starts around $1,500, and most med spa sites land
+        at roughly $2,500, $4,500, or $7,500+ depending on scope — page count,
+        before/after galleries, booking and intake integrations, and how custom
+        the design is. These are starting ranges, not fixed quotes; the right
+        figure depends on your practice.
+      </p>
+
+      <h3 id="faq-convert">What does a med spa website need to convert?</h3>
+      <p>
+        Front-and-center online booking, a dedicated page per major treatment
+        with rough pricing, compliant before/after galleries, privacy-minded
+        forms, fast mobile load times, and trust signals like real reviews and
+        photos. Miss any one and you leak bookings; nail all of them and the
+        site sells for you around the clock.
+      </p>
+
+      <h3 id="faq-booking">Do med spa websites need a booking system?</h3>
+      <p>
+        Yes. A med spa booking website that lets patients pick a treatment, see
+        open times, and book in under a minute on their phone dramatically
+        outperforms a &quot;call us&quot; site. Put a Book Now button in the
+        header and after every service, and make sure it works flawlessly on
+        mobile.
+      </p>
+
+      <h3 id="faq-privacy">How do med spa websites handle patient privacy?</h3>
+      <p>
+        We keep the public site to non-PHI contact only — no sensitive health
+        information collected in a plain web form. That&apos;s the simplest,
+        lowest-risk setup, and it&apos;s how we build med spa sites by default.
+        For practices that need full patient intake, we can integrate a more
+        advanced, HIPAA-aware booking and intake solution on request.
+      </p>
+
+      <h3 id="faq-best">What makes the best med spa websites stand out?</h3>
+      <p>
+        They look as premium as their prices, make booking effortless, load fast
+        on mobile, and back claims with real photos, reviews, and results. The
+        standouts share one consistent visual identity across site, signage, and
+        social — which reads as established and trustworthy to a first-time
+        patient.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), he builds websites,
+        branding, and print under one roof for small businesses and med spas
+        across Forsyth County, North Metro Atlanta, and Georgia since 2015. Text
+        or call {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function BestMarketingAgenciesCummingContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          The best marketing agency in Cumming, GA for your business is the one
+          whose model fits your stage and budget
+        </strong>{" "}
+        — a full-service agency for big recurring ad spend, a solo design studio
+        for branding-plus-website-plus-print under one roof, or a single-channel
+        freelancer for one narrow task. There is no single &quot;best&quot; for
+        everyone. The smarter question is which <em>type</em> of marketing
+        partner you actually need, then which provider in that category is clear
+        about deliverables, owns the work back to you, and knows Forsyth County.
+        Branding Zombie Designs, a graphic + web design studio in Cumming, GA,
+        fits the one-roof studio category — logo, website, SEO, signage,
+        apparel, and print from one designer on one invoice.
+      </p>
+
+      <p>
+        This is an honest roundup of how to choose, not a &quot;we&apos;re
+        #1&quot; pitch. Below: the three kinds of providers, what each is good
+        at, and the criteria a Forsyth County business should actually weigh.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>There&apos;s no single best agency for everyone.</strong>{" "}
+            Match the provider type to your stage, not the logo on the door.
+          </li>
+          <li>
+            <strong>Full-service agency</strong> = ongoing ad management;{" "}
+            <strong>solo studio</strong> = brand-plus-website-plus-print;{" "}
+            <strong>freelancer</strong> = one narrow task.
+          </li>
+          <li>
+            <strong>Price is the wrong first question.</strong> Ask about
+            deliverables, ownership, and local knowledge.
+          </li>
+          <li>
+            <strong>&quot;#1 on Google, guaranteed&quot; is a red flag.</strong>{" "}
+            Nobody controls Google.
+          </li>
+          <li>
+            <strong>In 2026, also ask about AEO</strong> — getting recommended by
+            ChatGPT and Gemini, not just ranked.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-agency-does">
+        What does a marketing agency in Cumming, GA actually do?
+      </h2>
+      <p>
+        &quot;Marketing&quot; is a wide word, so providers split into jobs.
+        Before you shop, figure out which jobs you&apos;re hiring for:
+      </p>
+      <ul>
+        <li>
+          <strong>Brand and identity</strong> — logo, colors, fonts, the look
+          that makes you recognizable.
+        </li>
+        <li>
+          <strong>Website</strong> — a fast, mobile site that ranks and turns
+          visitors into calls.
+        </li>
+        <li>
+          <strong>SEO / AEO</strong> — getting found on Google and now in AI
+          answers from ChatGPT and Gemini.
+        </li>
+        <li>
+          <strong>Paid ads</strong> — Google and social ads you pay for monthly.
+        </li>
+        <li>
+          <strong>Content and social</strong> — posts, graphics, and ongoing
+          publishing.
+        </li>
+        <li>
+          <strong>Print and signage</strong> — business cards, flyers, yard
+          signs, vehicle lettering, apparel.
+        </li>
+      </ul>
+      <p>
+        Almost nobody needs all six at once. Most Cumming small businesses need
+        two or three done well, in the right order. That ordering — brand first,
+        then website, then visibility — matters more than the logo on the
+        vendor&apos;s door.
+      </p>
+
+      <h2 id="agency-vs-studio-vs-freelancer">
+        Full-service agency vs. solo studio vs. freelancer
+      </h2>
+      <p>
+        The three common provider types in North Metro Atlanta each win in a
+        different situation.
+      </p>
+
+      <h3 id="full-service-agency">Full-service marketing agency</h3>
+      <p>
+        A bigger team with account managers, media buyers, and specialists. Best
+        when you have <strong>real recurring ad budget</strong> (think several
+        thousand a month) and want someone managing campaigns continuously.
+      </p>
+      <p>
+        Trade-offs: higher monthly retainers, more overhead, and you&apos;re
+        often a small fish among bigger clients. Great fit for a scaling
+        business; usually overkill for a startup or a single-location trade.
+      </p>
+
+      <h3 id="solo-studio">Solo design studio (one-roof)</h3>
+      <p>
+        A single experienced designer who handles brand, website, and the
+        tangible stuff — print, signage, apparel — together. Best when you want{" "}
+        <strong>everything to match and one person accountable</strong> instead
+        of stitching five vendors together.
+      </p>
+      <p>
+        Trade-offs: not built to run a giant daily ad-management operation. Great
+        fit for new and growing local businesses who need the foundation built
+        right once. This is the category Branding Zombie Designs sits in.
+      </p>
+
+      <h3 id="freelancer">Freelancer / single-channel specialist</h3>
+      <p>
+        One person doing one thing — just a logo, just ads, just a site. Best
+        when you have <strong>one narrow, well-defined task</strong> and already
+        own the rest of your brand.
+      </p>
+      <p>
+        Trade-offs: you become the project manager tying separate freelancers
+        together, and the pieces often don&apos;t match. Cheapest per task, most
+        coordination work for you.
+      </p>
+
+      <h2 id="how-to-choose">
+        How do I choose the best marketing agency in Cumming, GA?
+      </h2>
+      <p>Price is the wrong first question. Use these criteria instead:</p>
+      <ul>
+        <li>
+          <strong>Do they fit your stage?</strong> A startup needs foundation; a
+          scaling business needs campaign management. Match the model to where
+          you are.
+        </li>
+        <li>
+          <strong>Are deliverables specific?</strong> A real provider tells you
+          exactly what you get. Vague scopes mean vague work and surprise
+          invoices.
+        </li>
+        <li>
+          <strong>Do you own the work?</strong> Your logo files, website,
+          domain, and Google profile should stay yours, always. Walk if they
+          won&apos;t hand them over.
+        </li>
+        <li>
+          <strong>Do they know local?</strong> Forsyth County, Cumming, and the
+          GA-400 corridor have their own search patterns and customers. Local
+          context beats a generic national playbook.
+        </li>
+        <li>
+          <strong>Will they explain it plainly?</strong> You should understand
+          what you&apos;re paying for without a marketing degree.
+        </li>
+        <li>
+          <strong>Can they show real work?</strong> Ask for a portfolio of
+          businesses near here — not national vanity stats.
+        </li>
+      </ul>
+      <p>
+        Anyone promising &quot;#1 on Google, guaranteed&quot; is a no. Nobody
+        controls Google. Honest providers promise process and effort, not a
+        ranking.
+      </p>
+
+      <h2 id="where-studio-fits">Where does a one-roof studio fit?</h2>
+      <p>
+        If your main need is to look legitimate and get found locally — a clean
+        logo, a website that ranks, signage and shirts that match — a one-roof
+        studio is usually the most efficient choice for a Cumming small business.
+      </p>
+      <p>
+        The reason is simple: when your branding, site, signage, and print all
+        run through one designer, the files match, the timelines line up, and
+        you get one invoice instead of five. When those jobs are split across an
+        agency, a printer, a sign shop, and a freelancer, the seams show, and so
+        does the wasted cost.
+      </p>
+      <p>
+        That one-roof model is what Branding Zombie Designs does —{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>,{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>, and{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing / SEO
+        </InternalLink>
+        , plus signage, apparel, and print, from one person who&apos;s served
+        Forsyth County since 2015. For a brand-new business, the{" "}
+        <InternalLink href="/startup-special">
+          Startup Special starts at $997
+        </InternalLink>{" "}
+        and bundles a logo, brand kit, business cards, flyers, and a 1-page site
+        to launch consistent from day one. For a fuller build, the{" "}
+        <InternalLink href="/services/launch-package">
+          Launch Package
+        </InternalLink>{" "}
+        adds a 5-page website and a 90-day content calendar.
+      </p>
+
+      <h2 id="dont-forget-ai">
+        Don&apos;t forget AI: getting recommended, not just ranked
+      </h2>
+      <p>
+        Here&apos;s the part most &quot;best agency&quot; lists miss in 2026.
+        More customers now ask ChatGPT, Gemini, and Google&apos;s AI overviews
+        &quot;who should I hire to market my business in Cumming&quot; — and
+        those engines recommend whoever has the clearest, most consistent, most
+        trustworthy information across the web.
+      </p>
+      <p>
+        So when you evaluate any marketing partner in Cumming, GA, ask whether
+        they understand AEO (answer engine optimization), not just old-school
+        SEO. Getting <em>cited</em> in an AI answer is becoming as important as
+        ranking in blue links. We dig into exactly how this works in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="decide-this-week">A simple way to decide this week</h2>
+      <ol>
+        <li>
+          Write down the two or three jobs you actually need (brand? website?
+          ads? signage?).
+        </li>
+        <li>
+          Match those to a provider type — agency for ongoing ads, studio for
+          foundation-and-tangibles, freelancer for one narrow task.
+        </li>
+        <li>
+          Shortlist two or three providers and ask each the criteria questions
+          above.
+        </li>
+        <li>
+          Pick the one that&apos;s specific about deliverables, lets you own the
+          work, and clearly knows Forsyth County.
+        </li>
+      </ol>
+      <p>
+        Get the foundation built right once, and every dollar you spend on
+        visibility afterward works harder.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          One Designer, One Invoice
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Shopping for a marketing partner in Cumming?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          If your main need is to look legit and get found locally, most of it —
+          logo, website, SEO, signs, apparel, print — we do under one roof, so
+          you get one designer and one invoice instead of five vendors who never
+          match.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-best-agency">
+        What&apos;s the best marketing agency in Cumming, GA?
+      </h3>
+      <p>
+        There&apos;s no single best for everyone. Match the provider type to your
+        stage: a full-service agency for ongoing ad spend, a solo design studio
+        for brand-plus-website-plus-print under one roof, or a freelancer for one
+        narrow task. Then pick whoever is specific about deliverables and lets
+        you own the work.
+      </p>
+
+      <h3 id="faq-agency-vs-studio">
+        What&apos;s the difference between a marketing agency and a design studio?
+      </h3>
+      <p>
+        A full-service agency typically manages ongoing campaigns and ad spend
+        with a larger team. A solo design studio builds your foundation — logo,
+        website, signage, apparel — with one accountable person. Agencies suit
+        scaling budgets; studios suit new and growing local businesses needing it
+        built right once.
+      </p>
+
+      <h3 id="faq-cost">How much does digital marketing in Cumming, GA cost?</h3>
+      <p>
+        It varies by scope. Local SEO commonly runs $500&ndash;$1,500 per month
+        ongoing, logos start around $750, and websites commonly fall in the
+        $2,500&ndash;$7,500+ range. A budget launch like the Startup Special
+        starts at $997. Ask any provider for a written, specific quote rather
+        than a vague monthly number.
+      </p>
+
+      <h3 id="faq-who-to-hire">Who should I hire to market my business in Cumming?</h3>
+      <p>
+        Hire based on the jobs you need done. For foundation work — looking
+        legitimate and getting found locally — a one-roof studio is usually most
+        efficient. For heavy recurring ad management, an agency. For one narrow
+        task you can manage yourself, a freelancer. Always confirm you own the
+        finished work.
+      </p>
+
+      <h3 id="faq-ai-recommended">
+        How do I get my Cumming business recommended by ChatGPT or Gemini?
+      </h3>
+      <p>
+        AI engines recommend businesses with clear, consistent, trustworthy
+        information across the web — a complete Google Business Profile, a clean
+        website, real reviews, and content that plainly answers local questions.
+        That&apos;s AEO. Pick a marketing partner who understands it, not just
+        traditional SEO.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish —
+        call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function MarketingPlanCummingContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          To create a marketing plan for a Cumming, GA business, work through
+          seven steps in order:
+        </strong>{" "}
+        set one clear goal, define your ideal customer, set a realistic budget,
+        choose a local channel mix (Google Business Profile, website, signage,
+        apparel, social, print, reviews), build a simple 90-day cadence, assign
+        owners and deadlines, then review monthly and adjust. A plan for a
+        Forsyth County small business doesn&apos;t need to be a 40-page document
+        — it needs to be one page you actually follow. This step-by-step guide
+        is from Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA serving Forsyth County and North Metro Atlanta.
+      </p>
+
+      <p>
+        No theory, no jargon. Follow the steps below and you&apos;ll have a
+        working plan by the end of the week.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The 7 Steps
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>1. One clear goal</strong> — specific, with a number and a
+            date.
+          </li>
+          <li>
+            <strong>2. Define your ideal customer</strong> — who, where, what
+            they search.
+          </li>
+          <li>
+            <strong>3. Set a realistic budget</strong> — front-load one-time
+            assets first.
+          </li>
+          <li>
+            <strong>4. Choose a local channel mix</strong> — pick three or four,
+            not all of them.
+          </li>
+          <li>
+            <strong>5. Build a 90-day cadence</strong>, then{" "}
+            <strong>6. assign owners</strong> and{" "}
+            <strong>7. review monthly</strong>.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="step-1-goal">Step 1: Set one clear goal</h2>
+      <p>
+        Pick a single, measurable goal for the next 90 days. &quot;Grow the
+        business&quot; isn&apos;t a goal — &quot;book 15 new jobs&quot; or
+        &quot;get 25 new Google reviews&quot; is.
+      </p>
+      <p>
+        A good goal is specific, has a number, and has a date. One goal beats
+        five vague ones, because it tells you where to point your budget and your
+        time.
+      </p>
+      <p>
+        Write it at the top of your plan: <em>&quot;By [date], I want [number]
+        of [thing].&quot;</em>
+      </p>
+
+      <h2 id="step-2-icp">Step 2: Define your ideal customer (ICP)</h2>
+      <p>
+        You can&apos;t market to everyone, so describe the one customer you most
+        want more of. For a Cumming business, get local and specific:
+      </p>
+      <ul>
+        <li>
+          <strong>Who they are</strong> — homeowner, business owner, parent,
+          contractor?
+        </li>
+        <li>
+          <strong>Where they are</strong> — which Forsyth County zip codes
+          (30040, 30041, 30028)?
+        </li>
+        <li>
+          <strong>What they search</strong> — the exact words they&apos;d type,
+          like &quot;hvac repair Cumming&quot; or &quot;best coffee near me.&quot;
+        </li>
+        <li>
+          <strong>Where they hang out</strong> — Facebook community groups, ball
+          fields, church, neighborhood apps?
+        </li>
+      </ul>
+      <p>
+        This one paragraph decides almost everything else. Your channels, your
+        words, and your offers all flow from knowing exactly who you&apos;re
+        trying to reach.
+      </p>
+
+      <h2 id="step-3-budget">Step 3: Set a realistic budget</h2>
+      <p>
+        A common rule of thumb is <strong>5&ndash;10% of revenue</strong> for an
+        established business and <strong>10&ndash;20%</strong> when you&apos;re
+        new and growing fast. But for a local Cumming startup, the smartest early
+        move is front-loading <strong>one-time assets</strong> before recurring
+        ad spend.
+      </p>
+      <p>
+        Why? A logo, a website, a sign, and branded shirts keep working for years
+        with no monthly bill. That&apos;s the cheapest advertising there is.
+        Spend on those foundations first, then layer in monthly ads or SEO once
+        the foundation is solid.
+      </p>
+      <p>
+        Decide a rough number now — even &quot;$X this quarter&quot; — so the
+        rest of the plan stays grounded in reality.
+      </p>
+
+      <h2 id="step-4-channels">Step 4: Choose your local channel mix</h2>
+      <p>
+        Here&apos;s the menu most Cumming small businesses pull from. You
+        don&apos;t need all of it — pick the three or four that reach your ICP
+        best.
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile</strong> — free, highest-impact, do
+          this first. It powers the local map pack.
+        </li>
+        <li>
+          <strong>A fast website</strong> — your home base; where every other
+          channel sends people.
+        </li>
+        <li>
+          <strong>Signage</strong> — yard signs, vehicle lettering, banners. A
+          one-time cost that advertises 24/7 across Forsyth.
+        </li>
+        <li>
+          <strong>Branded apparel</strong> — every shirt your team wears is a
+          free local impression.
+        </li>
+        <li>
+          <strong>Social media</strong> — pick one or two platforms (usually
+          Facebook + Instagram here) and post consistently.
+        </li>
+        <li>
+          <strong>Print</strong> — direct mail to Forsyth zips, flyers, business
+          cards.
+        </li>
+        <li>
+          <strong>Reviews</strong> — the trust engine that multiplies everything
+          above.
+        </li>
+      </ul>
+      <p>
+        For most new local businesses, the winning starter mix is: Google
+        Business Profile + a fast website + a clean logo on signage and shirts +
+        steady reviews. We break the full menu down in{" "}
+        <InternalLink href="/blog/how-to-advertise-small-business-cumming-georgia">
+          how to advertise a small business in Cumming, GA
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="step-5-cadence">Step 5: Build a simple 90-day cadence</h2>
+      <p>
+        A plan only works if it tells you what to do <em>when</em>. Here&apos;s a
+        simple month-by-month cadence to copy:
+      </p>
+      <p>
+        <strong>Month 1 — Foundation.</strong> Claim and fully build your Google
+        Business Profile. Lock a real logo and brand kit. Get your website live
+        or fixed. Order signage and shirts. (Foundation first — see{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>.)
+      </p>
+      <p>
+        <strong>Month 2 — Visibility.</strong> Start posting on one social
+        channel 2&ndash;3x per week. Put shirts on the crew and signs on every
+        job site. Send your first Forsyth County mailer or flyer drop. Begin
+        asking every happy customer for a Google review.
+      </p>
+      <p>
+        <strong>Month 3 — Compound.</strong> Keep posting and collecting reviews.
+        Add a second offer or seasonal promo. Review what&apos;s bringing in
+        calls, double down on it, and drop what isn&apos;t.
+      </p>
+      <p>Repeat the cycle each quarter, raising the goal each time.</p>
+
+      <h2 id="step-6-owners">Step 6: Assign owners and deadlines</h2>
+      <p>
+        Even as a solo owner, write down <em>who does what by when.</em> &quot;Post
+        3x/week — me, every Mon/Wed/Fri.&quot; &quot;Order shirts — by the
+        15th.&quot; &quot;Ask for reviews — after every job.&quot;
+      </p>
+      <p>
+        If a task has no owner and no date, it won&apos;t happen. This is the
+        step that separates a plan from a wish.
+      </p>
+      <p>
+        If a channel eats more of your week than it&apos;s worth — designing
+        graphics, building the site, producing signage — that&apos;s the part to
+        hand to a designer so you can run the business.
+      </p>
+
+      <h2 id="step-7-review">Step 7: Review monthly and adjust</h2>
+      <p>
+        Once a month, sit down for 30 minutes and check the one number from Step
+        1. Are you on pace? Which channel drove the most calls? What flopped?
+      </p>
+      <p>
+        Marketing is a flywheel, not a switch. The first month often feels like
+        nothing&apos;s happening. Keep the cadence, cut what&apos;s dead, feed
+        what&apos;s working, and it compounds.
+      </p>
+
+      <h2 id="one-page-template">Turn this into a one-page plan</h2>
+      <p>
+        This whole plan fits on one page: goal, ICP, budget, channel mix, 90-day
+        cadence, owners. Fill in the blanks and you&apos;re done.
+      </p>
+      <p>
+        Want a head start? Text Gerry at {PHONE_DISPLAY} or{" "}
+        <InternalLink href="/services/request-quote">
+          request our one-page marketing-plan worksheet through the contact form
+        </InternalLink>{" "}
+        and we&apos;ll send it your way.
+      </p>
+
+      <h2 id="ai-search">A quick word on AI search</h2>
+      <p>
+        Build your plan so it works in 2026, not 2016. Customers increasingly ask
+        ChatGPT and Gemini &quot;who does [your service] in Cumming&quot; — and
+        those engines recommend businesses with a complete Google Business
+        Profile, a clean site, and real reviews. Every step above quietly feeds
+        that. More on it in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Off the Page, Into Forsyth County
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Got the plan but no time to build it?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          The foundation pieces — logo, website, SEO, signs, apparel, print — we
+          do under one roof, so you get one designer and one invoice instead of
+          five vendors who never match.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-how-to">How do I create a marketing plan for a Cumming business?</h3>
+      <p>
+        Work through seven steps: set one measurable 90-day goal, define your
+        ideal local customer, set a realistic budget, choose a channel mix, build
+        a month-by-month cadence, assign owners and deadlines, then review
+        monthly. Keep it to one page you actually follow, not a 40-page document.
+      </p>
+
+      <h3 id="faq-include">
+        What should a small business marketing plan in Cumming, GA include?
+      </h3>
+      <p>
+        A clear goal with a number and date, your ideal customer profile
+        (including Forsyth County zips), a budget, a local channel mix (Google
+        Business Profile, website, signage, apparel, social, print, reviews), a
+        90-day cadence, and a monthly review. One page is plenty if you follow
+        it.
+      </p>
+
+      <h3 id="faq-budget">How much should I budget for marketing?</h3>
+      <p>
+        A common rule is 5&ndash;10% of revenue once established and
+        10&ndash;20% when new and growing. For a Cumming startup, front-load
+        one-time assets — logo, website, signage, apparel — before recurring ad
+        spend, since those keep advertising for years with no monthly bill.
+      </p>
+
+      <h3 id="faq-channels">
+        Which marketing channels work best for a local Cumming business?
+      </h3>
+      <p>
+        Start with Google Business Profile (free, highest impact), a fast
+        website, a clean logo on signage and shirts, and steady Google reviews.
+        Add social posting and Forsyth County direct mail as budget grows. Pick
+        three or four that reach your ideal customer and do them consistently.
+      </p>
+
+      <h3 id="faq-results">How long before a marketing plan shows results?</h3>
+      <p>
+        Plan on 3 to 6 months for real movement. Google Business Profile
+        improvements can show within weeks, while website rankings and reviews
+        compound slower but last longer. Marketing is a flywheel — keep the
+        cadence, cut what&apos;s dead, and feed what works.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish —
+        call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function MarketingStrategiesStartupsContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          The most effective marketing strategies for startups in Cumming, GA
+          start with the free and one-time levers before any paid ads.
+        </strong>{" "}
+        Claim your Google Business Profile, lock a real logo, launch a fast
+        website, get visible offline with signage and branded apparel, and
+        collect Google reviews from your first customers. Those cost little or
+        nothing and keep working for years. Only after that foundation is solid
+        should a new Forsyth County business spend on recurring ads. This guide
+        is from Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA serving Forsyth County and North Metro Atlanta.
+      </p>
+
+      <p>
+        When you&apos;re brand-new and money is tight, order matters. Below is
+        the sequence — free first, paid last — so every dollar works as hard as
+        possible.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Startup Sequence
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Free first, paid last.</strong> One-time assets compound;
+            ads stop the day you stop paying.
+          </li>
+          <li>
+            <strong>Google Business Profile is the #1 free move.</strong> Do it
+            this week.
+          </li>
+          <li>
+            <strong>Reviews + one social channel</strong> build trust at zero
+            cost.
+          </li>
+          <li>
+            <strong>A real logo and fast website</strong> make a one-person shop
+            look established.
+          </li>
+          <li>
+            <strong>Signage and branded apparel</strong> advertise 24/7 for a
+            one-time cost.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="why-free-first">
+        Why startups should do free and one-time levers first
+      </h2>
+      <p>
+        A new business has more time than money, and the cheapest advertising is
+        the kind you pay for once. A logo, a website, a yard sign, and branded
+        shirts keep selling for years with no monthly bill.
+      </p>
+      <p>
+        Paid ads are the opposite: the leads stop the day you stop paying. So for
+        a startup, the smart play is to build assets that compound before renting
+        traffic you can&apos;t keep.
+      </p>
+      <p>
+        Get the foundation right, and paid ads later cost less and convert better
+        because you finally look legitimate.
+      </p>
+
+      <h2 id="free-gbp">Free lever #1: Google Business Profile</h2>
+      <p>
+        If you do one thing this week, do this. Your{" "}
+        <strong>Google Business Profile</strong> is free and the single most
+        powerful thing a new local business can do to get found in Cumming.
+      </p>
+      <p>To set it up:</p>
+      <ul>
+        <li>Go to google.com/business and claim or create your listing.</li>
+        <li>
+          Complete every field — categories, service area, hours, phone,
+          website.
+        </li>
+        <li>Add 10+ real photos of your work, your shop, your team.</li>
+        <li>Pick the right primary category (it&apos;s the biggest ranking factor).</li>
+        <li>Name Cumming and Forsyth County in your description.</li>
+      </ul>
+      <p>
+        A complete, active profile can put you in the local map pack within weeks
+        — for free.
+      </p>
+
+      <h2 id="free-reviews">Free lever #2: reviews from your first customers</h2>
+      <p>
+        Reviews are the trust engine, and as a startup you have a clean slate to
+        fill. After every happy job, text or email the customer a one-tap link to
+        your Google review page.
+      </p>
+      <p>
+        Ten genuine five-star reviews can out-pull a paid ad campaign, because a
+        stranger deciding between you and the next business almost always picks
+        the one with recent, real reviews. Respond to every review like a
+        professional.
+      </p>
+
+      <h2 id="free-social">Free lever #3: one social channel, done consistently</h2>
+      <p>
+        Don&apos;t spread thin across five platforms. Pick the one or two your
+        customers actually use — usually Facebook and Instagram in Forsyth County
+        — and post 2&ndash;3 times a week.
+      </p>
+      <p>
+        Real photos of your work, before-and-afters, your team, the occasional
+        behind-the-scenes. Engage in local Cumming and Forsyth County Facebook
+        groups (follow their rules). You don&apos;t need to go viral; you need to
+        stay visible to the few thousand people who could actually buy from you.
+      </p>
+
+      <h2 id="lowcost-logo-site">Low-cost lever #4: a real logo and a fast website</h2>
+      <p>
+        This is where a tight budget pays off most. A consistent{" "}
+        <strong>logo</strong> makes a brand-new one-person shop look
+        established, and a fast <strong>website</strong> gives every free channel
+        above somewhere to send people.
+      </p>
+      <p>
+        You don&apos;t need a giant site to start — a clean one-to-five page site
+        that says what you do, where you serve (Cumming, Forsyth County, North
+        Metro Atlanta), and how to contact you, with click-to-call on mobile.
+      </p>
+      <p>
+        For a brand-new business on a budget, our{" "}
+        <InternalLink href="/startup-special">
+          Startup Special starts at $997
+        </InternalLink>{" "}
+        and bundles a logo, brand kit, 100 business cards, 100 flyers, and a
+        1-page site with a domain and a year of hosting — built in about 10 days.
+        It&apos;s designed exactly for this moment. If you&apos;re ready for a
+        bigger build, see{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> and{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>.
+      </p>
+
+      <h2 id="lowcost-signage-apparel">
+        Low-cost lever #5: signage and branded apparel
+      </h2>
+      <p>
+        In a car-dependent county like Forsyth, <strong>signage</strong> is
+        advertising that works 24/7 for a one-time cost. A yard sign at every
+        job, vinyl lettering on your work truck, a banner for a grand opening —
+        all put your name in front of thousands of local drivers with no monthly
+        spend.
+      </p>
+      <p>
+        <strong>Branded apparel</strong> does the same with your team. Every
+        shirt your crew wears at a job site, the supply house, or the kids&apos;
+        game is a free impression. Because we do logos, signage, and apparel
+        under one roof, the logo on the shirt matches the sign and the site
+        exactly — no mismatched files.
+      </p>
+
+      <h2 id="when-paid-ads">When should a startup start paying for ads?</h2>
+      <p>
+        Once the foundation is solid — profile complete, website live, reviews
+        coming in, brand consistent — then paid ads make sense. By that point
+        your ads point to a credible business, so they convert instead of burning
+        budget on a half-built presence.
+      </p>
+      <p>
+        Start small and local: a modest Google Search or Facebook budget aimed
+        only at Cumming and Forsyth County, with a clear offer and a way to track
+        what it brings in (a dedicated phone number or a landing page). Scale only
+        what proves it pays. We cover the full paid-and-free picture in{" "}
+        <InternalLink href="/blog/how-to-advertise-small-business-cumming-georgia">
+          how to advertise a small business in Cumming, GA
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="ai-recommended">Build it to get recommended by AI, too</h2>
+      <p>
+        A new business has a real opening in 2026: customers now ask ChatGPT and
+        Gemini &quot;who does [your service] in Cumming,&quot; and those engines
+        recommend whoever has the clearest, most consistent, most trustworthy
+        info across the web — not just whoever&apos;s been around longest.
+      </p>
+      <p>
+        Every free lever above feeds that: a complete Google Business Profile, a
+        clean site, real reviews, and content that plainly answers local
+        questions. Do them well and a brand-new business can get cited in AI
+        answers next to far older competitors. Here&apos;s how that works:{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is calling your business
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="startup-sequence">The startup sequence, in one list</h2>
+      <ol>
+        <li>Claim and fully build your Google Business Profile (free).</li>
+        <li>Ask every first customer for a Google review (free).</li>
+        <li>Post on one social channel 2&ndash;3x/week (free).</li>
+        <li>
+          Lock a real logo and a fast website (one-time — start with the Startup
+          Special).
+        </li>
+        <li>Add signage and branded apparel (one-time).</li>
+        <li>Only then, layer in small, local, trackable paid ads.</li>
+      </ol>
+      <p>
+        Do them in that order and your tight budget goes further than a
+        competitor who burns it all on ads day one.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Launch It Right the First Time
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Just launching in Forsyth County?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          The whole startup foundation — logo, website, business cards, flyers,
+          signs, apparel — we do under one roof, so you get one designer and one
+          invoice instead of five vendors who never match. Our{" "}
+          <a
+            href="/startup-special"
+            className="font-semibold text-[var(--color-toxic-text)] underline decoration-[var(--color-toxic)]/50 underline-offset-4 hover:decoration-[var(--color-toxic)]"
+          >
+            Startup Special starts at $997
+          </a>
+          .
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-best-strategies">
+        What are the best marketing strategies for startups in Cumming?
+      </h3>
+      <p>
+        Start with free and one-time levers before paid ads: claim your Google
+        Business Profile, collect reviews from first customers, post on one social
+        channel, lock a real logo and fast website, and add signage and branded
+        apparel. Layer in small, local, trackable paid ads only once that
+        foundation is solid.
+      </p>
+
+      <h3 id="faq-tight-budget">How do I market a new business on a tight budget?</h3>
+      <p>
+        Lead with free tools — a complete Google Business Profile, Google
+        reviews, and consistent posting on one social channel. Then invest in
+        one-time assets like a logo, website, signage, and shirts that keep
+        advertising for years with no monthly bill. Save recurring ad spend for
+        after the foundation is built.
+      </p>
+
+      <h3 id="faq-cheapest">
+        What&apos;s the cheapest way to advertise a new business in Cumming, GA?
+      </h3>
+      <p>
+        The cheapest is free: a fully optimized Google Business Profile, steady
+        reviews, and organic social posts. Back those with one-time assets — a
+        sign and branded shirts — and you advertise across Forsyth County for
+        years with almost no recurring spend.
+      </p>
+
+      <h3 id="faq-when-ads">When should a startup start paying for ads?</h3>
+      <p>
+        After the foundation is solid — profile complete, website live, reviews
+        coming in, brand consistent. Then ads point to a credible business and
+        convert instead of wasting budget. Start small and local, track what each
+        dollar brings in, and scale only what proves it pays.
+      </p>
+
+      <h3 id="faq-launch-cost">
+        How much does it cost to launch a new business brand in Cumming, GA?
+      </h3>
+      <p>
+        It depends on scope, but a budget launch like our Startup Special starts
+        at $997 and bundles a logo, brand kit, business cards, flyers, and a
+        1-page site with hosting. Logos start around $750 and fuller websites
+        commonly run $2,500&ndash;$7,500+. Request a quote for an exact number.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish —
+        call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function BusinessSignageCummingContent() {
+  return (
+    <>
+      <p>
+        The short answer on <strong>business signage in Cumming, GA</strong> is
+        that most local businesses need four core pieces — yard signs, truck or
+        vehicle lettering, banners, and door hangers — and you&apos;ll get a more
+        consistent brand if one shop designs and produces all of them instead of
+        four vendors guessing at your colors. This guide comes from Branding
+        Zombie Designs, a graphic + web design studio in Cumming, GA, serving
+        Forsyth County and North Metro Atlanta — and it&apos;s written to help
+        you pick the right sign for the job, not to upsell you on every option.
+      </p>
+
+      <p>
+        If you&apos;ve ever ordered a sign that came back the wrong color,
+        blurry, or smaller than you pictured, this is the breakdown you wish
+        you&apos;d had first.
+      </p>
+
+      <h2 id="signage-types">
+        What types of business signage do Cumming, GA businesses need?
+      </h2>
+      <p>
+        Not every business needs every sign. Here&apos;s the realistic list for a
+        small business in Forsyth County and what each one is actually for.
+      </p>
+      <p>
+        <strong>Yard signs.</strong> Corrugated-plastic (coroplast) signs on a
+        wire stake. Cheap per unit, ordered in bulk. Trades leave one at every
+        job, realtors plant them at listings, and service businesses use them for
+        &quot;now servicing this neighborhood.&quot; They&apos;re one of the
+        highest-ROI signs you can buy.
+      </p>
+      <p>
+        <strong>Truck and vehicle lettering.</strong> Cut-vinyl lettering —
+        company name, phone, trade, license number — applied to your truck or
+        van. Your vehicle becomes a rolling billboard that drives past thousands
+        of homes a week. Full wraps exist too, but for most local businesses,
+        clean cut-vinyl lettering does the job for far less.
+      </p>
+      <p>
+        <strong>Banners.</strong> Large-format vinyl for grand openings, events,
+        sales, sponsorships, and job-site fencing. Built with grommets for
+        hanging and a finish that survives Georgia weather. The format that gets
+        you seen at a distance.
+      </p>
+      <p>
+        <strong>Door hangers.</strong> Technically print, but they work like a
+        sign on a doorknob. Trades and home-service businesses hang them on the
+        ten houses around a job they&apos;re already doing — high-intent,
+        low-cost neighborhood marketing.
+      </p>
+
+      <h2 id="signage-cost">How much does business signage cost in Cumming, GA?</h2>
+      <p>
+        Straight talk: signage is priced by the job, not a fixed menu, so anyone
+        quoting you a flat number sight-unseen is guessing. The price depends on
+        size, material, quantity, number of sides, and finishing.
+      </p>
+      <p>Here&apos;s the honest framing without inventing numbers:</p>
+      <ul>
+        <li>
+          <strong>Yard signs</strong> are the cheapest per unit and get cheaper
+          in bulk — order a batch, not one.
+        </li>
+        <li>
+          <strong>Truck/vehicle lettering</strong> is priced per vehicle and
+          depends on size and how many sides you letter; a consistent multi-truck
+          package costs less per vehicle than one-offs.
+        </li>
+        <li>
+          <strong>Banners</strong> scale with square footage and finishing
+          (grommets, hems, pole pockets).
+        </li>
+        <li>
+          <strong>Door hangers</strong> are priced like print — per quantity,
+          cheaper at volume.
+        </li>
+      </ul>
+      <p>
+        For a real number on <em>your</em> job, the move is to{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        with your sizes and quantities.
+      </p>
+
+      <h2 id="who-makes-signs">Who makes business signs in Cumming, GA?</h2>
+      <p>
+        You&apos;ve got the usual options: a standalone sign shop, an online sign
+        printer, or a design studio that handles both the artwork and the
+        production. The difference isn&apos;t just price — it&apos;s whether your
+        signs match the rest of your brand.
+      </p>
+      <p>
+        A standalone sign shop wraps your truck and never thinks about your logo,
+        your shirts, or your website. An online printer gives you the lowest unit
+        price but leaves file prep entirely on you — wrong color profile, no
+        bleed, and you&apos;ve paid for a box of mistakes.
+      </p>
+      <p>
+        The studio path is different: the same designer who built your logo also
+        sets up the sign file at the right size, color, and material, then runs
+        it through an{" "}
+        <InternalLink href="/services/print-design">
+          in-house print pipeline
+        </InternalLink>
+        . One designer, one invoice, and your signs actually look like they
+        belong to the same company.
+      </p>
+
+      <h2 id="one-roof">Why design and make your signs under one roof?</h2>
+      <p>
+        Here&apos;s the failure mode the one-shop approach avoids. You get a logo
+        from one place, take it to a sign shop, the file isn&apos;t set up for
+        large-format vinyl, and the print comes back off. Now you&apos;re stuck
+        between a designer who says &quot;the sign shop ruined it&quot; and a sign
+        shop who says &quot;you gave us the file.&quot;
+      </p>
+      <p>
+        When the designer who built your brand also runs the signage, that gap
+        disappears. The colors are proofed against your brand, the file is built
+        for the exact product, and one person owns the result.
+      </p>
+      <p>
+        That&apos;s the wedge at Branding Zombie Designs: logo + website + shirts
+        + signs under one roof — one designer, one invoice. No local competitor
+        cleanly owns this. Your{" "}
+        <InternalLink href="/services/print-design">signage</InternalLink>{" "}
+        matches your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink> and your{" "}
+        <InternalLink href="/services/web-design">website</InternalLink> instead
+        of drifting apart across three vendors.
+      </p>
+      <p>
+        For trades and contractors especially, that consistency is the whole game
+        — a homeowner who saw your truck on Monday recognizes your yard sign on
+        Thursday. See the full{" "}
+        <InternalLink href="/industries/trades-contractors">
+          branding checklist for HVAC &amp; trades
+        </InternalLink>{" "}
+        for how the pieces stack.
+      </p>
+
+      <h2 id="what-works">What makes a sign actually work?</h2>
+      <p>
+        A few rules decide whether a sign pulls its weight or just sits there:
+      </p>
+      <ul>
+        <li>
+          <strong>Make the phone number huge.</strong> A sign someone can&apos;t
+          read at a stoplight or from the street is decoration, not marketing.
+        </li>
+        <li>
+          <strong>Bold, simple, legible.</strong> Thin script fonts blur on vinyl
+          and disappear at a distance. One or two colors that read at a glance
+          beat a busy design.
+        </li>
+        <li>
+          <strong>Right material for the use.</strong> Coroplast for short-term
+          yard signs, durable vinyl for banners, weatherproof cut-vinyl for
+          vehicles. The wrong material fades or falls apart.
+        </li>
+        <li>
+          <strong>One clear message.</strong> Name, trade, phone, and maybe one
+          call to action — &quot;Free Estimate.&quot; Cram in more and it reads as
+          nothing.
+        </li>
+      </ul>
+      <p>
+        Get those right and almost any sign earns its cost back. Get them wrong
+        and even a perfectly printed sign goes unread.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Put Your Name Where the County Can See It
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Need signs that actually get read?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Tell me the sign, the size, and the quantity, and I&apos;ll build the
+          artwork, proof the color against your brand, and run it — so what goes
+          on your truck, your yard, or your storefront looks exactly like what you
+          approved. No faded, crooked, unreadable signs clawing their way back
+          from the dead.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-who-makes">Who makes business signs in Cumming, GA?</h3>
+      <p>
+        You can use a standalone sign shop, an online printer, or a design studio
+        that does both artwork and production. Branding Zombie Designs designs and
+        produces yard signs, truck lettering, banners, and door hangers in
+        Cumming, GA and across Forsyth County — and matches every piece to your
+        logo, shirts, and website. Call or text {PHONE_DISPLAY}.
+      </p>
+
+      <h3 id="faq-yard-sign-cost">How much does a yard sign cost in Cumming, GA?</h3>
+      <p>
+        Yard signs are the cheapest signage per unit and get cheaper in bulk, but
+        the real price depends on size, quantity, and whether it&apos;s one- or
+        two-sided. Order a batch rather than one. For an exact number on your
+        design and quantity, text Gerry your details for a quote.
+      </p>
+
+      <h3 id="faq-truck-lettering-cost">
+        How much does truck lettering cost in Cumming, GA?
+      </h3>
+      <p>
+        Cut-vinyl truck lettering is priced per vehicle and depends on size, the
+        number of sides lettered, and whether you add magnetic door signs. A
+        consistent multi-truck package costs less per vehicle than one-offs. Send
+        your vehicle list to get an exact quote for your fleet.
+      </p>
+
+      <h3 id="faq-need-designer">Do I need a designer for banners and large signs?</h3>
+      <p>
+        Usually, yes. Large-format work is unforgiving — a small file error
+        becomes a three-foot-wide one, and a logo pulled off a website prints
+        fuzzy. A designer sets the file up at the right resolution, color, and
+        material so it prints clean the first time instead of costing you a
+        reprint.
+      </p>
+
+      <h3 id="faq-one-shop">Can one shop design my logo and make my signs?</h3>
+      <p>
+        Yes — that&apos;s the whole point of the one-roof approach. At Branding
+        Zombie Designs, the same designer builds your logo, sets up sign files for
+        the exact product, proofs the color, and runs the print. One designer,
+        one invoice, and no &quot;the file vs. the printer&quot; finger-pointing
+        across vendors.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish, he
+        designs logos, websites, signage, apparel, and print for local businesses
+        — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function CustomApparelEmbroideryContent() {
+  return (
+    <>
+      <p>
+        The short answer on{" "}
+        <strong>custom apparel and embroidery in Cumming, GA</strong> is this:
+        use screen printing for big, bold designs on tees at higher quantities,
+        and use embroidery for a premium, durable logo on polos, hats, and
+        jackets. Which one is right comes down to the garment, the look, and how
+        long it needs to last. This guide comes from Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA, serving Forsyth County and
+        North Metro Atlanta — and the real advantage is getting your shirts, your
+        logo, and your signs from one designer instead of three.
+      </p>
+
+      <p>
+        If you&apos;ve ever ordered shirts where the logo cracked after a few
+        washes or looked nothing like your brand colors, this is the breakdown to
+        read first.
+      </p>
+
+      <h2 id="screen-vs-embroidery">
+        Screen printing vs embroidery: which should you use?
+      </h2>
+      <p>
+        Both decorate apparel with your logo. They just do different jobs, and
+        most businesses end up using both.
+      </p>
+      <p>
+        <strong>Screen printing</strong> pushes ink through a stencil onto the
+        fabric. It&apos;s the right call for:
+      </p>
+      <ul>
+        <li>Large, colorful, or full-front designs.</li>
+        <li>T-shirts, hoodies, and giveaways.</li>
+        <li>Higher quantities — it gets cheaper per piece as the order grows.</li>
+        <li>Summer install crews, events, fundraisers, and merch.</li>
+      </ul>
+      <p>
+        <strong>Embroidery</strong> stitches the design into the fabric with
+        thread. It&apos;s the right call for:
+      </p>
+      <ul>
+        <li>A clean, premium logo on a left chest, hat, or sleeve.</li>
+        <li>Polos, jackets, beanies, and bags.</li>
+        <li>Office staff, estimators, sales, and anyone who wants to look sharp.</li>
+        <li>
+          Durability — stitched logos outlast printed ones and don&apos;t crack
+          or fade.
+        </li>
+      </ul>
+      <p>
+        The rule of thumb:{" "}
+        <strong>
+          screen print for bold and cheap at volume, embroider for premium and
+          long-lasting.
+        </strong>{" "}
+        A trades business often runs screen-printed tees for the field crew and
+        embroidered polos for the people knocking on doors.
+      </p>
+
+      <h2 id="apparel-types">
+        What kinds of custom apparel do Cumming, GA businesses order?
+      </h2>
+      <p>
+        Branded apparel isn&apos;t just t-shirts. The realistic list for a Forsyth
+        County business:
+      </p>
+      <ul>
+        <li>
+          <strong>Screen-printed tees</strong> — the cheapest way to put your
+          brand on a crew or hand out at an event.
+        </li>
+        <li>
+          <strong>Embroidered polos</strong> — the upgrade for staff, sales, and
+          anyone client-facing.
+        </li>
+        <li>
+          <strong>Hats and beanies</strong> — embroidered, they round out the
+          look year-round.
+        </li>
+        <li>
+          <strong>Hoodies and jackets</strong> — cold-weather pieces for crews
+          and merch.
+        </li>
+        <li>
+          <strong>Hi-vis and safety shirts</strong> — for roadside, roofing, and
+          anyone near traffic.
+        </li>
+        <li>
+          <strong>Team and event apparel</strong> — gyms, churches, youth sports,
+          and staff uniforms.
+        </li>
+      </ul>
+      <p>
+        Same logo, same colors as your signs and website — that repetition is
+        what makes a small shop feel established.
+      </p>
+
+      <h2 id="minimums">
+        What&apos;s the minimum order for custom shirts in Cumming, GA?
+      </h2>
+      <p>
+        Most decorators set a minimum because the setup work (burning a screen,
+        digitizing a logo for embroidery) costs the same whether you order a dozen
+        shirts or a hundred. That setup is why one-off custom shirts are rarely
+        worth it and why per-piece prices drop fast as the quantity climbs.
+      </p>
+      <p>
+        Minimums and turnaround vary by decoration method and run size — tell us
+        the garment, method, and quantity and we&apos;ll quote your exact run and
+        timeline.
+      </p>
+      <p>A couple of practical notes:</p>
+      <ul>
+        <li>
+          <strong>Screen printing</strong> gets meaningfully cheaper per shirt at
+          higher quantities and per added ink color.
+        </li>
+        <li>
+          <strong>Embroidery</strong> has a one-time digitizing step to turn your
+          logo into a stitch file; after that, reorders are quick.
+        </li>
+      </ul>
+
+      <h2 id="turnaround">How long does custom apparel take in Cumming, GA?</h2>
+      <p>
+        Turnaround depends on the garment, the decoration method, the quantity,
+        and whether your artwork is print-ready. The honest answer: tell me your
+        real deadline before we start, and I&apos;ll tell you straight whether
+        it&apos;s doable.
+      </p>
+      <p>A few things that speed it up or slow it down:</p>
+      <ul>
+        <li>
+          <strong>Artwork readiness.</strong> A clean vector logo runs fast; a
+          low-res logo pulled off a website has to be rebuilt first.
+        </li>
+        <li>
+          <strong>Decoration method.</strong> Embroidery needs digitizing the
+          first time; screen printing needs screens burned per color.
+        </li>
+        <li>
+          <strong>Garment availability.</strong> Specific colors, sizes, or
+          premium brands can add lead time.
+        </li>
+      </ul>
+      <p>
+        Minimums and turnaround vary by decoration method and run size — tell us
+        the garment, method, and quantity and we&apos;ll quote your exact run and
+        timeline, including any rush options.
+      </p>
+
+      <h2 id="one-shop">Why get apparel, your logo, and your signs from one shop?</h2>
+      <p>
+        Here&apos;s the gap the one-roof approach closes. You get a logo from one
+        place, take it to a t-shirt shop, the file isn&apos;t set up for screen
+        printing or embroidery, and the shirts come back with the wrong colors or
+        a logo that looks &quot;close but off.&quot; Now your shirts don&apos;t
+        match your truck, and your truck doesn&apos;t match your website.
+      </p>
+      <p>
+        When the designer who built your brand also preps the artwork for the
+        decoration method, that drift disappears. The logo is built to print and
+        stitch cleanly, the colors are proofed against your brand, and one person
+        owns the result.
+      </p>
+      <p>
+        That&apos;s the wedge at Branding Zombie Designs: logo + website + shirts
+        + signs under one roof — one designer, one invoice. No local competitor
+        cleanly owns this. Your{" "}
+        <InternalLink href="/services/print-design">apparel and print</InternalLink>{" "}
+        match your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink> and your{" "}
+        <InternalLink href="/services/web-design">website</InternalLink> instead
+        of being three close guesses from three vendors.
+      </p>
+      <p>
+        For trades especially, matching crew shirts make a small outfit look like
+        a real, insured company at the door. See the{" "}
+        <InternalLink href="/industries/trades-contractors">
+          branding checklist for trades &amp; contractors
+        </InternalLink>{" "}
+        for how apparel fits the whole system, and pair it with{" "}
+        <InternalLink href="/blog/business-signage-cumming-ga">
+          business signage
+        </InternalLink>{" "}
+        so the truck, the shirt, and the yard sign all match.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Put Your Brand on Something People Wear
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Want shirts that actually look like your brand?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Tell me the garment, the decoration method, and the quantity, and
+          I&apos;ll prep the artwork, proof the colors, and run it — so your
+          crew&apos;s tees, your staff&apos;s polos, and your truck lettering all
+          match. No cracked, faded, off-color logos shambling around the job site.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-where-screen-printing">
+        Where can I get screen printing in Cumming, GA?
+      </h3>
+      <p>
+        Branding Zombie Designs handles screen printing and embroidery in Cumming,
+        GA and across Forsyth County — tees, hoodies, polos, hats, and staff
+        uniforms — and, unlike a standalone shirt shop, matches your apparel to
+        your logo, signs, and website. Call or text {PHONE_DISPLAY} with your
+        garment and quantity for a quote.
+      </p>
+
+      <h3 id="faq-screen-or-embroidery">Should I use screen printing or embroidery?</h3>
+      <p>
+        Use screen printing for large, colorful designs on tees and giveaways,
+        especially at higher quantities. Use embroidery for a premium, durable
+        logo on polos, hats, and jackets, or anything client-facing. Many
+        businesses run screen-printed tees for the field crew and embroidered
+        polos for office and sales staff.
+      </p>
+
+      <h3 id="faq-minimum">
+        What&apos;s the minimum order for custom shirts in Cumming, GA?
+      </h3>
+      <p>
+        Most decorators set a minimum because setup costs (burning screens,
+        digitizing a logo) are the same whether you order a dozen or a hundred.
+        That&apos;s also why per-piece prices drop fast at volume. Tell us the
+        garment, method, and quantity and we&apos;ll quote your exact run.
+      </p>
+
+      <h3 id="faq-how-long">How long does custom apparel take?</h3>
+      <p>
+        It depends on the garment, the decoration method, the quantity, and
+        whether your artwork is print-ready. A clean vector logo runs faster than
+        a low-res file that needs rebuilding. Tell us your real deadline up front
+        and we&apos;ll tell you straight whether it&apos;s doable, including rush
+        options.
+      </p>
+
+      <h3 id="faq-one-shop">Can one shop design my logo and make my shirts?</h3>
+      <p>
+        Yes — that&apos;s the whole point. At Branding Zombie Designs, the same
+        designer builds your logo, preps it for screen printing or embroidery,
+        proofs the colors against your brand, and produces the apparel. One
+        designer, one invoice, and your shirts actually match your signs and
+        website.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish, he
+        designs logos, websites, signage, apparel, and print for local businesses
+        — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function GolfCartWrapsCummingContent() {
+  return (
+    <>
+      <p>
+        The short answer on{" "}
+        <strong>custom golf cart wraps in Cumming, GA</strong> is that a vinyl
+        wrap is usually the smarter way to brand a cart than custom paint —
+        it&apos;s faster, it&apos;s reversible, and it can carry full-color
+        graphics, logos, and lettering that paint can&apos;t easily match. In
+        golf-cart-heavy Forsyth County, a wrapped cart is rolling advertising for
+        a business and a head-turner for a personal cart. This guide comes from
+        Branding Zombie Designs, a graphic + web design studio in Cumming, GA —
+        where the focus is designing and producing the graphics that make a wrap
+        actually look like your brand.
+      </p>
+
+      <p>
+        If you&apos;re thinking about branding a cart for your business (or just
+        want yours to stand out at the neighborhood pool), here&apos;s the
+        breakdown.
+      </p>
+
+      <h2 id="wrap-vs-paint">Golf cart wrap vs paint: which should you choose?</h2>
+      <p>Both change how your cart looks. They&apos;re very different jobs.</p>
+      <p>
+        <strong>A vinyl wrap</strong> is printed graphics applied to the
+        cart&apos;s panels. It&apos;s the right call when you want:
+      </p>
+      <ul>
+        <li>Full-color logos, photos, gradients, or detailed lettering.</li>
+        <li>A faster turnaround than a custom paint job.</li>
+        <li>Something reversible — peel it off later without repainting.</li>
+        <li>Business branding you might update as the company grows.</li>
+      </ul>
+      <p>
+        <strong>Custom paint</strong> is the right call when you want:
+      </p>
+      <ul>
+        <li>A solid, permanent color change with no seams.</li>
+        <li>A finish that&apos;s part of the cart itself, not a film over it.</li>
+        <li>A look that doesn&apos;t need logos or complex graphics.</li>
+      </ul>
+      <p>
+        For most businesses, a <strong>wrap wins</strong> — it carries the brand,
+        comes off cleanly, and shows full-color artwork that paint can&apos;t. For
+        a personal cart where someone just wants one bold color forever, paint can
+        make sense. At Branding Zombie Designs the focus is wraps and graphics: we
+        design and produce print-ready cart graphics through our in-house print
+        pipeline, built to look like your brand.
+      </p>
+
+      <h2 id="why-brand-cart">Why brand a golf cart in Forsyth County?</h2>
+      <p>
+        Golf carts aren&apos;t just for the course here — neighborhoods, events,
+        and businesses use them all over Forsyth County. That makes a branded cart
+        unusually good local advertising.
+      </p>
+      <ul>
+        <li>
+          <strong>For businesses:</strong> a wrapped cart at a community event, a
+          neighborhood, or a parking lot is a moving billboard in exactly the area
+          you serve. It gets noticed in a way a parked van doesn&apos;t.
+        </li>
+        <li>
+          <strong>For personal carts:</strong> a custom design makes yours
+          instantly recognizable among a sea of look-alike carts.
+        </li>
+        <li>
+          <strong>For events and sponsorships:</strong> a branded cart shuttling
+          people around is memorable, photographed, and shared.
+        </li>
+      </ul>
+      <p>
+        A cart is a small surface compared to a truck, which means the design has
+        to be tight — bold, simple, and readable from a distance.
+      </p>
+
+      <h2 id="good-design">What makes a good golf cart wrap design?</h2>
+      <p>
+        A cart wrap lives or dies on the design, not just the vinyl. A few rules:
+      </p>
+      <ul>
+        <li>
+          <strong>Bold and simple.</strong> Small panels and curved surfaces eat
+          fine detail. A clean logo and a few strong colors read better than a
+          busy collage.
+        </li>
+        <li>
+          <strong>Readable contact info.</strong> If it&apos;s for a business, the
+          name and phone number should be legible from across a lot.
+        </li>
+        <li>
+          <strong>Designed to the panels.</strong> Carts have seams, curves, and
+          cutouts. The artwork has to be laid out for the actual cart so the logo
+          doesn&apos;t land on a seam or wrap awkwardly around a corner.
+        </li>
+        <li>
+          <strong>Brand-consistent.</strong> Same logo and colors as your signs,
+          shirts, and website — so the cart looks like part of the same company,
+          not a one-off.
+        </li>
+      </ul>
+      <p>
+        This is where a designer earns their keep: setting the art up so it fits
+        the cart cleanly and matches the rest of your brand.
+      </p>
+
+      <h2 id="durability">Do golf cart wraps last? Durability and care.</h2>
+      <p>
+        A quality vinyl wrap is built to hold up outdoors for years with proper
+        care, handling sun, rain, and regular use. Real-world lifespan depends on
+        the vinyl, how the cart is stored, and how it&apos;s cleaned.
+      </p>
+      <p>A few honest notes:</p>
+      <ul>
+        <li>
+          <strong>Storage matters.</strong> A cart kept under cover lasts longer
+          than one baking in full Georgia sun every day.
+        </li>
+        <li>
+          <strong>Gentle cleaning.</strong> Hand-wash with mild soap; skip harsh
+          chemicals and high-pressure jets aimed at the edges.
+        </li>
+        <li>
+          <strong>Wraps are reversible.</strong> When you&apos;re ready to change
+          the design, a wrap comes off — unlike paint.
+        </li>
+      </ul>
+      <p>
+        We design and produce your cart graphics and can coordinate application,
+        so the artwork is built for the panels and goes on clean.
+      </p>
+
+      <h2 id="who-makes">Who designs and makes golf cart graphics in Cumming, GA?</h2>
+      <p>
+        Here&apos;s where the studio approach matters. The thing that makes a cart
+        wrap look cheap is bad artwork — a stretched logo, the wrong colors,
+        graphics that don&apos;t line up with the panels. That&apos;s a design
+        problem, not a vinyl problem.
+      </p>
+      <p>
+        Branding Zombie Designs designs and produces the graphics, so the artwork
+        is built for the cart, the colors are proofed against your brand, and the
+        logo on your cart matches the logo on your signs, shirts, and website.
+        That&apos;s the wedge: logo + website + shirts + signs under one roof —
+        one designer, one invoice. A golf cart wrap is just your brand on one more
+        surface.
+      </p>
+      <p>
+        We design and produce your cart graphics and can coordinate application
+        with an installer, so you get print-ready artwork that fits your specific
+        cart and a finished result that looks like the rest of your brand.
+      </p>
+      <p>
+        If you&apos;re branding a cart, you probably need the rest to match too —{" "}
+        <InternalLink href="/services/print-design">signage</InternalLink>,{" "}
+        <InternalLink href="/services/logo-design">a logo</InternalLink>, or a{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>. Pair the
+        cart with matching{" "}
+        <InternalLink href="/blog/business-signage-cumming-ga">
+          business signage
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/custom-apparel-embroidery-cumming">
+          custom apparel
+        </InternalLink>{" "}
+        and the whole brand pulls together.
+      </p>
+
+      <h2 id="cost">How much does a golf cart wrap cost in Cumming, GA?</h2>
+      <p>
+        Straight talk: a cart wrap is priced by the job, so a fixed number
+        sight-unseen is a guess. The price depends on the cart size, how much of
+        it you&apos;re covering (partial vs full), the design complexity, and the
+        vinyl.
+      </p>
+      <p>
+        I won&apos;t quote a fake number here. The honest move is to{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        with your cart make/model and what you want covered.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Get Your Brand Rolling
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Want a cart that turns heads and works for your business?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Tell me your cart make and model and what you want covered, and
+          I&apos;ll design graphics built for the panels, proof the colors against
+          your brand, and produce them — so your cart matches your signs, shirts,
+          and site. No off-brand, stretched-logo wraps shambling around the
+          neighborhood.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-wrap-or-paint">Is a wrap or paint better for a golf cart?</h3>
+      <p>
+        For business branding, a wrap usually wins: it carries full-color logos
+        and lettering, turns around faster than custom paint, and peels off
+        cleanly when you want to change it. Custom paint suits a permanent, solid
+        color change with no graphics. Most businesses choose a wrap because it
+        shows the brand.
+      </p>
+
+      <h3 id="faq-who-does">Who does custom golf cart wraps in Cumming, GA?</h3>
+      <p>
+        Branding Zombie Designs designs and produces custom golf cart graphics in
+        Cumming, GA and Forsyth County, built to match your logo, signs, and
+        apparel. The artwork is laid out for your specific cart so it fits the
+        panels cleanly. Call or text {PHONE_DISPLAY} with your cart make and model
+        for a quote.
+      </p>
+
+      <h3 id="faq-last-outdoors">Do golf cart wraps last outdoors?</h3>
+      <p>
+        A quality vinyl wrap is built to hold up outdoors for years with proper
+        care, handling sun and rain — and lifespan depends on the vinyl, storage,
+        and care. A cart kept under cover and hand-washed with mild soap lasts
+        longer than one left in full sun and pressure-washed. Wraps are also
+        reversible, unlike paint.
+      </p>
+
+      <h3 id="faq-cost">How much does a golf cart wrap cost in Cumming, GA?</h3>
+      <p>
+        Cart wraps are priced by the job — cart size, partial vs full coverage,
+        design complexity, and vinyl all factor in. There&apos;s no honest fixed
+        number sight-unseen. Send your cart make/model and what you want covered to
+        Branding Zombie Designs for a real quote on your project.
+      </p>
+
+      <h3 id="faq-match-branding">Can you match my golf cart to my business branding?</h3>
+      <p>
+        Yes — that&apos;s the whole point. The same designer who builds your logo
+        lays out the cart graphics, proofs the colors against your brand, and
+        matches it to your signs, shirts, and website. One designer, one invoice,
+        so your cart looks like part of the company instead of a one-off.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner-operator of Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta since 2015. Bilingual English/Spanish, he
+        designs logos, websites, signage, apparel, and print for local businesses
+        — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "best-marketing-agencies-cumming-ga",
+      title:
+        "Best Marketing Agencies in Cumming, GA: How to Choose the Right Marketing Partner (2026)",
+      seoTitle: "Best Marketing Agencies in Cumming, GA (2026)",
+      seoDescription:
+        "How to pick the best marketing agency in Cumming, GA: agency vs. solo studio vs. freelancer, what each does, and the criteria to weigh for Forsyth County.",
+      excerpt:
+        "An honest guide to choosing a marketing partner in Cumming, GA: full-service agency vs. solo design studio vs. freelancer, what each does, and the criteria a Forsyth County business should weigh.",
+      keywords: [
+        "marketing agencies in Cumming, GA",
+        "best marketing agency Cumming GA",
+        "digital marketing Cumming GA",
+        "how to choose a marketing agency",
+        "full-service agency vs freelancer",
+        "branding and web design",
+        "graphic design cumming",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 8,
+      category: "Marketing",
+      tags: [
+        "marketing agency",
+        "digital marketing",
+        "branding",
+        "web design",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-marketing-agencies-cumming.jpg",
+      ogImageAlt:
+        "Best marketing agencies in Cumming, GA — how to choose the right marketing partner — Branding Zombie Designs",
+    },
+    Content: BestMarketingAgenciesCummingContent,
+  },
+  {
+    meta: {
+      slug: "marketing-plan-cumming-ga-business",
+      title:
+        "How to Create a Marketing Plan for a Cumming, GA Business (Step-by-Step, 2026)",
+      seoTitle: "How to Make a Marketing Plan: Cumming, GA",
+      seoDescription:
+        "How to create a marketing plan for a Cumming, GA business in 7 steps: goals, ICP, budget, local channel mix, and a simple 90-day cadence for Forsyth County.",
+      excerpt:
+        "A practical 7-step guide to creating a marketing plan for a Cumming, GA small business: goals, ideal customer, budget, local channel mix, and a simple 90-day cadence for Forsyth County.",
+      keywords: [
+        "how to create a marketing plan for a Cumming business",
+        "small business marketing plan Cumming GA",
+        "local marketing plan template",
+        "marketing channel mix for a local business",
+        "90-day marketing plan",
+        "Forsyth County",
+        "North Metro Atlanta",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Marketing",
+      tags: [
+        "marketing plan",
+        "small business",
+        "local marketing",
+        "strategy",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-marketing-plan-cumming.jpg",
+      ogImageAlt:
+        "How to create a marketing plan for a Cumming, GA business — step-by-step — Branding Zombie Designs",
+    },
+    Content: MarketingPlanCummingContent,
+  },
+  {
+    meta: {
+      slug: "marketing-strategies-startups-cumming",
+      title:
+        "Effective Marketing Strategies for Startups & New Businesses in Cumming, GA (2026)",
+      seoTitle: "Startup Marketing Strategies: Cumming, GA",
+      seoDescription:
+        "Marketing strategies for startups in Cumming, GA: free and low-cost levers first, then paid. What a brand-new Forsyth County business should do on a tight budget.",
+      excerpt:
+        "Marketing strategies for startups in Cumming, GA: free and one-time levers first (Google Business Profile, reviews, social, logo, website, signage, apparel), then small local paid ads on a tight budget.",
+      keywords: [
+        "marketing strategies for startups in Cumming",
+        "marketing for new business Cumming GA",
+        "how to market a new business on a budget",
+        "cheapest way to advertise a small business",
+        "free marketing for startups",
+        "Forsyth County new business",
+        "affordable web design services cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 8,
+      category: "Marketing",
+      tags: [
+        "startup marketing",
+        "new business",
+        "small business",
+        "budget marketing",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-startup-marketing-cumming.jpg",
+      ogImageAlt:
+        "Effective marketing strategies for startups and new businesses in Cumming, GA — Branding Zombie Designs",
+    },
+    Content: MarketingStrategiesStartupsContent,
+  },
+  {
+    meta: {
+      slug: "business-signage-cumming-ga",
+      title: "Business Signage in Cumming, GA: Types, Costs, and Who Makes It",
+      seoTitle: "Business Signage in Cumming, GA: Types & Costs",
+      seoDescription:
+        "A plain-English guide to business signage in Cumming, GA: yard signs, truck lettering, banners, and door hangers — what each does, rough costs, one shop.",
+      excerpt:
+        "A plain-English guide to business signage in Cumming, GA: yard signs, truck lettering, banners, and door hangers — what each does, honest cost framing, and the one-shop design-and-produce advantage.",
+      keywords: [
+        "business signage in Cumming, GA",
+        "signage company Cumming",
+        "truck lettering Cumming GA",
+        "yard signs Cumming",
+        "vehicle lettering Forsyth County",
+        "banners Cumming GA",
+        "door hangers Cumming",
+        "printing in Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Print & Apparel",
+      tags: [
+        "signage",
+        "truck lettering",
+        "yard signs",
+        "banners",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-signage-cumming.jpg",
+      ogImageAlt:
+        "Business signage in Cumming, GA — yard signs, truck lettering, banners, and door hangers — Branding Zombie Designs",
+    },
+    Content: BusinessSignageCummingContent,
+  },
+  {
+    meta: {
+      slug: "custom-apparel-embroidery-cumming",
+      title:
+        "Custom Apparel & Embroidery in Cumming, GA: Screen Print vs Embroidery, Minimums & More",
+      seoTitle: "Custom Apparel & Embroidery in Cumming, GA",
+      seoDescription:
+        "Screen print vs embroidery for Cumming, GA businesses: when to use each, minimums, turnaround, and pairing branded apparel with your logo and signs. One shop.",
+      excerpt:
+        "A plain-English guide to custom apparel and embroidery in Cumming, GA: screen print vs embroidery, what businesses order, minimums, turnaround, and pairing branded apparel with your logo and signs.",
+      keywords: [
+        "custom apparel and embroidery in Cumming, GA",
+        "embroidery near me",
+        "screen printing Cumming GA",
+        "custom t-shirts Cumming",
+        "custom polos Forsyth County",
+        "staff uniforms Cumming",
+        "screen print vs embroidery",
+        "printing in Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Print & Apparel",
+      tags: [
+        "custom apparel",
+        "embroidery",
+        "screen printing",
+        "branded apparel",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-apparel-embroidery-cumming.jpg",
+      ogImageAlt:
+        "Custom apparel and embroidery in Cumming, GA — screen print vs embroidery — Branding Zombie Designs",
+    },
+    Content: CustomApparelEmbroideryContent,
+  },
+  {
+    meta: {
+      slug: "custom-golf-cart-wraps-cumming",
+      title:
+        "Custom Golf Cart Wraps in Cumming, GA: Wraps vs Paint, Design & Durability",
+      seoTitle: "Custom Golf Cart Wraps in Cumming, GA",
+      seoDescription:
+        "Branding golf carts in Cumming, GA & Forsyth County: wraps vs paint, design tips, and durability — plus why a design studio handles the graphics best.",
+      excerpt:
+        "A plain-English guide to custom golf cart wraps in Cumming, GA and Forsyth County: wraps vs paint, why businesses brand carts, design considerations, durability, and who designs and produces the graphics.",
+      keywords: [
+        "custom golf cart wraps in Cumming, GA",
+        "golf cart graphics",
+        "golf cart wrap vs paint",
+        "branded golf cart Forsyth County",
+        "golf cart vinyl wrap",
+        "custom golf cart paint shop Cumming GA",
+        "graphic design cumming",
+        "printing in Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Print & Apparel",
+      tags: [
+        "golf cart wraps",
+        "vehicle graphics",
+        "vinyl wrap",
+        "branding",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-golf-cart-wraps-cumming.jpg",
+      ogImageAlt:
+        "Custom golf cart wraps in Cumming, GA — wraps vs paint, design and durability — Branding Zombie Designs",
+    },
+    Content: GolfCartWrapsCummingContent,
+  },
+  {
+    meta: {
+      slug: "med-spa-branding-georgia",
+      title: "Med Spa Branding in Georgia: What's Included and What It Costs",
+      seoTitle:
+        "Med Spa Branding in Georgia: What It Costs | Branding Zombie Designs",
+      seoDescription:
+        "Med spa branding in Georgia covers logo, colors, signage, and collateral that signal luxury and clinical trust. See what's included, real costs, and why templates hurt bookings.",
+      excerpt:
+        "What med spa branding includes — logo, color and typography for luxury and clinical trust, signage, collateral, and social — plus honest Georgia cost ranges and why templates hurt conversions.",
+      keywords: [
+        "med spa branding",
+        "med spa branding services",
+        "custom branding for medical clinics",
+        "medical spa branding agency georgia",
+        "how to brand a med spa",
+        "medical aesthetics branding",
+        "luxury med spa logo",
+        "graphic design cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Marketing",
+      tags: [
+        "med spa branding",
+        "brand identity",
+        "logo design",
+        "medical aesthetics",
+        "Georgia",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-med-spa-branding.jpg",
+      ogImageAlt:
+        "Med spa branding in Georgia — what's included and what it costs — Branding Zombie Designs",
+    },
+    Content: MedSpaBrandingGaContent,
+  },
+  {
+    meta: {
+      slug: "med-spa-marketing-georgia",
+      title: "Med Spa Marketing in Georgia: What Actually Brings In Clients",
+      seoTitle:
+        "Med Spa Marketing in Georgia: What Works | Branding Zombie Designs",
+      seoDescription:
+        "Med spa marketing in Georgia that actually books clients: local SEO and Google Business Profile, compliant before/afters, reviews, referrals, and paid. An honest, practical guide.",
+      excerpt:
+        "An honest guide to med spa marketing in Georgia: Google Business Profile and local SEO, compliant before/after content, reviews, referrals, and when to run paid ads.",
+      keywords: [
+        "med spa marketing",
+        "medical spa marketing company georgia",
+        "med spa marketing services georgia",
+        "medical spa marketing agency georgia",
+        "how to market a med spa",
+        "med spa seo",
+        "before and after photos compliance",
+        "local seo cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 8,
+      category: "Marketing",
+      tags: [
+        "med spa marketing",
+        "local SEO",
+        "Google Business Profile",
+        "medical aesthetics",
+        "Georgia",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-med-spa-marketing.jpg",
+      ogImageAlt:
+        "Med spa marketing in Georgia — what actually brings in clients — Branding Zombie Designs",
+    },
+    Content: MedSpaMarketingGaContent,
+  },
+  {
+    meta: {
+      slug: "med-spa-website-design-georgia",
+      title:
+        "Med Spa Website Design in Georgia: What a Converting Site Needs",
+      seoTitle:
+        "Med Spa Website Design in Georgia: Guide | Branding Zombie Designs",
+      seoDescription:
+        "A converting med spa website in Georgia needs online booking, service pages, before/after galleries, privacy-minded forms, and mobile speed. Here's what to build and what it costs.",
+      excerpt:
+        "What a converting med spa website needs in Georgia: online booking, service and pricing pages, before/after galleries, privacy-minded forms, mobile speed, trust signals, and honest cost ranges.",
+      keywords: [
+        "med spa website design",
+        "med spa web development agency georgia",
+        "medical spa website design georgia",
+        "best med spa websites",
+        "med spa booking website",
+        "hipaa compliant forms",
+        "website design cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Web Design",
+      tags: [
+        "med spa website design",
+        "web design",
+        "online booking",
+        "medical aesthetics",
+        "Georgia",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-med-spa-web-design.jpg",
+      ogImageAlt:
+        "Med spa website design in Georgia — what a converting site needs — Branding Zombie Designs",
+    },
+    Content: MedSpaWebDesignGaContent,
+  },
   {
     meta: {
       slug: "ai-logo-generator-vs-designer",
