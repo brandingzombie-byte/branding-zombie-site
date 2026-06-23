@@ -1803,9 +1803,13 @@ function WebsiteCostCummingGA2026Content() {
         <InternalLink href="/services/digital-marketing">
           local SEO
         </InternalLink>{" "}
-        when you&apos;re ready. The Launch Package exists for owners who
-        want the whole thing done once — but it&apos;s a choice, not a
-        requirement.
+        when you&apos;re ready. This guide covers the website itself; if you
+        want the combined number,{" "}
+        <InternalLink href="/blog/website-design-seo-cost">
+          here&apos;s what website design and SEO cost together
+        </InternalLink>
+        . The Launch Package exists for owners who want the whole thing done
+        once — but it&apos;s a choice, not a requirement.
       </p>
 
       <h3 id="faq-quote">How do I actually get a quote?</h3>
@@ -4909,6 +4913,18 @@ function SeoCummingGaContent() {
         local SEO, not a replacement for it. You want both.
       </p>
 
+      <h3 id="faq-best-company">
+        Who is the best SEO company in Cumming, GA?
+      </h3>
+      <p>
+        There&apos;s no single &quot;best&quot; — the right SEO company in
+        Cumming, GA is the one that shows you real local results, explains the
+        work in plain English, and lets you keep ownership of your site and
+        accounts. Branding Zombie Designs handles your logo, website, and local
+        SEO under one roof in Cumming, so your branding and search work pull the
+        same direction.
+      </p>
+
       <h3 id="faq-ai">Is SEO dead with AI search?</h3>
       <p>
         No. AI answer engines like ChatGPT and Google&apos;s AI overviews pull
@@ -5346,6 +5362,18 @@ function WebDesignCummingGaContent() {
         builds, local SEO and schema included, and — non-negotiable — full
         ownership of your site and domain. One designer and one invoice beats a
         faceless template marketplace when something breaks.
+      </p>
+
+      <h3 id="faq-best-company">
+        Who is the best web design company in Cumming, GA?
+      </h3>
+      <p>
+        The best web design company in Cumming, GA is the one that builds you a
+        fast, mobile-first site, includes local SEO, and hands you full
+        ownership of your domain and files. Branding Zombie Designs does web
+        design, logos, signage, and apparel under one roof in Cumming — so your
+        whole brand stays consistent and you deal with one designer, not three
+        vendors.
       </p>
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
@@ -8254,9 +8282,9 @@ export const POSTS: Post[] = [
       title:
         "Do You Need SEO in Cumming, GA? Cost & What Moves Rankings (2026)",
       seoTitle:
-        "SEO Cumming, GA: Cost & What Moves Rankings 2026 | Branding Zombie Designs",
+        "SEO in Cumming, GA: Cost, Best Companies & What Works 2026 | Branding Zombie Designs",
       seoDescription:
-        "Local SEO in Cumming, GA runs $500–$1,500/mo. Here's what it is, whether your small business needs it, and what actually moves rankings in 2026.",
+        "Local SEO in Cumming, GA runs $500–$1,500/mo. What it costs, whether your small business needs it, how to pick an SEO company, and what moves rankings in 2026.",
       excerpt:
         "An honest local guide to SEO in Cumming, GA: what it is, whether your small business needs it, what local SEO costs ($500–$1,500/mo), Google Business Profile, DIY vs hiring, timelines, and AI search.",
       keywords: [
@@ -8270,7 +8298,7 @@ export const POSTS: Post[] = [
         "is SEO dead with AI search",
       ],
       author: "Gerry Betancourt",
-      datePublished: "2026-06-10",
+      datePublished: "2026-06-23",
       readingTimeMinutes: 8,
       category: "SEO",
       tags: [
@@ -8297,7 +8325,7 @@ export const POSTS: Post[] = [
       seoTitle:
         "Web Design in Cumming, GA: Costs & What to Look For | Branding Zombie Designs",
       seoDescription:
-        "Web design in Cumming, GA starts around $1,500. Here's what good local web design includes, real price tiers, who owns the site, and how to choose right.",
+        "Web design in Cumming, GA starts around $1,500. What good local web design includes, real price tiers, who owns the site, how to pick the best company, and how to choose right.",
       excerpt:
         "Web design in Cumming, GA starts around $1,500. A local buyer's guide to what good web design includes, real price tiers, DIY vs. local, ownership, timelines, and red flags.",
       keywords: [
@@ -8313,7 +8341,7 @@ export const POSTS: Post[] = [
         "can AI build my website",
       ],
       author: "Gerry Betancourt",
-      datePublished: "2026-06-10",
+      datePublished: "2026-06-23",
       readingTimeMinutes: 8,
       category: "Web Design",
       tags: [
@@ -8513,7 +8541,7 @@ export const POSTS: Post[] = [
         "Forsyth County web design",
       ],
       author: "Gerry Betancourt",
-      datePublished: "2026-06-10",
+      datePublished: "2026-06-23",
       readingTimeMinutes: 8,
       category: "Web Design",
       tags: [
