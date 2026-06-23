@@ -10852,6 +10852,2384 @@ function GolfCartWrapsCummingContent() {
   );
 }
 
+function RestaurantBranding101Content() {
+  return (
+    <>
+      <p>
+        <strong>
+          Restaurant branding is the whole visual system a diner experiences
+          before they ever taste the food
+        </strong>{" "}
+        — your logo, your menu design, your signage, your photos, and the
+        website that decides whether they book a table or scroll to the next
+        place. For a restaurant in Cumming, GA or anywhere in Forsyth County,
+        those pieces have to look like one restaurant, not five different
+        vendors. Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA, builds all of it under one roof — one designer, one invoice
+        — so your brand is consistent from the sign on the road to the order
+        screen on a phone.
+      </p>
+
+      <p>
+        A great kitchen with a clip-art logo and a blurry PDF menu still loses
+        customers. The branding is the first bite. Here&apos;s what restaurant
+        branding actually includes, in the order it matters, and how each piece
+        pulls a hungry stranger toward your door.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Branding is more than a logo.</strong> It&apos;s the logo,
+            menu, signage, photography, and website working as one impression.
+          </li>
+          <li>
+            <strong>Your menu is your most-read document.</strong> Good menu
+            design quietly steers customers toward the dishes you want to sell.
+          </li>
+          <li>
+            <strong>Signage is 24/7 advertising</strong> on people who are
+            already nearby and possibly hungry right now.
+          </li>
+          <li>
+            <strong>Real food photos beat stock every time.</strong> One shoot
+            feeds your menu, site, Google profile, and social.
+          </li>
+          <li>
+            <strong>One designer, one invoice</strong> keeps every piece
+            matching from the road to the table to the phone.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-is-restaurant-branding">
+        What is restaurant branding, exactly?
+      </h2>
+      <p>
+        Restaurant branding is every visual and verbal signal that tells a
+        customer who you are and whether they&apos;ll like eating with you.
+        It&apos;s bigger than a logo. It covers:
+      </p>
+      <ul>
+        <li>
+          The <strong>logo</strong> and the colors, fonts, and look that flow
+          from it.
+        </li>
+        <li>
+          The <strong>menu</strong> — layout, photography, and how it&apos;s
+          priced and organized.
+        </li>
+        <li>
+          <strong>Signage</strong> — the storefront sign, window graphics,
+          A-frames, and banners.
+        </li>
+        <li>
+          <strong>Photography</strong> — real shots of your food, room, and
+          team.
+        </li>
+        <li>
+          The <strong>website</strong> and your presence on Google, delivery
+          apps, and social.
+        </li>
+      </ul>
+      <p>
+        When all of those match, a customer who saw your sign on the way to work
+        recognizes your Instagram that night and trusts your menu the moment it
+        loads. That recognition is the whole point.
+      </p>
+
+      <h2 id="logo-matter">Does a restaurant logo really matter?</h2>
+      <p>
+        Yes — your logo is the smallest, hardest-working piece of your brand. It
+        goes on the sign, the menu, the to-go cups, the shirts, the door, and
+        the phone screen. A logo for a restaurant has to read at a glance and
+        survive being shrunk to a coffee sleeve or blown up on a storefront.
+      </p>
+      <ul>
+        <li>
+          <strong>Simple, bold shapes</strong> that read from a moving car and
+          on a 1-inch app icon.
+        </li>
+        <li>
+          <strong>A legible name</strong> — no over-styled script that turns to
+          mush small.
+        </li>
+        <li>
+          <strong>Colors that work</strong> on a sign, a dark menu, and a
+          single-color stamp.
+        </li>
+        <li>
+          <strong>Vector files you own</strong> so it prints sharp on anything,
+          forever.
+        </li>
+      </ul>
+      <p>
+        Logo design at Branding Zombie Designs runs in tiers so you can start
+        lean and grow into a full identity. See{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        for what&apos;s included at each level.
+      </p>
+
+      <h2 id="menu-design">How important is menu design for a restaurant?</h2>
+      <p>
+        The menu is the single most-read document you own — and most restaurants
+        treat it like an afterthought typed in Word. Good menu design quietly
+        steers customers toward the dishes you want to sell and makes the whole
+        place feel more polished.
+      </p>
+      <ul>
+        <li>
+          <strong>Guides the eye</strong> to high-margin and signature dishes
+          with smart layout.
+        </li>
+        <li>
+          <strong>Stays readable</strong> in dim lighting with clean type and
+          spacing.
+        </li>
+        <li>
+          <strong>Matches your brand</strong> — same fonts and colors as the
+          sign and site.
+        </li>
+        <li>
+          <strong>Works in every format</strong> — printed, laminated, framed,
+          and as a clean digital/QR menu.
+        </li>
+      </ul>
+      <p>
+        If you&apos;re a restaurant doing menu design in Cumming, the goal is a
+        menu that looks like it belongs to the same restaurant as your sign and
+        your website — because to the customer, it&apos;s all one impression.
+      </p>
+
+      <h2 id="signage">What signage does a restaurant need?</h2>
+      <p>
+        Your signage is your most valuable advertising — it works 24/7 on people
+        who are already nearby and possibly hungry right now. Restaurant signage
+        in Cumming, GA should make the name and the type of food obvious from
+        the road.
+      </p>
+      <ul>
+        <li>
+          <strong>Storefront / channel-letter signs</strong> — readable from the
+          street, lit if you do dinner.
+        </li>
+        <li>
+          <strong>Window graphics and decals</strong> — hours, &quot;Now
+          Open,&quot; specials, brand art.
+        </li>
+        <li>
+          <strong>A-frame / sidewalk signs</strong> — daily specials and
+          foot-traffic catches.
+        </li>
+        <li>
+          <strong>Banners</strong> — grand openings, seasonal menus, patio
+          season.
+        </li>
+      </ul>
+      <p>
+        Same logo, same colors as the menu and site. Consistency is what makes a
+        small spot feel like an established local favorite.
+      </p>
+
+      <h2 id="food-photography">Why does food photography matter so much?</h2>
+      <p>
+        People eat with their eyes first, and online they only have their eyes.
+        Real, well-lit photos of your actual food and room beat stock images
+        every time — customers can tell the difference, and stock photos quietly
+        signal &quot;we&apos;re hiding something.&quot;
+      </p>
+      <p>
+        You don&apos;t need a thousand shots. You need a clean set of your
+        bestsellers, a few room and team photos, and one strong hero image for
+        the website and Google. We can shoot fresh photography or work with your
+        existing photos — whatever gets your real food in front of hungry people
+        fastest. Those same photos then feed your menu, your website, your
+        Google Business Profile, and your social — one shoot, used everywhere.
+      </p>
+
+      <h2 id="website-fills-tables">
+        What makes a restaurant website actually fill tables?
+      </h2>
+      <p>
+        A restaurant website has one job: turn a hungry searcher into a booked
+        table or a placed order, fast, on a phone. Most restaurant sites fail
+        because they bury the three things people want.
+      </p>
+      <ul>
+        <li>
+          <strong>Menu</strong> — readable instantly, no slow PDF download.
+        </li>
+        <li>
+          <strong>Hours and location</strong> — with a tap-to-map and
+          tap-to-call.
+        </li>
+        <li>
+          <strong>Reservations or online ordering</strong> — one clear button,
+          not a scavenger hunt.
+        </li>
+        <li>
+          <strong>Real photos</strong> of the food and room.
+        </li>
+        <li>
+          <strong>A fast, mobile-first build</strong> — most restaurant searches
+          happen on a phone, often minutes before someone decides where to eat.
+        </li>
+      </ul>
+      <p>
+        It also needs to be wired to your Google Business Profile, because for
+        &quot;restaurants near me&quot; the map result often matters more than
+        the website itself. See{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> and{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        for your build.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          The One-Invoice Restaurant Brand
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Ready to make hungry people choose you?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Get the logo, menu design, signage, photography, and a
+          reservations-ready website from one designer on one invoice — instead
+          of juggling a logo guy, a sign shop, a print shop, and a web
+          freelancer who never spoke to each other.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-logo-cost">How much does a restaurant logo cost?</h3>
+      <p>
+        Restaurant logo design runs in tiers depending on how many concepts,
+        files, and brand extras you need. A full identity (logo, menu, signage,
+        site) is quoted to your scope.{" "}
+        <InternalLink href="/services/request-quote">Request a quote</InternalLink>{" "}
+        for a number tied to your restaurant.
+      </p>
+
+      <h3 id="faq-what-is">What is restaurant branding?</h3>
+      <p>
+        Restaurant branding is the full visual and verbal system a customer
+        experiences: your logo, colors, fonts, menu design, signage,
+        photography, website, and social presence. When all of it matches,
+        customers recognize and trust you faster — from the sign on the road to
+        the order screen on their phone.
+      </p>
+
+      <h3 id="faq-menus">Do you design menus in Cumming, GA?</h3>
+      <p>
+        Yes. Branding Zombie Designs handles menu design in Cumming, GA and
+        across Forsyth County — printed, laminated, framed, and digital/QR menus
+        — built to match your logo, signage, and website so the whole brand
+        looks like one restaurant. Request a quote with your menu length and
+        item count.
+      </p>
+
+      <h3 id="faq-together">
+        Can you design my logo, menu, signage, and website together?
+      </h3>
+      <p>
+        Yes — that&apos;s the whole idea. One designer builds the logo, menu,
+        signage, and reservations-ready website on a single invoice, so every
+        piece uses the same logo, colors, and fonts. No mismatched vendors, no
+        brand that fights itself.
+      </p>
+
+      <h3 id="faq-reservations">
+        What does a restaurant website need to take reservations?
+      </h3>
+      <p>
+        A fast, mobile-first site with the menu, hours, location, and one clear
+        reservations or online-ordering button up top — plus real food photos
+        and a connected Google Business Profile. Most diners decide on a phone
+        minutes before eating, so the booking path has to be obvious and quick.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, websites, menus, signage, and apparel for small
+        businesses across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function RealEstateAgentBrandingContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Real estate agent branding is the personal identity that makes buyers
+          and sellers remember you
+        </strong>{" "}
+        — not just your brokerage. For an agent working Cumming, GA and Forsyth
+        County, that means a clean personal logo, yard signs that get noticed in
+        front yards, business cards you&apos;re proud to hand out, a real
+        headshot, and a simple agent website. Branding Zombie Designs, a graphic
+        + web design studio in Cumming, GA, builds all of it under one roof —
+        one designer, one invoice — so your sign, your card, and your site all
+        look like the same trustworthy agent.
+      </p>
+
+      <p>
+        Your brokerage gives you a logo and a template site shared with 200
+        other agents. That&apos;s brand for them, not you. The agents who win
+        listings stand on their own name. Here&apos;s how to build a personal
+        real estate brand that works the streets of Forsyth County, piece by
+        piece.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Lead with your personal brand.</strong> Sellers hire an
+            agent, not a logo on a sign.
+          </li>
+          <li>
+            <strong>Most agents need their own logo</strong> — a clean mark
+            built around your name that pairs with the brokerage&apos;s.
+          </li>
+          <li>
+            <strong>Yard signs are still a top lead source.</strong> Every
+            listing is a free billboard.
+          </li>
+          <li>
+            <strong>Use the same headshot everywhere</strong> so people
+            recognize you across sign, card, and site.
+          </li>
+          <li>
+            <strong>One designer, one invoice</strong> keeps your sign, card,
+            and site reading as the same agent.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="personal-vs-brokerage">
+        Personal brand vs brokerage brand: which matters more?
+      </h2>
+      <p>
+        Both matter, but your personal brand is the one that wins repeat
+        business and referrals. Sellers hire an agent, not a logo on a sign. The
+        brokerage gives you credibility and compliance; your personal brand
+        gives you the relationship.
+      </p>
+      <ul>
+        <li>
+          <strong>Lead with you</strong> — your name, your headshot, your
+          personal mark — on the things people remember.
+        </li>
+        <li>
+          <strong>Include the brokerage</strong> where required — logo, license,
+          equal-housing, and any brand rules they enforce.
+        </li>
+        <li>
+          <strong>Stay consistent</strong> so your sign, card, and site all
+          clearly read as the same agent.
+        </li>
+      </ul>
+      <p>
+        Check your brokerage&apos;s branding guidelines before you design
+        anything — most allow a personal logo alongside theirs, but the rules
+        vary. We build the visual brand and can coordinate headshots; just
+        follow your brokerage&apos;s branding rules and we&apos;ll design your
+        personal mark to pair cleanly with them.
+      </p>
+
+      <h2 id="agent-logo">Do real estate agents need their own logo?</h2>
+      <p>
+        Most do — at least a clean personal mark. You don&apos;t need a flashy
+        crest. You need a simple, professional logo or wordmark built around
+        your name that reads on a yard sign from the curb and on a business card
+        in someone&apos;s hand.
+      </p>
+      <ul>
+        <li>
+          <strong>Your name, legible</strong> — the brand people will refer you
+          by.
+        </li>
+        <li>
+          <strong>Simple shapes and one or two colors</strong> that work on
+          signs, cards, and screens.
+        </li>
+        <li>
+          <strong>Versions that pair cleanly</strong> with your brokerage&apos;s
+          required logo.
+        </li>
+        <li>
+          <strong>Vector files you own</strong> so it prints sharp at any size,
+          forever.
+        </li>
+      </ul>
+      <p>
+        Logo design runs in tiers so a new agent can start lean and a top
+        producer can go full identity. See{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>.
+      </p>
+
+      <h2 id="yard-signs">What makes a real estate yard sign work?</h2>
+      <p>
+        Yard signs are still one of the best lead sources in real estate — every
+        listing is a free billboard in a neighborhood full of people thinking
+        about moving. Real estate yard signs in Forsyth County should be
+        readable from a moving car and make it obvious who to call.
+      </p>
+      <ul>
+        <li>
+          Your <strong>name and photo or logo</strong>, big and clear.
+        </li>
+        <li>
+          A <strong>phone number</strong> large enough to read from the street.
+        </li>
+        <li>
+          The <strong>brokerage</strong> as required, kept clean.
+        </li>
+        <li>
+          A simple, uncluttered layout — riders for &quot;Under Contract,&quot;
+          &quot;Open House,&quot; &quot;Sold.&quot;
+        </li>
+      </ul>
+      <p>
+        Order them as a set with matching rider signs so every listing looks
+        like the same professional operation. Sign design and printing live in{" "}
+        <InternalLink href="/services/print-design">print &amp; signage</InternalLink>
+        .
+      </p>
+
+      <h2 id="business-cards">What should be on a real estate business card?</h2>
+      <p>
+        The business card is still the handshake that stays in a pocket. An
+        agent&apos;s card should be clean, match the yard sign, and make it
+        effortless to contact and remember you.
+      </p>
+      <ul>
+        <li>
+          Your <strong>name, title, and headshot</strong>.
+        </li>
+        <li>
+          <strong>Phone, email, and website</strong>, easy to read.
+        </li>
+        <li>
+          Your <strong>personal logo</strong> and the brokerage mark.
+        </li>
+        <li>
+          A <strong>QR code</strong> to your listings, reviews, or a
+          &quot;what&apos;s my home worth&quot; page.
+        </li>
+        <li>Quality stock and finish — it&apos;s a tactile first impression.</li>
+      </ul>
+      <p>
+        Real estate business cards in Cumming, GA should match your sign and
+        site exactly. Same logo, same colors, every time — that repetition is
+        what makes a solo agent feel established.
+      </p>
+
+      <h2 id="headshot">Why does a professional headshot matter?</h2>
+      <p>
+        In real estate, you are the product, and your headshot is on the sign,
+        the card, the site, and every listing. A sharp, current, professional
+        headshot signals competence and trust before you say a word — a blurry
+        selfie or a ten-year-old photo quietly costs you listings.
+      </p>
+      <p>
+        Use the same headshot everywhere so people recognize you across your
+        sign, card, Zillow profile, and website. We build the visual brand and
+        can coordinate headshots, and we&apos;ll format your headshot
+        consistently across every piece so it always reads as the same agent.
+      </p>
+
+      <h2 id="agent-website">Does a real estate agent need their own website?</h2>
+      <p>
+        Yes — a simple one. Your brokerage profile and Zillow page are rented
+        space shared with competitors and stuffed with other agents&apos; ads. A
+        clean personal agent site is yours, ranks for your name, and gives you
+        one place to send every lead.
+      </p>
+      <ul>
+        <li>
+          Your <strong>headshot, bio, and personal brand</strong> front and
+          center.
+        </li>
+        <li>
+          <strong>Active listings</strong> or a clean way to view them.
+        </li>
+        <li>
+          <strong>Tap-to-call and a short contact form</strong>, mobile-first.
+        </li>
+        <li>
+          A <strong>&quot;what&apos;s my home worth&quot; or buyer-guide</strong>{" "}
+          lead capture.
+        </li>
+        <li>
+          <strong>Reviews and recent sales</strong> to build trust.
+        </li>
+      </ul>
+      <p>
+        See{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>. A
+        simple agent site usually sits at the lean end of the scale.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          The One-Invoice Agent Brand
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Ready to stand on your own name?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Get a personal logo, yard signs and riders, business cards, headshot
+          coordination, and a simple agent website from one designer on one
+          invoice — instead of juggling a logo site, a sign printer, a card
+          printer, and a web freelancer who never matched anything up.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-need-logo">Do real estate agents need their own logo?</h3>
+      <p>
+        Most do — at least a clean personal mark built around your name. Sellers
+        hire the agent, not the brokerage logo. A simple personal logo that
+        pairs with your brokerage&apos;s required mark helps people remember and
+        refer you. Logo design runs in tiers by scope.
+      </p>
+
+      <h3 id="faq-card-cost">
+        How much do real estate business cards cost in Cumming, GA?
+      </h3>
+      <p>
+        It depends on design, stock, finish, and quantity, so we quote per
+        order. The bigger value is matching: your card, yard sign, and website
+        all built from the same logo and colors. Request a quote with your
+        quantity and any brokerage brand rules.
+      </p>
+
+      <h3 id="faq-yard-sign">What should a real estate yard sign include?</h3>
+      <p>
+        Your name and photo or logo, a large phone number, the brokerage mark as
+        required, and a clean, uncluttered layout — readable from a moving car.
+        Order matching rider signs (&quot;Open House,&quot; &quot;Under
+        Contract,&quot; &quot;Sold&quot;) so every listing looks like the same
+        professional operation.
+      </p>
+
+      <h3 id="faq-own-site">
+        Should a realtor have a personal website or just use the brokerage page?
+      </h3>
+      <p>
+        A simple personal site is worth it. Brokerage and Zillow pages are
+        shared, rented space full of competitors&apos; ads. Your own site ranks
+        for your name, captures leads (&quot;what&apos;s my home worth&quot;),
+        and gives you one place to send everyone — built mobile-first with
+        tap-to-call.
+      </p>
+
+      <h3 id="faq-brokerage-rules">
+        Can you coordinate my personal brand with my brokerage&apos;s rules?
+      </h3>
+      <p>
+        Yes. Most brokerages allow a personal logo and site alongside their
+        required branding, but the rules vary. We design your personal mark to
+        pair cleanly with the brokerage logo, license, and equal-housing
+        requirements. Share your brokerage&apos;s guidelines and we&apos;ll work
+        within them.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, signs, cards, websites, and apparel for small
+        businesses across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function SupplementCpgBrandingContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Supplement and CPG branding is the system that makes a product earn a
+          place in someone&apos;s cart
+        </strong>{" "}
+        — the label that pops on a crowded shelf, the packaging that survives
+        shipping and a phone screen, the brand identity that holds it all
+        together, and the Shopify store that turns browsers into buyers. For a
+        CPG or supplement brand in Cumming, GA or Forsyth County, those pieces
+        have to feel like one product line, not a label here and a website
+        there. Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA, builds all of it under one roof — one designer, one invoice
+        — from the label to the launched store.
+      </p>
+
+      <p>
+        A great formula with a homemade label and a clunky Shopify theme dies on
+        the shelf and in the cart. The packaging is the pitch. Here&apos;s what
+        supplement and CPG branding actually includes, in the order that gets
+        you to launch.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>The packaging is the pitch.</strong> The label has to pop on
+            a shelf and read on a 1-inch thumbnail.
+          </li>
+          <li>
+            <strong>You confirm compliance.</strong> You sign off on any
+            required regulatory or supplement-facts content; we handle the design
+            and produce labels.
+          </li>
+          <li>
+            <strong>A brand system beats a logo.</strong> Templates let you
+            launch SKU after SKU that all look related.
+          </li>
+          <li>
+            <strong>A Shopify-ready store is the engine room</strong> — matched
+            to the label and built to convert on a phone.
+          </li>
+          <li>
+            <strong>One designer, label to store</strong> is the fastest path to
+            a launch where everything matches.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-is-cpg-branding">
+        What is CPG and supplement branding?
+      </h2>
+      <p>
+        CPG (consumer packaged goods) and supplement branding is the full visual
+        identity of a product made to be bought, shipped, and reordered.
+        It&apos;s bigger than a logo. It covers:
+      </p>
+      <ul>
+        <li>
+          The <strong>brand identity</strong> — logo, colors, fonts, and the
+          overall look.
+        </li>
+        <li>
+          <strong>Label and packaging design</strong> — the part that sells on a
+          shelf or in a thumbnail.
+        </li>
+        <li>
+          <strong>Product photography</strong> — clean shots for the site,
+          Amazon, and ads.
+        </li>
+        <li>
+          The <strong>Shopify-ready store</strong> — where the actual selling
+          happens.
+        </li>
+      </ul>
+      <p>
+        When the label, the box, and the website all match, a customer who saw
+        your product on a shelf recognizes it online and trusts it enough to
+        reorder. That consistency is what builds a brand instead of a one-off
+        product.
+      </p>
+
+      <h2 id="label-design">What goes into supplement label design?</h2>
+      <p>
+        The label is your hardest-working sales tool — it has to pop on a shelf,
+        read on a 1-inch phone thumbnail, and stay compliant. Supplement label
+        design especially has to balance shelf appeal with required information.
+      </p>
+      <ul>
+        <li>
+          <strong>A bold front panel</strong> that reads instantly at shelf
+          distance and in a small online image.
+        </li>
+        <li>
+          <strong>Clean, organized information</strong> — supplement facts
+          panel, ingredients, directions, warnings, net quantity.
+        </li>
+        <li>
+          <strong>Brand consistency</strong> across every SKU and flavor so the
+          line looks like a family.
+        </li>
+        <li>
+          <strong>Print-ready files</strong> built to your label printer&apos;s
+          dieline and specs.
+        </li>
+      </ul>
+      <p>
+        A critical note on compliance: you confirm any required regulatory or
+        supplement-facts content with a qualified advisor; we handle the design
+        — fitting the required panels and your supplier&apos;s spec — and
+        produce labels through our in-house print pipeline. Supplement and food
+        labels carry FDA and labeling rules, so claims and required statements
+        are yours to verify before printing.
+      </p>
+
+      <h2 id="packaging-cost">How much does packaging design cost?</h2>
+      <p>
+        Packaging design depends on how many SKUs you have, how complex the
+        packaging is (a single label vs. a box, sleeve, and insert system), and
+        whether you need a full brand identity built first. Because of that,
+        packaging and label work is quoted to your scope rather than a fixed
+        price.
+      </p>
+      <ul>
+        <li>
+          <strong>How many products and flavors</strong> (one SKU vs. a
+          12-product line).
+        </li>
+        <li>
+          <strong>Format</strong> — bottle label, pouch, box, sleeve,
+          multi-piece system.
+        </li>
+        <li>
+          <strong>Whether the brand identity exists</strong> or needs building
+          from the logo up.
+        </li>
+        <li>
+          <strong>Print-readiness</strong> — dielines, mockups, and files for
+          your printer.
+        </li>
+      </ul>
+      <p>
+        Packaging design in Georgia for a local CPG brand is most cost-effective
+        bundled with the brand identity and store, so it all matches.{" "}
+        <InternalLink href="/services/request-quote">Request a quote</InternalLink>{" "}
+        with your SKU count and we&apos;ll scope it.
+      </p>
+
+      <h2 id="brand-system">
+        Why does a CPG brand need a full brand system, not just a logo?
+      </h2>
+      <p>
+        A logo alone doesn&apos;t sell a product line. A brand system — logo plus
+        colors, fonts, label templates, and rules — is what lets you launch SKU
+        after SKU that all look related without redesigning from scratch each
+        time.
+      </p>
+      <ul>
+        <li>
+          <strong>A logo and color palette</strong> that works on packaging, the
+          site, and ads.
+        </li>
+        <li>
+          <strong>Label templates</strong> so new flavors and products stay
+          on-brand fast.
+        </li>
+        <li>
+          <strong>Type and layout rules</strong> for consistency across every
+          touchpoint.
+        </li>
+        <li>
+          <strong>Assets that scale</strong> as you add SKUs or hit retail.
+        </li>
+      </ul>
+      <p>
+        That system is what makes a small local CPG brand look like it belongs
+        next to the national names. See{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> for what
+        a full identity includes.
+      </p>
+
+      <h2 id="shopify-store">What does a Shopify-ready store need?</h2>
+      <p>
+        For most CPG and supplement brands, Shopify is the engine room —
+        it&apos;s where the selling, shipping, and reordering happen. A
+        Shopify-ready store has to match your packaging and make buying
+        effortless on a phone.
+      </p>
+      <ul>
+        <li>
+          <strong>Clean product pages</strong> with real photos, benefits, and
+          supplement facts.
+        </li>
+        <li>
+          <strong>Branding that matches the label</strong> — same logo, colors,
+          and feel.
+        </li>
+        <li>
+          <strong>A fast, mobile-first build</strong> — most product discovery
+          happens on a phone.
+        </li>
+        <li>
+          <strong>Subscriptions / reorder</strong> options for consumables.
+        </li>
+        <li>
+          <strong>Reviews, bundles, and clear shipping</strong> to lift average
+          order value.
+        </li>
+      </ul>
+      <p>
+        E-commerce builds live in{" "}
+        <InternalLink href="/services/ecommerce">
+          ecommerce web design
+        </InternalLink>
+        , scoped to your catalog size and features.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          The Fastest Path to Launch
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Ready to take your product from formula to shelf?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Get the brand identity, label and packaging design, product-photo
+          coordination, and a Shopify-ready store from one designer on one
+          invoice — instead of juggling a label designer, a separate brand
+          studio, and a Shopify freelancer who never saw the packaging.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-label-cost">How much does supplement label design cost?</h3>
+      <p>
+        It&apos;s quoted to scope — driven by how many SKUs and flavors you have,
+        the packaging format, and whether a brand identity needs building first.
+        A single bottle label costs far less than a full multi-SKU system. Send
+        your product count and label specs for a quote tied to your line.
+      </p>
+
+      <h3 id="faq-on-label">What goes on a supplement label?</h3>
+      <p>
+        Typically the product name and brand, a supplement facts panel,
+        ingredients, directions, warnings, and net quantity — plus any required
+        statements. We design the label to fit those panels and your
+        printer&apos;s dieline, but you confirm claims and compliance with a
+        qualified regulatory advisor before printing.
+      </p>
+
+      <h3 id="faq-packaging-ga">
+        Do you design packaging in Georgia for local CPG brands?
+      </h3>
+      <p>
+        Yes. Branding Zombie Designs handles label and packaging design in
+        Cumming, GA and across Forsyth County and North Metro Atlanta, built
+        print-ready to your supplier&apos;s dieline. It&apos;s most
+        cost-effective bundled with the brand identity and Shopify store so
+        everything matches. Request a quote with your SKU list.
+      </p>
+
+      <h3 id="faq-brand-and-store">
+        Can you build my brand and my Shopify store together?
+      </h3>
+      <p>
+        Yes — that&apos;s the whole idea. One designer builds the brand identity,
+        the label and packaging, and the Shopify-ready store on a single
+        invoice, so your shelf and your site match on launch day. Request a
+        quote scoped to your catalog.
+      </p>
+
+      <h3 id="faq-logo-vs-system">
+        What&apos;s the difference between a logo and a brand system for CPG?
+      </h3>
+      <p>
+        A logo is one mark. A brand system is the logo plus colors, fonts, label
+        templates, and rules that let you launch SKU after SKU that all look
+        related — without redesigning each time. For a product line that grows,
+        the system is what keeps it looking like one cohesive brand.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Brand identity, labels, packaging, and Shopify stores for
+        product brands across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function ChurchYouthApparelContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          If you&apos;re ordering custom apparel for churches and youth sports
+          in Cumming, GA, the decisions that matter most before you pay are:
+        </strong>{" "}
+        screen-print vs embroidery for your quantity, how to collect sizes
+        without a headache, whether your artwork is print-ready, and how much
+        turnaround time you actually have before the event. Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA, handles the design
+        and the apparel together — so your shirts, hoodies, and jerseys match
+        your group&apos;s logo instead of looking like a clip-art afterthought.
+      </p>
+
+      <p>
+        Most groups order custom shirts in a panic the week before, with a
+        blurry logo and no size count. This guide keeps you out of that ditch.
+        Here&apos;s what to sort out before you place a bulk apparel order in
+        Forsyth County.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Screen print for bulk tees and hoodies;</strong> embroidery
+            for polos, hats, and jackets.
+          </li>
+          <li>
+            <strong>Collect sizes before you order</strong> with one form, a
+            hard deadline, and a size chart.
+          </li>
+          <li>
+            <strong>Artwork must be vector</strong> — a phone screenshot
+            won&apos;t hold up on fabric.
+          </li>
+          <li>
+            <strong>Start early.</strong> Turnaround varies by run size and
+            decoration method — request a quote and we&apos;ll confirm timing.
+          </li>
+          <li>
+            <strong>One designer for the logo and the shirts</strong> means
+            everything matches the same mark.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="screen-vs-embroidery">
+        Screen-print vs embroidery: which is right for bulk?
+      </h2>
+      <p>
+        This is the first and biggest decision, and it comes down to quantity,
+        the garment, and the look you want. Both are great — for different jobs.
+      </p>
+      <p>
+        <strong>Screen printing</strong> is best for:
+      </p>
+      <ul>
+        <li>
+          <strong>Higher quantities</strong> of the same design — the more
+          shirts, the cheaper per piece.
+        </li>
+        <li>
+          <strong>T-shirts and hoodies</strong> — VBS shirts, team tees,
+          fundraiser runs, event giveaways.
+        </li>
+        <li>
+          <strong>Bold, multi-color graphics</strong> printed flat and large
+          (front, back, sleeve).
+        </li>
+      </ul>
+      <p>
+        <strong>Embroidery</strong> is best for:
+      </p>
+      <ul>
+        <li>
+          <strong>Polos, hats, jackets, and bags</strong> — it looks premium and
+          lasts.
+        </li>
+        <li>
+          <strong>Logos and names</strong> rather than big full-color art.
+        </li>
+        <li>
+          <strong>Coaches, staff, and &quot;nicer&quot; pieces</strong> where
+          durability and polish matter.
+        </li>
+      </ul>
+      <p>
+        A common smart combo: screen-printed tees for the kids and crowd,
+        embroidered polos and hats for coaches, staff, and leadership. Apparel
+        decoration lives in{" "}
+        <InternalLink href="/services/print-design">
+          print &amp; apparel
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="sizing">How do you handle sizing and ordering for a group?</h2>
+      <p>
+        Sizing is where group orders fall apart. The fix is collecting sizes
+        before you order, not guessing — especially with youth sizes, which vary
+        wildly.
+      </p>
+      <ul>
+        <li>
+          <strong>Send one size sheet or form</strong> and set a hard deadline.
+        </li>
+        <li>
+          <strong>Use a size chart</strong> so parents and players pick by
+          measurement, not vibes.
+        </li>
+        <li>
+          <strong>Order a few extras</strong> in the most common sizes for late
+          additions and replacements.
+        </li>
+        <li>
+          <strong>Confirm youth vs adult cuts</strong> — &quot;youth large&quot;
+          and &quot;adult small&quot; are not the same.
+        </li>
+        <li>
+          <strong>Lock the count</strong> before art goes to production.
+        </li>
+      </ul>
+      <p>
+        For youth sports, build the roster-and-number list at the same time you
+        collect sizes so jerseys go to production once, correctly.
+      </p>
+
+      <h2 id="artwork">Is your artwork ready to print?</h2>
+      <p>
+        A logo that looks fine on a phone often falls apart on a shirt. Screen
+        printing and embroidery both need clean, properly prepared artwork —
+        this is the step that quietly ruins rush orders.
+      </p>
+      <ul>
+        <li>
+          <strong>Vector files</strong> (AI, EPS, SVG) for sharp, scalable
+          prints — not a screenshot.
+        </li>
+        <li>
+          <strong>High-contrast, simple shapes</strong> that hold up on fabric,
+          especially for embroidery.
+        </li>
+        <li>
+          <strong>Defined colors</strong> so every shirt matches across the
+          batch.
+        </li>
+        <li>
+          <strong>Right size and placement</strong> for the garment and
+          decoration method.
+        </li>
+      </ul>
+      <p>
+        If your group only has a low-res logo or none at all, that&apos;s
+        fixable. We can clean up or vectorize an existing church or team logo, or
+        design a proper one first — and a clean vector logo pays off on every
+        shirt, banner, and sign after. See{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>.
+      </p>
+
+      <h2 id="turnaround">How long does custom apparel take? (Turnaround)</h2>
+      <p>
+        Turnaround is the thing groups underestimate most. Custom apparel
+        isn&apos;t same-day — art approval, size collection, and production all
+        take time, and rush orders cost more (when they&apos;re possible at
+        all).
+      </p>
+      <ul>
+        <li>
+          <strong>Art and approval</strong> — finalize the design and get a
+          sign-off.
+        </li>
+        <li>
+          <strong>Size collection</strong> — give parents/players a real
+          deadline.
+        </li>
+        <li>
+          <strong>Production</strong> — screen printing and embroidery both need
+          lead time, more in busy seasons.
+        </li>
+        <li>
+          <strong>Buffer</strong> — leave a cushion for reprints or late sizes.
+        </li>
+      </ul>
+      <p>
+        The single best move: start early. A VBS, tournament, or fundraiser date
+        is known months out — order on that timeline, not the panic timeline.
+        Turnaround varies by run size and decoration method, so{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        with your event date and we&apos;ll confirm timing.
+      </p>
+
+      <h2 id="bulk-cost">What does custom apparel cost in bulk?</h2>
+      <p>
+        Per-shirt cost depends on quantity, garment, number of print colors or
+        stitch count, and decoration method — so apparel is quoted per order.
+        The good news: bulk pricing works in your favor, and the per-piece price
+        drops as the count goes up.
+      </p>
+      <ul>
+        <li>
+          <strong>Quantity</strong> — more pieces, lower cost each.
+        </li>
+        <li>
+          <strong>Garment</strong> — basic tee vs. premium hoodie vs. embroidered
+          polo.
+        </li>
+        <li>
+          <strong>Decoration</strong> — number of screen-print colors or
+          embroidery stitch count.
+        </li>
+        <li>
+          <strong>Placements</strong> — front only vs. front, back, and sleeve.
+        </li>
+      </ul>
+      <p>
+        Send your quantity, garment, and design and we&apos;ll quote it.{" "}
+        <InternalLink href="/services/request-quote">Request a quote</InternalLink>{" "}
+        with your event date so we can confirm turnaround too.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          One Designer for the Logo and the Shirts
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Got an event date and a roster?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Whether it&apos;s VBS shirts, team jerseys, or coach polos, get the
+          logo and the apparel from one designer — so the shirts, hoodies,
+          jerseys, hats, and banners all match the same mark, and you&apos;re not
+          emailing a blurry logo to a shop that&apos;s never seen your brand.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-screen-vs-embroidery">
+        Should I use screen printing or embroidery for church and team shirts?
+      </h3>
+      <p>
+        Use screen printing for higher quantities of t-shirts and hoodies with
+        bold graphics — it gets cheaper per piece in bulk. Use embroidery for
+        polos, hats, and jackets where logos look premium and last. Many groups
+        do both: printed tees for everyone, embroidered polos for coaches and
+        staff.
+      </p>
+
+      <h3 id="faq-bulk-cost">
+        How much do custom shirts cost in bulk in Cumming, GA?
+      </h3>
+      <p>
+        Per-shirt cost drops as quantity rises and depends on the garment,
+        decoration method, and number of colors or stitch count, so we quote per
+        order. Send your quantity, garment, and design for a price. Bulk pricing
+        works in your favor — the bigger the order, the lower the cost each.
+      </p>
+
+      <h3 id="faq-collect-sizes">How do I collect sizes for a group order?</h3>
+      <p>
+        Send one size form with a hard deadline and a size chart so people pick
+        by measurement, especially for youth sizes. Order a few extras in common
+        sizes for late additions, confirm youth vs adult cuts, and lock the
+        count before art goes to production. Guessing sizes is where orders go
+        wrong.
+      </p>
+
+      <h3 id="faq-logo-file">What kind of logo file do I need for custom shirts?</h3>
+      <p>
+        A vector file (AI, EPS, SVG) prints sharp at any size for screen printing
+        and embroidery — a phone screenshot or low-res image won&apos;t. If your
+        church or team only has a low-res logo, we can clean it up or design a
+        proper one first, which then works on every shirt, banner, and sign
+        after.
+      </p>
+
+      <h3 id="faq-how-far-ahead">
+        How far in advance should I order custom apparel?
+      </h3>
+      <p>
+        Start as early as you can. Art approval, size collection, and production
+        each take time, and rush orders cost more when they&apos;re possible at
+        all. Work backward from your event date — VBS, tournaments, and
+        fundraisers are known months out — and build in a buffer for reprints or
+        late sizes.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, screen printing, embroidery, banners, and signage for
+        groups across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function CostToBrandBusinessContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          The cost to brand a new business in Cumming, GA usually lands somewhere
+          between $1,000 and $7,500+,
+        </strong>{" "}
+        depending on how much you launch with — a logo and cards on the low end,
+        a full logo-plus-website-plus-print package on the high end. At Branding
+        Zombie Designs, a graphic + web design studio in Cumming, GA serving
+        Forsyth County and North Metro Atlanta, we&apos;d rather show you the
+        real line items than hand you one scary lump sum.
+      </p>
+
+      <p>
+        That&apos;s the short answer. Below is the honest breakdown — what each
+        piece costs, what you can skip at launch, and where most first-time
+        owners actually start.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Branding usually runs $1,000–$7,500+</strong> depending on
+            how many surfaces your brand needs.
+          </li>
+          <li>
+            <strong>You don&apos;t need everything on day one.</strong> Launch
+            with two pieces, add the rest as you grow.
+          </li>
+          <li>
+            <strong>Logo first.</strong> Everything else gets built on it — buy
+            cheap and you redo the rest later.
+          </li>
+          <li>
+            <strong>One shop beats five vendors.</strong> Fewer revisions, no
+            mismatched colors, one invoice.
+          </li>
+          <li>
+            <strong>Buy in the right order</strong> to protect your earlier
+            purchases from costly redos.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-goes-in">What goes into branding a new business?</h2>
+      <p>
+        &quot;Branding&quot; isn&apos;t one thing you buy. It&apos;s a stack of
+        pieces, and you don&apos;t need all of them on day one. Here&apos;s what
+        a new business in Forsyth County typically needs to look real:
+      </p>
+      <ul>
+        <li>
+          <strong>A logo</strong> — the mark everything else is built around.
+        </li>
+        <li>
+          <strong>A website</strong> — where people check if you&apos;re legit
+          before they call.
+        </li>
+        <li>
+          <strong>Business cards</strong> — still the fastest way to hand someone
+          your info.
+        </li>
+        <li>
+          <strong>Shirts or apparel</strong> — uniforms, team gear, or merch.
+        </li>
+        <li>
+          <strong>Signage</strong> — a yard sign, a banner, truck lettering, a
+          storefront sign.
+        </li>
+      </ul>
+      <p>
+        You can launch with two of these and add the rest as you grow. The trick
+        is buying them in an order that doesn&apos;t force you to redo work
+        later.
+      </p>
+
+      <h2 id="each-piece-cost">How much does each piece cost?</h2>
+      <p>
+        These are honest, real-world ranges — not fixed quotes. Scope moves every
+        number, so treat them as starting points.
+      </p>
+      <ul>
+        <li>
+          <strong>Logo — around $750 to $2,500.</strong> A clean professional
+          mark starts around $750. A full identity with color palette and fonts
+          runs toward $2,500. See{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+          for the tiers.
+        </li>
+        <li>
+          <strong>Website — starts around $1,500.</strong> A simple site starts
+          near $1,500; a fuller multi-page site commonly runs $2,500 to $7,500+
+          depending on pages, features, and content. See{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink>.
+        </li>
+        <li>
+          <strong>Business cards — request a quote.</strong> A short run of cards
+          is one of the cheapest, highest-impact pieces you&apos;ll buy. We scope
+          it to your run size and finish.
+        </li>
+        <li>
+          <strong>Shirts &amp; apparel — depends on decoration and count.</strong>{" "}
+          Screen-printing and embroidery price by quantity, colors, and
+          placement, so the per-shirt cost drops fast as you order more. Request
+          a quote with your count.
+        </li>
+        <li>
+          <strong>Signage — request a quote.</strong> Yard signs, banners, truck
+          lettering, and door hangers vary widely by size and material, so
+          we&apos;ll scope it to what you need.
+        </li>
+      </ul>
+
+      <h2 id="cheapest-way">What&apos;s the cheapest way to brand a new business?</h2>
+      <p>
+        If you&apos;re launching lean, you don&apos;t start with everything. You
+        start with the pieces that earn trust fastest: a real logo and a place
+        for people to find you.
+      </p>
+      <p>
+        Our{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        is built exactly for this. It bundles a logo and brand kit, 100 business
+        cards, 100 flyers, and a simple one-page website with a domain and a year
+        of hosting — delivered in about 10 days. For a brand-new shop that needs
+        to look legit now, it&apos;s the fastest honest path off zero.
+      </p>
+      <p>
+        It won&apos;t replace a full website forever. But it gets you a real
+        mark, real cards, and a real web address while you find your footing.
+      </p>
+
+      <h2 id="full-launch">What does a full launch package cost?</h2>
+      <p>
+        When you&apos;re investing for the long haul — not just opening the doors
+        — you want the whole stack to match from day one.
+      </p>
+      <p>
+        Our{" "}
+        <InternalLink href="/services/launch-package">
+          Launch Package
+        </InternalLink>{" "}
+        is the full bundle: a logo suite, brand basics, a five-page website, and
+        a 90-day content calendar, delivered in about four weeks. It&apos;s for
+        the owner who knows they&apos;ll be showing up across a website, social,
+        print, and signage, and wants it all speaking the same visual language
+        out of the gate.
+      </p>
+      <p>
+        The middle ground — logo plus a standalone website, add apparel and
+        signage as you grow — is where a lot of Forsyth County businesses land.
+        There&apos;s no single right answer; there&apos;s the right answer for
+        your budget and your timeline. When you want a real figure,{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>{" "}
+        or text Gerry.
+      </p>
+
+      <h2 id="one-shop">Why is &quot;one shop&quot; cheaper than five vendors?</h2>
+      <p>
+        Here&apos;s the part that quietly saves you money: who&apos;s making all
+        this. When your logo comes from one person, your website from another,
+        your shirts from a print shop, and your signs from a sign guy, nobody
+        owns the whole look. Colors drift. The logo gets stretched. The shirt
+        doesn&apos;t match the site. You pay in revisions, mismatches, and redos.
+      </p>
+      <p>
+        At Branding Zombie Designs, the logo, website, shirts, and signs come
+        from one designer on one invoice. Nothing clashes because nobody&apos;s
+        guessing what your colors are. That&apos;s the wedge — and it&apos;s why
+        bundling beats stitching five vendors together.
+      </p>
+      <p>
+        <em>
+          (We put a zombie in the brand. We did not put your launch budget in a
+          shallow grave.)
+        </em>
+      </p>
+
+      <h2 id="smart-order">What&apos;s the smart order to buy in?</h2>
+      <p>Buy in the order that protects your earlier purchases.</p>
+      <ul>
+        <li>
+          <strong>Logo first.</strong> Everything else gets built on it. Buy a
+          cheap one and you&apos;ll redo the rest later.
+        </li>
+        <li>
+          <strong>Cards and a simple site next.</strong> Now you&apos;re findable
+          and you can hand out your info.
+        </li>
+        <li>
+          <strong>Apparel and signage after.</strong> These are the most
+          expensive to redo, so wait until the logo is locked and scalable.
+        </li>
+      </ul>
+      <p>
+        The mistake we see most: someone prints 500 shirts and a yard sign off a
+        $5 logo, then rebrands in a year and pays for all of it twice. Order
+        matters as much as budget. For more on that trap, read our{" "}
+        <InternalLink href="/blog/logo-cost-cumming-ga">
+          logo cost guide
+        </InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          website cost guide for 2026
+        </InternalLink>
+        .
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          One Clean Number, Not Five Estimates
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Branding a new business shouldn&apos;t feel like guesswork.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          If you want one clean number instead of five vendor estimates,
+          let&apos;s talk. Launch lean with the Startup Special, or scope the
+          full stack — logo, site, cards, shirts, and signs — on one invoice.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-cost">How much does it cost to brand a new business?</h3>
+      <p>
+        For a small business in Cumming and Forsyth County, branding usually runs
+        $1,000 to $7,500+, depending on scope. A logo and cards sit on the low
+        end; a full logo-plus-website-plus-print launch sits on the high end.
+        Ranges shift with how many surfaces your brand needs to live on.
+      </p>
+
+      <h3 id="faq-cheapest">What&apos;s the cheapest way to brand a startup?</h3>
+      <p>
+        Start with a real logo and a simple web presence, then add the rest as
+        you grow. A bundled launch offer like a $997 Startup Special covers a
+        logo, cards, flyers, and a one-page site at once — far cheaper and more
+        consistent than buying each piece from a separate vendor over time.
+      </p>
+
+      <h3 id="faq-launch-pieces">Do I need shirts and signage at launch?</h3>
+      <p>
+        Usually not on day one. Apparel and signage are the most expensive pieces
+        to redo, so wait until your logo is final and built to scale. Launch with
+        a logo, cards, and a website first; add shirts and signs once your brand
+        is locked and you know you&apos;ll keep it.
+      </p>
+
+      <h3 id="faq-logo-site-budget">
+        How much should I budget for a logo and website together?
+      </h3>
+      <p>
+        A professional logo runs about $750 to $2,500, and a website starts
+        around $1,500 (often $2,500 to $7,500+ for a fuller site). Together,
+        budget roughly $2,250 on the lean end and up toward $10,000 for a full
+        custom build. Bundling the two usually costs less than buying them
+        separately.
+      </p>
+
+      <h3 id="faq-one-designer">
+        Is it cheaper to use one designer for everything?
+      </h3>
+      <p>
+        Generally, yes. One designer handling your logo, website, shirts, and
+        signs means fewer revisions, no mismatched colors, and one invoice
+        instead of five vendors who don&apos;t talk to each other. The
+        consistency alone saves you from costly redos when pieces don&apos;t line
+        up.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Logos, websites, shirts, and signs under one roof for small
+        businesses across Forsyth County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function SevenCsWebsiteDesignContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          The 7 C&apos;s of website design are Context, Content, Clarity,
+          Consistency, Credibility, Conversion, and Connection
+        </strong>{" "}
+        — a simple checklist for whether a site actually works or just looks
+        busy. At Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA serving Forsyth County and North Metro Atlanta, we use these
+        seven as a quick gut-check on any site, including the ones small
+        businesses bring us to fix.
+      </p>
+
+      <p>
+        Here&apos;s the short version, then a one-or-two-line breakdown of each.
+        Count how many your current site nails — most small business sites miss
+        at least three.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          What are the 7 C&apos;s of website design?
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Context</strong> — the site fits the visitor&apos;s
+            situation, device, and intent.
+          </li>
+          <li>
+            <strong>Content</strong> — it says something useful, not just filler.
+          </li>
+          <li>
+            <strong>Clarity</strong> — a visitor knows what you do and what to do
+            next in seconds.
+          </li>
+          <li>
+            <strong>Consistency</strong> — colors, fonts, and tone match
+            everywhere.
+          </li>
+          <li>
+            <strong>Credibility</strong> — it looks trustworthy and proves
+            you&apos;re real.
+          </li>
+          <li>
+            <strong>Conversion</strong> — it&apos;s built to turn visitors into
+            calls, forms, or sales.
+          </li>
+          <li>
+            <strong>Connection</strong> — it speaks to a real person, not
+            &quot;everyone.&quot;
+          </li>
+        </ul>
+      </aside>
+
+      <p>
+        That&apos;s the whole framework. Now here&apos;s what each one actually
+        means for a small business site.
+      </p>
+
+      <h2 id="context">1. Context</h2>
+      <p>
+        Context means your site fits where and how people land on it. Most of
+        your visitors are on a phone, in a hurry, half-distracted. A site that
+        ignores that — tiny text, slow load, desktop-only layout — fails before
+        the content even matters. If your site isn&apos;t fast and clean on a
+        phone, you&apos;ve already lost the context game.
+      </p>
+
+      <h2 id="content">2. Content</h2>
+      <p>
+        Content is whether your site actually says something. Real answers to
+        real questions: what you do, who you help, what it costs, how to reach
+        you. &quot;Welcome to our website&quot; is not content. The hours a
+        customer is trying to find at 8pm — that&apos;s content.
+      </p>
+
+      <h2 id="clarity">3. Clarity</h2>
+      <p>
+        Clarity is the three-second test: can a visitor tell what you do and what
+        to do next, fast? If they have to hunt, they leave. One clear headline,
+        one obvious next step. We wrote a whole piece on this in the{" "}
+        <InternalLink href="/blog/3-second-rule-website-design">
+          3-second rule of website design
+        </InternalLink>{" "}
+        — it&apos;s the C most sites flunk hardest.
+      </p>
+
+      <h2 id="consistency">4. Consistency</h2>
+      <p>
+        Consistency means your website looks like the same business as your logo,
+        your cards, and your shirts. Same colors, same fonts, same voice. When
+        the site uses one shade of blue and the logo uses another, visitors feel
+        it even if they can&apos;t name it. It reads as &quot;amateur.&quot; This
+        is exactly why one designer handling logo and site beats stitching
+        vendors together.
+      </p>
+
+      <h2 id="credibility">5. Credibility</h2>
+      <p>
+        Credibility is whether the site makes people trust you enough to call.
+        Real photos, real reviews, a real address and phone, no broken links, no
+        &quot;Lorem ipsum&quot; still sitting in the footer. A polished, current
+        site signals a business that&apos;s still in business. A stale one
+        signals the opposite.
+      </p>
+
+      <h2 id="conversion">6. Conversion</h2>
+      <p>
+        Conversion is whether the site is built to do something — get the call,
+        the form, the booking, the sale. A beautiful site that doesn&apos;t ask
+        for the next step is a brochure, not a tool. Clear calls to action, an
+        easy contact path, a phone number that&apos;s tappable on mobile. Pretty
+        is nice; pretty that converts is the point.
+      </p>
+
+      <h2 id="connection">7. Connection</h2>
+      <p>
+        Connection is whether the site talks to a specific person instead of
+        &quot;everyone.&quot; A site aimed at everyone connects with no one. When
+        your copy speaks to your actual customer — the Forsyth County homeowner,
+        the new restaurant owner, the trades crew — people feel like you get
+        them. That&apos;s what turns a click into a customer.
+      </p>
+
+      <h2 id="how-many-missing">How many C&apos;s is your site missing?</h2>
+      <p>
+        Most small business sites we see in Cumming, GA do fine on two or three
+        C&apos;s and quietly fail the rest. Usually it&apos;s a decent-looking
+        site (consistency, credibility) that has no clear next step (clarity,
+        conversion) and reads like it was written for nobody (connection).
+      </p>
+      <p>
+        The good news: you don&apos;t need a from-scratch rebuild to fix most of
+        them. Often it&apos;s clearer copy, a real call to action, faster load,
+        and matching the site to your brand.
+      </p>
+      <p>
+        <em>
+          (A site can look alive and still be brain-dead. We fix the kind that
+          shamble around doing nothing.)
+        </em>
+      </p>
+      <p>
+        If you want a deeper walkthrough of what good web design looks like for a
+        local business, see our{" "}
+        <InternalLink href="/blog/web-design-cumming-ga-guide">
+          web design guide for Cumming, GA
+        </InternalLink>
+        , or just have us look at yours through{" "}
+        <InternalLink href="/services/web-design">
+          web design services
+        </InternalLink>
+        .
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Score Your Site Against the 7 C&apos;s
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Ran your site through the 7 C&apos;s and didn&apos;t love the score?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Most sites we revive aren&apos;t dead — just missing three of the
+          seven. Let&apos;s find the gaps and fix them, often without a
+          from-scratch rebuild.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-what-are">What are the 7 C&apos;s of website design?</h3>
+      <p>
+        The 7 C&apos;s are Context, Content, Clarity, Consistency, Credibility,
+        Conversion, and Connection. Together they&apos;re a quick checklist for
+        whether a website actually works: does it fit the visitor, say something
+        useful, read clearly, look consistent and trustworthy, drive action, and
+        speak to a real person?
+      </p>
+
+      <h3 id="faq-most-important">
+        Which of the 7 C&apos;s matters most for a small business?
+      </h3>
+      <p>
+        Clarity and Conversion usually matter most. If a visitor can&apos;t tell
+        what you do in a few seconds, or can&apos;t easily take the next step,
+        nothing else helps. A site can nail the visual C&apos;s and still fail if
+        it doesn&apos;t make the next action obvious and easy.
+      </p>
+
+      <h3 id="faq-rebuild">Do I need a full rebuild to fix the 7 C&apos;s?</h3>
+      <p>
+        Usually not. Many sites already do well on consistency and credibility
+        but miss clarity, conversion, and connection. Those are often fixed with
+        sharper copy, a clear call to action, faster load times, and brand
+        alignment — not a from-scratch rebuild. An audit tells you which.
+      </p>
+
+      <h3 id="faq-seo">How do the 7 C&apos;s relate to SEO?</h3>
+      <p>
+        They support it. Clear, useful, fast, trustworthy content is exactly what
+        search engines and AI answer engines reward. A site that passes the 7
+        C&apos;s is easier to rank because it gives visitors — and the algorithms
+        reading it — a clear, credible reason to choose you.
+      </p>
+
+      <h3 id="faq-clarity-vs-conversion">
+        What&apos;s the difference between Clarity and Conversion?
+      </h3>
+      <p>
+        Clarity is whether a visitor understands what you do and what to do next.
+        Conversion is whether the site is built to make them actually do it —
+        tappable phone number, easy form, obvious call to action. Clarity sets up
+        the decision; conversion closes it.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. Websites — and logos, shirts, and signs — under one roof for
+        small businesses across Forsyth County and North Metro Atlanta since
+        2015.
+      </p>
+    </>
+  );
+}
+
+function WhoOwnsYourWebsiteContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          Here&apos;s the part nobody warns you about: who legally owns your
+          website and logo is not automatic just because you paid for them.
+        </strong>{" "}
+        By default, the designer who created the work often holds the copyright
+        unless your agreement transfers it to you — and that&apos;s before you
+        even get to who controls the domain and hosting. At Branding Zombie
+        Designs, a graphic + web design studio in Cumming, GA serving Forsyth
+        County and North Metro Atlanta, we hand clients full ownership in
+        writing, because too many local business owners find out the hard way
+        they only rented their own brand.
+      </p>
+
+      <p>
+        This isn&apos;t legal advice — talk to an attorney for your situation.
+        But here&apos;s what every business owner should check before and after
+        they hire.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Paying isn&apos;t owning.</strong> Without a written
+            assignment, the creator often keeps the copyright.
+          </li>
+          <li>
+            <strong>Owning a site means owning several things</strong> — files,
+            domain, hosting, content, and logins.
+          </li>
+          <li>
+            <strong>Watch the template trap.</strong> Marketplace templates and
+            stock logos are licensed, not exclusively yours.
+          </li>
+          <li>
+            <strong>Ask the ownership questions up front</strong> — a good
+            designer answers &quot;yes, in writing&quot; clearly.
+          </li>
+          <li>
+            <strong>One roof, you own it</strong> — files, logins, domain, and
+            rights, all in one place.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="paying-vs-owning">Does paying for a logo mean I own it?</h2>
+      <p>
+        Not necessarily. Under U.S. copyright law, the person who creates a
+        design generally owns the copyright by default — even if you paid them —
+        unless there&apos;s a written agreement assigning the rights to you.
+      </p>
+      <p>
+        So &quot;I paid for it&quot; and &quot;I legally own it&quot; are two
+        different things. Without a copyright assignment (or a valid
+        work-for-hire arrangement in writing), you may only have permission to
+        use the logo, not the right to control, modify, or defend it. That&apos;s
+        the trap. You think you bought a logo. You actually leased a JPG.
+      </p>
+
+      <h2 id="owning-website">What does &quot;owning your website&quot; actually mean?</h2>
+      <p>
+        Owning your website is really owning several things, and they&apos;re
+        often held in different places. You don&apos;t own your site unless you
+        control all of these:
+      </p>
+      <ul>
+        <li>
+          <strong>The source files</strong> — the actual design files, code, and
+          assets your site is built from.
+        </li>
+        <li>
+          <strong>The domain name</strong> — registered in your name and account,
+          not the designer&apos;s.
+        </li>
+        <li>
+          <strong>The hosting account</strong> — where the site lives, billed to
+          you, accessible by you.
+        </li>
+        <li>
+          <strong>The content</strong> — copyright assigned to you in writing.
+        </li>
+        <li>
+          <strong>The logins</strong> — admin access to the site, the CMS, and
+          any connected tools.
+        </li>
+      </ul>
+      <p>
+        If your designer holds the domain &quot;for convenience,&quot; controls
+        the hosting, and never gave you source files, you don&apos;t own your
+        website. You&apos;re a tenant who can be locked out.
+      </p>
+
+      <h2 id="template-trap">The template-marketplace trap</h2>
+      <p>
+        Here&apos;s a quieter ownership problem: the template trap. When a site
+        or logo is built on a marketplace template or stock asset, you may never
+        get exclusive rights — because the license is shared with everyone else
+        who bought that template. You&apos;re allowed to use it, but so are a
+        hundred other businesses, and you can&apos;t claim it as uniquely yours.
+      </p>
+      <p>
+        The same goes for stock-icon logos. A $5 marketplace logo is often a
+        stock graphic plus a font, resold again and again. You can&apos;t
+        trademark it, you can&apos;t stop others from using it, and you may not
+        even have clean commercial rights. For more on that, see our take on{" "}
+        <InternalLink href="/blog/logo-cost-cumming-ga">logo cost</InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/ai-logo-generator-vs-designer">
+          AI logo generators vs. a designer
+        </InternalLink>
+        . Original work, assigned to you, is the only version you truly own.
+      </p>
+
+      <h2 id="ask-before-hire">What to ask before you hire a designer</h2>
+      <p>
+        A few plain questions up front save you years of grief. Before you hire
+        anyone for{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> or{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>,
+        ask:
+      </p>
+      <ul>
+        <li>
+          <strong>
+            &quot;Will I own the copyright in writing?&quot;
+          </strong>{" "}
+          You want a signed assignment of rights, not a vague handshake.
+        </li>
+        <li>
+          <strong>
+            &quot;Will the domain be registered in my name and account?&quot;
+          </strong>{" "}
+          It should be yours, always.
+        </li>
+        <li>
+          <strong>&quot;Will I get the source files?&quot;</strong> Layered logo
+          files, site files, and admin access — all of it.
+        </li>
+        <li>
+          <strong>
+            &quot;Is anything built on a shared template or stock asset?&quot;
+          </strong>{" "}
+          If so, what exactly do you own versus license?
+        </li>
+        <li>
+          <strong>
+            &quot;If we part ways, what do I walk away with?&quot;
+          </strong>{" "}
+          The honest answer reveals everything.
+        </li>
+      </ul>
+      <p>
+        If a provider gets cagey on any of these, that&apos;s your answer. Good
+        ones are happy to say &quot;yes, it&apos;s all yours, in writing.&quot;
+      </p>
+
+      <h2 id="check-current">
+        How do I know if I actually own my current site?
+      </h2>
+      <p>
+        If you already have a site and aren&apos;t sure, run this quick check:
+      </p>
+      <ul>
+        <li>
+          <strong>Can you log in to the domain registrar</strong> (GoDaddy,
+          Namecheap, etc.) with your account? Is the domain in your name?
+        </li>
+        <li>
+          <strong>Can you log in to the hosting</strong> and the site&apos;s
+          admin yourself?
+        </li>
+        <li>
+          <strong>Do you have the original logo and design files</strong> on
+          hand, in vector format?
+        </li>
+        <li>
+          <strong>Do you have anything in writing</strong> assigning you the
+          copyright?
+        </li>
+      </ul>
+      <p>
+        If you answered &quot;no&quot; or &quot;I&apos;d have to ask my
+        designer&quot; to any of these, you have a gap. It&apos;s fixable — but
+        better to find out now than the day you and your designer stop working
+        together.
+      </p>
+      <p>
+        <em>
+          (Don&apos;t let your own brand turn into someone else&apos;s hostage.
+          We&apos;ve watched it happen to good businesses in Forsyth County.)
+        </em>
+      </p>
+
+      <h2 id="one-roof">Why &quot;one roof, you own it&quot; is the safer setup</h2>
+      <p>
+        When your logo, website, and brand assets all come from one designer who
+        assigns you everything in writing, ownership is simple: it&apos;s all
+        yours, in one place, on one invoice.
+      </p>
+      <p>
+        When it&apos;s scattered — domain with one vendor, hosting with another,
+        logo from a marketplace, site from a freelancer who ghosted — ownership
+        gets murky exactly when you need it most. At Branding Zombie Designs, you
+        leave with the files, the logins, the domain, and the rights. That&apos;s
+        not a premium add-on; that&apos;s just what owning your brand should
+        mean. For the bigger picture on hiring well, read our{" "}
+        <InternalLink href="/blog/web-design-cumming-ga-guide">
+          web design guide for Cumming, GA
+        </InternalLink>
+        .
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Make Sure It&apos;s Actually Yours
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Not sure you actually own your own website?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          That&apos;s a scary thing to find out at the worst moment. Let&apos;s
+          check — and if you&apos;re starting fresh, we&apos;ll make sure
+          everything is yours from day one, in writing.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-own-paid-logo">Do I automatically own a logo I paid for?</h3>
+      <p>
+        Not always. Under U.S. copyright law, the creator generally owns the work
+        by default unless a written agreement assigns the rights to you. Paying
+        for a logo can give you permission to use it without giving you
+        ownership. Always get a signed copyright assignment so the logo is truly
+        yours.
+      </p>
+
+      <h3 id="faq-who-owns">Who owns a website — me or the designer?</h3>
+      <p>
+        It depends on your agreement and who controls the pieces. True ownership
+        means you hold the source files, the domain (in your account), the
+        hosting, the content copyright, and the admin logins. If your designer
+        holds any of those, you don&apos;t fully own your site — you&apos;re
+        relying on their goodwill to keep it.
+      </p>
+
+      <h3 id="faq-assignment">What is copyright assignment in design?</h3>
+      <p>
+        Copyright assignment is a written transfer of ownership from the designer
+        to you. Without it, the designer may legally retain the copyright even
+        after you&apos;ve paid. A clear assignment clause means you can use,
+        modify, trademark, and defend your logo and site as your own property,
+        not just a licensed asset.
+      </p>
+
+      <h3 id="faq-template-risk">
+        Why are template-based sites and logos a risk?
+      </h3>
+      <p>
+        Marketplace templates and stock-icon logos are usually licensed, not sold
+        exclusively — so other businesses can buy and use the same thing. You can
+        use it, but you can&apos;t claim it uniquely or reliably trademark it.
+        Original, custom work assigned to you in writing is the only version you
+        genuinely own.
+      </p>
+
+      <h3 id="faq-check-own">How do I check if I own my current website?</h3>
+      <p>
+        Confirm the domain is registered in your name and account, that you can
+        log in to hosting and site admin yourself, that you hold the original
+        design and logo files, and that you have written copyright assignment. If
+        you&apos;d have to ask your designer for any of these, you have an
+        ownership gap worth fixing.
+      </p>
+
+      <h3 id="faq-ask-designer">What should I ask a designer before hiring?</h3>
+      <p>
+        Ask whether you&apos;ll own the copyright in writing, whether the domain
+        will be in your name and account, whether you&apos;ll receive all source
+        files and logins, and whether anything is built on shared templates. A
+        trustworthy designer answers yes clearly. Cageyness on ownership is a red
+        flag worth walking away from.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. He hands clients full ownership of their logos, sites,
+        files, and domains — in writing — for businesses across Forsyth County
+        and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
+function WhatMakesAGoodLogoContent() {
+  return (
+    <>
+      <p>
+        <strong>
+          A good logo is simple, memorable, scalable, versatile, and timeless
+        </strong>{" "}
+        — and if yours fails even one of those five tests, it&apos;s quietly
+        costing you. That&apos;s the short answer to what makes a good logo. At
+        Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        serving Forsyth County and North Metro Atlanta, we run every mark through
+        these five before we ever call it done.
+      </p>
+
+      <p>
+        Here are the five tests, in plain English, with a quick way to check your
+        own logo against each.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          The 5 Tests a Logo Should Pass
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Simple</strong> — clean enough to recognize in a glance.
+          </li>
+          <li>
+            <strong>Memorable</strong> — distinct enough to stick after one look.
+          </li>
+          <li>
+            <strong>Scalable</strong> — readable tiny and huge.
+          </li>
+          <li>
+            <strong>Versatile</strong> — works in one color, on dark, on
+            anything.
+          </li>
+          <li>
+            <strong>Timeless</strong> — won&apos;t look dated in five years.
+          </li>
+        </ul>
+      </aside>
+
+      <p>
+        Nail all five and you have an asset. Miss one and you have a logo
+        you&apos;ll be quietly redoing later. Let&apos;s walk through each.
+      </p>
+
+      <h2 id="simple">Test 1: Is it simple?</h2>
+      <p>
+        Simple wins. Think of the logos you can draw from memory — they&apos;re
+        almost always clean and uncluttered. A busy logo with five colors, fine
+        detail, and a gradient might look impressive on a big screen and fall
+        apart everywhere else.
+      </p>
+      <p>
+        <strong>Quick check:</strong> Can you describe your logo in one sentence?
+        If it takes a paragraph, it&apos;s too complicated.
+      </p>
+
+      <h2 id="memorable">Test 2: Is it memorable?</h2>
+      <p>
+        A logo&apos;s job is to stick. If yours looks like every other shop in
+        your category — the same generic icon, the same default font — it
+        won&apos;t lodge in anyone&apos;s memory. Memorable doesn&apos;t mean
+        loud. It means distinct. One unexpected, ownable detail beats a pile of
+        decoration.
+      </p>
+      <p>
+        <strong>Quick check:</strong> Could a customer roughly recall it a day
+        later? If it blends in with three competitors down the road, it
+        isn&apos;t doing its job.
+      </p>
+
+      <h2 id="scalable">Test 3: Is it scalable?</h2>
+      <p>
+        Your logo has to survive at every size — a tiny favicon in a browser tab
+        and a giant banner over your booth. A mark that only looks right at one
+        size isn&apos;t finished. This is where cheap logos break. Fine detail
+        that looks fine on a website turns to mush on a business card or clogs up
+        at embroidery resolution. A real logo is built in vector so it stays
+        crisp at any size.
+      </p>
+      <p>
+        <strong>Quick check:</strong> Shrink it to the size of a thumbnail. Still
+        readable? Now imagine it on a truck. Still clean?
+      </p>
+
+      <h2 id="versatile">Test 4: Is it versatile?</h2>
+      <p>
+        A working logo doesn&apos;t need full color to function. It has to hold
+        up in one color, in solid black, in white on a dark shirt, stamped on a
+        sign, and stitched on a polo. If your logo only works as a full-color
+        file on a white background, it&apos;ll fail the first time you try to put
+        it on apparel or signage. Versatility is what lets one logo live
+        everywhere your brand goes — site,{" "}
+        <InternalLink href="/services/logo-design">shirts, and signs</InternalLink>{" "}
+        included.
+      </p>
+      <p>
+        <strong>Quick check:</strong> Does a one-color, black-only version still
+        look like you? If it disappears or turns into a blob, it&apos;s not
+        versatile yet.
+      </p>
+
+      <h2 id="timeless">Test 5: Is it timeless?</h2>
+      <p>
+        Trends age fast. A logo built around this year&apos;s hot effect will
+        look dated by the time your signs are paid off. Timeless means classic
+        enough to last — so you&apos;re not rebranding (and reprinting
+        everything) every few years. That doesn&apos;t mean boring. It means
+        choosing lasting over trendy, because every time the logo changes, so do
+        your cards, shirts, signs, and site.
+      </p>
+      <p>
+        <strong>Quick check:</strong> Does it lean on a current fad? If it
+        screams &quot;made in 2026,&quot; it&apos;ll whisper &quot;outdated&quot;
+        in 2030.
+      </p>
+
+      <h2 id="how-many-pass">How many tests does your logo pass?</h2>
+      <p>
+        Most DIY and marketplace logos pass one or two — usually they look fine
+        on screen (simple-ish) but fail scalability and versatility the moment
+        they hit a shirt or a sign. That&apos;s the gap between a logo that looks
+        okay and one that actually works.
+      </p>
+      <p>
+        The good news: a logo built right passes all five from the start, because
+        a real designer is testing for them the whole way through. That&apos;s
+        the difference between buying a picture and buying an asset.
+      </p>
+      <p>
+        <em>
+          (A logo that only works on a screen is already half-dead. We build the
+          kind that survives daylight, a truck wrap, and a polo.)
+        </em>
+      </p>
+      <p>
+        For where these tests fit into pricing, see our{" "}
+        <InternalLink href="/blog/logo-cost-cumming-ga">
+          logo cost guide for Cumming, GA
+        </InternalLink>
+        . And if you&apos;re tempted to let software do it, our{" "}
+        <InternalLink href="/blog/ai-logo-generator-vs-designer">
+          AI logo generator vs. a designer
+        </InternalLink>{" "}
+        breakdown shows exactly which tests AI tools tend to fail. When you want
+        a mark that passes all five, that&apos;s our{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        work.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Build a Logo That Passes All Five
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Run your logo through the five tests and it stumbled?
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          A mark that fails on a shirt or a sign is one you&apos;ll pay to redo.
+          Let&apos;s build one that passes all five — and works everywhere your
+          brand goes.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-good-logo">What makes a good logo?</h3>
+      <p>
+        A good logo passes five tests: it&apos;s simple (clean and
+        recognizable), memorable (distinct enough to stick), scalable (readable
+        tiny and huge), versatile (works in one color and on any surface), and
+        timeless (won&apos;t look dated in a few years). Miss one and the logo
+        quietly costs you later.
+      </p>
+
+      <h3 id="faq-work-vs-nice">
+        What makes a logo work versus just look nice?
+      </h3>
+      <p>
+        Looking nice is about one moment on one screen. Working means functioning
+        everywhere your brand lives — a favicon, a business card, a dark shirt, a
+        yard sign, an embroidered polo. A logo that only works in full color on a
+        white background looks nice but fails the real-world tests that matter.
+      </p>
+
+      <h3 id="faq-one-color">Why does a logo need to work in one color?</h3>
+      <p>
+        Because your brand shows up in places that aren&apos;t full color: black
+        stamps, embroidery, etched signage, faxes, single-color print runs. A
+        logo that falls apart without its colors limits where you can use it and
+        often costs more to reproduce. One-color versatility keeps your mark
+        usable everywhere.
+      </p>
+
+      <h3 id="faq-common-fail">What&apos;s the most common reason a logo fails?</h3>
+      <p>
+        Scalability and versatility. Many logos look fine on a website but turn
+        to mush when shrunk to a business card or stitched onto apparel.
+        They&apos;re often built in the wrong format (not vector) with too much
+        fine detail. A logo that can&apos;t scale and shift surfaces isn&apos;t
+        finished.
+      </p>
+
+      <h3 id="faq-trends">Should a logo follow design trends?</h3>
+      <p>
+        Use trends sparingly. A logo built around a current fad looks fresh now
+        but dated fast — and every redesign means reprinting cards, shirts, and
+        signs. Aim for timeless over trendy. A classic, simple mark lasts years,
+        which protects everything you&apos;ve printed it on from going stale.
+      </p>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, owner of Branding Zombie Designs. Based in
+        Cumming, GA. He builds logos that pass all five tests — then puts them on
+        sites, shirts, and signs under one roof for businesses across Forsyth
+        County and North Metro Atlanta since 2015.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
   {
     meta: {
@@ -11948,6 +14326,312 @@ export const POSTS: Post[] = [
         "How your website is costing you customers — Branding Zombie Designs",
     },
     Content: WebsiteCostingCustomersContent,
+  },
+  {
+    meta: {
+      slug: "restaurant-branding-101",
+      title:
+        "Restaurant Branding 101: Logo, Menu, Signage & a Site That Fills Tables (Cumming, GA)",
+      seoTitle:
+        "Restaurant Branding in Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "Restaurant branding in Cumming, GA done right: logo, menu design, signage, photography, and a site that fills tables. One designer, one invoice — request a quote.",
+      excerpt:
+        "Restaurant branding in Cumming, GA: logo, menu design, signage, food photography, and a reservations-ready website — what each piece does and why one designer on one invoice keeps it all matching.",
+      keywords: [
+        "restaurant branding",
+        "restaurant logo designer Georgia",
+        "menu design Cumming",
+        "restaurant signage Cumming GA",
+        "how much does a restaurant logo cost",
+        "food photography for menus",
+        "restaurant website that takes reservations",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 9,
+      category: "Branding",
+      tags: [
+        "branding",
+        "restaurant branding",
+        "menu design",
+        "signage",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-restaurant-branding.jpg",
+      ogImageAlt:
+        "Restaurant branding in Cumming, GA — logo, menu, signage, and a site that fills tables — Branding Zombie Designs",
+    },
+    Content: RestaurantBranding101Content,
+  },
+  {
+    meta: {
+      slug: "real-estate-agent-branding-forsyth",
+      title:
+        "Real Estate Agent Branding in Forsyth County: Signs, Cards & Personal Brand",
+      seoTitle:
+        "Real Estate Agent Branding, Forsyth | Branding Zombie Designs",
+      seoDescription:
+        "Real estate agent branding in Forsyth County: yard signs, business cards, headshots, and a simple agent site that builds your personal brand. Request a quote.",
+      excerpt:
+        "How real estate agents in Forsyth County build a personal brand: yard signs, business cards, headshots, a personal logo, and a simple agent website — one designer, one invoice.",
+      keywords: [
+        "real estate agent branding",
+        "real estate yard signs forsyth county",
+        "realtor logo Cumming",
+        "real estate business cards Cumming GA",
+        "agent headshots",
+        "personal brand vs brokerage",
+        "real estate agent website",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 9,
+      category: "Branding",
+      tags: [
+        "branding",
+        "real estate",
+        "yard signs",
+        "business cards",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-real-estate-branding.jpg",
+      ogImageAlt:
+        "Real estate agent branding in Forsyth County — yard signs, business cards, and a personal brand — Branding Zombie Designs",
+    },
+    Content: RealEstateAgentBrandingContent,
+  },
+  {
+    meta: {
+      slug: "supplement-cpg-branding-labels-shopify",
+      title:
+        "Local CPG & Supplement Branding: Labels, Packaging & a Shopify-Ready Site (Cumming, GA)",
+      seoTitle:
+        "Supplement & CPG Branding, GA | Branding Zombie Designs",
+      seoDescription:
+        "Supplement and CPG branding in Cumming, GA: labels, packaging, a full brand system, and a Shopify-ready store. One designer, one invoice — request a quote.",
+      excerpt:
+        "Supplement and CPG branding in Cumming, GA: label and packaging design, a full brand system, and a Shopify-ready store — one designer, one invoice, from the label to the launched store.",
+      keywords: [
+        "supplement and CPG branding",
+        "label designer for supplements",
+        "packaging design Georgia",
+        "supplement label design",
+        "CPG brand identity",
+        "Shopify store design",
+        "ecommerce web design Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 9,
+      category: "Branding",
+      tags: [
+        "branding",
+        "CPG",
+        "supplement labels",
+        "packaging design",
+        "Shopify",
+        "ecommerce",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-cpg-supplement-branding.jpg",
+      ogImageAlt:
+        "Supplement and CPG branding in Cumming, GA — labels, packaging, and a Shopify-ready store — Branding Zombie Designs",
+    },
+    Content: SupplementCpgBrandingContent,
+  },
+  {
+    meta: {
+      slug: "church-youth-sports-custom-apparel",
+      title:
+        "Custom Apparel for Churches & Youth Sports: A Buyer's Guide Before You Order",
+      seoTitle:
+        "Church & Team Apparel, Cumming GA | Branding Zombie Designs",
+      seoDescription:
+        "Custom apparel for churches and youth sports in Cumming, GA: screen-print vs embroidery, sizing, artwork, and turnaround — a buyer's guide before you order.",
+      excerpt:
+        "A buyer's guide to custom apparel for churches and youth sports in Cumming, GA: screen-print vs embroidery, collecting sizes, print-ready artwork, turnaround, and bulk cost.",
+      keywords: [
+        "custom apparel for churches and youth sports",
+        "church t-shirts Forsyth",
+        "team jerseys Cumming",
+        "screen printing vs embroidery",
+        "bulk t-shirt printing Cumming GA",
+        "youth sports uniforms",
+        "turnaround time custom shirts",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 9,
+      category: "Print & Apparel",
+      tags: [
+        "print & apparel",
+        "screen printing",
+        "embroidery",
+        "custom apparel",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-church-team-apparel.jpg",
+      ogImageAlt:
+        "Custom apparel for churches and youth sports in Cumming, GA — screen print, embroidery, and a buyer's guide — Branding Zombie Designs",
+    },
+    Content: ChurchYouthApparelContent,
+  },
+  {
+    meta: {
+      slug: "cost-to-brand-a-new-business",
+      title:
+        "What It Costs to Brand a New Business in Cumming, GA (Logo + Site + Cards + Shirts)",
+      seoTitle:
+        "Cost to Brand a New Business in Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "What does it cost to brand a new business in Cumming, GA? Real 2026 line-item ranges for logo, site, cards, shirts, and signage — plus where to start.",
+      excerpt:
+        "Real 2026 line-item ranges for branding a new business in Cumming, GA: logo, website, cards, shirts, and signage — plus where most owners start and the smart order to buy in.",
+      keywords: [
+        "cost to brand a new business",
+        "how much to brand a business",
+        "new business branding cost",
+        "small business branding cost Cumming GA",
+        "logo and website cost",
+        "branding and web design",
+        "graphic design Cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 8,
+      category: "Branding",
+      tags: [
+        "branding",
+        "pricing",
+        "new business",
+        "logo",
+        "web design",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-cost-to-brand-business.jpg",
+      ogImageAlt:
+        "What it costs to brand a new business in Cumming, GA — logo, site, cards, and shirts — Branding Zombie Designs",
+    },
+    Content: CostToBrandBusinessContent,
+  },
+  {
+    meta: {
+      slug: "7-cs-of-website-design",
+      title:
+        "The 7 C's of Website Design — and How Many Your Site Is Missing",
+      seoTitle:
+        "The 7 C's of Website Design (Cumming, GA) | Branding Zombie Designs",
+      seoDescription:
+        "What are the 7 C's of website design? A clean checklist — context, content, clarity, and more — plus how many your Cumming, GA site is probably missing.",
+      excerpt:
+        "The 7 C's of website design explained for small businesses in Cumming, GA: Context, Content, Clarity, Consistency, Credibility, Conversion, and Connection — and how many most local sites miss.",
+      keywords: [
+        "the 7 C's of website design",
+        "what are the 7 C's of a website",
+        "7 C's of web design",
+        "principles of website design",
+        "good website design checklist",
+        "web design Cumming GA",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "website checklist",
+        "conversion",
+        "UX",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-7-cs-website-design.jpg",
+      ogImageAlt:
+        "The 7 C's of website design — a checklist for small business sites in Cumming, GA — Branding Zombie Designs",
+    },
+    Content: SevenCsWebsiteDesignContent,
+  },
+  {
+    meta: {
+      slug: "who-legally-owns-your-website",
+      title:
+        "Who Legally Owns Your Website and Logo? What Every Business Owner Must Know",
+      seoTitle:
+        "Who Legally Owns Your Website? (Cumming, GA) | Branding Zombie Designs",
+      seoDescription:
+        "Who legally owns your website and logo? In Cumming, GA, it's not automatic. What to check on files, domain, hosting, and copyright before you hire.",
+      excerpt:
+        "A plain-English guide for Cumming, GA business owners on who legally owns a website and logo: copyright assignment, source files, domain and hosting control, the template trap, and what to ask before you hire.",
+      keywords: [
+        "who legally owns your website",
+        "do I own my logo",
+        "who owns a logo a designer makes",
+        "website ownership rights",
+        "copyright assignment design",
+        "domain and hosting ownership",
+        "web design Cumming GA",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "ownership",
+        "copyright",
+        "domain",
+        "logo design",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-who-owns-your-website.jpg",
+      ogImageAlt:
+        "Who legally owns your website and logo — files, domain, hosting, and copyright — Branding Zombie Designs",
+    },
+    Content: WhoOwnsYourWebsiteContent,
+  },
+  {
+    meta: {
+      slug: "what-makes-a-good-logo",
+      title:
+        "What Makes a Logo Actually Work? The 5 Tests Every Logo Should Pass",
+      seoTitle:
+        "What Makes a Good Logo? 5 Tests (Cumming, GA) | Branding Zombie Designs",
+      seoDescription:
+        "What makes a good logo? In Cumming, GA, a logo that works passes 5 tests — simple, memorable, scalable, versatile, and timeless. Here's how to check yours.",
+      excerpt:
+        "What makes a good logo, explained for Cumming, GA business owners: the five tests every logo should pass — simple, memorable, scalable, versatile, and timeless — and how to check your own.",
+      keywords: [
+        "what makes a good logo",
+        "what makes a logo work",
+        "good logo qualities",
+        "qualities of a good logo",
+        "what makes a logo effective",
+        "logo design principles",
+        "logo design Cumming GA",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Branding",
+      tags: [
+        "branding",
+        "logo design",
+        "design principles",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-what-makes-a-good-logo.jpg",
+      ogImageAlt:
+        "What makes a good logo — the five tests every logo should pass — Branding Zombie Designs",
+    },
+    Content: WhatMakesAGoodLogoContent,
   },
 ];
 
