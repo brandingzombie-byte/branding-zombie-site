@@ -161,6 +161,28 @@ export default function PainPoints() {
           <StatRowItem key={stat.label} stat={stat} index={i} />
         ))}
       </ul>
+
+      {/* Brand Checkup CTA — the free tool that diagnoses exactly this */}
+      <div className="mt-4 flex flex-col items-start gap-5 border-t border-[var(--color-hairline-strong)] pt-10 sm:flex-row sm:items-center sm:justify-between">
+        <p className="max-w-[44ch] text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+          Not sure where{" "}
+          <span className="relative inline-block">
+            your
+            <span
+              aria-hidden
+              className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
+            />
+          </span>{" "}
+          brand stands? Score it in 5 minutes — free, no jargon.
+        </p>
+        <a
+          href="/brand-checkup"
+          role="button"
+          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--color-text-primary)] px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-cloud)] transition-colors hover:bg-[var(--color-neon-text)]"
+        >
+          Take the free Brand Checkup →
+        </a>
+      </div>
     </Section>
   );
 }
