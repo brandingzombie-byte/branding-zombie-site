@@ -13230,7 +13230,518 @@ function WhatMakesAGoodLogoContent() {
   );
 }
 
+// ─── Post — Google Business Profile Optimization (Cumming, GA) ────────────
+
+function GoogleBusinessProfileCummingContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long does it take to rank a Google Business Profile?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For low-competition, hyper-local terms, quick wins can show in 30-90 days. Most businesses see meaningful movement in 3-6 months, and competitive markets often take 6-12 months. Consistent activity — reviews, posts, photos — speeds it up and keeps it climbing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many Google reviews do I need to rank?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There's no magic number, and velocity matters more than total. As a widely-cited pattern, about 5 fresh reviews a month can outrank a competitor with 50 old ones, crossing roughly 40 reviews often helps top-3, and slipping under about 4.0 stars can filter you out of 'best' searches. Treat these as patterns, not guarantees.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why isn't my business showing on Google Maps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usual culprits: the profile is incomplete or unverified, your name, address and phone are inconsistent across the web, your category is wrong or too broad, you're too far from the searcher, or a duplicate or suspended listing is splitting your signals. Fix verification and NAP consistency first.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does posting on Google Business Profile actually help rankings?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, indirectly. Google indexes posts, and regular activity signals an active, legitimate business — a freshness factor that supports prominence. Profiles that go idle for 30+ days can see impressions drop. Posting offers, events, and updates keeps your profile working.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I pay Google for a better local ranking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Google states plainly there's no way to request or pay for a better local ranking — paying improves nothing organically, and ads are separate and clearly labeled. Optimization, reviews, and consistency are the only levers.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Google Business Profile optimization</strong> means completing
+        and verifying your profile, choosing the most specific primary category,
+        earning steady recent reviews, and posting photos and updates regularly
+        — so Google&apos;s three local ranking factors (relevance, distance, and
+        prominence) line up in your favor. Done right, it&apos;s the highest-ROI{" "}
+        <em>free</em> local SEO move a small business in Cumming, GA can make,
+        because it decides whether you show up in the Google Maps 3-pack when
+        someone nearby searches for what you do. At{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>
+        , we treat this as step one for almost every Forsyth County client —
+        before a single dollar goes to ads.
+      </p>
+
+      <p>
+        Here&apos;s the part most owners miss: your website and your Google
+        Business Profile are two different things. You can have a gorgeous site
+        and still be invisible on Maps. This post fixes that.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>Your Google Business Profile is the free listing</strong>{" "}
+            behind the map + the box of three local results. That box is where
+            the calls come from.
+          </li>
+          <li>
+            <strong>Google ranks it on relevance, distance, and prominence.</strong>{" "}
+            You can&apos;t move distance, but you control the other two.
+          </li>
+          <li>
+            <strong>Biggest levers:</strong> verify it, pick the most specific
+            primary category, keep NAP (name/address/phone) identical
+            everywhere, and earn fresh reviews on a schedule.
+          </li>
+          <li>
+            <strong>You can&apos;t pay for a better local ranking.</strong>{" "}
+            Google says so out loud — it&apos;s earned.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="what-is-gbp-optimization">
+        What is google business profile optimization, and why does it matter in
+        Cumming, GA?
+      </h2>
+      <p>
+        Your Google Business Profile (the old &quot;Google My Business&quot;) is
+        the free listing that powers the map and the box of three local results
+        — the &quot;local pack&quot; or &quot;Google 3-pack&quot; — that appears
+        above the regular blue links. For a plumber, a taco spot, or a
+        barbershop in Forsyth County, that box is where the calls come from.
+      </p>
+      <p>
+        Google decides who lands in those three slots using three factors it
+        states publicly: <strong>relevance</strong> (how well your profile
+        matches the search), <strong>distance</strong> (how close you are to the
+        searcher), and <strong>prominence</strong> (how well-known and trusted
+        your business is — reviews, citations, activity). Google&apos;s own{" "}
+        <ExternalLink href="https://support.google.com/business/answer/7091?hl=en">
+          tips to improve your local ranking
+        </ExternalLink>{" "}
+        confirm these and add an important line we&apos;ll come back to: there is
+        no way to request or pay for a better local ranking.
+      </p>
+      <p>
+        So &quot;optimization&quot; isn&apos;t a trick. It&apos;s making your
+        profile so complete, accurate, and active that Google has every reason
+        to trust you and rank you for <strong>local seo cumming</strong>-style
+        searches like &quot;web design cumming ga,&quot; &quot;barber near
+        me,&quot; or &quot;HVAC repair Forsyth County.&quot;
+      </p>
+
+      <h2 id="claim-and-verify">
+        How do I claim and verify my Google Business Profile?
+      </h2>
+      <p>
+        You can&apos;t rank what isn&apos;t verified. Start at
+        google.com/business, search for your business, and either claim the
+        existing listing or create one.
+      </p>
+      <ul>
+        <li>
+          <strong>Claim it.</strong> If a profile already exists (Google
+          auto-generates some), claim ownership rather than making a duplicate.
+        </li>
+        <li>
+          <strong>Verify it.</strong> Google confirms you&apos;re real by
+          postcard, phone, email, or video. Don&apos;t skip this — unverified
+          profiles get filtered out of the local pack.
+        </li>
+        <li>
+          <strong>Kill duplicates.</strong> Two listings for one business split
+          your signals and can trigger a suspension. One business, one profile.
+        </li>
+      </ul>
+      <p>
+        This is the single most common reason a business doesn&apos;t show up —
+        we&apos;ll cover the rest in the FAQ.
+      </p>
+
+      <h2 id="fields-that-matter">Which fields actually move the needle?</h2>
+      <p>
+        Fill out <em>everything</em>, but these carry the most weight for
+        ranking and for earning the click once you appear:
+      </p>
+      <p>
+        <strong>1. Pick the most specific primary category.</strong> This is the
+        heaviest relevance lever. &quot;Mexican Restaurant&quot; beats
+        &quot;Restaurant.&quot; &quot;Barbershop&quot; beats &quot;Hair
+        Salon&quot; if that&apos;s what you are. Add secondary categories for the
+        other things you do, but get the primary one exactly right. (A wrong,
+        too-broad category is a classic reason a business ranks for nothing — or
+        for the wrong thing entirely.)
+      </p>
+      <p>
+        <strong>2. Nail NAP consistency.</strong> Your <strong>N</strong>ame,{" "}
+        <strong>A</strong>ddress, and <strong>P</strong>hone must match{" "}
+        <em>exactly</em> across your website, your profile, and every directory.
+        &quot;Suite 200&quot; in one place and &quot;Ste 200&quot; in another is
+        the kind of inconsistency that quietly drags rankings down. Pick one
+        format and use it everywhere.
+      </p>
+      <p>
+        <strong>3. Write a keyword-honest description.</strong> Plain language
+        that says what you do and where — &quot;graphic and web design studio
+        serving Cumming, GA and Forsyth County&quot; — not stuffed nonsense.
+      </p>
+      <p>
+        <strong>4. Set accurate hours,</strong> including holiday hours.
+        &quot;Open now&quot; searches reward businesses that keep this current.
+      </p>
+      <p>
+        <strong>5. Add services and products</strong> with real descriptions.
+        These create more matchable content on your profile.
+      </p>
+      <p>
+        For a deeper checklist on each field,{" "}
+        <ExternalLink href="https://www.semrush.com/blog/google-business-profile-optimization/">
+          Semrush&apos;s Google Business Profile optimization guide
+        </ExternalLink>{" "}
+        is a solid, current reference that backs up the category, photos, and
+        posts best practices we use.
+      </p>
+
+      <h2 id="photos-and-posts">How important are photos and Google Posts?</h2>
+      <p>
+        More than people think. A profile with real, current photos signals an
+        active, legitimate business — and businesses with photos tend to get
+        more clicks and direction requests than bare listings.
+      </p>
+      <ul>
+        <li>
+          <strong>Add real photos</strong> of your storefront, team, work, and
+          products. Not stock. Forsyth County customers want to see the actual
+          shop.
+        </li>
+        <li>
+          <strong>Refresh them.</strong> A profile that hasn&apos;t been touched
+          in months reads as stale to Google and to humans.
+        </li>
+        <li>
+          <strong>Use Google Posts.</strong> Google indexes these, and posting
+          offers, events, and updates is a freshness signal that says &quot;this
+          business is alive.&quot; Profiles that sit idle for 30+ days can see
+          their impressions slip.
+        </li>
+      </ul>
+      <p>
+        If you&apos;ve ever read{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google AI is calling your business
+        </InternalLink>{" "}
+        — our most-read post — the same logic applies here: an active,
+        well-structured profile is what AI search and Google both lean on to
+        recommend you.
+      </p>
+
+      <h2 id="reviews-and-velocity">
+        How do reviews and review velocity affect ranking?
+      </h2>
+      <p>
+        Reviews are pure prominence fuel, and <em>recency</em> matters as much
+        as the total count. A few widely-cited patterns (treat these as
+        patterns, not guarantees):
+      </p>
+      <ul>
+        <li>
+          <strong>Velocity beats volume.</strong> A business pulling in ~5 fresh
+          reviews a month can outrank a competitor sitting on 50 reviews from
+          two years ago. Steady beats stale.
+        </li>
+        <li>
+          <strong>A common threshold cited</strong> is that crossing roughly 40
+          reviews makes a top-3 local pack spot much more likely in many
+          markets.
+        </li>
+        <li>
+          <strong>Star rating gates you.</strong> Dropping under ~4.0 stars can
+          filter you out of &quot;best&quot; and &quot;top&quot; searches
+          entirely.
+        </li>
+      </ul>
+      <p>
+        The move: ask every happy customer for a review, make it dead simple
+        (text them the link), and reply to all of them — good and bad. The habit
+        matters more than any tool.
+      </p>
+
+      <h2 id="how-long">
+        How long does Google Business Profile optimization take to work?
+      </h2>
+      <p>
+        It depends on competition. For low-competition, hyper-local terms in
+        Forsyth County, you can see quick wins in <strong>30–90 days</strong>.
+        Most businesses see meaningful movement in <strong>3–6 months</strong>,
+        and competitive categories or denser parts of North Metro Atlanta can
+        take <strong>6–12 months</strong>. The work compounds — early activity
+        keeps paying off, so the best day to start was the day you opened, and
+        the second-best is today.
+      </p>
+      <p>
+        This pairs directly with on-site SEO. If you want the full local-search
+        picture, see our{" "}
+        <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>{" "}
+        breakdown and{" "}
+        <InternalLink href="/blog/improve-online-visibility-forsyth">
+          how to improve online visibility in Forsyth County
+        </InternalLink>{" "}
+        — your profile and your website lift each other.
+      </p>
+
+      <h2 id="website-fit">Where does your website fit in?</h2>
+      <p>
+        Your Google Business Profile points back to your website, and Google
+        checks that the two agree. A slow, thin, or mismatched site undercuts the
+        profile you worked to optimize — that&apos;s a big reason{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          your website might be costing you customers
+        </InternalLink>
+        .
+      </p>
+      <p>
+        If your site needs work to back up your profile, that&apos;s our lane:{" "}
+        <InternalLink href="/services/web-design">
+          web design in Cumming, GA
+        </InternalLink>{" "}
+        (standalone sites start around $1,500), or if you&apos;re launching from
+        scratch, the{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        gets you a logo, brand kit, 100 business cards, 100 flyers, and a 1-page
+        site with hosting in 10 days. Going bigger? The{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>{" "}
+        adds a 5-page site and a 90-day content calendar. Curious what a site
+        should cost first? Read{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          website cost in Cumming, GA for 2026
+        </InternalLink>
+        .
+      </p>
+      <p>
+        Local SEO and profile management live under our{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing services
+        </InternalLink>{" "}
+        — that&apos;s the page to start on if you want help, plus a free{" "}
+        <InternalLink href="/free-site-audit">site audit</InternalLink> to spot
+        what&apos;s holding you back.
+      </p>
+
+      <h2 id="industry-takes">Industry quick-takes</h2>
+      <ul>
+        <li>
+          <strong>Trades &amp; contractors:</strong> specific category + a real
+          service area + steady reviews from finished jobs wins the &quot;near
+          me&quot; calls. See{" "}
+          <InternalLink href="/industries/trades-contractors">
+            trades &amp; contractors
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Restaurants:</strong> menu, dish photos, accurate hours, and a
+          &quot;Mexican Restaurant&quot; / &quot;Pizza Restaurant&quot; style
+          primary category. See{" "}
+          <InternalLink href="/industries/restaurants">restaurants</InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Salons &amp; barbershops:</strong> booking link, before/after
+          photos, and review velocity carry the local pack. See{" "}
+          <InternalLink href="/industries/salons-barbershops">
+            salons &amp; barbershops
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Auto repair:</strong> services list + photos of the bay +
+          responsiveness to reviews. See{" "}
+          <InternalLink href="/industries/auto-repair">auto repair</InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Medical &amp; wellness:</strong> accurate hours,
+          insurance/services info, and trust signals. See{" "}
+          <InternalLink href="/industries/medical-wellness">
+            medical &amp; wellness
+          </InternalLink>
+          .
+        </li>
+      </ul>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Want it done for you?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          We&apos;ll set up and optimize your profile — and the site behind it.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Your competitors aren&apos;t outranking you because they&apos;re
+          better — half of them have a half-dead profile they set up once and
+          never touched. Bring yours back to life: claim it, feed it reviews, and
+          keep it moving. One designer, one invoice, one studio that builds your
+          brand instead of just printing it.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-how-long">
+        How long does it take to rank a Google Business Profile?
+      </h3>
+      <p>
+        For low-competition, hyper-local terms, quick wins can show in 30–90
+        days. Most businesses see meaningful movement in 3–6 months, and
+        competitive markets often take 6–12 months. Consistent activity —
+        reviews, posts, photos — speeds it up and keeps it climbing.
+      </p>
+
+      <h3 id="faq-reviews">How many Google reviews do I need to rank?</h3>
+      <p>
+        There&apos;s no magic number, and velocity matters more than total. As a
+        widely-cited pattern, ~5 fresh reviews a month can outrank a competitor
+        with 50 old ones, crossing roughly 40 reviews often helps top-3, and
+        slipping under ~4.0 stars can filter you out of &quot;best&quot;
+        searches. Treat these as patterns, not guarantees.
+      </p>
+
+      <h3 id="faq-not-showing">Why isn&apos;t my business showing on Google Maps?</h3>
+      <p>
+        Usual culprits: the profile is incomplete or unverified, your
+        name/address/phone are inconsistent across the web, your category is
+        wrong or too broad, you&apos;re simply too far from the searcher, or
+        there&apos;s a duplicate or suspended listing splitting your signals. Fix
+        verification and NAP first.
+      </p>
+
+      <h3 id="faq-posts">
+        Does posting on Google Business Profile actually help rankings?
+      </h3>
+      <p>
+        Yes, indirectly. Google indexes posts, and regular activity signals an
+        active, legitimate business — a freshness factor that supports
+        prominence. Profiles that go idle for 30+ days can see their impressions
+        drop. Posting offers, events, and updates keeps your profile working.
+      </p>
+
+      <h3 id="faq-pay">Can I pay Google for a better local ranking?</h3>
+      <p>
+        No. Google states plainly there&apos;s no way to request or pay for a
+        better local ranking — paying improves nothing organically (ads are
+        separate and clearly labeled). Optimization, reviews, and consistency are
+        the only levers. See Google&apos;s{" "}
+        <ExternalLink href="https://support.google.com/business/answer/7091?hl=en">
+          official ranking-factors page
+        </ExternalLink>
+        .
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA serving Forsyth County and
+        North Metro Atlanta since 2015. He builds logos, websites, and
+        local-search setups for trades, restaurants, salons, and first-time small
+        businesses — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "google-business-profile-optimization-cumming",
+      title:
+        "Google Business Profile Optimization: The #1 Free Local SEO Move (Cumming, GA)",
+      seoTitle:
+        "Google Business Profile Optimization Cumming GA | Branding Zombie Designs",
+      seoDescription:
+        "Google Business Profile optimization is the #1 free local SEO move for Cumming, GA. How to complete, verify, and rank your profile in the Google Maps 3-pack.",
+      excerpt:
+        "Google Business Profile optimization is the highest-ROI free local SEO move for a Cumming, GA business. How relevance, distance, and prominence decide the Google Maps 3-pack — and the fields, reviews, and posts that actually move it.",
+      keywords: [
+        "google business profile optimization",
+        "local seo cumming",
+        "google business profile cumming ga",
+        "google 3-pack",
+        "local pack",
+        "NAP consistency",
+        "review velocity",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-24",
+      readingTimeMinutes: 8,
+      category: "Local SEO",
+      tags: [
+        "local SEO",
+        "Google Business Profile",
+        "google maps",
+        "reviews",
+        "Forsyth County",
+        "Cumming GA",
+      ],
+      ogImage: "/assets/og-google-business-profile-cumming.jpg",
+      ogImageAlt:
+        "Google Business Profile optimization in Cumming, GA — show up on Google Maps — Branding Zombie Designs",
+    },
+    Content: GoogleBusinessProfileCummingContent,
+  },
   {
     meta: {
       slug: "best-marketing-agencies-cumming-ga",
