@@ -5,6 +5,9 @@ import BrandCheckup from "./BrandCheckup";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/brand-checkup`;
+const OG_IMAGE = "/assets/og-brand-checkup.jpg";
+const OG_ALT =
+  "“Is Your Brand Half-Dead?” — take the free 5-minute Brand Checkup from Branding Zombie Designs, a logo, web, and print studio in Cumming, GA. A toxic-green zombie hand reaches across a dark poster.";
 
 export const metadata: Metadata = {
   title: "Is Your Brand Half-Dead? Free 5-Minute Brand Checkup | Branding Zombie",
@@ -28,13 +31,13 @@ export const metadata: Metadata = {
     title: "Is Your Brand Half-Dead? — Free 5-Minute Brand Checkup",
     description:
       "25 honest questions. One straight answer on where your business is losing customers — and the fastest way to fix it.",
-    images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: `Free brand checkup by ${BUSINESS_NAME}` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: OG_ALT }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Is Your Brand Half-Dead? — Free Brand Checkup",
     description: "Score your brand in 5 minutes. Find the dead spots before your customers do.",
-    images: ["/assets/og-image.png"],
+    images: [{ url: OG_IMAGE, alt: OG_ALT }],
   },
 };
 
