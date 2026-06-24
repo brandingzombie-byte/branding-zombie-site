@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Section from "@/components/Section";
 import { ArrowUpRight, Check } from "@/components/icons";
 import { cn } from "@/lib/utils";
@@ -336,6 +337,35 @@ export default function PrintCatalog() {
             ))}
           </div>
         </div>
+
+        {/* ── Featured: Window graphics (dedicated page) ───────────────── */}
+        <Link
+          href="/window-clings"
+          className="group mt-14 flex flex-col items-start justify-between gap-6 rounded-2xl border border-[var(--color-neon)]/45 bg-[var(--color-surface-0)] px-7 py-8 transition-colors hover:border-[var(--color-neon)] sm:flex-row sm:items-center sm:px-10"
+        >
+          <div>
+            <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-neon-text)]">
+              Storefront spotlight
+            </span>
+            <h3 className="mt-2 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight tracking-tight text-text-primary">
+              Window graphics, clings &amp; storefront decals
+            </h3>
+            <p className="mt-2 max-w-[60ch] text-[length:var(--text-body)] leading-relaxed text-text-secondary">
+              Turn your storefront glass into a sign that sells — one-way vision
+              film, frosted privacy, clear clings, and full window walls. We
+              design it, print it, and install it on the glass. See the full
+              window-graphics page.
+            </p>
+          </div>
+          <span className="inline-flex min-h-[48px] shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-[var(--color-grave)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] transition-transform group-active:scale-[0.97]">
+            See window graphics
+            <ArrowUpRight
+              size={16}
+              weight="bold"
+              className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none"
+            />
+          </span>
+        </Link>
 
         {/* ── Catch-all CTA band ───────────────────────────────────────── */}
         <div className="mt-14 flex flex-col items-start justify-between gap-6 rounded-2xl border border-[var(--color-hairline-strong)] bg-[var(--color-grave)] px-7 py-8 text-[var(--color-dark-text-primary)] sm:flex-row sm:items-center sm:px-10">
