@@ -6,6 +6,7 @@ import { getAllIndustrySlugs } from "@/data/industries";
 import { getAllLocationServiceSlugs } from "@/data/location-services";
 import { getAllLocationSlugs } from "@/data/locations";
 import { getAllMailerSlugs } from "@/data/mailer-products";
+import { WINDOW_CLINGS_CITY_COPY } from "@/data/window-clings";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
@@ -62,6 +63,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
+  // Window graphics & clings: pillar page + one variation per city with copy.
+  const windowClingsPillar = {
+    url: `${SITE_URL}/window-clings`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const windowClingsCityPages = Object.keys(WINDOW_CLINGS_CITY_COPY).map(
+    (city) => ({
+      url: `${SITE_URL}/window-clings/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    }),
+  );
+
   return [
     {
       url: SITE_URL,
@@ -92,6 +109,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...locationPages,
     ...mailerPillars,
     ...mailerCityPages,
+    windowClingsPillar,
+    ...windowClingsCityPages,
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,
