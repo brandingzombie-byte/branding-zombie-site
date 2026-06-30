@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
-import SectionSeparator from "@/components/SectionSeparator";
 import AuditForm from "./AuditForm";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
 
@@ -130,8 +129,10 @@ export default function FreeSiteAuditPage() {
           </div>
         </Section>
 
-        <SectionSeparator id={3} />
-
+        {/* No torn separator at this seam: the slim hero sits close to the
+            form, and the separator's deep overhang painted over the eyebrow
+            labels. The dark→light color change + topRule hairline is the
+            transition. */}
         <Section theme="light" pad="standard" topRule>
           {/* Form first on mobile so the input is reachable without scrolling
               past the six-pillar list; pillars-left / form-right on desktop. */}

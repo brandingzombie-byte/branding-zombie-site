@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
-import SectionSeparator from "@/components/SectionSeparator";
 import ContactForm from "./ContactForm";
 import ContactOptions from "./ContactOptions";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
@@ -117,8 +116,10 @@ export default function ContactPage() {
           </div>
         </Section>
 
-        <SectionSeparator id={7} />
-
+        {/* No torn separator here: the slim hero sits close to the contact
+            options, and the separator's deep overhang painted over the eyebrow
+            labels. The dark→light color change + topRule hairline is the
+            transition. */}
         <Section theme="light" pad="standard" topRule>
           <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
             {/* LEFT — Three-up fast-contact options */}
