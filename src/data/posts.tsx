@@ -14232,7 +14232,1440 @@ function HowToGetMoreGoogleReviewsContent() {
   );
 }
 
+// ─── Post — Why Isn't My Business Showing on Google Maps? ─────────────────
+
+function BusinessNotShowingGoogleMapsContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why does my business show when I search the name but not the category or service?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Searching your name maxes out relevance, so you appear. Category searches (\"plumber near me\") add competition, and Google ranks those on distance and prominence — reviews, citations, and links. If you have few reviews, you lose on prominence. It's a ranking gap, not a setup error.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take for a new business to show up on Google Maps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A brand-new Google Business Profile can take up to about a month to start appearing in search and Maps results, even after verification. Edits to an existing profile take up to roughly three days to process. Set everything correctly, then resist the urge to keep changing things.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why did my business suddenly disappear from Google Maps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually one of three things: your profile was suspended for a guidelines violation, a recent edit is still reprocessing, or a duplicate listing got merged. Suspensions often follow risky edits like keyword-stuffed names or a fake address. Check the owning Google account for a notice.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get my business back on Google Maps after it was suspended?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use Google's official reinstatement appeal from inside the suspended profile — do not create a new listing to replace it. A duplicate makes your NAP messier and usually delays recovery. Fix whatever broke the guidelines first, then appeal and wait for review.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does my business need a physical storefront to show on Google Maps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Service-area businesses (mobile or home-based) can show on Maps without a public storefront — you set service areas and can hide the street address. You still need to verify the profile and keep your NAP consistent everywhere for it to rank.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many Google reviews do I need to rank on Google Maps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There's no magic number. Google weighs review quantity, recency, rating, and your replies as part of prominence. A steady stream of recent, genuine reviews usually beats a pile of old ones. Focus on consistency over hitting a target count — and never buy fake reviews.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        If you&apos;re asking &quot;why isn&apos;t my business showing on Google
+        Maps,&quot; the answer is almost always one of three things: an{" "}
+        <strong>unverified or suspended Google Business Profile</strong>,{" "}
+        <strong>inconsistent NAP</strong> (your business name, address, and phone
+        number don&apos;t match across the web), or a{" "}
+        <strong>missing or wrong primary category</strong>. I&apos;m Gerry, owner
+        of Branding Zombie Designs, a graphic + web design studio in Cumming, GA,
+        and I fix this for local businesses across Forsyth County every month.
+      </p>
+
+      <p>
+        There&apos;s also a fourth, sneakier case: you <strong>do</strong> show up
+        when someone searches your exact business name, but you vanish when they
+        search a category like &quot;logo designer near me.&quot; That&apos;s not
+        a setup bug — that&apos;s a ranking problem. We&apos;ll untangle both.
+      </p>
+
+      <p>Let&apos;s go fastest-fix first.</p>
+
+      <h2 id="verified">Is my Google Business Profile actually verified?</h2>
+      <p>
+        This is the number-one reason a business is not showing up on Google
+        Maps. Google is blunt about it: only verified businesses can show their
+        info on Maps and Search. (See{" "}
+        <ExternalLink href="https://support.google.com/business/answer/145585">
+          Google Business Profile Help
+        </ExternalLink>
+        .)
+      </p>
+      <p>So check the obvious things:</p>
+      <ul>
+        <li>
+          Sign in at the Google account that <strong>owns</strong> the profile
+          and confirm it says &quot;Verified.&quot;
+        </li>
+        <li>
+          If it says &quot;Pending&quot; or asks you to verify, finish that step
+          (postcard, video, phone, or email — Google picks the method).
+        </li>
+        <li>
+          If you can&apos;t find the profile at all, you may have{" "}
+          <strong>two</strong> of them, or someone else claimed it.
+        </li>
+      </ul>
+      <p>
+        Quick aside: setting up and verifying a Google Business Profile is{" "}
+        <strong>100% free</strong>. Anyone who tells you they need a fee just to
+        &quot;list&quot; your business is selling you snake oil. What costs money
+        is the strategy and the website behind it — more on that below.
+      </p>
+
+      <h2 id="name-not-category">
+        Why does my business show when I search the name but not the category?
+      </h2>
+      <p>
+        This is the case that drives owners up the wall. Search &quot;Joe&apos;s
+        HVAC Cumming&quot; and you&apos;re there. Search &quot;hvac near me&quot;
+        and you&apos;ve disappeared.
+      </p>
+      <p>
+        That&apos;s because Google ranks local results on three factors:{" "}
+        <strong>relevance, distance, and prominence.</strong> (See{" "}
+        <ExternalLink href="https://support.google.com/business/answer/7091">
+          Google Business Profile Help
+        </ExternalLink>
+        .)
+      </p>
+      <ul>
+        <li>
+          <strong>Relevance</strong> — does your profile actually match the
+          search? (Category + description matter here.)
+        </li>
+        <li>
+          <strong>Distance</strong> — how close are you to the person searching?
+        </li>
+        <li>
+          <strong>Prominence</strong> — how well-known you are: reviews,
+          citations, links, mentions.
+        </li>
+      </ul>
+      <p>
+        When you search your own name, relevance is maxed out, so you pop up. For
+        a competitive category search, you&apos;re up against every other shop —
+        and if you have three reviews and no citations, you lose on prominence.
+        That&apos;s a ranking gap, not a broken listing.
+      </p>
+      <p>
+        The fix isn&apos;t a setting. It&apos;s building prominence over time
+        (reviews + citations + a real website). Google also flatly states
+        there&apos;s <strong>no way to pay for better local ranking</strong> — so
+        ignore anyone promising a &quot;guaranteed #1 Maps spot.&quot;
+      </p>
+
+      <h2 id="nap">Is my NAP consistent everywhere online?</h2>
+      <p>
+        NAP = <strong>N</strong>ame, <strong>A</strong>ddress, <strong>P</strong>
+        hone number. Google cross-checks the one on your profile against what it
+        finds across the web — your site, Yelp, Facebook, old directories, your
+        cousin&apos;s blog from 2019.
+      </p>
+      <p>
+        When those don&apos;t match, Google loses confidence and can quietly bury
+        you. Classic culprits:
+      </p>
+      <ul>
+        <li>&quot;Ste 200&quot; on your site vs. &quot;Suite 200&quot; on your profile.</li>
+        <li>An old phone number still floating on Yelp.</li>
+        <li>A name with &quot;LLC&quot; on one listing and without it on another.</li>
+      </ul>
+      <p>
+        Pick <strong>one</strong> exact format and make it identical everywhere.
+        This is grunt work, but it&apos;s some of the highest-leverage local-SEO
+        work you can do in Cumming, GA. It&apos;s the backbone of{" "}
+        <InternalLink href="/services/digital-marketing">
+          our local SEO service
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="primary-category">Did I pick the right primary category?</h2>
+      <p>
+        Your <strong>primary category</strong> tells Google what you are. Get it
+        wrong and you won&apos;t show for the searches that matter.
+      </p>
+      <p>
+        A roofer listed under &quot;general contractor&quot; will struggle to rank
+        for &quot;roofer near me.&quot; Pick the single category that best
+        describes your core business, then add secondary categories for the rest.
+        (If you offer apparel, signage, and web — like I do — you still pick one
+        primary and stack the rest underneath.)
+      </p>
+      <p>
+        While you&apos;re in there: fill out <strong>everything</strong>. Hours,
+        services, photos, description. Google says complete, detailed info helps
+        it understand and rank you. (See{" "}
+        <ExternalLink href="https://support.google.com/business/answer/7091">
+          Google Business Profile Help
+        </ExternalLink>
+        .)
+      </p>
+
+      <h2 id="disappeared">
+        My business disappeared from Google Maps — what happened?
+      </h2>
+      <p>
+        If your business disappeared from Google Maps overnight, it usually means
+        one of three things:
+      </p>
+      <ol>
+        <li>
+          <strong>Your profile was suspended</strong> for a guidelines violation.
+          Google says a profile that breaks the rules gets disabled or suspended
+          and won&apos;t show until you fix it — and you&apos;ll get a notice in
+          the owning Google account.
+        </li>
+        <li>
+          <strong>You edited something</strong> (name, address, category) and
+          it&apos;s reprocessing — edits can take up to ~3 days.
+        </li>
+        <li>
+          <strong>A duplicate or merge</strong> happened and Google chose to show
+          a different listing.
+        </li>
+      </ol>
+      <p>
+        Suspensions often get triggered by edits that look fishy to Google:
+        keyword-stuffing your business name (&quot;Joe&apos;s HVAC — Best AC Repair
+        Cumming&quot;), a fake address, or a virtual office.
+      </p>
+      <p>
+        <strong>The single biggest mistake:</strong> do <strong>not</strong>{" "}
+        create a brand-new listing to &quot;fix&quot; a suspended one. That gives
+        you a duplicate, muddies your NAP, and usually makes things worse. Instead,
+        use Google&apos;s official reinstatement/appeal process from inside the
+        suspended profile and wait it out.
+      </p>
+
+      <h2 id="checklist">
+        How do I get my business back on Google Maps? (the checklist)
+      </h2>
+      <p>
+        Run this list top to bottom. It clears up the vast majority of &quot;google
+        business profile not showing on maps&quot; cases:
+      </p>
+      <ol>
+        <li>
+          <strong>Confirm verification.</strong> Verified but not showing on Maps?
+          Move to the next steps — verification alone isn&apos;t ranking.
+        </li>
+        <li>
+          <strong>Lock your NAP.</strong> One exact name, address, and phone,
+          identical on your site, profile, and every directory.
+        </li>
+        <li>
+          <strong>Set the correct primary category.</strong> One best-fit primary,
+          relevant secondaries.
+        </li>
+        <li>
+          <strong>Complete the profile.</strong> Hours, services, description, 10+
+          real photos.
+        </li>
+        <li>
+          <strong>Fix or remove duplicate listings.</strong>
+        </li>
+        <li>
+          <strong>Earn reviews steadily</strong> and reply to each one.
+        </li>
+        <li>
+          <strong>Build citations</strong> — get listed accurately on the
+          directories that matter.
+        </li>
+        <li>
+          <strong>Point a real website at it</strong> with matching NAP and local
+          content.
+        </li>
+        <li>
+          <strong>If suspended, appeal</strong> — don&apos;t recreate.
+        </li>
+      </ol>
+      <p>
+        If you want a second set of eyes on the website half of that, our{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink>{" "}
+        checks the on-page signals that feed your Maps prominence.
+      </p>
+
+      <h2 id="how-long">How long does it take to show up on Google Maps?</h2>
+      <p>
+        Patience tax: a <strong>brand-new</strong> profile can take up to about a{" "}
+        <strong>month</strong> to appear in results, and <strong>edits</strong> to
+        an existing one can take up to ~<strong>3 days</strong> to process. (See{" "}
+        <ExternalLink href="https://support.google.com/business/answer/145585">
+          Google Business Profile Help
+        </ExternalLink>
+        .)
+      </p>
+      <p>
+        So if you set everything up correctly last Tuesday and you&apos;re not
+        ranking yet, that may be totally normal. Verify it&apos;s right, then give
+        it time before you start changing things again — constant edits just reset
+        the clock.
+      </p>
+
+      <h2 id="local-angle">
+        The local angle: prominence is built in Forsyth County, not bought
+      </h2>
+      <p>
+        Here&apos;s the part nobody likes hearing: for a competitive category in
+        North Metro Atlanta, ranking comes down to <strong>prominence</strong> —
+        and prominence is earned.
+      </p>
+      <p>
+        Reviews are the fastest lever. A steady drip of real, recent Google
+        reviews tells Google (and humans) you&apos;re legit. We wrote a whole
+        playbook on{" "}
+        <InternalLink href="/blog/how-to-get-more-google-reviews">
+          how to get more Google reviews
+        </InternalLink>{" "}
+        — start there.
+      </p>
+      <p>
+        Then it&apos;s citations + a credible website. A clean, fast{" "}
+        <InternalLink href="/services/web-design">website</InternalLink> with
+        consistent NAP and local content is what separates the shop that ranks
+        from the one stuck on page 3. If your current site is quietly hurting you,
+        here&apos;s{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how your website might be costing you customers
+        </InternalLink>
+        .
+      </p>
+      <p>
+        For the Maps-specific tune-up, our deep dive on{" "}
+        <InternalLink href="/blog/google-business-profile-optimization-cumming">
+          Google Business Profile optimization in Cumming
+        </InternalLink>{" "}
+        walks through every field. And because AI search now pulls from these same
+        signals, see{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          why Google AI is calling your business
+        </InternalLink>
+        .
+      </p>
+      <p>
+        Most of my clients are local —{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades &amp; contractors
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>,{" "}
+        <InternalLink href="/industries/salons-barbershops">
+          salons &amp; barbershops
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/auto-repair">auto repair</InternalLink>,
+        and{" "}
+        <InternalLink href="/industries/home-services">home services</InternalLink>{" "}
+        — and the same fixes apply to all of them.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Stuck in the Maps graveyard?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Let&apos;s dig your business out of where nobody can find it.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          I&apos;ll look at your profile, your NAP, and the website behind it —
+          and tell you straight what&apos;s broken. Want the whole local-SEO push
+          handled for you? That&apos;s our digital marketing service. Just
+          launching and need the logo + site + cards bundle that gets you findable
+          from day one? The $997 Startup Special is built for exactly that.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Free site audit
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <h3 id="faq-name-category">
+        Why does my business show when I search the name but not the category or
+        service?
+      </h3>
+      <p>
+        Searching your name maxes out relevance, so you appear. Category searches
+        (&quot;plumber near me&quot;) add competition, and Google ranks those on
+        distance and prominence — reviews, citations, and links. If you have few
+        reviews, you lose on prominence. It&apos;s a ranking gap, not a setup
+        error.
+      </p>
+
+      <h3 id="faq-new-business">
+        How long does it take for a new business to show up on Google Maps?
+      </h3>
+      <p>
+        A brand-new Google Business Profile can take up to about a month to start
+        appearing in search and Maps results, even after verification. Edits to an
+        existing profile take up to roughly three days to process. Set everything
+        correctly, then resist the urge to keep changing things.
+      </p>
+
+      <h3 id="faq-disappeared">
+        Why did my business suddenly disappear from Google Maps?
+      </h3>
+      <p>
+        Usually one of three things: your profile was suspended for a guidelines
+        violation, a recent edit is still reprocessing, or a duplicate listing got
+        merged. Suspensions often follow risky edits like keyword-stuffed names or
+        a fake address. Check the owning Google account for a notice.
+      </p>
+
+      <h3 id="faq-reinstate">
+        How do I get my business back on Google Maps after it was suspended?
+      </h3>
+      <p>
+        Use Google&apos;s official reinstatement appeal from inside the suspended
+        profile — do not create a new listing to replace it. A duplicate makes your
+        NAP messier and usually delays recovery. Fix whatever broke the guidelines
+        first, then appeal and wait for review.
+      </p>
+
+      <h3 id="faq-storefront">
+        Does my business need a physical storefront to show on Google Maps?
+      </h3>
+      <p>
+        No. Service-area businesses (mobile or home-based) can show on Maps without
+        a public storefront — you set service areas and can hide the street
+        address. You still need to verify the profile and keep your NAP consistent
+        everywhere for it to rank.
+      </p>
+
+      <h3 id="faq-reviews">
+        How many Google reviews do I need to rank on Google Maps?
+      </h3>
+      <p>
+        There&apos;s no magic number. Google weighs review quantity, recency,
+        rating, and your replies as part of prominence. A steady stream of recent,
+        genuine reviews usually beats a pile of old ones. Focus on consistency over
+        hitting a target count — and never buy fake reviews.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner-operator of Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA serving Forsyth County since
+        2015. Need a hand getting found on Google? Text or call {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+// ─── Post — How to Get Cited by ChatGPT (Local AEO) ───────────────────────
+
+function HowToGetCitedByChatgptContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does ChatGPT use Google or Bing to find businesses?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bing. ChatGPT Search runs on Bing's index, not Google's. If Bing hasn't crawled and indexed your business, ChatGPT can't cite it. That's why claiming your free Bing Places for Business listing is the single most important first step for any local business that wants to show up in AI answers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why doesn't ChatGPT recommend my business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually one of three reasons: Bing hasn't indexed you (no Bing Places listing), your info is inconsistent across listings, or you have too few recent reviews and too little real content for the AI to trust. ChatGPT only names businesses when it has a complete, consistent, verifiable picture.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I pay to get my business recommended by ChatGPT?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. There is no paid placement and no way to buy a ChatGPT recommendation — it's earned trust, not an ad slot. Anyone selling 'guaranteed ChatGPT placement' is selling smoke. You earn citations through clean listings, real reviews, and clear, crawlable content on your own site.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does my Google Business Profile help me show up in ChatGPT?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Indirectly, yes. ChatGPT doesn't read your Google Business Profile dashboard directly, but your Google ratings and business info appear on Bing-indexed web pages — and ChatGPT cites those. So a complete, optimized Google Business Profile still matters because it creates the trusted pages the AI reads.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to get cited by ChatGPT?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Plan in weeks to months, not days. Bing has to crawl your updated listings and content, reviews need to accumulate, and your NAP needs to sync everywhere. Businesses with clean fundamentals that just claim Bing Places and add fresh answer content tend to surface fastest.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is AEO or GEO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) mean optimizing to get cited inside AI answers — ChatGPT, Copilot, Google AI overviews — rather than only ranking blue links. The tactics overlap with local SEO: clean listings, recent reviews, schema markup, and plain-English answer content.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>
+          How to get cited by ChatGPT comes down to one thing: be findable and
+          trusted in the sources ChatGPT actually reads.
+        </strong>{" "}
+        ChatGPT Search recommends local businesses it finds across the web through
+        Bing&apos;s index — so you earn a citation by claiming your free Bing
+        Places listing, keeping your Google Business Profile and directory info
+        consistent, collecting recent reviews, and publishing plain-English answer
+        content on your own site. We&apos;re Branding Zombie Designs, a graphic +
+        web design studio in Cumming, GA, and this is the same checklist we run for
+        trades, restaurants, and first-time small businesses across Forsyth County
+        and North Metro Atlanta.
+      </p>
+      <p>
+        No, you can&apos;t pay for it. No, there&apos;s no secret prompt. It&apos;s
+        earned trust signals — and the good news is most of them are free and
+        within your control.
+      </p>
+      <p>Let&apos;s break down exactly how it works and what to do this week.</p>
+
+      <h2 id="how-chatgpt-decides">
+        How does ChatGPT decide which businesses to recommend?
+      </h2>
+      <p>
+        When you ask ChatGPT &quot;who&apos;s the best HVAC company near Cumming,
+        GA,&quot; it doesn&apos;t pull from some private business directory. It
+        runs a live web search, grabs roughly the top 20–30 results, and then
+        filters them for trust.
+      </p>
+      <p>
+        According to{" "}
+        <ExternalLink href="https://searchengineland.com/how-does-chatgpt-conduct-local-searches-454894">
+          Search Engine Land&apos;s breakdown of how ChatGPT handles local searches
+        </ExternalLink>
+        , ChatGPT Search runs on <strong>Bing&apos;s index</strong> — not
+        Google&apos;s.
+      </p>
+      <p>From those top Bing results, it favors:</p>
+      <ul>
+        <li>
+          <strong>Trusted domains</strong> — established sites, real directories,
+          local press, not spammy junk.
+        </li>
+        <li>
+          <strong>Rich metadata</strong> — pages with clear hours, ratings,
+          reviews, and address info.
+        </li>
+        <li>
+          <strong>Verifiable, linkable content</strong> — no paywalls, no
+          logged-in-only pages.
+        </li>
+      </ul>
+      <p>
+        Then it only <em>names</em> a business when it has a complete, consistent,
+        trustworthy picture of it. Conflicting addresses, no reviews, or a site
+        that says nothing useful? You get skipped.
+      </p>
+      <p>
+        So the real question isn&apos;t &quot;how do I trick the AI.&quot; It&apos;s
+        &quot;how do I make my business obviously trustworthy to the sources the AI
+        reads.&quot;
+      </p>
+
+      <h2 id="google-or-bing">
+        Does ChatGPT use Google or Bing to find businesses?
+      </h2>
+      <p>Bing. This is the single most important fact in this whole article.</p>
+      <p>
+        ChatGPT Search is powered by Bing&apos;s index. If Bing hasn&apos;t crawled
+        and indexed your business, ChatGPT literally cannot find or cite you — no
+        matter how strong your Google ranking is.
+      </p>
+      <p>
+        That&apos;s why so many Forsyth County owners are confused. They rank fine
+        on Google, they assume they&apos;re invisible on AI, and they never realize
+        the fix lives over on Bing&apos;s side of the fence.
+      </p>
+      <p>
+        Here&apos;s the kicker: most small businesses have <em>never</em> claimed
+        their Bing listing. That&apos;s not a problem. That&apos;s an opening.
+      </p>
+
+      <h2 id="checklist">
+        How to get cited by ChatGPT: the 8-step local AEO checklist
+      </h2>
+      <p>
+        This is the practical version — the stuff a Cumming small business can
+        actually do without an agency retainer. Work top to bottom.
+      </p>
+      <p>
+        <strong>1. Claim and complete your free Bing Places listing.</strong> This
+        is step zero. Go claim it through{" "}
+        <ExternalLink href="https://support.microsoft.com/en-us/bing/add-and-manage-your-business-listing">
+          Microsoft&apos;s official Bing Places for Business
+        </ExternalLink>{" "}
+        — name, address, phone, hours, categories, photos, the works. Microsoft
+        actually{" "}
+        <ExternalLink href="https://blogs.bing.com/search/October-2025/Introducing-the-New-Bing-Places-for-Business-Built-for-Business-Owners,-Powered-by-Research">
+          relaunched Bing Places in late 2025
+        </ExternalLink>{" "}
+        as a free, Copilot-connected experience built to feed AI search — so a
+        complete listing now does double duty.
+      </p>
+      <p>
+        <strong>2. Complete and clean your Google Business Profile.</strong>{" "}
+        ChatGPT doesn&apos;t read your GBP dashboard directly — but your Google
+        rating and info show up on Bing-indexed web pages, and that&apos;s what
+        gets cited. A strong, complete profile creates the pages the AI sees. (More
+        on this in our{" "}
+        <InternalLink href="/blog/google-business-profile-optimization-cumming">
+          Google Business Profile optimization guide for Cumming
+        </InternalLink>
+        .)
+      </p>
+      <p>
+        <strong>3. Make your NAP identical everywhere.</strong> Name, Address,
+        Phone — byte-for-byte the same across your site, Bing, Google, Yelp, and
+        every directory. &quot;Suite 4&quot; on one and &quot;Ste. 4&quot; on
+        another is enough to make the AI hesitate. Consistency is trust.
+      </p>
+      <p>
+        <strong>4. Earn recent, specific reviews.</strong> Not just a high star
+        count — <em>recent</em> and <em>specific</em> ones (&quot;they re-wrapped
+        our box truck in two days&quot;). AI engines weigh freshness and detail.
+        Here&apos;s{" "}
+        <InternalLink href="/blog/how-to-get-more-google-reviews">
+          how to get more Google reviews
+        </InternalLink>{" "}
+        without nagging customers.
+      </p>
+      <p>
+        <strong>5. Add plain-English answer content to your own site.</strong>{" "}
+        Write About, Services, and FAQ pages that say, in normal human language,
+        what you do, the towns you serve (Cumming, Forsyth County, North Metro
+        Atlanta), and your pricing ranges. AI loves liftable, no-fluff answers.
+        This is the heart of AEO.
+      </p>
+      <p>
+        <strong>6. Add LocalBusiness and FAQ schema markup.</strong> Schema is
+        structured data that spells out your hours, location, and Q&amp;As in a
+        format machines parse instantly. It&apos;s invisible to visitors and gold
+        to crawlers. (We build this into every site — see{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>.)
+      </p>
+      <p>
+        <strong>7. Get listed in trusted local directories.</strong> Third-party
+        mentions — local directories, chamber listings, regional press — are
+        exactly the &quot;verifiable, linkable&quot; sources ChatGPT trusts. More
+        credible mentions, more confident citations.
+      </p>
+      <p>
+        <strong>8. Confirm Bing can actually crawl you.</strong> Check that your
+        robots.txt isn&apos;t blocking Bing&apos;s bot (or AI crawlers) and that
+        your key pages aren&apos;t stuck behind logins. If the door&apos;s locked,
+        none of the above matters.
+      </p>
+
+      <blockquote>
+        <strong>Zombie aside:</strong> Think of ChatGPT as a picky diner. It
+        won&apos;t recommend a restaurant it can&apos;t find, can&apos;t read the
+        menu for, and has zero reviews on. Feed it a complete, consistent story and
+        it&apos;ll send people your way. Starve it and you stay invisible — buried
+        alive in the rankings.
+      </blockquote>
+
+      <h2 id="aeo-geo">What is AEO / GEO (answer engine optimization)?</h2>
+      <p>
+        AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization)
+        are the newer cousins of SEO. Instead of optimizing only to <em>rank</em>{" "}
+        on a results page, you optimize to <em>get cited</em> inside an AI answer —
+        ChatGPT, Copilot, Google&apos;s AI overviews, Perplexity.
+      </p>
+      <p>
+        The mechanics overlap heavily with good local SEO (clean listings, reviews,
+        schema, real content). The mindset shift is writing for a machine that
+        summarizes and attributes, not just one that ranks blue links.
+      </p>
+      <p>
+        If you want the deeper backstory on why this matters for local businesses,
+        our flagship piece —{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google AI Is Calling Your Business
+        </InternalLink>{" "}
+        — is the one to read next. We also cover whether{" "}
+        <InternalLink href="/blog/is-seo-dead-2026">
+          SEO is dead in 2026
+        </InternalLink>{" "}
+        (spoiler: it changed, it didn&apos;t die) and{" "}
+        <InternalLink href="/blog/can-chatgpt-do-seo">
+          whether ChatGPT can do your SEO for you
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="how-long">How long does it take to get cited by ChatGPT?</h2>
+      <p>
+        Honestly, it varies — and anyone promising a guaranteed date is guessing.
+        Bing needs to crawl your new and updated info, your reviews need to
+        accumulate, and your listings need time to sync.
+      </p>
+      <p>
+        Plan in weeks-to-months, not days. The businesses that get cited fastest
+        are the ones that were already clean on the fundamentals and just needed
+        Bing Places claimed and some fresh content. Recency matters — updated
+        content earns more citations than a site you last touched in 2019.
+      </p>
+
+      <h2 id="diy">
+        Can a Cumming, GA small business really do this without an agency?
+      </h2>
+      <p>
+        Yes — most of the eight steps above are free and DIY-able in an afternoon.
+        Claiming Bing Places, cleaning your NAP, and asking for reviews cost nothing
+        but time.
+      </p>
+      <p>
+        Where owners get stuck is the site itself: the plain-English answer content,
+        the schema markup, and a structure AI can actually parse. That&apos;s a
+        build problem, not a listing problem — and it&apos;s exactly what our{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing / SEO + AEO service
+        </InternalLink>{" "}
+        is built for. If your site is the weak link, our{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> and{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> work bakes
+        the AI-friendly structure in from day one.
+      </p>
+      <p>
+        Just launching? The{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        gets you a logo, brand kit, 100 cards, 100 flyers, and a 1-page site with
+        hosting in 10 days — a clean, indexable foundation to build trust signals
+        on. Need the full bundle with a 5-page site and content calendar? That&apos;s
+        the{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>
+        . Want a real logo first?{" "}
+        <InternalLink href="/services/logo-design">
+          Logo tiers run $750 / $1,500 / $2,500
+        </InternalLink>
+        .
+      </p>
+      <p>
+        We do this for{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades &amp; contractors
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>,{" "}
+        <InternalLink href="/industries/salons-barbershops">
+          salons &amp; barbershops
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/auto-repair">auto repair</InternalLink>,
+        and{" "}
+        <InternalLink href="/industries/home-services">home services</InternalLink>{" "}
+        across Forsyth County. One designer, one invoice, logo to website to
+        AI-ready.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <h3 id="faq-google-bing">
+        Does ChatGPT use Google or Bing to find businesses?
+      </h3>
+      <p>
+        Bing. ChatGPT Search runs on Bing&apos;s index, not Google&apos;s. If Bing
+        hasn&apos;t crawled and indexed your business, ChatGPT can&apos;t cite it.
+        That&apos;s why claiming your free Bing Places for Business listing is the
+        single most important first step for any local business that wants to show
+        up in AI answers.
+      </p>
+
+      <h3 id="faq-why-not">Why doesn&apos;t ChatGPT recommend my business?</h3>
+      <p>
+        Usually one of three reasons: Bing hasn&apos;t indexed you (no Bing Places
+        listing), your info is inconsistent across listings, or you have too few
+        recent reviews and too little real content for the AI to trust. ChatGPT
+        only names businesses when it has a complete, consistent, verifiable
+        picture.
+      </p>
+
+      <h3 id="faq-pay">Can I pay to get my business recommended by ChatGPT?</h3>
+      <p>
+        No. There is no paid placement and no way to buy a ChatGPT recommendation —
+        it&apos;s earned trust, not an ad slot. Anyone selling &quot;guaranteed
+        ChatGPT placement&quot; is selling smoke. You earn citations through clean
+        listings, real reviews, and clear, crawlable content on your own site.
+      </p>
+
+      <h3 id="faq-gbp">
+        Does my Google Business Profile help me show up in ChatGPT?
+      </h3>
+      <p>
+        Indirectly, yes. ChatGPT doesn&apos;t read your Google Business Profile
+        dashboard directly, but your Google ratings and business info appear on
+        Bing-indexed web pages — and ChatGPT cites those. So a complete, optimized
+        Google Business Profile still matters because it creates the trusted pages
+        the AI reads.
+      </p>
+
+      <h3 id="faq-how-long">How long does it take to get cited by ChatGPT?</h3>
+      <p>
+        Plan in weeks to months, not days. Bing has to crawl your updated listings
+        and content, reviews need to accumulate, and your NAP needs to sync
+        everywhere. Businesses with clean fundamentals that just claim Bing Places
+        and add fresh answer content tend to surface fastest.
+      </p>
+
+      <h3 id="faq-aeo">What is AEO or GEO?</h3>
+      <p>
+        AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization)
+        mean optimizing to get <em>cited inside</em> AI answers — ChatGPT, Copilot,
+        Google AI overviews — rather than only ranking blue links. The tactics
+        overlap with local SEO: clean listings, recent reviews, schema markup, and
+        plain-English answer content.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Don&apos;t let your business stay buried alive in the rankings
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Let&apos;s get you cited before your competition wakes up.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          AI search is quietly deciding who gets recommended in Cumming, GA — and
+          right now most of your competitors haven&apos;t claimed a single thing.
+          That&apos;s a window. Want us to clean up your listings, build the answer
+          content, and wire in the schema so ChatGPT can actually find you?
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Free site audit
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner of Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA serving Forsyth County and North Metro Atlanta
+        since 2015. Text or call him at {PHONE_DISPLAY} to talk logos, websites,
+        signs, and getting your business found by humans and AI alike.
+      </p>
+    </>
+  );
+}
+
+// ─── Post — Google AI Overviews & Your Cumming, GA Small Business ─────────
+
+function GoogleAiOverviewsSmallBusinessContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are Google AI Overviews in plain terms?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "They're the AI-written answer box at the top of Google results. Google reads several web pages, summarizes them, and shows that summary first — with small links to the sources it cited. They appear above the blue links and often above the local map pack.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do AI Overviews hurt my website traffic?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "They can. A 2026 ISB/Carnegie Mellon field study found AI Overviews cut organic clicks about 38%, with zero-click searches rising from 54% to 72%. But pages cited inside an Overview can gain roughly 35% more clicks, so being the source flips the math in your favor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get my Cumming business into an AI Overview?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No special tech. Google says there's no required schema or markup — just be indexed and follow good SEO. Write clear, chunked, question-answering content, keep a complete Google Business Profile, gather recent reviews, build local authority, and run a fast mobile site.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: 'Are local "near me" searches affected by AI Overviews?',
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: 'Less so, for now. Only around 7% of local "near me" searches trigger an AI Overview, versus about 16% of queries overall. Your local map pack in Cumming and Forsyth County still drives most calls — but the trend is expanding, so prepare both fronts.',
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need to pay Google or buy software to appear?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. There's no fee and no special AI file. Appearing in an AI Overview uses the same eligibility as a regular search snippet. The investment is in genuinely helpful content, your Google Business Profile, reviews, and a fast website — not a gadget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will AI Overviews replace my website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. They change how people discover you, but the booking, buying, and trust-building still happen on your site. A strong, fast, on-brand website matters more than ever — it's what turns an Overview click into an actual customer.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        Google AI Overviews are the AI-generated answer box that now sits at the
+        very top of Google results — above the blue links and often above the local
+        map pack — synthesizing two or three cited sources into a quick answer. For
+        a Cumming, GA small business, here&apos;s the honest read: AI Overviews are
+        showing up on a fast-growing share of searches and they <em>can</em> cut
+        clicks to your site, BUT if your business gets cited inside one, you actually
+        earn <em>more</em> clicks. And getting cited needs no special tech — just
+        genuinely helpful, well-structured content, a complete Google Business
+        Profile, and real reviews.
+      </p>
+      <p>
+        I&apos;m Gerry at Branding Zombie Designs, a graphic + web design studio in
+        Cumming, GA, and I&apos;ve watched this shift hit local businesses across
+        Forsyth County and North Metro Atlanta over the last year. Below is what&apos;s
+        actually happening, what it means for your traffic, and the plain-English
+        plan to stay visible.
+      </p>
+
+      <h2 id="what-are-ai-overviews">What are Google AI Overviews?</h2>
+      <p>
+        An AI Overview is the boxed answer Google&apos;s AI writes at the top of a
+        search results page. Instead of just listing links, Google reads several
+        pages, stitches together a summary, and shows it first — with small citation
+        links to the sources it pulled from.
+      </p>
+      <p>
+        You&apos;ve seen them. You search &quot;how much does a logo cost&quot; or
+        &quot;best HVAC repair near me&quot; and a paragraph of answer appears
+        before you ever reach a website.
+      </p>
+      <p>
+        The key point: those little citation links are the new prize. If your page
+        is one of the sources, your name shows up at the top of Google&apos;s answer
+        — in front of competitors who only rank below it.
+      </p>
+
+      <h2 id="how-common">How common are AI Overviews now?</h2>
+      <p>
+        Common enough to matter, and growing fast. Per a{" "}
+        <ExternalLink href="https://www.semrush.com/blog/semrush-ai-overviews-study/">
+          Semrush study
+        </ExternalLink>
+        , AI Overviews appeared on roughly{" "}
+        <strong>16% of queries by November 2025</strong>, up from about 6.5% at the
+        start of the year. Commercial, buying-intent searches are climbing too.
+      </p>
+      <p>
+        The good news for local shops: &quot;near me&quot; and location searches
+        have been hit far less so far — only around 7% trigger an Overview. That
+        local map pack you rely on in Cumming is still mostly intact.
+      </p>
+      <p>
+        Informational searches are where Overviews show up hardest: &quot;how do
+        I,&quot; &quot;what is,&quot; &quot;how much.&quot; If your marketing leans
+        on blog and how-to traffic, this is your wake-up call.
+      </p>
+
+      <h2 id="do-they-hurt">
+        Do Google AI Overviews hurt small business traffic?
+      </h2>
+      <p>
+        Sometimes, yes — if you&apos;re <em>not</em> the one being cited. A
+        randomized field study from the Indian School of Business and Carnegie
+        Mellon (Jan–Feb 2026),{" "}
+        <ExternalLink href="https://www.searchenginejournal.com/ai-overviews-cut-organic-clicks-38-field-study-finds/573145/">
+          reported by Search Engine Journal
+        </ExternalLink>
+        , found that AI Overviews cut organic clicks by about <strong>38%</strong>.
+        Zero-click searches — where the user gets their answer and never leaves
+        Google — rose from 54% to 72%.
+      </p>
+      <p>
+        Informational content got hit the hardest. Branded and navigational
+        searches (people typing your business name) held up much better.
+      </p>
+      <p>
+        Here&apos;s the flip side, and it&apos;s the whole game: getting{" "}
+        <strong>cited inside</strong> an AI Overview can <em>lift</em> your clicks
+        by around 35% versus just ranking below it. So the strategy isn&apos;t
+        &quot;rank #1&quot; anymore. It&apos;s &quot;be the source Google
+        quotes.&quot; That&apos;s the heart of what google ai overviews small
+        business owners need to understand.
+      </p>
+      <p>
+        This is exactly why brand and reputation still win. The more people search
+        you by name — because your signage, shirts, and reputation around Forsyth
+        County made you memorable — the less an Overview can intercept you. (Funny
+        how the zombie won&apos;t die, huh.)
+      </p>
+
+      <figure className="my-12">
+        <img
+          src="/assets/blog-39-get-cited-banner.jpg"
+          alt="Zombie hand reaching for a glowing Google AI Overview answer box, illustrating how a small business gets cited in AI search results — Branding Zombie Designs, Cumming, GA"
+          width={1200}
+          height={400}
+          loading="lazy"
+          className="w-full rounded-2xl"
+        />
+      </figure>
+
+      <h2 id="how-to-show-up">How do I show up in Google AI Overviews?</h2>
+      <p>
+        The relief here is real: there&apos;s no secret button. Straight from{" "}
+        <ExternalLink href="https://developers.google.com/search/docs/appearance/ai-features">
+          Google Search Central
+        </ExternalLink>
+        , there are &quot;no additional requirements&quot; and &quot;no special
+        schema.org structured data&quot; needed to appear in AI features. A page
+        just has to be indexed, eligible to show as a snippet, and following good
+        SEO.
+      </p>
+      <p>
+        No AI file. No magic markup. No paying Google. If a page can already earn a
+        featured snippet, it can be pulled into an Overview.
+      </p>
+      <p>So the practical levers are the ones that always mattered, just sharpened:</p>
+      <ul>
+        <li>
+          <strong>Answer real questions clearly.</strong> Write the way people
+          search. Lead with the answer, then explain. Break content into clean,
+          self-contained chunks Google can lift. (This article is built that way on
+          purpose.)
+        </li>
+        <li>
+          <strong>Keep a complete Google Business Profile.</strong> Right
+          categories, hours, services, photos, address. For local intent, this is
+          your biggest lever — see our guide to{" "}
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            Google Business Profile optimization in Cumming
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Stack real, recent reviews.</strong> Volume and freshness both
+          count. Here&apos;s{" "}
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            how to get more Google reviews
+          </InternalLink>{" "}
+          without being weird about it.
+        </li>
+        <li>
+          <strong>Build local authority.</strong> Consistent name/address/phone
+          across directories, local mentions, and content that proves you serve
+          Forsyth County. Our{" "}
+          <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>{" "}
+          post breaks down local SEO Cumming basics.
+        </li>
+        <li>
+          <strong>Be fast and mobile-first.</strong> Most of these searches happen
+          on a phone. A slow, clunky site won&apos;t get cited — and won&apos;t
+          convert the clicks you do earn.
+        </li>
+      </ul>
+      <p>
+        If your site can&apos;t tick those boxes, the citation goes to whoever&apos;s
+        does. That&apos;s the work. And it&apos;s work, not a gadget. Our companion
+        piece on{" "}
+        <InternalLink href="/blog/how-to-get-cited-by-chatgpt-local">
+          how to get cited by ChatGPT for local searches
+        </InternalLink>{" "}
+        digs deeper into the AI-citation side.
+      </p>
+
+      <h2 id="vs-map-pack">
+        AI Overviews vs. the local map pack: which matters more in Cumming?
+      </h2>
+      <p>
+        For a service business in Cumming, GA — a plumber, a salon, a restaurant —
+        the <strong>local map pack still matters most today</strong>. Those &quot;near
+        me&quot; searches mostly aren&apos;t triggering Overviews yet, and a
+        dialed-in Google Business Profile plus reviews still drives the calls.
+      </p>
+      <p>
+        But the trend line is clear, so play both. Win the map pack now, and
+        structure your website content to get cited as Overviews expand into more
+        searches over time.
+      </p>
+      <p>
+        Think of it like a roofing lead in Forsyth County: the customer might first
+        ask Google &quot;do I need to replace or repair my roof,&quot; land in an
+        Overview, see <em>your</em> shop cited as the helpful source — then click
+        through and call. The Overview didn&apos;t steal the lead. It handed it to
+        the business that wrote the clearest answer.
+      </p>
+
+      <h2 id="where-website-fits">
+        Where does my website fit if Google answers everything?
+      </h2>
+      <p>
+        This is the part that keeps small business owners up at night, so let me be
+        blunt: AI Overviews change how people <em>find</em> you. They don&apos;t
+        replace your <strong>website</strong> or your <strong>brand</strong>.
+      </p>
+      <p>
+        The Overview is a doorway. The decision — booking, buying, trusting you —
+        still happens on your site. A weak, generic page that finally earns a click
+        and then fluffs the close is the real problem, not the AI box.
+      </p>
+      <p>
+        That&apos;s why we build the whole stack under one roof:{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> that
+        loads fast and converts,{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> that makes
+        you the name people search by, and{" "}
+        <InternalLink href="/services/digital-marketing">SEO/AEO</InternalLink> that
+        gets you cited and clicked. One designer, one invoice — logo, website,
+        shirts, and signs that all point back to the same memorable brand.
+      </p>
+      <p>
+        Want to know where you stand right now? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> and
+        I&apos;ll tell you, in plain English, whether your pages are even eligible
+        to get pulled into an Overview.
+      </p>
+
+      <h2 id="what-to-do-first">
+        What should a Cumming small business do first?
+      </h2>
+      <p>Start small, in order:</p>
+      <ol>
+        <li>
+          <strong>Claim and complete your Google Business Profile.</strong> Free,
+          fast, biggest local payoff.
+        </li>
+        <li>
+          <strong>Get 5–10 fresh reviews</strong> this month.
+        </li>
+        <li>
+          <strong>Add one genuinely helpful, well-structured page</strong>{" "}
+          answering a real question your customers ask.
+        </li>
+        <li>
+          <strong>Make sure your site is fast on a phone</strong> and your contact
+          info is everywhere.
+        </li>
+      </ol>
+      <p>
+        If you&apos;re launching from scratch, the <strong>$997</strong>{" "}
+        <InternalLink href="/startup-special">Startup Special</InternalLink> gets a
+        Cumming small business online — logo, brand kit, cards, flyers, and a
+        one-page site — in 10 days. Ready for the full build with content baked in?
+        The <strong>$4,500</strong>{" "}
+        <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
+        covers a 5-page site and a 90-day content calendar. Not sure which fits?{" "}
+        <InternalLink href="/services/request-quote">Request a quote</InternalLink>{" "}
+        or just text me.
+      </p>
+      <p>
+        For the bigger picture on how AI is reshaping local search, read our
+        flagship piece,{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google AI Is Calling Your Business
+        </InternalLink>{" "}
+        — it pairs perfectly with this one.
+      </p>
+
+      <h2 id="faq">FAQ: Google AI Overviews for Cumming Small Businesses</h2>
+
+      <h3 id="faq-what">What are Google AI Overviews in plain terms?</h3>
+      <p>
+        They&apos;re the AI-written answer box at the top of Google results. Google
+        reads several web pages, summarizes them, and shows that summary first —
+        with small links to the sources it cited. They appear above the blue links
+        and often above the local map pack.
+      </p>
+
+      <h3 id="faq-hurt">Do AI Overviews hurt my website traffic?</h3>
+      <p>
+        They can. A 2026 ISB/Carnegie Mellon field study found AI Overviews cut
+        organic clicks about 38%, with zero-click searches rising from 54% to 72%.
+        But pages <em>cited inside</em> an Overview can gain roughly 35% more
+        clicks, so being the source flips the math in your favor.
+      </p>
+
+      <h3 id="faq-get-in">How do I get my Cumming business into an AI Overview?</h3>
+      <p>
+        No special tech. Google says there&apos;s no required schema or markup —
+        just be indexed and follow good SEO. Write clear, chunked, question-answering
+        content, keep a complete Google Business Profile, gather recent reviews,
+        build local authority, and run a fast mobile site.
+      </p>
+
+      <h3 id="faq-near-me">
+        Are local &quot;near me&quot; searches affected by AI Overviews?
+      </h3>
+      <p>
+        Less so, for now. Only around 7% of local &quot;near me&quot; searches
+        trigger an AI Overview, versus about 16% of queries overall. Your local map
+        pack in Cumming and Forsyth County still drives most calls — but the trend
+        is expanding, so prepare both fronts.
+      </p>
+
+      <h3 id="faq-pay">Do I need to pay Google or buy software to appear?</h3>
+      <p>
+        No. There&apos;s no fee and no special AI file. Appearing in an AI Overview
+        uses the same eligibility as a regular search snippet. The investment is in
+        genuinely helpful content, your Google Business Profile, reviews, and a fast
+        website — not a gadget.
+      </p>
+
+      <h3 id="faq-replace">Will AI Overviews replace my website?</h3>
+      <p>
+        No. They change how people <em>discover</em> you, but the booking, buying,
+        and trust-building still happen on your site. A strong, fast, on-brand
+        website matters more than ever — it&apos;s what turns an Overview click into
+        an actual customer.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Don&apos;t get skipped by the robots
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Be the source Google quotes, not the link nobody reaches.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          AI Overviews aren&apos;t here to bury you — they&apos;re here to bury
+          whoever wrote a lazy, forgettable page. If you want a brand that&apos;s
+          hard to ignore (online <em>and</em> on a phone screen), text Gerry and
+          take a stroll through the portfolio. The undead version of your
+          competition is already optimizing. Catch up.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Free site audit
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner of Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA serving Forsyth County and North Metro Atlanta
+        since 2015. Logos, websites, SEO/AEO, apparel, and signage under one roof —
+        call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "business-not-showing-on-google-maps",
+      title: "Why Isn't My Business Showing on Google Maps? (Cumming, GA Fixes)",
+      seoTitle:
+        "Why Isn't My Business Showing on Google Maps? Cumming GA | Branding Zombie Designs",
+      seoDescription:
+        "Why isn't my business showing on Google Maps? Usually it's an unverified profile, mismatched NAP, or wrong category. Here's the fix, from a Cumming, GA studio.",
+      excerpt:
+        "Why isn't my business showing on Google Maps? Usually an unverified profile, mismatched NAP, or the wrong primary category — plus the sneaky 'shows by name but not by category' ranking gap. The fixes, from a Cumming, GA studio.",
+      keywords: [
+        "why isn't my business showing on google maps",
+        "business not showing up on google maps",
+        "my business disappeared from google maps",
+        "google business profile not showing on maps",
+        "verified but not showing on maps",
+        "local seo cumming",
+        "seo cumming",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-29",
+      readingTimeMinutes: 8,
+      category: "Local SEO",
+      tags: [
+        "local SEO",
+        "Google Business Profile",
+        "google maps",
+        "NAP consistency",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-business-not-showing-google-maps.jpg",
+      ogImageAlt:
+        "Why isn't my business showing on Google Maps — local SEO fixes in Cumming, GA — Branding Zombie Designs",
+    },
+    Content: BusinessNotShowingGoogleMapsContent,
+  },
+  {
+    meta: {
+      slug: "how-to-get-cited-by-chatgpt-local",
+      title:
+        "How to Get Your Business Cited by ChatGPT & AI Search in Cumming, GA (Local AEO)",
+      seoTitle:
+        "How to Get Cited by ChatGPT in Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "Want to get cited by ChatGPT in Cumming, GA? It runs on Bing's index — claim Bing Places, clean your listings, earn reviews, add answer content. Here's the playbook.",
+      excerpt:
+        "How to get cited by ChatGPT in Cumming, GA: it runs on Bing's index, so claim your free Bing Places listing, keep your NAP consistent, earn recent reviews, and publish plain-English answer content. The 8-step local AEO checklist.",
+      keywords: [
+        "how to get cited by ChatGPT",
+        "get recommended by ChatGPT",
+        "show up on ChatGPT",
+        "does ChatGPT use Google or Bing",
+        "answer engine optimization",
+        "AEO",
+        "GEO",
+        "Bing Places for Business",
+        "local seo cumming",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-29",
+      readingTimeMinutes: 8,
+      category: "AI Search",
+      tags: [
+        "AEO",
+        "GEO",
+        "AI search",
+        "ChatGPT",
+        "local SEO",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-how-to-get-cited-by-chatgpt.jpg",
+      ogImageAlt:
+        "How to get cited by ChatGPT in Cumming, GA — local AEO checklist — Branding Zombie Designs",
+    },
+    Content: HowToGetCitedByChatgptContent,
+  },
+  {
+    meta: {
+      slug: "google-ai-overviews-small-business",
+      title:
+        "Google AI Overviews: What They Mean for Your Cumming, GA Small Business",
+      seoTitle:
+        "Google AI Overviews & Your Cumming, GA Small Business | Branding Zombie Designs",
+      seoDescription:
+        "Google AI Overviews are the AI answer box atop search. Here's what they mean for your Cumming, GA small business — and how to get cited, not skipped.",
+      excerpt:
+        "Google AI Overviews are the AI answer box at the top of search. They can cut clicks — but getting cited inside one lifts them. What they mean for your Cumming, GA small business, and the plain-English plan to stay visible.",
+      keywords: [
+        "google ai overviews small business",
+        "what are google ai overviews",
+        "how do i show up in google ai overviews",
+        "do ai overviews hurt small business traffic",
+        "ai overviews vs local pack",
+        "how to get cited in ai overviews",
+        "seo cumming",
+        "local seo cumming",
+        "google business profile cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-29",
+      readingTimeMinutes: 8,
+      category: "AI Search",
+      tags: [
+        "AI search",
+        "AI Overviews",
+        "local SEO",
+        "AEO",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-google-ai-overviews-small-business.jpg",
+      ogImageAlt:
+        "Google AI Overviews and your Cumming, GA small business — get cited not skipped — Branding Zombie Designs",
+    },
+    Content: GoogleAiOverviewsSmallBusinessContent,
+  },
   {
     meta: {
       slug: "how-to-get-more-google-reviews",
