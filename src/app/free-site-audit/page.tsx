@@ -91,8 +91,8 @@ export default function FreeSiteAuditPage() {
       <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
-          pad="spacious"
-          className="min-h-[48dvh] overflow-hidden"
+          pad="tight"
+          className="overflow-hidden"
         >
           <div
             aria-hidden
@@ -102,14 +102,16 @@ export default function FreeSiteAuditPage() {
                 "radial-gradient(60% 50% at 25% 35%, rgba(191,255,0,0.12), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(0,255,212,0.07), transparent 70%)",
             }}
           />
-          <div className="pt-20 lg:pt-28">
+          {/* Slim hero so the URL field clears the fold (CRO). pt clears the
+              floating navbar; headline drops from --text-display to --text-h1. */}
+          <div className="pt-16 lg:pt-20">
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
                 Free Pulse Check · No commitment
               </span>
             </div>
-            <h1 className="mt-6 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-5 max-w-[18ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.12] tracking-[-0.01em] text-[var(--color-dark-text-primary)]">
               Is your site{" "}
               <span className="relative inline-block">
                 dead
@@ -120,7 +122,7 @@ export default function FreeSiteAuditPage() {
               </span>{" "}
               or just sleeping?
             </h1>
-            <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+            <p className="measure mt-5 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
               Drop a URL. In about 10 seconds we score it across six pillars
               and tell you — straight — what&apos;s costing you customers.
               You get the full report on screen and a copy in your inbox.
@@ -130,10 +132,12 @@ export default function FreeSiteAuditPage() {
 
         <SectionSeparator id={3} />
 
-        <Section theme="light" pad="spacious" topRule>
-          <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-12">
+        <Section theme="light" pad="standard" topRule>
+          {/* Form first on mobile so the input is reachable without scrolling
+              past the six-pillar list; pillars-left / form-right on desktop. */}
+          <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
             {/* LEFT — what we check */}
-            <aside className="lg:col-span-5">
+            <aside className="order-2 lg:order-1 lg:col-span-5">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 What we check
               </span>
@@ -179,7 +183,7 @@ export default function FreeSiteAuditPage() {
             </aside>
 
             {/* RIGHT — form */}
-            <div className="lg:col-span-7">
+            <div className="order-1 lg:order-2 lg:col-span-7">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
                 Run a Pulse Check
               </span>

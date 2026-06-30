@@ -81,7 +81,7 @@ export default function Pricing() {
               Pricing
             </span>
             <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
-              Three packages.{" "}
+              Pick a package.{" "}
               <span className="relative inline-block">
                 Zero hidden fees
                 <span
@@ -93,8 +93,9 @@ export default function Pricing() {
             </h2>
           </div>
           <p className="measure text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
-            Every package includes a free discovery call. Pick what you need
-            today, add the rest as you grow.
+            Want several services together? These bundles combine them for less
+            than buying à la carte. Just opening? Start with the $997 Launch
+            Kit. Every package includes a free discovery call.
           </p>
         </div>
 

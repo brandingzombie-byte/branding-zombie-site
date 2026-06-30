@@ -58,8 +58,11 @@ const stats: StatRow[] = [
     source: "Google / SOASTA",
   },
   {
-    special: "24/7",
-    label: "your competitor's chatbot is open. Yours isn't.",
+    numericValue: 76,
+    suffix: "%",
+    label:
+      "who search a nearby business on their phone visit one within a day. Can they find you?",
+    source: "Google / Think with Google",
   },
 ];
 
@@ -164,17 +167,31 @@ export default function PainPoints() {
 
       {/* Brand Checkup CTA — the free tool that diagnoses exactly this */}
       <div className="mt-4 flex flex-col items-start gap-5 border-t border-[var(--color-hairline-strong)] pt-10 sm:flex-row sm:items-center sm:justify-between">
-        <p className="max-w-[44ch] text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
-          Not sure where{" "}
-          <span className="relative inline-block">
-            your
-            <span
-              aria-hidden
-              className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
-            />
-          </span>{" "}
-          brand stands? Score it in 5 minutes — free, no jargon.
-        </p>
+        <div className="max-w-[48ch]">
+          <p className="text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+            Not sure where{" "}
+            <span className="relative inline-block">
+              your
+              <span
+                aria-hidden
+                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
+              />
+            </span>{" "}
+            brand stands? The Brand Checkup scores your whole brand in 5
+            minutes — free, no jargon.
+          </p>
+          {/* Distinguish the two free tools: Checkup = self-scored brand quiz;
+              Site Audit = instant grade of your live website (the primary CTA). */}
+          <p className="mt-2 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
+            Want your live website graded instead?{" "}
+            <a
+              href="/free-site-audit"
+              className="font-semibold text-[var(--color-neon-text)] underline underline-offset-2 hover:no-underline"
+            >
+              Run the free Site Audit →
+            </a>
+          </p>
+        </div>
         <a
           href="/brand-checkup"
           role="button"
