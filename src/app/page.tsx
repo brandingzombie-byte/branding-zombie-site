@@ -73,15 +73,17 @@ export default function Home() {
         <Testimonials />
         <SectionSeparator id={5} />
         <Services />
-        <SectionSeparator id={2} />
+        {/* No torn separator between Services & Process — both are light green,
+            so the divider was invisible but overhung onto the Process heading. */}
         <Process />
         <SectionSeparator id={4} />
         <Portfolio />
         <SectionSeparator id={8} />
         <Pricing />
-        {/* AIShowcase (chatbot) intentionally removed 2026-06-30 until the
-            chatbot service is live — see CRO notes. */}
-        <SectionSeparator id={3} />
+        {/* AIShowcase (chatbot) removed 2026-06-30 until that service is live.
+            No separator here either — Pricing & LocalTrust are the same light
+            green, so the torn divider was invisible AND overhung onto the
+            LocalTrust heading. */}
         <LocalTrust />
         <SectionSeparator id={6} />
         <FAQ />
