@@ -79,8 +79,8 @@ export default function ContactPage() {
       <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
-          pad="spacious"
-          className="min-h-[48dvh] overflow-hidden"
+          pad="tight"
+          className="overflow-hidden"
         >
           <div
             aria-hidden
@@ -90,14 +90,15 @@ export default function ContactPage() {
                 "radial-gradient(60% 50% at 25% 35%, rgba(0,255,212,0.10), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(191,255,0,0.07), transparent 70%)",
             }}
           />
-          <div className="pt-20 lg:pt-28">
+          {/* Slim hero (CRO) so contact options + form clear the fold. */}
+          <div className="pt-16 lg:pt-20">
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
                 Contact · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-5 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.12] tracking-[-0.01em] text-[var(--color-dark-text-primary)]">
               Let&apos;s{" "}
               <span className="relative inline-block">
                 talk
@@ -108,7 +109,7 @@ export default function ContactPage() {
               </span>
               .
             </h1>
-            <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+            <p className="measure mt-5 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
               No gatekeepers, no sales team. Call Gerry directly, drop an
               email, or book a free 15-minute audit — whichever feels less
               awkward.
@@ -118,8 +119,8 @@ export default function ContactPage() {
 
         <SectionSeparator id={7} />
 
-        <Section theme="light" pad="spacious" topRule>
-          <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-12">
+        <Section theme="light" pad="standard" topRule>
+          <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
             {/* LEFT — Three-up fast-contact options */}
             <aside className="lg:col-span-5">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">

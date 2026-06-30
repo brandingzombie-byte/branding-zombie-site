@@ -50,7 +50,8 @@ export default function Services() {
           <p className="text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
             One team, no agency hand-offs. Every project starts with the
             business goal, not the mood board — looking pretty is table
-            stakes, making you money is the job.
+            stakes, making you money is the job. Pick one service à la carte,
+            or bundle several and save with a package below.
           </p>
         </div>
 

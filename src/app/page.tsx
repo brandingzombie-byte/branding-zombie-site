@@ -6,7 +6,6 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
-import AIShowcase from "@/components/AIShowcase";
 import LocalTrust from "@/components/LocalTrust";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
@@ -68,19 +67,21 @@ export default function Home() {
         <Hero />
         <SectionSeparator id={7} />
         <PainPoints />
+        {/* Social proof raised high: real Google reviews land right after the
+            problem hook, before we ask for anything (CRO — proof before pitch). */}
         <SectionSeparator id={1} />
+        <Testimonials />
+        <SectionSeparator id={5} />
         <Services />
         <SectionSeparator id={2} />
         <Process />
-        <SectionSeparator id={1} />
-        <Testimonials />
         <SectionSeparator id={4} />
         <Portfolio />
         <SectionSeparator id={8} />
         <Pricing />
+        {/* AIShowcase (chatbot) intentionally removed 2026-06-30 until the
+            chatbot service is live — see CRO notes. */}
         <SectionSeparator id={3} />
-        <AIShowcase />
-        <SectionSeparator id={5} />
         <LocalTrust />
         <SectionSeparator id={6} />
         <FAQ />

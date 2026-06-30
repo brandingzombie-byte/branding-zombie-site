@@ -42,11 +42,11 @@ export default function Hero() {
           alt=""
           fetchPriority="high"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
+          className="absolute inset-0 h-full w-full object-cover object-[78%_center] md:object-center opacity-90 [filter:saturate(0.78)_brightness(0.85)_contrast(1.03)]"
         />
         {mountVideo && (
           <video
-            className="absolute inset-0 h-full w-full object-cover object-right md:object-center opacity-70 [filter:saturate(0.65)_brightness(0.6)_contrast(1.05)]"
+            className="absolute inset-0 h-full w-full object-cover object-[78%_center] md:object-center opacity-90 [filter:saturate(0.78)_brightness(0.85)_contrast(1.03)]"
             poster="/assets/hero-poster.webp"
             autoPlay
             muted
@@ -63,11 +63,11 @@ export default function Hero() {
           left-to-right on md+ (text lives in the left columns). */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-[var(--color-grave)]/85 via-[var(--color-grave)]/55 to-[var(--color-grave)]/25 md:hidden"
+        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-[var(--color-grave)]/85 via-[var(--color-grave)]/45 to-[var(--color-grave)]/10 md:hidden"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 hidden bg-gradient-to-r from-[var(--color-grave)]/90 via-[var(--color-grave)]/45 to-transparent md:block"
+        className="pointer-events-none absolute inset-0 -z-10 hidden bg-gradient-to-r from-[var(--color-grave)]/82 via-[var(--color-grave)]/30 to-transparent md:block"
       />
 
       {/* Ambient toxic/teal drift */}
@@ -109,7 +109,7 @@ export default function Hero() {
               sits on the short word "small-town" so it never overflows a
               narrow viewport (a nowrap on the full phrase would clip on
               ~375px screens). */}
-          <h1 className="mt-7 font-[family-name:var(--font-display)] leading-[1.05] tracking-tight">
+          <h1 className="mt-7 font-[family-name:var(--font-display)] leading-[1.12] tracking-[-0.005em]">
             <span className="animate-rise block text-[clamp(2.5rem,1.7rem+4.3vw,6rem)] text-[var(--color-dark-text-primary)] opacity-0 [animation-delay:160ms]">
               Big-brand design for
             </span>
