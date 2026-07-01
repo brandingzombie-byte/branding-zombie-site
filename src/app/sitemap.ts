@@ -7,6 +7,7 @@ import { getAllLocationServiceSlugs } from "@/data/location-services";
 import { getAllLocationSlugs } from "@/data/locations";
 import { getAllMailerSlugs } from "@/data/mailer-products";
 import { WINDOW_CLINGS_CITY_COPY } from "@/data/window-clings";
+import { TATTOO_CITY_COPY } from "@/data/tattoo-marketing";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
@@ -79,6 +80,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  // Tattoo shop marketing: pillar page + one variation per city with copy.
+  const tattooPillar = {
+    url: `${SITE_URL}/tattoo-shop-marketing`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const tattooCityPages = Object.keys(TATTOO_CITY_COPY).map((city) => ({
+    url: `${SITE_URL}/tattoo-shop-marketing/${city}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.88,
+  }));
+
   return [
     {
       url: SITE_URL,
@@ -111,6 +126,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mailerCityPages,
     windowClingsPillar,
     ...windowClingsCityPages,
+    tattooPillar,
+    ...tattooCityPages,
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,
