@@ -18,7 +18,8 @@ export interface Gallery4Item {
   id: string;
   title: string;
   description: string;
-  href: string;
+  /** Optional outbound link (live site). Cards without one render unlinked. */
+  href?: string;
   image: string;
 }
 
@@ -34,84 +35,72 @@ const cpgPlaceholderItems: Gallery4Item[] = [
     id: "betancourt-lineup",
     title: "Betancourt Nutrition — Full Brand Family",
     description: "Multi-SKU brand system unifying 10+ products on shelf — consistent identity, compliant labeling, and production files across the full line.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2028.png",
   },
   {
     id: "b-nox-tropical",
     title: "B-NOX Androrush — Energy Formula",
     description: "Complete label system for Betancourt Nutrition's flagship pre-workout — brand identity, compliance, and shelf-ready production files.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%206.png",
   },
   {
     id: "test-hp-reloaded",
     title: "TEST-HP Reloaded — Box & Label System",
     description: "Full packaging suite with matching box and bottle label. Die-line matched, Supplement Facts panel, and print-ready artwork delivered to printer specs.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%207.png",
   },
   {
     id: "swet-campaign",
     title: "S.W.E.T. Diuretic + Burn — Brand Campaign",
     description: "Packaging design and lifestyle campaign assets for Betancourt's diuretic formula — label, box, and marketing imagery for retail and digital.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%204.png",
   },
   {
     id: "electro-shock",
     title: "Electro Shock — Character Art Pre-Workout",
     description: "Bold character-illustration label design for a premium pre-workout — dramatic visual identity built to stand out on shelf and in digital channels.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2031.png",
   },
   {
     id: "simply-aminos-lifestyle",
     title: "Simply Aminos — Label & Lifestyle",
     description: "Label design for Simply Nutrition's amino complex — clean architecture, complete workout claims, and lifestyle photography for Amazon and retail.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2039.png",
   },
   {
     id: "athletes-cbd",
     title: "Athletes Only CBD — Tincture & Tube System",
     description: "Full packaging for a 2,000mg CBD line — matching tincture label and canister system with compliant claims and print-ready production files.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%203.png",
   },
   {
     id: "shield-labs-cla",
     title: "Shield Labs Daily CLA — Clean Label",
     description: "Premium supplement label with clean visual architecture — brand identity, compliant claims, and tub label delivered print-ready for co-packer handoff.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2015.png",
   },
   {
     id: "365-pudding-suite",
     title: "365 Brand — Multi-Flavor SKU Suite",
     description: "Unified label system across 4 flavors for a keto-friendly line — consistent brand architecture with flavor differentiation and print-ready files.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2038.png",
   },
   {
     id: "365-creamers",
     title: "365 Nutrition — Functional Food Pouches",
     description: "Pouch label design for a functional coffee creamer line — clean food packaging with nutritional compliance and retail-ready artwork.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2037.png",
   },
   {
     id: "luxury-body-butter",
     title: "Luxury Body Butter — Premium Beauty",
     description: "Premium beauty label for a fragranced body butter — dark editorial packaging that commands shelf presence in specialty retail.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%2036.png",
   },
   {
     id: "breath-rox",
     title: "Breath Rox — Functional Wellness Vial",
     description: "Unique packaging for a zinc-powered breath crystal vial — distinctive form factor with compliant supplement labeling and retail-ready artwork.",
-    href: "https://brandingzombiedesigns.com",
     image: "/assets/product-design/product%20design_%202.png",
   },
 ];
@@ -220,16 +209,25 @@ const Gallery4 = ({
           }}
         >
           <CarouselContent className="ml-0 2xl:ml-[max(8rem,calc(50vw-700px))] 2xl:mr-[max(0rem,calc(50vw-700px))]">
-            {items.map((item) => (
+            {items.map((item) => {
+              // Only wrap in an anchor when there's a real outbound link —
+              // no self-links back to this site.
+              const Wrapper = item.href ? "a" : "div";
+              const wrapperProps = item.href
+                ? {
+                    href: item.href,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  }
+                : {};
+              return (
               <CarouselItem
                 key={item.id}
                 className="max-w-[320px] pl-[20px] lg:max-w-[400px]"
               >
-                <a
-                  href={item.href}
+                <Wrapper
+                  {...wrapperProps}
                   className="group block focus-visible:outline-none"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <div
                     className={cn(
@@ -295,20 +293,23 @@ const Gallery4 = ({
                       >
                         {item.description}
                       </p>
-                      <span
-                        className={cn(
-                          "mt-2 inline-flex items-center gap-1.5 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em]",
-                          dark ? "text-[var(--color-toxic-text)]" : "text-[var(--color-neon-text)]",
-                        )}
-                      >
-                        View project
-                        <ArrowRight size={13} weight="bold" className="transition-transform group-hover:translate-x-0.5" />
-                      </span>
+                      {item.href && (
+                        <span
+                          className={cn(
+                            "mt-2 inline-flex items-center gap-1.5 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em]",
+                            dark ? "text-[var(--color-toxic-text)]" : "text-[var(--color-neon-text)]",
+                          )}
+                        >
+                          View project
+                          <ArrowRight size={13} weight="bold" className="transition-transform group-hover:translate-x-0.5" />
+                        </span>
+                      )}
                     </div>
                   </div>
-                </a>
+                </Wrapper>
               </CarouselItem>
-            ))}
+              );
+            })}
           </CarouselContent>
         </Carousel>
         {/* Pagination dots — wrapped in 44px tap targets per WCAG /

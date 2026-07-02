@@ -9,7 +9,7 @@
 //   local specifics (districts, corridors, landmarks, the town's actual business
 //   mix), NOT a mad-libs template with the city name swapped in.
 // - Plain English, local, warm. We sound like a neighbor, not an agency.
-// - Only claim proof we can back (5.0★ Google rating, 15+ years, 30+ brands).
+// - Only claim proof we can back (5.0★ Google rating, 15+ years, 80+ projects).
 
 export interface CityFaq {
   /** Natural-language question, phrased the way a local owner types it. */

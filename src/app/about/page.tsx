@@ -18,7 +18,7 @@ const PAGE_URL = `${SITE_URL}/about`;
 export const metadata: Metadata = {
   title: `About ${FOUNDER_NAME} — ${BUSINESS_NAME} in Cumming, GA`,
   description:
-    "Gerry Betancourt, creative director behind Branding Zombie Designs. 15+ years, 30+ brands launched — from Fort Lauderdale's CPG scene to Cumming, Georgia's Main Street.",
+    "Gerry Betancourt, creative director behind Branding Zombie Designs. 15+ years, 80+ projects delivered — from Fort Lauderdale's CPG scene to Cumming, Georgia's Main Street.",
   keywords: [
     "Gerry Betancourt designer",
     "Branding Zombie founder",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: BUSINESS_NAME,
     title: `About ${FOUNDER_NAME} — ${BUSINESS_NAME}`,
     description:
-      "15 years. 30+ brands launched across products and services. Now building from Cumming, Georgia.",
+      "15 years. 80+ projects delivered across products and services. Now building from Cumming, Georgia.",
     images: [
       {
         url: "/assets/og-image.png",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `About ${FOUNDER_NAME} — ${BUSINESS_NAME}`,
     description:
-      "15 years. 30+ brands launched. Now building from Cumming, Georgia.",
+      "15 years. 80+ projects delivered. Now building from Cumming, Georgia.",
     images: ["/assets/og-image.png"],
   },
 };
@@ -121,7 +121,7 @@ export default function AboutPage() {
               <h1 className="mt-6 max-w-[20ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
                 15 years.{" "}
                 <span className="relative inline-block">
-                  30+ brands
+                  80+ projects
                   <span
                     aria-hidden
                     className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 the ones you envy.
               </p>
               <div className="mt-10">
-                <AboutCtaRow primaryLabel="Book a free audit" size="sm" />
+                <AboutCtaRow primaryLabel="Book a free 15-min call" size="sm" />
               </div>
             </div>
 
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   kept all of them from falling apart.
                 </p>
                 <p>
-                  30+ brands later — from packaged goods and supplements to
+                  80+ projects later — from packaged goods and supplements to
                   restaurants, streetwear, contractors, custom PC builders,
                   and service businesses — a pattern showed up: the work that
                   mattered most wasn&apos;t the biggest. It was the small

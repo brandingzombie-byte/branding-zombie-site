@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: BUSINESS_NAME,
     title: `Contact ${BUSINESS_NAME} — Cumming, GA`,
     description:
-      "Call, email, or book a free audit. Real small-business design and web work from right here in Cumming, Georgia.",
+      "Call, email, or book a free 15-min call. Real small-business design and web work from right here in Cumming, Georgia.",
     images: [
       {
         url: "/assets/og-image.png",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Contact ${BUSINESS_NAME}`,
     description:
-      "Call, email, or book a free audit — from right here in Cumming, Georgia.",
+      "Call, email, or book a free 15-min call — from right here in Cumming, Georgia.",
     images: ["/assets/og-image.png"],
   },
 };

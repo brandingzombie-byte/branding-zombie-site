@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 // Real client logos drop into /public/assets/clients/<slug>.svg — the
 // component auto-detects by trying the SVG path with a fallback to the text
 // wordmark. Intentionally mixes product + service brands per build spec:
-// the "moat" is 30+ brands across categories, not CPG-specialist pigeonhole.
+// the "moat" is 80+ projects across categories, not CPG-specialist pigeonhole.
 const CLIENTS = [
   { slug: "papas-kitchen", name: "Papa's Kitchen", kind: "Local · Restaurant" },
   { slug: "enigma-computers", name: "Enigma Computers", kind: "Local · Custom PC" },
@@ -58,7 +58,7 @@ export default function BrandTrackRecord() {
       >
         <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-baseline sm:justify-between">
           <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h4)] leading-none tracking-tight text-text-primary">
-            30+ brands launched.{" "}
+            80+ projects delivered.{" "}
             <span className="relative inline-block">
               15+ years in the trenches
               <span

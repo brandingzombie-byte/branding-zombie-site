@@ -43,8 +43,8 @@ export default function ServiceFinalCTA({ service }: { service: Service }) {
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
           <a
             href={service.hero.ctaHref}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={service.hero.ctaHref.startsWith("http") ? "_blank" : undefined}
+            rel={service.hero.ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
             role="button"
             className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
           >

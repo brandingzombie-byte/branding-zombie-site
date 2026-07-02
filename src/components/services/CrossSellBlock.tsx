@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 import type { ServiceSlug } from "@/data/services";
 
 // Two-card cross-sell per spec Section 7.3:
-// - Left  "Need the whole thing?" → Launch Package ($4,500 bundle)
+// - Left  "Need the whole thing?" → Local Business Kit ($2,800 bundle —
+//   part of the site-wide kit ladder in src/data/kits.ts)
 // - Right "Already launched?" → Retainer services ($499/mo+)
 // Rendered on every service page above the final CTA.
 
@@ -35,13 +36,14 @@ export default function CrossSellBlock({ currentSlug }: { currentSlug?: ServiceS
                   Need the whole thing?
                 </span>
                 <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight tracking-tight text-text-primary">
-                  Launch Package —{" "}
-                  <span className="tabular text-[var(--color-neon-text)]">$4,500</span>
+                  Local Business Kit —{" "}
+                  <span className="tabular text-[var(--color-neon-text)]">$2,800</span>
                 </h3>
                 <p className="measure mt-4 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
-                  Logo + brand basics + 5-page website, shipped in 4 weeks.
-                  <span className="text-text-primary"> Save $2,000</span> vs.
-                  buying each à la carte.
+                  Logo + 5-page website + business cards, flyers, and Google
+                  Business Profile setup — delivered in 4 weeks.
+                  <span className="text-text-primary"> You save $1,200</span>{" "}
+                  vs. buying each à la carte.
                 </p>
               </div>
               <div className="mt-8 inline-flex items-center gap-2 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-text-primary group-hover:text-[var(--color-neon-text)]">

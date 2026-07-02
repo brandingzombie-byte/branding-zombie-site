@@ -34,6 +34,13 @@ const nextConfig: NextConfig = {
         destination: "/work",
         permanent: false,
       },
+      // Short quote URL — kit CTAs and printed materials can point at
+      // /quote?kit=... and land on the real form (query is preserved).
+      {
+        source: "/quote",
+        destination: "/services/request-quote",
+        permanent: false,
+      },
     ];
   },
 };

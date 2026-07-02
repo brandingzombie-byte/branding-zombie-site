@@ -27,7 +27,7 @@ const STATIC_PAGES: SearchDoc[] = [
   { title: "Home", href: "/", type: "Page", subtitle: "Branding Zombie Designs", keywords: "home start landing" },
   { title: "Services", href: "/services", type: "Page", subtitle: "Everything we do", keywords: "services offerings what we do" },
   { title: "Industries", href: "/industries", type: "Page", subtitle: "Who we work with", keywords: "industries trades restaurants who we serve niche" },
-  { title: "Launch Package", href: "/services/launch-package", type: "Page", subtitle: "Brand + site + print, bundled", keywords: "launch package bundle startup new business" },
+  { title: "Local Business Kit", href: "/services/launch-package", type: "Page", subtitle: "Logo + site + print + Google, bundled — $2,800", keywords: "local business kit launch package bundle startup new business" },
   { title: "Pricing", href: "/#pricing", type: "Page", subtitle: "Packages & pricing", keywords: "pricing cost price packages how much" },
   { title: "Work", href: "/work", type: "Page", subtitle: "Selected projects", keywords: "work portfolio projects examples case studies" },
   { title: "Blog", href: "/blog", type: "Page", subtitle: "Articles & guides", keywords: "blog articles guides writing news" },

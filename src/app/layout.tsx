@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import AnalyticsClickListener from "@/components/AnalyticsClickListener";
+import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 import {
   SITE_URL,
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     template: "%s | Branding Zombie Designs",
   },
   description:
-    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 for a free audit.",
+    "Small-business web design, logo design, print & Shopify from Cumming, GA — most sites live in 2–3 weeks. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 or run the free instant site audit.",
   applicationName: "Branding Zombie Designs",
   authors: [{ name: "Gerry Betancourt", url: SITE_URL }],
   creator: "Branding Zombie Designs",
@@ -100,7 +101,7 @@ export const metadata: Metadata = {
     siteName: "Branding Zombie Designs",
     title: "Branding Zombie Designs | Your Brand. Resurrected.",
     description:
-      "Modern websites, AI workflows, logo & brand identity, print and Shopify — built in days from Cumming, GA. Serving Forsyth, Alpharetta, Roswell, Woodstock, Buford & North Atlanta.",
+      "Modern websites, logo & brand identity, print and Shopify — most sites live in 2–3 weeks, from Cumming, GA. Serving Forsyth, Alpharetta, Roswell, Woodstock, Buford & North Atlanta.",
     images: [
       {
         url: "/assets/og-image.png",
@@ -397,7 +398,9 @@ export default function RootLayout({
       lang="en-US"
       className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip">
+      {/* Mobile bottom padding reserves space for the sticky MobileCallBar so
+          it never covers footers or form submit buttons (incl. iOS safe area). */}
+      <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[var(--color-grave)] focus:px-4 focus:py-2 focus:text-[length:var(--text-secondary)] focus:font-semibold focus:text-[var(--color-toxic)] focus:outline-none focus:ring-2 focus:ring-[var(--color-toxic)]"
@@ -425,6 +428,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         {children}
+        <MobileCallBar />
         <AnalyticsClickListener />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

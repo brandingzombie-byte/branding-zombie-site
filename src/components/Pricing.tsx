@@ -5,62 +5,12 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Check, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import { KITS } from "@/data/kits";
 
-const plans = [
-  {
-    name: "Local Business Kit",
-    price: "$2,800",
-    daily: "≈ $8/day · year one",
-    description: "For new businesses that need to look legit, fast.",
-    features: [
-      "Custom logo & brand identity",
-      "Starter website (up to 5 pages)",
-      "Mobile responsive design",
-      "500 business cards",
-      "1,000 flyers / rack cards",
-      "Google Business Profile setup",
-      "Basic SEO optimization",
-    ],
-    cta: "Choose Local Business Kit",
-    popular: false,
-  },
-  {
-    name: "Growth Kit",
-    price: "$4,500",
-    daily: "≈ $13/day · year one",
-    description: "Our most-requested package. Built to level up.",
-    features: [
-      "Everything in Local Business Kit",
-      "Custom website (up to 10 pages)",
-      "AI chatbot integration",
-      "Google Business optimization",
-      "Social media template pack (20)",
-      "On-page SEO + analytics setup",
-      "Blog/CMS setup & training",
-      "3 rounds of revisions",
-    ],
-    cta: "Choose Growth Kit",
-    popular: true,
-  },
-  {
-    name: "Full Brand Kit",
-    price: "$8,000+",
-    daily: "≈ $22/day · year one",
-    description: "For businesses ready to dominate. The complete kit.",
-    features: [
-      "Everything in Growth Kit",
-      "Custom-coded web app",
-      "Advanced AI workflow automation",
-      "Marketing automation setup",
-      "3 months social media management",
-      "Complete print starter kit",
-      "Vehicle wrap design",
-      "Priority support & quarterly reviews",
-    ],
-    cta: "Choose Full Brand Kit",
-    popular: false,
-  },
-];
+// The kit ladder lives in src/data/kits.ts — single source of truth for
+// names, prices, contents, and honest savings math. The $997 Launch Kit
+// renders as the banner; the other three render as cards.
+const plans = KITS.filter((k) => k.slug !== "launch");
 
 export default function Pricing() {
   const { ref, isInView } = useInView(0.05);
@@ -259,9 +209,44 @@ export default function Pricing() {
                   ))}
                 </ul>
 
+                {/* Honest bundle math — à la carte total vs kit price, from
+                    our own published single-service prices (see data/kits.ts). */}
+                <p
+                  className={cn(
+                    "mt-6 border-t pt-4 text-[length:var(--text-secondary)] leading-relaxed",
+                    dark
+                      ? "border-[var(--color-dark-border)] text-[var(--color-dark-text-secondary)]"
+                      : "border-[var(--color-hairline)] text-text-secondary",
+                  )}
+                >
+                  <span className="tabular">{plan.alaCarteTotal}</span> booked
+                  separately —{" "}
+                  <span
+                    className={cn(
+                      "font-semibold",
+                      dark
+                        ? "text-[var(--color-toxic-text)]"
+                        : "text-[var(--color-neon-text)]",
+                    )}
+                  >
+                    you save {plan.savings}
+                  </span>
+                  .
+                </p>
+                <p
+                  className={cn(
+                    "mt-2 text-[length:var(--text-caption)]",
+                    dark
+                      ? "text-[var(--color-dark-text-dim)]"
+                      : "text-text-dim",
+                  )}
+                >
+                  Or split it into 3 monthly payments — just ask.
+                </p>
+
                 {/* CTA */}
                 <a
-                  href="#contact"
+                  href={plan.quoteHref}
                   role="button"
                   className={cn(
                     "mt-8 inline-flex items-center justify-between gap-2 rounded-full px-6 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider",
@@ -270,7 +255,7 @@ export default function Pricing() {
                       : "border border-[var(--color-hairline-strong)] text-text-primary hover:border-[var(--color-neon-text)] hover:text-[var(--color-neon-text)]",
                   )}
                 >
-                  {plan.cta}
+                  Choose {plan.name}
                   <ArrowRight size={16} weight="bold" />
                 </a>
               </article>
@@ -284,7 +269,7 @@ export default function Pricing() {
           <p>
             Custom quote for unique projects.{" "}
             <a
-              href="#contact"
+              href="/services/request-quote"
               className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
             >
               Tell us what you need →

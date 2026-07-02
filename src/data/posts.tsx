@@ -290,7 +290,7 @@ function WebsiteCostingCustomersContent() {
       <p>
         Our{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>{" "}
         builds sites around one dominant conversion path, not six.
       </p>
@@ -460,9 +460,9 @@ function WebsiteCostingCustomersContent() {
         <InternalLink href="/services/web-design">Web design</InternalLink>{" "}
         starts at $1,500. The{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>{" "}
-        — our most popular — bundles the site, the brand, and AI workflow for
+        bundles the site, the brand, print, and Google Business Profile for
         businesses that want the whole thing done right, once.
       </p>
 
@@ -510,7 +510,7 @@ function WebsiteCostingCustomersContent() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
           >
-            Book a free audit
+            Book a free 15-min call
           </a>
           <a
             href={PHONE_HREF}
@@ -539,15 +539,16 @@ function WebsiteCostingCustomersContent() {
         </InternalLink>{" "}
         for a 5-page site. The most popular option is the{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>
-        , which bundles website, brand identity, and AI workflow for a flat
-        rate. No hidden fees, everything quoted upfront.
+        , which bundles website, brand identity, print, and Google Business
+        Profile setup for a flat rate. No hidden fees, everything quoted
+        upfront.
       </p>
 
       <h3 id="faq-timeline">How long does it take to build a new website?</h3>
       <p>
-        Most of our websites launch in 10–14 days. Traditional agencies take
+        Most of our websites go live in 2–3 weeks. Traditional agencies take
         4–8 weeks. We move faster because we use a proven process and modern
         AI-assisted tools — not because we cut corners.
       </p>
@@ -940,7 +941,7 @@ function GoogleAICallingBusinessContent() {
         AI chatbot for after-hours, accurate hours and pricing on every
         public surface. It&apos;s the{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>
         {" "}— and it pays back fast in this new environment.
       </p>
@@ -1400,11 +1401,11 @@ function WebsiteCostCummingGA2026Content() {
         because scope varies. Launches in <strong>4–6 weeks</strong>.
       </p>
 
-      <h3 id="bz-launch-package">Launch Package — $4,500 (everything bundled)</h3>
+      <h3 id="bz-launch-package">Local Business Kit — $2,800 (everything bundled)</h3>
       <p>
-        Site + logo + brand identity + 90-day content calendar — all built
+        Site + logo + brand identity + print starter pack + Google Business Profile — all built
         as one connected system in 4 weeks. À-la-carte these four pieces
-        run <strong>$6,499</strong>. Bundled, $4,500. Designed for
+        run <strong>$4,000+</strong>. Bundled, $2,800. Designed for
         founders launching for the first time, or established businesses
         doing a full refresh after years of duct-taping logos and websites
         together.
@@ -1412,7 +1413,7 @@ function WebsiteCostCummingGA2026Content() {
       <p>
         Details on the{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package page
+          Local Business Kit page
         </InternalLink>
         .
       </p>
@@ -1607,9 +1608,9 @@ function WebsiteCostCummingGA2026Content() {
           <strong>Brand-new launch (no logo, no brand, nothing)</strong>:
           the{" "}
           <InternalLink href="/services/launch-package">
-            Launch Package
+            Local Business Kit
           </InternalLink>{" "}
-          at $4,500 is almost always the right move.
+          at $2,800 is almost always the right move.
         </li>
       </ul>
 
@@ -1808,7 +1809,7 @@ function WebsiteCostCummingGA2026Content() {
         <InternalLink href="/blog/website-design-seo-cost">
           here&apos;s what website design and SEO cost together
         </InternalLink>
-        . The Launch Package exists for owners who want the whole thing done
+        . The Local Business Kit exists for owners who want the whole thing done
         once — but it&apos;s a choice, not a requirement.
       </p>
 
@@ -2473,9 +2474,9 @@ function ForsythLicenseChecklistContent() {
         (logo, brand kit, 100 cards, 100 flyers, and a 1-page site). Need a full
         website too? Our{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package is $4,500
+          Local Business Kit is $2,800
         </InternalLink>{" "}
-        (logo, brand basics, a 5-page site, and a content calendar), and
+        (logo, a 5-page site, business cards, flyers, and Google Business Profile setup), and
         standalone{" "}
         <InternalLink href="/services/web-design">websites</InternalLink> run
         $2,500&ndash;$7,500+ by tier. A complete{" "}
@@ -2534,7 +2535,7 @@ function ForsythLicenseChecklistContent() {
       </h3>
       <p>
         It ranges by scope. The $997 Startup Special (logo, brand kit, cards,
-        flyers, 1-page site) is the budget launch; the $4,500 Launch Package
+        flyers, 1-page site) is the budget launch; the $2,800 Local Business Kit
         adds brand basics and a 5-page site; standalone websites run
         $2,500&ndash;$7,500+ by tier; and a complete trades package with signage
         and apparel is quoted to scope. You can also start small and add pieces
@@ -2947,8 +2948,7 @@ function WebsiteDesignSeoCostContent() {
           </li>
           <li>
             <strong>Launching lean?</strong> A 1-page site is bundled into the
-            $997 Startup Special. Want the whole brand at once? The $4,500 Launch
-            Package adds a 5-page site and a 90-day content calendar.
+            $997 Startup Special. Want the whole brand at once? The $2,800 Local Business Kit adds a 5-page site, a print starter pack, and Google Business Profile setup.
           </li>
           <li>
             <strong>The biggest hidden cost of the cheap route isn&apos;t money</strong>{" "}
@@ -3046,10 +3046,9 @@ function WebsiteDesignSeoCostContent() {
         bundles a logo, a 1-page site, business cards, and flyers. Want the whole
         brand done at once? The{" "}
         <InternalLink href="/services/launch-package">
-          $4,500 Launch Package
+          $2,800 Local Business Kit
         </InternalLink>{" "}
-        bundles a logo, brand basics, a 5-page site, and a 90-day content
-        calendar. Always quotable to your exact needs.
+        bundles a logo, a 5-page site, print, and Google Business Profile setup. Always quotable to your exact needs.
       </p>
 
       <h2 id="seo-cost">How much does it cost to do SEO for a website?</h2>
@@ -4727,7 +4726,7 @@ function SeoCummingGaContent() {
         pointing the same way. When your branding, site, and search work are
         split across three vendors, the seams show, and so does the cost. That
         one-roof approach is the whole idea behind{" "}
-        <InternalLink href="/services/launch-package">the Launch Package</InternalLink>
+        <InternalLink href="/services/launch-package">the Local Business Kit</InternalLink>
         .
       </p>
 
@@ -4989,8 +4988,7 @@ function WebDesignCummingGaContent() {
           </li>
           <li>
             <strong>Bundles to know:</strong> the $997 Startup Special (1-page
-            site + logo + print) and the $4,500 Launch Package (logo, brand
-            basics, 5-page site).
+            site + logo + print) and the $2,800 Local Business Kit (logo, 5-page site, print, and Google Business Profile).
           </li>
           <li>
             <strong>Ask who owns it.</strong> You should own your finished site
@@ -5103,11 +5101,9 @@ function WebDesignCummingGaContent() {
           multi-page build.)
         </li>
         <li>
-          <strong>The Launch Package — $4,500.</strong> The full bundle: logo
-          suite, brand basics, a 5-page website, and a 90-day content calendar
-          in roughly 4 weeks. See the{" "}
+          <strong>The Local Business Kit — $2,800.</strong> The full bundle: logo and brand identity, a 5-page website, business cards and flyers, and Google Business Profile setup in roughly 4 weeks. See the{" "}
           <InternalLink href="/services/launch-package">
-            Launch Package
+            Local Business Kit
           </InternalLink>
           .
         </li>
@@ -5637,9 +5633,10 @@ function IsSeoDead2026Content() {
         </li>
         <li>
           <strong>Going all-in?</strong> The{" "}
-          <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
-          is <strong>$4,500</strong> — logo suite, brand basics, a 5-page
-          website, and a 90-day content calendar in 4 weeks.
+          <InternalLink href="/services/launch-package">Local Business Kit</InternalLink>{" "}
+          is <strong>$2,800</strong> — logo and brand identity, a 5-page
+          website, business cards and flyers, and Google Business Profile
+          setup in 4 weeks.
         </li>
         <li>
           <strong>Need a logo first?</strong> Tiers run{" "}
@@ -6276,7 +6273,7 @@ function HowToPickWebDesignCompanyContent() {
         <strong>The answer you want:</strong> a real date. A simple 1-page site
         can ship in days — our Startup Special lands in <strong>10 days</strong>.
         A full 5-page build like our <strong>$4,500</strong>{" "}
-        <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
+        <InternalLink href="/services/launch-package">Local Business Kit</InternalLink>{" "}
         runs about <strong>4 weeks</strong>. Bigger custom builds take longer,
         and that&apos;s fine — as long as someone gives you a schedule instead of
         a shrug.
@@ -6985,11 +6982,10 @@ function CustomWebsiteVsSquarespaceContent() {
           . (This is a 1-pager — not a full multi-page site.)
         </li>
         <li>
-          <strong>The Launch Package — $4,500.</strong> The full bundle: logo
-          suite, brand basics, a 5-page website, and a 90-day content calendar in
+          <strong>The Local Business Kit — $2,800.</strong> The full bundle: logo and brand identity, a 5-page website, business cards and flyers, and Google Business Profile setup in
           about 4 weeks. See{" "}
           <InternalLink href="/services/launch-package">
-            the Launch Package
+            the Local Business Kit
           </InternalLink>
           .
         </li>
@@ -7493,7 +7489,7 @@ function BestPlacesToPrintCummingContent() {
         bundles a logo + brand kit + 100 business cards + 100 flyers + a 1-page
         site with a year of hosting in about 10 days. Bigger launch? The{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package — $4,500
+          Local Business Kit — $2,800
         </InternalLink>{" "}
         adds a logo suite, brand basics, a 5-page website, and a 90-day content
         calendar. For anything else, just{" "}
@@ -7941,7 +7937,7 @@ function AiLogoVsDesignerContent() {
         fast 1-page site with a year of hosting, in about 10 days. Want the full
         build? The{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package at $4,500
+          Local Business Kit at $2,800
         </InternalLink>{" "}
         bundles a logo suite, brand basics, a 5-page site, and a 90-day content
         calendar.
@@ -9243,9 +9239,9 @@ function BestMarketingAgenciesCummingContent() {
         and bundles a logo, brand kit, business cards, flyers, and a 1-page site
         to launch consistent from day one. For a fuller build, the{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>{" "}
-        adds a 5-page website and a 90-day content calendar.
+        adds a 5-page site, a print starter pack, and Google Business Profile setup.
       </p>
 
       <h2 id="dont-forget-ai">
@@ -12267,10 +12263,9 @@ function CostToBrandBusinessContent() {
       <p>
         Our{" "}
         <InternalLink href="/services/launch-package">
-          Launch Package
+          Local Business Kit
         </InternalLink>{" "}
-        is the full bundle: a logo suite, brand basics, a five-page website, and
-        a 90-day content calendar, delivered in about four weeks. It&apos;s for
+        is the full bundle: a logo and brand identity, a 5-page website, business cards and flyers, and Google Business Profile setup, delivered in about four weeks. It&apos;s for
         the owner who knows they&apos;ll be showing up across a website, social,
         print, and signage, and wants it all speaking the same visual language
         out of the gate.
@@ -13541,9 +13536,9 @@ function GoogleBusinessProfileCummingContent() {
         gets you a logo, brand kit, 100 business cards, 100 flyers, and a 1-page
         site with hosting in 10 days. Going bigger? The{" "}
         <InternalLink href="/services/launch-package">
-          $4,500 Launch Package
+          $2,800 Local Business Kit
         </InternalLink>{" "}
-        adds a 5-page site and a 90-day content calendar. Curious what a site
+        adds a 5-page site, a print starter pack, and Google Business Profile setup. Curious what a site
         should cost first? Read{" "}
         <InternalLink href="/blog/website-cost-cumming-ga-2026">
           website cost in Cumming, GA for 2026
@@ -14063,9 +14058,9 @@ function HowToGetMoreGoogleReviewsContent() {
           gets you a logo, brand kit, 100 business cards, 100 flyers, and a 1-page
           site with hosting in 10 days. Going bigger, the{" "}
           <InternalLink href="/services/launch-package">
-            $4,500 Launch Package
+            $2,800 Local Business Kit
           </InternalLink>{" "}
-          adds a 5-page site and a 90-day content calendar.
+          adds a 5-page site, a print starter pack, and Google Business Profile setup.
         </li>
       </ul>
       <p>
@@ -14998,7 +14993,7 @@ function HowToGetCitedByChatgptContent() {
         on. Need the full bundle with a 5-page site and content calendar? That&apos;s
         the{" "}
         <InternalLink href="/services/launch-package">
-          $4,500 Launch Package
+          $2,800 Local Business Kit
         </InternalLink>
         . Want a real logo first?{" "}
         <InternalLink href="/services/logo-design">
@@ -15432,8 +15427,8 @@ function GoogleAiOverviewsSmallBusinessContent() {
         Cumming small business online — logo, brand kit, cards, flyers, and a
         one-page site — in 10 days. Ready for the full build with content baked in?
         The <strong>$4,500</strong>{" "}
-        <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
-        covers a 5-page site and a 90-day content calendar. Not sure which fits?{" "}
+        <InternalLink href="/services/launch-package">Local Business Kit</InternalLink>{" "}
+        covers a logo, a 5-page site, print, and Google Business Profile setup. Not sure which fits?{" "}
         <InternalLink href="/services/request-quote">Request a quote</InternalLink>{" "}
         or just text me.
       </p>
@@ -16738,7 +16733,7 @@ export const POSTS: Post[] = [
         "Cumming web designer pricing",
         "North Metro Atlanta web design cost",
         "custom website quote Cumming",
-        "Launch Package pricing",
+        "Local Business Kit pricing",
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-05-08",
@@ -16751,7 +16746,7 @@ export const POSTS: Post[] = [
         "Cumming GA",
         "Forsyth County",
         "Dawsonville",
-        "Launch Package",
+        "Local Business Kit",
         "Branding Zombie pricing",
       ],
       ogImage: "/assets/og-image.png",
