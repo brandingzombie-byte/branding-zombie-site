@@ -234,7 +234,7 @@ const TATTOO_MARKETING: TattooProduct = {
   },
 
   answerFirst:
-    "Branding Zombie Designs is a local design studio in Cumming, Georgia that handles marketing for tattoo shops across Forsyth County and North Metro Atlanta. Instead of a single booking app, we build everything clients see before and after they book: a fast tattoo studio website with online appointment booking and reference-photo upload, brand and logo design, printed business cards and flyers, storefront window clings, custom-branded aftercare kits, and ads plus social content. Established shops get a refresh; new shops get a full launch kit. Pricing is flat and honest, you own everything, and most projects go live in days — not months.",
+    "Branding Zombie Designs is a local design studio in Cumming, Georgia that handles marketing for tattoo shops across Forsyth County and North Metro Atlanta. Instead of a single booking app, we build everything clients see before and after they book: a fast tattoo studio website with online appointment booking and reference-photo upload, brand and logo design, printed business cards and flyers, storefront window clings, custom-branded aftercare kits, and ads plus social content. Established shops get a refresh; new shops get the full Grand Opening kit. Pricing is flat and honest, you own everything, and most projects go live in days — not months.",
   stats: [
     {
       value: "Days, not months",
@@ -252,7 +252,7 @@ const TATTOO_MARKETING: TattooProduct = {
   segmentsHighlight: "established?",
   segments: [
     {
-      tag: "Launch kit",
+      tag: "Grand Opening kit",
       title: "New shop opening",
       body: "Signing a lease or just opened? Get the whole kit in one go — brand, booking website, signage, cards and aftercare kits — so day one looks like year five.",
       ctaLabel: "See the Grand Opening kit",
@@ -481,7 +481,7 @@ const TATTOO_MARKETING: TattooProduct = {
     },
     {
       q: "How much does a tattoo shop website cost?",
-      a: "Flat pricing starts at $1,500 for a one-page booking site and $4,500 for a full site with branding and window clings. New shops usually run the $8,000+ launch kit. You get one flat quote up front and own every file.",
+      a: "Flat pricing starts at $1,500 for a one-page booking site and $4,500 for a full site with branding and window clings. New shops usually run the $8,000+ Grand Opening kit. You get one flat quote up front and own every file.",
     },
     {
       q: "What are window clings and why do tattoo shops use them?",
