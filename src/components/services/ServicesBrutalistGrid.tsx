@@ -26,7 +26,7 @@ export default function ServicesBrutalistGrid({
   // Meta strip on the feature card. Price reads from the data so it can never
   // drift from the service-page tier table.
   const featureMeta = [
-    { Icon: Clock, text: "10–14 days" },
+    { Icon: Clock, text: "2–3 weeks" },
     { Icon: CurrencyDollar, text: feature.homeCardPrice },
     { Icon: Code, text: "Next.js · Webflow" },
   ];

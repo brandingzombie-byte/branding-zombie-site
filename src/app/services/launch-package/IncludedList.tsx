@@ -3,34 +3,37 @@
 import { Check } from "@/components/icons";
 import type { ReactNode } from "react";
 
+// Local Business Kit contents — must stay in lockstep with the kit card in
+// src/data/kits.ts (local-business). Values come from published à-la-carte
+// prices on the linked service pages.
 const INCLUDED = [
   {
-    title: "Logo Design — Growth tier",
-    value: "$1,500 value",
+    title: "Custom Logo & Brand Identity",
+    value: "$1,750 value",
     description:
-      "Full logo suite (primary, secondary, icon, horizontal, stacked), 3 concept directions, unlimited revisions on the chosen one, full file package across color and mono.",
+      "Custom logo (never a template or a generator) plus brand basics: color palette with hex + CMYK, typography system, and a one-page brand sheet your team can share.",
     link: "/services/logo-design" as const,
   },
   {
-    title: "Brand Basics Mini Guide",
-    value: "$1,000 value",
-    description:
-      "Color palette with hex + CMYK + Pantone, typography system with web-safe fallbacks, one-page brand sheet your team can share.",
-    link: "/services/branding" as const,
-  },
-  {
-    title: "Web Design Starter — 5-page site",
+    title: "Starter Website — up to 5 pages",
     value: "$2,500 value",
     description:
-      "Custom-designed 5-page responsive site on Next.js or Webflow, CMS you can actually update, contact form, on-page SEO, GA4 tracking, SSL and hosting setup.",
+      "Custom-designed responsive site on Next.js or Webflow, CMS you can actually update, contact form, on-page SEO, GA4 tracking, SSL and hosting setup.",
     link: "/services/web-design" as const,
   },
   {
-    title: "Bonus: 90-day Content Calendar",
-    value: "$499 value",
+    title: "Print Starter Pack",
+    value: "$300+ value",
     description:
-      "A full 90-day social content calendar (Instagram + one secondary platform) so you don't walk into launch day with no plan for what to post in week two.",
-    link: "/services/social-media" as const,
+      "500 business cards and 1,000 flyers or rack cards — designed to match the new brand and produced through our in-house print pipeline.",
+    link: "/services/print-design" as const,
+  },
+  {
+    title: "Google Business Profile + Basic SEO",
+    value: "Included",
+    description:
+      "Google Business Profile set up and verified, schema markup, meta tags, and page-level optimization so your new site starts showing up for your town.",
+    link: "/services/digital-marketing" as const,
   },
 ];
 

@@ -475,7 +475,7 @@ export default function TattooPage({
                 </span>
               </div>
               <p className="mt-2 text-[length:var(--text-secondary)] text-[var(--color-dark-text-dim)]">
-                20+ years of production-ready design · 30+ brands shipped · Cumming, GA
+                20+ years of production-ready design · 80+ projects shipped · Cumming, GA
               </p>
             </div>
             <a

@@ -15,8 +15,8 @@ const testimonials = REVIEWS;
 const stats = [
   { value: "5.0", label: "Google rating" },
   { value: "100%", label: "5★ reviews" },
-  { value: "<14", label: "Days avg. delivery" },
-  { value: "50+", label: "Projects delivered" },
+  { value: "2–3", label: "Weeks to a live site" },
+  { value: "80+", label: "Projects delivered" },
 ];
 
 export default function Testimonials() {

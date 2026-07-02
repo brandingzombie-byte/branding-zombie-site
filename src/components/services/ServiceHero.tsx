@@ -120,8 +120,8 @@ export default function ServiceHero({ service }: { service: Service }) {
           >
             <a
               href={service.hero.ctaHref}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={service.hero.ctaHref.startsWith("http") ? "_blank" : undefined}
+              rel={service.hero.ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
               role="button"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
             >

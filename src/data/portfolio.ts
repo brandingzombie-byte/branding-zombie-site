@@ -27,8 +27,6 @@ export interface PortfolioItem {
   industry?: string;       // "supplements", "restaurant", "construction"...
 }
 
-const SITE = "https://brandingzombiedesigns.com";
-
 // Helper for filenames containing spaces — Next/Image handles either, but
 // URL-encoding keeps things consistent across server + client.
 const enc = (path: string) =>
@@ -62,7 +60,9 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Full brand identity plus a request-for-quote flow that walks visitors through a guided build. Local Cumming custom PC shop.",
     image: "/assets/portfolio-enigma.png",
-    href: "https://enigma-computers-site.vercel.app",
+    // No live-site link — the client's Vercel preview URL isn't a real
+    // destination for visitors. Card renders unlinked until a production
+    // domain exists.
     services: ["web-design", "branding", "logo-design", "launch-package"],
     aspect: "wide",
     formats: ["website", "rfq-flow", "brand-system"],
@@ -1249,7 +1249,9 @@ export function getServiceGalleryItems(
     id: p.id,
     title: p.title,
     description: p.description,
-    href: p.href ?? SITE,
+    // No self-link fallback: cards without a real outbound destination
+    // render unlinked instead of pointing back at this site.
+    href: p.href,
     image: enc(p.image),
   }));
 }

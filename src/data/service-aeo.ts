@@ -7,7 +7,7 @@
 //      is the self-contained passage AI engines lift and cite.
 //   2. stats — honest, first-party proof points (the +41% "add statistics"
 //      lever). NO fabricated external stats or fake sources — only claims the
-//      brand already stands behind (15+ years, 30+ brands, real 5.0★ Google
+//      brand already stands behind (15+ years, 80+ projects, real 5.0★ Google
 //      rating, published pricing and timelines).
 //   3. expertQuote — a named, first-person founder quote (the +28% "expert
 //      quote" lever) that also strengthens E-E-A-T first-hand Experience.
@@ -36,11 +36,11 @@ function quote(text: string): ServiceAeo["expertQuote"] {
 export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
   "web-design": {
     answerFirst:
-      "Web design from Branding Zombie Designs is custom, conversion-focused website design and development for small businesses in Cumming, GA and across North Metro Atlanta — built in Next.js, Webflow, or Shopify, mobile-first, local-SEO-ready, and delivered in 2 to 6 weeks from $2,500. You own the site, the domain, and every file on handoff.",
+      "Web design from Branding Zombie Designs is custom, conversion-focused website design and development for small businesses in Cumming, GA and across North Metro Atlanta — built in Next.js, Webflow, or Shopify, mobile-first, local-SEO-ready, from $1,500 with most sites live in 2–3 weeks. You own the site, the domain, and every file on handoff.",
     stats: [
-      { value: "2–6 wks", label: "Kickoff to launch" },
+      { value: "2–3 wks", label: "Most sites, kickoff to live" },
       { value: "90+", label: "Core Web Vitals score by default" },
-      { value: "30+", label: "Brands launched" },
+      { value: "80+", label: "Projects delivered" },
     ],
     expertQuote: quote(
       "Most small-business sites lose the customer in the first three seconds — slow load, no clear next step. I build the opposite: fast, obvious, and yours to keep. No template, no monthly hostage fee.",
@@ -88,7 +88,7 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
     stats: [
       { value: "$3,000", label: "Custom Shopify builds from" },
       { value: "15+ yrs", label: "CPG & DTC brand design" },
-      { value: "30+", label: "Brands launched" },
+      { value: "80+", label: "Projects delivered" },
     ],
     expertQuote: quote(
       "A pretty homepage doesn't sell — product pages, subscriptions, and a fast checkout do. I build stores around the parts that actually move product, then hand you the keys.",
@@ -96,10 +96,10 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
   },
   "logo-design": {
     answerFirst:
-      "Logo design from Branding Zombie Designs is custom logo and mark design for small businesses in Cumming, GA and across North Metro Atlanta — concepts built to work on a sign, a website favicon, a shirt, and a 200×200 app icon, with source files you own, from $750. Fifteen-plus years and 30+ brands, with no AI-generated or template logos.",
+      "Logo design from Branding Zombie Designs is custom logo and mark design for small businesses in Cumming, GA and across North Metro Atlanta — concepts built to work on a sign, a website favicon, a shirt, and a 200×200 app icon, with source files you own, from $750. Fifteen-plus years and 80+ projects, with no AI-generated or template logos.",
     stats: [
       { value: "$750", label: "Custom logo design from" },
-      { value: "30+", label: "Brand marks designed" },
+      { value: "80+", label: "Projects delivered" },
       { value: "You own", label: "Every source file on handoff" },
     ],
     expertQuote: quote(

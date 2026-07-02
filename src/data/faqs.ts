@@ -13,7 +13,7 @@ export const FAQS: Faq[] = [
   {
     question: "How fast can you actually build my website?",
     answer:
-      "Most projects launch in 10-14 days. Our AI-powered workflow (Figma + Claude Code + Replit) lets us move at startup speed without sacrificing quality. Simple sites can be done in as little as 5-7 days. We'll give you a realistic timeline on our discovery call.",
+      "Most sites are live in 2–3 weeks. Launch Kit landing pages ship in about 10 days. Our AI-assisted workflow (Figma + Claude Code) lets us move at startup speed — AI for speed, humans for taste. We'll give you a realistic timeline on our discovery call.",
   },
   {
     question: "What if I already have a website?",

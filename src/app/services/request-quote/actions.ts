@@ -3,6 +3,7 @@
 import { randomUUID } from "node:crypto";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY, SITE_URL } from "@/lib/site";
 import { renderQuoteConfirmation, renderQuoteOwnerNotification } from "@/lib/quoteEmail";
+import { KITS_BY_SLUG, isKitSlug } from "@/data/kits";
 
 // Server action backing the custom-quote form. Validates input, accepts up
 // to 5 reference files (10MB each, 20MB total cap), and fires two emails
@@ -55,7 +56,7 @@ const SLUG_TO_NAME: Record<string, string> = {
   "social-media": "Social Media",
   "digital-marketing": "Digital Marketing",
   "ai-workflows": "AI Workflows",
-  "launch-package": "Launch Package",
+  "launch-package": "Local Business Kit",
   "not-sure": "Not sure / mix",
 };
 
@@ -168,13 +169,19 @@ export async function submitQuoteRequest(
   const timeline = sanitize(formData.get("timeline"), 40);
   const sourcePage = sanitize(formData.get("sourcePage"), 60);
 
+  // Kit mode — "Choose [Kit]" buttons land here with a preselected kit.
+  // The kit defines the scope + price, so services and description become
+  // optional and the lead value comes from the kit price.
+  const rawKit = sanitize(formData.get("kit"), 40);
+  const kit = rawKit && isKitSlug(rawKit) ? KITS_BY_SLUG[rawKit] : undefined;
+
   const fieldErrors: NonNullable<QuoteState["fieldErrors"]> = {};
   if (!name) fieldErrors.name = "Need a name to address you by.";
   if (!email) fieldErrors.email = "We need an email to reply.";
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     fieldErrors.email = "That email looks off — double-check it?";
   }
-  if (!description || description.length < 10) {
+  if (!kit && (!description || description.length < 10)) {
     fieldErrors.description = "A sentence or two — even just 'rebrand a barbershop' works.";
   }
 
@@ -188,7 +195,7 @@ export async function submitQuoteRequest(
         .filter((v) => VALID_SLUGS.has(v)),
     ),
   );
-  if (services.length === 0) {
+  if (!kit && services.length === 0) {
     fieldErrors.services = "Pick at least one service — or 'Not sure / mix'.";
   }
 
@@ -247,14 +254,24 @@ export async function submitQuoteRequest(
   const apiKey = process.env.RESEND_API_KEY;
   const fromAddr = process.env.RESEND_FROM_EMAIL ?? "leads@brandingzombiedesigns.com";
 
-  const servicesPretty = services.map((s) => SLUG_TO_NAME[s] ?? s);
+  const servicesPretty = kit
+    ? [`${kit.name} — ${kit.price}`, ...services.map((s) => SLUG_TO_NAME[s] ?? s)]
+    : services.map((s) => SLUG_TO_NAME[s] ?? s);
+  const kitSummary = kit
+    ? `Kit quote: ${kit.name} (${kit.price} · ${kit.timeline}).\nIncludes: ${kit.features.join(
+        ", ",
+      )}.`
+    : "";
+  const fullDescription = kit
+    ? [kitSummary, description].filter(Boolean).join("\n\n")
+    : description;
   const emailData = {
     name,
     businessName: businessName || undefined,
     email,
     phone: phone || undefined,
     servicesPretty,
-    description,
+    description: fullDescription,
     budget: safeBudget || undefined,
     timeline: safeTimeline || undefined,
     attachmentNames,
@@ -276,7 +293,9 @@ export async function submitQuoteRequest(
 
   const visitorHtml = renderQuoteConfirmation(emailData);
   const ownerHtml = renderQuoteOwnerNotification(emailData);
-  const subjectTag = servicesPretty.slice(0, 3).join(" + ") || "Custom quote";
+  const subjectTag = kit
+    ? `${kit.name} ${kit.price}`
+    : servicesPretty.slice(0, 3).join(" + ") || "Custom quote";
 
   // Visitor email: no attachments — they have the originals.
   // Owner email: full attachments.
@@ -294,7 +313,7 @@ export async function submitQuoteRequest(
       from: fromAddr,
       to: [EMAIL],
       replyTo: email,
-      subject: `New quote — ${name}${businessName ? ` (${businessName})` : ""} · ${subjectTag}`,
+      subject: `New ${kit ? "kit quote" : "quote"} — ${name}${businessName ? ` (${businessName})` : ""} · ${subjectTag}`,
       html: ownerHtml,
       attachments: attachments.length > 0 ? attachments : undefined,
     }),
@@ -318,6 +337,6 @@ export async function submitQuoteRequest(
       ? `Got it — your request is in. We sent a confirmation to ${email}. We'll get back to you within 24 hours, usually same day.`
       : `Got it — your request is in. (Confirmation email had a hiccup, but we have it.) We'll reach out within 24 hours, usually same day.`,
     leadId: randomUUID(),
-    value: BUDGET_VALUE[safeBudget] ?? 200,
+    value: kit ? kit.numericPrice : (BUDGET_VALUE[safeBudget] ?? 200),
   };
 }

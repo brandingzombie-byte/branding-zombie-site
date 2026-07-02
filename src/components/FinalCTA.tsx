@@ -100,7 +100,7 @@ export default function FinalCTA() {
             role="button"
             className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
           >
-            Claim your free audit
+            Book a free 15-min call
             <ArrowRight size={18} weight="bold" />
           </a>
           <a

@@ -25,7 +25,7 @@ const steps = [
   },
   {
     n: "03",
-    day: "Day 5–10",
+    day: "Week 1–2",
     title: "We Build",
     description:
       "AI-powered development with real-time preview access. You watch your site come to life.",
@@ -33,7 +33,7 @@ const steps = [
   },
   {
     n: "04",
-    day: "Day 10–14",
+    day: "Week 2–3",
     title: "You Launch",
     description:
       "Go live with full training and support. We make sure everything is perfect before we hand over the keys.",
@@ -70,7 +70,7 @@ export default function Process() {
             </span>
             .{" "}
             <span className="relative inline-block">
-              We launch in days
+              We launch in 2–3
               <span
                 aria-hidden
                 className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
@@ -80,7 +80,8 @@ export default function Process() {
           </h2>
           <p className="measure-tight mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
             Figma + AI-powered development means a premium site at startup
-            speed, not agency time.
+            speed, not agency time. AI for speed. Humans for taste — every
+            design decision is made by a human, never a generator.
           </p>
         </div>
 
@@ -128,7 +129,7 @@ export default function Process() {
                     {i === steps.length - 1 && (
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-neon)]/15 px-3 py-1 text-[length:var(--text-caption)] font-semibold uppercase tracking-wider text-[var(--color-neon-text)]">
                         <Clock size={13} weight="regular" />
-                        2 weeks total
+                        2–3 weeks total
                       </span>
                     )}
                   </div>

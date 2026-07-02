@@ -12,11 +12,11 @@ import { SITE_URL, LOCALBIZ_ID, BUSINESS_NAME } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/services/launch-package`;
 
 export const metadata: Metadata = {
-  title: "Launch Package — Logo + Brand + Website in 4 Weeks — Cumming, GA",
+  title: "Local Business Kit — Logo + Website + Print, $2,800 — Cumming, GA",
   description:
-    "The full starter kit for new businesses launching. Logo Design, Brand Basics, 5-page Website, and 90-day Content Calendar — delivered in 4 weeks for $4,500 (save $2,000 vs. à la carte). Cumming, GA + North Metro Atlanta.",
+    "The starter kit for new businesses that need to look legit, fast. Custom logo & brand identity, 5-page website, 500 business cards, 1,000 flyers, and Google Business Profile setup — $2,800 all-in, delivered in 4 weeks. Cumming, GA + North Metro Atlanta.",
   keywords: [
-    "launch package Cumming GA",
+    "local business kit Cumming GA",
     "new business starter kit Forsyth County",
     "logo and website package Atlanta",
     "brand launch bundle North Atlanta",
@@ -28,23 +28,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: PAGE_URL,
     siteName: BUSINESS_NAME,
-    title: "Launch Package — Logo + Brand + Website in 4 Weeks",
+    title: "Local Business Kit — Logo + Website + Print, $2,800",
     description:
-      "Everything a new business needs to launch — shipped in 4 weeks for $4,500.",
+      "Everything a new business needs to look legit — logo, 5-page site, print, and Google Business Profile. $2,800, delivered in 4 weeks.",
     images: [
       {
         url: "/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Launch Package — Branding Zombie Designs in Cumming, GA",
+        alt: "Local Business Kit — Branding Zombie Designs in Cumming, GA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Launch Package — Logo + Brand + Website",
+    title: "Local Business Kit — Logo + Website + Print",
     description:
-      "Everything a new business needs to launch — 4 weeks, $4,500, save $2,000 vs. à la carte.",
+      "Everything a new business needs to look legit — 4 weeks, $2,800, you save $1,200 vs. à la carte.",
     images: ["/assets/og-image.png"],
   },
 };
@@ -63,7 +63,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Launch Package",
+      name: "Local Business Kit",
       item: PAGE_URL,
     },
   ],
@@ -73,29 +73,29 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": `${PAGE_URL}#service`,
-  name: "Launch Package — Logo + Brand + Website + Content Calendar",
+  name: "Local Business Kit — Logo + Website + Print + Google Business Profile",
   description:
-    "A 4-week bundle for new businesses launching for the first time or established businesses doing a full refresh. Includes a full logo suite, brand basics mini-guide, 5-page responsive website, and 90-day social content calendar. $4,500 — saves $2,000 vs. booking each service individually.",
+    "A 4-week bundle for new businesses launching for the first time or established businesses doing a full refresh. Includes a custom logo and brand identity, 5-page responsive website, 500 business cards, 1,000 flyers or rack cards, Google Business Profile setup, and basic SEO. $2,800 — saves $1,200 vs. booking each service individually.",
   serviceType: "Launch Bundle",
-  category: "Branding, Web Design, Marketing",
+  category: "Branding, Web Design, Print, Marketing",
   url: PAGE_URL,
   provider: { "@id": LOCALBIZ_ID },
   offers: {
     "@type": "Offer",
-    price: "4500",
+    price: "2800",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: PAGE_URL,
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Launch Package Inclusions",
+    name: "Local Business Kit Inclusions",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Logo Design — Growth tier",
+          name: "Custom Logo & Brand Identity",
           url: `${SITE_URL}/services/logo-design`,
         },
       },
@@ -103,15 +103,7 @@ const serviceSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Brand Basics Mini Guide",
-          url: `${SITE_URL}/services/branding`,
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Web Design Starter — 5-page site",
+          name: "Starter Website — up to 5 pages",
           url: `${SITE_URL}/services/web-design`,
         },
       },
@@ -119,8 +111,16 @@ const serviceSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "90-day Social Content Calendar",
-          url: `${SITE_URL}/services/social-media`,
+          name: "Print Starter Pack — 500 business cards + 1,000 flyers",
+          url: `${SITE_URL}/services/print-design`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Google Business Profile Setup + Basic SEO",
+          url: `${SITE_URL}/services/digital-marketing`,
         },
       },
     ],
@@ -157,7 +157,7 @@ export default function LaunchPackagePage() {
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
-                Launch Package · Cumming, GA
+                Local Business Kit · Cumming, GA
               </span>
             </div>
             <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
@@ -172,11 +172,11 @@ export default function LaunchPackagePage() {
               in 4 weeks.
             </h1>
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              Logo, brand basics, a real website, and a 90-day content
-              calendar — bundled, built, and delivered by one creative
-              director with 15+ years launching brands.{" "}
+              Logo, a real 5-page website, business cards, flyers, and your
+              Google Business Profile — bundled, built, and delivered by one
+              creative director with 15+ years launching brands.{" "}
               <span className="text-[var(--color-dark-text-primary)]">
-                $4,500 all-in. Save $2,000 vs. buying each service
+                $2,800 all-in. You save $1,200 vs. buying each service
                 individually.
               </span>
             </p>
@@ -184,16 +184,16 @@ export default function LaunchPackagePage() {
             {/* Price banner */}
             <div className="mt-10 inline-flex flex-col items-start gap-2 rounded-md border border-[var(--color-dark-border-strong)] bg-[var(--color-grave)]/60 px-7 py-5 sm:flex-row sm:items-baseline sm:gap-6">
               <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none text-[var(--color-toxic-text)]">
-                $4,500
+                $2,800
               </span>
               <div className="flex flex-col gap-1">
                 <span className="text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
                   all-in · 4 weeks
                 </span>
                 <span className="tabular text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
-                  <span className="line-through opacity-60">$6,499</span>{" "}
+                  <span className="line-through opacity-60">$4,000+</span>{" "}
                   <span className="text-[var(--color-toxic-text)] font-semibold">
-                    save $2,000
+                    you save $1,200
                   </span>{" "}
                   vs. à la carte
                 </span>
@@ -228,16 +228,17 @@ export default function LaunchPackagePage() {
               </h2>
               <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
                 Launching piecemeal means your logo doesn&apos;t match
-                your site and your site doesn&apos;t match your social.
-                The Launch Package makes everything part of one decision,
+                your site and your cards don&apos;t match either. The
+                Local Business Kit makes everything part of one decision,
                 one timeline, one voice.
               </p>
             </div>
             <div className="lg:col-span-8">
               <IncludedList />
               <p className="mt-6 text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
-                Total à la carte value: <span className="tabular">$6,499</span>{" "}
-                · Launch Package: <span className="tabular">$4,500</span>
+                Booked separately: <span className="tabular">$4,000+</span>{" "}
+                · Local Business Kit: <span className="tabular">$2,800</span>{" "}
+                · Or split it into 3 monthly payments — just ask
               </p>
             </div>
           </div>
@@ -250,7 +251,7 @@ export default function LaunchPackagePage() {
           eyebrow="Need a different mix?"
           headline="Get a quote built around"
           highlight="just the pieces you need"
-          copy="The Launch Package bundles four services for $4,500. If you only need two, or you need extras (a second site, custom illustration, ongoing social), tell us — we'll quote a custom build within 24 hours."
+          copy="The Local Business Kit bundles four services for $2,800. If you only need two, or you need extras (a second site, custom illustration, ongoing social), tell us — we'll quote a custom build within 24 hours."
         />
 
         <SectionSeparator id={1} />
@@ -282,15 +283,15 @@ export default function LaunchPackagePage() {
                   </span>{" "}
                   You need a logo, a site, and a plan — and you need them
                   to feel like one brand from day one, not three different
-                  vendors stapled together. We&apos;ve done this 30+ times.
+                  vendors stapled together. We&apos;ve done this 80+ times.
                 </p>
                 <p>
                   <span className="text-text-primary font-semibold">
                     Established businesses doing a full refresh.
                   </span>{" "}
                   Your logo&apos;s from 2012, your site is slower than
-                  your old Squarespace, and your social hasn&apos;t been
-                  touched since 2021. A Launch Package relaunches you
+                  your old Squarespace, and your business cards don&apos;t
+                  match either one. The Local Business Kit relaunches you
                   across the board in 4 weeks without stringing three
                   projects across six months.
                 </p>
@@ -333,9 +334,9 @@ export default function LaunchPackagePage() {
               },
               {
                 week: "Week 4",
-                title: "Launch + Content Plan",
+                title: "Launch + Print + Google",
                 description:
-                  "Site goes live, brand files delivered, 90-day content calendar handed over.",
+                  "Site goes live, cards and flyers go to print, Google Business Profile set up and verified.",
               },
             ].map((step) => (
               <li
@@ -380,9 +381,9 @@ export default function LaunchPackagePage() {
               .
             </h2>
             <p className="measure text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              Book the 15-minute launch call. We&apos;ll confirm scope,
-              confirm the timeline, and pick a kickoff date — no credit
-              card, no commitment, no high-pressure anything.
+              Request your kit quote — takes about 60 seconds. We&apos;ll
+              confirm scope, confirm the timeline, and pick a kickoff date —
+              no payment now, no commitment, no high-pressure anything.
             </p>
             <LaunchPackageCtas size="lg" />
           </div>

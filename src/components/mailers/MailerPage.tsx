@@ -386,7 +386,7 @@ export default function MailerPage({
                 </span>
               </div>
               <p className="mt-2 text-[length:var(--text-secondary)] text-[var(--color-dark-text-dim)]">
-                15+ years of production-ready design · 30+ brands shipped · Cumming, GA
+                15+ years of production-ready design · 80+ projects shipped · Cumming, GA
               </p>
             </div>
             <a
