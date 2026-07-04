@@ -6,6 +6,8 @@ import Section from "@/components/Section";
 import { Check, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { KITS } from "@/data/kits";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 // The kit ladder lives in src/data/kits.ts — single source of truth for
 // names, prices, contents, and honest savings math. The $997 Launch Kit
@@ -17,6 +19,25 @@ export default function Pricing() {
 
   return (
     <Section id="pricing" theme="light" pad="spacious">
+      {/* ── Zombie hand layer (decorative, behind content) ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* Thumbs-up endorsing the kit ladder (right edge) */}
+        <ZombieHand
+          src={HANDS["zh37-thumbsup-r"].src}
+          width={HANDS["zh37-thumbsup-r"].width}
+          height={HANDS["zh37-thumbsup-r"].height}
+          edge="right"
+          behaviors={["peek", "idle"]}
+          offset="46%"
+          bleed="-42px"
+          displayWidth={330}
+          zIndex={5}
+          mobile
+        />
+      </div>
       <div
         ref={ref}
         className={cn(

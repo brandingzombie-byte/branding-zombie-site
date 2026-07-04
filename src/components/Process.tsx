@@ -5,6 +5,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Clock } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 const steps = [
   {
@@ -51,6 +53,24 @@ export default function Process() {
       pad="tight"
       className="bg-[var(--color-fog)] overflow-hidden"
     >
+      {/* ── Zombie hand layer (decorative, behind content) ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* Diagonal pointer tracking the cursor beside the process timeline */}
+        <ZombieHand
+          src={HANDS["zh25-point-diag"].src}
+          width={HANDS["zh25-point-diag"].width}
+          height={HANDS["zh25-point-diag"].height}
+          edge="left"
+          behaviors={["peek", "follow", "idle"]}
+          offset="24%"
+          bleed="-40px"
+          displayWidth={290}
+          zIndex={5}
+        />
+      </div>
       <div
         ref={ref}
         className={cn(

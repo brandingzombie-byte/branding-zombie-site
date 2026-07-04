@@ -6,6 +6,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { ArrowUpRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 const projects = [
   {
@@ -103,6 +105,26 @@ export default function Portfolio() {
       topRule
       bottomRule
     >
+      {/* ── Zombie hand layer (decorative, behind content) ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* Point-up hand entering at an angle from the right edge,
+             aimed diagonally at the project showcase */}
+        <ZombieHand
+          src={HANDS["zh11-point-up"].src}
+          width={HANDS["zh11-point-up"].width}
+          height={HANDS["zh11-point-up"].height}
+          edge="right"
+          behaviors={["peek", "idle", "parallax"]}
+          offset="58%"
+          bleed="-52px"
+          displayWidth={200}
+          rotate={-38}
+          zIndex={5}
+        />
+      </div>
       <div
         ref={ref}
         className={cn(

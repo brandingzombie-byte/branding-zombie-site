@@ -12,12 +12,34 @@ import { Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 import { FAQS as faqs } from "@/data/faqs";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 export default function FAQ() {
   const { ref, isInView } = useInView(0.05);
 
   return (
     <Section id="faq" theme="light" pad="standard" className="bg-[var(--color-fog)]">
+      {/* ── Zombie hand layer — full overflow-clip so the arm rising out of
+           the BOTTOM edge is guillotined at the section boundary and never
+           spills over the final CTA below. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-clip"
+      >
+        {/* Rock-on rising out of the section's bottom edge, cursor-follow */}
+        <ZombieHand
+          src={HANDS["zh10-rockon-r"].src}
+          width={HANDS["zh10-rockon-r"].width}
+          height={HANDS["zh10-rockon-r"].height}
+          edge="bottom"
+          behaviors={["peek", "follow"]}
+          offset="80%"
+          bleed="-150px"
+          displayWidth={270}
+          zIndex={5}
+        />
+      </div>
       <div
         ref={ref}
         className={cn(

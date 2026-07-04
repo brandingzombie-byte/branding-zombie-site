@@ -131,30 +131,20 @@ export default function PainPoints() {
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
       >
-        {/* #1 — Thumbs-down at the bad-website stats (right edge, hero moment) */}
+        {/* #1 — Thumbs-down at the bad-website stats (right edge, hero moment).
+             Flipped so the arm reads correctly entering from the right. */}
         <ZombieHand
           src={HANDS["zh09-thumbsdown-l"].src}
           width={HANDS["zh09-thumbsdown-l"].width}
           height={HANDS["zh09-thumbsdown-l"].height}
           edge="right"
-          behaviors={["peek", "parallax"]}
+          behaviors={["peek", "parallax", "idle"]}
           offset="40%"
           bleed="-46px"
           displayWidth={360}
+          flip
           zIndex={5}
           mobile
-        />
-        {/* #2 — Diagonal pointer aimed at the "…from 2016" headline (upper left) */}
-        <ZombieHand
-          src={HANDS["zh25-point-diag"].src}
-          width={HANDS["zh25-point-diag"].width}
-          height={HANDS["zh25-point-diag"].height}
-          edge="left"
-          behaviors={["peek", "idle"]}
-          offset="6%"
-          bleed="-38px"
-          displayWidth={290}
-          zIndex={5}
         />
       </div>
 

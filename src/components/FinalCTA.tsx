@@ -40,25 +40,25 @@ export default function FinalCTA() {
 
   return (
     <Section id="contact" theme="dark" pad="spacious" topRule>
-      {/* ── Disembodied zombie hand — decorative, non-interactive, painted
-           above the dark background but beneath the headline + CTA buttons.
-           `overflow-x-clip` cuts the off-edge wrist and blocks horizontal
-           scroll. ── */}
+      {/* ── Disembodied zombie hand — decorative, non-interactive. This one
+           deliberately paints ABOVE the content (z-[5]) so the fingers
+           slightly overlap the big headline for a sense of depth. Pointer
+           events stay off so it never blocks the CTAs. ── */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+        className="pointer-events-none absolute inset-0 z-[5] overflow-x-clip"
       >
-        {/* #7 — High-five "reaching" for the cursor near the book-a-call
-             button (left edge, extra follow strength) */}
+        {/* #7 — High-five "reaching" for the cursor, fingers over the
+             headline's left edge (bigger for depth, extra follow strength) */}
         <ZombieHand
           src={HANDS["zh34-highfive-l"].src}
           width={HANDS["zh34-highfive-l"].width}
           height={HANDS["zh34-highfive-l"].height}
           edge="left"
           behaviors={["peek", "follow"]}
-          offset="40%"
-          bleed="-46px"
-          displayWidth={350}
+          offset="10%"
+          bleed="-56px"
+          displayWidth={440}
           followStrength={30}
           zIndex={5}
         />

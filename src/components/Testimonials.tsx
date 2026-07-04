@@ -7,6 +7,8 @@ import Section from "@/components/Section";
 import { Star, ArrowUpRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { REVIEWS, GOOGLE_REVIEWS_URL } from "@/data/reviews";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 // Real reviews live in one place (src/data/reviews.ts) so the visible quotes
 // and the Review/AggregateRating schema can never drift apart.
@@ -47,6 +49,25 @@ export default function Testimonials() {
       pad="spacious"
       className="bg-[var(--color-fog)]"
     >
+      {/* ── Zombie hand layer (decorative, behind content) ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* Thumbs-up approval beside the reviews (left edge, cursor-follow) */}
+        <ZombieHand
+          src={HANDS["zh01-thumbsup-l"].src}
+          width={HANDS["zh01-thumbsup-l"].width}
+          height={HANDS["zh01-thumbsup-l"].height}
+          edge="left"
+          behaviors={["peek", "follow"]}
+          offset="52%"
+          bleed="-42px"
+          displayWidth={330}
+          zIndex={5}
+          mobile
+        />
+      </div>
       <div
         ref={ref}
         className={cn(

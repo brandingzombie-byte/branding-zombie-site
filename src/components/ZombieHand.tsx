@@ -54,6 +54,10 @@ export interface ZombieHandProps {
   scale?: number;
   /** Base rotation in degrees. Default 0. */
   rotate?: number;
+  /** Mirror the hand horizontally (for assets whose arm points the wrong way
+   *  for the edge they're placed on). Applied on the root so it never fights
+   *  the idle keyframe transform on the <img>. */
+  flip?: boolean;
   /** Max cursor drift in px for `follow`. Default 22. */
   followStrength?: number;
   /** Parallax factor, -0.5..0.5. Default 0.12. */
@@ -174,6 +178,7 @@ export default function ZombieHand({
   displayWidth,
   scale = 1,
   rotate = 0,
+  flip = false,
   followStrength = 22,
   parallaxSpeed = 0.12,
   zIndex,
@@ -377,7 +382,7 @@ export default function ZombieHand({
   // (transform:scale() would keep a 720px layout box and break the wrist-clip).
   const cssWidth = Math.round((displayWidth ?? width) * effectiveScale);
 
-  const restTransform = `rotate(${rotate}deg)`;
+  const restTransform = `rotate(${rotate}deg)${flip ? " scaleX(-1)" : ""}`;
   const peekOffset =
     edge === "left"
       ? "translateX(-120%) "
