@@ -12,6 +12,8 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import SectionSeparator from "@/components/SectionSeparator";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 // Separator placement is driven by hex-match between SVG fill and an adjacent
 // section's background token — see SectionSeparator.tsx for the fill catalog.
@@ -31,7 +33,33 @@ export default function Home() {
         <Testimonials />
         <SectionSeparator id={4} />
         <Portfolio />
-        <SectionSeparator id={8} />
+        {/* Portfolio → Pricing seam. The point-up hand "crawls out of the
+            grave," rising through the torn-paper rip to point up at Pricing.
+            The wrapper is `relative` (positioning context) but does NOT clip
+            vertically, so the hand may bleed above/below the seam. The
+            separator SVG paints at z-10 and the hand layer at z-5, so the hand
+            emerges from BEHIND the torn edge. Only this id={8} instance is
+            wrapped. */}
+        <div className="relative">
+          <SectionSeparator id={8} />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-[5]"
+          >
+            {/* #4 — Point-up, rising toward Pricing's "Pick a package" */}
+            <ZombieHand
+              src={HANDS["zh11-point-up"].src}
+              width={HANDS["zh11-point-up"].width}
+              height={HANDS["zh11-point-up"].height}
+              edge="bottom"
+              behaviors={["peek", "parallax"]}
+              offset="12%"
+              bleed="-10%"
+              scale={0.9}
+              zIndex={5}
+            />
+          </div>
+        </div>
         <Pricing />
         <SectionSeparator id={3} />
         <AIShowcase />

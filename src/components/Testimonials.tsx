@@ -6,6 +6,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Star, ArrowUpRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 // ── Real reviews from Branding Zombie's Google Business Profile ──────────────
 // Lightly trimmed for pull-quote pacing; original text preserved verbatim where
@@ -91,6 +93,28 @@ export default function Testimonials() {
       pad="spacious"
       className="bg-[var(--color-fog)]"
     >
+      {/* ── Disembodied zombie hand — decorative, non-interactive, beneath
+           all in-flow content. `overflow-x-clip` cuts the off-edge wrist and
+           blocks horizontal scroll. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* #3 — Thumbs-up approval beside the 5.0 rating / quote (left edge) */}
+        <ZombieHand
+          src={HANDS["zh01-thumbsup-l"].src}
+          width={HANDS["zh01-thumbsup-l"].width}
+          height={HANDS["zh01-thumbsup-l"].height}
+          edge="left"
+          behaviors={["peek", "follow"]}
+          offset="52%"
+          bleed="-14%"
+          scale={1}
+          zIndex={5}
+          mobile
+        />
+      </div>
+
       <div
         ref={ref}
         className={cn(

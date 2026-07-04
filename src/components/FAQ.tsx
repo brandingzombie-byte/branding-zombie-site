@@ -11,6 +11,8 @@ import Section from "@/components/Section";
 import { Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 const faqs = [
   {
@@ -55,6 +57,29 @@ export default function FAQ() {
 
   return (
     <Section id="faq" theme="light" pad="standard" className="bg-[var(--color-fog)]">
+      {/* ── Disembodied zombie hand — decorative, non-interactive, beneath
+           all in-flow content (accordion triggers stay fully clickable via
+           pointer-events-none + z-[-1]). `overflow-x-clip` cuts the wrist and
+           blocks horizontal scroll. `overflow-x: clip` does NOT create a
+           scroll container, so the sticky FAQ header is unaffected. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* #6 — Playful rock-on near "Questions? We've got answers." (right edge) */}
+        <ZombieHand
+          src={HANDS["zh10-rockon-r"].src}
+          width={HANDS["zh10-rockon-r"].width}
+          height={HANDS["zh10-rockon-r"].height}
+          edge="right"
+          behaviors={["idle", "follow"]}
+          offset="14%"
+          bleed="-16%"
+          scale={0.85}
+          zIndex={5}
+        />
+      </div>
+
       <div
         ref={ref}
         className={cn(

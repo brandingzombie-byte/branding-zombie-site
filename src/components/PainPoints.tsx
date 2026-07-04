@@ -6,6 +6,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Warning } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 // ── Count-up hook ─────────────────────────────────────────────────────────────
 // Ease-out-quart ramp via requestAnimationFrame. Honors reduced-motion by
@@ -113,6 +115,42 @@ export default function PainPoints() {
 
   return (
     <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]">
+      {/* ── Disembodied zombie hands — decorative, non-interactive, painted
+           above the section background but beneath all in-flow content.
+           `absolute inset-0` sizes this layer to the (positioned) Section so
+           hands anchor to the true edges; `overflow-x-clip` guillotines the
+           off-edge wrist and prevents any horizontal scrollbar. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* #1 — Thumbs-down at the bad-website stats (right edge, hero moment) */}
+        <ZombieHand
+          src={HANDS["zh09-thumbsdown-l"].src}
+          width={HANDS["zh09-thumbsdown-l"].width}
+          height={HANDS["zh09-thumbsdown-l"].height}
+          edge="right"
+          behaviors={["peek", "parallax"]}
+          offset="44%"
+          bleed="-14%"
+          scale={1.05}
+          zIndex={5}
+          mobile
+        />
+        {/* #2 — Diagonal pointer aimed at the "…from 2016" headline (upper left) */}
+        <ZombieHand
+          src={HANDS["zh25-point-diag"].src}
+          width={HANDS["zh25-point-diag"].width}
+          height={HANDS["zh25-point-diag"].height}
+          edge="left"
+          behaviors={["peek", "idle"]}
+          offset="6%"
+          bleed="-12%"
+          scale={0.8}
+          zIndex={5}
+        />
+      </div>
+
       {/* Header — editorial splash */}
       <div
         ref={headRef}

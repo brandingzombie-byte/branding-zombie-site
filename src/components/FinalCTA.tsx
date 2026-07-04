@@ -4,6 +4,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Phone, Envelope, Calendar, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 import {
   CALENDLY_URL,
   EMAIL,
@@ -37,6 +39,30 @@ export default function FinalCTA() {
 
   return (
     <Section id="contact" theme="dark" pad="spacious" topRule>
+      {/* ── Disembodied zombie hand — decorative, non-interactive, painted
+           above the dark background but beneath the headline + CTA buttons.
+           `overflow-x-clip` cuts the off-edge wrist and blocks horizontal
+           scroll. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* #7 — High-five "reaching" for the cursor near the book-a-call
+             button (left edge, extra follow strength) */}
+        <ZombieHand
+          src={HANDS["zh34-highfive-l"].src}
+          width={HANDS["zh34-highfive-l"].width}
+          height={HANDS["zh34-highfive-l"].height}
+          edge="left"
+          behaviors={["peek", "follow"]}
+          offset="40%"
+          bleed="-14%"
+          scale={1}
+          followStrength={30}
+          zIndex={5}
+        />
+      </div>
+
       <div
         ref={ref}
         className={cn(

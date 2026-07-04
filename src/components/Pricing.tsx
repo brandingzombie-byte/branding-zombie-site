@@ -4,6 +4,8 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Check, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 const plans = [
   {
@@ -66,6 +68,29 @@ export default function Pricing() {
 
   return (
     <Section id="pricing" theme="light" pad="spacious">
+      {/* ── Disembodied zombie hand — decorative, non-interactive, beneath
+           all in-flow content. `overflow-x-clip` cuts the off-edge wrist and
+           blocks horizontal scroll. ── */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
+      >
+        {/* #5 — Thumbs-up endorsing the most-popular (Digital Makeover) card
+             — right edge, aligned to the card band */}
+        <ZombieHand
+          src={HANDS["zh37-thumbsup-r"].src}
+          width={HANDS["zh37-thumbsup-r"].width}
+          height={HANDS["zh37-thumbsup-r"].height}
+          edge="right"
+          behaviors={["peek", "idle"]}
+          offset="46%"
+          bleed="-14%"
+          scale={1}
+          zIndex={5}
+          mobile
+        />
+      </div>
+
       <div
         ref={ref}
         className={cn(
