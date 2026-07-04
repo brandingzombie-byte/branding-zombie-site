@@ -3,9 +3,11 @@
 import { useEffect } from "react";
 import { trackEvent } from "@/lib/analytics";
 
-// Global click delegate for conversion-intent links. Catches every tel: and
-// mailto: across the site without touching individual components. Calendly
-// and other outbound clicks are already covered by GA4 Enhanced Measurement.
+// Global click delegate for conversion-intent links. Catches every tel:,
+// mailto:, and Calendly click across the site without touching individual
+// components. Calendly bookings complete off-site (cross-domain), so this
+// captures the booking *intent* on our domain; the completed booking still
+// needs Calendly's own GA4 integration to be counted as a conversion.
 export default function AnalyticsClickListener() {
   useEffect(() => {
     const handler = (event: MouseEvent) => {
@@ -26,6 +28,15 @@ export default function AnalyticsClickListener() {
       if (href.startsWith("mailto:")) {
         trackEvent("contact_intent", {
           method: "email",
+          link_text: anchor.textContent?.trim().slice(0, 80) || "",
+          page_path: location,
+        });
+        return;
+      }
+
+      if (href.includes("calendly.com")) {
+        trackEvent("schedule_intent", {
+          method: "calendly",
           link_text: anchor.textContent?.trim().slice(0, 80) || "",
           page_path: location,
         });

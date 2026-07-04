@@ -78,7 +78,6 @@ export const metadata: Metadata = {
 
     // Branding
     "Branding Zombie CPG",
-    "Ink Spatter Studio",
     "Gerry Betancourt packaging designer",
   ],
   openGraph: {
@@ -218,14 +217,21 @@ const cpgServiceSchema = {
 };
 
 // ─── Page-specific Person schema (Authority section) ─────────────────────
+// Same @id as the canonical Person in app/layout.tsx (#gerry) so Google merges
+// this CPG-context detail into the one founder entity instead of forking it.
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": `${SITE_URL}/#gerry-betancourt`,
+  "@id": `${SITE_URL}/#gerry`,
   name: "Gerry Betancourt",
-  jobTitle: "CPG Packaging Designer & Creative Director",
+  url: `${SITE_URL}/about`,
   image: `${SITE_URL}/assets/gerry-headshot.png`,
   worksFor: { "@id": ORG_ID },
+  sameAs: [
+    "https://www.linkedin.com/in/gerardo-betancourt-80592b83/",
+    "https://brandingzombie.gumroad.com/",
+    "https://www.instagram.com/the_spacecadet_",
+  ],
   knowsAbout: [
     "CPG packaging design",
     "Supplement label design",
@@ -236,10 +242,6 @@ const personSchema = {
     "Co-packer coordination",
     "Brand identity",
   ],
-  alumniOf: {
-    "@type": "Organization",
-    name: "Ink Spatter Studio",
-  },
   description:
     "15+ years of in-house CPG experience. Has managed full product launches from formulation to shelf for supplement brands, and built packaging systems for 30+ companies.",
 };

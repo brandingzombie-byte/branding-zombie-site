@@ -5,12 +5,26 @@ import { ArrowUpRight } from "@/components/icons";
 import Section from "@/components/Section";
 import { useReveal } from "@/lib/useReveal";
 import { cn } from "@/lib/utils";
-import { getRelatedServices } from "@/data/services";
+import { getRelatedServices, getServiceBySlug } from "@/data/services";
 import type { Service, ServiceSlug } from "@/data/services";
 
-export default function RelatedServices({ slug }: { slug: ServiceSlug }) {
+// Either pass `slug` (a service page derives its own related set) or an
+// explicit `services` list (industry pages cross-link to chosen services).
+export default function RelatedServices({
+  slug,
+  services,
+}: {
+  slug?: ServiceSlug;
+  services?: ServiceSlug[];
+}) {
   const { ref, isInView } = useReveal();
-  const related = getRelatedServices(slug);
+  const related = services
+    ? services
+        .map((s) => getServiceBySlug(s))
+        .filter((s): s is Service => Boolean(s))
+    : slug
+    ? getRelatedServices(slug)
+    : [];
 
   if (related.length === 0) return null;
 

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import AnalyticsClickListener from "@/components/AnalyticsClickListener";
+import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 import {
   SITE_URL,
@@ -11,6 +12,12 @@ import {
   ORG_ID,
   LOCALBIZ_ID,
   WEBSITE_ID,
+  FOUNDER_ID,
+  FOUNDER_JOB_TITLE,
+  FOUNDER_IMAGE,
+  FOUNDER_DESCRIPTION,
+  FOUNDER_KNOWS_ABOUT,
+  FOUNDER_SAME_AS,
   PHONE_E164,
   EMAIL,
   CITY,
@@ -23,7 +30,10 @@ import {
   NORTH_GA_COUNTIES,
   SOCIAL_URLS,
   GA_MEASUREMENT_ID,
+  CLARITY_PROJECT_ID,
 } from "@/lib/site";
+import { REVIEW_AVG, REVIEW_COUNT } from "@/data/reviews";
+import { OFFER_CATALOG } from "@/data/offer-catalog";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,7 +70,7 @@ export const metadata: Metadata = {
     template: "%s | Branding Zombie Designs",
   },
   description:
-    "Small-business web design, AI workflows, logo design, print & Shopify — built in days from Cumming, GA. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 for a free audit.",
+    "Small-business web design, logo design, print & Shopify from Cumming, GA — most sites live in 2–3 weeks. Serving Forsyth County, Alpharetta, Roswell, Woodstock, Buford & North Atlanta. Call (770) 744-2536 or run the free instant site audit.",
   applicationName: "Branding Zombie Designs",
   authors: [{ name: "Gerry Betancourt", url: SITE_URL }],
   creator: "Branding Zombie Designs",
@@ -79,9 +89,9 @@ export const metadata: Metadata = {
     google: "_h7e7IWOEOw2IEojHGS4K9FWJzlUqt76vz2oQH4bB7I",
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
-    shortcut: "/favicon.ico",
+    icon: [{ url: "/icon.svg?v=2", type: "image/svg+xml" }],
+    apple: { url: "/apple-touch-icon.png?v=2", sizes: "180x180" },
+    shortcut: "/favicon.ico?v=2",
   },
   manifest: "/manifest.json",
   openGraph: {
@@ -91,7 +101,7 @@ export const metadata: Metadata = {
     siteName: "Branding Zombie Designs",
     title: "Branding Zombie Designs | Your Brand. Resurrected.",
     description:
-      "Modern websites, AI workflows, logo & brand identity, print and Shopify — built in days from Cumming, GA. Serving Forsyth, Alpharetta, Roswell, Woodstock, Buford & North Atlanta.",
+      "Modern websites, logo & brand identity, print and Shopify — most sites live in 2–3 weeks, from Cumming, GA. Serving Forsyth, Alpharetta, Roswell, Woodstock, Buford & North Atlanta.",
     images: [
       {
         url: "/assets/og-image.png",
@@ -150,11 +160,7 @@ const organizationSchema = {
   image: `${SITE_URL}/assets/og-image.png`,
   description:
     "Full-service design studio in Cumming, GA — web design, AI workflow integration, logo and brand identity, packaging, print, Shopify ecommerce, and social media for small businesses across North Metro Atlanta.",
-  founder: {
-    "@type": "Person",
-    name: "Gerry Betancourt",
-    jobTitle: "Creative Director",
-  },
+  founder: { "@id": FOUNDER_ID },
   foundingLocation: {
     "@type": "Place",
     address: {
@@ -167,6 +173,58 @@ const organizationSchema = {
   email: EMAIL,
   telephone: PHONE_E164,
   sameAs: SOCIAL_URLS,
+};
+
+// ─── Schema.org — Full offer catalog ──────────────────────────────────────
+// Every named capability, nested by group. Makes the complete offering
+// machine-readable to Google's Knowledge Graph and the indexes AI engines
+// ground on — so "who designs supplement labels near Cumming?" can resolve to
+// us. Built from the single-source-of-truth OFFER_CATALOG.
+const offerCatalogSchema = {
+  "@type": "OfferCatalog",
+  name: "Design, Web & Print Services",
+  itemListElement: OFFER_CATALOG.map((group) => ({
+    "@type": "OfferCatalog",
+    name: group.name,
+    description: group.blurb,
+    itemListElement: group.services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service,
+        provider: { "@id": LOCALBIZ_ID },
+        areaServed: { "@type": "State", name: "Georgia" },
+      },
+    })),
+  })),
+};
+
+// ─── Schema.org — Person (the founder, canonical site-wide node) ───────────
+// One node, one @id (FOUNDER_ID), referenced by Organization.founder,
+// LocalBusiness.founder, every blog author byline, and the /about ProfilePage.
+// Carries the photo + authoritative sameAs profiles (LinkedIn, Gumroad,
+// Instagram) that let AI engines verify "who is Gerry Betancourt?" and
+// attribute the studio's work to a real, named expert (E-E-A-T).
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": FOUNDER_ID,
+  name: FOUNDER_NAME,
+  url: `${SITE_URL}/about`,
+  image: FOUNDER_IMAGE,
+  jobTitle: FOUNDER_JOB_TITLE,
+  description: FOUNDER_DESCRIPTION,
+  worksFor: { "@id": ORG_ID },
+  founderOf: { "@id": ORG_ID },
+  knowsLanguage: ["en", "es"],
+  knowsAbout: FOUNDER_KNOWS_ABOUT,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: CITY,
+    addressRegion: REGION,
+    addressCountry: COUNTRY,
+  },
+  sameAs: FOUNDER_SAME_AS,
 };
 
 // ─── Schema.org — LocalBusiness ────────────────────────────────────────────
@@ -184,6 +242,7 @@ const localBusinessSchema = {
   image: `${SITE_URL}/assets/og-image.png`,
   logo: `${SITE_URL}/assets/brand-icon-1024.png`,
   parentOrganization: { "@id": ORG_ID },
+  founder: { "@id": FOUNDER_ID },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cumming",
@@ -273,6 +332,16 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "CPG Packaging Design" } },
   ],
+  hasOfferCatalog: offerCatalogSchema,
+  slogan: "Your Brand. Resurrected.",
+  knowsLanguage: ["en-US", "es"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: REVIEW_AVG,
+    reviewCount: REVIEW_COUNT,
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: SOCIAL_URLS,
 };
 
@@ -297,193 +366,13 @@ const websiteSchema = {
   },
 };
 
-// ─── Schema.org — Service catalog ─────────────────────────────────────────
-const buildService = (
-  name: string,
-  description: string,
-  serviceType: string,
-  price: string,
-) => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name,
-  description,
-  provider: { "@id": LOCALBIZ_ID },
-  areaServed: AREAS_SERVED.map((n) => ({ "@type": "City", name: n })),
-  serviceType,
-  offers: {
-    "@type": "Offer",
-    price,
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
-  },
-});
+// Service catalog JSON-LD removed from global scope to avoid asserting Service
+// offers on every URL (incl. the blog). /services carries an ItemList of all
+// services, and each /services/[slug] page carries its own Service schema.
 
-const servicesSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    buildService(
-      "Web Design",
-      "Custom, conversion-focused website design for small businesses in Cumming, GA, Forsyth County and North Metro Atlanta. Sites delivered in 10–14 days starting at $1,500. Next.js, Webflow, Shopify and Squarespace.",
-      "Web Design",
-      "1500",
-    ),
-    buildService(
-      "AI Workflow Integration",
-      "Business automation and AI-powered workflows — chatbots, lead capture, email follow-up, scheduling, and customer service automation — for small businesses in Cumming, GA and across North Atlanta.",
-      "Business Automation",
-      "500",
-    ),
-    buildService(
-      "Graphic Design",
-      "Logos, brand identity systems, style guides, menus, brochures, pitch decks, social media graphics and illustration for small businesses in Cumming, Forsyth County and Atlanta.",
-      "Graphic Design",
-      "150",
-    ),
-    buildService(
-      "Logo Design & Brand Identity",
-      "Custom logo design and full brand identity systems — logo, color palette, typography, brand guidelines and launch kit — for Cumming and North Atlanta small businesses.",
-      "Logo Design",
-      "500",
-    ),
-    buildService(
-      "Print Services",
-      "Business cards, flyers, brochures, banners, yard signs, vehicle wraps, menus, rack cards, postcards, posters, stickers, labels, custom apparel and trade show displays. Wholesale trade pricing, fast turnaround, delivered throughout Forsyth County and North Atlanta.",
-      "Print Services",
-      "75",
-    ),
-    buildService(
-      "Business Card Printing",
-      "Premium business card design and printing in Cumming, GA — matte, gloss, spot UV, soft-touch and luxe stocks. Wholesale trade pricing, fast turnaround, local delivery.",
-      "Business Card Printing",
-      "75",
-    ),
-    buildService(
-      "Vehicle Wrap Design",
-      "Custom vehicle wrap design and installation coordination for service businesses in Forsyth County and North Metro Atlanta — contractors, HVAC, plumbers, landscapers and mobile services.",
-      "Vehicle Graphics",
-      "800",
-    ),
-    buildService(
-      "Social Media Management",
-      "Consistent social media presence for small businesses in Cumming, GA. Content creation, scheduling, Instagram, Facebook and TikTok management starting at $400/mo.",
-      "Social Media Management",
-      "400",
-    ),
-    buildService(
-      "Shopify Ecommerce Development",
-      "Full Shopify and BigCommerce store setup with custom theme design, product catalog, checkout optimization and payment integration. Starting at $3,000.",
-      "Ecommerce Development",
-      "3000",
-    ),
-    buildService(
-      "CPG & Supplement Packaging Design",
-      "CPG and supplement packaging design with FDA/FTC compliance review, die-line matched print-ready files, and vendor coordination. Shelf-ready in 30 days. Starting at $5,000 per product line.",
-      "Packaging Design",
-      "5000",
-    ),
-    buildService(
-      "Restaurant Menu Design & Printing",
-      "Full menu design and printing for restaurants, cafes and food trucks in Cumming, Alpharetta, Roswell and North Metro Atlanta. Print and digital menus, QR code menus, takeout menus.",
-      "Menu Design",
-      "250",
-    ),
-    buildService(
-      "Local SEO & Google Business Setup",
-      "Google Business Profile optimization, local schema markup, citation building and on-page SEO for small businesses across Cumming, Forsyth County and North Metro Atlanta.",
-      "Local SEO",
-      "300",
-    ),
-  ],
-};
-
-// ─── Schema.org — FAQ ─────────────────────────────────────────────────────
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How fast can you build my website?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most websites are completed in 10–14 days. Traditional agencies take 4–8 weeks — we move faster because we have a proven process and use modern AI-assisted tools.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you serve businesses outside of Cumming, GA?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We serve small businesses across Forsyth County, Alpharetta, Johns Creek, Milton, Roswell, Woodstock, Canton, Marietta, Buford, Suwanee, Sugar Hill, Duluth, Lawrenceville, Dawsonville, Gainesville and all of North Metro Atlanta.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you work with my existing website?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We can redesign your existing site, migrate it to a new platform, or build fresh from scratch — whatever makes the most sense for your goals and budget.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What does a website cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our websites start at $1,500 for a 5-page custom site. Our most popular package, the Digital Makeover, is $4,500 and includes AI chatbot integration. We have no hidden fees and everything is clearly quoted upfront.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is AI workflow integration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AI workflows automate repetitive tasks like answering customer questions, booking appointments, sending follow-up emails, and managing leads — so your business keeps working even when you're not.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What kind of businesses do you work with?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Restaurants, cafes, dental practices, medical clinics, chiropractors, salons, barbershops, gyms, HVAC companies, plumbers, electricians, roofers, contractors, landscapers, realtors, law firms, boutiques, auto repair shops, photographers, fitness studios and any small business in North Metro Atlanta that needs a stronger online presence.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer ongoing support after launch?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We offer monthly maintenance plans starting at $100/month that include updates, backups, security monitoring, and minor edits. You'll also get priority support and a monthly performance report.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you design and print business cards, flyers, and banners?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. We handle business cards, flyers, brochures, banners, yard signs, vehicle wraps, custom apparel, menus, rack cards, postcards, posters, stickers and trade show displays. Everything is designed in-house and produced through our wholesale trade accounts so your print materials match your brand perfectly.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you design supplement labels and CPG packaging?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Our CPG Launch Package takes supplement and packaged-goods brands from concept to shelf-ready in 30 days, including FDA-compliant label design, die-line matched print-ready files and vendor coordination. See our /cpg-launch page for details.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer free consultations?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Every project starts with a free 15-minute discovery call. No commitment, no pressure — just a clear picture of what's costing you customers and what we'd do about it.",
-      },
-    },
-  ],
-};
+// FAQ JSON-LD now lives on the homepage (app/page.tsx), generated from the same
+// src/data/faqs.ts the visible accordion uses — so the markup always matches the
+// on-page text (Google requires this for FAQ rich results).
 
 // ─── Schema.org — Breadcrumb ─────────────────────────────────────────────
 const breadcrumbSchema = {
@@ -509,7 +398,15 @@ export default function RootLayout({
       lang="en-US"
       className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip">
+      {/* Mobile bottom padding reserves space for the sticky MobileCallBar so
+          it never covers footers or form submit buttons (incl. iOS safe area). */}
+      <body className="min-h-full flex flex-col bg-mist text-text-primary overflow-x-clip pb-[calc(4.75rem+env(safe-area-inset-bottom))] md:pb-0">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[var(--color-grave)] focus:px-4 focus:py-2 focus:text-[length:var(--text-secondary)] focus:font-semibold focus:text-[var(--color-toxic)] focus:outline-none focus:ring-2 focus:ring-[var(--color-toxic)]"
+        >
+          Skip to content
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -520,21 +417,18 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         {children}
+        <MobileCallBar />
         <AnalyticsClickListener />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -548,6 +442,17 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        {CLARITY_PROJECT_ID && (
+          <Script id="clarity-init" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
+            `}
+          </Script>
+        )}
       </body>
     </html>
   );

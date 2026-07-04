@@ -1,96 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Check, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
-import ZombieHand from "@/components/ZombieHand";
-import { HANDS } from "@/data/hands";
+import { KITS } from "@/data/kits";
 
-const plans = [
-  {
-    name: "New Business Launch",
-    price: "$2,800",
-    daily: "≈ $8/day · year one",
-    description: "For new businesses that need to look legit, fast.",
-    features: [
-      "Custom logo & brand identity",
-      "Starter website (up to 5 pages)",
-      "Mobile responsive design",
-      "500 business cards",
-      "1,000 flyers / rack cards",
-      "Google Business Profile setup",
-      "Basic SEO optimization",
-    ],
-    cta: "Start the build",
-    popular: false,
-  },
-  {
-    name: "Digital Makeover",
-    price: "$4,500",
-    daily: "≈ $13/day · year one",
-    description: "Our most-requested package. Built to level up.",
-    features: [
-      "Everything in Starter",
-      "Custom website (up to 10 pages)",
-      "AI chatbot integration",
-      "Google Business optimization",
-      "Social media template pack (20)",
-      "On-page SEO + analytics setup",
-      "Blog/CMS setup & training",
-      "3 rounds of revisions",
-    ],
-    cta: "Choose Digital Makeover",
-    popular: true,
-  },
-  {
-    name: "Full Zombie Treatment",
-    price: "$8,000+",
-    daily: "≈ $22/day · year one",
-    description: "For businesses ready to dominate. The complete kit.",
-    features: [
-      "Everything in Digital Makeover",
-      "Custom-coded web app",
-      "Advanced AI workflow automation",
-      "Marketing automation setup",
-      "3 months social media management",
-      "Complete print starter kit",
-      "Vehicle wrap design",
-      "Priority support & quarterly reviews",
-    ],
-    cta: "Go full zombie",
-    popular: false,
-  },
-];
+// The kit ladder lives in src/data/kits.ts — single source of truth for
+// names, prices, contents, and honest savings math. The $997 Launch Kit
+// renders as the banner; the other three render as cards.
+const plans = KITS.filter((k) => k.slug !== "launch");
 
 export default function Pricing() {
   const { ref, isInView } = useInView(0.05);
 
   return (
     <Section id="pricing" theme="light" pad="spacious">
-      {/* ── Disembodied zombie hand — decorative, non-interactive, beneath
-           all in-flow content. `overflow-x-clip` cuts the off-edge wrist and
-           blocks horizontal scroll. ── */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
-      >
-        {/* #5 — Thumbs-up endorsing the most-popular (Digital Makeover) card
-             — right edge, aligned to the card band */}
-        <ZombieHand
-          src={HANDS["zh37-thumbsup-r"].src}
-          width={HANDS["zh37-thumbsup-r"].width}
-          height={HANDS["zh37-thumbsup-r"].height}
-          edge="right"
-          behaviors={["peek", "idle"]}
-          offset="46%"
-          bleed="-42px"
-          displayWidth={330}
-          zIndex={5}
-          mobile
-        />
-      </div>
-
       <div
         ref={ref}
         className={cn(
@@ -105,7 +31,7 @@ export default function Pricing() {
               Pricing
             </span>
             <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
-              Three packages.{" "}
+              Pick a package.{" "}
               <span className="relative inline-block">
                 Zero hidden fees
                 <span
@@ -117,10 +43,47 @@ export default function Pricing() {
             </h2>
           </div>
           <p className="measure text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
-            Every package includes a free discovery call. Pick what you need
-            today, add the rest as you grow.
+            Want several services together? These bundles combine them for less
+            than buying à la carte. Just opening? Start with the $997 Launch
+            Kit. Every package includes a free discovery call.
           </p>
         </div>
+
+        {/* $997 promo banner — leads the pricing with the budget-friendly
+            entry so first-time buyers and refresh shoppers don't bounce on
+            the $2,800 floor. Image-left, copy-right on desktop; stacked on
+            mobile. Whole card is the link target. */}
+        <a
+          href="/startup-special"
+          className="group mt-12 grid grid-cols-1 overflow-hidden border-2 border-[var(--color-text-primary)] bg-[var(--color-grave)] lg:grid-cols-5"
+        >
+          <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto lg:col-span-2">
+            <Image
+              src="/assets/startup-special/hero.png"
+              alt="$997 Launch Kit — opening-day package banner"
+              fill
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+            />
+          </div>
+          <div className="flex flex-col justify-center gap-4 p-8 lg:col-span-3 lg:p-12">
+            <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+              Just launching? · Open-day kit
+            </span>
+            <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.05] tracking-tight text-[var(--color-dark-text-primary)]">
+              Launch Kit — $997
+            </h3>
+            <p className="measure text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+              Logo + 1-page website + 100 business cards + 100 flyers.
+              Everything you need for opening day, shipped in 10 days. Five
+              slots per month.
+            </p>
+            <span className="inline-flex items-center gap-2 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] transition-transform duration-200 group-hover:translate-x-1">
+              See the Launch Kit
+              <ArrowRight size={16} weight="bold" />
+            </span>
+          </div>
+        </a>
 
         {/* Cards — middle becomes a dark mini-island */}
         <div className="mt-12 grid grid-cols-1 gap-px border border-[var(--color-hairline-strong)] bg-[var(--color-hairline-strong)] lg:grid-cols-3">
@@ -246,9 +209,44 @@ export default function Pricing() {
                   ))}
                 </ul>
 
+                {/* Honest bundle math — à la carte total vs kit price, from
+                    our own published single-service prices (see data/kits.ts). */}
+                <p
+                  className={cn(
+                    "mt-6 border-t pt-4 text-[length:var(--text-secondary)] leading-relaxed",
+                    dark
+                      ? "border-[var(--color-dark-border)] text-[var(--color-dark-text-secondary)]"
+                      : "border-[var(--color-hairline)] text-text-secondary",
+                  )}
+                >
+                  <span className="tabular">{plan.alaCarteTotal}</span> booked
+                  separately —{" "}
+                  <span
+                    className={cn(
+                      "font-semibold",
+                      dark
+                        ? "text-[var(--color-toxic-text)]"
+                        : "text-[var(--color-neon-text)]",
+                    )}
+                  >
+                    you save {plan.savings}
+                  </span>
+                  .
+                </p>
+                <p
+                  className={cn(
+                    "mt-2 text-[length:var(--text-caption)]",
+                    dark
+                      ? "text-[var(--color-dark-text-dim)]"
+                      : "text-text-dim",
+                  )}
+                >
+                  Or split it into 3 monthly payments — just ask.
+                </p>
+
                 {/* CTA */}
                 <a
-                  href="#contact"
+                  href={plan.quoteHref}
                   role="button"
                   className={cn(
                     "mt-8 inline-flex items-center justify-between gap-2 rounded-full px-6 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider",
@@ -257,7 +255,7 @@ export default function Pricing() {
                       : "border border-[var(--color-hairline-strong)] text-text-primary hover:border-[var(--color-neon-text)] hover:text-[var(--color-neon-text)]",
                   )}
                 >
-                  {plan.cta}
+                  Choose {plan.name}
                   <ArrowRight size={16} weight="bold" />
                 </a>
               </article>
@@ -265,23 +263,16 @@ export default function Pricing() {
           })}
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 text-[length:var(--text-secondary)] text-text-dim sm:flex-row sm:items-center sm:justify-between">
+        {/* Custom-quote escape hatch. The "Just launching?" link that used
+            to live here is now the full-width banner above the cards. */}
+        <div className="mt-8 text-[length:var(--text-secondary)] text-text-dim">
           <p>
             Custom quote for unique projects.{" "}
             <a
-              href="#contact"
+              href="/services/request-quote"
               className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
             >
               Tell us what you need →
-            </a>
-          </p>
-          <p>
-            Just launching?{" "}
-            <a
-              href="/startup-special"
-              className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
-            >
-              See the $997 Startup Special →
             </a>
           </p>
         </div>

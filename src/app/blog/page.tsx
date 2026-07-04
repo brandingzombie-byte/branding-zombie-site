@@ -10,7 +10,11 @@ import { SITE_URL, BUSINESS_NAME } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/blog`;
 
 export const metadata: Metadata = {
-  title: `Blog — Web design, branding & small-business growth | ${BUSINESS_NAME}`,
+  // `absolute` prevents the root layout title template from appending the brand
+  // a second time (this string already ends with the business name).
+  title: {
+    absolute: `Blog — Web design, branding & small-business growth | ${BUSINESS_NAME}`,
+  },
   description:
     "Practical guides on small-business web design, branding, local SEO, and AI workflows — written from Cumming, GA for real businesses across North Metro Atlanta.",
   keywords: [
@@ -70,7 +74,7 @@ export default function BlogIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         {/* Header */}
         <Section theme="light" pad="standard" className="pt-32 lg:pt-40">
           <div className="flex flex-col gap-4">

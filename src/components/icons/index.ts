@@ -6,6 +6,7 @@ export {
   List,
   X,
   XCircle,
+  MagnifyingGlass,
   Plus,
   Minus,
   ArrowLeft,
@@ -61,4 +62,7 @@ export {
   Package,
   MagicWand,
   IdentificationBadge,
+
+  // Direct mail / EDDM
+  Target,
 } from "@phosphor-icons/react";

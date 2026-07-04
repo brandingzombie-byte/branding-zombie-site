@@ -12,9 +12,13 @@ import ServiceFAQ from "@/components/services/ServiceFAQ";
 import RelatedServices from "@/components/services/RelatedServices";
 import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
 import ServiceJsonLd from "@/components/services/ServiceJsonLd";
+import ServiceAuthority from "@/components/services/ServiceAuthority";
+import ServiceComparison from "@/components/services/ServiceComparison";
+import LocationsServed from "@/components/locations/LocationsServed";
 import WhoThisIsFor from "@/components/services/WhoThisIsFor";
 import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
+import PrintCatalog from "@/components/services/PrintCatalog";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
@@ -93,9 +97,10 @@ export default async function ServicePage({
     <>
       <Navbar />
       <ServiceJsonLd service={service} />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <ServicePageClient>
           <ServiceHero service={service} />
+          <ServiceAuthority slug={service.slug} />
           {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (
             <>
               <SectionSeparator id={7} />
@@ -126,6 +131,12 @@ export default async function ServicePage({
               <PrintCategoryBands bands={service.categoryBands} />
             </>
           )}
+          {service.slug === "print-design" && (
+            <>
+              <SectionSeparator id={4} />
+              <PrintCatalog />
+            </>
+          )}
           {(service.tiers || service.categoryBands) ? (
             <>
               <SectionSeparator id={4} />
@@ -148,9 +159,11 @@ export default async function ServicePage({
             </>
           )}
           <ServiceProcess service={service} />
+          <ServiceComparison slug={service.slug} />
           <SectionSeparator id={1} />
           <ServiceFAQ service={service} />
           <SectionSeparator id={6} />
+          <LocationsServed slug={service.slug} />
           <RelatedServices slug={service.slug} />
           {(service.tiers || service.categoryBands) && (
             <>

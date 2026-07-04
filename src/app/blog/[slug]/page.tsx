@@ -34,7 +34,9 @@ export async function generateMetadata({
 
   const url = getPostUrl(slug);
   return {
-    title: post.meta.seoTitle,
+    // seoTitle already includes the brand; use `absolute` so the root layout's
+    // "%s | Branding Zombie Designs" template doesn't append it a second time.
+    title: { absolute: post.meta.seoTitle },
     description: post.meta.seoDescription,
     keywords: post.meta.keywords,
     authors: [{ name: post.meta.author, url: `${SITE_URL}/about` }],
@@ -99,7 +101,7 @@ export default async function BlogPostPage({
     <>
       <Navbar />
       <BlogJsonLd post={post} />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <article>
           <BlogHero meta={post.meta} />
 

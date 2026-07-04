@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
-import SectionSeparator from "@/components/SectionSeparator";
 import ContactForm from "./ContactForm";
 import ContactOptions from "./ContactOptions";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
@@ -12,7 +11,7 @@ const PAGE_URL = `${SITE_URL}/contact`;
 export const metadata: Metadata = {
   title: "Contact — Call, Email, or Book a Free Audit in Cumming, GA",
   description:
-    "Talk to a real person in Cumming, GA. Call (770) 744-2536, email brandingzombie@gmail.com, or book a free 15-minute audit. Serving Forsyth County & North Metro Atlanta.",
+    "Talk to a real person in Cumming, GA. Call (770) 744-2536, email hello@brandingzombiedesigns.com, or book a free 15-minute audit. Serving Forsyth County & North Metro Atlanta.",
   keywords: [
     "contact Branding Zombie Designs",
     "web designer Cumming GA contact",
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     siteName: BUSINESS_NAME,
     title: `Contact ${BUSINESS_NAME} — Cumming, GA`,
     description:
-      "Call, email, or book a free audit. Real small-business design and web work from right here in Cumming, Georgia.",
+      "Call, email, or book a free 15-min call. Real small-business design and web work from right here in Cumming, Georgia.",
     images: [
       {
         url: "/assets/og-image.png",
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Contact ${BUSINESS_NAME}`,
     description:
-      "Call, email, or book a free audit — from right here in Cumming, Georgia.",
+      "Call, email, or book a free 15-min call — from right here in Cumming, Georgia.",
     images: ["/assets/og-image.png"],
   },
 };
@@ -76,11 +75,11 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
-          pad="spacious"
-          className="min-h-[48dvh] overflow-hidden"
+          pad="tight"
+          className="overflow-hidden"
         >
           <div
             aria-hidden
@@ -90,14 +89,15 @@ export default function ContactPage() {
                 "radial-gradient(60% 50% at 25% 35%, rgba(0,255,212,0.10), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(191,255,0,0.07), transparent 70%)",
             }}
           />
-          <div className="pt-20 lg:pt-28">
+          {/* Slim hero (CRO) so contact options + form clear the fold. */}
+          <div className="pt-16 lg:pt-20">
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
                 Contact · Cumming, GA
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+            <h1 className="mt-5 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.12] tracking-[-0.01em] text-[var(--color-dark-text-primary)]">
               Let&apos;s{" "}
               <span className="relative inline-block">
                 talk
@@ -108,7 +108,7 @@ export default function ContactPage() {
               </span>
               .
             </h1>
-            <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+            <p className="measure mt-5 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
               No gatekeepers, no sales team. Call Gerry directly, drop an
               email, or book a free 15-minute audit — whichever feels less
               awkward.
@@ -116,10 +116,12 @@ export default function ContactPage() {
           </div>
         </Section>
 
-        <SectionSeparator id={7} />
-
-        <Section theme="light" pad="spacious" topRule>
-          <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-12">
+        {/* No torn separator here: the slim hero sits close to the contact
+            options, and the separator's deep overhang painted over the eyebrow
+            labels. The dark→light color change + topRule hairline is the
+            transition. */}
+        <Section theme="light" pad="standard" topRule>
+          <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
             {/* LEFT — Three-up fast-contact options */}
             <aside className="lg:col-span-5">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">

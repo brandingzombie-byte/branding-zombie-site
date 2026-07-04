@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
 import CustomQuoteForm from "./CustomQuoteForm";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID, EMAIL, PHONE_DISPLAY } from "@/lib/site";
+import { KITS_BY_SLUG, isKitSlug } from "@/data/kits";
 
 const PAGE_URL = `${SITE_URL}/services/request-quote`;
 
@@ -100,7 +101,17 @@ const REASONS = [
   },
 ];
 
-export default function RequestQuotePage() {
+export default async function RequestQuotePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ kit?: string }>;
+}) {
+  // Kit mode — the "Choose [Kit]" buttons land here with ?kit=<slug>. The
+  // hero speaks to the specific kit; the form (client-side) collapses to the
+  // short version with the kit summary card.
+  const { kit: kitParam } = await searchParams;
+  const kit = kitParam && isKitSlug(kitParam) ? KITS_BY_SLUG[kitParam] : undefined;
+
   return (
     <>
       <Navbar />
@@ -112,7 +123,7 @@ export default function RequestQuotePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Section
           theme="dark"
           pad="spacious"
@@ -130,25 +141,49 @@ export default function RequestQuotePage() {
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
-                Custom quote · No commitment
+                {kit ? "Kit quote · No commitment" : "Custom quote · No commitment"}
               </span>
             </div>
-            <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
-              Tiers don&apos;t fit?{" "}
-              <span className="relative inline-block">
-                Tell us what does
-                <span
-                  aria-hidden
-                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
-                />
-              </span>
-              .
-            </h1>
+            {kit ? (
+              <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+                Let&apos;s price your{" "}
+                <span className="relative inline-block">
+                  {kit.name}
+                  <span
+                    aria-hidden
+                    className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
+                  />
+                </span>
+                .
+              </h1>
+            ) : (
+              <h1 className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]">
+                Tiers don&apos;t fit?{" "}
+                <span className="relative inline-block">
+                  Tell us what does
+                  <span
+                    aria-hidden
+                    className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-toxic)]"
+                  />
+                </span>
+                .
+              </h1>
+            )}
             <p className="measure mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-              Most small businesses don&apos;t need everything in a tier — and
-              some need more. Send a quick brief, drop in any references, and
-              we&apos;ll come back with a custom quote tailored to your scope
-              and budget.
+              {kit ? (
+                <>
+                  {kit.name} — {kit.price}, delivered in {kit.timeline}. Leave
+                  your details below and Gerry will confirm scope and a start
+                  date within 24 hours. No payment now, no commitment.
+                </>
+              ) : (
+                <>
+                  Most small businesses don&apos;t need everything in a tier —
+                  and some need more. Send a quick brief, drop in any
+                  references, and we&apos;ll come back with a custom quote
+                  tailored to your scope and budget.
+                </>
+              )}
             </p>
           </div>
         </Section>
@@ -211,7 +246,7 @@ export default function RequestQuotePage() {
                 Your custom brief
               </span>
               <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
-                Four quick{" "}
+                {kit ? "Three quick" : "Four quick"}{" "}
                 <span className="relative inline-block">
                   steps
                   <span
@@ -222,9 +257,9 @@ export default function RequestQuotePage() {
                 .
               </h2>
               <p className="measure mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
-                Takes about 90 seconds. Only your name, email, and a sentence
-                about the project are required — everything else helps but is
-                optional.
+                {kit
+                  ? "Takes about 60 seconds. Only your name and email are required — the kit covers the rest."
+                  : "Takes about 90 seconds. Only your name, email, and a sentence about the project are required — everything else helps but is optional."}
               </p>
               <div className="mt-10">
                 <Suspense fallback={<FormFallback />}>

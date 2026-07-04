@@ -4,11 +4,14 @@ import { useEffect, useState } from "react";
 import { List, X, Phone } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import HeaderSearch from "@/components/HeaderSearch";
 
 const navLinks = [
   { label: "Services", href: "/services" },
-  { label: "Work", href: "/#portfolio" },
+  { label: "Industries", href: "/industries" },
+  { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
+  { label: "Brand Checkup", href: "/brand-checkup" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
@@ -68,8 +71,8 @@ export default function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 lg:h-20 lg:px-12">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
+        {/* Logo — links home */}
+        <a href="/" aria-label="Branding Zombie Designs — home" className="flex items-center gap-3">
           <div
             className={cn(
               "flex h-9 w-9 items-center justify-center rounded-md transition-colors",
@@ -125,6 +128,9 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <div className="ml-2">
+            <HeaderSearch />
+          </div>
           <a
             href={PHONE_HREF}
             className={cn(
@@ -182,17 +188,20 @@ export default function Navbar() {
       <div
         className={cn(
           "overflow-hidden transition-[max-height,opacity] duration-300 md:hidden",
-          mobileOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0",
+          mobileOpen ? "max-h-[85vh] opacity-100" : "max-h-0 opacity-0",
         )}
       >
         <div
           className={cn(
-            "border-t px-6 py-5",
+            "max-h-[85vh] overflow-y-auto border-t px-6 py-5",
             dark
               ? "border-[var(--color-dark-border)] bg-[var(--color-grave)]/95"
               : "border-[var(--color-hairline)] bg-[var(--color-cloud)]/95",
           )}
         >
+          <div className="mb-4">
+            <HeaderSearch variant="mobile" />
+          </div>
           <div className="flex flex-col">
             {navLinks.map((link) => (
               <a

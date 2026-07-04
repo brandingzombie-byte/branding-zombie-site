@@ -32,7 +32,7 @@ const SPOTS_PER_MONTH = "5";
 
 // ─── Metadata ──────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Startup Special $997 — Logo, Site & Print in 10 Days | Cumming, GA",
+  title: "Launch Kit $997 — Logo, Site & Print in 10 Days | Cumming, GA",
   description:
     "New business launching this summer? Logo, brand kit, 100 business cards, 100 flyers, and a 1-page site with domain + 1 year of hosting — $997, delivered in 10 days. Cumming, GA.",
   keywords: [
@@ -56,14 +56,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "Startup Special $997 — From Idea to Open Sign in 10 Days",
+    title: "Launch Kit $997 — From Idea to Open Sign in 10 Days",
     description:
       "Logo, brand kit, 100 cards, 100 flyers, and a 1-page site with domain + hosting. Delivered in 10 days. Cumming, GA. 5 kits a month. Book by Aug 31.",
     siteName: "Branding Zombie Designs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Startup Special $997 — From Idea to Open Sign in 10 Days",
+    title: "Launch Kit $997 — From Idea to Open Sign in 10 Days",
     description:
       "Logo, brand kit, 100 cards, 100 flyers, 1-page site + hosting. 10 days. Cumming, GA.",
   },
@@ -105,7 +105,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Startup Special",
+      name: "Launch Kit (Startup Special)",
       item: PAGE_URL,
     },
   ],
@@ -178,7 +178,6 @@ const FOR = [
 ];
 
 const NOT_FOR = [
-  "Existing brands needing a refresh — that's the Launch Package",
   "Anyone shopping the $69/mo subscription agencies",
   "30-page sites with custom databases or e-commerce",
   "Last-week-before-launch panic jobs",
@@ -278,14 +277,14 @@ export default function StartupSpecialPage() {
         </div>
       </header>
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         {/* ─── HERO ─────────────────────────────────────────────────────── */}
         <Section theme="dark" pad="spacious" topScanline>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <div className="flex flex-wrap items-center gap-3">
                 <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.25em] text-[var(--color-toxic-text)]">
-                  Startup Special · Summer 2026
+                  The $997 Launch Kit · Summer 2026
                 </span>
                 <span aria-hidden className="h-px w-12 bg-[var(--color-toxic)]/40" />
                 <span className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">

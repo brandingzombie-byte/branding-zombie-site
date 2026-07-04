@@ -58,11 +58,11 @@
   --color-cloud: #FFFFFF;
   --color-parchment: #F5FAF5;
   --color-neon: #C0ED08;
-  --color-neon-text: #4D7A00;
+  --color-neon-text: #3D6200;
   --color-sage-dark: #7CB87C;
   --color-text-primary: #333333;
   --color-text-secondary: #566856;
-  --color-text-dim: #5C6E60;
+  --color-text-dim: #4A5A4E;        /* WCAG AA on mist/fog (was #5C6E60, 4.2:1) */
 
   /* === Necro Vitalism — dark island palette === */
   --color-void: #0A0A0A;
@@ -88,8 +88,8 @@
   --color-hairline-strong: rgba(31, 41, 33, 0.16);
 
   /* === Fluid type scale === */
-  --text-caption: clamp(0.72rem, 0.69rem + 0.15vw, 0.78rem);
-  --text-secondary: clamp(0.82rem, 0.79rem + 0.18vw, 0.9rem);
+  --text-caption: clamp(0.78rem, 0.74rem + 0.18vw, 0.84rem);
+  --text-secondary: clamp(0.9rem, 0.85rem + 0.22vw, 1rem);
   --text-body: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
   --text-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
   --text-h4: clamp(1.25rem, 1.15rem + 0.6vw, 1.625rem);
@@ -98,10 +98,13 @@
   --text-h1: clamp(2.75rem, 2rem + 3.6vw, 4.75rem);
   --text-display: clamp(3.5rem, 2.4rem + 5.2vw, 7rem);
 
-  /* === Fluid spacing — vertical rhythm === */
-  --space-tight: clamp(2.5rem, 2rem + 2vw, 4rem);
-  --space-standard: clamp(4rem, 3rem + 4vw, 7rem);
-  --space-spacious: clamp(6rem, 4rem + 7vw, 11rem);
+  /* === Fluid spacing — vertical rhythm ===
+     Tightened 2026-06-30 (CRO): section padding was leaving full-viewport
+     dead gaps on desktop. Reduced ~30-40% so every scroll lands on content,
+     not whitespace. Tokens are applied as py-[...] (top + bottom each). */
+  --space-tight: clamp(2rem, 1.6rem + 1.4vw, 3rem);
+  --space-standard: clamp(2.75rem, 2.1rem + 2.6vw, 4.5rem);
+  --space-spacious: clamp(3.75rem, 2.6rem + 4.2vw, 6.75rem);
   --space-gutter: clamp(1rem, 0.7rem + 1.4vw, 2rem);
 
   /* === Reading measure === */
@@ -139,7 +142,7 @@
   --destructive: #FF3366;
   --border: rgba(51, 51, 51, 0.10);
   --input: rgba(51, 51, 51, 0.12);
-  --ring: #4D7A00;
+  --ring: #3D6200;
   --chart-1: #C0ED08;
   --chart-2: #7CB87C;
   --chart-3: #5A6B5A;
@@ -153,7 +156,7 @@
   --sidebar-accent: #D4E7D4;
   --sidebar-accent-foreground: #333333;
   --sidebar-border: rgba(51, 51, 51, 0.10);
-  --sidebar-ring: #4D7A00;
+  --sidebar-ring: #3D6200;
 }
 
 html, body {
@@ -285,6 +288,97 @@ html, body {
 
 .animate-spotlight {
   animation: spotlight 2s var(--ease-out-expo) 0.6s 1 forwards;
+}
+
+/* ============================================
+   Print catalog motion (Emil-grade detail layer)
+   - Card enter: opacity + small translateY, strong ease-out, stagger first 6
+   - Image hover: subtle scale, gated by pointer:fine (no touch false-hovers)
+   - Pill press: scale(0.97) via global :active rule
+   - All transitions name exact properties (never `all`)
+   ============================================ */
+
+@keyframes catalog-card-in {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.catalog-card {
+  opacity: 0;
+  animation: catalog-card-in 320ms var(--ease-out-quart) forwards;
+  transition:
+    box-shadow 200ms var(--ease-out-quart),
+    border-color 200ms var(--ease-out-quart);
+}
+
+.catalog-card-img {
+  transition: transform 480ms var(--ease-out-quart);
+  transform-origin: center;
+}
+
+.catalog-card-arrow {
+  transition:
+    transform 200ms var(--ease-out-quart);
+}
+
+/* Hover affordances — gated on devices that can actually hover */
+@media (hover: hover) and (pointer: fine) {
+  .catalog-card:hover {
+    box-shadow: 0 18px 40px -24px rgba(31, 41, 33, 0.45);
+    border-color: var(--color-hairline-strong);
+  }
+  .catalog-card:hover .catalog-card-img {
+    transform: scale(1.04);
+  }
+  .catalog-card:hover .catalog-card-arrow {
+    transform: translate(2px, -2px);
+  }
+}
+
+/* Filter pills — explicit transition properties, no transition:all */
+.catalog-filter-pill {
+  transition:
+    background-color 200ms var(--ease-out-quart),
+    color 200ms var(--ease-out-quart),
+    border-color 200ms var(--ease-out-quart);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .catalog-filter-pill:hover {
+    border-color: var(--color-neon-text);
+    color: var(--color-neon-text);
+  }
+}
+
+/* Mobile filter pill rail — edge mask + snap so first/last pill stays reachable */
+.catalog-filter-track {
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline-start: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.catalog-filter-track::-webkit-scrollbar { display: none; }
+
+.catalog-filter-pill {
+  scroll-snap-align: start;
+}
+
+/* Reduced motion — keep fade, drop translate; freeze hover scales */
+@media (prefers-reduced-motion: reduce) {
+  .catalog-card {
+    animation: none;
+    opacity: 1;
+  }
+  .catalog-card-img,
+  .catalog-card-arrow,
+  .catalog-filter-pill {
+    transition: none;
+  }
+  .catalog-card:hover .catalog-card-img,
+  .catalog-card:hover .catalog-card-arrow {
+    transform: none;
+  }
 }
 
 /* Suspense loader — used by SplineScene while the 3D runtime boots */

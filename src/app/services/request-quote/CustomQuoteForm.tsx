@@ -13,6 +13,7 @@ import { submitQuoteRequest, type QuoteState } from "./actions";
 import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Check } from "@/components/icons";
+import { KITS_BY_SLUG, isKitSlug, type Kit } from "@/data/kits";
 
 const INITIAL: QuoteState = { ok: false, message: "" };
 
@@ -28,7 +29,7 @@ const SERVICE_OPTIONS: { slug: string; label: string }[] = [
   { slug: "social-media", label: "Social Media" },
   { slug: "digital-marketing", label: "Digital Marketing" },
   { slug: "ai-workflows", label: "AI Workflows" },
-  { slug: "launch-package", label: "Launch Package" },
+  { slug: "launch-package", label: "Local Business Kit" },
   { slug: "not-sure", label: "Not sure / mix" },
 ];
 
@@ -54,6 +55,13 @@ const MAX_FILE_BYTES = 10 * 1024 * 1024;
 export default function CustomQuoteForm() {
   const searchParams = useSearchParams();
   const prefilledService = searchParams.get("service") ?? "";
+  // Kit mode — "Choose [Kit]" buttons arrive with ?kit=<slug>. The kit fixes
+  // the scope + price, so the form collapses to the short version: kit
+  // summary, contact details, and an optional note.
+  const kitParam = searchParams.get("kit") ?? "";
+  const kit: Kit | undefined = isKitSlug(kitParam)
+    ? KITS_BY_SLUG[kitParam]
+    : undefined;
   const prefilledServices = useMemo(() => {
     if (prefilledService && SERVICE_OPTIONS.some((s) => s.slug === prefilledService)) {
       return [prefilledService];
@@ -77,15 +85,20 @@ export default function CustomQuoteForm() {
   }, [prefilledService]);
 
   useEffect(() => {
-    if (state.ok && !trackedRef.current) {
+    if (state.ok && state.leadId && !trackedRef.current) {
       trackedRef.current = true;
       trackEvent("generate_lead", {
-        form: "custom_quote",
+        // Distinct form value so kit-quote leads segment cleanly in the
+        // GA4 "Leads by Source" explore.
+        form: kit ? "kit-quote" : "custom_quote",
+        kit: kit?.slug,
         services: services.join(",") || undefined,
-        value: 1,
+        value: state.value ?? 1,
+        currency: "USD",
+        transaction_id: state.leadId,
       });
     }
-  }, [state.ok, services]);
+  }, [state.ok, state.leadId, state.value, services, kit]);
 
   function toggleService(slug: string) {
     setServices((prev) =>
@@ -152,9 +165,10 @@ export default function CustomQuoteForm() {
       {/* Honeypot */}
       <label className="sr-only" aria-hidden>
         Company website
-        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       </label>
       <input type="hidden" name="sourcePage" value={prefilledService} />
+      {kit && <input type="hidden" name="kit" value={kit.slug} />}
 
       {/* Echo each chosen service as a hidden field — server action reads
           formData.getAll("services"). */}
@@ -162,7 +176,29 @@ export default function CustomQuoteForm() {
         <input key={s} type="hidden" name="services" value={s} />
       ))}
 
+      {/* ─── KIT MODE: summary card + optional note (short form) ─────────── */}
+      {kit && (
+        <>
+          <KitSummaryCard kit={kit} />
+          <FieldGroup
+            step="02"
+            title="Anything we should know?"
+            hint="Optional — timing, what the business does, current site, anything."
+          >
+            <FieldTextarea
+              label="Your note"
+              name="description"
+              rows={4}
+              maxLength={4000}
+              placeholder="Example: 'Opening a coffee shop in Cumming in September — no logo yet.'"
+              error={state.fieldErrors?.description}
+            />
+          </FieldGroup>
+        </>
+      )}
+
       {/* ─── GROUP 1: WHAT YOU NEED ─────────────────────────────────────── */}
+      {!kit && (
       <FieldGroup
         step="01"
         title="What do you need?"
@@ -209,8 +245,10 @@ export default function CustomQuoteForm() {
           error={state.fieldErrors?.description}
         />
       </FieldGroup>
+      )}
 
       {/* ─── GROUP 2: BUDGET + TIMELINE ─────────────────────────────────── */}
+      {!kit && (
       <FieldGroup
         step="02"
         title="Budget & timeline"
@@ -231,8 +269,10 @@ export default function CustomQuoteForm() {
           />
         </div>
       </FieldGroup>
+      )}
 
       {/* ─── GROUP 3: REFERENCE MATERIALS ───────────────────────────────── */}
+      {!kit && (
       <FieldGroup
         step="03"
         title="Reference materials"
@@ -298,9 +338,10 @@ export default function CustomQuoteForm() {
           <FieldError text={clientFileError ?? state.fieldErrors?.files ?? ""} />
         )}
       </FieldGroup>
+      )}
 
       {/* ─── GROUP 4: HOW TO REACH YOU ──────────────────────────────────── */}
-      <FieldGroup step="04" title="How do we reach you?" hint="Real human reads every reply — Gerry, the founder.">
+      <FieldGroup step={kit ? "03" : "04"} title="How do we reach you?" hint="Real human reads every reply — Gerry, the founder.">
         <div className="grid gap-5 sm:grid-cols-2">
           <Field
             label="Your name"
@@ -361,7 +402,7 @@ export default function CustomQuoteForm() {
             "disabled:cursor-not-allowed disabled:opacity-60",
           )}
         >
-          {pending ? "Sending…" : "Get my custom quote"}
+          {pending ? "Sending…" : kit ? `Get my ${kit.name} quote` : "Get my custom quote"}
           <ArrowRight size={16} weight="bold" />
         </button>
       </div>
@@ -370,6 +411,65 @@ export default function CustomQuoteForm() {
 }
 
 // ─── Sub-components ─────────────────────────────────────────────────────────
+
+// Kit summary — shows exactly what the visitor is asking for a quote on:
+// kit name, plain price, timeline, contents, and the honest savings line.
+function KitSummaryCard({ kit }: { kit: Kit }) {
+  return (
+    <div className="flex flex-col gap-5 border-l-[3px] border-[var(--color-toxic)] bg-[var(--color-cloud)] p-7">
+      <div className="flex items-baseline gap-3">
+        <span className="tabular text-[length:var(--text-caption)] font-bold uppercase tracking-[0.18em] text-[var(--color-neon-text)]">
+          01
+        </span>
+        <span className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight tracking-tight text-text-primary">
+          Your kit
+        </span>
+      </div>
+      <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+        <span className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight tracking-tight text-text-primary">
+          {kit.name}
+        </span>
+        <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight text-[var(--color-neon-text)]">
+          {kit.price}
+        </span>
+        <span className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-text-dim">
+          {kit.timeline}
+        </span>
+      </div>
+      <ul className="grid gap-2 sm:grid-cols-2">
+        {kit.features.map((f) => (
+          <li
+            key={f}
+            className="flex items-start gap-2.5 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary"
+          >
+            <Check
+              size={15}
+              weight="bold"
+              className="mt-1 shrink-0 text-[var(--color-neon-text)]"
+            />
+            {f}
+          </li>
+        ))}
+      </ul>
+      <p className="border-t border-[var(--color-hairline)] pt-4 text-[length:var(--text-secondary)] text-text-secondary">
+        <span className="tabular">{kit.alaCarteTotal}</span> booked separately —{" "}
+        <span className="font-semibold text-[var(--color-neon-text)]">
+          you save {kit.savings}
+        </span>
+        . Or split it into 3 monthly payments — just ask.
+      </p>
+      <p className="text-[length:var(--text-caption)] text-text-dim">
+        Wrong kit?{" "}
+        <a
+          href="/#pricing"
+          className="font-semibold text-[var(--color-neon-text)] underline decoration-[var(--color-neon-text)]/30 underline-offset-4 hover:decoration-[var(--color-neon-text)]"
+        >
+          Compare all packages →
+        </a>
+      </p>
+    </div>
+  );
+}
 
 function FieldGroup({
   step,

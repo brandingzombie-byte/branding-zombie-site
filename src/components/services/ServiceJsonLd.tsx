@@ -12,9 +12,58 @@ import {
   AREAS_SERVED,
 } from "@/lib/site";
 import type { Service } from "@/data/services";
+import {
+  PRINT_CATEGORIES,
+  PRINT_PRODUCTS,
+} from "@/data/print-catalog";
+
+// For the print-design page, replace the generic deliverables-based catalog
+// with one Offer per actual catalog product. Each Offer carries price,
+// category, and turnaround so AI assistants can answer "do they print X?"
+// and "how much is X?" without having to read the page.
+function buildPrintOfferCatalog(pageUrl: string) {
+  const catalogUrl = `${pageUrl}#print-catalog`;
+  return {
+    "@type": "OfferCatalog",
+    name: "Branding Zombie Designs — Print Product Catalog",
+    url: catalogUrl,
+    itemListElement: PRINT_CATEGORIES.map((cat) => ({
+      "@type": "OfferCatalog",
+      name: cat.name,
+      description: cat.summary,
+      itemListElement: PRINT_PRODUCTS.filter((p) => p.category === cat.slug).map(
+        (p) => ({
+          "@type": "Offer",
+          name: p.name,
+          description: p.blurb,
+          category: cat.name,
+          deliveryLeadTime: p.turnaround,
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            price: p.startingPrice.replace(/[^\d.]/g, ""),
+            priceCurrency: "USD",
+            description: `${p.startingPrice}, ${p.turnaround} turnaround`,
+          },
+          itemOffered: {
+            "@type": "Product",
+            name: p.name,
+            description: p.blurb,
+            image: `${SITE_URL}${p.image}`,
+            category: cat.name,
+            brand: { "@id": ORG_ID },
+          },
+          availability: "https://schema.org/InStock",
+          areaServed: "Cumming, GA and North Metro Atlanta",
+          url: `${catalogUrl}-${p.slug}`,
+        }),
+      ),
+    })),
+  };
+}
 
 function buildServiceSchema(service: Service) {
   const pageUrl = `${SITE_URL}/services/${service.slug}`;
+  const isPrint = service.slug === "print-design";
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -33,18 +82,20 @@ function buildServiceSchema(service: Service) {
       audienceType:
         "Small businesses in Cumming, GA, Forsyth County and North Metro Atlanta",
     },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: `${service.name} Deliverables`,
-      itemListElement: service.deliverables.map((d) => ({
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: d.title,
-          description: d.description,
+    hasOfferCatalog: isPrint
+      ? buildPrintOfferCatalog(pageUrl)
+      : {
+          "@type": "OfferCatalog",
+          name: `${service.name} Deliverables`,
+          itemListElement: service.deliverables.map((d) => ({
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: d.title,
+              description: d.description,
+            },
+          })),
         },
-      })),
-    },
     offers: {
       "@type": "Offer",
       price: service.pricing.numericPrice,

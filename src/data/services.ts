@@ -179,7 +179,7 @@ export const SERVICES: Service[] = [
     tagline: "Custom small-business websites, built to convert",
     iconSvg: "/assets/SVG/web-design-icon.svg",
     themeAccent: "neon",
-    homeCardPrice: "from $2,500",
+    homeCardPrice: "from $1,500",
     homeCardDescription:
       "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
     hook: "Conversion-focused websites that turn visitors into customers — built to look and feel like the brands you envy.",
@@ -190,6 +190,22 @@ export const SERVICES: Service[] = [
       "Owners who want agency-caliber work without the agency timeline and price",
     ],
     tiers: [
+      {
+        name: "Landing",
+        price: "$1,500",
+        timeline: "7 days",
+        deliverables: [
+          "1–2 page focused landing site",
+          "Hero, services, contact — all on one scroll",
+          "Mobile-optimized, Core Web Vitals pass",
+          "Contact form wired to your inbox",
+          "On-page SEO foundation",
+          "SSL, domain, hosting setup",
+        ],
+        bestFor:
+          "Single-offer businesses, event landing pages, or owners who need a credible one-pager to send people to.",
+        ctaLabel: "Start with Landing",
+      },
       {
         name: "Starter",
         price: "$2,500",
@@ -248,13 +264,13 @@ export const SERVICES: Service[] = [
       highlightWord: "weeks, not months",
       subhead:
         "Custom small-business websites built in Next.js, Webflow, or Shopify. Fast, mobile-first, search-engine friendly, and tuned to turn visitors into customers. Based in Cumming, GA — serving Forsyth County, Alpharetta, Roswell, and North Metro Atlanta.",
-      ctaLabel: "Book a free site audit",
-      ctaHref: CALENDLY_URL,
+      ctaLabel: "Get a free site audit",
+      ctaHref: "/free-site-audit",
       heroImage: {
         src: "/assets/services/web-design/hero.png",
         alt: "Modern small-business website design being built on a dark editorial desktop — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
+      microProof: "From $1,500 · Most sites live in 2–3 weeks · 80+ projects shipped",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your website is",
@@ -270,9 +286,9 @@ export const SERVICES: Service[] = [
     ],
     offerEyebrow: "One engagement · Everything you need to launch",
     offerHeadline: "A real website,",
-    offerHighlight: "shipped in 10 days",
+    offerHighlight: "live in 2–3 weeks",
     offerSubhead:
-      "Six deliverables, one fixed scope. Built for Cumming and North Metro Atlanta small businesses who need to show up online without the agency runaround.",
+      "Six deliverables, one fixed scope. Most sites go live in 2–3 weeks; Launch Kit landing pages in about 10 days. Built for Cumming and North Metro Atlanta small businesses who need to show up online without the agency runaround.",
     deliverables: [
       {
         title: "Custom Design, No Templates",
@@ -388,11 +404,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "How fast can you actually build my website?",
-        a: "Starter sites launch in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
+        a: "Landing pages launch in 7 days. Starter sites in 2 weeks. Growth in 3. Premium and ecommerce in 4–6. Traditional agencies take 8+ because they're managing three layers of account managers. We move faster because we have a tight process, modern tooling, and no agency overhead.",
       },
       {
         q: "What does a website cost?",
-        a: "Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
+        a: "Landing (1–2 pages, 7 days) is $1,500. Starter (5 pages) is $2,500. Growth (up to 10 pages, integrations, SEO, analytics) is $4,500 — our most popular tier. Premium (unlimited pages, custom functionality, ecommerce-ready) starts at $7,500. Every tier is quoted flat, no hourly surprises, and the discovery call is free.",
       },
       {
         q: "Will it rank on Google for my town?",
@@ -404,7 +420,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "I got a cheaper quote. What am I actually paying for here?",
-        a: "Fifteen-plus years, thirty-plus brands launched, and a designer who does it all himself — no sub-contractor chain, no offshore handoffs, no junior designer pretending to be a senior. If the cheaper quote comes from someone who can show you comparable launched work, follow your gut. If they can't, that's usually why it's cheaper.",
+        a: "Fifteen-plus years, eighty-plus projects delivered, and a designer who does it all himself — no sub-contractor chain, no offshore handoffs, no junior designer pretending to be a senior. If the cheaper quote comes from someone who can show you comparable launched work, follow your gut. If they can't, that's usually why it's cheaper.",
       },
       {
         q: "What happens if I don't love the design?",
@@ -413,25 +429,25 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       label: "Websites start at",
-      price: "$2,500",
+      price: "$1,500",
       unit: "/ project",
-      note: "Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
-      numericPrice: "2500",
+      note: "Landing $1,500. Starter $2,500. Most projects land in the Growth tier at $4,500. Premium and custom scopes quoted on the discovery call.",
+      numericPrice: "1500",
     },
     finalCta: {
       eyebrow: "Ready when you are",
       headline: "Your customers are already online.",
       highlightWord: "Be where they're looking.",
       subhead:
-        "Book a free 15-minute site audit. We'll look at what you've got, tell you what's broken, and give you a clear path to a site that actually works — whether we end up building it or not.",
-      ctaLabel: "Book a free site audit",
+        "Run the free instant site audit. It grades what you've got, tells you what's broken, and gives you a clear path to a site that actually works — whether we end up building it or not.",
+      ctaLabel: "Get a free site audit",
     },
     related: ["ai-workflows", "logo-design", "ecommerce"],
     meta: {
       seoTitle:
-        "Web Design in Cumming, GA — Small-Business Websites in 10 Days",
+        "Web Design in Cumming, GA — Small-Business Websites Live in 2–3 Weeks",
       seoDescription:
-        "Custom small-business web design in Cumming, GA & Forsyth County. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
+        "Custom small-business web design in Cumming, GA & Forsyth County from $1,500 — most sites live in 2–3 weeks. Next.js, Webflow, Shopify. Fast, mobile-first, SEO-ready. Landing $1,500 · Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
       keywords: [
         "web design Cumming GA",
         "web designer Forsyth County",
@@ -460,7 +476,7 @@ export const SERVICES: Service[] = [
       serviceType: "Web Design",
       category: "Web Design Services",
       description:
-        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 2–6 week delivery. Starter $2,500 · Growth $4,500 · Premium $7,500+.",
+        "Custom, conversion-focused web design for small businesses in Cumming, GA and across North Metro Atlanta. Built in Next.js, Webflow, or Shopify with local SEO, mobile-first performance, and CMS included. 1–6 week delivery. Landing $1,500 · Starter $2,500 · Growth $4,500 · Premium $7,500+.",
     },
   },
 
@@ -544,7 +560,7 @@ export const SERVICES: Service[] = [
       highlightWord: "actually run the business",
       subhead:
         "Chatbots, lead capture, scheduling, email follow-up, and customer service automation — built for small businesses in Cumming, Forsyth County, and North Metro Atlanta. Practical AI that saves you hours a week, not a Silicon Valley pitch.",
-      ctaLabel: "Book a free automation audit",
+      ctaLabel: "Book a free 15-min call",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/ai-workflows/hero.png",
@@ -704,8 +720,8 @@ export const SERVICES: Service[] = [
       headline: "Your time is worth more",
       highlightWord: "than answering DMs at midnight",
       subhead:
-        "Book a free 30-minute automation audit. We'll walk through your week, find the three tasks AI should already be handling, and give you a clear path forward — whether you hire us or DIY it.",
-      ctaLabel: "Book a free automation audit",
+        "Book a free 15-minute call. We'll walk through your week, find the three tasks AI should already be handling, and give you a clear path forward — whether you hire us or DIY it.",
+      ctaLabel: "Book a free 15-min call",
     },
     related: ["web-design", "social-media", "ecommerce"],
     meta: {
@@ -805,7 +821,7 @@ export const SERVICES: Service[] = [
         name: "Print + Source Bundle",
         priceRange: "Design fee + 15–20% on production",
         examples: [
-          "We design AND source the printing via Ink Spatter Studio",
+          "We design AND source the printing — all under one roof",
           "One invoice for design + production",
           "Vendor-managed — we handle proofs, fulfillment, and delivery",
           "Wholesale trade pricing passed through",
@@ -821,14 +837,14 @@ export const SERVICES: Service[] = [
       headline: "Designed for print,",
       highlightWord: "not just Canva",
       subhead:
-        "Packaging, labels, menus, signage, brochures, vehicle wraps, and branded collateral. Designed in-house with real dielines, real CMYK, and real press experience. Printing sourced through Ink Spatter Studio when you want one invoice — or print-ready files sent to your vendor when you don't.",
+        "Packaging, labels, menus, signage, brochures, vehicle wraps, and branded collateral. Designed in-house with real dielines, real CMYK, and real press experience. Printing sourced through our in-house production pipeline when you want one invoice — or print-ready files sent to your vendor when you don't.",
       ctaLabel: "Get a print quote",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/print-services/hero.png",
         alt: "Custom packaging label and printed collateral in a studio — Branding Zombie Designs print design in Cumming, GA",
       },
-      microProof: "From $75 · 2 days to 3 weeks · 30+ brands shipped",
+      microProof: "From $75 · 2 days to 3 weeks · 80+ projects shipped",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Print shouldn't be",
@@ -931,7 +947,7 @@ export const SERVICES: Service[] = [
         step: "04",
         title: "Print & Deliver",
         description:
-          "Printed through our wholesale trade accounts, delivered to your door in Cumming, Forsyth County, or anywhere in North Metro Atlanta.",
+          "Produced through our in-house print pipeline at wholesale pricing, then delivered to your door in Cumming, Forsyth County, or anywhere across North Metro Atlanta.",
         icon: "RocketLaunch",
       },
     ],
@@ -941,7 +957,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: "Do you handle printing too, or just design?",
-        a: "Both — your choice. The Print + Source Bundle means we design it AND source the printing through Ink Spatter Studio, our production arm. One invoice, we manage the vendor, you get it delivered. Or you can take the print-ready files and send them to your own vendor. Same files either way.",
+        a: "Both — your choice. The Print + Source Bundle means we design it AND source the printing through our in-house production pipeline. One invoice, we manage production, you get it delivered. Or you can take the print-ready files and send them to your own vendor. Same files either way.",
       },
       {
         q: "Can you design regulated product labels — supplements, food, cosmetics?",
@@ -957,7 +973,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Why is the Print + Source bundle cheaper than my local print shop?",
-        a: "We're not a print shop — we're a design studio with wholesale trade accounts via Ink Spatter Studio. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
+        a: "We're not a retail print shop — we're a design studio with a wholesale production pipeline in-house. We pass the wholesale pricing through plus a 15–20% production fee. You save the retail markup and get design that was built for the specific press it's printing on.",
       },
       {
         q: "What are your minimums?",
@@ -1000,7 +1016,7 @@ export const SERVICES: Service[] = [
       seoTitle:
         "Print Design in Cumming, GA — Packaging, Labels, Signage & Collateral",
       seoDescription:
-        "Packaging, labels, menus, business cards, signage, and vehicle wraps for Cumming, GA & North Atlanta businesses. FDA-compliant label design, dielines, wholesale print sourcing via Ink Spatter Studio. From $75.",
+        "Packaging, labels, menus, business cards, signage, and vehicle wraps for Cumming, GA & North Atlanta businesses. FDA-compliant label design, dielines, in-house wholesale print sourcing. From $75.",
       keywords: [
         "print services Cumming GA",
         "business card printing Cumming GA",
@@ -1030,7 +1046,7 @@ export const SERVICES: Service[] = [
       serviceType: "Print Services",
       category: "Print Design & Production",
       description:
-        "Business cards, flyers, brochures, banners, yard signs, vehicle wraps, menus, rack cards, postcards, posters, stickers, labels, custom apparel, and trade show displays for small businesses in Cumming, GA and North Metro Atlanta. Wholesale trade pricing. Fast local delivery.",
+        "Business cards, flyers, brochures, postcards, letterhead, presentation folders, door hangers, magnets, indoor and outdoor banners, mesh banners, holiday banners, retractable stands, posters, yard signs, vehicle wraps, menus, stickers, labels, custom apparel, custom tablecloths, feather and teardrop flags, SEG display frames, trade show booths, pop-up displays, branded handouts, and promo giveaways for small businesses in Cumming, GA and North Metro Atlanta. Designed in-house and produced at wholesale pricing through our in-house print pipeline. Fast local delivery.",
     },
   },
 
@@ -1115,13 +1131,13 @@ export const SERVICES: Service[] = [
       highlightWord: "losing your nights to Instagram",
       subhead:
         "Done-for-you content creation, scheduling, and community management for Instagram, Facebook, LinkedIn, and TikTok — for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Real content, real engagement, in your voice.",
-      ctaLabel: "Book a free content audit",
+      ctaLabel: "Book a free 15-min call",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/social-media/hero.png",
         alt: "Dark editorial Instagram content grid floating in 3D — Branding Zombie Designs social media in Cumming, GA",
       },
-      microProof: "From $699/mo · Month-to-month · 30+ brands built up",
+      microProof: "From $699/mo · Month-to-month · 80+ projects delivered",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your feed looks",
@@ -1284,8 +1300,8 @@ export const SERVICES: Service[] = [
       headline: "Your audience already follows you.",
       highlightWord: "Start showing up for them.",
       subhead:
-        "Book a free 20-minute content audit. We'll look at your current feeds, your competitors, and what your audience actually wants — and give you an honest plan either way.",
-      ctaLabel: "Book a free content audit",
+        "Book a free 15-minute call. We'll look at your current feeds, your competitors, and what your audience actually wants — and give you an honest plan either way.",
+      ctaLabel: "Book a free 15-min call",
     },
     related: ["logo-design", "ai-workflows", "web-design"],
     meta: {
@@ -1389,14 +1405,14 @@ export const SERVICES: Service[] = [
       },
     ],
     calloutText:
-      "Klaviyo-certified. Shopify Partner. 30+ brands launched — from single-SKU garage startups to brands doing real volume across DTC and wholesale.",
+      "Klaviyo-certified. Shopify Partner. 80+ projects delivered — from single-SKU garage startups to brands doing real volume across DTC and wholesale.",
     hero: {
       eyebrow: "Ecommerce · Cumming, GA",
       headline: "Sell online without",
       highlightWord: "the tech tax",
       subhead:
         "Custom Shopify and BigCommerce stores built for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Product catalogs, checkout optimization, payment processing, and launch — all handled, nothing left half-done.",
-      ctaLabel: "Book a free store audit",
+      ctaLabel: "Book a free 15-min call",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/ecommerce/hero.png",
@@ -1549,7 +1565,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "How is this different from a $99/month Shopify template or a $399 Shopify Launchpad agency?",
-        a: "Templates get you a store; they don't get you conversions. Templated agencies run hundreds of stores on the same five themes — yours will look like four other companies in your category. We build custom, we know Klaviyo, and we've launched 30+ brands including real DTC winners. When that math doesn't work for you, we'll say so on the call.",
+        a: "Templates get you a store; they don't get you conversions. Templated agencies run hundreds of stores on the same five themes — yours will look like four other companies in your category. We build custom, we know Klaviyo, and we've delivered 80+ projects including real DTC winners. When that math doesn't work for you, we'll say so on the call.",
       },
     ],
     pricing: {
@@ -1564,8 +1580,8 @@ export const SERVICES: Service[] = [
       headline: "Your customers are ready to buy.",
       highlightWord: "Build the store that lets them.",
       subhead:
-        "Book a free 20-minute store audit. We'll look at what you've got, tell you what platform fits, and give you a clear price and timeline — whether we build it or you do.",
-      ctaLabel: "Book a free store audit",
+        "Book a free 15-minute call. We'll look at what you've got, tell you what platform fits, and give you a clear price and timeline — whether we build it or you do.",
+      ctaLabel: "Book a free 15-min call",
     },
     related: ["web-design", "ai-workflows", "logo-design"],
     meta: {
@@ -1669,7 +1685,7 @@ export const SERVICES: Service[] = [
       },
     ],
     calloutText:
-      "30+ brands launched across CPG, retail, restaurants, service, and DTC. A logo from someone who knows how it has to work at 1200px on a website — and at 1 inch on a business card.",
+      "80+ projects delivered across CPG, retail, restaurants, service, and DTC. A logo from someone who knows how it has to work at 1200px on a website — and at 1 inch on a business card.",
     hero: {
       eyebrow: "Logo Design · Cumming, GA",
       headline: "A logo that",
@@ -1682,7 +1698,7 @@ export const SERVICES: Service[] = [
         src: "/assets/services/logo-design/hero.png",
         alt: "Logo design sketches and vector explorations on a dark editorial desk — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "From $750 · 7–14 day delivery · 30+ brands launched",
+      microProof: "From $750 · 7–14 day delivery · 80+ projects delivered",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your logo is",
@@ -1829,7 +1845,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "I've been burned by a cheap logo before. How do I know this will be different?",
-        a: "Two ways. One: see the work at /#portfolio — 30+ brands launched across industries, with real URLs and real marks. Two: the 30-minute discovery brief is free. If after that call you don't believe we're the right fit, you don't owe a dollar.",
+        a: "Two ways. One: see the work at /#portfolio — 80+ projects delivered across industries, with real URLs and real marks. Two: the 30-minute discovery brief is free. If after that call you don't believe we're the right fit, you don't owe a dollar.",
       },
     ],
     pricing: {
@@ -1851,7 +1867,7 @@ export const SERVICES: Service[] = [
     meta: {
       seoTitle: "Logo Design in Cumming, GA — From $750",
       seoDescription:
-        "Custom logo design for small businesses in Cumming, GA & Forsyth County. No templates, no generators — 30+ brands launched. Starter $750 · Growth $1,500 · Premium $2,500. Call (770) 744-2536.",
+        "Custom logo design for small businesses in Cumming, GA & Forsyth County. No templates, no generators — 80+ projects delivered. Starter $750 · Growth $1,500 · Premium $2,500. Call (770) 744-2536.",
       keywords: [
         "logo design Cumming GA",
         "custom logo designer Forsyth County",
@@ -1952,7 +1968,7 @@ export const SERVICES: Service[] = [
         src: "/assets/services/branding/hero.png",
         alt: "Brand identity system pages and collateral mockups — Branding Zombie Designs in Cumming, GA",
       },
-      microProof: "From $2,500 · 2–6 week delivery · 30+ brands launched",
+      microProof: "From $2,500 · 2–6 week delivery · 80+ projects delivered",
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your brand looks like",
@@ -2085,7 +2101,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "What industries have you done brand work for?",
-        a: "Supplements, packaged goods, restaurants, streetwear, construction, custom PC builds, service businesses, DTC ecommerce, medical practices. Thirty-plus brands total. We don't specialize in any one industry — we specialize in launching brands that have to work across web, print, and in-person at the same time.",
+        a: "Supplements, packaged goods, restaurants, streetwear, construction, custom PC builds, service businesses, DTC ecommerce, medical practices. Eighty-plus projects total. We don't specialize in any one industry — we specialize in launching brands that have to work across web, print, and in-person at the same time.",
       },
       {
         q: "Will I own everything?",
@@ -2224,7 +2240,7 @@ export const SERVICES: Service[] = [
       highlightWord: "and on ChatGPT",
       subhead:
         "Local SEO and AI-search optimization for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Ranking in the maps pack is still the core — but in 2026 you also need to show up when your customer asks Claude or ChatGPT.",
-      ctaLabel: "Book a free SEO audit",
+      ctaLabel: "Book a free 15-min call",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/digital-marketing/hero.png",
@@ -2392,8 +2408,8 @@ export const SERVICES: Service[] = [
       headline: "Your next customer is searching for you right now.",
       highlightWord: "Be in the first three results.",
       subhead:
-        "Book a free 20-minute SEO audit. We'll tell you honestly where you rank, where you're leaking, and what the path to the top 3 looks like — whether we're the ones who execute it or not.",
-      ctaLabel: "Book a free SEO audit",
+        "Book a free 15-minute call. We'll tell you honestly where you rank, where you're leaking, and what the path to the top 3 looks like — whether we're the ones who execute it or not.",
+      ctaLabel: "Book a free 15-min call",
     },
     related: ["ai-workflows", "web-design", "social-media"],
     meta: {

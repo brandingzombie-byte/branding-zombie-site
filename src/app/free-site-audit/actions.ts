@@ -1,5 +1,6 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY } from "@/lib/site";
 import { fetchSite, runChecks } from "@/lib/audit/checks";
 import { renderAuditEmail, renderOwnerSummary } from "@/lib/audit/renderEmail";
@@ -17,6 +18,9 @@ export type AuditState = {
   ok: boolean;
   message: string;
   result?: AuditResult;
+  // Set only on a genuine lead (not the honeypot). transaction_id + value for GA4.
+  leadId?: string;
+  value?: number;
 };
 
 const ZERO_WIDTH = /[\u200B-\u200D\uFEFF]/g;
@@ -141,6 +145,8 @@ export async function runPulseCheck(
       message:
         "Report ready below. (We couldn't email a copy — please screenshot or save the page.)",
       result,
+      leadId: randomUUID(),
+      value: 50,
     };
   }
 
@@ -194,5 +200,7 @@ export async function runPulseCheck(
       ? "Report below — and a copy is in your inbox."
       : "Report below. (Email delivery hiccup — save this page or screenshot it.)",
     result,
+    leadId: randomUUID(),
+    value: 50,
   };
 }

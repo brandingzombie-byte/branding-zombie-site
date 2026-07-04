@@ -27,7 +27,7 @@ const options = [
   },
   {
     Icon: Calendar,
-    label: "Book a free audit",
+    label: "Book a free 15-min call",
     value: "15 minutes · no commitment",
     detail: "Walk through your site or brand live on a call.",
     href: CALENDLY_URL,

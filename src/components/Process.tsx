@@ -25,7 +25,7 @@ const steps = [
   },
   {
     n: "03",
-    day: "Day 5–10",
+    day: "Week 1–2",
     title: "We Build",
     description:
       "AI-powered development with real-time preview access. You watch your site come to life.",
@@ -33,7 +33,7 @@ const steps = [
   },
   {
     n: "04",
-    day: "Day 10–14",
+    day: "Week 2–3",
     title: "You Launch",
     description:
       "Go live with full training and support. We make sure everything is perfect before we hand over the keys.",
@@ -70,7 +70,7 @@ export default function Process() {
             </span>
             .{" "}
             <span className="relative inline-block">
-              We launch in days
+              We launch in 2–3
               <span
                 aria-hidden
                 className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
@@ -80,23 +80,27 @@ export default function Process() {
           </h2>
           <p className="measure-tight mt-5 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
             Figma + AI-powered development means a premium site at startup
-            speed, not agency time.
+            speed, not agency time. AI for speed. Humans for taste — every
+            design decision is made by a human, never a generator.
           </p>
         </div>
 
         {/* Step rail — right side, 4 slides on desktop */}
         <div className="lg:col-span-8">
           <div className="relative">
-            {/* Bottom connector line */}
+            {/* Bottom connector line — only meaningful on the 4-across desktop
+                row; hidden once steps stack/wrap (no horizontal alignment). */}
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-12 h-px bg-[var(--color-hairline-strong)]"
+              className="pointer-events-none absolute inset-x-0 bottom-12 hidden h-px bg-[var(--color-hairline-strong)] lg:block"
             />
-            <ol className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible lg:grid-cols-4">
+            {/* Stacked cards on mobile (no ambiguous horizontal scroll), 2-up
+                on small tablets, 4-across timeline on desktop. */}
+            <ol className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
               {steps.map((step, i) => (
                 <li
                   key={step.n}
-                  className="relative flex min-w-[78%] shrink-0 snap-start flex-col sm:min-w-0"
+                  className="relative flex flex-col rounded-xl border border-[var(--color-hairline-strong)] bg-[var(--color-surface-0)] p-5 sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0"
                 >
                   <div className="flex items-baseline gap-3">
                     <span className="tabular font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-none text-[var(--color-neon-text)]">
@@ -125,15 +129,15 @@ export default function Process() {
                     {i === steps.length - 1 && (
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-neon)]/15 px-3 py-1 text-[length:var(--text-caption)] font-semibold uppercase tracking-wider text-[var(--color-neon-text)]">
                         <Clock size={13} weight="regular" />
-                        2 weeks total
+                        2–3 weeks total
                       </span>
                     )}
                   </div>
 
-                  {/* Step dot anchored to the connector line */}
+                  {/* Step dot anchored to the connector line (desktop timeline only) */}
                   <span
                     aria-hidden
-                    className="absolute bottom-[2.5rem] left-0 hidden h-2 w-2 -translate-y-1/2 rounded-full bg-[var(--color-neon-text)] sm:block"
+                    className="absolute bottom-[2.5rem] left-0 hidden h-2 w-2 -translate-y-1/2 rounded-full bg-[var(--color-neon-text)] lg:block"
                   />
                 </li>
               ))}

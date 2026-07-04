@@ -12,8 +12,12 @@ import { HANDS } from "@/data/hands";
 // ── Count-up hook ─────────────────────────────────────────────────────────────
 // Ease-out-quart ramp via requestAnimationFrame. Honors reduced-motion by
 // jumping straight to the final value.
+//
+// SSR/no-JS fallback: state initializes to the REAL target so server-rendered
+// HTML (and any client where JS never hydrates) shows "75%", not "0%". The
+// animation resets to 0 only at the moment it actually starts.
 function useCountUp(target: number, isActive: boolean, duration = 1400) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
   const rafRef = useRef<number>(0);
   const reduce = useReducedMotion();
 
@@ -60,8 +64,11 @@ const stats: StatRow[] = [
     source: "Google / SOASTA",
   },
   {
-    special: "24/7",
-    label: "your competitor's chatbot is open. Yours isn't.",
+    numericValue: 76,
+    suffix: "%",
+    label:
+      "who search a nearby business on their phone visit one within a day. Can they find you?",
+    source: "Google / Think with Google",
   },
 ];
 
@@ -199,6 +206,42 @@ export default function PainPoints() {
           <StatRowItem key={stat.label} stat={stat} index={i} />
         ))}
       </ul>
+
+      {/* Free instant Site Audit — THE primary "free audit" CTA site-wide.
+          The Brand Checkup quiz is intentionally demoted to a secondary text
+          link so the homepage has one next step, not two competing tools. */}
+      <div className="mt-4 flex flex-col items-start gap-5 border-t border-[var(--color-hairline-strong)] pt-10 sm:flex-row sm:items-center sm:justify-between">
+        <div className="max-w-[48ch]">
+          <p className="text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+            Wondering if this is{" "}
+            <span className="relative inline-block">
+              your
+              <span
+                aria-hidden
+                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
+              />
+            </span>{" "}
+            site? The free instant audit grades it in about 60 seconds —
+            instant results, no sales call required.
+          </p>
+          <p className="mt-2 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
+            Want the bigger picture instead?{" "}
+            <a
+              href="/brand-checkup"
+              className="font-semibold text-[var(--color-neon-text)] underline underline-offset-2 hover:no-underline"
+            >
+              Take the 5-minute Brand Checkup →
+            </a>
+          </p>
+        </div>
+        <a
+          href="/free-site-audit"
+          role="button"
+          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--color-text-primary)] px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-cloud)] transition-colors hover:bg-[var(--color-neon-text)]"
+        >
+          Get my free site audit →
+        </a>
+      </div>
     </Section>
   );
 }

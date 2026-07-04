@@ -43,7 +43,7 @@ export default function LocalTrust() {
       >
         {/* Eyebrow + headline — short, no display-font hammering */}
         <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-baseline sm:justify-between">
-          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-none tracking-tight text-text-primary">
+          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.15] tracking-tight text-text-primary">
             Proudly serving{" "}
             <span className="relative inline-block text-text-primary">
               Cumming

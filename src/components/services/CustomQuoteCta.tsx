@@ -107,7 +107,7 @@ export default function CustomQuoteCta({
             </a>
             <p className="text-[length:var(--text-caption)] text-[var(--color-dark-text-dim)]">
               Or skip the form: call (770) 744-2536 or email
-              brandingzombie@gmail.com.
+              hello@brandingzombiedesigns.com.
             </p>
           </div>
         </div>

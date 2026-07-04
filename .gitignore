@@ -36,10 +36,42 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Claude Code — user-local tooling (keep launch.json shared)
-.claude/settings.local.json
+# industry-page raw source design assets (logos/cards/banners used as
+# generation references). Kept locally for re-generation; never committed —
+# some are very large print files. Only the optimized .webp outputs ship.
+public/assets/industries/*/_source/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
 .vercel
+
+# ─── Keep OUT of this public repo (guardrails) ──────────────────────────────
+# Local agent/tooling config
+.claude/
+
+# Sensitive business data — never publish
+/BZD Mailing List - leads-cumming-ga-2026-05-07.csv
+/outreach/
+# content/ is its own git repo (social-media engine) — keep ALL of it out of the
+# public site repo EXCEPT the published blog posts, which belong to the site.
+/content/*
+!/content/blog/
+/Moody_Brews_Coffee_Partnership_Offer.pdf
+/Moody_Brews_Coffee_Site_Audit_Proposal.pdf
+
+# Build scripts with a hardcoded API key — move key to env, then un-ignore
+/generate-portfolio-images.py
+/generate-site-images.py
+
+# Heavy design source files — use asset storage / Git LFS instead
+/Assets creation/
+/Assets to add/
+/SVG/
+/Branding Zombie Hero.aep
+/Branding Zombie Hero.mp4
+/Branding_Zombie_Logo_Icon_turntable.gif
+/BZD_Social Media Templates.ai
+*.aep
+*.ai

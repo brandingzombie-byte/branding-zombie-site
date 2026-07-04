@@ -2,6 +2,12 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllSlugs } from "@/data/services";
 import { getAllPosts } from "@/data/posts";
+import { getAllIndustrySlugs } from "@/data/industries";
+import { getAllLocationServiceSlugs } from "@/data/location-services";
+import { getAllLocationSlugs } from "@/data/locations";
+import { getAllMailerSlugs } from "@/data/mailer-products";
+import { WINDOW_CLINGS_CITY_COPY } from "@/data/window-clings";
+import { TATTOO_CITY_COPY } from "@/data/tattoo-marketing";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
@@ -25,6 +31,69 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const industryPages = getAllIndustrySlugs().map((slug) => ({
+    url: `${SITE_URL}/industries/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  // City landing pages: every enabled service × every city (hub-and-spoke).
+  const locationPages = getAllLocationServiceSlugs().flatMap((slug) =>
+    getAllLocationSlugs().map((city) => ({
+      url: `${SITE_URL}/services/${slug}/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    })),
+  );
+
+  // Direct Mail & EDDM: pillar pages + one variation per service-area city.
+  const mailerPillars = getAllMailerSlugs().map((slug) => ({
+    url: `${SITE_URL}/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+  const mailerCityPages = getAllMailerSlugs().flatMap((slug) =>
+    getAllLocationSlugs().map((city) => ({
+      url: `${SITE_URL}/${slug}/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    })),
+  );
+
+  // Window graphics & clings: pillar page + one variation per city with copy.
+  const windowClingsPillar = {
+    url: `${SITE_URL}/window-clings`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const windowClingsCityPages = Object.keys(WINDOW_CLINGS_CITY_COPY).map(
+    (city) => ({
+      url: `${SITE_URL}/window-clings/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    }),
+  );
+
+  // Tattoo shop marketing: pillar page + one variation per city with copy.
+  const tattooPillar = {
+    url: `${SITE_URL}/tattoo-shop-marketing`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const tattooCityPages = Object.keys(TATTOO_CITY_COPY).map((city) => ({
+    url: `${SITE_URL}/tattoo-shop-marketing/${city}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.88,
+  }));
+
   return [
     {
       url: SITE_URL,
@@ -38,7 +107,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/work`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/industries`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    ...industryPages,
     ...servicePages,
+    ...locationPages,
+    ...mailerPillars,
+    ...mailerCityPages,
+    windowClingsPillar,
+    ...windowClingsCityPages,
+    tattooPillar,
+    ...tattooCityPages,
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,
