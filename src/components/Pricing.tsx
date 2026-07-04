@@ -84,8 +84,8 @@ export default function Pricing() {
           edge="right"
           behaviors={["peek", "idle"]}
           offset="46%"
-          bleed="-14%"
-          scale={1}
+          bleed="-42px"
+          displayWidth={330}
           zIndex={5}
           mobile
         />

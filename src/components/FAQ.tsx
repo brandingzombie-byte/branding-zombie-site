@@ -74,8 +74,8 @@ export default function FAQ() {
           edge="right"
           behaviors={["idle", "follow"]}
           offset="14%"
-          bleed="-16%"
-          scale={0.85}
+          bleed="-30px"
+          displayWidth={230}
           zIndex={5}
         />
       </div>

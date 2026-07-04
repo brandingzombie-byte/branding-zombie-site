@@ -47,6 +47,9 @@ export interface ZombieHandProps {
   offset?: string;
   /** How far the wrist hangs OFF the edge, e.g. "-12%" (the perpendicular inset). */
   bleed?: string;
+  /** Rendered CSS width in px on desktop (the intrinsic 720px assets are far
+   *  too large to render 1:1). Height derives from the intrinsic aspect ratio. */
+  displayWidth?: number;
   /** Desktop scale multiplier. Default 1. */
   scale?: number;
   /** Base rotation in degrees. Default 0. */
@@ -168,6 +171,7 @@ export default function ZombieHand({
   behaviors,
   offset = "50%",
   bleed = "0%",
+  displayWidth,
   scale = 1,
   rotate = 0,
   followStrength = 22,
@@ -311,6 +315,15 @@ export default function ZombieHand({
     const el = rootRef.current;
     if (!el) return;
     setRevealed(false);
+    // CRITICAL: observe the PARENT layer, not the hand itself. The hidden hand
+    // is translated 120% off-edge inside an overflow-clipped layer, so its own
+    // clipped intersection with the viewport is permanently zero and a
+    // self-observer would never fire. The parent layer spans the section and
+    // always intersects. threshold 0 + negative rootMargin ≈ "fires once the
+    // layer crosses into the middle band of the viewport", and threshold 0
+    // also works for zero/near-zero-height seam wrappers where ratio-based
+    // thresholds can never be met.
+    const target = el.parentElement ?? el;
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -318,9 +331,9 @@ export default function ZombieHand({
           io.disconnect();
         }
       },
-      { threshold: 0.35 }
+      { threshold: 0, rootMargin: "0px 0px -18% 0px" }
     );
-    io.observe(el);
+    io.observe(target);
     return () => io.disconnect();
   }, [mounted, hasPeek, reduced]);
 
@@ -358,7 +371,13 @@ export default function ZombieHand({
   const effectiveScale = isMobile ? scale * 0.55 : scale;
   const src2x = src.replace(/\.webp$/i, "@2x.webp");
 
-  const restTransform = `rotate(${rotate}deg) scale(${effectiveScale})`;
+  // Rendered size: displayWidth (px, desktop) is the design-time size knob;
+  // intrinsic width is only a fallback. Scale folds into the CSS width so the
+  // layout box, edge insets, and clipping all agree with what's painted
+  // (transform:scale() would keep a 720px layout box and break the wrist-clip).
+  const cssWidth = Math.round((displayWidth ?? width) * effectiveScale);
+
+  const restTransform = `rotate(${rotate}deg)`;
   const peekOffset =
     edge === "left"
       ? "translateX(-120%) "
@@ -405,6 +424,8 @@ export default function ZombieHand({
   const imgStyle: CSSProperties = {
     display: "block",
     pointerEvents: "none",
+    width: `${cssWidth}px`,
+    height: "auto",
     animation: idleActive
       ? `zh-idle ${idleDur.current.toFixed(2)}s ease-in-out infinite alternate`
       : undefined,

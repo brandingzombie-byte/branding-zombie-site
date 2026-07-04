@@ -42,9 +42,14 @@ export default function Home() {
             wrapped. */}
         <div className="relative">
           <SectionSeparator id={8} />
+          {/* Clip window for the seam hand: spans the separator plus ~210px
+              above it and ENDS at the separator's bottom edge, overflow-hidden,
+              so only the fingertip pokes up out of the seam — never a full
+              720px arm over the Portfolio content, and nothing spills down
+              over Pricing. */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 z-[5]"
+            className="pointer-events-none absolute inset-x-0 bottom-0 top-[-210px] overflow-hidden z-[5]"
           >
             {/* #4 — Point-up, rising toward Pricing's "Pick a package" */}
             <ZombieHand
@@ -54,8 +59,9 @@ export default function Home() {
               edge="bottom"
               behaviors={["peek", "parallax"]}
               offset="12%"
-              bleed="-10%"
-              scale={0.9}
+              bleed="-255px"
+              displayWidth={150}
+              parallaxSpeed={0.08}
               zIndex={5}
             />
           </div>

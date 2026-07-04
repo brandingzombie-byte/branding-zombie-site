@@ -131,9 +131,9 @@ export default function PainPoints() {
           height={HANDS["zh09-thumbsdown-l"].height}
           edge="right"
           behaviors={["peek", "parallax"]}
-          offset="44%"
-          bleed="-14%"
-          scale={1.05}
+          offset="40%"
+          bleed="-46px"
+          displayWidth={360}
           zIndex={5}
           mobile
         />
@@ -145,8 +145,8 @@ export default function PainPoints() {
           edge="left"
           behaviors={["peek", "idle"]}
           offset="6%"
-          bleed="-12%"
-          scale={0.8}
+          bleed="-38px"
+          displayWidth={290}
           zIndex={5}
         />
       </div>

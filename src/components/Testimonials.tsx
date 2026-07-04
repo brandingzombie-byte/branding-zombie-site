@@ -108,8 +108,8 @@ export default function Testimonials() {
           edge="left"
           behaviors={["peek", "follow"]}
           offset="52%"
-          bleed="-14%"
-          scale={1}
+          bleed="-42px"
+          displayWidth={330}
           zIndex={5}
           mobile
         />

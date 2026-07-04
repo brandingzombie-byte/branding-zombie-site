@@ -56,8 +56,8 @@ export default function FinalCTA() {
           edge="left"
           behaviors={["peek", "follow"]}
           offset="40%"
-          bleed="-14%"
-          scale={1}
+          bleed="-46px"
+          displayWidth={350}
           followStrength={30}
           zIndex={5}
         />
