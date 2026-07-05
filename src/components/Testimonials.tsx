@@ -54,7 +54,8 @@ export default function Testimonials() {
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
       >
-        {/* Thumbs-up approval beside the reviews (left edge, cursor-follow) */}
+        {/* Thumbs-up approval beside the reviews (left edge, cursor-follow).
+            Desktop only — mobile gets its own placement below the review box. */}
         <ZombieHand
           src={HANDS["zh01-thumbsup-l"].src}
           width={HANDS["zh01-thumbsup-l"].width}
@@ -65,7 +66,6 @@ export default function Testimonials() {
           bleed="-42px"
           displayWidth={330}
           zIndex={5}
-          mobile
         />
       </div>
       <div
@@ -234,6 +234,29 @@ export default function Testimonials() {
               />
             </Link>
           </aside>
+        </div>
+
+        {/* Mobile-only thumbs-up — sits directly below the Google review box in
+            its own band, bleeding off the left screen edge. Peek + idle sway +
+            a gentle scroll drift so it feels alive without covering the copy. */}
+        <div
+          aria-hidden
+          className="pointer-events-none relative -mx-6 mt-6 h-[140px] overflow-x-clip md:hidden"
+        >
+          <ZombieHand
+            src={HANDS["zh01-thumbsup-l"].src}
+            width={HANDS["zh01-thumbsup-l"].width}
+            height={HANDS["zh01-thumbsup-l"].height}
+            edge="left"
+            behaviors={["peek", "parallax", "idle"]}
+            offset="-4px"
+            bleed="-30px"
+            displayWidth={450}
+            parallaxSpeed={0.1}
+            zIndex={5}
+            mobile
+            mobileParallax
+          />
         </div>
 
         {/* ── Byline switcher — horizontal press strip ── */}

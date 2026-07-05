@@ -66,8 +66,13 @@ export interface ZombieHandProps {
   zIndex?: number;
   /** Extra classes on the root wrapper. */
   className?: string;
-  /** Render on mobile (<768px)? Default false. When true, scale ×0.55 and no follow/parallax. */
+  /** Render on mobile (<768px)? Default false. When true, scale ×0.55 and no follow. */
   mobile?: boolean;
+  /** Allow scroll-parallax on mobile (cursor-follow is never possible without a
+   *  pointer). Default false so existing desktop hands are unaffected. Combine
+   *  with `mobile` + a `parallax` behavior to make a hand drift on scroll on
+   *  phones. */
+  mobileParallax?: boolean;
 }
 
 /* ------------------------------------------------------------------ *
@@ -184,6 +189,7 @@ export default function ZombieHand({
   zIndex,
   className,
   mobile = false,
+  mobileParallax = false,
 }: ZombieHandProps) {
   const hasPeek = behaviors.includes("peek");
   const hasIdle = behaviors.includes("idle");
@@ -207,7 +213,10 @@ export default function ZombieHand({
 
   // Derived motion gating.
   const idleActive = hasIdle && !reduced; // idle allowed on mobile
-  const parallaxActive = hasParallax && !reduced && !isMobile;
+  // Parallax runs on desktop always, and on mobile only when explicitly opted in
+  // (`mobileParallax`). Follow needs a real pointer, so it stays desktop-only.
+  const parallaxActive =
+    hasParallax && !reduced && (isMobile ? mobileParallax : true);
   const followActive =
     hasFollow && !reduced && !isMobile && pointerFine;
 

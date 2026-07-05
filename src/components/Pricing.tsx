@@ -24,7 +24,9 @@ export default function Pricing() {
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
       >
-        {/* Thumbs-up endorsing the kit ladder (right edge) */}
+        {/* Thumbs-up endorsing the kit ladder (right edge). Desktop only now —
+            on mobile it read as a hand "hiding behind" the cards, so mobile gets
+            a clearer second hand off the left edge (below the header). */}
         <ZombieHand
           src={HANDS["zh37-thumbsup-r"].src}
           width={HANDS["zh37-thumbsup-r"].width}
@@ -35,7 +37,6 @@ export default function Pricing() {
           bleed="-42px"
           displayWidth={330}
           zIndex={5}
-          mobile
         />
       </div>
       <div
@@ -68,6 +69,29 @@ export default function Pricing() {
             than buying à la carte. Just opening? Start with the $997 Launch
             Kit. Every package includes a free discovery call.
           </p>
+        </div>
+
+        {/* Mobile-only thumbs-up — comes off the left screen edge in its own
+            band between the intro and the kit ladder, endorsing the packages
+            below. Peek + idle sway + gentle scroll parallax so it feels alive. */}
+        <div
+          aria-hidden
+          className="pointer-events-none relative -mx-6 mt-8 h-[145px] overflow-x-clip md:hidden"
+        >
+          <ZombieHand
+            src={HANDS["zh01-thumbsup-l"].src}
+            width={HANDS["zh01-thumbsup-l"].width}
+            height={HANDS["zh01-thumbsup-l"].height}
+            edge="left"
+            behaviors={["peek", "parallax", "idle"]}
+            offset="6px"
+            bleed="-30px"
+            displayWidth={450}
+            parallaxSpeed={0.1}
+            zIndex={5}
+            mobile
+            mobileParallax
+          />
         </div>
 
         {/* $997 promo banner — leads the pricing with the budget-friendly

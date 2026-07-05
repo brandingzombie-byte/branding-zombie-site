@@ -132,7 +132,8 @@ export default function PainPoints() {
         className="pointer-events-none absolute inset-0 z-[-1] overflow-x-clip"
       >
         {/* #1 — Thumbs-down at the bad-website stats (right edge, hero moment).
-             Flipped so the arm reads correctly entering from the right. */}
+             Flipped so the arm reads correctly entering from the right.
+             Desktop only — mobile gets its own placement above the stats. */}
         <ZombieHand
           src={HANDS["zh09-thumbsdown-l"].src}
           width={HANDS["zh09-thumbsdown-l"].width}
@@ -144,7 +145,6 @@ export default function PainPoints() {
           displayWidth={432}
           flip
           zIndex={5}
-          mobile
         />
       </div>
 
@@ -190,8 +190,34 @@ export default function PainPoints() {
         </p>
       </div>
 
+      {/* Mobile-only thumbs-down — sits in its own band right above the stats,
+          underneath the intro paragraph, bleeding off the right screen edge.
+          `-mx-6` breaks it out of the padded container so the wrist hangs off
+          the true viewport edge; the band reserves its own height so the hand
+          is part of the layout instead of covering the stat text. */}
+      <div
+        aria-hidden
+        className="pointer-events-none relative -mx-6 mt-8 h-[150px] overflow-x-clip md:hidden"
+      >
+        <ZombieHand
+          src={HANDS["zh09-thumbsdown-l"].src}
+          width={HANDS["zh09-thumbsdown-l"].width}
+          height={HANDS["zh09-thumbsdown-l"].height}
+          edge="right"
+          behaviors={["peek", "parallax", "idle"]}
+          offset="-6px"
+          bleed="-32px"
+          displayWidth={450}
+          parallaxSpeed={0.1}
+          flip
+          zIndex={5}
+          mobile
+          mobileParallax
+        />
+      </div>
+
       {/* Stats — editorial data spread */}
-      <ul className="mt-10" aria-label="Industry statistics">
+      <ul className="mt-4 md:mt-10" aria-label="Industry statistics">
         {stats.map((stat, i) => (
           <StatRowItem key={stat.label} stat={stat} index={i} />
         ))}

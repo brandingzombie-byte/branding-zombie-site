@@ -5,6 +5,8 @@ import Section from "@/components/Section";
 import ServicesBrutalistGrid from "@/components/services/ServicesBrutalistGrid";
 import { SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 
 export default function Services() {
   const { ref, isInView } = useInView(0.05);
@@ -53,6 +55,31 @@ export default function Services() {
             stakes, making you money is the job. Pick one service à la carte,
             or bundle several and save with a package below.
           </p>
+        </div>
+
+        {/* Mobile-only pointing finger — sits in its own band between the
+            header and the service grid, arm bleeding off the left screen edge,
+            index finger angled down toward the boxes right below it. A gentle
+            scroll parallax makes it "gesture" at the cards as you scroll
+            (the desktop equivalent tracks the cursor over on the Process rail). */}
+        <div
+          aria-hidden
+          className="pointer-events-none relative -mx-6 mt-4 h-[150px] overflow-x-clip md:hidden"
+        >
+          <ZombieHand
+            src={HANDS["zh25-point-diag"].src}
+            width={HANDS["zh25-point-diag"].width}
+            height={HANDS["zh25-point-diag"].height}
+            edge="left"
+            behaviors={["peek", "parallax", "idle"]}
+            offset="-30px"
+            bleed="-46px"
+            displayWidth={345}
+            parallaxSpeed={0.08}
+            zIndex={5}
+            mobile
+            mobileParallax
+          />
         </div>
 
         <ServicesBrutalistGrid services={homepageServices} />
