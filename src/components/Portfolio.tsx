@@ -117,11 +117,12 @@ export default function Portfolio() {
           width={HANDS["zh11-point-up"].width}
           height={HANDS["zh11-point-up"].height}
           edge="right"
-          behaviors={["peek", "idle", "parallax"]}
+          behaviors={["peek", "idle", "parallax", "follow"]}
           offset="58%"
           bleed="-52px"
-          displayWidth={200}
+          displayWidth={260}
           rotate={-38}
+          followStrength={38}
           zIndex={5}
         />
       </div>

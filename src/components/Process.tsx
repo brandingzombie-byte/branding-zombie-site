@@ -67,7 +67,7 @@ export default function Process() {
           behaviors={["peek", "follow", "idle"]}
           offset="24%"
           bleed="-40px"
-          displayWidth={290}
+          displayWidth={330}
           zIndex={5}
         />
       </div>

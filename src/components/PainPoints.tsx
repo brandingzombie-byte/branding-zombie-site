@@ -138,10 +138,10 @@ export default function PainPoints() {
           width={HANDS["zh09-thumbsdown-l"].width}
           height={HANDS["zh09-thumbsdown-l"].height}
           edge="right"
-          behaviors={["peek", "parallax", "idle"]}
+          behaviors={["peek", "parallax", "idle", "follow"]}
           offset="40%"
           bleed="-46px"
-          displayWidth={360}
+          displayWidth={432}
           flip
           zIndex={5}
           mobile
