@@ -1537,11 +1537,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "What does setup cost?",
-        a: "One-time Email Engine Setup is $750 — platform configuration, deliverability records (SPF/DKIM/DMARC), a branded master template, list import with hygiene pass, and a 3-email welcome series. It's waived on Full Funnel and credited if you start on Growth within 60 days.",
+        a: "One-time Email Engine Setup is a flat $350 — platform configuration, deliverability records (SPF/DKIM/DMARC), a branded master template, list import with hygiene pass, and a 3-email welcome series. It's waived on Full Funnel and credited if you start on Growth within 60 days.",
       },
       {
         q: "My list is tiny. Is this worth it?",
-        a: "Honest answer: below a few hundred contacts, a monthly retainer is premature. Start with the $750 setup so every new customer gets captured and welcomed automatically, add a lead magnet to grow the list, and step into a monthly plan when the math works. We'll tell you which side of that line you're on in the free call.",
+        a: "Honest answer: below a few hundred contacts, a monthly retainer is premature. Start with the flat $350 setup so every new customer gets captured and welcomed automatically, add a lead magnet to grow the list, and step into a monthly plan when the math works. We'll tell you which side of that line you're on in the free call.",
       },
       {
         q: "Who writes the emails?",
@@ -1568,7 +1568,7 @@ export const SERVICES: Service[] = [
       label: "Monthly plans start at",
       price: "$499",
       unit: "/ month",
-      note: "Month-to-month. Growth at $899 adds automations and segmentation; Full Funnel at $1,499 runs the whole channel. One-time Email Engine Setup (platform + template + welcome series) — $750.",
+      note: "Month-to-month. Growth at $899 adds automations and segmentation; Full Funnel at $1,499 runs the whole channel. One-time Email Engine Setup (platform + template + welcome series) — flat $350.",
       numericPrice: "499",
     },
     finalCta: {

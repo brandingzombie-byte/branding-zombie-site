@@ -84,11 +84,11 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
   },
   "email-marketing": {
     answerFirst:
-      "Email marketing from Branding Zombie Designs is done-for-you campaign design, copywriting, and automation for small businesses in Cumming, GA and across North Metro Atlanta — Klaviyo, Mailchimp, or Resend, from $499/month with a one-time $750 setup, month-to-month, and the client owns the list. Deliverability (SPF/DKIM/DMARC) is configured as step one so campaigns land in the inbox, not spam.",
+      "Email marketing from Branding Zombie Designs is done-for-you campaign design, copywriting, and automation for small businesses in Cumming, GA and across North Metro Atlanta — Klaviyo, Mailchimp, or Resend, from $499/month with a flat $350 one-time setup, month-to-month, and the client owns the list. Deliverability (SPF/DKIM/DMARC) is configured as step one so campaigns land in the inbox, not spam.",
     stats: [
       { value: "$499/mo", label: "Starting, month-to-month" },
       { value: "15+ yrs", label: "Campaign design for CPG & DTC brands" },
-      { value: "$750", label: "One-time setup — platform, template, welcome series" },
+      { value: "$350", label: "Flat one-time setup — platform, template, welcome series" },
     ],
     expertQuote: quote(
       "Almost every business I meet has the same asset gathering dust: a list of customers who already said yes once, that nobody has emailed in years. We run our own automated email engine on this site — the same machine we build for clients.",
