@@ -1,7 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
+import { after } from "next/server";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY, SITE_URL } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 import { renderQuoteConfirmation, renderQuoteOwnerNotification } from "@/lib/quoteEmail";
 import { KITS_BY_SLUG, isKitSlug } from "@/data/kits";
 
@@ -329,6 +331,15 @@ export async function submitQuoteRequest(
       message:
         "Something went wrong on our end. Please email us directly — details on the contact page.",
     };
+  }
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[quote] drip enrollment scheduling failed:", err);
   }
 
   return {

@@ -1,8 +1,10 @@
 "use server";
 
+import { after } from "next/server";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY } from "@/lib/site";
 import { computeResult, emptyAnswers, SECTIONS, type Answers } from "@/lib/brand-checkup/data";
 import { renderCheckupEmail } from "@/lib/brand-checkup/renderEmail";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 
 // Server action invoked from the results screen of the Brand Checkup quiz when
 // the visitor opts to have their report emailed. Scoring happens client-side
@@ -125,6 +127,15 @@ export async function emailCheckup(
   if (!visitorResp.ok) {
     console.error("[brand-checkup] visitor email failed:", visitorResp.error);
     return { ok: false, message: "Hit a snag sending it. Call us and we'll send it manually." };
+  }
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[brand-checkup] drip enrollment scheduling failed:", err);
   }
 
   return { ok: true, message: "On its way! Check your inbox in a minute." };

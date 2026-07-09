@@ -1,7 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
+import { after } from "next/server";
 import { EMAIL } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 
 // Server action invoked by the contact form. Sends the lead directly to the
 // owner's inbox via Resend's HTTP API — no SDK needed, keeps the dependency
@@ -116,6 +118,15 @@ export async function submitContact(
       message:
         "We couldn't reach our mail service. Please call or email us directly — details above.",
     };
+  }
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[contact] drip enrollment scheduling failed:", err);
   }
 
   return {

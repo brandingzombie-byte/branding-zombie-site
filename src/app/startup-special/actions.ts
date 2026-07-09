@@ -1,7 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
+import { after } from "next/server";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF, SITE_URL } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 
 // ─── Server action for the Startup Special booking form ────────────────────
 // Captures a lead, sends two emails via Resend (visitor confirmation + owner
@@ -227,6 +229,15 @@ export async function bookStartupSpecial(
 
   if (!visitorResp.ok) console.error("[startup-special] visitor email failed:", visitorResp.error);
   if (!ownerResp.ok) console.error("[startup-special] owner email failed:", ownerResp.error);
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[startup-special] drip enrollment scheduling failed:", err);
+  }
 
   return {
     ok: true,
