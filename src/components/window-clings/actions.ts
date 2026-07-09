@@ -1,6 +1,8 @@
 "use server";
 
+import { after } from "next/server";
 import { EMAIL } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 
 // Server action for the Window Graphics lead form. Same Resend HTTP delivery as
 // the mailer / contact forms, but source-tagged (product + city) so window
@@ -132,6 +134,15 @@ export async function submitWindowClingsLead(
       message:
         "We couldn't reach our mail service. Call or text us instead — the number's on the page.",
     };
+  }
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[window-clings] drip enrollment scheduling failed:", err);
   }
 
   return {

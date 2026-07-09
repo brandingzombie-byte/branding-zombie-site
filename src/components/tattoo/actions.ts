@@ -1,6 +1,8 @@
 "use server";
 
+import { after } from "next/server";
 import { EMAIL } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 
 // Server action for the Tattoo Shop Marketing lead form. Same Resend HTTP
 // delivery as the window-clings / mailer / contact forms, but source-tagged
@@ -135,6 +137,15 @@ export async function submitTattooLead(
       message:
         "We couldn't reach our mail service. Call or text us instead — the number's on the page.",
     };
+  }
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[tattoo] drip enrollment scheduling failed:", err);
   }
 
   return {

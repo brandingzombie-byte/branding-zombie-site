@@ -1,7 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
+import { after } from "next/server";
 import { CALENDLY_URL, EMAIL, PHONE_DISPLAY } from "@/lib/site";
+import { enrollLead, splitName } from "@/lib/drip/enroll";
 import { fetchSite, runChecks } from "@/lib/audit/checks";
 import { renderAuditEmail, renderOwnerSummary } from "@/lib/audit/renderEmail";
 import type { AuditResult } from "@/lib/audit/types";
@@ -193,6 +195,15 @@ export async function runPulseCheck(
 
   if (!visitorResp.ok) console.error("[audit] visitor email failed:", visitorResp.error);
   if (!ownerResp.ok) console.error("[audit] owner email failed:", ownerResp.error);
+
+  // Fire-and-forget: enroll this lead in the nurture drip audience after the
+  // response goes out. Enrollment must never block or fail the submission.
+  try {
+    const { first, last } = splitName(name);
+    after(() => enrollLead(email, first, last));
+  } catch (err) {
+    console.error("[audit] drip enrollment scheduling failed:", err);
+  }
 
   return {
     ok: true,
