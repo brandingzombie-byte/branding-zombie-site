@@ -45,4 +45,9 @@ export const FAQS: Faq[] = [
     answer:
       "Absolutely. Our in-house catalog covers 30+ products — business cards, flyers, brochures, banners, retractable stands, posters, custom tablecloths, feather flags, SEG display frames, trade-show booths, yard signs, vehicle wraps, custom apparel, and more — designed and produced under one roof at wholesale pricing, often faster and cheaper than your local print shop.",
   },
+  {
+    question: "Do you handle ongoing marketing — social media and email?",
+    answer:
+      "Yes. Managed social media starts at $699/month and done-for-you email marketing at $499/month — both month-to-month, both draft-and-approve so nothing goes out without your sign-off. Combined with local SEO plans from $499/month, we cover the whole ongoing-marketing stack under one roof, and you own every account and every subscriber.",
+  },
 ];

@@ -82,6 +82,18 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
       "Most small-business feeds die because nobody knows what to post. We take that whole decision off your plate — a month of content, designed in your brand, approved before it ever goes live.",
     ),
   },
+  "email-marketing": {
+    answerFirst:
+      "Email marketing from Branding Zombie Designs is done-for-you campaign design, copywriting, and automation for small businesses in Cumming, GA and across North Metro Atlanta — Klaviyo, Mailchimp, or Resend, from $499/month with a flat $350 one-time setup, month-to-month, and the client owns the list. Deliverability (SPF/DKIM/DMARC) is configured as step one so campaigns land in the inbox, not spam.",
+    stats: [
+      { value: "$499/mo", label: "Starting, month-to-month" },
+      { value: "15+ yrs", label: "Campaign design for CPG & DTC brands" },
+      { value: "$350", label: "Flat one-time setup — platform, template, welcome series" },
+    ],
+    expertQuote: quote(
+      "Almost every business I meet has the same asset gathering dust: a list of customers who already said yes once, that nobody has emailed in years. We run our own automated email engine on this site — the same machine we build for clients.",
+    ),
+  },
   ecommerce: {
     answerFirst:
       "Ecommerce development from Branding Zombie Designs is conversion-focused Shopify, WooCommerce, and custom online-store design for product brands in Cumming, GA, North Metro Atlanta, and nationwide — product pages, subscriptions, and integrations like Klaviyo and reviews, from $3,000. Built by a 15+ year CPG designer who has shipped real brands, not free themes.",
@@ -198,6 +210,21 @@ export const SERVICE_COMPARISON: Partial<
       { label: "On-brand", us: "Custom, in your brand", them: "Random Canva templates" },
       { label: "Strategy", us: "Quarterly pillars + reporting", them: "Vibes" },
       { label: "Cost", us: "From $699/mo, month-to-month", them: "Cheap, and it shows" },
+    ],
+  },
+  "email-marketing": {
+    title: "Managed email vs. the dusty Mailchimp login",
+    intro:
+      "How done-for-you email from Branding Zombie compares to the account you signed up for and never opened.",
+    us: "Branding Zombie",
+    them: "DIY / dormant account",
+    rows: [
+      { label: "Consistency", us: "Campaigns ship every month, approved by you", them: "Last send: unknown" },
+      { label: "Deliverability", us: "SPF/DKIM/DMARC configured first", them: "Straight to spam, silently" },
+      { label: "Design & copy", us: "On-brand, written in your voice", them: "Default template, blank page" },
+      { label: "Automations", us: "Welcome, win-back, cart recovery", them: "None running" },
+      { label: "Ownership", us: "Your account, your list, always", them: "Yours too — just unused" },
+      { label: "Cost", us: "From $499/mo, month-to-month", them: "Platform fee for nothing" },
     ],
   },
   ecommerce: {

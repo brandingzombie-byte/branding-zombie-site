@@ -14,6 +14,7 @@ export type ServiceSlug =
   | "ecommerce"
   | "print-design"
   | "social-media"
+  | "email-marketing"
   | "digital-marketing"
   | "ai-workflows"
   | "launch-package";
@@ -1303,7 +1304,7 @@ export const SERVICES: Service[] = [
         "Book a free 15-minute call. We'll look at your current feeds, your competitors, and what your audience actually wants — and give you an honest plan either way.",
       ctaLabel: "Book a free 15-min call",
     },
-    related: ["logo-design", "ai-workflows", "web-design"],
+    related: ["email-marketing", "logo-design", "web-design"],
     meta: {
       seoTitle:
         "Social Media Management in Cumming, GA — From $699/mo",
@@ -1330,6 +1331,281 @@ export const SERVICES: Service[] = [
       category: "Social Media Marketing",
       description:
         "Done-for-you social media management for small businesses in Cumming, GA and across North Metro Atlanta — content creation, scheduling, community management, and monthly reporting for Instagram, Facebook, and TikTok. Plans start at $400/month with no long-term contracts.",
+    },
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // EMAIL MARKETING
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    slug: "email-marketing",
+    name: "Email Marketing",
+    shortName: "Email",
+    tagline: "The customers you already have, buying again",
+    iconSvg: "/assets/icon-email.svg",
+    themeAccent: "toxic",
+    homeCardPrice: "from $499/mo",
+    homeCardDescription:
+      "Your customer list is a goldmine playing dead. We wake it up.",
+    hook: "The cheapest customer to win is the one who already bought from you. Email is how you reach them — and almost nobody in your market is doing it.",
+    whoThisIsFor: [
+      "Local businesses sitting on years of customer emails nobody has ever written to",
+      "Service businesses with seasonal or repeat work (HVAC tune-ups, detailing, lawn care) and no reminder system",
+      "Ecommerce and CPG brands leaving abandoned-cart and win-back revenue on the table",
+      "Restaurants and retail with a POS full of emails and zero plan for them",
+    ],
+    tiers: [
+      {
+        name: "Starter",
+        price: "$499/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        deliverables: [
+          "2 campaigns per month — designed, written, and sent",
+          "Platform of your choice (Klaviyo, Mailchimp, or Resend)",
+          "List hygiene + CAN-SPAM compliance handled",
+          "Branded master template in your identity",
+          "Monthly performance report (opens, clicks, revenue)",
+        ],
+        bestFor:
+          "Businesses that want a consistent newsletter and promos going out without touching it.",
+        ctaLabel: "Start with Starter",
+      },
+      {
+        name: "Growth",
+        price: "$899/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        isFeature: true,
+        deliverables: [
+          "4 campaigns per month",
+          "1 new automation flow built each quarter (welcome, win-back, review requests…)",
+          "Audience segmentation — right message, right people",
+          "A/B subject-line testing on every send",
+          "Quarterly strategy call",
+        ],
+        bestFor:
+          "Businesses ready to treat the list as a real revenue channel, not an afterthought.",
+        ctaLabel: "Choose Growth",
+      },
+      {
+        name: "Full Funnel",
+        price: "$1,499/mo",
+        priceNote: "Month-to-month",
+        timeline: "Monthly",
+        deliverables: [
+          "Weekly campaigns (4–5 sends per month)",
+          "Full automation suite — welcome, abandoned cart, post-purchase, win-back, replenishment",
+          "Advanced segmentation + sunset policies for list health",
+          "Revenue attribution reporting — what email actually made you",
+          "1 promo landing page per quarter",
+        ],
+        bestFor:
+          "Ecommerce and CPG brands where email should be doing 20–30% of revenue.",
+        ctaLabel: "Book a strategy call",
+      },
+    ],
+    calloutText:
+      "Campaigns designed by someone who spent 15+ years making DTC supplement and CPG brands sell — and who runs an automated email engine on this very website. We eat our own cooking.",
+    hero: {
+      eyebrow: "Email Marketing · Cumming, GA",
+      headline: "Your customer list is",
+      highlightWord: "a goldmine playing dead",
+      subhead:
+        "Done-for-you email campaigns and automations for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. We design it, write it, send it, and report on it — you own the list and every subscriber on it.",
+      ctaLabel: "Book a free 15-min call",
+      ctaHref: CALENDLY_URL,
+      heroImage: {
+        src: "/assets/services/email-marketing/hero.png",
+        alt: "Dark editorial email campaign design — Branding Zombie Designs email marketing in Cumming, GA",
+      },
+      microProof: "From $499/mo · Month-to-month · You own the list",
+    },
+    painPointsEyebrow: "Sound familiar?",
+    painPointsHeadline: "You've been collecting emails",
+    painPointsHighlight: "and sending nothing",
+    painPointsIntro:
+      "Every business collects emails. Almost none of them use them. Meanwhile the one competitor who sends a decent newsletter every week is quietly booking your customers' next job.",
+    painPoints: [
+      { text: "You have hundreds — maybe thousands — of customer emails from years of invoices, and you've never sent them a single thing." },
+      { text: "The only email your customers ever get from you is a receipt." },
+      { text: "You signed up for Mailchimp in 2023, logged in twice, and it's been billing you ever since." },
+      { text: "You know your customers need the service again — tune-ups, refills, reorders — but the reminder system is 'hope they remember you.'" },
+      { text: "You tried a newsletter once, it took a whole Sunday, three people opened it, and you never did it again." },
+    ],
+    offerEyebrow: "One monthly engagement · List to revenue",
+    offerHeadline: "Email that",
+    offerHighlight: "actually gets sent",
+    offerSubhead:
+      "The hard part of email isn't writing one — it's shipping one every single month, on brand, to the right segment, without landing in spam. That's the whole job. We do the whole job.",
+    deliverables: [
+      {
+        title: "Campaign Design & Copy",
+        description:
+          "Every send designed in your brand and written in your voice — promos, newsletters, announcements, seasonal pushes. You approve before anything goes out.",
+      },
+      {
+        title: "Automation Flows",
+        description:
+          "Welcome series, abandoned cart, post-purchase, win-back, review requests, service reminders. Emails that send themselves at exactly the right moment, forever.",
+      },
+      {
+        title: "Deliverability & Compliance",
+        description:
+          "SPF, DKIM, and DMARC configured so your emails land in the inbox instead of spam — plus CAN-SPAM compliance and unsubscribe handling done right. We've debugged this plumbing on our own domain; we know where it breaks.",
+      },
+      {
+        title: "Segmentation",
+        description:
+          "New customers, lapsed customers, big spenders, one-timers — each gets the message that fits. Blasting everyone the same email is how lists die.",
+      },
+      {
+        title: "Platform Setup & Migration",
+        description:
+          "Klaviyo, Mailchimp, Resend, or Constant Contact — set up clean or migrated from whatever half-configured account you're escaping. Your account, your login, your list.",
+      },
+      {
+        title: "Reporting That Names Numbers",
+        description:
+          "Opens, clicks, unsubscribes, and — where your platform supports it — actual revenue per send. One page, plain English, every month.",
+      },
+    ],
+    gallery: {
+      title: "Campaign creative from the DTC years.",
+      description:
+        "Promos, product launches, and lifestyle campaign creative for supplement, beauty, and food brands — the same design muscle that goes into every email we send for you.",
+      items: getServiceGalleryItems("email-marketing", {
+        pinned: [
+          "swet-campaign",
+          "pruvit-mailer",
+          "rita-carnitine",
+          "dmax10-watermelon",
+          "bnox-tropical",
+          "josh-bnox-banner",
+          "ans-ad",
+          "simply-aminos-lifestyle",
+          "shield-labs-multi",
+        ],
+        limit: 9,
+      }),
+    },
+    processEyebrow: "How it works",
+    processHeadline: "From dead list",
+    processHighlight: "to revenue channel",
+    process: [
+      {
+        step: "01",
+        title: "List Autopsy",
+        subtitle: "Free",
+        description:
+          "We look at what you have — list size, where it lives, when it was last emailed, and what shape it's in. You get an honest read on the opportunity either way.",
+        icon: "ChatCircle",
+      },
+      {
+        step: "02",
+        title: "Setup & First Flow",
+        description:
+          "Platform configured, deliverability records fixed, branded master template built, and a welcome series wired up. The foundation everything else sends on.",
+        icon: "Wrench",
+      },
+      {
+        step: "03",
+        title: "Campaigns Ship",
+        description:
+          "Every month you get the calendar and the drafts to approve. Once approved, we send. You don't open the platform unless you want to.",
+        icon: "Lightning",
+      },
+      {
+        step: "04",
+        title: "Report & Optimize",
+        description:
+          "Monthly one-pager: what went out, who opened, what it made, what we're changing. Subject lines, send times, and segments get sharper every month.",
+        icon: "RocketLaunch",
+      },
+    ],
+    faqEyebrow: "FAQ",
+    faqHeadline: "Questions owners ask",
+    faqHighlight: "before they hit send",
+    faqs: [
+      {
+        q: "Which email platforms do you work with?",
+        a: "Klaviyo (our default for ecommerce), Mailchimp, Resend, and Constant Contact. If you're already on something, we work with it or migrate you cleanly. Platform subscription fees are paid by you, directly to the platform — we never mark them up.",
+      },
+      {
+        q: "Do I own my list?",
+        a: "Completely. The account is yours, the login is yours, every subscriber is yours. If we ever part ways, you keep the list, the templates, and every automation we built. No hostage-taking.",
+      },
+      {
+        q: "What does setup cost?",
+        a: "One-time Email Engine Setup is a flat $350 — platform configuration, deliverability records (SPF/DKIM/DMARC), a branded master template, list import with hygiene pass, and a 3-email welcome series. It's waived on Full Funnel and credited if you start on Growth within 60 days.",
+      },
+      {
+        q: "My list is tiny. Is this worth it?",
+        a: "Honest answer: below a few hundred contacts, a monthly retainer is premature. Start with the flat $350 setup so every new customer gets captured and welcomed automatically, add a lead magnet to grow the list, and step into a monthly plan when the math works. We'll tell you which side of that line you're on in the free call.",
+      },
+      {
+        q: "Who writes the emails?",
+        a: "We do, in your voice — same as our social plans. You see every campaign before it sends and nothing goes out without your approval. Draft-and-approve, always.",
+      },
+      {
+        q: "Will my emails land in spam?",
+        a: "Not if the plumbing is right, and fixing the plumbing is step one. We configure SPF, DKIM, and DMARC on your domain, warm up sending gradually, and keep list hygiene tight. We've diagnosed and fixed deliverability failures on our own domain — it's exactly the kind of invisible problem we check first.",
+      },
+      {
+        q: "Is email even still worth it?",
+        a: "For repeat-purchase businesses it's usually the highest-ROI channel they're not using. You're reaching people who already chose you, on a channel you own — no algorithm deciding who sees it, no ad auction. That's the whole pitch: owned audience, near-zero distribution cost.",
+      },
+      {
+        q: "Is there a contract?",
+        a: "Month-to-month, 30 days notice, same as our social plans. If the reports don't justify the retainer, you cancel and keep everything we built.",
+      },
+      {
+        q: "Can you tie this into my website and social?",
+        a: "That's the point. Lead capture on your site feeds the list, the welcome series converts it, and campaign creative gets repurposed across social. Email works best as part of the machine — and we build every part of the machine.",
+      },
+    ],
+    pricing: {
+      label: "Monthly plans start at",
+      price: "$499",
+      unit: "/ month",
+      note: "Month-to-month. Growth at $899 adds automations and segmentation; Full Funnel at $1,499 runs the whole channel. One-time Email Engine Setup (platform + template + welcome series) — flat $350.",
+      numericPrice: "499",
+    },
+    finalCta: {
+      eyebrow: "Your list is waiting",
+      headline: "They already bought from you once.",
+      highlightWord: "Remind them you exist.",
+      subhead:
+        "Book a free 15-minute call. We'll do a straight-up list autopsy — what you have, what it's worth, and what we'd send first — and give you an honest plan either way.",
+      ctaLabel: "Book a free 15-min call",
+    },
+    related: ["social-media", "digital-marketing", "ecommerce"],
+    meta: {
+      seoTitle:
+        "Email Marketing for Small Businesses in Cumming, GA — From $499/mo",
+      seoDescription:
+        "Done-for-you email marketing for small businesses in Cumming, GA & Forsyth County. Campaigns, Klaviyo/Mailchimp automations, and deliverability handled — from $499/mo, month-to-month, you own the list. Call (770) 744-2536.",
+      keywords: [
+        "email marketing Cumming GA",
+        "email marketing agency Forsyth County",
+        "Klaviyo agency Cumming GA",
+        "Mailchimp management Atlanta",
+        "email newsletter service small business",
+        "abandoned cart email flows",
+        "email automation small business Georgia",
+        "welcome series email setup",
+        "email campaigns Cumming Georgia",
+        "small business newsletter Forsyth County",
+      ],
+      ogImage: "/assets/services/email-marketing/hero.png",
+      ogImageAlt:
+        "Email marketing for small businesses in Cumming, GA — Branding Zombie Designs",
+    },
+    schema: {
+      serviceType: "Email Marketing",
+      category: "Digital Marketing",
+      description:
+        "Done-for-you email marketing for small businesses in Cumming, GA and across North Metro Atlanta — campaign design and copywriting, Klaviyo and Mailchimp automation flows, deliverability setup, segmentation, and monthly revenue reporting. Plans start at $499/month, month-to-month, and the client owns the list.",
     },
   },
 
@@ -1583,7 +1859,7 @@ export const SERVICES: Service[] = [
         "Book a free 15-minute call. We'll look at what you've got, tell you what platform fits, and give you a clear price and timeline — whether we build it or you do.",
       ctaLabel: "Book a free 15-min call",
     },
-    related: ["web-design", "ai-workflows", "logo-design"],
+    related: ["web-design", "email-marketing", "logo-design"],
     meta: {
       seoTitle:
         "Shopify & Ecommerce Developer in Cumming, GA — From $3,000",
@@ -2411,7 +2687,7 @@ export const SERVICES: Service[] = [
         "Book a free 15-minute call. We'll tell you honestly where you rank, where you're leaking, and what the path to the top 3 looks like — whether we're the ones who execute it or not.",
       ctaLabel: "Book a free 15-min call",
     },
-    related: ["ai-workflows", "web-design", "social-media"],
+    related: ["email-marketing", "web-design", "social-media"],
     meta: {
       seoTitle: "Local SEO + GEO for Cumming, GA — From $499/mo",
       seoDescription:

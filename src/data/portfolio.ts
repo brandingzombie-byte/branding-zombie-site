@@ -256,7 +256,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "All-in-one daily multivitamin campaign visual — packaging, athlete photography, and tagline locked together for paid social and web hero.",
     image: "/assets/services/branding-design/Shield%20Labs.png",
-    services: ["branding", "social-media", "digital-marketing"],
+    services: ["branding", "social-media", "digital-marketing", "email-marketing"],
     aspect: "wide",
     formats: ["banner", "lifestyle", "campaign"],
     industry: "supplements",
@@ -372,7 +372,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Packaging plus lifestyle campaign assets. Box, bottle label, and editorial shot delivered together for retail and digital.",
     image: "/assets/product-design/product%20design_%204.png",
-    services: ["branding", "print-design", "social-media", "digital-marketing"],
+    services: ["branding", "print-design", "social-media", "digital-marketing", "email-marketing"],
     aspect: "wide",
     formats: ["packaging", "campaign", "lifestyle"],
     industry: "supplements",
@@ -384,7 +384,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Flavor-specific lifestyle ad for an intra/post-workout recovery formula. Hero food photography meets compliant supplement claims.",
     image: "/assets/product-design/product%20design_%205.png",
-    services: ["social-media", "digital-marketing", "branding"],
+    services: ["social-media", "digital-marketing", "branding", "email-marketing"],
     aspect: "wide",
     formats: ["lifestyle", "campaign"],
     industry: "supplements",
@@ -396,7 +396,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Beach-set lifestyle render for the flagship pre-workout. The kind of ad that performs on Meta and stops the scroll.",
     image: "/assets/product-design/product%20design_%206.png",
-    services: ["social-media", "digital-marketing", "branding"],
+    services: ["social-media", "digital-marketing", "branding", "email-marketing"],
     aspect: "tall",
     formats: ["lifestyle", "social-creative"],
     industry: "supplements",
@@ -756,7 +756,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Single-SKU lifestyle hero shot for the fruit punch flavor — gym backdrop, depth-of-field, label-forward.",
     image: "/assets/product-design/product%20design_%2039.png",
-    services: ["social-media", "digital-marketing", "ecommerce"],
+    services: ["social-media", "digital-marketing", "ecommerce", "email-marketing"],
     aspect: "tall",
     formats: ["lifestyle", "hero-render"],
     industry: "supplements",
@@ -933,7 +933,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Direct-mail flyer for the KETO//OS line — full lifestyle band, flavor lineup, referral code. Built to convert from inbox to purchase.",
     image: "/assets/services/print-services/Pruvit_MailerFlyer-01.jpg",
-    services: ["print-design", "digital-marketing", "social-media"],
+    services: ["print-design", "digital-marketing", "social-media", "email-marketing"],
     aspect: "wide",
     formats: ["mailer", "flyer"],
     industry: "supplements",
@@ -1022,7 +1022,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Print + paid hybrid ad — 250K sq. ft. of production, in-house design + print, 25-year anniversary medallion. Sells the manufacturer's pitch in one frame.",
     image: "/assets/services/social-media/ANS_Ad.png",
-    services: ["social-media", "digital-marketing", "print-design"],
+    services: ["social-media", "digital-marketing", "print-design", "email-marketing"],
     aspect: "tall",
     formats: ["ad", "campaign"],
     industry: "supplements",
@@ -1047,7 +1047,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Beach-set lifestyle ad for the Carnitine PLS Series. Designed for IG feed + Stories with mobile-first composition.",
     image: "/assets/services/social-media/Rita_Carnitine.jpg",
-    services: ["social-media", "digital-marketing"],
+    services: ["social-media", "digital-marketing", "email-marketing"],
     aspect: "wide",
     formats: ["ad", "lifestyle"],
     industry: "supplements",
@@ -1059,7 +1059,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     description:
       "Cinematic outdoor banner for the B-NOX SKU. Designed for site hero + paid social, with the type-sealed conversion line.",
     image: "/assets/services/social-media/Josh_BNOX.png",
-    services: ["social-media", "digital-marketing"],
+    services: ["social-media", "digital-marketing", "email-marketing"],
     aspect: "wide",
     formats: ["banner", "lifestyle"],
     industry: "supplements",
