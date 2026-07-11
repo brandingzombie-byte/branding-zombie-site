@@ -53,6 +53,23 @@ export default function Footer() {
             signs, and print built right here in Cumming &amp; Forsyth County,
             Georgia.
           </p>
+          {/* BBB accreditation seal — official embed, links to our BBB profile */}
+          <a
+            href="https://www.bbb.org/us/ga/cumming/profile/brand-development/branding-zombie-designs-0443-91849154/#sealclick"
+            target="_blank"
+            rel="nofollow noopener"
+            className="mt-6 inline-block"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://seal-atlanta.bbb.org/seals/darkgray-seal-293-61-bbb-91849154.png"
+              alt="Branding Zombie Designs BBB Business Review"
+              width={293}
+              height={61}
+              loading="lazy"
+              className="h-auto w-[180px] border-0"
+            />
+          </a>
         </div>
 
         {/* Services */}
