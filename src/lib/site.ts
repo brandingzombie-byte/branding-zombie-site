@@ -78,11 +78,15 @@ export const GOOGLE_MAPS_LISTING_URL = `https://www.google.com/maps/search/?api=
 // on, and the single biggest entity signal after the LocalBusiness block.
 // Only list LIVE profiles — a sameAs that 404s hurts E-E-A-T.
 // TODO: add the Google Business Profile dashboard URL + any YouTube/TikTok when live.
+export const BBB_PROFILE_URL =
+  "https://www.bbb.org/us/ga/cumming/profile/brand-development/branding-zombie-designs-0443-91849154";
+
 export const SOCIAL_URLS: string[] = [
   "https://www.instagram.com/brandingzombiedesigns/",
   "https://www.facebook.com/profile.php?id=61590541448873",
   "https://www.linkedin.com/company/branding-zombie-designs",
   GOOGLE_MAPS_LISTING_URL,
+  BBB_PROFILE_URL,
 ];
 
 // ─── Service area — every town we want to show up for ─────────────────────
