@@ -16070,7 +16070,512 @@ function AutoRepairShopBrandingContent() {
   );
 }
 
+function SalonBarbershopBrandingContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does salon or barbershop branding (and a logo) cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A salon or barbershop logo runs $750–$2,500 depending on tier. Full branding — logo, brand kit, print, and a website — is about $997 for the budget Startup Special or $4,500 for the full Launch Package. Signage and custom apparel are quote-based add-ons.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I brand my barbershop or salon beyond a logo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Brand identity is more than a logo. It's your colors, fonts, signage, stylist apparel, a booking-ready website, before/after photos, and the in-chair experience — the same look and promise on every touchpoint, from your Google listing to the mirror your client sits in front of.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What makes a good salon or barbershop logo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A good salon logo is simple, scalable, and legible on a phone icon, an apron, an Instagram avatar, and a 10-foot sign. Skip clip-art scissors and razors. Let the mark signal your vibe — a luxe color salon versus a classic fade shop should never look the same.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do salons and barbershops get more clients?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Optimize your Google Business Profile (Booksy calls it the #1 local-SEO move), gather 3–5 reviews a week, run a loyalty and refer-a-friend program, post before/after photos and Reels, and rebook clients in-chair. Booksy notes a ~5% retention lift can raise profits 25%+.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does a salon or barbershop really need signage and custom apparel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Signage is a 24/7 storefront billboard that helps first-timers find you and passes the 'is this my style?' test. Custom aprons, shirts, and client merch turn your team and your regulars into walking, free advertising around Cumming and Forsyth County.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pick a name and tagline for my salon or barbershop?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pick a name that's easy to say, spell, and search, and clear a quick trademark check. Your tagline should promise the feeling clients want — fresh, confident, taken care of — in plain language. Say it out loud before you commit it to signage.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Salon branding</strong> is the whole look and feel of your shop —
+        your logo, colors, signage, apparel, website, and the in-chair experience —
+        that makes clients in Cumming, GA trust you, remember you, and rebook. For a
+        salon or barbershop in Forsyth County, most of that is a one-time design
+        investment: a logo runs $750–$2,500, and a full brand + website launch runs
+        about $997 to $4,500. Ongoing marketing and ad spend is a separate monthly
+        budget.
+      </p>
+      <p>
+        I&apos;m Gerry at{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>
+        , and we build the whole set — logo, website, aprons, and signs — under one
+        roof, one designer, one invoice. Here&apos;s the short version, then the
+        details.
+      </p>
+
+      <h2 id="what-is-salon-branding">
+        What is salon and barbershop branding, really?
+      </h2>
+      <p>
+        Salon branding is not just a logo. It&apos;s every touchpoint a client hits —
+        the sign on your storefront, the apron your stylist wears, and the website
+        they check at 11 p.m. before they book.
+      </p>
+      <p>
+        <strong>Brand identity is more than a logo.</strong> For a salon or
+        barbershop, the pieces break down like this: your{" "}
+        <InternalLink href="/services/logo-design">logo and identity</InternalLink>{" "}
+        (mark, colors, fonts), signage, custom apparel (stylist and barber shirts,
+        aprons, capes, client merch), a booking-ready{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>, the in-chair
+        experience, and your social + print (Instagram grids, before/after photos,
+        loyalty cards).
+      </p>
+      <p>
+        The whole point is <strong>consistency</strong> — the same look and promise
+        everywhere a client touches you, from your Google listing to the mirror they
+        sit in front of. When those match, you look like a shop that has its act
+        together.
+      </p>
+      <p>
+        <em>
+          Half the shops out here look identical — the same scissors clip-art, the
+          same script font, the same stock photo of a fade. A brand that isn&apos;t
+          dead on arrival is how you stop being background noise.
+        </em>
+      </p>
+
+      <h2 id="how-do-i-brand">How do I brand my salon or barbershop?</h2>
+      <p>
+        If you&apos;re starting from scratch, do it in this sequence so nothing gets
+        built on a shaky foundation.
+      </p>
+      <ol>
+        <li>
+          <strong>Nail the name and positioning.</strong> Pick a name that&apos;s easy
+          to say, easy to spell, and free of trademark landmines. Your positioning
+          answers &quot;who is this for and why us&quot; — modern fade shop, luxe color
+          salon, walk-in family cuts.
+        </li>
+        <li>
+          <strong>Lock the logo and colors.</strong> Everything downstream — capes,
+          aprons, signs, site — pulls from here. See{" "}
+          <InternalLink href="/blog/what-makes-a-good-logo">
+            what makes a good logo
+          </InternalLink>{" "}
+          and our{" "}
+          <InternalLink href="/services/logo-design">logo design tiers</InternalLink>{" "}
+          (Starter $750, Growth $1,500, Premium $2,500).
+        </li>
+        <li>
+          <strong>Build the website.</strong> Clients and Google both check it. Booking
+          an appointment should take two taps, and your prices and hours should be
+          obvious. That&apos;s{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink> — and it
+          should match your sign.
+        </li>
+        <li>
+          <strong>Roll it onto signage and apparel.</strong> Now the physical shop
+          matches the digital one — that&apos;s your{" "}
+          <InternalLink href="/services/branding">brand identity</InternalLink> made
+          real.
+        </li>
+        <li>
+          <strong>Get found on Google.</strong>{" "}
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            Google Business Profile
+          </InternalLink>{" "}
+          plus <InternalLink href="/blog/seo-cumming-ga">local SEO</InternalLink> so
+          people searching &quot;barbershop near me&quot; actually find you.
+        </li>
+      </ol>
+      <p>
+        Want it all handled in one pass? That&apos;s exactly what our{" "}
+        <InternalLink href="/industries/salons-barbershops">
+          salons &amp; barbershops page
+        </InternalLink>{" "}
+        is built for.
+      </p>
+
+      <h2 id="how-much-does-it-cost">
+        How much does salon or barbershop branding cost in Cumming, GA?
+      </h2>
+      <p>
+        Keep two budgets separate: what you pay once for design and brand assets, and
+        what you pay every month for ads. Most of the cost below is one-time design
+        work, not a monthly bill.
+      </p>
+      <ul>
+        <li>
+          <strong>Logo:</strong> $750 (Starter) · $1,500 (Growth) · $2,500 (Premium) —{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>. A good
+          starting point if you already have a site and just need a real salon logo or
+          barbershop mark.
+        </li>
+        <li>
+          <strong>Startup Special — $997:</strong> logo + brand kit + 100 business
+          cards + 100 flyers + a 1-page site with domain + 1 year hosting, in about 10
+          days — <InternalLink href="/startup-special">Startup Special</InternalLink>.
+        </li>
+        <li>
+          <strong>Launch Package — $4,500:</strong> full logo suite + brand basics + a
+          5-page website + a 90-day content calendar, in about 4 weeks —{" "}
+          <InternalLink href="/services/launch-package">Launch Package</InternalLink>.
+        </li>
+        <li>
+          <strong>Standalone website</strong> (with online booking built in): starts
+          around $1,500; common tiers run $2,500 / $4,500 / $7,500+ —{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink> (see our{" "}
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            website cost breakdown
+          </InternalLink>
+          ).
+        </li>
+        <li>
+          <strong>Signage, custom apparel, and print:</strong> quote-based, because a
+          window wrap and 12 stylist shirts price differently than a single yard sign —{" "}
+          <InternalLink href="/services/print-design">
+            print &amp; signage
+          </InternalLink>{" "}
+          or{" "}
+          <InternalLink href="/services/request-quote">request a quote</InternalLink>.
+        </li>
+      </ul>
+      <p>
+        Separate line item: <strong>ongoing marketing</strong> (ads, boosted posts,{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>
+        ) is a monthly budget you control — not part of the one-time build. GlossGenius
+        pegs the U.S. barbershop industry at roughly <strong>$6.1 billion</strong>, so
+        there&apos;s plenty of chair to fight for — presence is what wins it (
+        <ExternalLink href="https://glossgenius.com/blog/barbershop-marketing">
+          GlossGenius
+        </ExternalLink>
+        ).
+      </p>
+
+      <h2 id="what-makes-a-good-logo">
+        What makes a good salon or barbershop logo?
+      </h2>
+      <p>
+        A good salon or barbershop logo is simple, scalable, and legible — it reads at
+        a glance on a phone icon, an apron chest, an Instagram avatar, and a 10-foot
+        sign. It avoids trendy clutter and clip-art scissors, combs, or generic
+        straight razors.
+      </p>
+      <p>
+        Best move: let the logo signal your <em>vibe</em>. A high-end color salon and a
+        classic hot-towel barbershop should not use the same fonts or palette. Your
+        mark should tell a first-timer what kind of chair they&apos;re sitting in
+        before they read a single word. Our{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink> always
+        ships a one-color version for embroidery, decals, and small print.
+      </p>
+
+      <h2 id="salon-vs-barbershop">
+        Salon branding vs. barbershop branding — what&apos;s different?
+      </h2>
+      <p>
+        The mechanics are the same; the emotional promise shifts. A salon brand often
+        leans into transformation, self-care, and a polished, welcoming aesthetic —
+        soft palettes, editorial photos, a &quot;you&apos;ll leave feeling new&quot;
+        promise.
+      </p>
+      <p>
+        Barbershop branding usually leans into craft, tradition, and community — bolder
+        marks, heritage tones, that &quot;your regular spot&quot; feel. Same toolkit —
+        different tone. And plenty of shops blur the line (unisex, family cuts), which
+        is exactly why positioning in step one matters.
+      </p>
+
+      <h2 id="does-a-shop-need-signage">
+        Does a salon or barbershop need signage and custom apparel?
+      </h2>
+      <p>Yes — they&apos;re branding that works while you sleep.</p>
+      <p>
+        <strong>Signage</strong> turns your storefront into a 24/7 billboard and helps
+        first-timers find the door. Window graphics and an exterior sign are often the
+        first &quot;is this place my style?&quot; test a prospect runs. (Signage is
+        quote-based for us — size, lighting, and permits all move the number.)
+      </p>
+      <p>
+        <strong>Custom apparel</strong> turns your team into walking ads. Every barber
+        in a branded shirt and every stylist in a branded apron is free reach, and
+        branded client merch turns loyal regulars into billboards around Cumming and
+        Forsyth County. All of that is{" "}
+        <InternalLink href="/services/print-design">print &amp; signage</InternalLink>,
+        using the same logo and colors as your site.
+      </p>
+      <p>
+        The <strong>in-chair experience</strong> — clean space, on-brand walls, a
+        smooth front-desk welcome, the conversation in the chair — is what makes the
+        branding feel true. A slick logo on a chaotic, cash-only front desk breaks the
+        promise.
+      </p>
+
+      <h2 id="get-more-clients">How do salons and barbershops get more clients?</h2>
+      <p>
+        Branding gets you remembered; a few simple systems keep the chairs full. Per
+        Booksy&apos;s 2026 barbershop marketing guide, a few levers do most of the work
+        (
+        <ExternalLink href="https://biz.booksy.com/en-us/blog/barbershop-marketing">
+          Booksy
+        </ExternalLink>
+        ):
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile.</strong> Booksy calls optimizing your{" "}
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            Google Business Profile
+          </InternalLink>{" "}
+          the #1 local-SEO move for getting found. Fill it out fully, add photos, and
+          keep hours current.
+        </li>
+        <li>
+          <strong>Reviews.</strong> Social proof fills the book. Booksy suggests aiming
+          for roughly 3–5 new reviews per week —{" "}
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            here&apos;s how to get more Google reviews
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Retention over churn.</strong> Booksy notes lifting retention by about
+          5% can raise profits 25%+ — rebooking existing clients is cheaper than chasing
+          new ones. A loyalty program and a standing &quot;book your next cut before you
+          leave&quot; ask do the heavy lifting.
+        </li>
+        <li>
+          <strong>Before/after photos + Reels.</strong> Fresh cuts and color
+          transformations are your best content. Pair them with on-brand{" "}
+          <InternalLink href="/services/digital-marketing">
+            social + digital marketing
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Refer-a-friend.</strong> A simple referral perk turns happy clients
+          into your sales team — and branded apparel makes the ask natural.
+        </li>
+      </ul>
+      <p>
+        And rank locally: strong{" "}
+        <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink> plus
+        knowing that{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is already describing your business
+        </InternalLink>{" "}
+        means showing up when someone searches &quot;balayage in Cumming&quot; or
+        &quot;barbershop near me.&quot;
+      </p>
+
+      <h2 id="one-shop-advantage">
+        The one-shop advantage: logo, site, apparel, and signs under one roof
+      </h2>
+      <p>
+        Most shop owners juggle a logo guy, a random website, a screen-printer, and a
+        sign shop — four vendors, four invoices, four slightly-different versions of
+        your brand. That&apos;s how brand consistency dies.
+      </p>
+      <p>
+        We do it differently. Your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink>,{" "}
+        <InternalLink href="/services/branding">brand identity</InternalLink>,{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>,{" "}
+        <InternalLink href="/services/print-design">
+          apparel and signage
+        </InternalLink>{" "}
+        all come from one designer, one file set, one invoice — one consistent look
+        from your storefront to your Instagram.
+      </p>
+      <p>
+        If you want to test the waters, the{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink> gets
+        you branded fast; the{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>{" "}
+        is the full build. Not sure which? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> or{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>.
+      </p>
+
+      <h2 id="faq">FAQ: Salon &amp; Barbershop Branding in Cumming, GA</h2>
+
+      <h3 id="faq-cost">
+        How much does salon or barbershop branding (and a logo) cost?
+      </h3>
+      <p>
+        A salon or barbershop logo runs $750–$2,500 depending on tier. Full branding —
+        logo, brand kit, print, and a website — is about $997 for the budget Startup
+        Special or $4,500 for the full Launch Package. Signage and custom apparel are
+        quote-based add-ons.
+      </p>
+
+      <h3 id="faq-beyond-logo">How do I brand my barbershop or salon beyond a logo?</h3>
+      <p>
+        Brand identity is more than a logo. It&apos;s your colors, fonts, signage,
+        stylist apparel, a booking-ready website, before/after photos, and the in-chair
+        experience — the same look and promise on every touchpoint, from your Google
+        listing to the mirror your client sits in front of.
+      </p>
+
+      <h3 id="faq-logo">What makes a good salon or barbershop logo?</h3>
+      <p>
+        A good salon logo is simple, scalable, and legible on a phone icon, an apron, an
+        Instagram avatar, and a 10-foot sign. Skip clip-art scissors and razors. Let the
+        mark signal your vibe — a luxe color salon versus a classic fade shop should
+        never look the same.
+      </p>
+
+      <h3 id="faq-more-clients">How do salons and barbershops get more clients?</h3>
+      <p>
+        Optimize your Google Business Profile (Booksy calls it the #1 local-SEO move),
+        gather 3–5 reviews a week, run a loyalty and refer-a-friend program, post
+        before/after photos and Reels, and rebook clients in-chair. Booksy notes a ~5%
+        retention lift can raise profits 25%+.
+      </p>
+
+      <h3 id="faq-signage">
+        Does a salon or barbershop really need signage and custom apparel?
+      </h3>
+      <p>
+        Yes. Signage is a 24/7 storefront billboard that helps first-timers find you and
+        passes the &quot;is this my style?&quot; test. Custom aprons, shirts, and client
+        merch turn your team and your regulars into walking, free advertising around
+        Cumming and Forsyth County.
+      </p>
+
+      <h3 id="faq-name">How do I pick a name and tagline for my salon or barbershop?</h3>
+      <p>
+        Pick a name that&apos;s easy to say, spell, and search, and clear a quick
+        trademark check. Your tagline should promise the feeling clients want — fresh,
+        confident, taken care of — in plain language. Say it out loud before you commit
+        it to signage.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Ready to fill more chairs?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Stop looking like every other shop on the block.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Let&apos;s raise your salon or barbershop brand from the dead — logo, website,
+          aprons, and signs, all matched, all from one designer. Text Gerry, take a
+          stroll through the portfolio, and we&apos;ll fill your chairs before the
+          zombies do.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner of Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA serving salons, barbershops, and small businesses
+        across Forsyth County and North Metro Atlanta since 2015. Logos, websites,
+        SEO/AEO, apparel, and signage under one roof — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "salon-barbershop-branding-cumming",
+      title: "Salon & Barbershop Branding in Cumming, GA",
+      seoTitle:
+        "Salon Branding in Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "Salon branding in Cumming, GA covers logo, signage, apparel, site & the in-chair experience. A logo runs $750–$2,500; a full brand + site launch $997–$4,500.",
+      excerpt:
+        "Salon and barbershop branding in Cumming, GA is your logo, signage, apparel, and booking-ready site working as one. What it costs (design vs. ad spend), what a good salon logo needs, and how one designer keeps your chairs full.",
+      keywords: [
+        "salon branding",
+        "barbershop branding",
+        "salon logo",
+        "barbershop logo",
+        "salon branding cost",
+        "hair salon branding cumming ga",
+        "small business web design",
+        "graphic design cumming",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-10",
+      readingTimeMinutes: 8,
+      category: "Branding",
+      tags: [
+        "branding",
+        "salons",
+        "barbershops",
+        "logo design",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-salon-barbershop-branding-cumming.jpg",
+      ogImageAlt:
+        "Salon & barbershop branding in Cumming, GA — logo, signage, apparel, and a site that fills chairs — Branding Zombie Designs",
+    },
+    Content: SalonBarbershopBrandingContent,
+  },
   {
     meta: {
       slug: "auto-repair-shop-branding-cumming",
