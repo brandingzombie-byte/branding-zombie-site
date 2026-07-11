@@ -72,6 +72,57 @@ async function listContacts(
   return contacts;
 }
 
+// Set of "email|subject" pairs already sent in the last `sinceMs`. The 2-day
+// catch-up window re-attempts yesterday's emails, but Resend idempotency keys
+// only live 24h — and on the Hobby plan the cron can fire anywhere in a
+// ~1-hour window, so consecutive runs can be >24h apart and the key alone
+// won't stop a duplicate. This sent-log check is the primary guard; the
+// idempotency key stays as a same-day backstop.
+async function listRecentSends(
+  apiKey: string,
+  sinceMs: number,
+): Promise<Set<string>> {
+  const sent = new Set<string>();
+  const cutoff = Date.now() - sinceMs;
+  let after: string | undefined;
+
+  for (let page = 0; page < 10; page++) {
+    const params = new URLSearchParams({ limit: "100" });
+    if (after) params.set("after", after);
+    const res = await fetch(`https://api.resend.com/emails?${params}`, {
+      headers: { Authorization: `Bearer ${apiKey}` },
+    });
+    if (!res.ok) {
+      const detail = await res.text().catch(() => "");
+      throw new Error(`Resend list emails ${res.status}: ${detail}`);
+    }
+    const body = (await res.json()) as {
+      data?: {
+        id: string;
+        to?: string[] | null;
+        subject?: string;
+        created_at: string;
+      }[];
+      has_more?: boolean;
+    };
+    const batch = body.data ?? [];
+    let reachedCutoff = false;
+    for (const email of batch) {
+      // Newest-first: once we're past the cutoff, everything older is too.
+      if (new Date(email.created_at).getTime() < cutoff) {
+        reachedCutoff = true;
+        break;
+      }
+      for (const to of email.to ?? []) {
+        sent.add(`${to.toLowerCase()}|${email.subject ?? ""}`);
+      }
+    }
+    if (reachedCutoff || batch.length < 100 || body.has_more === false) break;
+    after = batch[batch.length - 1].id;
+  }
+  return sent;
+}
+
 export async function GET(request: Request) {
   const cronSecret = process.env.CRON_SECRET;
   const auth = request.headers.get("authorization");
@@ -97,7 +148,17 @@ export async function GET(request: Request) {
     return Response.json({ error: "Audience fetch failed" }, { status: 502 });
   }
 
-  const summary = { checked: 0, sent: 0, skipped: 0, errors: 0 };
+  // Fail closed: without the sent log we can't rule out duplicates, and a
+  // skipped run self-heals tomorrow via the catch-up window.
+  let recentSends: Set<string>;
+  try {
+    recentSends = await listRecentSends(apiKey, 3 * DAY_MS);
+  } catch (err) {
+    console.error("[drip] Failed to list recent sends:", err);
+    return Response.json({ error: "Sent-log fetch failed" }, { status: 502 });
+  }
+
+  const summary = { checked: 0, sent: 0, skipped: 0, deduped: 0, errors: 0 };
   const now = Date.now();
 
   for (const contact of contacts) {
@@ -129,6 +190,10 @@ export async function GET(request: Request) {
     const unsubUrl = unsubscribeUrl(contact.email, unsubSecret);
 
     for (const entry of due) {
+      if (recentSends.has(`${contact.email.toLowerCase()}|${entry.subject}`)) {
+        summary.deduped++;
+        continue;
+      }
       const html = renderDripEmail({
         preheader: entry.preheader,
         headline: entry.headline,
@@ -183,7 +248,7 @@ export async function GET(request: Request) {
   }
 
   console.log(
-    `[drip] Run complete — checked ${summary.checked}, sent ${summary.sent}, skipped ${summary.skipped}, errors ${summary.errors}.`,
+    `[drip] Run complete — checked ${summary.checked}, sent ${summary.sent}, skipped ${summary.skipped}, deduped ${summary.deduped}, errors ${summary.errors}.`,
   );
   return Response.json(summary);
 }
