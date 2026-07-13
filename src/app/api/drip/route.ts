@@ -30,7 +30,7 @@ import {
   parseVerticalTag,
   verticalByTag,
 } from "@/lib/drip/verticals";
-import type { Vertical } from "@/lib/drip/verticals";
+import type { Vertical, VerticalEmail } from "@/lib/drip/verticals";
 
 export const maxDuration = 60;
 
@@ -98,21 +98,25 @@ async function listContacts(
   return contacts;
 }
 
-// Set of "email|subject" pairs already sent in the last `sinceMs`. The 2-day
-// catch-up window re-attempts yesterday's emails, but Resend idempotency keys
-// only live 24h — and on the Hobby plan the cron can fire anywhere in a
-// ~1-hour window, so consecutive runs can be >24h apart and the key alone
-// won't stop a duplicate. This sent-log check is the primary guard; the
-// idempotency key stays as a same-day backstop.
+// Map of "email|subject" → newest send timestamp (ms) over the last
+// `sinceMs`. This sent log is the engine's only memory:
+//  - Dedupe: an email|subject that already appears is never sent again
+//    (Resend idempotency keys only live 24h — shorter than Hobby-plan cron
+//    jitter can stretch — so the key alone can't stop a duplicate).
+//  - Vertical progression: Resend contact records are GLOBAL per email
+//    address, so `created_at` reflects when the contact first entered ANY
+//    audience — useless for sequencing someone re-added later. Verticals
+//    instead advance off the timestamp of the last sequence email actually
+//    sent (see Program 2 below).
 async function listRecentSends(
   apiKey: string,
   sinceMs: number,
-): Promise<Set<string>> {
-  const sent = new Set<string>();
+): Promise<Map<string, number>> {
+  const sent = new Map<string, number>();
   const cutoff = Date.now() - sinceMs;
   let after: string | undefined;
 
-  for (let page = 0; page < 10; page++) {
+  for (let page = 0; page < 30; page++) {
     const params = new URLSearchParams({ limit: "100" });
     if (after) params.set("after", after);
     const res = await fetch(`https://api.resend.com/emails?${params}`, {
@@ -135,12 +139,15 @@ async function listRecentSends(
     let reachedCutoff = false;
     for (const email of batch) {
       // Newest-first: once we're past the cutoff, everything older is too.
-      if (new Date(email.created_at).getTime() < cutoff) {
+      const at = new Date(email.created_at).getTime();
+      if (at < cutoff) {
         reachedCutoff = true;
         break;
       }
       for (const to of email.to ?? []) {
-        sent.add(`${to.toLowerCase()}|${email.subject ?? ""}`);
+        const key = `${to.toLowerCase()}|${email.subject ?? ""}`;
+        // Newest-first pages: first sighting is the latest send.
+        if (!sent.has(key)) sent.set(key, at);
       }
     }
     if (reachedCutoff || batch.length < 100 || body.has_more === false) break;
@@ -235,9 +242,12 @@ export async function GET(request: Request) {
 
   // Fail closed: without the sent log we can't rule out duplicates, and a
   // skipped run self-heals tomorrow via the catch-up window.
-  let recentSends: Set<string>;
+  let recentSends: Map<string, number>;
   try {
-    recentSends = await listRecentSends(apiKey, 3 * DAY_MS);
+    // 60-day lookback: long enough to hold a full nurture (31d) or vertical
+    // (12d) run with room to spare, so "not in the log" reliably means
+    // "never sent" for progression purposes.
+    recentSends = await listRecentSends(apiKey, 60 * DAY_MS);
   } catch (err) {
     console.error("[drip] Failed to list recent sends:", err);
     return Response.json({ error: "Sent-log fetch failed" }, { status: 502 });
@@ -361,51 +371,64 @@ export async function GET(request: Request) {
         }
       }
 
-      const days = daysEnrolled(contact, now);
-      if (days === null) {
-        console.error(
-          `[drip] Bad created_at for contact ${contact.id}; skipped.`,
-        );
-        summary.errors++;
-        continue;
+      // Progression-based scheduling: Resend contact records are global per
+      // email address, so created_at is when this person FIRST entered any
+      // audience — for a long-time contact re-added with a vertical tag,
+      // enrollment-date math would mark every send window as already passed
+      // and silently send nothing. Instead: no sequence email in the log →
+      // start with E1 now; otherwise send the next email once the gap
+      // between its dayOffset and the last one's has elapsed since the last
+      // actual send. At most one email per contact per daily run, which
+      // matches the sequence's minimum 2-day gap.
+      const emailKey = contact.email.toLowerCase();
+      const sentSoFar: { entry: VerticalEmail; at: number }[] = [];
+      for (const entry of vertical.sequence) {
+        const at = recentSends.get(`${emailKey}|${entry.subject}`);
+        if (typeof at === "number") sentSoFar.push({ entry, at });
       }
 
-      const due = vertical.sequence.filter(
-        (entry) => entry.dayOffset <= days && entry.dayOffset > days - 2,
-      );
-      if (due.length === 0) {
+      let next = vertical.sequence[0];
+      let readyAt = 0;
+      if (sentSoFar.length > 0) {
+        const last = sentSoFar.reduce((a, b) =>
+          b.entry.seq > a.entry.seq ? b : a,
+        );
+        const following = vertical.sequence.find(
+          (e) => e.seq === last.entry.seq + 1,
+        );
+        if (!following) {
+          // Sequence complete.
+          summary.skipped++;
+          continue;
+        }
+        next = following;
+        readyAt =
+          last.at + (following.dayOffset - last.entry.dayOffset) * DAY_MS;
+      }
+
+      if (now < readyAt) {
         summary.skipped++;
         continue;
       }
 
       const unsubUrl = unsubscribeUrl(contact.email, unsubSecret);
+      const html = renderVerticalEmail({
+        preheader: next.preheader,
+        bodyHtml: next.bodyHtml(contact.first_name?.trim() || undefined),
+        unsubscribeUrl: unsubUrl,
+      });
 
-      for (const entry of due) {
-        if (
-          recentSends.has(`${contact.email.toLowerCase()}|${entry.subject}`)
-        ) {
-          summary.deduped++;
-          continue;
-        }
-
-        const html = renderVerticalEmail({
-          preheader: entry.preheader,
-          bodyHtml: entry.bodyHtml(contact.first_name?.trim() || undefined),
-          unsubscribeUrl: unsubUrl,
-        });
-
-        await sendDue(
-          apiKey,
-          contact,
-          {
-            idempotencyKey: `drip-${vertical.slug}-${contact.id}-${entry.seq}`,
-            subject: entry.subject,
-            html,
-            unsubUrl,
-          },
-          summary,
-        );
-      }
+      await sendDue(
+        apiKey,
+        contact,
+        {
+          idempotencyKey: `drip-${vertical.slug}-${contact.id}-${next.seq}`,
+          subject: next.subject,
+          html,
+          unsubUrl,
+        },
+        summary,
+      );
     }
   }
 
