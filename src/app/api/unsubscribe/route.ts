@@ -7,6 +7,81 @@
 // unsubscribe (the List-Unsubscribe-Post header) from mail clients.
 
 import { createHmac, timingSafeEqual } from "node:crypto";
+import {
+  SHARED_VERTICAL_AUDIENCE_ID,
+  VERTICALS,
+} from "@/lib/drip/verticals";
+
+// Marks the contact unsubscribed in one audience. Returns false (quietly)
+// when the contact simply isn't in that audience.
+async function unsubscribeFromAudience(
+  apiKey: string,
+  audienceId: string,
+  email: string,
+): Promise<boolean> {
+  // Resend supports addressing a contact by email in place of its id.
+  try {
+    const res = await fetch(
+      `https://api.resend.com/audiences/${audienceId}/contacts/${encodeURIComponent(email)}`,
+      {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ unsubscribed: true }),
+      },
+    );
+    if (res.ok) return true;
+    if (res.status !== 404) {
+      const detail = await res.text().catch(() => "");
+      console.error(`[unsubscribe] PATCH by email ${res.status}: ${detail}`);
+    }
+  } catch (err) {
+    console.error("[unsubscribe] PATCH by email failed:", err);
+  }
+
+  // Fallback: paginate the audience to find the contact id, then PATCH by id.
+  try {
+    let after: string | undefined;
+    for (let pageNo = 0; pageNo < 50; pageNo++) {
+      const params = new URLSearchParams({ limit: "100" });
+      if (after) params.set("after", after);
+      const res = await fetch(
+        `https://api.resend.com/audiences/${audienceId}/contacts?${params}`,
+        { headers: { Authorization: `Bearer ${apiKey}` } },
+      );
+      if (!res.ok) break;
+      const body = (await res.json()) as {
+        data?: { id: string; email: string }[];
+        has_more?: boolean;
+      };
+      const batch = body.data ?? [];
+      const match = batch.find(
+        (c) => c.email.toLowerCase() === email.toLowerCase(),
+      );
+      if (match) {
+        const patch = await fetch(
+          `https://api.resend.com/audiences/${audienceId}/contacts/${match.id}`,
+          {
+            method: "PATCH",
+            headers: {
+              Authorization: `Bearer ${apiKey}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ unsubscribed: true }),
+          },
+        );
+        return patch.ok;
+      }
+      if (batch.length < 100 || body.has_more === false) break;
+      after = batch[batch.length - 1].id;
+    }
+  } catch (err) {
+    console.error("[unsubscribe] Fallback lookup failed:", err);
+  }
+  return false;
+}
 
 function esc(value: string): string {
   return value
@@ -80,70 +155,19 @@ async function unsubscribe(request: Request): Promise<Response> {
     });
   }
 
-  // Resend supports addressing a contact by email in place of its id.
+  // A drip recipient can live in the nurture audience, the shared vertical
+  // audience, or (later) a dedicated vertical audience — unsubscribe them
+  // everywhere they appear. Success = at least one audience updated.
+  const audienceIds = [
+    audienceId,
+    SHARED_VERTICAL_AUDIENCE_ID,
+    ...VERTICALS.map((v) => v.dedicatedAudienceId).filter(
+      (id): id is string => id !== null,
+    ),
+  ];
   let ok = false;
-  try {
-    const res = await fetch(
-      `https://api.resend.com/audiences/${audienceId}/contacts/${encodeURIComponent(email)}`,
-      {
-        method: "PATCH",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ unsubscribed: true }),
-      },
-    );
-    ok = res.ok;
-    if (!res.ok) {
-      const detail = await res.text().catch(() => "");
-      console.error(`[unsubscribe] PATCH by email ${res.status}: ${detail}`);
-    }
-  } catch (err) {
-    console.error("[unsubscribe] PATCH by email failed:", err);
-  }
-
-  // Fallback: paginate the audience to find the contact id, then PATCH by id.
-  if (!ok) {
-    try {
-      let after: string | undefined;
-      for (let pageNo = 0; pageNo < 50 && !ok; pageNo++) {
-        const params = new URLSearchParams({ limit: "100" });
-        if (after) params.set("after", after);
-        const res = await fetch(
-          `https://api.resend.com/audiences/${audienceId}/contacts?${params}`,
-          { headers: { Authorization: `Bearer ${apiKey}` } },
-        );
-        if (!res.ok) break;
-        const body = (await res.json()) as {
-          data?: { id: string; email: string }[];
-          has_more?: boolean;
-        };
-        const batch = body.data ?? [];
-        const match = batch.find(
-          (c) => c.email.toLowerCase() === email.toLowerCase(),
-        );
-        if (match) {
-          const patch = await fetch(
-            `https://api.resend.com/audiences/${audienceId}/contacts/${match.id}`,
-            {
-              method: "PATCH",
-              headers: {
-                Authorization: `Bearer ${apiKey}`,
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({ unsubscribed: true }),
-            },
-          );
-          ok = patch.ok;
-          break;
-        }
-        if (batch.length < 100 || body.has_more === false) break;
-        after = batch[batch.length - 1].id;
-      }
-    } catch (err) {
-      console.error("[unsubscribe] Fallback lookup failed:", err);
-    }
+  for (const aud of audienceIds) {
+    if (await unsubscribeFromAudience(apiKey, aud, email)) ok = true;
   }
 
   if (!ok) {

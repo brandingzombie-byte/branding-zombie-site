@@ -1,10 +1,19 @@
-// Daily drip engine for the "Back From the Dead" nurture sequence.
+// Daily drip engine — runs every automated sequence BZD sends:
 //
-// Hit by the Vercel cron in vercel.json (0 14 * * * = 10am ET). For each
-// contact in the Resend "New Leads — Nurture" audience, works out how many
-// days they've been enrolled and sends any sequence emails that just came
-// due. A 2-day catch-up window tolerates a missed cron run; the Resend
-// Idempotency-Key guarantees the overlap can never double-send.
+//  1. "Back From the Dead" nurture (10 emails / 31 days) for every contact
+//     in the Resend "New Leads — Nurture" audience.
+//  2. The Vertical Factory "Resurrection Sequences" (5 emails / 12 days per
+//     industry) for contacts in the shared "Vertical Customers" audience,
+//     routed by the [tag] in each contact's last-name field (e.g. "[trades]").
+//     Verticals can also point at a dedicated audience id if the Resend plan
+//     ever grows past the 3-audience cap.
+//
+// Hit by the Vercel cron in vercel.json (0 14 * * * = 10am ET; Hobby plan
+// fires within ~1h after). For each contact, works out how many days they've
+// been enrolled and sends whatever just came due. A 2-day catch-up window
+// tolerates a missed run; the Resend sent-log dedupe (recipient + subject
+// over the last 3 days) is the primary double-send guard because idempotency
+// keys only live 24h, shorter than the cron jitter can stretch.
 //
 // Auth: Vercel sends `Authorization: Bearer ${CRON_SECRET}` automatically
 // when the CRON_SECRET env var is set. Anything else is a hard 401 — the
@@ -14,6 +23,14 @@ import { createHmac } from "node:crypto";
 import { EMAIL, SITE_URL } from "@/lib/site";
 import { renderDripEmail } from "@/lib/drip/emailShell";
 import { DRIP_SEQUENCE } from "@/lib/drip/sequence";
+import { renderVerticalEmail } from "@/lib/drip/verticalShell";
+import {
+  SHARED_VERTICAL_AUDIENCE_ID,
+  VERTICALS,
+  parseVerticalTag,
+  verticalByTag,
+} from "@/lib/drip/verticals";
+import type { Vertical } from "@/lib/drip/verticals";
 
 export const maxDuration = 60;
 
@@ -29,6 +46,15 @@ interface ResendContact {
   last_name?: string;
   created_at: string;
   unsubscribed: boolean;
+}
+
+interface RunSummary {
+  checked: number;
+  sent: number;
+  skipped: number;
+  deduped: number;
+  unrouted: number;
+  errors: number;
 }
 
 function sleep(ms: number): Promise<void> {
@@ -123,6 +149,65 @@ async function listRecentSends(
   return sent;
 }
 
+interface DueEmail {
+  idempotencyKey: string;
+  subject: string;
+  html: string;
+  unsubUrl: string;
+}
+
+async function sendDue(
+  apiKey: string,
+  contact: ResendContact,
+  email: DueEmail,
+  summary: RunSummary,
+): Promise<void> {
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        // Same-day backstop against double-sends; the sent-log dedupe in the
+        // caller is the primary guard.
+        "Idempotency-Key": email.idempotencyKey,
+      },
+      body: JSON.stringify({
+        from: FROM,
+        to: [contact.email],
+        reply_to: EMAIL,
+        subject: email.subject,
+        html: email.html,
+        headers: {
+          "List-Unsubscribe": `<mailto:${EMAIL}?subject=unsubscribe>, <${email.unsubUrl}>`,
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+      }),
+    });
+    if (res.ok) {
+      summary.sent++;
+    } else {
+      const detail = await res.text().catch(() => "");
+      console.error(
+        `[drip] Send failed (${email.idempotencyKey}) ${res.status}: ${detail}`,
+      );
+      summary.errors++;
+    }
+  } catch (err) {
+    console.error(`[drip] Send failed (${email.idempotencyKey}):`, err);
+    summary.errors++;
+  }
+
+  await sleep(SEND_GAP_MS);
+}
+
+/** Days since the contact was added to the audience, or null if unparseable. */
+function daysEnrolled(contact: ResendContact, now: number): number | null {
+  const created = new Date(contact.created_at).getTime();
+  if (Number.isNaN(created)) return null;
+  return Math.floor((now - created) / DAY_MS);
+}
+
 export async function GET(request: Request) {
   const cronSecret = process.env.CRON_SECRET;
   const auth = request.headers.get("authorization");
@@ -140,9 +225,9 @@ export async function GET(request: Request) {
     return Response.json({ error: "Server not configured" }, { status: 500 });
   }
 
-  let contacts: ResendContact[];
+  let nurtureContacts: ResendContact[];
   try {
-    contacts = await listContacts(apiKey, audienceId);
+    nurtureContacts = await listContacts(apiKey, audienceId);
   } catch (err) {
     console.error("[drip] Failed to list audience contacts:", err);
     return Response.json({ error: "Audience fetch failed" }, { status: 502 });
@@ -158,27 +243,33 @@ export async function GET(request: Request) {
     return Response.json({ error: "Sent-log fetch failed" }, { status: 502 });
   }
 
-  const summary = { checked: 0, sent: 0, skipped: 0, deduped: 0, errors: 0 };
+  const summary: RunSummary = {
+    checked: 0,
+    sent: 0,
+    skipped: 0,
+    deduped: 0,
+    unrouted: 0,
+    errors: 0,
+  };
   const now = Date.now();
 
-  for (const contact of contacts) {
+  // ── Program 1: "Back From the Dead" nurture ───────────────────────────────
+  for (const contact of nurtureContacts) {
     summary.checked++;
     if (contact.unsubscribed) {
       summary.skipped++;
       continue;
     }
 
-    const created = new Date(contact.created_at).getTime();
-    if (Number.isNaN(created)) {
+    const days = daysEnrolled(contact, now);
+    if (days === null) {
       console.error(`[drip] Bad created_at for contact ${contact.id}; skipped.`);
       summary.errors++;
       continue;
     }
-    const days = Math.floor((now - created) / DAY_MS);
 
     // Everything that came due in the last 2 days — the window means one
-    // missed cron run self-heals the next day, and the idempotency key
-    // below makes the overlap safe.
+    // missed cron run self-heals the next day.
     const due = DRIP_SEQUENCE.filter(
       (entry) => entry.dayOffset <= days && entry.dayOffset > days - 2,
     );
@@ -194,6 +285,7 @@ export async function GET(request: Request) {
         summary.deduped++;
         continue;
       }
+
       const html = renderDripEmail({
         preheader: entry.preheader,
         headline: entry.headline,
@@ -205,50 +297,120 @@ export async function GET(request: Request) {
         unsubscribeUrl: unsubUrl,
       });
 
-      try {
-        const res = await fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            "Content-Type": "application/json",
-            // Guards against double-sends from the catch-up window overlap.
-            "Idempotency-Key": `drip-${contact.id}-${entry.seq}`,
-          },
-          body: JSON.stringify({
-            from: FROM,
-            to: [contact.email],
-            reply_to: EMAIL,
-            subject: entry.subject,
-            html,
-            headers: {
-              "List-Unsubscribe": `<mailto:${EMAIL}?subject=unsubscribe>, <${unsubUrl}>`,
-              "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-            },
-          }),
-        });
-        if (res.ok) {
-          summary.sent++;
-        } else {
-          const detail = await res.text().catch(() => "");
-          console.error(
-            `[drip] Send failed (contact ${contact.id}, seq ${entry.seq}) ${res.status}: ${detail}`,
-          );
-          summary.errors++;
-        }
-      } catch (err) {
-        console.error(
-          `[drip] Send failed (contact ${contact.id}, seq ${entry.seq}):`,
-          err,
-        );
-        summary.errors++;
+      await sendDue(
+        apiKey,
+        contact,
+        {
+          idempotencyKey: `drip-${contact.id}-${entry.seq}`,
+          subject: entry.subject,
+          html,
+          unsubUrl,
+        },
+        summary,
+      );
+    }
+  }
+
+  // ── Program 2: Vertical Factory sequences ─────────────────────────────────
+  // Pools to scan: the shared tagged audience + any dedicated audiences.
+  const pools: { contacts: ResendContact[]; fixed: Vertical | null }[] = [];
+
+  try {
+    pools.push({
+      contacts: await listContacts(apiKey, SHARED_VERTICAL_AUDIENCE_ID),
+      fixed: null,
+    });
+  } catch (err) {
+    console.error("[drip] Failed to list Vertical Customers audience:", err);
+    summary.errors++;
+  }
+
+  for (const vertical of VERTICALS) {
+    if (!vertical.dedicatedAudienceId) continue;
+    try {
+      pools.push({
+        contacts: await listContacts(apiKey, vertical.dedicatedAudienceId),
+        fixed: vertical,
+      });
+    } catch (err) {
+      console.error(`[drip] Failed to list ${vertical.slug} audience:`, err);
+      summary.errors++;
+    }
+  }
+
+  for (const pool of pools) {
+    for (const contact of pool.contacts) {
+      summary.checked++;
+      if (contact.unsubscribed) {
+        summary.skipped++;
+        continue;
       }
 
-      await sleep(SEND_GAP_MS);
+      let vertical = pool.fixed;
+      if (!vertical) {
+        const tag = parseVerticalTag(contact.last_name);
+        vertical = (tag && verticalByTag(tag)) || null;
+        if (!vertical) {
+          // A contact Gerry added without a recognizable [tag] — surface it
+          // in the summary so a spot check catches the typo.
+          console.error(
+            `[drip] No vertical tag on contact ${contact.email} (last_name: "${contact.last_name ?? ""}"); not routed.`,
+          );
+          summary.unrouted++;
+          continue;
+        }
+      }
+
+      const days = daysEnrolled(contact, now);
+      if (days === null) {
+        console.error(
+          `[drip] Bad created_at for contact ${contact.id}; skipped.`,
+        );
+        summary.errors++;
+        continue;
+      }
+
+      const due = vertical.sequence.filter(
+        (entry) => entry.dayOffset <= days && entry.dayOffset > days - 2,
+      );
+      if (due.length === 0) {
+        summary.skipped++;
+        continue;
+      }
+
+      const unsubUrl = unsubscribeUrl(contact.email, unsubSecret);
+
+      for (const entry of due) {
+        if (
+          recentSends.has(`${contact.email.toLowerCase()}|${entry.subject}`)
+        ) {
+          summary.deduped++;
+          continue;
+        }
+
+        const html = renderVerticalEmail({
+          preheader: entry.preheader,
+          bodyHtml: entry.bodyHtml(contact.first_name?.trim() || undefined),
+          unsubscribeUrl: unsubUrl,
+        });
+
+        await sendDue(
+          apiKey,
+          contact,
+          {
+            idempotencyKey: `drip-${vertical.slug}-${contact.id}-${entry.seq}`,
+            subject: entry.subject,
+            html,
+            unsubUrl,
+          },
+          summary,
+        );
+      }
     }
   }
 
   console.log(
-    `[drip] Run complete — checked ${summary.checked}, sent ${summary.sent}, skipped ${summary.skipped}, deduped ${summary.deduped}, errors ${summary.errors}.`,
+    `[drip] Run complete — checked ${summary.checked}, sent ${summary.sent}, skipped ${summary.skipped}, deduped ${summary.deduped}, unrouted ${summary.unrouted}, errors ${summary.errors}.`,
   );
   return Response.json(summary);
 }
