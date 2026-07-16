@@ -20,7 +20,7 @@ import {
   CALENDLY_URL,
 } from "@/lib/site";
 import ConsultForm from "./ConsultForm";
-import RisingHand from "./RisingHand";
+import ZombieHand from "@/components/ZombieHand";
 
 const PAGE_PATH = "/booklogix";
 const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
@@ -186,7 +186,7 @@ const THREE_THINGS = [
   },
   {
     name: "Flat price. Zero surprises.",
-    body: "The price on this page is the price. After year one, site care is a flat $149/yr — hosting, security, and small updates, all included.",
+    body: "The price on this page is the price. After year one, site care is a flat $100/yr — hosting, security, and small updates, all included.",
   },
   {
     name: "Live in about two weeks.",
@@ -205,7 +205,7 @@ const FAQS = [
   },
   {
     q: "What does it cost after the first year?",
-    a: "$149 a year, flat. That covers hosting, security, and small text updates. No monthly fees, no surprise invoices.",
+    a: "$100 a year, flat. That covers hosting, security, and small text updates. No monthly fees, no surprise invoices.",
   },
   {
     q: "Do I own my website?",
@@ -276,7 +276,28 @@ export default function BookLogixPage() {
 
       <main id="main-content" tabIndex={-1}>
         {/* ─── HERO ─────────────────────────────────────────────────────── */}
-        <Section theme="dark" pad="spacious" topScanline>
+        <Section
+          theme="dark"
+          pad="spacious"
+          topScanline
+          className="relative isolate overflow-hidden"
+        >
+          {/* Book-in-hand cutout — same motion engine as the homepage hands:
+              peeks in from the right edge, drifts on scroll, leans toward the
+              cursor, sways at idle. Toxic glow via static drop-shadows. */}
+          <ZombieHand
+            src="/assets/booklogix/hand-book.webp"
+            width={720}
+            height={585}
+            edge="right"
+            behaviors={["peek", "parallax", "follow", "idle"]}
+            offset="16%"
+            bleed="-36px"
+            displayWidth={520}
+            parallaxSpeed={0.1}
+            zIndex={1}
+            className="max-lg:hidden [filter:drop-shadow(0_0_26px_rgba(191,255,0,0.35))_drop-shadow(0_0_90px_rgba(191,255,0,0.2))]"
+          />
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <div className="flex flex-wrap items-center gap-3">
@@ -337,17 +358,7 @@ export default function BookLogixPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-5">
-              <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)] lg:aspect-[4/5]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/booklogix/hero-book-hand.jpg"
-                  alt="A friendly zombie hand presents a hardcover book, glowing green against a dark background"
-                  className="absolute inset-0 h-full w-full object-cover object-[72%_center]"
-                  loading="eager"
-                />
-              </div>
-            </div>
+            {/* Right columns left open at lg — the ZombieHand cutout lives there. */}
           </div>
         </Section>
 
@@ -478,12 +489,33 @@ export default function BookLogixPage() {
               No monthly platform fees. No surprise charges.
             </strong>{" "}
             After the first year, site care (hosting, security, and small
-            updates) is a flat $149/yr — that&rsquo;s it.
+            updates) is a flat $100/yr — that&rsquo;s it.
           </p>
         </Section>
 
         {/* ─── THREE THINGS TO KNOW ───────────────────────────────────── */}
-        <Section theme="dark" pad="spacious" id="three-things">
+        <Section
+          theme="dark"
+          pad="spacious"
+          id="three-things"
+          className="relative isolate overflow-hidden"
+        >
+          {/* Count-three hand peeks in from the left edge (flipped so the
+              sleeve enters off-screen) and drifts on scroll. */}
+          <ZombieHand
+            src="/assets/booklogix/hand-count-three.webp"
+            width={720}
+            height={208}
+            edge="left"
+            behaviors={["peek", "parallax", "idle"]}
+            offset="64%"
+            bleed="-30px"
+            displayWidth={380}
+            parallaxSpeed={0.12}
+            flip
+            zIndex={1}
+            className="max-lg:hidden"
+          />
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-4">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-toxic-text)]">
@@ -492,16 +524,6 @@ export default function BookLogixPage() {
               <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.14] tracking-tight text-[var(--color-dark-text-primary)]">
                 Three things every author asks about.
               </h2>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/assets/booklogix/hand-count-three.png"
-                alt=""
-                aria-hidden="true"
-                width={480}
-                height={268}
-                loading="lazy"
-                className="mt-8 hidden w-full max-w-[320px] -scale-x-100 lg:block"
-              />
             </div>
 
             <ol className="flex flex-col gap-px border border-[var(--color-dark-border)] bg-[var(--color-dark-border)] lg:col-span-8">
@@ -528,7 +550,29 @@ export default function BookLogixPage() {
         </Section>
 
         {/* ─── CONSULT FORM ───────────────────────────────────────────── */}
-        <Section theme="parchment" pad="spacious" id="consult" topRule>
+        <Section
+          theme="parchment"
+          pad="spacious"
+          id="consult"
+          topRule
+          className="relative isolate overflow-hidden"
+        >
+          {/* Pointing hand rises from the section's bottom edge toward the
+              form — mobile keeps it (scaled down) with scroll parallax. */}
+          <ZombieHand
+            src="/assets/booklogix/hand-point-up.webp"
+            width={199}
+            height={720}
+            edge="bottom"
+            behaviors={["peek", "parallax", "idle"]}
+            offset="30%"
+            bleed="-14px"
+            displayWidth={120}
+            parallaxSpeed={-0.08}
+            mobile
+            mobileParallax
+            zIndex={1}
+          />
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="relative lg:col-span-5">
               <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
@@ -577,11 +621,6 @@ export default function BookLogixPage() {
                 </a>
               </div>
 
-              {/* Decorative hand rising toward the form — hidden on small screens */}
-              <RisingHand
-                src="/assets/booklogix/hand-point-up.png"
-                className="absolute -bottom-[var(--space-spacious)] right-4 hidden w-24 lg:block"
-              />
             </div>
 
             <div className="lg:col-span-7">
