@@ -125,6 +125,14 @@ export default function Footer() {
             ))}
             <li>
               <a
+                href="/authors"
+                className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
+              >
+                Authors &amp; Book Launches
+              </a>
+            </li>
+            <li>
+              <a
                 href="/industries"
                 className="text-[length:var(--text-secondary)] font-semibold text-[var(--color-neon-text)] hover:underline"
               >
