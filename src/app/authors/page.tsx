@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     "book mockup design",
     "self published author website",
     "indie author marketing",
+    "custom author website design",
+    "author website cost",
+    "author website designer",
   ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
@@ -245,10 +248,54 @@ const STEPS = [
   },
 ];
 
+// Us vs. the typical author-website shop. Deliberately generic — no
+// competitor named — but every row maps to a real gap in the niche
+// (quote-only pricing, WordPress upkeep, unstated build timelines).
+const COMPARISON = [
+  {
+    label: "Pricing",
+    them: "“Email us for a quote”",
+    us: "Flat prices, right on this page",
+  },
+  {
+    label: "How it's built",
+    them: "WordPress + a stack of plugins",
+    us: "Hand-coded and lean — loads instantly",
+  },
+  {
+    label: "Live in",
+    them: "“It depends”",
+    us: "About 2 weeks, promised up front",
+  },
+  {
+    label: "Yearly upkeep",
+    them: "Hosting + maintenance billed per change",
+    us: "$100/yr flat — small updates included",
+  },
+  {
+    label: "Security updates",
+    them: "Plugin patches, forever",
+    us: "Nothing to patch, nothing to hack",
+  },
+  {
+    label: "When you email",
+    them: "“If you don't hear back, email again”",
+    us: "Reply within one business day",
+  },
+];
+
 const FAQS = [
   {
     q: "I'm not tech-savvy. Is that a problem?",
     a: "It's the whole point. You never touch the technology — I register the domain, build the site, and keep it running. When something needs changing, you call or email me and it gets done.",
+  },
+  {
+    q: "Why not WordPress, Wix, or Squarespace?",
+    a: "They're fine tools — but they're platforms you rent, with plugins to update, subscriptions to pay, and things that break at 2 a.m. I hand-code your site instead: nothing to update, nothing to hack, no monthly platform fee, and it loads in a blink. That's also why site care is $100 a year instead of a maintenance retainer.",
+  },
+  {
+    q: "I'm not published yet — should I wait?",
+    a: "Don't wait. A professional website tells agents and editors you're serious, gives your writing a home before the book deal, and starts collecting reader emails now. Google also favors domains that have been live longer — so the site you launch today ranks better on your release day.",
   },
   {
     q: "How do book sales work?",
@@ -276,6 +323,18 @@ const FAQS = [
   },
 ];
 
+// FAQPage schema so the straight answers can get cited in AI/answer engines.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": `${PAGE_URL}#faq`,
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 // ─── Page ──────────────────────────────────────────────────────────────────
 export default function AuthorsPage() {
   return (
@@ -287,6 +346,10 @@ export default function AuthorsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <Navbar />
@@ -339,10 +402,11 @@ export default function AuthorsPage() {
               </h1>
 
               <p className="measure-wide mt-7 text-[length:var(--text-lead)] leading-relaxed text-[var(--color-dark-text-secondary)]">
-                Hi — I&rsquo;m Gerry. I build author websites, book launch
-                graphics, and reader email lists for writers who&rsquo;d rather
-                be writing. Flat prices, everything done for you, and every
-                Buy button pointing readers straight to your book.
+                Hi — I&rsquo;m Gerry. I build hand-coded author websites, book
+                launch graphics, and reader email lists for writers who&rsquo;d
+                rather be writing. Flat prices, everything done for you, no
+                WordPress to babysit — and every Buy button pointing readers
+                straight to your book.
               </p>
 
               <div className="mt-10 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-y border-[var(--color-dark-border-strong)] py-6">
@@ -630,6 +694,68 @@ export default function AuthorsPage() {
               ))}
             </ol>
           </div>
+        </Section>
+
+        {/* ─── WHY NOT THE USUAL AUTHOR-SITE SHOP ─────────────────────── */}
+        <Section theme="dark" pad="spacious" id="compare" topScanline>
+          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-toxic-text)]">
+                Shopping around? Good — you should.
+              </span>
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.14] tracking-tight text-[var(--color-dark-text-primary)]">
+                What most author-site designers won&rsquo;t put in writing.
+              </h2>
+            </div>
+            <p className="measure text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)] lg:col-span-5 lg:self-end">
+              There are talented designers in this niche. Ask any of them —
+              and me — these six things before you hand over your book.
+            </p>
+          </div>
+
+          <div className="mt-12 overflow-x-auto">
+            <table className="w-full min-w-[640px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-[var(--color-dark-border-strong)]">
+                  <th className="py-4 pr-6 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
+                    Ask about
+                  </th>
+                  <th className="py-4 pr-6 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-dark-text-dim)]">
+                    The usual answer
+                  </th>
+                  <th className="py-4 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-toxic-text)]">
+                    My answer
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[var(--color-dark-border)]">
+                {COMPARISON.map((row) => (
+                  <tr key={row.label}>
+                    <th
+                      scope="row"
+                      className="py-4 pr-6 align-top font-[family-name:var(--font-display)] text-[length:var(--text-h4)] font-normal leading-tight text-[var(--color-dark-text-primary)]"
+                    >
+                      {row.label}
+                    </th>
+                    <td className="py-4 pr-6 align-top text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-dim)]">
+                      {row.them}
+                    </td>
+                    <td className="py-4 align-top text-[length:var(--text-body)] font-medium leading-relaxed text-[var(--color-dark-text-primary)]">
+                      {row.us}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-8 max-w-3xl text-[length:var(--text-secondary)] leading-relaxed text-[var(--color-dark-text-dim)]">
+            Nothing against WordPress — it runs half the internet. But an
+            author website doesn&rsquo;t need a database, a plugin stack, or a
+            maintenance retainer to stay alive. Yours will be hand-coded,
+            fast, and quietly cheap to keep — so your money goes into the
+            next book, not the last website.
+          </p>
         </Section>
 
         {/* ─── CONSULT FORM ───────────────────────────────────────────── */}
