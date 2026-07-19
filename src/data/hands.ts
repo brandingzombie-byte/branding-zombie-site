@@ -26,6 +26,14 @@ export const HANDS: Record<string, HandAsset> = {
     height: 392,
     aspectRatio: 1.8367,
   },
+  "zh05-brains-sign-l": {
+    id: "zh05-brains-sign-l",
+    src: "/hands/zh05-brains-sign-l.webp",
+    src2x: "/hands/zh05-brains-sign-l@2x.webp",
+    width: 720,
+    height: 619,
+    aspectRatio: 1.1632,
+  },
   "zh09-thumbsdown-l": {
     id: "zh09-thumbsdown-l",
     src: "/hands/zh09-thumbsdown-l.webp",
@@ -50,6 +58,22 @@ export const HANDS: Record<string, HandAsset> = {
     height: 720,
     aspectRatio: 0.3250,
   },
+  "zh13-point-viewer-l": {
+    id: "zh13-point-viewer-l",
+    src: "/hands/zh13-point-viewer-l.webp",
+    src2x: "/hands/zh13-point-viewer-l@2x.webp",
+    width: 720,
+    height: 298,
+    aspectRatio: 2.4161,
+  },
+  "zh22-beckon-r": {
+    id: "zh22-beckon-r",
+    src: "/hands/zh22-beckon-r.webp",
+    src2x: "/hands/zh22-beckon-r@2x.webp",
+    width: 720,
+    height: 304,
+    aspectRatio: 2.3684,
+  },
   "zh25-point-diag": {
     id: "zh25-point-diag",
     src: "/hands/zh25-point-diag.webp",
@@ -57,6 +81,14 @@ export const HANDS: Record<string, HandAsset> = {
     width: 658,
     height: 720,
     aspectRatio: 0.9139,
+  },
+  "zh32-count-three-r": {
+    id: "zh32-count-three-r",
+    src: "/hands/zh32-count-three-r.webp",
+    src2x: "/hands/zh32-count-three-r@2x.webp",
+    width: 720,
+    height: 328,
+    aspectRatio: 2.1951,
   },
   "zh34-highfive-l": {
     id: "zh34-highfive-l",

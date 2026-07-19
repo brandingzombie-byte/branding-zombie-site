@@ -5,6 +5,8 @@ import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
 import ServicesBrutalistGrid from "@/components/services/ServicesBrutalistGrid";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 import { SERVICES } from "@/data/services";
 import { SITE_URL, LOCALBIZ_ID } from "@/lib/site";
 
@@ -108,7 +110,37 @@ export default function ServicesIndexPage() {
                 "radial-gradient(60% 50% at 25% 30%, rgba(0,255,212,0.10), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(191,255,0,0.07), transparent 70%)",
             }}
           />
-          <div className="pt-20 lg:pt-28">
+          {/* ── Zombie hand — the "BRAINS WANTED" sign dangling from the hero's
+               top-left corner. ZH-05 is a corner-entry asset: the flannel
+               sleeve exits through BOTH the top and left canvas edges, so the
+               only placement that honors the wrist-cut rule (and keeps the
+               sign text unmirrored — no flip allowed) is a top-left mount
+               with negative top/left insets; the overflow-clip layer
+               guillotines the sleeve at the section's real edges. lg+ only:
+               below that the sign text goes illegible at band scale, and the
+               hero's top padding is too shallow to clear the eyebrow. ── */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-[1] overflow-clip"
+          >
+            <ZombieHand
+              src={HANDS["zh05-brains-sign-l"].src}
+              width={HANDS["zh05-brains-sign-l"].width}
+              height={HANDS["zh05-brains-sign-l"].height}
+              edge="left"
+              behaviors={["peek", "parallax", "idle"]}
+              offset="-36px"
+              bleed="-44px"
+              displayWidth={330}
+              parallaxSpeed={0.05}
+              zIndex={1}
+              className="max-lg:hidden"
+            />
+          </div>
+          {/* lg:pt-44 (vs pt-28 elsewhere) reserves headroom so the dangling
+              sign clears the eyebrow + h1 at every lg+ width. Content sits
+              on z-10 so the hand can never paint over the text. */}
+          <div className="relative z-10 pt-20 lg:pt-44">
             <div className="flex items-center gap-3">
               <span
                 aria-hidden
@@ -165,6 +197,32 @@ export default function ServicesIndexPage() {
           </div>
 
           <ServicesBrutalistGrid services={SERVICES} />
+
+          {/* Low-commitment bridge to the ONE page that demonstrably converts
+              (/free-site-audit). The quote CTA below is a high-commitment ask
+              for cold organic traffic — this gives browsers a zero-pressure
+              next step first. Mirrors the PainPoints audit-CTA row styling. */}
+          <div className="mt-14 flex flex-col items-start gap-5 border-t border-[var(--color-hairline-strong)] pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-[52ch] text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+              Not ready to talk to anyone? Run the free 10-second{" "}
+              <span className="relative inline-block">
+                Pulse Check
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
+                />
+              </span>{" "}
+              and see what&apos;s costing you customers — no sales call
+              required.
+            </p>
+            <a
+              href="/free-site-audit"
+              role="button"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--color-text-primary)] px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-cloud)] transition-colors hover:bg-[var(--color-neon-text)]"
+            >
+              Get my free site audit →
+            </a>
+          </div>
         </Section>
 
         <SectionSeparator id={4} />

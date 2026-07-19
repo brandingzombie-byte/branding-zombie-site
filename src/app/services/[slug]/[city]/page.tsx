@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LocationPageBody from "@/components/locations/LocationPageBody";
 import LocationJsonLd from "@/components/locations/LocationJsonLd";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, INDEXABLE_CITY } from "@/lib/site";
 import {
   getLocationService,
   getAllLocationServiceSlugs,
@@ -46,6 +46,12 @@ export async function generateMetadata({
   const ogTitle = `${title} | Branding Zombie Designs`;
   const description = `${svc.label} for ${loc.city}, ${loc.county} businesses, ${svc.priceAnchor} — ${svc.summary}. Free quote from a local studio you can actually call.`;
 
+  // Index diet: only the Cumming variant of each service is indexable. The
+  // other 9 city variants stay live and crawlable (follow) but noindexed so
+  // they stop burning crawl priority as near-duplicate doorways. Canonical
+  // stays self-referential — Google ignores canonicals on noindexed pages.
+  const indexable = loc.slug === INDEXABLE_CITY;
+
   return {
     title,
     description,
@@ -81,10 +87,10 @@ export async function generateMetadata({
       images: [svc.heroImage.src],
     },
     robots: {
-      index: true,
+      index: indexable,
       follow: true,
       googleBot: {
-        index: true,
+        index: indexable,
         follow: true,
         "max-image-preview": "large",
         "max-video-preview": -1,

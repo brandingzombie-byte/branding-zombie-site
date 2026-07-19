@@ -10,7 +10,9 @@ const OG_ALT =
   "“Is Your Brand Half-Dead?” — take the free 5-minute Brand Checkup from Branding Zombie Designs, a logo, web, and print studio in Cumming, GA. A toxic-green zombie hand reaches across a dark poster.";
 
 export const metadata: Metadata = {
-  title: "Is Your Brand Half-Dead? Free 5-Minute Brand Checkup | Branding Zombie",
+  // Brand omitted — the root layout's "%s | Branding Zombie Designs" title
+  // template appends it once (adding it here doubled the suffix).
+  title: "Is Your Brand Half-Dead? Free 5-Minute Brand Checkup",
   description:
     "Free, no-jargon brand audit for small businesses in Cumming, GA. Score your logo, website, Google listing, print, and signage in 5 minutes — get an instant verdict and your 3 fastest fixes.",
   keywords: [

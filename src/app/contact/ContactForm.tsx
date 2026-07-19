@@ -36,6 +36,13 @@ export default function ContactForm() {
         <p className="text-[length:var(--text-body)] leading-relaxed text-text-primary">
           {state.message}
         </p>
+        <a
+          href="/free-site-audit"
+          className="inline-flex items-center gap-1.5 text-[length:var(--text-secondary)] font-semibold text-text-primary underline decoration-[var(--color-neon)] underline-offset-4 hover:text-[var(--color-neon-text)]"
+        >
+          While you wait: run the free 10-second Pulse Check on your site
+          <ArrowRight size={14} weight="bold" />
+        </a>
       </div>
     );
   }
@@ -54,6 +61,9 @@ export default function ContactForm() {
         />
       </label>
 
+      {/* Required pair first (name + email), optional pair collapsed into one
+          row below — the two required fields read as "only two blanks" before
+          the optional row signals its optionality. */}
       <Field
         label="Your name"
         name="name"
@@ -62,24 +72,24 @@ export default function ContactForm() {
         maxLength={120}
       />
       <Field
-        label="Business name"
-        hint="Optional — if you have one."
-        name="business"
-        autoComplete="organization"
-        maxLength={120}
+        label="Email"
+        name="email"
+        type="email"
+        autoComplete="email"
+        required
+        maxLength={160}
       />
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
-          label="Email"
-          name="email"
-          type="email"
-          autoComplete="email"
-          required
-          maxLength={160}
+          label="Business name"
+          hint="Optional"
+          name="business"
+          autoComplete="organization"
+          maxLength={120}
         />
         <Field
           label="Phone"
-          hint="Optional — easier if you prefer a call."
+          hint="Optional — if you prefer a call."
           name="phone"
           type="tel"
           autoComplete="tel"
@@ -87,12 +97,13 @@ export default function ContactForm() {
         />
       </div>
       <FieldTextarea
-        label="What do you need help with?"
+        label="What's going on?"
+        hint="A sentence or two is enough."
         name="message"
         rows={5}
         required
         maxLength={4000}
-        placeholder="A sentence or two is enough. Example: 'Our website is from 2018 and we're losing customers on mobile.'"
+        placeholder="Example: 'Our website is from 2018 and we're losing customers on mobile.'"
       />
 
       {state.message && !state.ok && (

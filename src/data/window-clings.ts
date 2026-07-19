@@ -196,8 +196,10 @@ const WINDOW_CLINGS: WindowClingsProduct = {
   shortLabel: "Window Graphics",
   noun: "window graphics",
 
+  // No trailing brand — the root layout's title template appends
+  // "| Branding Zombie Designs" once.
   seoTitle:
-    "Window Clings & Storefront Graphics in Cumming, GA — Designed, Printed & Installed | Branding Zombie",
+    "Window Clings & Storefront Graphics in Cumming, GA — Designed, Printed & Installed",
   seoDescription:
     "Custom window clings, decals, and storefront graphics for Cumming, GA & North Atlanta businesses. We design it, print it, and install it on your glass — one-way vision, frosted privacy, clear clings, full window walls. One shop, one invoice. Get a free quote.",
   keywords: [
@@ -529,6 +531,16 @@ const WINDOW_CLINGS: WindowClingsProduct = {
       href: "/direct-mail",
       label: "Direct Mail & EDDM",
       blurb: "Drive the foot traffic that reads your window — mail the neighborhood around you.",
+    },
+    {
+      href: "/services/logo-design",
+      label: "Logo design",
+      blurb: "Low-res or missing logo files? We rebuild marks that hold up at window scale.",
+    },
+    {
+      href: "/services/branding",
+      label: "Brand identity",
+      blurb: "Colors, type, and voice that match your glass, your cards, and your truck.",
     },
   ],
 

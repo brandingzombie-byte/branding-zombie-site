@@ -6,6 +6,7 @@
 
 import type { ComponentType, ReactNode } from "react";
 import { SITE_URL, CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import type { ServiceSlug } from "@/data/services";
 
 // ─── Types ────────────────────────────────────────────────────────────────
 
@@ -26,6 +27,12 @@ export interface PostMeta {
   tags: string[];
   ogImage: string;
   ogImageAlt: string;
+  /**
+   * Service pages surfaced in the "Services mentioned" strip on the post
+   * page. Optional — when absent the strip falls back to a per-category
+   * default (see getRelatedServiceSlugs).
+   */
+  relatedServices?: ServiceSlug[];
 }
 
 export interface Post {
@@ -1957,7 +1964,9 @@ function LogoCostCummingGAContent() {
       </p>
       <p>
         At Branding Zombie Designs, our{" "}
-        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        <InternalLink href="/services/logo-design">
+          logo design in Cumming
+        </InternalLink>{" "}
         tiers look like this:
       </p>
       <ul>
@@ -2697,6 +2706,16 @@ function ChatGptWebsiteContent() {
         immediately.
       </p>
       <p>
+        <strong>Taking payments.</strong> The moment you want to actually sell
+        something — products, gift cards, bookings — you&apos;re wiring up a
+        store, inventory, tax, and checkout. That&apos;s a build, not a chat
+        reply; it&apos;s why{" "}
+        <InternalLink href="/services/ecommerce">
+          Shopify ecommerce
+        </InternalLink>{" "}
+        is its own service and not a paragraph of generated code.
+      </p>
+      <p>
         <strong>An original logo.</strong> It can describe a logo. It cannot hand
         you a clean, ownable, vector logo that works on a sign, a shirt, a
         business card, and a favicon. Real brand identity is a deliverable, not a
@@ -3032,9 +3051,12 @@ function WebsiteDesignSeoCostContent() {
       <p>
         Nationally, small-business websites commonly run anywhere from about{" "}
         <strong>$1,000 on the low end to $10,000+</strong> for custom builds. For
-        a local small business in Forsyth County, the realistic sweet spot is
-        usually <strong>$2,500–$4,500</strong> (our Starter-to-Growth range) for
-        a clean, custom, SEO-ready site you fully own.
+        a local small business in Forsyth County, the realistic sweet spot for{" "}
+        <InternalLink href="/services/web-design">
+          website design in Cumming, GA
+        </InternalLink>{" "}
+        is usually <strong>$2,500–$4,500</strong> (our Starter-to-Growth range)
+        for a clean, custom, SEO-ready site you fully own.
       </p>
       <p>
         At Branding Zombie Designs, standalone{" "}
@@ -3081,7 +3103,13 @@ function WebsiteDesignSeoCostContent() {
         You can buy a one-time &quot;SEO setup&quot; (clean titles, proper
         structure, Google Business Profile, local schema) and that&apos;s smart
         to do when the site launches. But ranking and staying ranked is a habit,
-        not an event. Think of the build as planting and SEO as watering.
+        not an event. Think of the build as planting and SEO as watering. If
+        you&apos;d rather compare notes with an{" "}
+        <InternalLink href="/services/digital-marketing">
+          SEO company in Cumming
+        </InternalLink>{" "}
+        before committing to a monthly number, that&apos;s exactly what our
+        plans page breaks down.
       </p>
 
       <h2 id="one-time-vs-monthly">
@@ -3393,7 +3421,12 @@ function AdvertiseCummingContent() {
         carefully (it&apos;s the biggest ranking factor), add a few secondary
         categories, and write a description that names Cumming and Forsyth
         County. Then post updates weekly and answer questions. A complete, active
-        profile beats a half-finished one every time.
+        profile beats a half-finished one every time. (Want it handled for you?
+        That&apos;s part of our{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO in Cumming
+        </InternalLink>{" "}
+        service.)
       </p>
 
       <h2 id="need-a-website">Do I Really Need a Website to Advertise Locally?</h2>
@@ -3508,8 +3541,12 @@ function AdvertiseCummingContent() {
         local Forsyth County and Cumming Facebook groups (follow their rules). Tag
         your location so the algorithm shows you to nearby people. You don&apos;t
         need to go viral; you need to stay visible to the few thousand people who
-        could actually buy from you. We design scroll-stopping social graphics
-        that match the rest of your brand if posting is your bottleneck.
+        could actually buy from you. If posting is your bottleneck, our{" "}
+        <InternalLink href="/services/social-media">
+          social media management
+        </InternalLink>{" "}
+        service designs and schedules scroll-stopping graphics that match the
+        rest of your brand.
       </p>
 
       <h2 id="print">Does Print Advertising Still Work in 2026?</h2>
@@ -4555,8 +4592,9 @@ function SeoCummingGaContent() {
 
       <h2 id="what-is-seo">What is SEO, in Plain English?</h2>
       <p>
-        SEO (search engine optimization) is the work of getting your website and
-        business listings to show up when people search Google for what you do.
+        SEO stands for search engine optimization — in Cumming, GA terms,
+        it&apos;s the work of getting your website and business listings to show
+        up when people nearby search Google for what you do.
       </p>
       <p>For a local business, there are two surfaces that matter:</p>
       <ul>
@@ -4632,12 +4670,11 @@ function SeoCummingGaContent() {
       </ul>
       <p>
         That&apos;s the difference between showing up in the map pack and being
-        invisible. We wrote more on why Google increasingly drives local
-        discovery in{" "}
-        <InternalLink href="/blog/google-ai-is-calling-your-business">
-          how Google&apos;s AI is calling your business
-        </InternalLink>
-        .
+        invisible. We wrote a full step-by-step in our{" "}
+        <InternalLink href="/blog/google-business-profile-optimization-cumming">
+          Google Business Profile optimization guide for Cumming
+        </InternalLink>{" "}
+        — work through it once and you&apos;re ahead of half the county.
       </p>
       <p>
         Here&apos;s the part agencies don&apos;t always say out loud:{" "}
@@ -4669,14 +4706,24 @@ function SeoCummingGaContent() {
         isn&apos;t real.
       </p>
       <p>
-        At Branding Zombie Designs, SEO lives inside{" "}
+        For reference, our own{" "}
         <InternalLink href="/services/digital-marketing">
-          digital marketing services
+          local SEO plans
+        </InternalLink>{" "}
+        are published flat rates: <strong>Local SEO Starter at $499/mo</strong>,
+        Growth at $999/mo, and Full SEO + GEO at $1,999/mo for harder markets —
+        each with a 3-month minimum and a spelled-out deliverables list, so you
+        know exactly what a month of work buys.
+      </p>
+      <p>
+        SEO also pairs naturally with the website itself — a slow, confusing, or
+        outdated site caps everything SEO can do. If your site is the
+        bottleneck, fixing that comes first; see{" "}
+        <InternalLink href="/services/web-design">web design services</InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/blog/web-design-cumming-ga-guide">
+          web design in Cumming, GA buyer&apos;s guide
         </InternalLink>
-        , and it pairs naturally with the website itself — because a slow,
-        confusing, or outdated site caps everything SEO can do. If your site is
-        the bottleneck, fixing that comes first; see{" "}
-        <InternalLink href="/services/web-design">web design services</InternalLink>
         . For a fuller breakdown of how site cost and SEO interact, read{" "}
         <InternalLink href="/blog/website-design-seo-cost">
           what website design and SEO cost
@@ -4688,14 +4735,15 @@ function SeoCummingGaContent() {
         .
       </p>
 
-      <h2 id="seo-agency-cumming">
-        How Much Does an SEO Agency in Cumming Charge — and How Do You Pick One?
+      <h2 id="seo-company-cumming">
+        How to Choose an SEO Company in Cumming, GA
       </h2>
       <p>
-        When you compare an SEO agency option, the right questions aren&apos;t
-        about price first. They&apos;re about what you actually get.
+        Search &quot;SEO company Cumming&quot; or &quot;SEO agency Cumming,
+        GA&quot; and you&apos;ll get a wall of near-identical promises. The
+        right questions aren&apos;t about price first — they&apos;re about what
+        you actually get. Ask any SEO company you&apos;re considering:
       </p>
-      <p>Ask any SEO company provider:</p>
       <ul>
         <li>
           <strong>What exactly do I get each month?</strong> A real answer lists
@@ -4721,13 +4769,97 @@ function SeoCummingGaContent() {
         </li>
       </ul>
       <p>
-        For SEO services buyers, the cleanest setup is one shop that handles your
-        logo, website, and SEO together — one designer, one invoice, everything
-        pointing the same way. When your branding, site, and search work are
-        split across three vendors, the seams show, and so does the cost. That
-        one-roof approach is the whole idea behind{" "}
+        Names beat categories, so here are real options a Cumming business will
+        actually run into — including where each one fits:
+      </p>
+      <ul>
+        <li>
+          <strong>Market Complete (Cumming)</strong> — a full-service marketing
+          collective with a team of specialists, quoted per project. A fit if
+          you want an assembled team managing your marketing on an ongoing
+          basis.
+        </li>
+        <li>
+          <strong>SangFroid Web (Alpharetta, serves Cumming)</strong> — a
+          WordPress design and SEO shop in business since 2007. A fit when a
+          search-optimized WordPress site is the one job you&apos;re hiring
+          for.
+        </li>
+        <li>
+          <strong>Branding Zombie Designs (Cumming — that&apos;s us)</strong> —
+          one-roof solo studio doing brand, website, print, and local SEO/AEO at
+          published flat rates from $499/mo, month-to-month after a 3-month
+          minimum. A fit when you want one accountable person and everything
+          pulling the same direction.
+        </li>
+      </ul>
+      <p>
+        Weighing more than just search? Our{" "}
+        <InternalLink href="/blog/best-marketing-agencies-cumming-ga">
+          guide to marketing agencies in Cumming, GA
+        </InternalLink>{" "}
+        compares the full field — agencies, studios, and freelancers.
+      </p>
+      <p>
+        If you&apos;re comparing SEO services in Cumming, the cleanest setup is
+        one shop that handles your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink>, website,
+        and SEO together — one designer, one invoice, everything pointing the
+        same way. When your branding, site, and search work are split across
+        three vendors, the seams show, and so does the cost. That one-roof
+        approach is the whole idea behind{" "}
         <InternalLink href="/services/launch-package">the Local Business Kit</InternalLink>
         .
+      </p>
+
+      <h2 id="local-seo-cumming-what-we-do">
+        What We Actually Do: Local SEO in Cumming, GA
+      </h2>
+      <p>
+        Since we just told you to demand specifics from any SEO company, here
+        are ours. Every{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO plan
+        </InternalLink>{" "}
+        we run for Cumming and Forsyth County businesses covers the same
+        unglamorous work that actually moves rankings:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile optimization</strong> — categories,
+          photos, services, posts, Q&amp;A, and a review-request flow.
+        </li>
+        <li>
+          <strong>Local citations + NAP consistency</strong> — your name,
+          address, and phone matching across Google, Bing, Yelp, Apple Maps, and
+          the directories that matter.
+        </li>
+        <li>
+          <strong>On-page SEO</strong> — titles, metas, schema, internal links,
+          and speed fixes on the site itself.
+        </li>
+        <li>
+          <strong>Content that answers real questions</strong> — blog posts and
+          pages built from what your customers actually ask.
+        </li>
+        <li>
+          <strong>AI answer-engine (AEO/GEO) work</strong> — structuring your
+          information so ChatGPT, Claude, and Perplexity can cite you, not just
+          Google.
+        </li>
+      </ul>
+      <p>
+        That&apos;s the honest job description of a Cumming SEO expert: no
+        secret sauce, just consistent monthly execution from someone who knows
+        the local market. We&apos;re a BBB-accredited (A- rating) studio based
+        right here in Cumming — not a call center reselling white-label
+        reports.
+      </p>
+      <p>
+        Not sure what shape your site is in? Start with a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> —
+        it takes a few minutes and shows you exactly what&apos;s holding your
+        rankings back before you spend a dollar.
       </p>
 
       <h2 id="diy-vs-hiring">DIY vs Hiring: Can You Do SEO Yourself?</h2>
@@ -4832,6 +4964,10 @@ function SeoCummingGaContent() {
         one of the best investments a Forsyth County small business can make.
         Start with the free levers, fix the website if it&apos;s holding you
         back, then layer in monthly SEO when you&apos;re ready to compound it.
+        Not sure which bucket you&apos;re in?{" "}
+        <InternalLink href="/contact">Send us a note</InternalLink> and
+        we&apos;ll tell you straight — even if the answer is &quot;just fix
+        your profile, you don&apos;t need us yet.&quot;
       </p>
 
       <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
@@ -4843,15 +4979,21 @@ function SeoCummingGaContent() {
         </h3>
         <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
           Let&apos;s drag your business back into the light. Start free with a
-          no-cost site audit, then layer in honest, ongoing SEO — local, clear,
-          and no #1-guaranteed snake oil.
+          no-cost site audit, then layer in honest, ongoing local SEO from
+          $499/mo — clear, local, and no #1-guaranteed snake oil.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Get your free site audit
+          </a>
           <a
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
           >
             Book a free consult
           </a>
@@ -4884,6 +5026,17 @@ function SeoCummingGaContent() {
         hurt you. SEO is a monthly investment, not a one-time fix.
       </p>
 
+      <h3 id="faq-company-charge">
+        How much does an SEO company in Cumming charge?
+      </h3>
+      <p>
+        Most legitimate SEO companies serving Cumming charge{" "}
+        <strong>$500–$1,500/month</strong>, usually on a retainer. Our own
+        published plans start at $499/mo (Starter), $999/mo (Growth), and
+        $1,999/mo (Full SEO + GEO), each with a 3-month minimum. Be wary of
+        anyone who won&apos;t publish pricing or list deliverables.
+      </p>
+
       <h3 id="faq-how-long">How long does SEO take to work?</h3>
       <p>
         Expect <strong>3 to 6 months</strong> for meaningful movement, longer in
@@ -4910,6 +5063,18 @@ function SeoCummingGaContent() {
         pack — name, hours, reviews, photos. SEO is the broader work of ranking
         your website and listings everywhere. The profile is one (huge) piece of
         local SEO, not a replacement for it. You want both.
+      </p>
+
+      <h3 id="faq-seo-expert">
+        What does an SEO expert in Cumming do?
+      </h3>
+      <p>
+        A real SEO expert in Cumming optimizes your Google Business Profile,
+        keeps your citations consistent, fixes on-page issues (titles, schema,
+        speed, internal links), publishes content that answers local search
+        questions, and increasingly handles AEO/GEO so AI tools cite your
+        business. If the monthly report can&apos;t point to work in those
+        buckets, you&apos;re paying for a PDF.
       </p>
 
       <h3 id="faq-best-company">
@@ -4952,12 +5117,12 @@ function WebDesignCummingGaContent() {
           Web design in Cumming, GA typically starts around $1,500
         </strong>{" "}
         for a simple landing page and climbs to{" "}
-        <strong>$2,500&ndash;$7,500+</strong> for multi-page and e-commerce
-        sites, depending on how many pages you need and whether you&apos;re
-        starting from scratch. Good local web design isn&apos;t just a pretty
-        homepage — it&apos;s a fast, mobile-first site built to show up in
-        Forsyth County searches, send phone calls and form fills your way, and
-        stay fully owned by you. This guide, from{" "}
+        <strong>$2,500&ndash;$7,500+</strong> for multi-page custom builds,
+        with dedicated e-commerce stores starting at <strong>$3,000</strong>.
+        Good local website design isn&apos;t just a pretty homepage —
+        it&apos;s a fast, mobile-first site built to show up in Forsyth County
+        searches, send phone calls and form fills your way, and stay fully
+        owned by you. This 2026 guide, from{" "}
         <strong>
           Branding Zombie Designs, a graphic + web design studio in Cumming, GA
         </strong>
@@ -4977,9 +5142,10 @@ function WebDesignCummingGaContent() {
         </p>
         <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
           <li>
-            <strong>Web design in Cumming, GA starts around $1,500</strong> for
-            a 1&ndash;2 page landing site and rises to $2,500, $4,500, and
-            $7,500+ for multi-page and e-commerce builds.
+            <strong>Website design in Cumming, GA starts around $1,500</strong>{" "}
+            for a 1&ndash;2 page landing site and rises to $2,500, $4,500, and
+            $7,500+ for multi-page builds. Dedicated e-commerce stores start at
+            $3,000.
           </li>
           <li>
             <strong>Good local web design</strong> is mobile-first, fast, has
@@ -5054,11 +5220,16 @@ function WebDesignCummingGaContent() {
         <InternalLink href="/blog/how-your-website-is-costing-you-customers">
           here&apos;s how to tell
         </InternalLink>
-        .
+        . Or skip the guesswork and{" "}
+        <InternalLink href="/free-site-audit">
+          request a free site audit
+        </InternalLink>{" "}
+        — we&apos;ll look at what you&apos;ve got and tell you exactly
+        what&apos;s leaking.
       </p>
 
       <h2 id="web-design-cost">
-        What does web design cost in Cumming, GA?
+        What does website design cost in Cumming, GA in 2026?
       </h2>
       <p>
         Pricing depends on scope, but here&apos;s how it actually breaks down
@@ -5069,27 +5240,84 @@ function WebDesignCummingGaContent() {
         </InternalLink>{" "}
         projects fall into clear tiers:
       </p>
-      <ul>
-        <li>
-          <strong>Landing page — from $1,500.</strong> A focused 1&ndash;2 page
-          site, usually turned around in about 7 days. Great for a single
-          service or a launch.
-        </li>
-        <li>
-          <strong>Starter site — around $2,500.</strong> Up to 5 pages. The
-          right fit for most first-time small businesses that need home, about,
-          services, and contact done well.
-        </li>
-        <li>
-          <strong>Growth site — around $4,500.</strong> Our most popular tier.
-          More pages, deeper local SEO, stronger structure for businesses that
-          want the site to actually pull in leads.
-        </li>
-        <li>
-          <strong>Premium / e-commerce — $7,500+.</strong> Online stores,
-          booking systems, and larger custom builds.
-        </li>
-      </ul>
+      <div className="my-8 overflow-x-auto">
+        <table className="w-full min-w-[560px] border-collapse text-left text-[length:var(--text-body)] leading-relaxed">
+          <thead>
+            <tr className="border-b-2 border-[var(--color-neon)]">
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                Tier
+              </th>
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                2026 price
+              </th>
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                What you get
+              </th>
+              <th className="py-3 font-semibold text-text-primary">
+                Timeline
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Landing page
+              </td>
+              <td className="py-3 pr-4 whitespace-nowrap">from $1,500</td>
+              <td className="py-3 pr-4">
+                A focused 1&ndash;2 page site. Great for a single service or a
+                launch.
+              </td>
+              <td className="py-3 whitespace-nowrap">~7 days</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Starter site
+              </td>
+              <td className="py-3 pr-4 whitespace-nowrap">$2,500</td>
+              <td className="py-3 pr-4">
+                Up to 5 pages — home, about, services, and contact done well.
+              </td>
+              <td className="py-3 whitespace-nowrap">2&ndash;3 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Growth site
+              </td>
+              <td className="py-3 pr-4 whitespace-nowrap">$4,500</td>
+              <td className="py-3 pr-4">
+                Our most popular tier. More pages, deeper local SEO, built to
+                pull in leads.
+              </td>
+              <td className="py-3 whitespace-nowrap">4&ndash;6 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Premium
+              </td>
+              <td className="py-3 pr-4 whitespace-nowrap">$7,500+</td>
+              <td className="py-3 pr-4">
+                Unlimited pages, custom functionality, and larger custom
+                builds.
+              </td>
+              <td className="py-3 whitespace-nowrap">4&ndash;6 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                <InternalLink href="/services/ecommerce">
+                  E-commerce store
+                </InternalLink>
+              </td>
+              <td className="py-3 pr-4 whitespace-nowrap">from $3,000</td>
+              <td className="py-3 pr-4">
+                A dedicated Shopify build — catalog, checkout, and launch
+                training. Growth tier with email flows is $5,500.
+              </td>
+              <td className="py-3 whitespace-nowrap">3&ndash;6 weeks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>Two bundles are worth knowing about if you&apos;re starting from zero:</p>
       <ul>
         <li>
@@ -5110,8 +5338,11 @@ function WebDesignCummingGaContent() {
       </ul>
       <p>
         If you also want ongoing search visibility,{" "}
-        <strong>SEO runs $500&ndash;$1,500/mo</strong> depending on how
-        competitive your category is. For a deeper cost breakdown, read{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO plans
+        </InternalLink>{" "}
+        run <strong>$499&ndash;$1,999/mo</strong> depending on how deep you go.
+        For a deeper cost breakdown, read{" "}
         <InternalLink href="/blog/website-cost-cumming-ga-2026">
           what a website really costs in Cumming, GA for 2026
         </InternalLink>{" "}
@@ -5154,8 +5385,9 @@ function WebDesignCummingGaContent() {
         <strong>A local web designer in Cumming.</strong> You get a site built
         around <em>your</em> business, real local SEO, a human who picks up the
         phone, and — critically — full ownership of the finished site and
-        domain. A good web designer locals can actually meet beats a faceless
-        template marketplace when something breaks or your business changes.
+        domain. A good local web designer you can actually meet beats a
+        faceless template marketplace when something breaks or your business
+        changes.
       </p>
       <p>
         There&apos;s no shame in starting on Squarespace. But if leads matter, a
@@ -5164,7 +5396,46 @@ function WebDesignCummingGaContent() {
         <InternalLink href="/blog/how-to-pick-a-web-design-company">
           how to pick a web design company
         </InternalLink>{" "}
-        digs deeper.
+        digs deeper — and if you&apos;re comparing full-service help, so does
+        our roundup of the{" "}
+        <InternalLink href="/blog/best-marketing-agencies-cumming-ga">
+          best marketing agencies in Cumming, GA
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="designer-vs-developer">
+        Web designer vs. web developer vs. agency — who do you need?
+      </h2>
+      <p>
+        These titles get used interchangeably, and the confusion costs buyers
+        money. The short version:
+      </p>
+      <ul>
+        <li>
+          <strong>A web designer</strong> handles how the site looks and
+          converts — layout, branding, copy structure, and the mobile
+          experience.
+        </li>
+        <li>
+          <strong>A web developer</strong> handles how it works — custom
+          features, integrations, booking systems, and e-commerce checkout. If
+          you need those, you&apos;re shopping for website development in
+          Cumming, not just design.
+        </li>
+        <li>
+          <strong>An agency</strong> bundles both, plus account managers — and
+          bills you for all three layers.
+        </li>
+      </ul>
+      <p>
+        For most Forsyth County small businesses, the practical answer is a
+        local studio that does website design <em>and</em> development in one
+        place. That&apos;s how we work: the same person designs and builds
+        your site, so nothing gets lost in a handoff — and you can click
+        through real local builds in{" "}
+        <InternalLink href="/work">our portfolio</InternalLink> before you
+        ever get on a call.
       </p>
 
       <h2 id="do-you-own-your-website">
@@ -5209,8 +5480,11 @@ function WebDesignCummingGaContent() {
           <strong>Starter (up to 5 pages):</strong> roughly 2&ndash;3 weeks.
         </li>
         <li>
-          <strong>Growth / Premium:</strong> 4&ndash;6 weeks, sometimes more for
-          e-commerce.
+          <strong>Growth / Premium:</strong> 4&ndash;6 weeks.
+        </li>
+        <li>
+          <strong>E-commerce stores:</strong> usually 3&ndash;6 weeks for a
+          dedicated Shopify build.
         </li>
       </ul>
       <p>
@@ -5262,10 +5536,11 @@ function WebDesignCummingGaContent() {
       </p>
       <p>
         That&apos;s the advantage of a small local studio: one designer who can
-        do your logo, your website, your shirts, and your signs under one roof —
-        one designer, one invoice. You&apos;re not paying agency overhead, and
-        branding and web design stay consistent because the same person builds
-        both. Explore the work at{" "}
+        do your{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink>, your
+        website, your shirts, and your signs under one roof — one designer, one
+        invoice. You&apos;re not paying agency overhead, and branding and web
+        design stay consistent because the same person builds both. Explore{" "}
         <InternalLink href="/services/web-design">web design</InternalLink> or{" "}
         <InternalLink href="/services/request-quote">
           request a quote
@@ -5283,15 +5558,28 @@ function WebDesignCummingGaContent() {
         <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
           Whether you need a clean 1-pager or a full Growth build, you&apos;ll
           get one designer, one invoice, and a fast, mobile-first site built to
-          show up in Forsyth County — fully owned by you. Let&apos;s build
-          something that actually bites.
+          show up in Forsyth County — fully owned by you. Start with a free
+          site audit of what you have now, or send a note through the{" "}
+          <a
+            href="/contact"
+            className="font-medium text-[var(--color-toxic-text)] underline decoration-[var(--color-toxic)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-toxic)]"
+          >
+            contact page
+          </a>{" "}
+          — either way, let&apos;s build something that actually bites.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Get a free site audit
+          </a>
           <a
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
           >
             Book a free consult
           </a>
@@ -5309,10 +5597,11 @@ function WebDesignCummingGaContent() {
       <h3 id="faq-cost">How much does web design cost in Cumming, GA?</h3>
       <p>
         Web design in Cumming, GA generally starts around $1,500 for a
-        1&ndash;2 page landing site, with multi-page builds running about
-        $2,500, $4,500, and $7,500+ for e-commerce. The $997 Startup Special
-        includes a 1-page site plus logo and print. SEO is a separate
-        $500&ndash;$1,500/mo.
+        1&ndash;2 page landing site, with multi-page builds at $2,500 and
+        $4,500 and larger Premium builds at $7,500+. Dedicated e-commerce
+        stores start at $3,000. The $997 Startup Special includes a 1-page
+        site plus logo and print, and ongoing local SEO is a separate
+        $499&ndash;$1,999/mo.
       </p>
 
       <h3 id="faq-ownership">Do I own my website?</h3>
@@ -5327,9 +5616,10 @@ function WebDesignCummingGaContent() {
       <h3 id="faq-timeline">How long does it take to build a website?</h3>
       <p>
         A 1-page site can launch in about 7 days, a 5-page Starter site in
-        2&ndash;3 weeks, and larger Growth or e-commerce builds in 4&ndash;6
-        weeks. The biggest delay is usually waiting on your photos and content,
-        so come prepared to move fast.
+        2&ndash;3 weeks, and larger Growth and Premium builds in 4&ndash;6
+        weeks. Dedicated e-commerce stores usually take 3&ndash;6 weeks. The
+        biggest delay is usually waiting on your photos and content, so come
+        prepared to move fast.
       </p>
 
       <h3 id="faq-squarespace">Squarespace vs. custom — which is better?</h3>
@@ -5338,6 +5628,18 @@ function WebDesignCummingGaContent() {
         SEO, and rented monthly. A custom site is built around your business with
         real Forsyth County SEO and full ownership. Start on Squarespace if
         budget is tight; go custom once leads matter.
+      </p>
+
+      <h3 id="faq-design-vs-development">
+        What&apos;s the difference between web design and web development?
+      </h3>
+      <p>
+        Web design is how the site looks and converts — layout, branding, and
+        the mobile experience. Web development is how it works — custom
+        features, integrations, and e-commerce functionality. Most small
+        businesses shopping for website development in Cumming actually need
+        both, which is why a studio that designs and builds in one place saves
+        money and handoffs.
       </p>
 
       <h3 id="faq-ai">Can AI build my website?</h3>
@@ -5967,8 +6269,9 @@ function CanChatgptDoSeoContent() {
       <p>
         We&apos;re a one-shop studio — logo, website, shirts, and signs under
         one roof, one designer, one invoice — so the same person who builds your
-        site also handles its SEO. Pricing for the rest: standalone websites
-        start around <strong>$1,500</strong> (common tiers run{" "}
+        site also handles its SEO. Pricing for the rest: standalone{" "}
+        <InternalLink href="/services/web-design">websites</InternalLink> start
+        around <strong>$1,500</strong> (common tiers run{" "}
         <strong>$2,500 / $4,500 / $7,500+</strong>), logos run{" "}
         <strong>$750 / $1,500 / $2,500</strong>, and the{" "}
         <strong>
@@ -5997,7 +6300,9 @@ function CanChatgptDoSeoContent() {
         an outline, and scaffolds the schema. Then a human writes the real
         content with Cumming-specific detail, verifies every fact, builds the
         page properly, fixes the technical issues, and does the Google Business
-        Profile and citation work by hand.
+        Profile and citation work by hand. (We build these kinds of{" "}
+        <InternalLink href="/services/ai-workflows">AI workflows</InternalLink>{" "}
+        for client businesses too — same rule: AI drafts, humans decide.)
       </p>
       <p>
         The AI saved us time on the parts that are safe to speed up. The human
@@ -8512,6 +8817,12 @@ function MedSpaMarketingGaContent() {
         Before/after content is the single most persuasive thing a med spa can
         post — and the easiest to get wrong. Treat it carefully, because
         you&apos;re handling sensitive patient information and medical claims.
+        (If you&apos;d rather have the posting planned and scheduled for you,
+        that&apos;s what our{" "}
+        <InternalLink href="/services/social-media">
+          social media management
+        </InternalLink>{" "}
+        service is for.)
       </p>
       <p>
         Practical cautions (not legal advice — confirm with your own counsel and
@@ -8576,9 +8887,13 @@ function MedSpaMarketingGaContent() {
         sales force. Pair it with a branded referral card at the front desk.
       </p>
       <p>
-        Retention matters just as much: a membership or rebooking nudge keeps a
-        patient&apos;s lifetime value climbing, which is what makes paid
-        acquisition pencil out later.
+        Retention matters just as much: a membership or rebooking nudge — the
+        kind of automated sequence our{" "}
+        <InternalLink href="/services/email-marketing">
+          email marketing
+        </InternalLink>{" "}
+        service sets up — keeps a patient&apos;s lifetime value climbing, which
+        is what makes paid acquisition pencil out later.
       </p>
 
       <h2 id="paid-ads">When should a med spa run paid ads?</h2>
@@ -9053,9 +9368,11 @@ function BestMarketingAgenciesCummingContent() {
       </p>
 
       <p>
-        This is an honest roundup of how to choose, not a &quot;we&apos;re
-        #1&quot; pitch. Below: the three kinds of providers, what each is good
-        at, and the criteria a Forsyth County business should actually weigh.
+        This is an honest roundup, not a &quot;we&apos;re #1&quot; pitch.
+        Below: the three kinds of providers, six real local options by name
+        (including several we&apos;d point you to instead of us for certain
+        jobs), what marketing agencies in Cumming actually charge in 2026, and
+        the criteria a Forsyth County business should actually weigh.
       </p>
 
       <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
@@ -9066,6 +9383,10 @@ function BestMarketingAgenciesCummingContent() {
           <li>
             <strong>There&apos;s no single best agency for everyone.</strong>{" "}
             Match the provider type to your stage, not the logo on the door.
+          </li>
+          <li>
+            <strong>Six real options compared below</strong> — four based in
+            Cumming proper, two nearby — with where each honestly fits.
           </li>
           <li>
             <strong>Full-service agency</strong> = ongoing ad management;{" "}
@@ -9124,7 +9445,7 @@ function BestMarketingAgenciesCummingContent() {
         </li>
       </ul>
       <p>
-        Almost nobody needs all six at once. Most Cumming small businesses need
+        Almost nobody needs all seven at once. Most Cumming small businesses need
         two or three done well, in the right order. That ordering — brand first,
         then website, then visibility — matters more than the logo on the
         vendor&apos;s door.
@@ -9176,46 +9497,156 @@ function BestMarketingAgenciesCummingContent() {
       </p>
 
       <h2 id="local-options">
-        A few real local options (and where each fits)
+        The best marketing agencies in Cumming, GA: 6 real local options
       </h2>
       <p>
-        Names help more than categories, so here are providers a Cumming
-        business will actually run into — including where we&apos;re honestly
-        not the right pick.
+        Names help more than categories, so here are six providers a Cumming
+        business will actually run into — four based in Cumming proper, two
+        close enough that they compete for the same clients — including where
+        we&apos;re honestly not the right pick. None of these are paid
+        placements; nobody on this list asked to be here.
       </p>
-      <ul>
-        <li>
-          <strong>Market Complete (Cumming)</strong> — a full-service marketing
-          collective led by Julie Brennan, publisher of <em>My Forsyth</em>{" "}
-          magazine. Graphic design, web design, printing, social media, and
-          email marketing from a team of specialists, quoted per project. A fit
-          if you want an assembled team with traditional-media connections
-          managing your marketing on an ongoing basis.
-        </li>
-        <li>
-          <strong>SangFroid Web (Alpharetta, serves Cumming)</strong> — a
-          WordPress design and SEO shop in business since 2007. A fit when a
-          deeply search-optimized WordPress site is the one job you&apos;re
-          hiring for, and print, signage, and social happen elsewhere.
-        </li>
-        <li>
-          <strong>Branding Zombie Designs (Cumming — that&apos;s us)</strong> —
-          one-roof solo studio: brand, website, print, signage, and apparel,
-          plus managed{" "}
-          <InternalLink href="/services/social-media">social</InternalLink>,{" "}
-          <InternalLink href="/services/digital-marketing">
-            local SEO/AEO
-          </InternalLink>
-          , and{" "}
-          <InternalLink href="/services/email-marketing">
-            email marketing
-          </InternalLink>{" "}
-          — at published flat rates, month-to-month, with productized kits. A
-          fit when you want the foundation built fast by one accountable
-          person. Honestly not the pick if you need a big team running
-          five-figure monthly ad spend.
-        </li>
-      </ul>
+
+      <h3 id="option-market-complete">
+        1. Market Complete — full-service collective (Cumming)
+      </h3>
+      <p>
+        A full-service marketing collective led by Julie Brennan, publisher of{" "}
+        <em>My Forsyth</em> magazine. Graphic design, web design, printing,
+        social media, and email marketing from a team of specialists, quoted
+        per project. A fit if you want an assembled team with
+        traditional-media connections managing your marketing on an ongoing
+        basis.
+      </p>
+
+      <h3 id="option-bandicoot">
+        2. Bandicoot Marketing — WordPress sites + care plans (Cumming)
+      </h3>
+      <p>
+        A WordPress design and management shop on Westshore Drive, in
+        business since 2010. Instead of quoting every job from scratch, it
+        publishes flat monthly care-plan pricing — tiers run
+        $97&ndash;$247 per month, with higher-touch support plans above
+        that — which we respect; more providers should. A fit for an
+        established business that wants its WordPress site built, hosted,
+        and maintained by one local shop on a predictable subscription.
+      </p>
+
+      <h3 id="option-simpleman">
+        3. Simpleman Digital Marketing — SEO specialist (Cumming)
+      </h3>
+      <p>
+        An SEO-focused digital marketing agency on Colony Park Drive, in
+        business since 2018 and BBB-accredited. Search engine optimization is
+        the core offer rather than one line item on a long menu. A fit when
+        ranking on Google is the specific job you&apos;re hiring for and your
+        brand, website, and print are already handled.
+      </p>
+
+      <h3 id="option-sangfroid">
+        4. SangFroid Web — WordPress design + SEO (Alpharetta, serves Cumming)
+      </h3>
+      <p>
+        A WordPress design and SEO shop in business since 2007, serving
+        service businesses across North Metro Atlanta including Cumming. A fit
+        when a deeply search-optimized WordPress site is the one job
+        you&apos;re hiring for, and print, signage, and social happen
+        elsewhere.
+      </p>
+
+      <h3 id="option-make-it-loud">
+        5. Make It Loud — full-service digital agency (Buford, serves Cumming)
+      </h3>
+      <p>
+        A digital agency near the Mall of Georgia with 20+ years in business
+        and a wide menu: SEO, Google Ads and PPC management, web design,
+        social advertising, and email. A fit for a business that wants a
+        bigger multi-channel team — especially paid ads — and doesn&apos;t
+        mind that the team is one county over.
+      </p>
+
+      <h3 id="option-bzd">
+        6. Branding Zombie Designs — one-roof solo studio (Cumming — that&apos;s
+        us)
+      </h3>
+      <p>
+        One-roof solo studio: brand, website, print, signage, and apparel,
+        plus managed{" "}
+        <InternalLink href="/services/social-media">social</InternalLink>,{" "}
+        <InternalLink href="/services/digital-marketing">
+          local SEO/AEO
+        </InternalLink>
+        , and{" "}
+        <InternalLink href="/services/email-marketing">
+          email marketing
+        </InternalLink>{" "}
+        — at published flat rates, month-to-month, with productized kits.
+        Recent local builds are on the{" "}
+        <InternalLink href="/work">work page</InternalLink>, so you can judge
+        the output instead of the pitch. A fit when you want the foundation
+        built fast by one accountable person. Honestly not the pick if you
+        need a big team running five-figure monthly ad spend.
+      </p>
+
+      <div className="my-8 overflow-x-auto rounded-2xl border border-[var(--color-hairline-strong)]">
+        <table className="w-full min-w-[640px] border-collapse text-left text-[length:var(--text-secondary)]">
+          <thead>
+            <tr className="bg-[var(--color-fog)]">
+              <th className="p-4 font-semibold uppercase tracking-wider text-[length:var(--text-caption)]">
+                Provider
+              </th>
+              <th className="p-4 font-semibold uppercase tracking-wider text-[length:var(--text-caption)]">
+                Based in
+              </th>
+              <th className="p-4 font-semibold uppercase tracking-wider text-[length:var(--text-caption)]">
+                Model
+              </th>
+              <th className="p-4 font-semibold uppercase tracking-wider text-[length:var(--text-caption)]">
+                Best for
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-[var(--color-hairline-strong)]">
+            <tr>
+              <td className="p-4 font-semibold">Market Complete</td>
+              <td className="p-4">Cumming</td>
+              <td className="p-4">Full-service collective, per-project</td>
+              <td className="p-4">Assembled team + local media ties</td>
+            </tr>
+            <tr>
+              <td className="p-4 font-semibold">Bandicoot Marketing</td>
+              <td className="p-4">Cumming</td>
+              <td className="p-4">WordPress + monthly care plans</td>
+              <td className="p-4">Managed WordPress site on subscription</td>
+            </tr>
+            <tr>
+              <td className="p-4 font-semibold">Simpleman Digital</td>
+              <td className="p-4">Cumming</td>
+              <td className="p-4">SEO specialist</td>
+              <td className="p-4">Google rankings as the one job</td>
+            </tr>
+            <tr>
+              <td className="p-4 font-semibold">SangFroid Web</td>
+              <td className="p-4">Alpharetta</td>
+              <td className="p-4">WordPress design + SEO</td>
+              <td className="p-4">Search-optimized WordPress site</td>
+            </tr>
+            <tr>
+              <td className="p-4 font-semibold">Make It Loud</td>
+              <td className="p-4">Buford</td>
+              <td className="p-4">Full-service digital, retainers</td>
+              <td className="p-4">Multi-channel + paid ads at scale</td>
+            </tr>
+            <tr>
+              <td className="p-4 font-semibold">Branding Zombie Designs</td>
+              <td className="p-4">Cumming</td>
+              <td className="p-4">Solo studio, flat published rates</td>
+              <td className="p-4">Brand + site + print under one roof</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p>
         All of us will talk to you for free. Ask each provider the criteria
         questions below and the right fit gets obvious fast.
@@ -9261,6 +9692,54 @@ function BestMarketingAgenciesCummingContent() {
         ranking.
       </p>
 
+      <h2 id="what-agencies-charge">
+        How much do marketing agencies in Cumming, GA charge?
+      </h2>
+      <p>
+        Three pricing models show up around here, and knowing which one
+        you&apos;re looking at makes quotes comparable:
+      </p>
+      <ul>
+        <li>
+          <strong>Monthly retainers.</strong> Ongoing local SEO and digital
+          marketing from agencies serving Cumming commonly runs{" "}
+          $1,500&ndash;$3,500 per month, while leaner SEO-only plans start
+          around $500 per month. Bigger Atlanta agencies charge more. Our own
+          published{" "}
+          <InternalLink href="/services/digital-marketing">
+            local SEO tiers
+          </InternalLink>{" "}
+          run $499&ndash;$1,999 per month. Full breakdown of what moves
+          rankings (and what SEO should cost) in our{" "}
+          <InternalLink href="/blog/seo-cumming-ga">
+            guide to SEO in Cumming, GA
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Project pricing.</strong> Website projects from local
+          agencies commonly land at $3,000&ndash;$6,000, and the broader
+          Cumming market runs $1,500&ndash;$7,500+ depending on scope. We
+          priced the whole market tier-by-tier in our{" "}
+          <InternalLink href="/blog/web-design-cumming-ga-guide">
+            web design cost guide for Cumming, GA
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Flat published rates.</strong> The productized model: a set
+          price for a set deliverable, like our $997{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink>.
+          Rarer locally, but it&apos;s the easiest to budget because the
+          number is on the website before you ever get on a call.
+        </li>
+      </ul>
+      <p>
+        Whichever model, get the scope in writing. A $1,000/month retainer
+        with vague deliverables costs more than a $2,000/month one that lists
+        exactly what ships.
+      </p>
+
       <h2 id="where-studio-fits">Where does a one-roof studio fit?</h2>
       <p>
         If your main need is to look legitimate and get found locally — a clean
@@ -9276,6 +9755,7 @@ function BestMarketingAgenciesCummingContent() {
       </p>
       <p>
         That one-roof model is what Branding Zombie Designs does —{" "}
+        <InternalLink href="/services/branding">brand identity</InternalLink>,{" "}
         <InternalLink href="/services/logo-design">logo design</InternalLink>,{" "}
         <InternalLink href="/services/web-design">web design</InternalLink>, and{" "}
         <InternalLink href="/services/digital-marketing">
@@ -9335,6 +9815,15 @@ function BestMarketingAgenciesCummingContent() {
         </li>
       </ol>
       <p>
+        Not sure which jobs you actually need? Start with a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> —
+        it shows what&apos;s broken before you spend a dollar with anyone on
+        this list — or{" "}
+        <InternalLink href="/contact">contact us</InternalLink> and ask which
+        type of provider fits your situation. If we&apos;re not it, we&apos;ll
+        say so and point you at whoever is.
+      </p>
+      <p>
         Get the foundation built right once, and every dollar you spend on
         visibility afterward works harder.
       </p>
@@ -9354,10 +9843,16 @@ function BestMarketingAgenciesCummingContent() {
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
           <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Get a free site audit
+          </a>
+          <a
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
           >
             Book a free consult
           </a>
@@ -9396,11 +9891,36 @@ function BestMarketingAgenciesCummingContent() {
 
       <h3 id="faq-cost">How much does digital marketing in Cumming, GA cost?</h3>
       <p>
-        It varies by scope. Local SEO commonly runs $500&ndash;$1,500 per month
-        ongoing, logos start around $750, and websites commonly fall in the
-        $2,500&ndash;$7,500+ range. A budget launch like the Startup Special
-        starts at $997. Ask any provider for a written, specific quote rather
-        than a vague monthly number.
+        It varies by scope. Ongoing local SEO and digital marketing retainers
+        around Cumming commonly run $500&ndash;$3,500 per month depending on
+        what&apos;s included, logos start around $750, and websites commonly
+        fall in the $1,500&ndash;$7,500+ range. A budget launch like the
+        Startup Special starts at $997. Ask any provider for a written,
+        specific quote rather than a vague monthly number.
+      </p>
+
+      <h3 id="faq-based-in-cumming">
+        Which marketing agencies are actually based in Cumming, GA?
+      </h3>
+      <p>
+        Of the providers in this roundup, Market Complete, Bandicoot
+        Marketing, Simpleman Digital Marketing, and Branding Zombie Designs
+        are based in Cumming proper. SangFroid Web (Alpharetta) and Make It
+        Loud (Buford) are nearby and actively serve Cumming businesses.
+        &quot;Based here&quot; matters most when local knowledge — Forsyth
+        County search patterns, GA-400 commuter customers — drives the work.
+      </p>
+
+      <h3 id="faq-cumming-vs-atlanta">
+        Should I hire a Cumming agency or a bigger Atlanta agency?
+      </h3>
+      <p>
+        Atlanta agencies bring bigger teams and suit five-figure monthly ad
+        budgets. For most Cumming small businesses, a local provider wins:
+        they know how Forsyth County actually searches, you&apos;re a
+        meaningful client instead of the smallest account on the roster, and
+        you can meet face to face. Go bigger when your budget genuinely needs
+        a media-buying team.
       </p>
 
       <h3 id="faq-who-to-hire">Who should I hire to market my business in Cumming?</h3>
@@ -9860,7 +10380,11 @@ function MarketingStrategiesStartupsContent() {
       <p>
         Reviews are the trust engine, and as a startup you have a clean slate to
         fill. After every happy job, text or email the customer a one-tap link to
-        your Google review page.
+        your Google review page — the same kind of automated follow-up our{" "}
+        <InternalLink href="/services/email-marketing">
+          email marketing
+        </InternalLink>{" "}
+        service builds for you.
       </p>
       <p>
         Ten genuine five-star reviews can out-pull a paid ad campaign, because a
@@ -9880,6 +10404,11 @@ function MarketingStrategiesStartupsContent() {
         behind-the-scenes. Engage in local Cumming and Forsyth County Facebook
         groups (follow their rules). You don&apos;t need to go viral; you need to
         stay visible to the few thousand people who could actually buy from you.
+        And if posting always falls to the bottom of the list, our{" "}
+        <InternalLink href="/services/social-media">
+          social media management
+        </InternalLink>{" "}
+        service keeps the feed alive while you run the business.
       </p>
 
       <h2 id="lowcost-logo-site">Low-cost lever #4: a real logo and a fast website</h2>
@@ -12564,8 +13093,9 @@ function SevenCsWebsiteDesignContent() {
         your cards, and your shirts. Same colors, same fonts, same voice. When
         the site uses one shade of blue and the logo uses another, visitors feel
         it even if they can&apos;t name it. It reads as &quot;amateur.&quot; This
-        is exactly why one designer handling logo and site beats stitching
-        vendors together.
+        is exactly why one designer handling{" "}
+        <InternalLink href="/services/branding">brand identity</InternalLink>{" "}
+        and site beats stitching vendors together.
       </p>
 
       <h2 id="credibility">5. Credibility</h2>
@@ -12580,10 +13110,15 @@ function SevenCsWebsiteDesignContent() {
       <h2 id="conversion">6. Conversion</h2>
       <p>
         Conversion is whether the site is built to do something — get the call,
-        the form, the booking, the sale. A beautiful site that doesn&apos;t ask
-        for the next step is a brochure, not a tool. Clear calls to action, an
-        easy contact path, a phone number that&apos;s tappable on mobile. Pretty
-        is nice; pretty that converts is the point.
+        the form, the booking, the sale. (If &quot;the sale&quot; means a real
+        cart and checkout, that&apos;s{" "}
+        <InternalLink href="/services/ecommerce">
+          Shopify ecommerce
+        </InternalLink>{" "}
+        territory.) A beautiful site that doesn&apos;t ask for the next step is
+        a brochure, not a tool. Clear calls to action, an easy contact path, a
+        phone number that&apos;s tappable on mobile. Pretty is nice; pretty that
+        converts is the point.
       </p>
 
       <h2 id="connection">7. Connection</h2>
@@ -13596,11 +14131,11 @@ function GoogleBusinessProfileCummingContent() {
         .
       </p>
       <p>
-        Local SEO and profile management live under our{" "}
+        Profile management is part of our{" "}
         <InternalLink href="/services/digital-marketing">
-          digital marketing services
+          local SEO in Cumming
         </InternalLink>{" "}
-        — that&apos;s the page to start on if you want help, plus a free{" "}
+        service — that&apos;s the page to start on if you want help, plus a free{" "}
         <InternalLink href="/free-site-audit">site audit</InternalLink> to spot
         what&apos;s holding you back.
       </p>
@@ -14450,11 +14985,11 @@ function BusinessNotShowingGoogleMapsContent() {
       <p>
         Pick <strong>one</strong> exact format and make it identical everywhere.
         This is grunt work, but it&apos;s some of the highest-leverage local-SEO
-        work you can do in Cumming, GA. It&apos;s the backbone of{" "}
+        work you can do in Cumming, GA. It&apos;s the backbone of what an{" "}
         <InternalLink href="/services/digital-marketing">
-          our local SEO service
-        </InternalLink>
-        .
+          SEO company in Cumming
+        </InternalLink>{" "}
+        actually does for you.
       </p>
 
       <h2 id="primary-category">Did I pick the right primary category?</h2>
@@ -16818,16 +17353,19 @@ export const POSTS: Post[] = [
     meta: {
       slug: "best-marketing-agencies-cumming-ga",
       title:
-        "Best Marketing Agencies in Cumming, GA: How to Choose the Right Marketing Partner (2026)",
-      seoTitle: "Best Marketing Agencies in Cumming, GA (2026) | Branding Zombie Designs",
+        "Best Marketing Agencies in Cumming, GA: 6 Real Local Options & How to Choose (2026)",
+      seoTitle: "Best Marketing Agencies in Cumming, GA (2026 Local Guide)",
       seoDescription:
-        "How to pick the best marketing agency in Cumming, GA: agency vs. solo studio vs. freelancer, what each does, and the criteria to weigh for Forsyth County.",
+        "Comparing marketing agencies in Cumming, GA? Six real local providers compared, agency vs. solo studio vs. freelancer, 2026 costs, and how to choose.",
       excerpt:
-        "An honest guide to choosing a marketing partner in Cumming, GA: full-service agency vs. solo design studio vs. freelancer, what each does, and the criteria a Forsyth County business should weigh.",
+        "An honest 2026 roundup of six real marketing providers serving Cumming, GA — full-service agencies, SEO shops, and one solo studio — with typical costs and how to choose the right partner.",
       keywords: [
         "marketing agencies in Cumming, GA",
         "best marketing agency Cumming GA",
+        "marketing companies Cumming GA",
         "digital marketing Cumming GA",
+        "digital marketing agency Cumming",
+        "SEO company Cumming",
         "how to choose a marketing agency",
         "full-service agency vs freelancer",
         "branding and web design",
@@ -16836,8 +17374,8 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      dateModified: "2026-07-09",
-      readingTimeMinutes: 9,
+      dateModified: "2026-07-18",
+      readingTimeMinutes: 11,
       category: "Marketing",
       tags: [
         "marketing agency",
@@ -17347,26 +17885,30 @@ export const POSTS: Post[] = [
     meta: {
       slug: "seo-cumming-ga",
       title:
-        "Do You Need SEO in Cumming, GA? Cost & What Moves Rankings (2026)",
+        "SEO in Cumming, GA: Cost, Companies & What Moves Rankings (2026)",
       seoTitle:
-        "SEO in Cumming, GA: Cost, Best Companies & What Works 2026 | Branding Zombie Designs",
+        "SEO Company in Cumming, GA: Cost & What Works (2026)",
       seoDescription:
-        "Local SEO in Cumming, GA runs $500–$1,500/mo. What it costs, whether your small business needs it, how to pick an SEO company, and what moves rankings in 2026.",
+        "What local SEO costs in Cumming, GA ($500–$1,500/mo), how to pick an SEO company, and what actually moves rankings in 2026 — from a Cumming studio.",
       excerpt:
-        "An honest local guide to SEO in Cumming, GA: what it is, whether your small business needs it, what local SEO costs ($500–$1,500/mo), Google Business Profile, DIY vs hiring, timelines, and AI search.",
+        "An honest local guide to SEO in Cumming, GA: what local SEO costs ($500–$1,500/mo), how to pick an SEO company or agency, Google Business Profile, DIY vs hiring, timelines, and AI search.",
       keywords: [
         "seo cumming",
+        "cumming seo",
         "seo agency cumming",
         "seo services cumming",
         "local seo cumming",
         "seo company cumming",
+        "cumming seo expert",
+        "search engine optimization cumming ga",
         "how much does local SEO cost",
         "how long does SEO take to work",
         "is SEO dead with AI search",
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      readingTimeMinutes: 8,
+      dateModified: "2026-07-18",
+      readingTimeMinutes: 9,
       category: "SEO",
       tags: [
         "SEO",
@@ -17380,7 +17922,7 @@ export const POSTS: Post[] = [
       ],
       ogImage: "/assets/og-image.png",
       ogImageAlt:
-        "Do you need SEO in Cumming, GA — cost and what moves rankings in 2026 — Branding Zombie Designs",
+        "SEO in Cumming, GA — cost, companies, and what moves rankings in 2026 — Branding Zombie Designs",
     },
     Content: SeoCummingGaContent,
   },
@@ -17388,16 +17930,17 @@ export const POSTS: Post[] = [
     meta: {
       slug: "web-design-cumming-ga-guide",
       title:
-        "Web Design in Cumming, GA: What to Look For, What It Costs, and Who Owns It",
-      seoTitle:
-        "Web Design in Cumming, GA: Costs & What to Look For | Branding Zombie Designs",
+        "Web Design in Cumming, GA: What It Costs, What to Look For, and Who Owns It (2026)",
+      seoTitle: "Web Design in Cumming, GA: 2026 Costs & Buyer's Guide",
       seoDescription:
-        "Web design in Cumming, GA starts around $1,500. What good local web design includes, real price tiers, who owns the site, how to pick the best company, and how to choose right.",
+        "Web design in Cumming, GA runs $1,500–$7,500+. 2026 price tiers, what good local website design includes, who owns the site, and how to choose.",
       excerpt:
-        "Web design in Cumming, GA starts around $1,500. A local buyer's guide to what good web design includes, real price tiers, DIY vs. local, ownership, timelines, and red flags.",
+        "Web design in Cumming, GA runs $1,500–$7,500+, with e-commerce builds from $3,000. A 2026 local buyer's guide: real price tiers, design vs. development, ownership, timelines, and red flags.",
       keywords: [
         "web design cumming ga",
+        "website design cumming ga",
         "website design cumming",
+        "website development cumming",
         "web designer cumming",
         "small business web design",
         "affordable web design services cumming",
@@ -17409,7 +17952,8 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      readingTimeMinutes: 8,
+      dateModified: "2026-07-18",
+      readingTimeMinutes: 9,
       category: "Web Design",
       tags: [
         "web design",
@@ -17422,7 +17966,7 @@ export const POSTS: Post[] = [
       ],
       ogImage: "/assets/og-image.png",
       ogImageAlt:
-        "Web design in Cumming, GA — costs, what to look for, and who owns it — Branding Zombie Designs",
+        "Web design in Cumming, GA — 2026 costs, what to look for, and who owns it — Branding Zombie Designs",
     },
     Content: WebDesignCummingGaContent,
   },
@@ -18241,4 +18785,41 @@ export function getAllPosts(): Post[] {
 /** Canonical URL for a post. */
 export function getPostUrl(slug: string): string {
   return `${SITE_URL}/blog/${slug}`;
+}
+
+// ─── Related services ─────────────────────────────────────────────────────
+// Per-category defaults for the "Services mentioned" strip on /blog/[slug].
+// A post can override via meta.relatedServices; everything else inherits its
+// category's trio so under-linked service pages (social media, email
+// marketing, ecommerce, AI workflows) pick up crawlable inlinks from every
+// post without touching post content.
+
+const CATEGORY_RELATED_SERVICES: Record<string, ServiceSlug[]> = {
+  "Web Design": ["web-design", "ecommerce", "ai-workflows"],
+  Branding: ["branding", "logo-design", "print-design"],
+  "Logo Design": ["logo-design", "branding", "print-design"],
+  SEO: ["digital-marketing", "web-design", "social-media"],
+  "Local SEO": ["digital-marketing", "web-design", "social-media"],
+  "AI Search": ["digital-marketing", "ai-workflows", "web-design"],
+  "AI Workflows": ["ai-workflows", "web-design", "digital-marketing"],
+  "AI & Design": ["logo-design", "branding", "ai-workflows"],
+  Marketing: ["digital-marketing", "social-media", "email-marketing"],
+  "Print & Apparel": ["print-design", "branding", "logo-design"],
+  "Print & Signage": ["print-design", "branding", "logo-design"],
+};
+
+const DEFAULT_RELATED_SERVICES: ServiceSlug[] = [
+  "web-design",
+  "logo-design",
+  "digital-marketing",
+];
+
+/** Service slugs to feature on a post page — explicit meta wins, then the
+ *  category default, then a safe web/logo/marketing trio. */
+export function getRelatedServiceSlugs(meta: PostMeta): ServiceSlug[] {
+  return (
+    meta.relatedServices ??
+    CATEGORY_RELATED_SERVICES[meta.category] ??
+    DEFAULT_RELATED_SERVICES
+  );
 }

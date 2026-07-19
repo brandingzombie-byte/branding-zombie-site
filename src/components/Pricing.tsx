@@ -71,28 +71,9 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Mobile-only thumbs-up — comes off the left screen edge in its own
-            band between the intro and the kit ladder, endorsing the packages
-            below. Peek + idle sway + gentle scroll parallax so it feels alive. */}
-        <div
-          aria-hidden
-          className="pointer-events-none relative -mx-6 mt-8 h-[145px] overflow-x-clip md:hidden"
-        >
-          <ZombieHand
-            src={HANDS["zh01-thumbsup-l"].src}
-            width={HANDS["zh01-thumbsup-l"].width}
-            height={HANDS["zh01-thumbsup-l"].height}
-            edge="left"
-            behaviors={["peek", "parallax", "idle"]}
-            offset="6px"
-            bleed="-30px"
-            displayWidth={450}
-            parallaxSpeed={0.1}
-            zIndex={5}
-            mobile
-            mobileParallax
-          />
-        </div>
+        {/* (No mobile hand here — the homepage renders at most 3 mobile hands
+            per ZOMBIE-HANDS-SPEC, and those slots belong to PainPoints,
+            Testimonials, and Services. Desktop keeps the thumbs-up above.) */}
 
         {/* $997 promo banner — leads the pricing with the budget-friendly
             entry so first-time buyers and refresh shoppers don't bounce on

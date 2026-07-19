@@ -11,7 +11,9 @@ import { cn } from "@/lib/utils";
 const PAGE_URL = `${SITE_URL}/industries`;
 
 export const metadata: Metadata = {
-  title: `Industries We Serve — Branding for Local Businesses | ${BUSINESS_NAME}`,
+  // Brand omitted — the root layout's "%s | Branding Zombie Designs" title
+  // template appends it once (adding it here doubled the suffix).
+  title: "Industries We Serve — Branding for Local Businesses",
   description:
     "Branding, web design, and print built for your industry — trades and contractors, restaurants, salons and barbershops, supplement and CPG brands, and more across Cumming, GA and North Metro Atlanta.",
   alternates: { canonical: PAGE_URL },

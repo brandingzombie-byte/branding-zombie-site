@@ -133,6 +133,8 @@ export default function PainPoints() {
       >
         {/* #1 — Thumbs-down at the bad-website stats (right edge, hero moment).
              Flipped so the arm reads correctly entering from the right.
+             Oversized on purpose — this is the concept's signature hand, so it
+             gets the most knuckle on screen and the strongest cursor reach.
              Desktop only — mobile gets its own placement above the stats. */}
         <ZombieHand
           src={HANDS["zh09-thumbsdown-l"].src}
@@ -141,8 +143,9 @@ export default function PainPoints() {
           edge="right"
           behaviors={["peek", "parallax", "idle", "follow"]}
           offset="40%"
-          bleed="-46px"
-          displayWidth={432}
+          bleed="-30px"
+          displayWidth={560}
+          followStrength={30}
           flip
           zIndex={5}
         />
