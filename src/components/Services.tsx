@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
-import ServicesBrutalistGrid from "@/components/services/ServicesBrutalistGrid";
+import ServicesZombieHub from "@/components/services/ServicesZombieHub";
 import { SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
 import ZombieHand from "@/components/ZombieHand";
@@ -83,7 +83,7 @@ export default function Services() {
           />
         </div>
 
-        <ServicesBrutalistGrid services={homepageServices} />
+        <ServicesZombieHub services={homepageServices} />
 
         {/* Index link — the only in-body path from the homepage to the full
             /services index (the navbar link aside). Also the homepage's route
