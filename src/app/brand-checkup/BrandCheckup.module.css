@@ -21,6 +21,13 @@
   max-width: 680px; margin: 0 auto;
   padding: 0 clamp(1rem, 4vw, 1.4rem);
 }
+/* Full-width decorative-hand layer. Spans .app so hand edges = viewport edges;
+   the off-edge wrist is guillotined by .app's overflow:hidden. */
+.handLayer { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+/* Hands live in the side-gutters, which only exist once the viewport is wider
+   than the content column — hide them where there's not enough room to clear
+   the ~680px column with margin. */
+@media (max-width: 1080px) { .handLayer { display: none; } }
 .fade { animation: bzqFade 0.35s var(--ease-out-expo, ease) both; }
 @keyframes bzqFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
@@ -46,7 +53,7 @@
 .cta:disabled { opacity: 0.6; cursor: not-allowed; }
 
 /* ===== intro ===== */
-.intro { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: clamp(1rem, 4vw, 2rem) 4px 0; }
+.intro { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: clamp(1rem, 4vw, 2rem) 4px 0; }
 .skull { width: 120px; height: auto; filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.55)); margin-bottom: 14px; }
 .kick { color: var(--color-toxic-text); font-weight: 700; letter-spacing: 0.26em; font-size: 11.5px; text-transform: uppercase; margin-bottom: 12px; }
 .h1 { font-family: var(--font-display); font-size: clamp(40px, 11vw, 66px); font-weight: 900; line-height: 0.92; text-transform: uppercase; letter-spacing: -0.01em; }
@@ -173,6 +180,70 @@
 .rfoot b { color: var(--color-dark-text-secondary); }
 .restart { margin-top: 14px; font-size: 12.5px; color: var(--color-dark-text-dim); text-decoration: underline; text-align: center; display: block; width: 100%; background: none; border: none; cursor: pointer; }
 
+/* ═══ Heartbeat / EKG motif ═══════════════════════════════════════════════════
+   Score-reactive vitals readout. Only `transform` animates (GPU); the two-tile
+   track loops seamlessly by translating -50%. */
+.hb { position: relative; width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.hbTrack { width: 200%; animation: hbScroll var(--hb-dur, 3s) linear infinite; will-change: transform; }
+.hbSvg { display: block; width: 100%; height: 100%; }
+/* Crisp neon-on-dark stroke — no filter/drop-shadow, so the only thing that ever
+   changes per frame is the track's transform (GPU, cheap). The halo is a fatter,
+   translucent duplicate stroke underneath (.hbGlow), not a blur filter. */
+.hbSvg path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.hbCore path { stroke: var(--hb-color, var(--color-toxic)); stroke-width: 2.4; }
+.hbGlow path { stroke: var(--hb-color, var(--color-toxic)); stroke-width: 8; opacity: 0.22; }
+@keyframes hbScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Results hero: the vitals strip under the verdict. */
+.hbHero { height: 46px; margin: 4px auto 2px; max-width: 460px; }
+/* Intro: a slim, faint accent that establishes the motif. */
+.hbIntro { height: 30px; max-width: 300px; margin: 2px auto 4px; opacity: 0.75; }
+
+/* ═══ Micro-interactions (emil-design-eng) ════════════════════════════════════ */
+
+/* Button press feedback — the UI should feel like it heard you. */
+.cta { transition: background-color var(--duration-base, 200ms) var(--ease-out-quart, ease), transform 140ms var(--ease-out-quart, ease); }
+.cta:active { transform: scale(0.97); }
+
+/* Checkbox: a spring "pop" the instant it's checked, and the tick draws in. */
+.q.yes .chk { animation: chkPop 340ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+.q .chk svg { transform: scale(0.5); transition: opacity 0.12s, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.q.yes .chk svg { transform: scale(1); }
+@keyframes chkPop { 0% { transform: scale(0.7); } 55% { transform: scale(1.18); } 100% { transform: scale(1); } }
+/* A one-shot toxic ring that flashes out from the row when checked. */
+.q { position: relative; }
+.q.yes::after { content: ""; position: absolute; inset: -1.5px; border-radius: 11px; border: 1.5px solid var(--color-toxic); pointer-events: none; animation: qFlash 460ms var(--ease-out-quart, ease) forwards; }
+@keyframes qFlash { from { opacity: 0.9; transform: scale(1); } to { opacity: 0; transform: scale(1.035); } }
+
+/* Question rows cascade in when a section mounts (Section is keyed by step). */
+.qlist > div { opacity: 0; animation: qIn 380ms var(--ease-out-expo, ease) forwards; }
+.qlist > div:nth-child(1) { animation-delay: 40ms; }
+.qlist > div:nth-child(2) { animation-delay: 90ms; }
+.qlist > div:nth-child(3) { animation-delay: 140ms; }
+.qlist > div:nth-child(4) { animation-delay: 190ms; }
+.qlist > div:nth-child(5) { animation-delay: 240ms; }
+@keyframes qIn { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } }
+
+/* Intro pills stagger + the skull breathes. */
+.pills .pill { opacity: 0; animation: qIn 420ms var(--ease-out-expo, ease) forwards; }
+.pills .pill:nth-child(1) { animation-delay: 120ms; }
+.pills .pill:nth-child(2) { animation-delay: 200ms; }
+.pills .pill:nth-child(3) { animation-delay: 280ms; }
+.skull { animation: skullFloat 4.5s ease-in-out infinite alternate; }
+@keyframes skullFloat { from { transform: translateY(0) rotate(-1deg); } to { transform: translateY(-7px) rotate(1deg); } }
+
+/* Verdict pill lands with a spring on the results screen. */
+.verdictPill { animation: pillDrop 480ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+@keyframes pillDrop { from { opacity: 0; transform: scale(0.8) translateY(-6px); } to { opacity: 1; transform: none; } }
+
 @media (prefers-reduced-motion: reduce) {
-  .fade, .barFill, .ringFg, .sbar > i { animation: none !important; transition: none !important; }
+  .fade, .barFill, .ringFg, .sbar > i,
+  .hbTrack, .chk svg, .q.yes .chk, .q.yes::after,
+  .qlist > div, .pills .pill, .skull, .h1 em, .verdictPill {
+    animation: none !important;
+    transition: none !important;
+  }
+  /* Ensure staggered/entrance elements remain fully visible without motion. */
+  .qlist > div, .pills .pill { opacity: 1 !important; transform: none !important; }
+  .q .chk svg { transform: scale(1) !important; }
 }

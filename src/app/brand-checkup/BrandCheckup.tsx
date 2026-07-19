@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import {
   SECTIONS, BANDS, computeResult, emptyAnswers,
@@ -9,7 +10,40 @@ import {
 import { CALENDLY_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 import { trackEvent } from "@/lib/analytics";
 import { emailCheckup, type CheckupState } from "./actions";
+import Heartbeat from "./Heartbeat";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 import styles from "./BrandCheckup.module.css";
+
+// The disembodied zombie hand that reacts to each score band on the results
+// screen — approval when you're alive, a thumbs-down when you're a zombie.
+const REACTION: Record<BandKey, { id: keyof typeof HANDS; flip: boolean; width: number }> = {
+  alive: { id: "zh01-thumbsup-l", flip: true, width: 150 },   // 👍 you made it
+  pulse: { id: "zh37-thumbsup-r", flip: false, width: 150 },  // 👍 solid
+  half: { id: "zh10-rockon-r", flip: false, width: 104 },     // 🤘 not dead yet
+  zombie: { id: "zh09-thumbsdown-l", flip: true, width: 150 }, // 👎 oof
+};
+
+// Count a number up to its target on an ease-out-quart ramp, synced with the
+// score-ring reveal. Honors reduced-motion by jumping straight to the target.
+function useCountUp(target: number, durationMs = 1100): number {
+  const reduce = useReducedMotion();
+  const [n, setN] = useState(target);
+  useEffect(() => {
+    if (reduce) { setN(target); return; }
+    setN(0);
+    let raf = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min((now - start) / durationMs, 1);
+      setN(Math.round((1 - Math.pow(1 - p, 4)) * target));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, durationMs, reduce]);
+  return n;
+}
 
 const CIRC = 2 * Math.PI * 66;
 const TIER_VAR: Record<Tier, string> = { strong: "var(--color-toxic)", mid: "#E7B23A", weak: "var(--color-destructive)" };
@@ -55,9 +89,52 @@ export default function BrandCheckup() {
     });
   const restart = () => { setAnswers(emptyAnswers()); setStep(0); };
 
+  // Band for the results reaction hand (only needed on the results step).
+  const reactionBand = step === 6 ? computeResult(answers).bandKey : null;
+
   return (
     <div className={styles.app} data-theme="dark">
       <div className={styles.dots} aria-hidden />
+
+      {/* Decorative zombie hands, painted in the empty side-gutters beside the
+          ≤680px content column so they never overlap text or controls. The layer
+          spans the full-width .app (so "left"/"right" mean the viewport edges);
+          hands bleed off-edge → the wrist reads as disembodied. Desktop-only,
+          aria-hidden, pointer-events:none, zero CLS. */}
+      <div className={styles.handLayer} aria-hidden>
+        {step === 0 && (
+          // Points in at the headline from the left gutter.
+          <ZombieHand
+            src={HANDS["zh25-point-diag"].src}
+            width={HANDS["zh25-point-diag"].width}
+            height={HANDS["zh25-point-diag"].height}
+            edge="left"
+            behaviors={["peek", "idle"]}
+            offset="210px"
+            bleed="-30px"
+            displayWidth={210}
+            rotate={-3}
+            zIndex={2}
+          />
+        )}
+        {reactionBand && (
+          // Band-keyed verdict: 👍 alive · 🤘 half · 👎 zombie — from the right gutter.
+          <ZombieHand
+            key={reactionBand}
+            src={HANDS[REACTION[reactionBand].id].src}
+            width={HANDS[REACTION[reactionBand].id].width}
+            height={HANDS[REACTION[reactionBand].id].height}
+            edge="right"
+            behaviors={["peek", "idle"]}
+            offset="150px"
+            bleed="-30px"
+            displayWidth={REACTION[reactionBand].width}
+            flip={REACTION[reactionBand].flip}
+            zIndex={2}
+          />
+        )}
+      </div>
+
       <div className={styles.wrap} ref={topRef}>
         <div className={styles.brandbar}>
           <Image src="/assets/Branding_Zombie_Logo_Icon.svg" alt="" width={30} height={30} priority />
@@ -66,6 +143,7 @@ export default function BrandCheckup() {
         {step === 0 && <Intro onStart={() => setStep(1)} />}
         {step >= 1 && step <= 5 && (
           <Section
+            key={step}
             i={step - 1}
             answers={answers}
             onToggle={toggle}
@@ -87,6 +165,7 @@ function Intro({ onStart }: { onStart: () => void }) {
       <div className={styles.kick}>The 5-Minute Brand Checkup</div>
       <h1 className={styles.h1}>Is Your Brand<br /><em>Half-Dead?</em></h1>
       <p className={styles.deck}>25 honest questions. One straight answer on where your business is losing customers — and the fastest way to fix it.</p>
+      <Heartbeat band="pulse" seconds={3.4} className={styles.hbIntro} />
       <div className={styles.pills}>
         <span className={styles.pill}>⏱️ <b>5 minutes</b></span>
         <span className={styles.pill}>📊 <b>Instant</b> personalized score</span>
@@ -157,6 +236,7 @@ function Results({ answers, onRestart }: { answers: Answers; onRestart: () => vo
   const r = useMemo(() => computeResult(answers), [answers]);
   const band = BANDS[r.bandKey];
   const bandColor = BAND_VAR[r.bandKey];
+  const count = useCountUp(r.scaled);
   const [offset, setOffset] = useState(CIRC);
 
   useEffect(() => {
@@ -173,11 +253,12 @@ function Results({ answers, onRestart }: { answers: Answers; onRestart: () => vo
             <circle className={styles.ringFg} cx="75" cy="75" r="66" fill="none" strokeWidth="12"
               stroke={bandColor} strokeDasharray={CIRC} strokeDashoffset={offset} />
           </svg>
-          <div className={styles.ringCtr}><span className={styles.scoreN}>{r.scaled}</span><span className={styles.scoreOf}>out of 25</span></div>
+          <div className={styles.ringCtr}><span className={styles.scoreN}>{count}</span><span className={styles.scoreOf}>out of 25</span></div>
         </div>
         <div className={styles.verdictPill} style={{ background: bandColor }}>{band.pill}</div>
         <div className={styles.bandH} style={{ color: bandColor }}>{band.name}</div>
         <p dangerouslySetInnerHTML={{ __html: band.copy }} />
+        <Heartbeat band={r.bandKey} color={bandColor} className={styles.hbHero} />
       </div>
 
       <div className={styles.blk}>
