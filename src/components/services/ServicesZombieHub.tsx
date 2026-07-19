@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "@/components/icons";
@@ -40,8 +40,11 @@ export default function ServicesZombieHub({ services }: { services: Service[] })
   // Only mount the Spline head on a real desktop pointer with motion allowed.
   // Starts false so SSR + first paint + mobile never load the runtime.
   const [showHead, setShowHead] = useState(false);
-  // Fades the "he follows" nudge once the visitor starts moving over the head.
+  // Fades the "he follows" nudge once the visitor starts moving.
   const [touched, setTouched] = useState(false);
+  // Flips once the Spline scene has finished loading (canvas exists in the DOM).
+  const [ready, setReady] = useState(false);
+  const headRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 1024px) and (pointer: fine)");
@@ -55,6 +58,56 @@ export default function ServicesZombieHub({ services }: { services: Service[] })
       reduced.removeEventListener("change", update);
     };
   }, []);
+
+  // Make him follow the cursor across the WHOLE ring, not just the center.
+  // Spline binds its Look-At-Mouse handler to the canvas element, so with
+  // pointer-events:none (which keeps the surrounding tiles clickable) the canvas
+  // never sees real pointer moves. We forward the global cursor to it with
+  // synthetic pointermove events — dispatchEvent fires the listener regardless
+  // of the CSS. rAF-coalesced so we emit at most one per frame.
+  useEffect(() => {
+    if (!showHead || !ready) return;
+    const canvas = headRef.current?.querySelector("canvas");
+    if (!canvas) return;
+
+    let frame = 0;
+    let x = 0;
+    let y = 0;
+    const flush = () => {
+      frame = 0;
+      // bubbles:false is critical — a bubbling event would propagate back up to
+      // the window listener below and re-trigger this dispatch every frame
+      // forever (CPU-pegging feedback loop). The canvas's own listener fires at
+      // target phase regardless of bubbling, so tracking still works.
+      canvas.dispatchEvent(
+        new PointerEvent("pointermove", {
+          clientX: x,
+          clientY: y,
+          bubbles: false,
+          pointerType: "mouse",
+          isPrimary: true,
+        }),
+      );
+    };
+    const onMove = (e: PointerEvent) => {
+      // Spline's raycaster reads pageX/pageY (document coords). A synthetic
+      // event's pageX/pageY just mirror the clientX/clientY we pass — the
+      // browser does NOT add the scroll offset — so we forward the real event's
+      // PAGE coords as the synthetic client coords. Passing viewport coords
+      // instead would be off by the full scroll distance (~thousands of px once
+      // the section is scrolled into view), sending his gaze way off target.
+      x = e.pageX;
+      y = e.pageY;
+      setTouched(true);
+      if (!frame) frame = requestAnimationFrame(flush);
+    };
+
+    window.addEventListener("pointermove", onMove, { passive: true });
+    return () => {
+      window.removeEventListener("pointermove", onMove);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, [showHead, ready]);
 
   return (
     <>
@@ -111,8 +164,16 @@ export default function ServicesZombieHub({ services }: { services: Service[] })
               // pointer-events-none: never blocks the surrounding tiles, and the
               // scene's Look-At reads the window cursor so he follows across the
               // whole ring — not just when hovering dead center.
-              <div className="pointer-events-none absolute inset-0" aria-hidden>
-                <SplineScene scene={ZOMBIE_SCENE} className="h-full w-full" />
+              <div
+                ref={headRef}
+                className="pointer-events-none absolute inset-0"
+                aria-hidden
+              >
+                <SplineScene
+                  scene={ZOMBIE_SCENE}
+                  className="h-full w-full"
+                  onLoad={() => setReady(true)}
+                />
               </div>
             ) : (
               // Static fallback: the real BZD skull (reduced-motion / pre-mount).
