@@ -5,11 +5,15 @@ import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/site";
 import { INDUSTRIES } from "@/data/industries";
 
 const services = [
-  "Web Design",
-  "Graphic Design",
-  "Print Services",
-  "Social Media",
-  "Shopify Ecommerce",
+  { label: "Web Design", href: "/services/web-design" },
+  { label: "Logo Design", href: "/services/logo-design" },
+  { label: "Branding", href: "/services/branding" },
+  { label: "Print Design", href: "/services/print-design" },
+  { label: "Social Media", href: "/services/social-media" },
+  { label: "Email Marketing", href: "/services/email-marketing" },
+  { label: "Shopify Ecommerce", href: "/services/ecommerce" },
+  { label: "SEO & Digital Marketing", href: "/services/digital-marketing" },
+  { label: "AI Workflows", href: "/services/ai-workflows" },
 ];
 
 const company = [
@@ -49,9 +53,28 @@ export default function Footer() {
             </div>
           </a>
           <p className="measure mt-5 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
-            Big-brand design for small-town businesses — logos, websites,
-            signs, and print built right here in Cumming &amp; Forsyth County,
-            Georgia.
+            Big-brand design for small-town businesses —{" "}
+            <a
+              href="/services/logo-design"
+              className="underline decoration-[var(--color-hairline-strong)] underline-offset-2 hover:text-[var(--color-neon-text)]"
+            >
+              logos
+            </a>
+            ,{" "}
+            <a
+              href="/services/web-design"
+              className="underline decoration-[var(--color-hairline-strong)] underline-offset-2 hover:text-[var(--color-neon-text)]"
+            >
+              websites
+            </a>
+            , signs, and{" "}
+            <a
+              href="/services/print-design"
+              className="underline decoration-[var(--color-hairline-strong)] underline-offset-2 hover:text-[var(--color-neon-text)]"
+            >
+              print
+            </a>{" "}
+            built right here in Cumming &amp; Forsyth County, Georgia.
           </p>
           {/* BBB accreditation seal — official embed, links to our BBB profile */}
           <a
@@ -79,12 +102,12 @@ export default function Footer() {
           </h4>
           <ul className="mt-4 space-y-2.5">
             {services.map((s) => (
-              <li key={s}>
+              <li key={s.label}>
                 <a
-                  href="/services"
+                  href={s.href}
                   className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
                 >
-                  {s}
+                  {s.label}
                 </a>
               </li>
             ))}
@@ -102,6 +125,14 @@ export default function Footer() {
                 className="text-[length:var(--text-secondary)] text-text-secondary hover:text-[var(--color-neon-text)]"
               >
                 EDDM
+              </a>
+            </li>
+            <li>
+              <a
+                href="/services"
+                className="text-[length:var(--text-secondary)] font-semibold text-[var(--color-neon-text)] hover:underline"
+              >
+                All services →
               </a>
             </li>
           </ul>

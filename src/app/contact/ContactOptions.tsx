@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Envelope, Calendar } from "@/components/icons";
+import { Phone, Envelope, Calendar, MagnifyingGlass } from "@/components/icons";
 import {
   CALENDLY_URL,
   EMAIL,
@@ -32,6 +32,14 @@ const options = [
     detail: "Walk through your site or brand live on a call.",
     href: CALENDLY_URL,
     external: true,
+  },
+  {
+    Icon: MagnifyingGlass,
+    label: "Not ready to talk?",
+    value: "Free 10-second site audit",
+    detail: "Paste your URL, get an instant health check. Zero pressure.",
+    href: "/free-site-audit",
+    external: false,
   },
 ];
 

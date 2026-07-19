@@ -72,4 +72,3 @@ User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://brandingzombiedesigns.com/sitemap.xml
-Host: https://brandingzombiedesigns.com

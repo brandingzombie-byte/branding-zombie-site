@@ -199,8 +199,10 @@ const TATTOO_MARKETING: TattooProduct = {
   shortLabel: "Tattoo Shop Marketing",
   noun: "tattoo shop marketing",
 
+  // No trailing brand — the root layout's title template appends
+  // "| Branding Zombie Designs" once.
   seoTitle:
-    "Tattoo Shop Marketing in Cumming & North Atlanta | Branding Zombie",
+    "Tattoo Shop Marketing in Cumming & North Atlanta",
   seoDescription:
     "Websites with online booking + reference upload, branding, print, window clings & aftercare kits for tattoo shops in Cumming & metro Atlanta. Flat pricing, live in days. Book a free teardown.",
   keywords: [
@@ -511,6 +513,16 @@ const TATTOO_MARKETING: TattooProduct = {
       href: "/window-clings",
       label: "Window clings & signage",
       blurb: "Dress your storefront glass into a walk-in magnet.",
+    },
+    {
+      href: "/services/logo-design",
+      label: "Logo design",
+      blurb: "A mark that holds up on flash sheets, signs, and merch.",
+    },
+    {
+      href: "/services/social-media",
+      label: "Social media management",
+      blurb: "Keep the feed full of healed work without living on your phone.",
     },
     {
       href: "/services",

@@ -10,7 +10,9 @@ import { SITE_URL, BUSINESS_NAME, ORG_ID } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/work`;
 
 export const metadata: Metadata = {
-  title: `Our Work — Branding, Packaging, Websites & Print | ${BUSINESS_NAME}`,
+  // Brand omitted — the root layout's "%s | Branding Zombie Designs" title
+  // template appends it once (adding it here doubled the suffix).
+  title: "Our Work — Branding, Packaging, Websites & Print",
   description:
     "Browse 80+ real projects from Branding Zombie Designs in Cumming, GA — brand identities, packaging and labels, websites, ecommerce, social creative, and print. Filter by what you need.",
   keywords: [
@@ -137,6 +139,43 @@ export default function WorkPage() {
         {/* Light gallery body */}
         <Section theme="light" pad="spacious" topRule>
           <WorkGallery />
+        </Section>
+
+        {/* Closing CTA — route portfolio browsers (and crawlers) into the
+            service pages the work actually came from. */}
+        <Section theme="light" pad="standard" topRule>
+          <div className="flex flex-col gap-2">
+            <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+              Your brand next
+            </span>
+            <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+              Like what you see?
+            </h2>
+            <p className="measure mt-2 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
+              Every project above started as a first call. Kick yours off with{" "}
+              <a
+                href="/services/web-design"
+                className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
+              >
+                web design in Cumming, GA
+              </a>{" "}
+              or{" "}
+              <a
+                href="/services/logo-design"
+                className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
+              >
+                logo design in Cumming
+              </a>
+              , or{" "}
+              <a
+                href="/services"
+                className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
+              >
+                browse all services
+              </a>{" "}
+              to see what fits.
+            </p>
+          </div>
         </Section>
       </main>
       <Footer />

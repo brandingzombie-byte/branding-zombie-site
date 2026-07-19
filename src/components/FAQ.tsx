@@ -36,7 +36,7 @@ export default function FAQ() {
           behaviors={["peek", "follow"]}
           offset="80%"
           bleed="-150px"
-          displayWidth={270}
+          displayWidth={330}
           zIndex={5}
         />
       </div>

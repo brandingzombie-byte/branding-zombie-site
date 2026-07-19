@@ -7,6 +7,14 @@ export const SITE_URL = "https://brandingzombiedesigns.com";
 export const BUSINESS_NAME = "Branding Zombie Designs";
 export const FOUNDER_NAME = "Gerry Betancourt";
 
+// The ONE city whose landing-page variants are indexable. Every other city
+// variant (services × city, direct-mail, eddm, window-clings, tattoo) is
+// served noindex,follow and omitted from the sitemap — ~100 near-duplicate
+// doorway pages were consuming crawl priority while core service pages sat
+// in "Discovered — currently not indexed". The city templates' robots meta
+// and src/app/sitemap.ts must both read this constant so they never drift.
+export const INDEXABLE_CITY = "cumming-ga";
+
 // Schema.org @id references for graph linking across pages.
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const LOCALBIZ_ID = `${SITE_URL}/#localbusiness`;

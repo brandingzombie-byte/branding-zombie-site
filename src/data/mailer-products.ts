@@ -169,8 +169,10 @@ const DIRECT_MAIL: MailerProduct = {
   kind: "targeted",
   noun: "mailer",
 
+  // No trailing brand — the root layout's title template appends
+  // "| Branding Zombie Designs" once.
   seoTitle:
-    "Direct Mail Marketing in Cumming, GA — Designed, Printed & Mailed | Branding Zombie",
+    "Direct Mail Marketing in Cumming, GA — Designed, Printed & Mailed",
   seoDescription:
     "Targeted direct mail postcards for Cumming, GA & North Atlanta businesses. We design, print, and mail to your customer list or a list we build for you. Bold cards that get opened — from $135. Get a quote.",
   keywords: [
@@ -379,6 +381,16 @@ const DIRECT_MAIL: MailerProduct = {
       label: "Print & Packaging",
       blurb: "Business cards, flyers, brochures, signage, labels — all in one shop.",
     },
+    {
+      href: "/services/logo-design",
+      label: "Logo design",
+      blurb: "A card only lands if the mark on it does — get a logo built for print.",
+    },
+    {
+      href: "/services/branding",
+      label: "Brand identity",
+      blurb: "Make the mailer match the sign, the site, and the truck.",
+    },
   ],
 
   schema: {
@@ -397,8 +409,10 @@ const EDDM: MailerProduct = {
   kind: "eddm",
   noun: "EDDM mailer",
 
+  // No trailing brand — the root layout's title template appends
+  // "| Branding Zombie Designs" once.
   seoTitle:
-    "EDDM — Every Door Direct Mail in Cumming, GA | Designed, Printed & Routed | Branding Zombie",
+    "EDDM — Every Door Direct Mail in Cumming, GA | Designed, Printed & Routed",
   seoDescription:
     "Every Door Direct Mail (EDDM) for Cumming, GA & North Atlanta businesses. We design, print, bundle, and handle the post-office drop — saturate entire neighborhoods with no mailing list. From $0.33/piece all-in. Get a quote.",
   keywords: [
@@ -605,6 +619,16 @@ const EDDM: MailerProduct = {
       href: "/services/print-design",
       label: "Print & Packaging",
       blurb: "Business cards, flyers, brochures, signage, labels — all in one shop.",
+    },
+    {
+      href: "/services/logo-design",
+      label: "Logo design",
+      blurb: "Every mailbox sees your mark — make sure it's one worth keeping.",
+    },
+    {
+      href: "/services/branding",
+      label: "Brand identity",
+      blurb: "Make the mailer match the sign, the site, and the truck.",
     },
   ],
 

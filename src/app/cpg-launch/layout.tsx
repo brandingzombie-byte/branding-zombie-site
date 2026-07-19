@@ -7,8 +7,11 @@ const LOCALBIZ_ID = `${SITE_URL}/#localbusiness`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title:
-    "CPG & Supplement Packaging Design | Shelf-Ready in 30 Days | Branding Zombie",
+  title: {
+    // Absolute: already carries the brand; the root template would double it.
+    absolute:
+      "CPG & Supplement Packaging Design | Shelf-Ready in 30 Days | Branding Zombie",
+  },
   description:
     "CPG and supplement packaging design — FDA-compliant labels, print-ready production files, and vendor coordination. From concept to shelf-ready in 30 days. Starting at $5,000 per product line.",
   alternates: {

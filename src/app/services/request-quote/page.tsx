@@ -11,7 +11,7 @@ import { KITS_BY_SLUG, isKitSlug } from "@/data/kits";
 const PAGE_URL = `${SITE_URL}/services/request-quote`;
 
 export const metadata: Metadata = {
-  title: "Request a Custom Quote — Branding Zombie Designs in Cumming, GA",
+  title: "Request a Custom Quote — Cumming, GA",
   description:
     "Pricing not the right fit? Tell us what you need and we'll build a custom quote — usually back to you the same business day. Web, branding, print, AI, and more.",
   keywords: [

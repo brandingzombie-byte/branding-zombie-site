@@ -61,10 +61,10 @@ export default function Testimonials() {
           width={HANDS["zh01-thumbsup-l"].width}
           height={HANDS["zh01-thumbsup-l"].height}
           edge="left"
-          behaviors={["peek", "follow"]}
+          behaviors={["peek", "follow", "idle"]}
           offset="52%"
           bleed="-42px"
-          displayWidth={330}
+          displayWidth={400}
           zIndex={5}
         />
       </div>

@@ -49,17 +49,21 @@ export default function FinalCTA() {
         className="pointer-events-none absolute inset-0 z-[5] overflow-x-clip"
       >
         {/* #7 — High-five "reaching" for the cursor, fingers over the
-             headline's left edge (bigger for depth, extra follow strength) */}
+             headline's left edge. The money section gets the biggest, most
+             alive hand: oversized, idle sway, and enough follow strength to
+             visibly reach toward the book-a-call button's side of the page.
+             (Still clear of the CTA row itself — the buttons sit ~500px below
+             the 10%-offset hand at every desktop breakpoint.) */}
         <ZombieHand
           src={HANDS["zh34-highfive-l"].src}
           width={HANDS["zh34-highfive-l"].width}
           height={HANDS["zh34-highfive-l"].height}
           edge="left"
-          behaviors={["peek", "follow"]}
+          behaviors={["peek", "follow", "idle"]}
           offset="10%"
           bleed="-56px"
-          displayWidth={440}
-          followStrength={30}
+          displayWidth={540}
+          followStrength={44}
           zIndex={5}
         />
       </div>
@@ -162,29 +166,9 @@ export default function FinalCTA() {
           ))}
         </ul>
 
-        {/* Mobile-only open hand — closes out the page with a "wave goodbye"
-            off the left screen edge, below the contact strip. Peek + idle sway +
-            gentle scroll parallax (desktop keeps its cursor-following high-five
-            up by the headline). */}
-        <div
-          aria-hidden
-          className="pointer-events-none relative -mx-6 mt-12 h-[140px] overflow-x-clip md:hidden"
-        >
-          <ZombieHand
-            src={HANDS["zh34-highfive-l"].src}
-            width={HANDS["zh34-highfive-l"].width}
-            height={HANDS["zh34-highfive-l"].height}
-            edge="left"
-            behaviors={["peek", "parallax", "idle"]}
-            offset="0px"
-            bleed="-30px"
-            displayWidth={500}
-            parallaxSpeed={0.1}
-            zIndex={5}
-            mobile
-            mobileParallax
-          />
-        </div>
+        {/* (No mobile hand here — the homepage renders at most 3 mobile hands
+            per ZOMBIE-HANDS-SPEC, and those slots belong to PainPoints,
+            Testimonials, and Services. Desktop keeps the high-five above.) */}
       </div>
     </Section>
   );

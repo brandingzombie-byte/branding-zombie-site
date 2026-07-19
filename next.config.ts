@@ -16,6 +16,16 @@ const nextConfig: NextConfig = {
     // restructure. Preserves any inbound links or old citations to the
     // pre-rename URLs.
     return [
+      // Canonical host: force www → apex. Google currently indexes BOTH
+      // hosts (www homepage vs non-www), splitting every ranking signal in
+      // two. 308 tells crawlers the move is permanent; query strings pass
+      // through automatically. Must stay FIRST — redirects match in order.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.brandingzombiedesigns.com" }],
+        destination: "https://brandingzombiedesigns.com/:path*",
+        permanent: true,
+      },
       {
         source: "/services/graphic-design",
         destination: "/services/logo-design",

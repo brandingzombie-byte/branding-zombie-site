@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, INDEXABLE_CITY } from "@/lib/site";
 import type { WindowClingsProduct } from "@/data/window-clings";
 import type { Location } from "@/data/locations";
 
@@ -15,9 +15,20 @@ export function windowClingsMetadata(
     ? `${SITE_URL}/${product.slug}/${city.slug}`
     : `${SITE_URL}/${product.slug}`;
 
+  // Root layout applies the "%s | Branding Zombie Designs" title template, so
+  // the brand is intentionally omitted here to avoid a doubled suffix. The
+  // og/twitter titles below carry the full brand since the template only
+  // wraps the document <title>.
   const title = city
-    ? `Window Graphics in ${city.city}, ${city.state} — Designed, Printed & Installed | Branding Zombie`
+    ? `Window Graphics in ${city.city}, ${city.state} — Designed, Printed & Installed`
     : product.seoTitle;
+  const ogTitle = `${title} | Branding Zombie Designs`;
+
+  // Index diet: the pillar and the Cumming variant are indexable; the other
+  // city variants stay live and crawlable (follow) but noindexed so they stop
+  // burning crawl priority as near-duplicate doorways. Canonical stays
+  // self-referential — Google ignores canonicals on noindexed pages.
+  const indexable = !city || city.slug === INDEXABLE_CITY;
 
   const description = city
     ? `Custom window clings, decals & storefront graphics for ${city.city}, ${city.county} businesses. We design it, print it, and install it on your glass — one-way vision, frosted privacy, clear clings, full window walls. One shop, one invoice, free flat quote.`
@@ -44,7 +55,7 @@ export function windowClingsMetadata(
       locale: "en_US",
       url,
       siteName: "Branding Zombie Designs",
-      title,
+      title: ogTitle,
       description,
       images: [
         { url: ogImage, width: 1200, height: 630, alt: product.hero.image.alt },
@@ -52,15 +63,15 @@ export function windowClingsMetadata(
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: ogTitle,
       description,
       images: [ogImage],
     },
     robots: {
-      index: true,
+      index: indexable,
       follow: true,
       googleBot: {
-        index: true,
+        index: indexable,
         follow: true,
         "max-image-preview": "large",
         "max-video-preview": -1,

@@ -8,11 +8,13 @@ import BlogHero from "@/components/blog/BlogHero";
 import BlogProse from "@/components/blog/BlogProse";
 import BlogJsonLd from "@/components/blog/BlogJsonLd";
 import BlogCard from "@/components/blog/BlogCard";
+import IndustryServiceGrid from "@/components/industries/IndustryServiceGrid";
 import {
   getAllPostSlugs,
   getAllPosts,
   getPostBySlug,
   getPostUrl,
+  getRelatedServiceSlugs,
 } from "@/data/posts";
 import { SITE_URL } from "@/lib/site";
 
@@ -97,6 +99,10 @@ export default async function BlogPostPage({
     .filter((p) => p.meta.slug !== post.meta.slug)
     .slice(0, 3);
 
+  // Service pages this post should point readers (and crawlers) at —
+  // explicit per-post override or the category default.
+  const relatedServices = getRelatedServiceSlugs(post.meta);
+
   return (
     <>
       <Navbar />
@@ -125,6 +131,42 @@ export default async function BlogPostPage({
             </div>
           </Section>
         </article>
+
+        {/* Services mentioned — keyword-anchored paths from every post into
+            the /services cluster (the posts are the pages Google actually
+            crawls; the service pages are the ones stuck unindexed). */}
+        {relatedServices.length > 0 && (
+          <Section theme="light" pad="standard" topRule>
+            <div className="flex flex-col gap-2">
+              <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+                From the studio
+              </span>
+              <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.1] tracking-tight text-text-primary">
+                Services mentioned in this guide.
+              </h2>
+              <p className="measure mt-2 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
+                Rather hand it off than DIY it? See our{" "}
+                <a
+                  href="/services/web-design"
+                  className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
+                >
+                  web design in Cumming, GA
+                </a>{" "}
+                and{" "}
+                <a
+                  href="/services/digital-marketing"
+                  className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
+                >
+                  local SEO
+                </a>{" "}
+                services, or browse everything we do below.
+              </p>
+            </div>
+            <div className="mt-10">
+              <IndustryServiceGrid slugs={relatedServices} />
+            </div>
+          </Section>
+        )}
 
         {/* Related posts — only render the section if we have any */}
         {related.length > 0 && (

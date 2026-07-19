@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import ServicesBrutalistGrid from "@/components/services/ServicesBrutalistGrid";
@@ -83,6 +84,18 @@ export default function Services() {
         </div>
 
         <ServicesBrutalistGrid services={homepageServices} />
+
+        {/* Index link — the only in-body path from the homepage to the full
+            /services index (the navbar link aside). Also the homepage's route
+            to AI Workflows, which is deliberately not a card above. */}
+        <div className="mt-6 flex justify-end">
+          <Link
+            href="/services"
+            className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-[var(--color-neon-text)] hover:underline"
+          >
+            All services + pricing →
+          </Link>
+        </div>
       </div>
     </Section>
   );

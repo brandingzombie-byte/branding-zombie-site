@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 import AuditForm from "./AuditForm";
 import { SITE_URL, BUSINESS_NAME, LOCALBIZ_ID } from "@/lib/site";
 
@@ -101,9 +103,51 @@ export default function FreeSiteAuditPage() {
                 "radial-gradient(60% 50% at 25% 35%, rgba(191,255,0,0.12), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(0,255,212,0.07), transparent 70%)",
             }}
           />
+          {/* ── Zombie hand — ZH-13 pointing straight at the viewer ("YOUR
+               site"), flipped so the dress-shirt cuff enters from the right
+               edge and the accusatory finger aims back at the headline. Two
+               desktop instances share the same cached asset: a big one for
+               xl+ and a smaller one for lg→xl where the free right-side gap
+               is narrower (keeps the finger clear of the h1/paragraph at
+               1024–1279px). Mobile gets its own reserved band below. ── */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 overflow-clip"
+          >
+            <ZombieHand
+              src={HANDS["zh13-point-viewer-l"].src}
+              width={HANDS["zh13-point-viewer-l"].width}
+              height={HANDS["zh13-point-viewer-l"].height}
+              edge="right"
+              behaviors={["peek", "idle", "follow"]}
+              offset="52%"
+              bleed="-36px"
+              displayWidth={400}
+              followStrength={26}
+              flip
+              zIndex={1}
+              className="hidden xl:block"
+            />
+            <ZombieHand
+              src={HANDS["zh13-point-viewer-l"].src}
+              width={HANDS["zh13-point-viewer-l"].width}
+              height={HANDS["zh13-point-viewer-l"].height}
+              edge="right"
+              behaviors={["peek", "idle", "follow"]}
+              offset="55%"
+              bleed="-30px"
+              displayWidth={300}
+              followStrength={22}
+              flip
+              zIndex={1}
+              className="hidden lg:block xl:hidden"
+            />
+          </div>
           {/* Slim hero so the URL field clears the fold (CRO). pt clears the
-              floating navbar; headline drops from --text-display to --text-h1. */}
-          <div className="pt-16 lg:pt-20">
+              floating navbar; headline drops from --text-display to --text-h1.
+              Right padding at lg+ reserves the hand's column so copy can never
+              run under the ZH-13 pointer at any width. */}
+          <div className="pt-16 lg:pt-20 lg:pr-[290px] xl:pr-[380px]">
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-8 bg-[var(--color-toxic)]" />
               <span className="text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
@@ -125,7 +169,33 @@ export default function FreeSiteAuditPage() {
               Drop a URL. In about 10 seconds we score it across six pillars
               and tell you — straight — what&apos;s costing you customers.
               You get the full report on screen and a copy in your inbox.
+              It&apos;s the same checklist we run before every web design
+              project here in Cumming, GA.
             </p>
+
+            {/* Mobile-only pointing hand — its own reserved band under the
+                hero copy, cuff bleeding off the left screen edge, finger
+                aimed at the reader ("your site"). Mirrors the homepage
+                mobile-band pattern; this is the page's only mobile hand. */}
+            <div
+              aria-hidden
+              className="pointer-events-none relative -mx-6 mt-6 h-[130px] overflow-x-clip md:hidden"
+            >
+              <ZombieHand
+                src={HANDS["zh13-point-viewer-l"].src}
+                width={HANDS["zh13-point-viewer-l"].width}
+                height={HANDS["zh13-point-viewer-l"].height}
+                edge="left"
+                behaviors={["peek", "parallax", "idle"]}
+                offset="-2px"
+                bleed="-24px"
+                displayWidth={470}
+                parallaxSpeed={0.1}
+                zIndex={5}
+                mobile
+                mobileParallax
+              />
+            </div>
           </div>
         </Section>
 

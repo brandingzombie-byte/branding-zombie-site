@@ -16,7 +16,7 @@ import {
 const PAGE_URL = `${SITE_URL}/about`;
 
 export const metadata: Metadata = {
-  title: `About ${FOUNDER_NAME} — ${BUSINESS_NAME} in Cumming, GA`,
+  title: `About ${FOUNDER_NAME} — Cumming, GA`,
   description:
     "Gerry Betancourt, creative director behind Branding Zombie Designs. 15+ years, 80+ projects delivered — from Fort Lauderdale's CPG scene to Cumming, Georgia's Main Street.",
   keywords: [
