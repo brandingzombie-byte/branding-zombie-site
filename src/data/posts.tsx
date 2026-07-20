@@ -15728,7 +15728,7 @@ function GoogleAiOverviewsSmallBusinessContent() {
         name: "Do AI Overviews hurt my website traffic?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "They can. A 2026 ISB/Carnegie Mellon field study found AI Overviews cut organic clicks about 38%, with zero-click searches rising from 54% to 72%. But pages cited inside an Overview can gain roughly 35% more clicks, so being the source flips the math in your favor.",
+          text: "They can. A 2026 ISB/Carnegie Mellon field study found AI Overviews cut organic clicks about 38%, with zero-click searches rising from 54% to 72%. But pages cited inside an Overview can gain meaningfully more clicks — some studies put it around a third more (directional) — so being the source flips the math in your favor.",
         },
       },
       {
@@ -15744,7 +15744,7 @@ function GoogleAiOverviewsSmallBusinessContent() {
         name: 'Are local "near me" searches affected by AI Overviews?',
         acceptedAnswer: {
           "@type": "Answer",
-          text: 'Less so, for now. Only around 7% of local "near me" searches trigger an AI Overview, versus about 16% of queries overall. Your local map pack in Cumming and Forsyth County still drives most calls — but the trend is expanding, so prepare both fronts.',
+          text: 'It varies, and the studies disagree. Overviews showed on about 16% of queries overall by late 2025, but local buying-intent searches (commercial and transactional "near me" queries) trigger them far less often than informational ones. Your local map pack in Cumming and Forsyth County still drives most calls today — but the trend is expanding, so prepare both fronts.',
         },
       },
       {
@@ -15816,9 +15816,10 @@ function GoogleAiOverviewsSmallBusinessContent() {
         start of the year. Commercial, buying-intent searches are climbing too.
       </p>
       <p>
-        The good news for local shops: &quot;near me&quot; and location searches
-        have been hit far less so far — only around 7% trigger an Overview. That
-        local map pack you rely on in Cumming is still mostly intact.
+        The good news for local shops: buying-intent &quot;near me&quot; searches —
+        the commercial and transactional ones that end in a call or a visit — trigger
+        Overviews far less often than informational how-to queries do. That local map
+        pack you rely on in Cumming is still mostly intact today.
       </p>
       <p>
         Informational searches are where Overviews show up hardest: &quot;how do
@@ -15846,8 +15847,10 @@ function GoogleAiOverviewsSmallBusinessContent() {
       </p>
       <p>
         Here&apos;s the flip side, and it&apos;s the whole game: getting{" "}
-        <strong>cited inside</strong> an AI Overview can <em>lift</em> your clicks
-        by around 35% versus just ranking below it. So the strategy isn&apos;t
+        <strong>cited inside</strong> an AI Overview can meaningfully <em>lift</em>{" "}
+        your clicks — some studies put it around a third more — versus just ranking
+        below it. Treat the number as directional, but the direction is the point. So
+        the strategy isn&apos;t
         &quot;rank #1&quot; anymore. It&apos;s &quot;be the source Google
         quotes.&quot; That&apos;s the heart of what google ai overviews small
         business owners need to understand.
@@ -16040,8 +16043,9 @@ function GoogleAiOverviewsSmallBusinessContent() {
       <p>
         They can. A 2026 ISB/Carnegie Mellon field study found AI Overviews cut
         organic clicks about 38%, with zero-click searches rising from 54% to 72%.
-        But pages <em>cited inside</em> an Overview can gain roughly 35% more
-        clicks, so being the source flips the math in your favor.
+        But pages <em>cited inside</em> an Overview can gain meaningfully more
+        clicks — some studies put it around a third more (directional, but the
+        direction is what matters) — so being the source flips the math in your favor.
       </p>
 
       <h3 id="faq-get-in">How do I get my Cumming business into an AI Overview?</h3>
@@ -16056,10 +16060,12 @@ function GoogleAiOverviewsSmallBusinessContent() {
         Are local &quot;near me&quot; searches affected by AI Overviews?
       </h3>
       <p>
-        Less so, for now. Only around 7% of local &quot;near me&quot; searches
-        trigger an AI Overview, versus about 16% of queries overall. Your local map
-        pack in Cumming and Forsyth County still drives most calls — but the trend
-        is expanding, so prepare both fronts.
+        It varies, and studies disagree. Overviews showed on about 16% of queries
+        overall by late 2025, but local buying-intent &quot;near me&quot; searches
+        (the commercial and transactional ones) trigger them far less often than
+        informational how-to queries. Your local map pack in Cumming and Forsyth
+        County still drives most calls today — but the trend is expanding, so prepare
+        both fronts.
       </p>
 
       <h3 id="faq-pay">Do I need to pay Google or buy software to appear?</h3>
@@ -17071,7 +17077,3028 @@ function SalonBarbershopBrandingContent() {
   );
 }
 
+function ThreeSecondRuleContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the 3 second rule in web design?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The 3 second rule in web design means a visitor decides whether to stay or leave your site in about three seconds. In that window they judge what you do, whether it's for them, and what to do next. If the page is slow or unclear, they bounce back to Google's results.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long do you have to make a good first impression on a website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Less than you think. Studies suggest people form a first impression of a website in under a second, and most decide to stay or leave within about three seconds. The headline, load speed, and one clear call to action carry almost all the weight in that moment.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do visitors leave a website so fast?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually because the page loads slowly, doesn't clearly say what the business does, or buries the next step under clutter. On a phone, cramped text and tiny buttons make it worse. Visitors aren't reading carefully — they're scanning for a fast yes or no and leaving on any doubt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How fast should a website load?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Aim for usable in under three seconds on a phone, ideally closer to two. Google ranks slow mobile pages lower and visitors abandon them quickly. The biggest culprits are oversized images, bloated page builders, cheap hosting, and auto-play sliders — trimming those often fixes most of the lag.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does the 3 second rule apply to mobile?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, and it's tougher on mobile. Most local visitors arrive on a phone, on a slower connection, with a small screen and little patience. A site that passes the 3-second test on desktop can still fail on a phone, which is why mobile-first design matters most for local businesses.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I test if my website passes the 3-second rule?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Open your own site on your phone using cellular data, not Wi-Fi, and count to three. Ask whether a total stranger could tell what you do, where you do it, and what to tap next. If they can't, your site is failing the test, and a free site audit will pinpoint why.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        The <strong>3-second rule in website design</strong> says a visitor
+        decides whether to stay on your site or bounce in roughly three seconds.
+        In that window they&apos;re answering one question: &quot;Is this what
+        I&apos;m looking for, or do I hit back?&quot; I&apos;m Gerry Betancourt at{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>
+        , and below I&apos;ll break down exactly what has to land in those three
+        seconds, why it matters most for the phone visitor who just found you on
+        Google, and how to fix a site that&apos;s losing people before it ever gets
+        a chance.
+      </p>
+      <p>
+        Here&apos;s the uncomfortable part: most of those three seconds happen on a
+        phone, in a parking lot, between other tabs. The reader is impatient, the
+        screen is small, and you don&apos;t get a second chance to make the first
+        impression.
+      </p>
+      <p>Let&apos;s walk through what wins that moment.</p>
+
+      <h2 id="what-is-the-3-second-rule">
+        What is the 3 second rule in website design, really?
+      </h2>
+      <p>It&apos;s not a literal stopwatch. It&apos;s shorthand for how fast humans judge a page.</p>
+      <p>
+        Your brain forms a first impression of a website in well under a second,
+        then spends the next couple of seconds deciding whether to commit or leave.
+        By about three seconds, the visitor has either started reading, started
+        scrolling, or started backing out.
+      </p>
+      <p>
+        So the rule is simple: in three seconds your site has to answer &quot;what
+        is this, is it for me, and what do I do next?&quot; If it can&apos;t, the
+        visitor leaves and Google notices people bouncing.
+      </p>
+      <p>
+        That&apos;s true for a one-page site and a fifty-page site. The homepage
+        hero is the whole audition.
+      </p>
+
+      <h2 id="why-it-matters-in-cumming">
+        Why does the 3-second rule matter so much in Cumming, GA?
+      </h2>
+      <p>
+        Because almost nobody types your web address anymore. They find you on a
+        Google search or a map result, on a phone, while they&apos;re shopping three
+        competitors at once.
+      </p>
+      <p>
+        A homeowner in Forsyth County searching &quot;HVAC repair near me&quot; or
+        &quot;web design Cumming GA&quot; gets a list. They tap the first result,
+        judge it in three seconds, and if it&apos;s slow or confusing they&apos;re
+        back to the list and onto the next guy.
+      </p>
+      <p>
+        You&apos;re not competing on quality in that moment. You&apos;re competing on
+        clarity and speed. The best plumber in North Metro Atlanta loses to a worse
+        plumber with a faster, clearer site every single day.
+      </p>
+      <p>
+        I broke down the bigger cost of this in{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          how your website is costing you customers
+        </InternalLink>{" "}
+        — the 3-second rule is where that leak starts.
+      </p>
+
+      <h2 id="what-has-to-land">What has to land in the first 3 seconds?</h2>
+      <p>
+        There are really only five things, and you can check all five on your own
+        phone right now.
+      </p>
+      <ol>
+        <li>
+          <strong>Clear what-you-do and where.</strong> The top of the page should
+          say, in plain words, what you sell and what area you serve — like &quot;HVAC
+          repair in Cumming and Forsyth County.&quot; Not a clever tagline. A
+          stranger should know in one glance.
+        </li>
+        <li>
+          <strong>Fast load.</strong> If the page is still spinning at three seconds,
+          none of the rest matters. They never see it.
+        </li>
+        <li>
+          <strong>One obvious next action.</strong> A single, unmissable button:
+          Call, Get a Quote, Book Now. Not seven competing links. One.
+        </li>
+        <li>
+          <strong>Trust at a glance.</strong> A real photo, a star rating, a
+          recognizable logo, a phone number up top. Something that signals &quot;real
+          local business, not a scam.&quot;
+        </li>
+        <li>
+          <strong>Mobile legibility.</strong> Big enough text, tappable buttons, no
+          pinch-and-zoom. If you have to squint, they&apos;re gone.
+        </li>
+      </ol>
+      <p>
+        That&apos;s it. Clarity, speed, one action, trust, readable on a phone. Miss
+        one and the other four work harder for nothing.
+      </p>
+
+      <h2 id="how-fast-should-a-website-load">How fast should a website load?</h2>
+      <p>
+        Aim for the page to be usable in under three seconds on a phone, ideally
+        closer to two.
+      </p>
+      <p>
+        Google has been clear that slow pages lose visitors and rank lower,
+        especially on mobile. Every extra second of load time bleeds off people who
+        already had one foot out the door.
+      </p>
+      <p>
+        Common speed killers I see on Cumming small-business sites: giant
+        un-compressed photos, a bloated page builder with thirty plugins, a cheap
+        host, and a slideshow nobody asked for. Trimming those usually does more than
+        any &quot;SEO hack.&quot; Clean, fast{" "}
+        <InternalLink href="/services/web-design">web design in Cumming, GA</InternalLink>{" "}
+        is built lean from the start so it loads before the visitor loses patience.
+      </p>
+
+      <h2 id="does-it-apply-to-mobile">Does the 3-second rule apply to mobile?</h2>
+      <p>Yes — and on mobile it&apos;s stricter, not looser.</p>
+      <p>
+        More than half your local visitors are on a phone, on a slower connection,
+        with a smaller screen and zero patience. A layout that looks fine on your
+        desktop can be a cramped, slow mess on an iPhone in a truck cab.
+      </p>
+      <p>
+        That&apos;s why I build mobile-first: design for the phone screen and the
+        slow signal first, then scale up to desktop. If it wins the 3-second test on
+        a phone in a parking lot in Forsyth County, it&apos;ll win everywhere.
+      </p>
+
+      <h2 id="how-do-i-fix-it">How do I fix a site that fails the 3-second rule?</h2>
+      <p>
+        Start with an honest test, then fix the cheapest, highest-impact things
+        first.
+      </p>
+      <p>
+        Pull your own site up on your phone, on cellular data, and count. At three
+        seconds, can a stranger tell what you do, where, and what to tap next? If not,
+        here&apos;s the order I&apos;d fix it in:
+      </p>
+      <ul>
+        <li>
+          <strong>Rewrite the headline</strong> so it says what you do and where, in
+          plain English. This is free and it&apos;s usually the biggest win.
+        </li>
+        <li>
+          <strong>Compress the images and ditch the slideshow</strong> to fix load
+          speed.
+        </li>
+        <li>
+          <strong>Add one clear button</strong> (Call or Get a Quote) above the fold,
+          with your phone number visible.
+        </li>
+        <li>
+          <strong>Add one trust signal</strong> up top: a review count, a real photo,
+          a &quot;Serving Forsyth County since [year].&quot;
+        </li>
+        <li>
+          <strong>Test it on a phone again.</strong> If a stranger can&apos;t pass the
+          test, neither can Google.
+        </li>
+      </ul>
+      <p>
+        If you want a second set of eyes, grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> and
+        I&apos;ll tell you exactly where your site is losing people in the first three
+        seconds — straight, no sales pitch.
+      </p>
+
+      <h2 id="more-than-a-tune-up">What if my site needs more than a tune-up?</h2>
+      <p>
+        Sometimes the page is so slow, so cluttered, or so old that patching it costs
+        more than rebuilding it. That&apos;s a judgment call, and I&apos;ll tell you
+        honestly which one you&apos;re looking at.
+      </p>
+      <p>
+        If you&apos;re starting from scratch or close to it, my{" "}
+        <InternalLink href="/startup-special">Startup Special is $997</InternalLink>:
+        logo + brand kit + 100 business cards + 100 flyers + a fast 1-page site with a
+        year of hosting, in about 10 days. A clean 1-pager that passes the 3-second
+        test beats a sprawling site that fails it.
+      </p>
+      <p>
+        Need more room to grow? Standalone{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> scales into
+        full multi-page sites (commonly in the $2,500–$7,500 range depending on size),
+        and the{" "}
+        <InternalLink href="/services/launch-package">Launch Package at $4,500</InternalLink>{" "}
+        bundles a logo suite, brand basics, a 5-page site, and a 90-day content
+        calendar. If you just need the pieces,{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink> starts at
+        $750 and full{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> ties your look
+        together so the trust signal is there at a glance. Want it found, too?
+        That&apos;s where{" "}
+        <InternalLink href="/services/digital-marketing">SEO and local search</InternalLink>{" "}
+        come in. Not sure which fits?{" "}
+        <InternalLink href="/services/request-quote">Request a quote</InternalLink> and
+        we&apos;ll talk.
+      </p>
+      <p>
+        The one-shop advantage: logo, website, shirts, and signs from one designer,
+        one invoice — so your brand looks the same in those critical three seconds no
+        matter where someone finds you.
+      </p>
+
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        <li>
+          <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+            How your website is costing you customers
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            What a website really costs in Cumming, GA (2026)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/web-design-cumming-ga-guide">
+            Web design in Cumming, GA: the complete guide
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-to-pick-a-web-design-company">
+            How to pick a web design company
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/google-ai-is-calling-your-business">
+            Google&apos;s AI is calling your business
+          </InternalLink>
+        </li>
+        <li>
+          Services:{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink> ·{" "}
+          <InternalLink href="/services/branding">branding</InternalLink> ·{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink> ·{" "}
+          <InternalLink href="/free-site-audit">free site audit</InternalLink>
+        </li>
+      </ul>
+
+      <h2 id="faq">FAQ: The 3-Second Rule in Website Design</h2>
+
+      <h3 id="faq-what-is-it">What is the 3 second rule in web design?</h3>
+      <p>
+        The 3 second rule in web design means a visitor decides whether to stay or
+        leave your site in about three seconds. In that window they judge what you do,
+        whether it&apos;s for them, and what to do next. If the page is slow or unclear,
+        they bounce back to Google&apos;s results.
+      </p>
+
+      <h3 id="faq-first-impression">
+        How long do you have to make a good first impression on a website?
+      </h3>
+      <p>
+        Less than you think. Studies suggest people form a first impression of a
+        website in under a second, and most decide to stay or leave within about three
+        seconds. The headline, load speed, and one clear call to action carry almost
+        all the weight in that moment.
+      </p>
+
+      <h3 id="faq-why-leave">Why do visitors leave a website so fast?</h3>
+      <p>
+        Usually because the page loads slowly, doesn&apos;t clearly say what the
+        business does, or buries the next step under clutter. On a phone, cramped text
+        and tiny buttons make it worse. Visitors aren&apos;t reading carefully —
+        they&apos;re scanning for a fast yes or no and leaving on any doubt.
+      </p>
+
+      <h3 id="faq-how-fast">How fast should a website load?</h3>
+      <p>
+        Aim for usable in under three seconds on a phone, ideally closer to two. Google
+        ranks slow mobile pages lower and visitors abandon them quickly. The biggest
+        culprits are oversized images, bloated page builders, cheap hosting, and
+        auto-play sliders — trimming those often fixes most of the lag.
+      </p>
+
+      <h3 id="faq-mobile">Does the 3 second rule apply to mobile?</h3>
+      <p>
+        Yes, and it&apos;s tougher on mobile. Most local visitors arrive on a phone, on
+        a slower connection, with a small screen and little patience. A site that passes
+        the 3-second test on desktop can still fail on a phone, which is why mobile-first
+        design matters most for local businesses.
+      </p>
+
+      <h3 id="faq-test">How do I test if my website passes the 3-second rule?</h3>
+      <p>
+        Open your own site on your phone using cellular data, not Wi-Fi, and count to
+        three. Ask whether a total stranger could tell what you do, where you do it, and
+        what to tap next. If they can&apos;t, your site is failing the test, and a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> will
+        pinpoint why.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Losing people in three seconds?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Don&apos;t let your homepage shamble while competitors sprint past.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Is your site scaring people off in the first three seconds? Text Gerry and
+          grab a free site audit — a no-pitch second opinion on what&apos;s killing your
+          first impression. One designer, one invoice, zero zombies running your website.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner of Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA serving Forsyth County and North Metro Atlanta since
+        2015. Bilingual and hands-on, he builds fast, clear websites and brands for local
+        small businesses — logos, websites, SEO/AEO, apparel, and signage under one roof.
+        Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function GymMartialArtsBrandingContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does gym branding (or a gym logo) cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A gym logo runs $750–$2,500 depending on tier. Full gym branding — logo, brand kit, print, and a website — is about $997 for the budget Startup Special or $4,500 for the full Launch Package. Signage and apparel are quote-based add-ons.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What makes a good gym or martial arts logo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A good gym or martial arts logo is simple, scalable, and legible on a phone icon, a hoodie, and a 10-foot sign. Skip clip-art barbells and fists. Lead with outcome-based messaging — fitness, confidence, community, progression — not aggression.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do gyms and martial arts studios get more members?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Optimize your Google Business Profile (Gymdesk: ~7x more clicks), gather reviews, respond to leads within 5 minutes, post Instagram Reels, run a referral program, and offer an intro trial (which converts 50–60% to paid). Branding makes all of it land.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does a gym or dojo really need signage and custom apparel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Gym signage is a 24/7 storefront billboard that helps first-timers find you and passes the 'is this legit?' test. Custom apparel turns every coach and member into walking, free advertising around Cumming and Forsyth County.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pick a name and tagline for my gym?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pick a name that's easy to say, spell, and search, and clear a quick trademark check. Your tagline should promise the outcome members want — strength, confidence, community — in plain language. Test it out loud before you commit to signage.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to build a recognizable gym brand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The design launches in about 10 days (Startup Special) to 4 weeks (Launch Package). Recognition takes longer — usually several months of consistent, on-brand signage, apparel, website, and social posting before the community knows you on sight.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Gym branding</strong> is the whole look and feel — logo, colors,
+        signage, apparel, website, and the in-studio experience — that makes
+        members trust you, remember you, and refer you. For a gym or martial arts
+        studio in Cumming, GA, most of that is a mostly one-time design investment:
+        a logo runs $750–$2,500, and a full brand + website launch runs about $997
+        to $4,500. Ongoing marketing and ad spend is a separate monthly budget.
+      </p>
+      <p>
+        That&apos;s the short version from{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>{" "}
+        serving Forsyth County and North Metro Atlanta. Below is the full
+        breakdown — what gym branding includes, what it costs, and how it actually
+        gets you more members.
+      </p>
+      <p>
+        <em>
+          Half the gyms out here look identical — same barbell clip-art, same
+          three fonts. A brand that isn&apos;t dead on arrival is how you stop
+          being background noise.
+        </em>
+      </p>
+      <p>
+        Want the vertical hub first? Start at{" "}
+        <InternalLink href="/industries/gyms-fitness">
+          gyms &amp; fitness branding
+        </InternalLink>{" "}
+        — that page collects everything below into one place for studio owners.
+      </p>
+
+      <h2 id="what-is-gym-branding">What is gym branding, exactly?</h2>
+      <p>
+        Gym branding is not just a logo. It&apos;s every touchpoint a prospect or
+        member sees, from the sign on your door to the shirt your coach wears to
+        the website they check at 11 p.m. before they commit.
+      </p>
+      <p>
+        For a fitness studio or martial arts school, the pieces usually break down
+        like this:
+      </p>
+      <ul>
+        <li>
+          <strong>Logo + identity</strong> — your mark, colors, and fonts (the
+          foundation everything else is built on).
+        </li>
+        <li>
+          <strong>Signage</strong> — exterior sign, window graphics, interior wall
+          wraps, banners.
+        </li>
+        <li>
+          <strong>Custom apparel</strong> — staff shirts, member tees, hoodies,
+          rash guards, gi patches.
+        </li>
+        <li>
+          <strong>Website</strong> — schedule, intro offer, class info, and a way
+          to book a trial.
+        </li>
+        <li>
+          <strong>In-studio experience</strong> — how the space, music, front
+          desk, and onboarding feel.
+        </li>
+        <li>
+          <strong>Social + print</strong> — Instagram graphics, flyers, door
+          hangers, punch cards.
+        </li>
+      </ul>
+      <p>
+        Member Solutions frames a strong studio brand as consistency across visual
+        identity, physical space and signage, and digital presence — the same look
+        and promise everywhere a member touches you.
+      </p>
+
+      <h2 id="how-much-does-it-cost">
+        How much does gym branding cost in Cumming, GA?
+      </h2>
+      <p>
+        Here&apos;s the honest cost breakdown for a Cumming, GA gym or dojo. Most
+        of this is one-time design work, not a monthly bill.
+      </p>
+      <ul>
+        <li>
+          <strong>Logo only</strong> — our{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+          tiers are Starter <strong>$750</strong>, Growth <strong>$1,500</strong>,
+          and Premium <strong>$2,500</strong>. Good starting point if you already
+          have a site and just need a real mark.
+        </li>
+        <li>
+          <strong>Budget launch — $997.</strong> The{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink> gets
+          you a logo, brand kit, 100 business cards, 100 flyers, a 1-page website
+          with domain and a year of hosting — in about 10 days. Great for a new
+          studio that needs to look legit fast.
+        </li>
+        <li>
+          <strong>Full brand + website — $4,500.</strong> The{" "}
+          <InternalLink href="/services/launch-package">
+            Launch Package
+          </InternalLink>{" "}
+          is a logo suite, brand basics, a 5-page website, and a 90-day content
+          calendar over about 4 weeks. This is the &quot;we&apos;re serious, build
+          the whole thing&quot; tier.
+        </li>
+        <li>
+          <strong>Standalone website</strong> — if you just need the site,{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+          starts around <strong>$1,500</strong>, with common tiers near $2,500 /
+          $4,500 / $7,500 depending on pages and features.
+        </li>
+        <li>
+          <strong>Signage + apparel + print</strong> —{" "}
+          <InternalLink href="/services/print-design">
+            signage, apparel, and print
+          </InternalLink>{" "}
+          run at a modest markup and are quote-based, because a window wrap and 50
+          staff shirts price differently than a single yard sign.{" "}
+          <InternalLink href="/services/request-quote">
+            Request a quote
+          </InternalLink>{" "}
+          or text Gerry and you&apos;ll get a real number, not a guess.
+        </li>
+      </ul>
+      <p>
+        Separate line item: <strong>ongoing marketing</strong> (ads, boosted
+        posts,{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>
+        ) is a monthly budget you control — not part of the one-time build.
+      </p>
+      <p>
+        <em>
+          &quot;Gym branding cost&quot; doesn&apos;t have to mean agency-retainer
+          pain. It&apos;s a build, not a lease.
+        </em>
+      </p>
+
+      <h2 id="how-to-brand-a-gym">How to brand a gym: the order of operations</h2>
+      <p>
+        If you&apos;re starting from scratch, do it in this sequence so nothing
+        gets built on a shaky foundation.
+      </p>
+      <ol>
+        <li>
+          <strong>Nail the name and positioning.</strong> Pick a name that&apos;s
+          easy to say, easy to spell, and free of trademark landmines. Your
+          positioning answers &quot;who is this for and why us.&quot;
+        </li>
+        <li>
+          <strong>Lock the logo and colors.</strong> Everything downstream —
+          shirts, signs, site — pulls from here. Get this right before you print
+          anything. See{" "}
+          <InternalLink href="/blog/what-makes-a-good-logo">
+            what makes a good logo
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Build the website.</strong> Members and Google both check it.
+          Booking a trial should take two taps.
+        </li>
+        <li>
+          <strong>Roll it onto signage and apparel.</strong> Now the physical
+          space matches the digital one.
+        </li>
+        <li>
+          <strong>Keep it consistent.</strong> Same logo, same colors, same voice
+          everywhere. Consistency is what turns a look into a brand.
+        </li>
+      </ol>
+
+      <h2 id="what-makes-a-good-logo">
+        What makes a good gym or martial arts logo?
+      </h2>
+      <p>
+        A good gym or martial arts logo is simple, scalable, and legible — it reads
+        at a glance on a phone icon, a hoodie chest, and a 10-foot sign. It avoids
+        trendy clutter and clip-art barbells or generic fists.
+      </p>
+      <p>
+        Best move for a martial arts brand: lead with{" "}
+        <strong>outcome-based messaging</strong>. People join for fitness, stress
+        relief, confidence, community, and progression — not &quot;fighting.&quot;
+        Your mark and tagline should feel like the result, not the aggression.
+      </p>
+
+      <h2 id="gym-vs-martial-arts">
+        Martial arts studio branding vs. gym branding — what&apos;s different?
+      </h2>
+      <p>
+        The mechanics are the same; the emotional promise shifts. A martial arts
+        studio branding project usually leans harder into discipline, respect, and
+        personal progression, and often serves parents choosing for their kids.
+      </p>
+      <p>
+        That means kid-and-parent-friendly visuals, belt-progression storytelling,
+        and a website that answers &quot;is this safe and welcoming?&quot; fast. The
+        gym version leans more toward energy, results, and community. Same toolkit
+        — different tone.
+      </p>
+
+      <h2 id="signage-apparel-experience">
+        Gym signage, custom apparel, and the in-studio experience
+      </h2>
+      <p>
+        Does a gym or dojo really need signage and custom apparel? Yes —
+        they&apos;re branding that works while you sleep.
+      </p>
+      <p>
+        <strong>Gym signage</strong> turns your storefront into a 24/7 billboard
+        and helps first-timers find the door. Window graphics and an exterior sign
+        are often the first &quot;is this place legit?&quot; test a prospect runs.
+      </p>
+      <p>
+        <strong>Custom gym apparel</strong> turns staff and members into walking
+        ads. Every coach in a branded shirt and every member in your hoodie at
+        Publix is free reach.
+      </p>
+      <p>
+        The <strong>in-studio experience</strong> — clean space, on-brand walls, a
+        smooth front-desk welcome — is what makes the branding feel true. A slick
+        logo on a chaotic front desk breaks the promise.
+      </p>
+
+      <h2 id="get-more-members">
+        How do gyms and martial arts studios get more members?
+      </h2>
+      <p>
+        Branding gets you remembered; these moves get you found and booked. Per
+        Gymdesk&apos;s 2026 martial arts marketing guide, a few levers do most of
+        the work:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile.</strong> Gymdesk reports an optimized
+          profile can earn roughly <strong>7x more clicks</strong>. Fill it out
+          fully and keep it current. Here&apos;s{" "}
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            how to optimize your Google Business Profile in Cumming
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Reviews.</strong> Social proof sells memberships.{" "}
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            Get more Google reviews
+          </InternalLink>{" "}
+          and answer them.
+        </li>
+        <li>
+          <strong>Fast lead response.</strong> Gymdesk cites that replying within{" "}
+          <strong>5 minutes</strong> makes a lead about <strong>21x more likely</strong>{" "}
+          to qualify. Slow replies leak members.
+        </li>
+        <li>
+          <strong>Instagram Reels.</strong> Short class clips and transformations
+          pull real engagement — pair them with on-brand{" "}
+          <InternalLink href="/services/digital-marketing">
+            social + digital marketing
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Referrals.</strong> Gymdesk notes referrals drive roughly{" "}
+          <strong>20–25%</strong> of new members. Branded apparel and a simple ask
+          make that engine run.
+        </li>
+        <li>
+          <strong>Intro programs.</strong> A trial or intro challenge converts at{" "}
+          <strong>50–60%</strong> to paid, per Gymdesk. Make the offer obvious on
+          your homepage.
+        </li>
+      </ul>
+      <p>
+        And rank locally: strong{" "}
+        <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>{" "}
+        plus knowing that{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is already describing your business
+        </InternalLink>{" "}
+        means showing up when a parent searches &quot;kids karate near me.&quot;
+      </p>
+
+      <h2 id="one-shop-wedge">
+        The one-shop wedge: logo, website, shirts, and signs under one roof
+      </h2>
+      <p>
+        Most gym owners juggle a logo guy, a random website, a screen-printer, and
+        a sign shop — four vendors, four invoices, four slightly-different versions
+        of your brand.
+      </p>
+      <p>
+        Branding Zombie Designs does{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink>,{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>,{" "}
+        <InternalLink href="/services/print-design">
+          apparel and signage
+        </InternalLink>
+        , and{" "}
+        <InternalLink href="/services/branding">full brand identity</InternalLink>{" "}
+        under one roof. One designer, one invoice, one consistent look from your
+        door to your Instagram.
+      </p>
+      <p>
+        That&apos;s the whole point: your shirt matches your sign matches your site
+        matches your logo — because the same person made all of it.
+      </p>
+      <p>
+        <em>
+          Fewer vendors, fewer &quot;why does the shirt logo look different than
+          the sign&quot; headaches. One brain, one brand.
+        </em>
+      </p>
+
+      <h2 id="how-long-to-build">
+        How long does it take to build a recognizable gym brand?
+      </h2>
+      <p>
+        The design build is fast — a{" "}
+        <InternalLink href="/startup-special">Startup Special</InternalLink>{" "}
+        launches in about 10 days and the full{" "}
+        <InternalLink href="/services/launch-package">Launch Package</InternalLink>{" "}
+        in about 4 weeks. But <em>recognition</em> is a longer game.
+      </p>
+      <p>
+        Expect several months of consistent, on-brand presence — same logo, same
+        signage, same shirts, same posting — before the community starts
+        recognizing you on sight. The design is the sprint; consistency is the
+        marathon.
+      </p>
+
+      <h2 id="faq">FAQ: Gym &amp; Martial Arts Branding in Cumming, GA</h2>
+
+      <h3 id="faq-cost">How much does gym branding (or a gym logo) cost?</h3>
+      <p>
+        A gym logo runs $750–$2,500 depending on tier. Full gym branding — logo,
+        brand kit, print, and a website — is about $997 for the budget Startup
+        Special or $4,500 for the full Launch Package. Signage and apparel are
+        quote-based add-ons.
+      </p>
+
+      <h3 id="faq-logo">What makes a good gym or martial arts logo?</h3>
+      <p>
+        A good gym or martial arts logo is simple, scalable, and legible on a phone
+        icon, a hoodie, and a 10-foot sign. Skip clip-art barbells and fists. Lead
+        with outcome-based messaging — fitness, confidence, community, progression
+        — not aggression.
+      </p>
+
+      <h3 id="faq-more-members">
+        How do gyms and martial arts studios get more members?
+      </h3>
+      <p>
+        Optimize your Google Business Profile (Gymdesk: ~7x more clicks), gather
+        reviews, respond to leads within 5 minutes, post Instagram Reels, run a
+        referral program, and offer an intro trial (which converts 50–60% to paid).
+        Branding makes all of it land.
+      </p>
+
+      <h3 id="faq-signage">
+        Does a gym or dojo really need signage and custom apparel?
+      </h3>
+      <p>
+        Yes. Gym signage is a 24/7 storefront billboard that helps first-timers
+        find you and passes the &quot;is this legit?&quot; test. Custom apparel
+        turns every coach and member into walking, free advertising around Cumming
+        and Forsyth County.
+      </p>
+
+      <h3 id="faq-name">How do I pick a name and tagline for my gym?</h3>
+      <p>
+        Pick a name that&apos;s easy to say, spell, and search, and clear a quick
+        trademark check. Your tagline should promise the outcome members want —
+        strength, confidence, community — in plain language. Test it out loud
+        before you commit to signage.
+      </p>
+
+      <h3 id="faq-recognition">
+        How long does it take to build a recognizable gym brand?
+      </h3>
+      <p>
+        The design launches in about 10 days (Startup Special) to 4 weeks (Launch
+        Package). Recognition takes longer — usually several months of consistent,
+        on-brand signage, apparel, website, and social posting before the community
+        knows you on sight.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Ready to bring your gym brand back to life?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Your competition looks half-dead. Don&apos;t join them.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Matching clip-art, mismatched shirts, a website from 2014 — that&apos;s
+          the block you&apos;re on. Text or call Gerry, and we&apos;ll price your
+          logo, site, shirts, and signage in one shot — one designer, one invoice,
+          one brand that isn&apos;t dead on arrival.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, owner-operator of Branding Zombie Designs, a graphic +
+        web design studio in Cumming, GA serving gyms, dojos, and small businesses
+        across Forsyth County and North Metro Atlanta since 2015. Bilingual and
+        hands-on, he builds logos, websites, apparel, and signage under one roof —
+        one designer, one invoice. Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function HomeServicesMarketingForsythContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does home services marketing cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Two budgets. The branding build is mostly one-time: a logo runs $750–$2,500, a full launch $997 (Startup Special) to $4,500 (Launch Package). Ongoing ads are separate — per Hook Agency, most home-service businesses spend about $2,500–$10,000/month, with starters near $2,500–$4,000/month.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the best marketing for home-service businesses?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A strong Google Business Profile first — WebFX credits it with 60%+ of home-service leads, and it's free. Pair it with Local Services Ads (pay-per-lead), steady reviews, and a fast mobile website. Hook Agency advises small contractors to focus on one or two channels, not spread thin.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get more HVAC or plumbing leads?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Optimize your Google Business Profile, run Local Services Ads (roughly $60–$130 per lead per Hook Agency), and collect reviews relentlessly. Make sure your site has a tap-to-call button and loads fast on a phone. Most panicking homeowners call the first legit-looking result they find.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do home-services contractors need a website if they have Google?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Your Google Business Profile gets you found, but homeowners click through to your site to judge if you're legit before calling. A fast, mobile-first site with reviews, service area, and a tap-to-call button converts that traffic — without one, you're handing those clicks to competitors.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What should I spend on marketing as a percentage of revenue?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most home-service businesses land in the range Hook Agency cites — roughly $2,500–$10,000/month on digital marketing depending on size and growth goals, with newer or smaller shops starting near $2,500–$4,000/month. Set a fixed budget, track cost per lead, and scale the channels that convert.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I market a NEW home-services business with a small budget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Start with the branding foundation and a free Google Business Profile, then turn on ONE paid channel — usually Local Services Ads. Hook Agency is explicit: don't spread a small budget across many channels. Our $997 Startup Special gets a new contractor a legit-looking brand and site in about 10 days.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Home services marketing</strong> is how a contractor gets found
+        and trusted the moment a homeowner searches &quot;plumber near me&quot;
+        or &quot;AC repair Cumming.&quot; It&apos;s a strong Google Business
+        Profile, Local Services Ads, local SEO, and reviews — plus the branding
+        (logo, truck lettering, uniforms, a fast website) that makes you look
+        legit before the phone rings. For a Cumming, GA contractor in Forsyth
+        County, the branding build is mostly one-time (a logo runs $750, a full
+        launch runs $997–$4,500) while ad spend is a SEPARATE monthly budget.
+        That&apos;s the short version from{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>{" "}
+        serving Forsyth County and North Metro Atlanta. Below is the full
+        breakdown — what home services marketing includes, what it costs, and
+        what to do first.
+      </p>
+      <p>
+        <em>
+          Aside: homeowners with a burst pipe don&apos;t comparison-shop for a
+          week. They call the first name that looks real and has reviews. If
+          your brand looks half-dead, they scroll right past you to the next
+          van.
+        </em>
+      </p>
+      <p>
+        Want the vertical hub first? Start at{" "}
+        <InternalLink href="/industries/home-services">
+          home services marketing &amp; branding
+        </InternalLink>{" "}
+        — that page collects everything below into one place for contractors. If
+        you run a trade specifically, the closely related{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades &amp; contractors hub
+        </InternalLink>{" "}
+        goes deeper on that side.
+      </p>
+
+      <h2 id="what-is-home-services-marketing">
+        What is home services marketing, exactly?
+      </h2>
+      <p>
+        Home services marketing is the mix of channels and branding that gets a
+        local contractor found, trusted, and called when a homeowner needs a job
+        done. It splits cleanly into two halves — and confusing them is why most
+        contractors overspend or underperform.
+      </p>
+      <p>
+        <strong>The branding half (mostly one-time):</strong> your logo,
+        truck/vehicle lettering, uniforms, yard signs, and a fast mobile
+        website. This is the trust layer. It earns the call.
+      </p>
+      <p>
+        <strong>The marketing half (ongoing / monthly):</strong> Google Business
+        Profile, Local Services Ads (&quot;Google Guaranteed&quot;), local SEO,
+        reviews, and paid ads. This is the visibility layer. It generates the
+        call.
+      </p>
+      <p>
+        You need both. A slick logo with no Google presence stays invisible. A
+        big ad budget pointed at a sketchy-looking brand burns money. The
+        contractors who win in Forsyth County get the foundation right, then
+        turn on the channels.
+      </p>
+
+      <h2 id="how-much-does-it-cost">
+        How much does home services marketing cost in Cumming, GA?
+      </h2>
+      <p>
+        Here&apos;s the honest cost breakdown for a Cumming, GA home-services
+        business. The one-time design build and the monthly ad budget are two
+        different line items — keep them separate.
+      </p>
+      <p>
+        <strong>The branding build (mostly one-time):</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>Logo only</strong> — our{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+          tiers are Starter <strong>$750</strong>, Growth <strong>$1,500</strong>,
+          Premium <strong>$2,500</strong>. A real mark for your trucks, shirts,
+          and site.
+        </li>
+        <li>
+          <strong>Budget launch — $997.</strong> The{" "}
+          <InternalLink href="/startup-special">Startup Special</InternalLink>{" "}
+          gets you a logo, brand kit, 100 business cards, 100 flyers, a 1-page
+          website with domain and a year of hosting — in about 10 days. Great
+          for a new contractor who needs to look legit fast.
+        </li>
+        <li>
+          <strong>Full brand + website — $4,500.</strong> The{" "}
+          <InternalLink href="/services/launch-package">
+            Launch Package
+          </InternalLink>{" "}
+          is a logo suite, brand basics, a 5-page website, and a 90-day content
+          calendar over about 4 weeks. The &quot;we&apos;re serious&quot; tier.
+        </li>
+        <li>
+          <strong>Standalone website</strong> — if you just need a fast,
+          mobile-first{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink>, it
+          starts around <strong>$1,500</strong>, with common tiers near $2,500 /
+          $4,500 / $7,500 depending on pages and features.
+        </li>
+        <li>
+          <strong>
+            Truck lettering, vehicle wraps, uniforms, yard signs, and print
+          </strong>{" "}
+          —{" "}
+          <InternalLink href="/services/print-design">
+            signage, apparel, and print
+          </InternalLink>{" "}
+          run at a modest markup and are quote-based, because a full wrap and 20
+          branded shirts price differently than a set of magnetic door signs.{" "}
+          <InternalLink href="/services/request-quote">
+            Request a quote
+          </InternalLink>{" "}
+          or text Gerry for a real number.
+        </li>
+      </ul>
+      <p>
+        <strong>The marketing budget (ongoing / monthly):</strong> ads and
+        management live in a separate{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>{" "}
+        budget you control. Per Hook Agency, most home-service businesses spend
+        roughly <strong>$2,500–$10,000/month</strong> on digital marketing, with
+        a starter budget around <strong>$2,500–$4,000/month</strong>. And cost
+        per lead varies a lot by trade: WebFX pegs standard trades (HVAC,
+        landscaping, electrician) at roughly <strong>$100–$250 per lead</strong>,
+        high-volume plumbing around <strong>$76–$100</strong>, and premium work
+        like roofing at <strong>$350–$500</strong>.
+      </p>
+      <p>
+        One local wrinkle: WebFX notes metro-Atlanta cost-per-click runs roughly{" "}
+        <strong>double</strong> the national average — so Forsyth County
+        contractors should budget a little heavier per lead than a national
+        number suggests.
+      </p>
+      <p>
+        <em>
+          Aside: &quot;home services marketing cost&quot; doesn&apos;t have to
+          mean an agency retainer that eats you alive. The branding is a build,
+          not a lease. The ads are a dial you turn up when the calls are
+          converting.
+        </em>
+      </p>
+
+      <h2 id="what-to-do-first">What should a home-services business do FIRST?</h2>
+      <p>
+        If you&apos;re a solo or small contractor, do NOT light up five channels
+        at once. That&apos;s the fastest way to waste a small budget.
+      </p>
+      <p>
+        Hook Agency&apos;s explicit advice for small operators: don&apos;t spread
+        a small budget across many channels — focus on one or two high-impact
+        ones (Local Services Ads or a strong Google Business Profile first). We
+        agree.
+      </p>
+      <p>Here&apos;s the order of operations:</p>
+      <ol>
+        <li>
+          <strong>Lock the branding foundation.</strong> A clean logo, consistent
+          truck lettering, and a fast mobile site. Homeowners judge legitimacy
+          in seconds. See{" "}
+          <InternalLink href="/blog/what-makes-a-good-logo">
+            what makes a good logo
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Claim and optimize your Google Business Profile.</strong> This
+          is the single highest-ROI free move. WebFX says GBP drives{" "}
+          <strong>60%+ of leads</strong> for most home-service businesses.
+          Here&apos;s{" "}
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            how to optimize your Google Business Profile in Cumming
+          </InternalLink>{" "}
+          — and if you&apos;re{" "}
+          <InternalLink href="/blog/business-not-showing-on-google-maps">
+            not showing up on Google Maps
+          </InternalLink>
+          , fix that first.
+        </li>
+        <li>
+          <strong>Turn on ONE paid channel.</strong> For most trades that&apos;s
+          Local Services Ads (pay-per-lead, Google Guaranteed badge). Prove it
+          converts before you add more.
+        </li>
+        <li>
+          <strong>Build a review engine.</strong> Reviews are the tiebreaker.{" "}
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            Get more Google reviews
+          </InternalLink>{" "}
+          on a steady cadence.
+        </li>
+      </ol>
+      <p>
+        Get those four right and you&apos;re already ahead of most contractors in
+        Forsyth County.
+      </p>
+
+      <h2 id="branding-foundation">
+        The branding foundation: trust before the phone rings
+      </h2>
+      <p>
+        Marketing gets you seen. Branding decides whether they call YOU. For home
+        services, four pieces do the heavy lifting.
+      </p>
+      <p>
+        <strong>Logo + brand identity.</strong> Your mark shows up on trucks,
+        shirts, invoices, and your Google listing. It&apos;s the first &quot;are
+        these people real?&quot; signal. A generic clip-art wrench says amateur;
+        a clean, consistent mark says booked-solid pro.
+      </p>
+      <p>
+        <strong>Truck &amp; vehicle lettering.</strong> Your vans are rolling
+        billboards parked in the exact neighborhoods you serve. Branded lettering
+        or a full wrap turns every job and every drive-time into free local reach
+        around Cumming and Forsyth County. (Quote-based — size and coverage move
+        the number.)
+      </p>
+      <p>
+        <strong>Uniforms.</strong> A branded shirt at the door tells a nervous
+        homeowner they let the right person in. It&apos;s trust you wear.
+      </p>
+      <p>
+        <strong>A fast mobile website.</strong> Panicking homeowners search on
+        their phones. If your site is slow, ugly, or missing your phone number up
+        top, you lose them — and you&apos;re literally{" "}
+        <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+          letting your website cost you customers
+        </InternalLink>
+        . Your site needs a tap-to-call button, service list, service area, and
+        reviews above the fold.
+      </p>
+      <p>
+        Do it all in one voice and one look. The{" "}
+        <InternalLink href="/services/branding">full brand identity</InternalLink>{" "}
+        is what makes your truck, your shirt, and your website obviously the same
+        company.
+      </p>
+
+      <h2 id="get-more-calls">
+        How do home-services businesses get more calls and leads?
+      </h2>
+      <p>
+        Branding earns trust; these channels generate the calls. A handful of
+        levers do most of the work.
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile.</strong> The #1 free lead source.
+          WebFX credits it with 60%+ of home-service leads. Complete it fully,
+          add real job photos, keep hours current, and post regularly.
+        </li>
+        <li>
+          <strong>Local Services Ads (Google Guaranteed).</strong> Pay-per-lead,
+          top-of-page placement, and a trust badge homeowners recognize. More on
+          this below.
+        </li>
+        <li>
+          <strong>Local SEO.</strong> Rank for &quot;[trade] + Cumming&quot; and
+          &quot;near me&quot; searches. Strong{" "}
+          <InternalLink href="/blog/seo-cumming-ga">
+            SEO in Cumming, GA
+          </InternalLink>{" "}
+          plus a real service-area page strategy keeps the leads coming without
+          paying per click.
+        </li>
+        <li>
+          <strong>Reviews.</strong> They lift both your rank and your conversion
+          rate. Ask every happy customer, every time.
+        </li>
+        <li>
+          <strong>A conversion-ready site.</strong> WebFX puts the industry-wide
+          conversion rate around <strong>7.8%</strong> — a fast, clear site with
+          an obvious call button is how you beat that number instead of falling
+          under it.
+        </li>
+      </ul>
+      <p>
+        And don&apos;t sleep on AI search —{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is already describing your business
+        </InternalLink>{" "}
+        to homeowners before they ever click. What it says depends on your GBP,
+        your reviews, and your site.
+      </p>
+
+      <h2 id="do-i-need-lsa">Do I need Local Services Ads (Google Guaranteed)?</h2>
+      <p>
+        For most home-services contractors, yes — they&apos;re one of the best
+        paid channels available. Local Services Ads sit at the very top of the
+        results, above regular Google Ads, and carry the green &quot;Google
+        Guaranteed&quot; checkmark that reassures a homeowner you&apos;re screened
+        and backed.
+      </p>
+      <p>
+        The big draw: they&apos;re <strong>pay-per-lead</strong>, not
+        pay-per-click. You pay when someone actually contacts you, not when they
+        merely see your ad. Per Hook Agency, LSA leads run roughly{" "}
+        <strong>$60–$120 per lead for HVAC</strong> and{" "}
+        <strong>$70–$130 for plumbing</strong> — real, contactable homeowners.
+      </p>
+      <p>
+        To run LSAs you&apos;ll need your licensing and insurance verified by
+        Google, plus a solid review profile to compete. That&apos;s exactly why
+        the branding foundation and Google Business Profile come first — LSAs
+        pour fuel on a fire you&apos;ve already lit.
+      </p>
+
+      <h2 id="one-shop-wedge">
+        The one-shop wedge: brand, truck, site, and signs under one roof
+      </h2>
+      <p>
+        Most contractors juggle a logo guy, a random website, a wrap shop, and a
+        shirt vendor — four vendors, four invoices, four slightly different
+        versions of your brand.
+      </p>
+      <p>
+        Branding Zombie Designs does{" "}
+        <InternalLink href="/services/logo-design">logo</InternalLink>,{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>,{" "}
+        <InternalLink href="/services/print-design">
+          truck lettering and apparel
+        </InternalLink>
+        , and{" "}
+        <InternalLink href="/services/branding">
+          full brand identity
+        </InternalLink>{" "}
+        under one roof. One designer, one invoice, one consistent look from your
+        van to your Google listing.
+      </p>
+      <p>
+        That&apos;s the whole point: your truck matches your shirt matches your
+        website matches your logo — because the same person built all of it. For
+        trades specifically, the{" "}
+        <InternalLink href="/blog/branding-checklist-hvac-trades">
+          branding checklist for HVAC &amp; trades
+        </InternalLink>{" "}
+        walks through every piece.
+      </p>
+      <p>
+        <em>
+          Aside: fewer vendors, fewer &quot;why does the truck logo look
+          different than the website&quot; headaches. One brain, one brand, from
+          the driveway to the DMs.
+        </em>
+      </p>
+
+      <h2 id="how-long-until-it-works">
+        How long until home services marketing works?
+      </h2>
+      <p>
+        The design build is fast — a{" "}
+        <InternalLink href="/startup-special">Startup Special</InternalLink>{" "}
+        launches in about 10 days, the full{" "}
+        <InternalLink href="/services/launch-package">
+          Launch Package
+        </InternalLink>{" "}
+        in about 4 weeks. Paid channels move quickest: a well-set-up Google
+        Business Profile and Local Services Ads can produce calls within days
+        once they&apos;re live and verified.
+      </p>
+      <p>
+        Local SEO is the slower burn — usually a few months of consistent
+        optimization, reviews, and content before you&apos;re ranking for the
+        competitive &quot;near me&quot; searches. The smart play: turn on the
+        fast channels (GBP + LSAs) for calls now, while SEO compounds in the
+        background so you&apos;re not renting every lead forever.
+      </p>
+
+      <h2 id="faq">
+        FAQ: Home Services Marketing in Cumming, GA
+      </h2>
+
+      <h3 id="faq-cost">How much does home services marketing cost?</h3>
+      <p>
+        Two budgets. The branding build is mostly one-time: a logo runs
+        $750–$2,500, a full launch $997 (Startup Special) to $4,500 (Launch
+        Package). Ongoing ads are separate — per Hook Agency, most home-service
+        businesses spend about $2,500–$10,000/month, with starters near
+        $2,500–$4,000/month.
+      </p>
+
+      <h3 id="faq-best">What is the best marketing for home-service businesses?</h3>
+      <p>
+        A strong Google Business Profile first — WebFX credits it with 60%+ of
+        home-service leads, and it&apos;s free. Pair it with Local Services Ads
+        (pay-per-lead), steady reviews, and a fast mobile website. Hook Agency
+        advises small contractors to focus on one or two channels, not spread
+        thin.
+      </p>
+
+      <h3 id="faq-leads">How do I get more HVAC or plumbing leads?</h3>
+      <p>
+        Optimize your Google Business Profile, run Local Services Ads (roughly
+        $60–$130 per lead per Hook Agency), and collect reviews relentlessly.
+        Make sure your site has a tap-to-call button and loads fast on a phone.
+        Most panicking homeowners call the first legit-looking result they find.
+      </p>
+
+      <h3 id="faq-website">
+        Do home-services contractors need a website if they have Google?
+      </h3>
+      <p>
+        Yes. Your Google Business Profile gets you found, but homeowners click
+        through to your site to judge if you&apos;re legit before calling. A
+        fast, mobile-first site with reviews, service area, and a tap-to-call
+        button converts that traffic — without one, you&apos;re handing those
+        clicks to competitors.
+      </p>
+
+      <h3 id="faq-percentage">
+        What should I spend on marketing as a percentage of revenue?
+      </h3>
+      <p>
+        Most home-service businesses land in the range Hook Agency cites —
+        roughly $2,500–$10,000/month on digital marketing depending on size and
+        growth goals, with newer or smaller shops starting near
+        $2,500–$4,000/month. Set a fixed budget, track cost per lead, and scale
+        the channels that convert.
+      </p>
+
+      <h3 id="faq-new-business">
+        How do I market a NEW home-services business with a small budget?
+      </h3>
+      <p>
+        Start with the branding foundation and a free Google Business Profile,
+        then turn on ONE paid channel — usually Local Services Ads. Hook Agency
+        is explicit: don&apos;t spread a small budget across many channels. Our
+        $997 Startup Special gets a new contractor a legit-looking brand and site
+        in about 10 days.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Ready to stop losing calls?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Stop losing calls to the other van.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Your competition looks half-dead — magnet signs peeling off the door, a
+          website from 2014 with no tap-to-call, zero reviews. Let&apos;s raise
+          your brand from the dead — logo, site, truck lettering, and shirts,
+          priced in one shot from one designer. Text Gerry and we&apos;ll fill
+          your schedule before the zombies do.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, owner-operator of Branding Zombie Designs, a graphic
+        + web design studio in Cumming, GA serving HVAC, plumbing, electrical, and
+        other home-services contractors across Forsyth County and North Metro
+        Atlanta since 2015. Bilingual and hands-on, he builds logos, websites,
+        truck lettering, and apparel under one roof — one designer, one invoice.
+        Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function SocialMediaManagementCostContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does a social media manager charge per month?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most charge about $300–$1,500/mo for basic posting, $1,500–$3,500/mo for full freelance management, and $2,000–$6,000/mo for a full-service agency. Hourly rates run $25–$150. A local solo studio in Cumming, GA typically sits at the affordable end of that range.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it worth paying for social media management for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most small businesses, yes — mainly because it buys consistency you can't sustain alone while running the business. Paying someone keeps you posting on-brand every week instead of going dark for months, which is what actually builds trust and search visibility over time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Freelancer vs. agency vs. in-house — which is cheapest?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A freelancer or solo studio is usually cheapest, since you skip agency overhead and account-manager markup. An agency costs the most but adds team capacity and reporting. A full-time in-house hire averages around $4,700/mo in salary alone — rarely worth it for a small business.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's included in a social media management package?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Typically strategy, a monthly content calendar, branded graphics, caption writing, scheduling, community management, and basic reporting. Cheaper tiers cover posting and graphics only; higher tiers add engagement and analytics. Always confirm post count, platform count, and whether replies are included.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much should a small business budget for social media each month?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Budget roughly $500–$1,500/mo for solid organic management with a local solo studio, then add ad spend separately if you want paid reach. Businesses using social as a primary sales channel spend more; those just staying visible and consistent can spend less and still look professional.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does the social media management cost include ad spend (paid ads)?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Almost never. The management fee covers strategy, content, and posting — the paid ad spend that goes to Meta, Google, or TikTok is billed separately and stays yours. Video production and photography are usually extra too, so always ask what's included before signing.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Social media management cost</strong> for a small business in
+        Cumming, GA typically runs about <strong>$500 to $5,000 per month</strong>,
+        depending on who does the work and how much they do. A solo pro or freelancer
+        doing basic posting usually charges around $300–$1,500/mo, broader freelance
+        management runs $1,500–$3,500/mo, and a full-service agency lands at
+        $2,000–$6,000/mo (some go $3,000–$10,000). At{" "}
+        <strong>Branding Zombie Designs, a graphic + web design studio in Cumming, GA</strong>,
+        we sit at the affordable local end of that range — and one important note up
+        front: ad spend, video, and photography are almost always billed separately from
+        the management fee.
+      </p>
+      <p>
+        That&apos;s the short answer. Below is the full breakdown so you can budget
+        honestly and know what you&apos;re actually paying for.
+      </p>
+
+      <h2 id="cost-per-month">
+        Social media management cost per month: what do managers charge?
+      </h2>
+      <p>
+        Here&apos;s the market map for <strong>social media manager cost per month</strong>,
+        based on who&apos;s doing the work:
+      </p>
+      <ul>
+        <li>
+          <strong>Solo pro / freelancer (basic posting):</strong> ~$300–$1,500/mo
+        </li>
+        <li>
+          <strong>Freelance management (strategy + posting + engagement):</strong>{" "}
+          ~$1,500–$3,500/mo
+        </li>
+        <li>
+          <strong>Full-service agency:</strong> ~$2,000–$6,000/mo (some run
+          $3,000–$10,000)
+        </li>
+        <li>
+          <strong>Hourly work:</strong> $25–$150/hr
+        </li>
+      </ul>
+      <p>
+        Sprout Social&apos;s 2026 pricing guide puts agency programs at roughly{" "}
+        <strong>$500–$5,000/mo</strong>, freelance help around <strong>$20–$150/hr</strong>,
+        and a full-time in-house specialist near <strong>$4,700/mo</strong> in salary
+        alone.
+      </p>
+      <p>
+        WebFX reports the same shape — social media services average about{" "}
+        <strong>$500–$5,000/mo</strong>, with hourly rates landing around{" "}
+        <strong>$35–$150</strong>.
+      </p>
+      <p>
+        So when people ask <em>&quot;what do social media managers charge,&quot;</em> the
+        honest answer is: it depends entirely on scope and who&apos;s behind the keyboard.
+        A national agency and a local solo studio can both do great work — they just carry
+        very different overhead.
+      </p>
+      <p>Read the sources yourself:</p>
+      <ul>
+        <li>
+          <ExternalLink href="https://sproutsocial.com/insights/social-media-management-cost/">
+            Sprout Social — Social Media Management Pricing for Businesses In 2026
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://www.webfx.com/blog/social-media/social-media-pricing/">
+            WebFX — Social Media Management Pricing in 2026
+          </ExternalLink>
+        </li>
+      </ul>
+
+      <h2 id="freelancer-vs-agency">
+        Freelancer vs. agency vs. in-house — which is cheapest?
+      </h2>
+      <p>
+        Three ways to get your social handled, three very different price tags:
+      </p>
+      <p>
+        <strong>Freelancer / solo studio</strong> — usually the cheapest and most
+        flexible. You work directly with the person doing the work, so there&apos;s no
+        account-manager markup. Best for small businesses that want a real human, not a
+        call center.
+      </p>
+      <p>
+        <strong>Agency</strong> — most expensive, but you get a team, formal reporting,
+        and capacity for big multi-platform pushes. You&apos;re also paying for their
+        office, their layers, and their other clients&apos; account managers.
+      </p>
+      <p>
+        <strong>In-house hire</strong> — a full-time social specialist averages around
+        $4,700/mo in salary before benefits, taxes, and tools. Rarely worth it for a small
+        business until social is a serious revenue channel.
+      </p>
+      <p>
+        For most small businesses in Cumming and across Forsyth County, a solo studio or
+        freelancer is the cheapest path that still gets you strategy and consistency — not
+        just a college kid posting random memes.
+      </p>
+
+      <h2 id="whats-included">
+        What&apos;s included in a social media management package?
+      </h2>
+      <p>
+        <strong>Social media management pricing</strong> varies because
+        &quot;management&quot; means different things. A typical package includes some mix
+        of:
+      </p>
+      <ul>
+        <li>Content strategy and a monthly calendar</li>
+        <li>Branded graphics and post design</li>
+        <li>Writing captions and hashtags</li>
+        <li>Scheduling and publishing</li>
+        <li>Community management (replying to comments and DMs)</li>
+        <li>Basic monthly reporting</li>
+      </ul>
+      <p>
+        Cheaper packages usually cover posting and graphics only. Higher tiers add
+        strategy, engagement, and analytics. Always ask exactly how many posts, how many
+        platforms, and whether engagement is included — that&apos;s where quotes quietly
+        differ.
+      </p>
+      <p>
+        If your brand itself needs work before you post, our{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> and{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink> pages cover
+        that groundwork. Great social sits on top of a clean, consistent brand — posting
+        polished garbage still looks like garbage.
+      </p>
+
+      <h2 id="billed-separately">
+        What&apos;s billed separately (and catches people off guard)
+      </h2>
+      <p>
+        This is the part that surprises first-timers. The management fee usually does{" "}
+        <strong>not</strong> include:
+      </p>
+      <ul>
+        <li>
+          <strong>Paid ad spend</strong> — the money that actually goes to Meta, Google,
+          or TikTok. That&apos;s separate, and it&apos;s yours.
+        </li>
+        <li>
+          <strong>Video production</strong> — filming and editing Reels/TikToks is often a
+          line item on top.
+        </li>
+        <li>
+          <strong>Photography</strong> — a photo shoot for original product or team images
+          is its own cost.
+        </li>
+        <li>
+          <strong>Paid tools or premium stock</strong> — sometimes passed through.
+        </li>
+      </ul>
+      <p>
+        So a &quot;$800/mo&quot; package plus $600/mo in ads is really $1,400/mo out the
+        door. Ask up front, in writing, what the fee covers and what&apos;s extra. A good
+        manager will tell you straight. For the paid-ads side specifically, see our{" "}
+        <InternalLink href="/services/digital-marketing">digital marketing</InternalLink>{" "}
+        page — running ads well is a different skill than organic posting.
+      </p>
+
+      <h2 id="is-it-worth-it">
+        Is it worth paying for social media management for a small business?
+      </h2>
+      <p>
+        Short version: yes, if you&apos;ll otherwise skip it. The real cost of DIY social
+        isn&apos;t the software — it&apos;s the weeks you go dark because you got busy
+        running your actual business. Consistency is what moves the needle, and consistency
+        is exactly what an owner-operator can&apos;t sustain alone.
+      </p>
+      <p>
+        <em>Is it worth it</em> when it turns &quot;we post whenever we remember&quot; into
+        a steady, on-brand presence that shows up in search and builds trust? For most
+        local businesses, yes. If money&apos;s tight, start small and scale up — you
+        don&apos;t need the $5,000/mo agency package to look professional.
+      </p>
+
+      <h2 id="how-much-to-budget">
+        How much should a small business budget for social media each month?
+      </h2>
+      <p>
+        A realistic starting budget for a Cumming or North Metro Atlanta small business is{" "}
+        <strong>$500–$1,500/mo</strong> for solid organic management with a local solo
+        studio — then add ad spend on top if you want paid reach. Businesses that treat
+        social as a primary sales channel spend more; businesses just staying visible and
+        consistent spend less.
+      </p>
+      <p>
+        At Branding Zombie Designs we don&apos;t publish a fixed monthly social-management
+        price, because scope drives everything. Maintenance-style retainers with us
+        generally start around <strong>$100/mo</strong>, but for an exact social number,
+        request a quote or text Gerry at <strong>{PHONE_DISPLAY}</strong>. See what&apos;s
+        covered on our{" "}
+        <InternalLink href="/services/social-media">social media services</InternalLink>{" "}
+        page.
+      </p>
+      <p>
+        If you&apos;re launching from scratch, the{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink> gets you a
+        logo, brand kit, cards, flyers, a one-page site, and hosting in 10 days — a clean
+        brand to actually post about. Need the full setup? The{" "}
+        <InternalLink href="/services/launch-package">$4,500 Launch Package</InternalLink>{" "}
+        adds a 5-page site and a 90-day content calendar so your social has a plan from day
+        one.
+      </p>
+
+      <h2 id="local-studio-vs-agency">
+        Why a local Cumming, GA studio can beat a big agency on price
+      </h2>
+      <p>
+        A national agency prices for national overhead. A solo studio in Cumming, GA
+        doesn&apos;t — you&apos;re paying for the work, not the office tower and the layers
+        of account managers.
+      </p>
+      <p>
+        You also get someone who knows Forsyth County, understands local trades,
+        restaurants, gyms, and realtors, and can pair your social with your{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>,{" "}
+        <InternalLink href="/services/print-design">print</InternalLink>, and branding
+        under one roof. One designer, one invoice — no game of telephone. That&apos;s the
+        whole wedge: when your feed, your site, and your yard signs all match, you look
+        bigger than you are.
+      </p>
+
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        <li>
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            How to get more Google reviews
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/google-business-profile-optimization-cumming">
+            Google Business Profile optimization in Cumming
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/google-ai-is-calling-your-business">
+            Google&apos;s AI is calling your business
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            What a website costs in Cumming, GA (2026)
+          </InternalLink>
+        </li>
+      </ul>
+      <p>
+        Not sure where to start? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> or{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>.
+      </p>
+
+      <h2 id="faq">FAQ: Social Media Management Cost in Cumming, GA</h2>
+
+      <h3 id="faq-manager-cost">How much does a social media manager charge per month?</h3>
+      <p>
+        Most charge about $300–$1,500/mo for basic posting, $1,500–$3,500/mo for full
+        freelance management, and $2,000–$6,000/mo for a full-service agency. Hourly rates
+        run $25–$150. A local solo studio in Cumming, GA typically sits at the affordable
+        end of that range.
+      </p>
+
+      <h3 id="faq-worth-it">
+        Is it worth paying for social media management for a small business?
+      </h3>
+      <p>
+        For most small businesses, yes — mainly because it buys consistency you can&apos;t
+        sustain alone while running the business. Paying someone keeps you posting on-brand
+        every week instead of going dark for months, which is what actually builds trust
+        and search visibility over time.
+      </p>
+
+      <h3 id="faq-cheapest">
+        Freelancer vs. agency vs. in-house — which is cheapest?
+      </h3>
+      <p>
+        A freelancer or solo studio is usually cheapest, since you skip agency overhead and
+        account-manager markup. An agency costs the most but adds team capacity and
+        reporting. A full-time in-house hire averages around $4,700/mo in salary alone —
+        rarely worth it for a small business.
+      </p>
+
+      <h3 id="faq-included">What&apos;s included in a social media management package?</h3>
+      <p>
+        Typically strategy, a monthly content calendar, branded graphics, caption writing,
+        scheduling, community management, and basic reporting. Cheaper tiers cover posting
+        and graphics only; higher tiers add engagement and analytics. Always confirm post
+        count, platform count, and whether replies are included.
+      </p>
+
+      <h3 id="faq-budget">
+        How much should a small business budget for social media each month?
+      </h3>
+      <p>
+        Budget roughly $500–$1,500/mo for solid organic management with a local solo
+        studio, then add ad spend separately if you want paid reach. Businesses using
+        social as a primary sales channel spend more; those just staying visible and
+        consistent can spend less and still look professional.
+      </p>
+
+      <h3 id="faq-ad-spend">
+        Does the social media management cost include ad spend (paid ads)?
+      </h3>
+      <p>
+        Almost never. The management fee covers strategy, content, and posting — the paid
+        ad spend that goes to Meta, Google, or TikTok is billed separately and stays yours.
+        Video production and photography are usually extra too, so always ask what&apos;s
+        included before signing.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Stop letting your feed play dead.
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Bring your social back to life.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          If your social has flatlined, we&apos;ll bring it back to life — on-brand posts,
+          real strategy, no zombie-brain guesswork. Text Gerry for a quote, take a stroll
+          through the work, and we&apos;ll get you posting before your competitors do. Your
+          competitors are posting. Don&apos;t let yours rot.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner-operator of Branding Zombie Designs, a graphic +
+        web design studio in Cumming, GA serving Forsyth County and North Metro Atlanta
+        since 2015. Bilingual (English/Spanish) and hands-on with every project — logos,
+        websites, SEO/AEO, social, and print under one roof. Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function WebsiteMaintenanceCostContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does website maintenance cost for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most small businesses pay about $50–$500/month, with a simple site typically running $100–$200/month and ecommerce higher at $300–$1,000/month. The price depends on platform, complexity, and how much hands-on help you want. Branding Zombie Designs' care plans start around $100/month.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I really need to pay for website maintenance every month?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most business sites, yes. Maintenance keeps your site secure, backed up, and updated so it doesn't get hacked or quietly break. Skipping it saves a little now but usually costs far more later in cleanup, lost leads, and rebuilds. Think of it as insurance you actually use.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does a website maintenance plan actually include?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A typical plan covers software and plugin updates, security monitoring, regular backups, SSL management, uptime monitoring, small content edits, and broken-link and form checks. Cheaper plans cover updates and backups only; higher tiers add hands-on edits and priority support. Always confirm what's included before signing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if you don't maintain your website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Outdated software opens security holes that get sites hacked, forms and features break without you noticing, and content goes stale — which kills trust. Worst of all, recovering a hacked site or rebuilding from scratch costs far more than a modest monthly plan would have. Upkeep is cheaper than cleanup.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is website maintenance the same as hosting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Hosting is the 'rent' — the server space that keeps your site online, roughly $5–$300/month. Maintenance is the upkeep and labor: updates, security, backups, and edits that keep the site working. You can pay for hosting and still have a neglected, hackable site. They're two separate costs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I maintain my website myself?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can. DIY tools run about $15–$50/month, but you're the one running updates, backups, and fixes when something breaks at midnight. The trade-off is your time plus the risk of doing it wrong. Most owners find a solo-studio retainer cheaper once they value their hours honestly.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>Website maintenance cost</strong> for most small businesses runs
+        roughly <strong>$50 to $500 per month</strong>, depending on what&apos;s
+        included. A simple small-business site in Cumming, GA typically lands
+        around <strong>$100–$200/month</strong>, while ecommerce stores run
+        higher — usually <strong>$300–$1,000/month</strong>. At{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>{" "}
+        serving Forsyth County and North Metro Atlanta, our care plans start
+        around <strong>$100/month</strong>.
+      </p>
+      <p>
+        That&apos;s the honest number. Below is what that money actually buys,
+        what pushes it up or down, and why maintenance is not the same thing as
+        hosting.
+      </p>
+
+      <h2 id="cost-per-month">What is the website maintenance cost per month?</h2>
+      <p>
+        Here&apos;s the market map for <strong>website maintenance cost per
+        month</strong>, based on the kind of site you own:
+      </p>
+      <ul>
+        <li>
+          <strong>Simple small-business site (a few pages, contact forms):</strong>{" "}
+          ~$50–$200/mo
+        </li>
+        <li>
+          <strong>Growing site with a blog, integrations, more pages:</strong>{" "}
+          ~$200–$500/mo
+        </li>
+        <li>
+          <strong>Ecommerce store (products, checkout, inventory):</strong>{" "}
+          ~$300–$1,000/mo
+        </li>
+        <li>
+          <strong>Developer retainer (hands-on support hours):</strong>{" "}
+          ~$100–$1,500/mo
+        </li>
+      </ul>
+      <p>
+        GoDaddy&apos;s 2026 maintenance guide puts most small-business sites at
+        roughly <strong>$50–$500/mo</strong> (about $600–$6,000/year), with
+        ecommerce at <strong>$300–$1,000/mo</strong> and developer retainers
+        ranging <strong>$100–$1,500/mo</strong>. WebFX reports higher headline
+        numbers — full-service maintenance around <strong>$300–$1,000/mo</strong>{" "}
+        ($3,600–$12,000/year) — because their figures lean toward larger, more
+        complex sites.
+      </p>
+      <p>
+        One thing to know reading those numbers: the big end of those ranges is
+        enterprise territory. A five-page site for a Cumming trades company does
+        not cost $1,000/month to keep alive. Broad market ranges scare people —
+        the local reality is much more modest.
+      </p>
+      <p>Read the sources yourself:</p>
+      <ul>
+        <li>
+          <ExternalLink href="https://www.godaddy.com/resources/skills/website-maintenance-cost">
+            GoDaddy — How much does it cost to maintain a website in 2026?
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://www.webfx.com/web-development/pricing/website-maintenance/">
+            WebFX — 2026 Website Maintenance Pricing
+          </ExternalLink>
+        </li>
+      </ul>
+
+      <h2 id="what-is-included">What does website maintenance include?</h2>
+      <p>
+        &quot;Maintenance&quot; means different things to different providers,
+        which is exactly why quotes vary so much. A real{" "}
+        <strong>website maintenance plan</strong> usually covers some mix of:
+      </p>
+      <ul>
+        <li>
+          <strong>Software and plugin updates</strong> — keeping the CMS, themes,
+          and plugins current
+        </li>
+        <li>
+          <strong>Security monitoring and malware scans</strong> — catching
+          problems before they spread
+        </li>
+        <li>
+          <strong>Regular backups</strong> — so a bad update or hack doesn&apos;t
+          erase everything
+        </li>
+        <li>
+          <strong>SSL certificate management</strong> — the padlock that keeps
+          the site trusted
+        </li>
+        <li>
+          <strong>Uptime monitoring</strong> — knowing the second your site goes
+          down
+        </li>
+        <li>
+          <strong>Small content edits</strong> — swapping hours, prices, photos,
+          staff, promos
+        </li>
+        <li>
+          <strong>Broken-link and form checks</strong> — making sure your contact
+          form actually delivers leads
+        </li>
+      </ul>
+      <p>
+        Cheaper plans cover updates and backups only. Higher tiers add hands-on
+        edits, priority support, and monitoring. When you compare quotes, ask
+        exactly what&apos;s covered and how many edit requests you get per month —
+        that&apos;s where prices quietly split.
+      </p>
+      <p>
+        If your site itself is dated before you even think about upkeep, our{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> page
+        covers a rebuild, and{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>{" "}
+        covers the SEO upkeep side.
+      </p>
+
+      <h2 id="what-drives-cost">
+        What drives website maintenance cost up or down?
+      </h2>
+      <p>
+        Same word, wildly different price tags. Here&apos;s what moves the number:
+      </p>
+      <p>
+        <strong>Platform and complexity.</strong> A simple WordPress or custom
+        five-pager is cheap to maintain. A site stuffed with custom code,
+        membership logins, or booking systems costs more because there&apos;s more
+        that can break.
+      </p>
+      <p>
+        <strong>Ecommerce.</strong> Selling online adds payment processing,
+        inventory, product updates, and security compliance. That&apos;s why store
+        maintenance jumps to $300–$1,000/mo.
+      </p>
+      <p>
+        <strong>Traffic and scale.</strong> High-traffic sites need better
+        hosting, faster load times, and more monitoring. More visitors, more
+        moving parts.
+      </p>
+      <p>
+        <strong>How much hands-on help you want.</strong> A &quot;set it and
+        forget it&quot; security-and-backup plan is cheap. A plan where someone
+        updates your content weekly and answers texts within the hour costs more —
+        because it&apos;s real labor, not a script.
+      </p>
+
+      <h2 id="diy-vs-managed">
+        DIY vs. freelancer vs. managed plan — which is cheapest?
+      </h2>
+      <p>
+        Three ways to keep a website alive, three very different price tags:
+      </p>
+      <p>
+        <strong>DIY</strong> — the cheapest on paper. Site-builder and security
+        tools run about <strong>$15–$50/mo</strong>. But you&apos;re the one
+        clicking update, running backups, and fixing the site at 11 p.m. when a
+        plugin breaks. The trade-off is your time plus the risk of doing it wrong.
+      </p>
+      <p>
+        <strong>Freelancer / solo studio</strong> — usually the best value for a
+        small business. You pay a monthly retainer, a real human handles the
+        technical work, and there&apos;s no agency markup. You text one person
+        when something&apos;s off.
+      </p>
+      <p>
+        <strong>Managed agency plan</strong> — the priciest, with formal SLAs and
+        a support team, but you&apos;re paying for their overhead and layers.
+        Overkill for most local businesses until your site is a serious revenue
+        engine.
+      </p>
+      <p>
+        For most Cumming and Forsyth County small businesses, a solo studio
+        retainer is the cheapest path that still gets you a real person who knows
+        your site — not a ticket queue.
+      </p>
+
+      <h2 id="hosting-vs-maintenance">
+        Is website maintenance the same as hosting?
+      </h2>
+      <p>
+        No — and confusing the two costs people money. Think of it this way:
+      </p>
+      <p>
+        <strong>Hosting is the rent.</strong> It&apos;s the server space your
+        website lives on. GoDaddy pegs hosting at about <strong>$5–$300/mo</strong>{" "}
+        depending on the plan. Paying for hosting keeps your site <em>online</em> —
+        that&apos;s all it does.
+      </p>
+      <p>
+        <strong>Maintenance is the upkeep and labor.</strong> It&apos;s the person
+        and the process that keep your site <em>updated, secure, and working</em> —
+        backups, updates, edits, monitoring, fixes.
+      </p>
+      <p>
+        You can pay for hosting and still have a neglected, hackable, out-of-date
+        site. Hosting is the parking spot; maintenance is the oil changes. Other
+        line items live in the same bucket: domain renewal ($10–$20/yr) and SSL
+        (free to about $60/yr) are small, recurring costs on top.
+      </p>
+
+      <h2 id="skip-maintenance">
+        What happens if you skip website maintenance?
+      </h2>
+      <p>
+        This is the part owners underestimate. Skipping upkeep doesn&apos;t save
+        money — it defers a bigger bill. When a site goes unmaintained:
+      </p>
+      <ul>
+        <li>
+          <strong>Security holes open up.</strong> Outdated plugins and CMS
+          versions are how sites get hacked, defaced, or loaded with spam.
+        </li>
+        <li>
+          <strong>Forms and features quietly break.</strong> Your contact form
+          stops delivering leads and you don&apos;t find out for weeks. (We&apos;ve
+          seen exactly this — dead forms can cost real business for a long time
+          before anyone notices.)
+        </li>
+        <li>
+          <strong>Content goes stale.</strong> Old prices, old hours, old staff.
+          Nothing tanks trust faster than a site that&apos;s clearly abandoned.
+        </li>
+        <li>
+          <strong>Cleanup costs more than upkeep.</strong> Recovering a hacked
+          site or rebuilding from scratch runs far more than a modest monthly plan
+          would have.
+        </li>
+      </ul>
+      <p>
+        Maintenance is insurance you actually use every month. Skip it and
+        you&apos;re gambling your site&apos;s — and your reputation&apos;s —
+        health.
+      </p>
+
+      <h2 id="care-plan">What does Branding Zombie&apos;s care plan cover?</h2>
+      <p>
+        Our care plans start around <strong>$100/month</strong> and cover the
+        essentials a small business actually needs: software and security updates,
+        regular backups, SSL, uptime monitoring, small content edits, and
+        broken-link/form checks — so your site stays fast, safe, and current
+        without you thinking about it.
+      </p>
+      <p>
+        Because scope drives the price, we don&apos;t publish a single fixed number
+        for every site. For an exact figure on your setup, request a quote or text
+        Gerry at <strong>{PHONE_DISPLAY}</strong>. See what&apos;s covered on our{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink> page.
+      </p>
+      <p>
+        Building or rebuilding from scratch first? The{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        gets you a logo, brand kit, cards, flyers, a one-page site, domain, and a
+        full year of hosting in 10 days. Need the full build? The{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>{" "}
+        adds a five-page site and a 90-day content calendar — then a care plan
+        keeps it healthy after launch.
+      </p>
+
+      <h2 id="local-vs-agency">
+        Why a local Cumming, GA studio can beat a big agency on maintenance
+      </h2>
+      <p>
+        A national agency prices maintenance for national overhead. A solo studio
+        in Cumming, GA doesn&apos;t — you pay for the actual work, not the office
+        tower or the account-manager layers.
+      </p>
+      <p>
+        You also get someone who knows Forsyth County and works with local{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades and contractors
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/home-services">home services</InternalLink>
+        , and{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>.
+        Your website, print, signage, and branding live under one roof — one
+        designer, one invoice, one text when something breaks. That&apos;s the
+        whole wedge.
+      </p>
+
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        <li>
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            What a website costs in Cumming, GA (2026)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/custom-website-vs-squarespace">
+            Custom website vs. Squarespace (the 3-year cost)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/who-legally-owns-your-website">
+            Who legally owns your website?
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+            How your website is costing you customers
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/7-cs-of-website-design">
+            The 7 C&apos;s of website design
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/seo-cumming-ga">SEO in Cumming, GA</InternalLink>
+        </li>
+      </ul>
+      <p>
+        Not sure where to start? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> or{" "}
+        <InternalLink href="/services/request-quote">request a quote</InternalLink>.
+      </p>
+
+      <h2 id="faq">FAQ: Website Maintenance Cost in Cumming, GA</h2>
+
+      <h3 id="faq-cost">
+        How much does website maintenance cost for a small business?
+      </h3>
+      <p>
+        Most small businesses pay about $50–$500/month, with a simple site
+        typically running $100–$200/month and ecommerce higher at $300–$1,000/month.
+        The price depends on platform, complexity, and how much hands-on help you
+        want. Branding Zombie Designs&apos; care plans start around $100/month.
+      </p>
+
+      <h3 id="faq-monthly">
+        Do I really need to pay for website maintenance every month?
+      </h3>
+      <p>
+        For most business sites, yes. Maintenance keeps your site secure, backed
+        up, and updated so it doesn&apos;t get hacked or quietly break. Skipping it
+        saves a little now but usually costs far more later in cleanup, lost leads,
+        and rebuilds. Think of it as insurance you actually use.
+      </p>
+
+      <h3 id="faq-includes">
+        What does a website maintenance plan actually include?
+      </h3>
+      <p>
+        A typical plan covers software and plugin updates, security monitoring,
+        regular backups, SSL management, uptime monitoring, small content edits,
+        and broken-link and form checks. Cheaper plans cover updates and backups
+        only; higher tiers add hands-on edits and priority support. Always confirm
+        what&apos;s included before signing.
+      </p>
+
+      <h3 id="faq-skip">What happens if you don&apos;t maintain your website?</h3>
+      <p>
+        Outdated software opens security holes that get sites hacked, forms and
+        features break without you noticing, and content goes stale — which kills
+        trust. Worst of all, recovering a hacked site or rebuilding from scratch
+        costs far more than a modest monthly plan would have. Upkeep is cheaper
+        than cleanup.
+      </p>
+
+      <h3 id="faq-hosting">Is website maintenance the same as hosting?</h3>
+      <p>
+        No. Hosting is the &quot;rent&quot; — the server space that keeps your site
+        online, roughly $5–$300/month. Maintenance is the upkeep and labor:
+        updates, security, backups, and edits that keep the site working. You can
+        pay for hosting and still have a neglected, hackable site. They&apos;re two
+        separate costs.
+      </p>
+
+      <h3 id="faq-diy">Can I maintain my website myself?</h3>
+      <p>
+        You can. DIY tools run about $15–$50/month, but you&apos;re the one running
+        updates, backups, and fixes when something breaks at midnight. The
+        trade-off is your time plus the risk of doing it wrong. Most owners find a
+        solo-studio retainer cheaper once they value their hours honestly.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Don&apos;t let your website rot on the vine.
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Keep your site fed, patched, and breathing.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          A neglected site is a slow-motion emergency — until the day a form dies
+          or a hacker moves in. We&apos;ll keep yours updated, secure, and working
+          for a flat monthly rate. Text Gerry for a care-plan quote, and keep your
+          site alive before it turns.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, solo owner of Branding Zombie Designs, a graphic + web
+        design studio in Cumming, GA serving Forsyth County and North Metro Atlanta
+        since 2015. Websites, care plans, SEO/AEO, print, and signage under one roof
+        — call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
+function WhenToRebrandContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does a rebrand cost for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For a local small business in Cumming, GA, expect roughly $750 for a logo refresh up to about $4,500 for a full rebrand with a new website. The $10,000–$70,000 figures online are for large national companies with big agencies, not a local shop.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between a brand refresh and a rebrand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A refresh is an evolution — you modernize your existing logo, colors, and messaging while staying recognizable. A rebrand is a reimagining — often a new name, positioning, identity, and website. Most small businesses actually need a refresh, which costs far less.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does a rebrand take?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A brand refresh usually takes about 2–8 weeks; a full rebrand can run 1–6 months at a traditional agency. Locally, the $4,500 Launch Package ships in about 4 weeks and the $997 Startup Special in about 10 days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the signs it's time to rebrand my business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You've outgrown a DIY logo, pivoted your services or audience, expanded beyond your original area, merged with another business, look dated or generic, or feel embarrassed to share your own website. Just don't rebrand out of boredom.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will I lose customers or my Google ranking if I rebrand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not if you phase it. Keep your URL or set up 301 redirects, announce the change to your audience first, and update your Google Business Profile and citations. Done carefully, you keep your SEO equity and your customers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I just update my logo instead of a full rebrand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often, yes. If your name and positioning still fit, a logo refresh ($750–$2,500) plus tightened messaging gets you most of the impact for a fraction of a full rebrand's cost. Text Gerry for a quote if you're unsure which you need.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>How much does a rebrand cost</strong> for a small business in
+        Cumming, GA? Realistically, a local rebrand runs from about{" "}
+        <strong>
+          $750 for a logo/brand refresh up to about $4,500 for a full rebrand
+          with a new website
+        </strong>{" "}
+        — not the $15,000–$75,000 you&apos;ll see quoted online (those numbers
+        are for big national companies working with big agencies). At Branding
+        Zombie Designs, a graphic + web design studio in Cumming, GA serving
+        Forsyth County and North Metro Atlanta, the right number depends on one
+        thing: do you need a <em>refresh</em> (evolve your logo, colors, and
+        message) or a true <em>rebrand</em> (new name/positioning + full new
+        identity + new site)?
+      </p>
+      <p>
+        Here&apos;s the honest breakdown, the real signs it&apos;s time, how
+        long it takes, and how to do it without torching your Google ranking.
+      </p>
+
+      <h2 id="refresh-vs-rebrand">What is a rebrand vs. a brand refresh?</h2>
+      <p>
+        A <strong>brand refresh</strong> is an evolution. You keep the core of
+        who you are and modernize it — cleaner logo, updated colors and fonts,
+        sharper messaging. Your customers still recognize you the next morning.
+      </p>
+      <p>
+        A <strong>rebrand</strong> is a reimagining. New name, new positioning,
+        new identity, usually a new website — a deliberate signal that the
+        business has changed.
+      </p>
+      <p>
+        As the branding agency Focus Lab puts it,{" "}
+        <ExternalLink href="https://www.focuslab.agency/blog/brand-refresh-vs-rebrand">
+          &quot;a refresh is an evolution of an existing brand and a rebrand is
+          a reimagining.&quot;
+        </ExternalLink>{" "}
+        That single line decides most of your budget. Most small businesses that{" "}
+        <em>think</em> they need a full rebrand actually need a refresh — and
+        that&apos;s good news for your wallet.
+      </p>
+
+      <h2 id="how-much-does-a-rebrand-cost">
+        How much does a rebrand cost for a small business?
+      </h2>
+      <p>
+        Scope is the #1 cost driver — the more you change, the more you pay.
+        Online sources quote enormous ranges because they&apos;re pricing
+        enterprise work.
+      </p>
+      <p>
+        Shopify&apos;s own{" "}
+        <ExternalLink href="https://www.shopify.com/blog/how-much-does-a-rebrand-cost">
+          rebrand cost guide
+        </ExternalLink>{" "}
+        puts freelancer/DIY work at &quot;a few thousand dollars,&quot; mid-tier
+        agency rebrands at <strong>$10,000–$15,000</strong>, and high-end full
+        rebrands at <strong>over $70,000</strong>. Those are real numbers — for
+        companies that are not a five-person shop in Forsyth County.
+      </p>
+      <p>
+        Here&apos;s what a real Cumming small business actually pays at Branding
+        Zombie Designs:
+      </p>
+      <ul>
+        <li>
+          <strong>New logo / logo refresh:</strong> logo tiers — Starter $750 /
+          Growth $1,500 / Premium $2,500 —{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>.
+        </li>
+        <li>
+          <strong>Brand identity work:</strong> colors, type, brand basics, and
+          usage — varies —{" "}
+          <InternalLink href="/services/branding">brand identity</InternalLink>.
+        </li>
+        <li>
+          <strong>Budget relaunch — $997 Startup Special:</strong> logo + brand
+          kit + 100 cards + 100 flyers + a 1-page site + hosting, in about 10
+          days — <InternalLink href="/startup-special">Startup Special</InternalLink>.
+        </li>
+        <li>
+          <strong>Full rebrand + new site — $4,500 Launch Package:</strong> logo
+          suite + brand basics + a 5-page website + a 90-day content calendar,
+          in about 4 weeks —{" "}
+          <InternalLink href="/services/launch-package">Launch Package</InternalLink>.
+        </li>
+      </ul>
+      <p>
+        So the honest range for a local small-business rebrand is roughly{" "}
+        <strong>$750 to $4,500</strong> — a fraction of the agency numbers. One
+        more line item to plan for: reprinting anything with your old look on it
+        — signs, truck lettering, business cards, menus — is a separate cost
+        handled through{" "}
+        <InternalLink href="/services/print-design">
+          print &amp; signage design
+        </InternalLink>
+        .
+      </p>
+      <p>
+        Want the deeper math on branding a business from scratch? See{" "}
+        <InternalLink href="/blog/cost-to-brand-a-new-business">
+          what it costs to brand a new business
+        </InternalLink>{" "}
+        and our{" "}
+        <InternalLink href="/blog/logo-cost-cumming-ga">
+          logo cost guide for Cumming, GA
+        </InternalLink>
+        .
+      </p>
+      <p>
+        <em>
+          Aside: a rebrand shouldn&apos;t cost you a limb. If someone quotes you
+          $30k to freshen up a landscaping logo, back away slowly.
+        </em>
+      </p>
+
+      <h2 id="signs-its-time-to-rebrand">
+        What are the signs it&apos;s time to rebrand my business?
+      </h2>
+      <p>
+        Not sure if you&apos;ve crossed the line from &quot;fine&quot; to
+        &quot;overdue&quot;? Here are the real signals:
+      </p>
+      <ol>
+        <li>
+          <strong>You outgrew your DIY logo.</strong> The Canva logo you made at
+          your kitchen table in year one no longer matches a business doing real
+          revenue.
+        </li>
+        <li>
+          <strong>You pivoted your services or audience.</strong> You started as
+          a handyman and now do full remodels. The brand still says
+          &quot;handyman.&quot;
+        </li>
+        <li>
+          <strong>You&apos;re expanding beyond your original area.</strong>{" "}
+          Growing from one Cumming ZIP into all of Forsyth County or North Metro
+          Atlanta — and the name/look feels too small.
+        </li>
+        <li>
+          <strong>A merger, acquisition, or partnership.</strong> Two identities
+          need to become one.
+        </li>
+        <li>
+          <strong>You look dated or generic.</strong> Your brand blends into
+          every competitor on the map instead of standing out.
+        </li>
+        <li>
+          <strong>You&apos;re embarrassed to share your own website.</strong> If
+          you hesitate before texting a prospect your link, that&apos;s your
+          answer.
+        </li>
+        <li>
+          <strong>The brand no longer matches the business.</strong> The company
+          grew up; the identity didn&apos;t.
+        </li>
+      </ol>
+      <p>
+        One caution: <strong>don&apos;t rebrand out of boredom.</strong> You look
+        at your logo every day, so it gets stale to <em>you</em> long before it
+        gets stale to customers. Rebrand because the business changed — not
+        because you&apos;re bored on a Tuesday.
+      </p>
+      <p>
+        Some industries hit these signs faster than others. We see it constantly
+        with{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades &amp; contractors
+        </InternalLink>
+        ,{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>,
+        and{" "}
+        <InternalLink href="/industries/salons-barbershops">
+          salons &amp; barbershops
+        </InternalLink>{" "}
+        that outgrew their first look.
+      </p>
+
+      <h2 id="how-long-does-a-rebrand-take">How long does a rebrand take?</h2>
+      <p>Timing tracks with scope:</p>
+      <ul>
+        <li>
+          <strong>Brand refresh:</strong> roughly <strong>2–8 weeks</strong>.
+        </li>
+        <li>
+          <strong>Full rebrand:</strong> roughly <strong>1–6 months</strong> at
+          a traditional agency.
+        </li>
+      </ul>
+      <p>
+        The good news locally: our{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>{" "}
+        — logo suite, brand basics, a new 5-page website, and a 90-day content
+        calendar — ships in about <strong>4 weeks</strong>. Need it faster and
+        leaner? The{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        turns around in about <strong>10 days</strong>. You don&apos;t have to
+        disappear for half a year to relaunch.
+      </p>
+
+      <h2 id="rebrand-without-losing-ranking">
+        Will I lose customers or my Google ranking if I rebrand?
+      </h2>
+      <p>
+        Only if you rush it. Handled right, a rebrand keeps your equity intact.
+        Do these:
+      </p>
+      <ul>
+        <li>
+          <strong>Keep your website URL if you can</strong> — or set up proper{" "}
+          <strong>301 redirects</strong> from old pages to new ones so Google
+          (and your backlinks) follow you over.
+        </li>
+        <li>
+          <strong>Announce it.</strong> Tell email subscribers, social
+          followers, and repeat customers <em>before</em> the switch, not after.
+        </li>
+        <li>
+          <strong>Update your Google Business Profile and citations</strong> —
+          name, logo, photos, links — everywhere your business is listed, so
+          search engines don&apos;t see conflicting info.
+        </li>
+        <li>
+          <strong>Phase it</strong> so the old and new don&apos;t clash
+          mid-transition.
+        </li>
+      </ul>
+      <p>
+        Not sure how much SEO equity you&apos;d be risking? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> and
+        we&apos;ll flag what to protect before you change a thing. If
+        you&apos;re worried about who controls your domain and pages during the
+        move, read{" "}
+        <InternalLink href="/blog/who-legally-owns-your-website">
+          who legally owns your website
+        </InternalLink>{" "}
+        first.
+      </p>
+
+      <h2 id="one-shop-advantage">The one-shop advantage on a rebrand</h2>
+      <p>
+        A rebrand is exactly where &quot;one designer, one invoice&quot; pays
+        off. Most businesses juggle a logo person, a separate web person, a print
+        vendor, and a sign shop — then spend months chasing four versions of
+        their brand that don&apos;t quite match.
+      </p>
+      <p>
+        At Branding Zombie Designs, your logo,{" "}
+        <InternalLink href="/services/web-design">website</InternalLink>,{" "}
+        <InternalLink href="/services/print-design">print</InternalLink>,
+        signage, and{" "}
+        <InternalLink href="/services/digital-marketing">marketing</InternalLink>{" "}
+        all come out of one shop in Cumming, GA. When everything&apos;s built
+        together, everything stays consistent — the whole point of rebranding in
+        the first place. No mismatched greens. No &quot;why does the sign look
+        different from the site.&quot;
+      </p>
+      <p>
+        Weighing platforms while you&apos;re at it? See{" "}
+        <InternalLink href="/blog/custom-website-vs-squarespace">
+          custom website vs. Squarespace
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          what a website costs in Cumming, GA in 2026
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="faq">FAQ: Rebranding a Small Business in Cumming, GA</h2>
+
+      <h3 id="faq-cost">How much does a rebrand cost for a small business?</h3>
+      <p>
+        For a local small business in Cumming, GA, expect roughly $750 for a logo
+        refresh up to about $4,500 for a full rebrand with a new website. The
+        $10,000–$70,000 figures online are for large national companies with big
+        agencies, not a local shop.
+      </p>
+
+      <h3 id="faq-refresh-vs-rebrand">
+        What&apos;s the difference between a brand refresh and a rebrand?
+      </h3>
+      <p>
+        A refresh is an evolution — you modernize your existing logo, colors, and
+        messaging while staying recognizable. A rebrand is a reimagining — often
+        a new name, positioning, identity, and website. Most small businesses
+        actually need a refresh, which costs far less.
+      </p>
+
+      <h3 id="faq-timing">How long does a rebrand take?</h3>
+      <p>
+        A brand refresh usually takes about 2–8 weeks; a full rebrand can run 1–6
+        months at a traditional agency. Locally, the $4,500 Launch Package ships
+        in about 4 weeks and the $997 Startup Special in about 10 days.
+      </p>
+
+      <h3 id="faq-signs">What are the signs it&apos;s time to rebrand my business?</h3>
+      <p>
+        You&apos;ve outgrown a DIY logo, pivoted your services or audience,
+        expanded beyond your original area, merged with another business, look
+        dated or generic, or feel embarrassed to share your own website. Just
+        don&apos;t rebrand out of boredom.
+      </p>
+
+      <h3 id="faq-ranking">
+        Will I lose customers or my Google ranking if I rebrand?
+      </h3>
+      <p>
+        Not if you phase it. Keep your URL or set up 301 redirects, announce the
+        change to your audience first, and update your Google Business Profile
+        and citations. Done carefully, you keep your SEO equity and your
+        customers.
+      </p>
+
+      <h3 id="faq-just-logo">
+        Can I just update my logo instead of a full rebrand?
+      </h3>
+      <p>
+        Often, yes. If your name and positioning still fit, a logo refresh
+        ($750–$2,500) plus tightened messaging gets you most of the impact for a
+        fraction of a full rebrand&apos;s cost. Text Gerry for a quote if
+        you&apos;re unsure which you need.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Ready to rise from the dead?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Your brand&apos;s looking a little… undead.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Stale logo, mismatched site, signs that don&apos;t match your cards? Let&apos;s
+          bring it back to life the right way — logo, website, print, and signage
+          from one designer, one invoice. I&apos;ll tell you straight whether you
+          need a quick refresh or a full rebrand. No $30k agency quotes, no
+          runaround.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, owner and lead designer at Branding Zombie Designs, a
+        bilingual (English/Spanish), Latino-owned graphic + web design studio in
+        Cumming, GA serving Forsyth County and North Metro Atlanta since 2015. He
+        builds logos, websites, signs, and print for local businesses under one
+        roof — one designer, one invoice. Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "3-second-rule-website-design",
+      title:
+        "What Is the 3-Second Rule in Website Design? (And Why Your Cumming, GA Site Needs It)",
+      seoTitle: "The 3-Second Rule in Website Design (Cumming, GA)",
+      seoDescription:
+        "What is the 3 second rule in website design? Visitors in Cumming, GA decide to stay or bounce in about 3 seconds. Here's what must land fast and how to fix it.",
+      excerpt:
+        "The 3-second rule says a visitor decides whether to stay or bounce in roughly three seconds. Here's what has to land in that window on a phone — and how to fix a site losing people fast.",
+      keywords: [
+        "what is the 3 second rule in website design",
+        "web design cumming ga",
+        "website design cumming",
+        "small business web design",
+        "branding and web design",
+        "how long do you have to make a first impression on a website",
+        "why do visitors leave a website so fast",
+        "how fast should a website load",
+        "does the 3 second rule apply to mobile",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-06-23",
+      readingTimeMinutes: 7,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "website speed",
+        "mobile-first",
+        "conversion",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-3-second-rule-website-design.jpg",
+      ogImageAlt:
+        "The 3-second rule in website design — a fast, clear mobile homepage from Branding Zombie Designs in Cumming, GA.",
+    },
+    Content: ThreeSecondRuleContent,
+  },
+  {
+    meta: {
+      slug: "gym-martial-arts-branding-cumming",
+      title: "Gym & Martial Arts Branding in Cumming, GA",
+      seoTitle: "Gym Branding in Cumming, GA: Costs & How-To",
+      seoDescription:
+        "Gym branding in Cumming, GA covers logo, signage, apparel, site & experience. A logo runs $750–$2,500; a full brand + website launch $997–$4,500. Here's how.",
+      excerpt:
+        "Gym and martial arts branding in Cumming, GA is your logo, signage, apparel, and booking-ready site working as one — what it costs (design vs. ad spend) and how it fills your classes.",
+      keywords: [
+        "gym branding",
+        "gym branding cost",
+        "gym logo cost",
+        "how to brand a gym",
+        "martial arts branding",
+        "martial arts studio branding",
+        "fitness studio branding",
+        "gym signage",
+        "custom gym apparel",
+        "web design cumming ga",
+        "Forsyth County",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-09",
+      readingTimeMinutes: 8,
+      category: "Branding",
+      tags: [
+        "branding",
+        "gyms",
+        "martial arts",
+        "logo design",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-gym-martial-arts-branding-cumming.jpg",
+      ogImageAlt:
+        "Gym & martial arts branding in Cumming, GA — logo, signage, apparel, and a site that fills classes — Branding Zombie Designs",
+    },
+    Content: GymMartialArtsBrandingContent,
+  },
+  {
+    meta: {
+      slug: "home-services-marketing-forsyth",
+      title: "Home Services Marketing in Cumming, GA",
+      seoTitle: "Home Services Marketing in Cumming, GA: Costs",
+      seoDescription:
+        "Home services marketing in Cumming, GA = Google Business Profile, LSAs, reviews & branding. Branding runs $750–$4,500; ad spend is a separate monthly budget.",
+      excerpt:
+        "Home services marketing in Cumming, GA is a strong Google Business Profile, Local Services Ads, SEO, reviews, and branding. What it costs (design vs. ad spend) and what to do first.",
+      keywords: [
+        "home services marketing",
+        "home services marketing cost",
+        "HVAC marketing",
+        "plumber marketing",
+        "contractor branding",
+        "get more HVAC leads",
+        "get more plumbing leads",
+        "Local Services Ads",
+        "Google Guaranteed",
+        "Google Business Profile",
+        "truck lettering",
+        "vehicle wraps",
+        "contractor website",
+        "local SEO",
+        "Cumming GA",
+        "Forsyth County",
+        "North Metro Atlanta",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-11",
+      readingTimeMinutes: 9,
+      category: "Marketing",
+      tags: [
+        "home services marketing",
+        "HVAC marketing",
+        "contractor branding",
+        "local SEO",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-home-services-marketing-forsyth.jpg",
+      ogImageAlt:
+        "Home services marketing in Cumming, GA — logo, truck lettering, website, and Local Services Ads for Forsyth County contractors — Branding Zombie Designs",
+    },
+    Content: HomeServicesMarketingForsythContent,
+  },
+  {
+    meta: {
+      slug: "social-media-management-cost-cumming",
+      title: "How Much Does Social Media Management Cost in Cumming, GA?",
+      seoTitle: "Social Media Management Cost in Cumming, GA (2026)",
+      seoDescription:
+        "Social media management cost in Cumming, GA runs about $500–$5,000/mo. See freelancer vs agency pricing, what's included, and what's billed separately.",
+      excerpt:
+        "Social media management cost for a small business in Cumming, GA typically runs about $500 to $5,000 per month — depending on who does the work. Freelancer vs. agency vs. in-house pricing, what's included, and what's billed separately.",
+      keywords: [
+        "social media management cost",
+        "social media manager cost per month",
+        "what do social media managers charge",
+        "social media management pricing",
+        "social media management Cumming GA",
+        "small business social media Forsyth County",
+        "North Metro Atlanta",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-16",
+      readingTimeMinutes: 8,
+      category: "Marketing",
+      tags: [
+        "social media",
+        "pricing",
+        "small business",
+        "marketing",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-social-media-management-cost-cumming.jpg",
+      ogImageAlt:
+        "Social media management cost in Cumming, GA — freelancer vs. agency pricing for small businesses — Branding Zombie Designs",
+    },
+    Content: SocialMediaManagementCostContent,
+  },
+  {
+    meta: {
+      slug: "website-maintenance-cost",
+      title: "Website Maintenance Cost in Cumming, GA (2026 Guide)",
+      seoTitle: "Website Maintenance Cost in Cumming, GA (2026 Guide)",
+      seoDescription:
+        "Website maintenance cost runs about $50–$500/mo for most small businesses in Cumming, GA. See what's included, what drives price, and DIY vs. managed plans.",
+      excerpt:
+        "Website maintenance cost for most small businesses runs $50–$500/month — about $100–$200 for a simple Cumming, GA site, more for ecommerce. What that buys, what drives price, and why maintenance isn't hosting.",
+      keywords: [
+        "website maintenance cost",
+        "website maintenance cost per month",
+        "how much to maintain a website",
+        "what does website maintenance include",
+        "is website maintenance worth it",
+        "website upkeep cost for small business",
+        "website maintenance vs hosting",
+        "website maintenance Cumming GA",
+        "small business web design Forsyth County",
+        "North Metro Atlanta",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-18",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      ogImage: "/assets/og-website-maintenance-cost.jpg",
+      ogImageAlt:
+        "Website maintenance cost guide for small businesses in Cumming, GA by Branding Zombie Designs.",
+      tags: [
+        "web design",
+        "website maintenance",
+        "care plans",
+        "small business",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+    },
+    Content: WebsiteMaintenanceCostContent,
+  },
+  {
+    meta: {
+      slug: "when-and-why-to-rebrand",
+      title: "When Should You Rebrand? Signs, Timing & Cost",
+      seoTitle: "How Much Does a Rebrand Cost? Cumming, GA ($750+)",
+      seoDescription:
+        "A rebrand in Cumming, GA runs $750 for a logo refresh to $4,500 for a full new-site rebrand — not the $15k+ agencies quote. Here's when it's worth it.",
+      excerpt:
+        "How much does a rebrand cost for a small business in Cumming, GA? Realistically $750 for a logo/brand refresh up to about $4,500 for a full rebrand with a new website — not the $15k+ agencies quote. Plus the real signs it's time and how to rebrand without losing your Google ranking.",
+      keywords: [
+        "how much does a rebrand cost",
+        "how much does a rebrand cost for a small business",
+        "small business rebrand cost",
+        "brand refresh vs. rebrand",
+        "signs it's time to rebrand",
+        "when should you rebrand",
+        "how long does a rebrand take",
+        "rebrand cost Cumming GA",
+        "branding and web design Cumming GA",
+        "Forsyth County",
+        "North Metro Atlanta",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-20",
+      readingTimeMinutes: 8,
+      category: "Branding",
+      ogImage: "/assets/og-when-and-why-to-rebrand.jpg",
+      ogImageAlt:
+        "When and why to rebrand your small business in Cumming, GA — Branding Zombie Designs",
+      tags: [
+        "branding",
+        "rebrand",
+        "logo design",
+        "web design",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+    },
+    Content: WhenToRebrandContent,
+  },
   {
     meta: {
       slug: "salon-barbershop-branding-cumming",
