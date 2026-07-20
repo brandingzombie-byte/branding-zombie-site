@@ -127,6 +127,11 @@ export default function TermsOfServicePage() {
               </li>
               <li><strong>Deposits are non-refundable</strong> (see Section 8).</li>
               <li>Applicable Georgia and Forsyth County sales tax is added to taxable goods and services.</li>
+              <li>
+                <strong>Payment methods.</strong> We accept PayPal, Zelle, Venmo, Cash App, and
+                major cards (Visa, Mastercard, American Express). Any processing fees, if
+                applicable, are noted on your invoice.
+              </li>
             </ul>
           </section>
 

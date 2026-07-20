@@ -10,7 +10,7 @@ export const HOW_WE_WORK_FAQS: Faq[] = [
   {
     question: "How do payments work?",
     answer:
-      "Most projects are simple: 50% to get started, 50% before your project goes live (or before final files are handed over). The deposit reserves your spot on the calendar and kicks off the work. Applicable Georgia sales tax is added where it applies.",
+      "Most projects are simple: 50% to get started, 50% before your project goes live (or before final files are handed over). The deposit reserves your spot on the calendar and kicks off the work. Applicable Georgia sales tax is added where it applies. We accept PayPal, Zelle, Venmo, Cash App, and all major cards (Visa, Mastercard, Amex).",
   },
   {
     question: "Do you offer payment plans?",

@@ -50,4 +50,24 @@ export const FAQS: Faq[] = [
     answer:
       "Yes. Managed social media starts at $699/month and done-for-you email marketing at $499/month — both month-to-month, both draft-and-approve so nothing goes out without your sign-off. Combined with local SEO plans from $499/month, we cover the whole ongoing-marketing stack under one roof, and you own every account and every subscriber.",
   },
+  {
+    question: "How do payments work — and do you offer payment plans?",
+    answer:
+      "Most projects are 50% to start and 50% before launch, and applicable Georgia sales tax is added where it applies. On projects $2,000 and up, we can split it into a deposit plus equal monthly payments — the total stays the same, it's just easier on cash flow. We accept PayPal, Zelle, Venmo, Cash App, and all major cards (Visa, Mastercard, Amex).",
+  },
+  {
+    question: "How many revisions are included?",
+    answer:
+      "Three rounds of revisions on each deliverable — plenty to dial it in. Anything outside the original scope (a new page, an extra concept, a change of direction after sign-off) is quoted up front as a flat add-on or at $75/hour before we build it, so there are never surprise charges.",
+  },
+  {
+    question: "Who owns the finished website and files?",
+    answer:
+      "You do. Once the project is paid in full, the final approved designs and files are yours to keep. Fonts, stock photos, and some plugins are licensed from third parties under their own terms, and we'll always tell you if something needs an ongoing license.",
+  },
+  {
+    question: "Do I have to sign a contract?",
+    answer:
+      "For smaller jobs, your approved proposal plus our Terms of Service is the agreement. For larger projects we use a short, plain-English service agreement you review and e-sign online in a couple of minutes — and if anything needs tweaking first, there's a one-click button to send us your changes before you sign.",
+  },
 ];

@@ -174,7 +174,7 @@ function buildLlmsTxt(): string {
     "- Process: a 4-step flow — We Talk (discovery), We Design, We Build, You Launch — with most sites live in 2–3 weeks."
   );
   out.push(
-    "- Payment: 50% deposit to start, 50% before launch. Payment plans (deposit + equal monthly installments) available on projects $2,000+."
+    "- Payment: 50% deposit to start, 50% before launch. Payment plans (deposit + equal monthly installments) available on projects $2,000+. Accepted methods: PayPal, Zelle, Venmo, Cash App, and major cards (Visa, Mastercard, Amex)."
   );
   out.push(
     "- Invoicing: due within 7 days (Net 7); work pauses on any past-due balance. Georgia sales tax applies to taxable items."
