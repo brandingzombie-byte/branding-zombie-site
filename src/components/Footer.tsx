@@ -20,6 +20,7 @@ const company = [
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
   { label: "Pricing", href: "/#pricing" },
+  { label: "How We Work", href: "/how-we-work" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/contact" },
@@ -222,12 +223,26 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-[var(--color-hairline)] pt-6 text-[length:var(--text-caption)] text-text-dim sm:flex-row sm:items-center">
         <p className="tabular">© 2026 Branding Zombie Designs. All rights reserved.</p>
-        <a
-          href="/privacy"
-          className="text-text-dim hover:text-[var(--color-neon-text)]"
-        >
-          Privacy Policy
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="/privacy"
+            className="text-text-dim hover:text-[var(--color-neon-text)]"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/terms"
+            className="text-text-dim hover:text-[var(--color-neon-text)]"
+          >
+            Terms of Service
+          </a>
+          <a
+            href="/how-we-work"
+            className="text-text-dim hover:text-[var(--color-neon-text)]"
+          >
+            How We Work
+          </a>
+        </div>
         <p>Cumming · Forsyth County · North Metro Atlanta</p>
       </div>
     </Section>

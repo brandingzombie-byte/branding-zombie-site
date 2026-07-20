@@ -164,6 +164,32 @@ function buildLlmsTxt(): string {
   );
   out.push("");
 
+  // ── How we work (process, payments & terms) ──
+  out.push("## How we work (process, payments & terms)");
+  out.push("");
+  out.push(
+    `Full details: [How We Work](${SITE_URL}/how-we-work) and [Terms of Service](${SITE_URL}/terms).`
+  );
+  out.push(
+    "- Process: a 4-step flow — We Talk (discovery), We Design, We Build, You Launch — with most sites live in 2–3 weeks."
+  );
+  out.push(
+    "- Payment: 50% deposit to start, 50% before launch. Payment plans (deposit + equal monthly installments) available on projects $2,000+."
+  );
+  out.push(
+    "- Invoicing: due within 7 days (Net 7); work pauses on any past-due balance. Georgia sales tax applies to taxable items."
+  );
+  out.push(
+    "- Revisions: 3 rounds included per deliverable; out-of-scope work is quoted up front (flat add-on or $75/hour) before it's done."
+  );
+  out.push(
+    "- Ownership: the client owns the final, paid-for work outright. Larger projects are covered by a short, plain-English service agreement the client reviews and e-signs online."
+  );
+  out.push(
+    "- No guarantees of specific business results (sales, rankings); the guarantee is professional craftsmanship. Flat, honest pricing — the quoted number is the number."
+  );
+  out.push("");
+
   // ── Contact / next step ──
   out.push("## Contact");
   out.push("");
