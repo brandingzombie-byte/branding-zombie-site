@@ -19858,7 +19858,294 @@ function WhenToRebrandContent() {
   );
 }
 
+// ─── Post — Local SEO Statistics 2026 (sourced linkable asset) ────────────
+function LocalSeoStatistics2026Content() {
+  const keyStats: [string, string][] = [
+    ["97% of consumers read reviews for local businesses.", "BrightLocal, 2026"],
+    ['46% of consumers say they always or often add "near me" to their local searches.', "BrightLocal, 2025"],
+    ["45% of consumers used AI tools (ChatGPT, Google AI Mode, Gemini) to find a local business in the past year — up from just 6% the year before.", "BrightLocal, 2026"],
+    ["Only 35% of small businesses have a Google Business Profile.", "BrightLocal, 2026"],
+    ["A complete Google Business Profile makes customers 70% more likely to visit and 50% more likely to consider a purchase.", "Google, 2026"],
+    ["The #1 Google Local Pack result earns a 17.6% click-through rate.", "First Page Sage, 2026"],
+    ["58.5% of US Google searches ended in zero clicks in 2024.", "SparkToro / Datos, 2024"],
+    ["Every 10 reviews a business earns lifts its Google Business Profile conversion rate by 2.8%.", "Semrush, citing SOCi, 2025"],
+  ];
+  const behavior: [string, string][] = [
+    ['46% of consumers always or often add "near me" to their local search queries.', "BrightLocal, 2025"],
+    ["1 in 5 consumers conduct local searches directly within a map app (Google, Apple, or Bing).", "BrightLocal, 2025"],
+    ["45% of consumers default to Google for local searches, and 15% use Google Maps.", "BrightLocal, 2025"],
+    ["57% of local search queries are submitted from a mobile device or tablet.", "ReviewTrackers, 2022"],
+    ["85% of consumers consider contact information and opening hours important when researching a local business.", "BrightLocal, 2025"],
+    ["84% of consumers find new products, services, and businesses online — through social feeds, search results, or recommendations.", "SOCi, 2024"],
+    ["40% of consumers are actively using generative AI within search.", "BrightLocal, 2025"],
+    ["46% of all Google searches have local intent.", "Google, presented 2018"],
+  ];
+  const gbp: [string, string][] = [
+    ["A complete Google Business Profile makes customers 70% more likely to visit and 50% more likely to consider a purchase.", "Google, 2026"],
+    ["Customers are 2.7 times more likely to consider a business reputable when it has a complete Business Profile on Google Search and Maps.", "Google, 2026"],
+    ["The primary Google Business Profile category is the single top-scoring local ranking factor (193 points in Whitespark's expert survey).", "Whitespark, 2024"],
+    ["Keywords in the business title score 181 points as a local ranking factor; overall profile completeness scores 112.", "Whitespark, 2024"],
+    ["Profiles with photos receive 30–50% more views, and businesses with 10 or more photos see twice the engagement.", "WebFX, 2026"],
+    ["5–8% of Business Profile views end in a call — doubling to 10–15% for service trades like plumbers and roofers.", "WebFX, 2026"],
+    ["3–5% of profile viewers request directions, rising to 7–10% for restaurants and retail.", "WebFX, 2026"],
+    ["4–7% of profile viewers click through to the website, and 10–12% for B2B service firms.", "WebFX, 2026"],
+    ["A typical profile receives about 59 actions per month — 33 website clicks, 15 calls, and 11 direction requests.", "BrightLocal GMB Insights, 2019"],
+    ["The average local business gets 1,260 profile views a month — 943 on Search and 317 on Maps.", "BrightLocal, 2019"],
+  ];
+  const localPack: [string, string][] = [
+    ["42% of people who conduct a local search click on a result inside the Google Maps Pack.", "Backlinko, 2024"],
+    ["The top 3 organic results receive more than two-thirds (68.7%) of all clicks.", "First Page Sage, 2026"],
+    ["Businesses appear in the local 3-pack for 20–40% of relevant local searches.", "WebFX, 2026"],
+    ["58.5% of US Google searches ended with zero clicks in 2024 (59.7% in the EU).", "SparkToro / Datos, 2024"],
+    ["Roughly 30% of US Google search clicks go to Google-owned properties like Maps and YouTube.", "SparkToro / Datos, 2024"],
+  ];
+  const reviews: [string, string][] = [
+    ["97% of consumers read reviews for local businesses, and 49% trust them as much as a personal recommendation.", "BrightLocal, 2026"],
+    ["41% of consumers always read reviews when browsing for a local business — up from 29% in 2025.", "BrightLocal, 2026"],
+    ["92% of consumers care about star ratings when choosing a business.", "BrightLocal, 2026"],
+    ["68% require at least a 4-star rating before they will consider a business — up from 55% in 2025.", "BrightLocal, 2026"],
+    ["31% will only use a business rated 4.5 stars or higher — up from 17% in 2025.", "BrightLocal, 2026"],
+    ["74% of consumers seek out reviews written within the last three months.", "BrightLocal, 2026"],
+    ["47% will not use a business that has fewer than 20 reviews.", "BrightLocal, 2026"],
+    ["89% expect business owners to respond to reviews, and 80% are more likely to use a business that responds to all of them.", "BrightLocal, 2026"],
+    ["Reviews account for roughly 20% of what drives Google Local Pack rankings — the second-largest factor category.", "BrightLocal, 2026"],
+    ["A one-star increase in a restaurant's Yelp rating leads to a 5–9% increase in revenue.", "Harvard Business School (Michael Luca), 2011"],
+  ];
+  const aiSearch: [string, string][] = [
+    ["63% of active AI users trust AI recommendations for local businesses; only 10% distrust them.", "BrightLocal, 2026"],
+    ["88% of AI users say they verify the source before acting on an AI business recommendation.", "BrightLocal, 2026"],
+    ["About 18% of Google searches produced an AI summary (AI Overview) in March 2025.", "Pew Research Center, 2025"],
+    ["When an AI summary appears, users click a traditional result just 8% of the time — versus 15% when no summary is shown.", "Pew Research Center, 2025"],
+    ["Users click a source link inside a Google AI summary only 1% of the time.", "Pew Research Center, 2025"],
+    ["AI Overviews appeared for 6.49% of queries in January 2025, peaked at 24.61% in July, then settled at 15.69% in November.", "Semrush, 2025"],
+    ["Commercial-intent queries triggering an AI Overview grew from 8.15% to 18.57%, and transactional queries from 1.98% to 13.94%, across 2025.", "Semrush, 2025"],
+    ["Only 37.9% of URLs cited in AI Overviews also rank in the top 10 organic results — down from about 76% in mid-2025.", "Ahrefs, 2026"],
+    ["Business websites make up 58% of the results ChatGPT returns for a locally-intended prompt.", "Search Engine Land, citing BrightLocal, 2025"],
+    ["Reviews account for roughly 16% of AI search visibility — the second-largest factor category.", "BrightLocal, 2026"],
+  ];
+  const roi: [string, string][] = [
+    ["Google 3-Pack listings earn 126% more search traffic and 93% more conversion-oriented actions than Local Finder listings.", "SOCi, 2022"],
+    ["Every 10 new reviews a business earns increases its Google Business Profile conversion rate by 2.8%.", "Semrush, citing SOCi, 2025"],
+    ["For every 25% of reviews a business responds to, its Google Business Profile conversion rate improves by 4.1%.", "Semrush, citing SOCi, 2025"],
+    ["Improving a star rating by one full star increases calls, website clicks, and direction requests by 44%.", "Semrush, citing SOCi, 2025"],
+    ["60% of mobile users have contacted a business directly from the search results.", "Backlinko, citing Google, 2025"],
+    ["62% of consumers would avoid a business if they found incorrect information online.", "BrightLocal, 2023"],
+    ["47% would switch to a competitor after finding inaccurate business-listing details.", "SOCi, 2024"],
+  ];
+  const faqs: [string, string][] = [
+    [
+      'How many people use "near me" searches?',
+      '46% of consumers say they always or often add "near me" to their local search queries (BrightLocal, 2025), and 1 in 5 search directly within a map app like Google, Apple, or Bing Maps. Local intent is now a routine part of everyday search.',
+    ],
+    [
+      "Do online reviews really affect local business revenue?",
+      "Yes. A Harvard Business School study found a one-star increase in a restaurant's Yelp rating led to a 5–9% increase in revenue. More broadly, 85% of consumers are more likely to use a business after reading positive reviews, and 77% are deterred by negative ones (BrightLocal, 2026).",
+    ],
+    [
+      "How important is a Google Business Profile in 2026?",
+      "It is one of the highest-leverage local assets there is. A complete Google Business Profile makes customers 70% more likely to visit and 2.7 times more likely to consider the business reputable (Google) — yet only 35% of small businesses have one (BrightLocal, 2026).",
+    ],
+    [
+      "Are people using AI like ChatGPT to find local businesses?",
+      "Increasingly, yes. 45% of consumers used AI tools such as ChatGPT, Google AI Mode, or Gemini to find a local business in the past year, up from just 6% the year before (BrightLocal, 2026). ChatGPT alone was used by 31% of consumers.",
+    ],
+    [
+      "What percentage of local searches happen on mobile?",
+      "57% of local search queries are submitted from a mobile device or tablet (ReviewTrackers). Most local searches happen on a phone with immediate intent, so a fast, mobile-first website and an accurate map listing are essential.",
+    ],
+  ];
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(([q, a]) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+  const renderList = (items: [string, string][]) => (
+    <ol>
+      {items.map(([stat, src]) => (
+        <li key={stat}>
+          <strong>{stat}</strong>{" "}
+          <span className="text-text-dim">(Source: {src})</span>
+        </li>
+      ))}
+    </ol>
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <p>
+        Local search is where most small businesses are won or lost in 2026:
+        nearly every consumer reads reviews before choosing, local and near-me
+        intent is a default habit, and a fast-growing share now asks AI
+        assistants for recommendations. The statistics below are organized by
+        topic and drawn from named research &mdash; BrightLocal, Google, Pew
+        Research, Semrush, Ahrefs, Whitespark, SOCi, and others. Where a figure
+        is older but foundational, the year is labeled so you can weigh it
+        accordingly.
+      </p>
+
+      <h2>Key local SEO statistics for 2026</h2>
+      {renderList(keyStats)}
+
+      <h2>How people search locally</h2>
+      <blockquote>
+        80% of consumers search online for local businesses at least once a
+        week, and 32% do so every day or multiple times a day.{" "}
+        <span className="text-text-dim">&mdash; SOCi Consumer Behavior Index, 2024</span>
+      </blockquote>
+      {renderList(behavior)}
+
+      <h2>Google Business Profile &amp; Maps</h2>
+      <blockquote>
+        Only 35% of small businesses have a Google Business Profile &mdash;
+        despite a complete profile making customers 2.7&times; more likely to
+        view the business as reputable.{" "}
+        <span className="text-text-dim">&mdash; BrightLocal &amp; Google, 2026</span>
+      </blockquote>
+      {renderList(gbp)}
+
+      <h2>Local pack &amp; search clicks</h2>
+      <p>
+        The local 3-pack has a flatter click curve than organic &mdash; but
+        organic&apos;s top spots still dominate, and a majority of searches end
+        without a click at all.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Local Pack CTR</th>
+            <th>Organic CTR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>17.6%</td><td>39.8%</td></tr>
+          <tr><td>2</td><td>15.4%</td><td>18.7%</td></tr>
+          <tr><td>3</td><td>15.1%</td><td>10.2%</td></tr>
+        </tbody>
+      </table>
+      <p className="text-text-dim">Click-through rate by position. Source: First Page Sage, 2026.</p>
+      {renderList(localPack)}
+
+      <h2>Reviews &amp; reputation</h2>
+      <blockquote>
+        97% of consumers read reviews for local businesses, and 49% trust them
+        as much as a personal recommendation.{" "}
+        <span className="text-text-dim">&mdash; BrightLocal Local Consumer Review Survey, 2026</span>
+      </blockquote>
+      {renderList(reviews)}
+
+      <h2>AI search &amp; local discovery</h2>
+      <blockquote>
+        45% of consumers used AI to find a local business this year &mdash; up
+        from just 6% &mdash; making AI the third-biggest discovery channel
+        behind Google and Facebook.{" "}
+        <span className="text-text-dim">&mdash; BrightLocal, 2026</span>
+      </blockquote>
+      <table>
+        <thead>
+          <tr>
+            <th>AI tool or channel</th>
+            <th>Consumers using it for local recommendations (past year)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Any AI tool</td><td>45% (up from 6%)</td></tr>
+          <tr><td>ChatGPT</td><td>31%</td></tr>
+          <tr><td>Google AI Mode</td><td>23%</td></tr>
+        </tbody>
+      </table>
+      <p className="text-text-dim">Source: BrightLocal, 2026.</p>
+      {renderList(aiSearch)}
+
+      <h2>What local visibility is worth</h2>
+      {renderList(roi)}
+
+      <h2>Frequently asked questions</h2>
+      {faqs.map(([q, a]) => (
+        <div key={q}>
+          <h3>{q}</h3>
+          <p>{a}</p>
+        </div>
+      ))}
+
+      <h2>Sources</h2>
+      <p>
+        Every statistic above is attributed to a named research organization:
+        BrightLocal, Google, Whitespark, First Page Sage, WebFX, Backlinko,
+        SparkToro / Datos, Semrush, SOCi, ReviewTrackers, Pew Research Center,
+        Ahrefs, Search Engine Land, and Harvard Business School.
+      </p>
+
+      <h2>What this means if you run a local business</h2>
+      <p>
+        The pattern across every source is the same: local buyers are searching
+        more, judging faster, and increasingly asking AI for the answer. The
+        businesses that win are the ones that are easy to find, easy to trust,
+        and easy to act on &mdash; a complete Google Business Profile, a steady
+        flow of recent reviews, and a fast, mobile-first website that both
+        Google and AI assistants can read.
+      </p>
+      <p>
+        That is exactly what we build for local businesses. If you want help,
+        see our{" "}
+        <a href="/services/digital-marketing">local SEO and digital marketing</a>{" "}
+        and <a href="/services/web-design">web design in Cumming, GA</a>, or
+        grab a <a href="/free-site-audit">free site audit</a> to see where you
+        stand.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
+  {
+    meta: {
+      slug: "local-seo-statistics-2026",
+      title:
+        "Local SEO Statistics You Need to Know in 2026 (61 Sourced Stats)",
+      seoTitle: "Local SEO Statistics for 2026 | Branding Zombie Designs",
+      seoDescription:
+        "61 sourced local SEO statistics for 2026: how people search locally, Google Business Profile, reviews, AI search, and ROI — cited from BrightLocal, Google, Pew, Semrush, and more.",
+      excerpt:
+        "The most-cited local SEO stats for 2026 — search behavior, Google Business Profile, reviews, AI search, and what local visibility is worth — each attributed to a named research source.",
+      keywords: [
+        "local seo statistics 2026",
+        "local seo stats",
+        "google business profile statistics",
+        "near me search statistics",
+        "local search statistics 2026",
+        "ai search statistics",
+        "online review statistics",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-07-21",
+      dateModified: "2026-07-21",
+      readingTimeMinutes: 8,
+      category: "Local SEO",
+      tags: [
+        "local SEO",
+        "statistics",
+        "Google Business Profile",
+        "reviews",
+        "AI search",
+        "small business",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "Local SEO Statistics 2026 — sourced data on local search, Google Business Profile, reviews, and AI — Branding Zombie Designs",
+      relatedServices: ["digital-marketing", "web-design"],
+    },
+    Content: LocalSeoStatistics2026Content,
+  },
   {
     meta: {
       slug: "3-second-rule-website-design",
