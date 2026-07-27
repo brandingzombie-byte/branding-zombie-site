@@ -1036,8 +1036,13 @@ export const INDUSTRIES: Industry[] = [
 
     workTitle: "Brand and web work for local service businesses",
     workNote:
-      "A contractor's brand and a custom PC shop's site with a built-in request-a-quote flow — real local service businesses, the same build a lawn or cleaning crew needs to capture the 9pm quote.",
-    featuredWorkIds: ["sharp-edge", "enigma-computers", "miami-pavement-logo"],
+      "A 25-year mobile aquarium service, a contractor's brand, and a custom PC shop's site — each with a built-in request-a-quote flow. Real local service businesses, the same build a lawn or cleaning crew needs to capture the 9pm quote.",
+    featuredWorkIds: [
+      "aquarium-center",
+      "sharp-edge",
+      "enigma-computers",
+      "miami-pavement-logo",
+    ],
     testimonialName: "Mary Jeimz",
 
     pricingTitle: "Flat prices, quoted before we start",
@@ -1328,6 +1333,7 @@ export const INDUSTRIES: Industry[] = [
       "planters-etc",
       "pure-blanco",
       "muscleology",
+      "lina-bloom",
     ],
     testimonialName: "Sandra Allen",
 
