@@ -146,6 +146,71 @@ export const PORTFOLIO: PortfolioItem[] = [
     formats: ["website", "brand-refresh"],
     industry: "construction",
   },
+  {
+    id: "js-torres",
+    title: "J. S. Torres — author website",
+    brand: "J. S. Torres",
+    description:
+      "Author site for the debut epic-fantasy novel The Bloodstone — same engagement as the cover art and interior illustrations. First-chapter excerpt, school-visit request flow, and a reader email list building toward Book Two.",
+    image: "/assets/portfolio-jstorres.png",
+    href: "https://joaquinstorres.com",
+    services: ["web-design", "branding", "launch-package"],
+    aspect: "wide",
+    formats: ["website", "cover-art", "illustration"],
+    industry: "authors",
+  },
+  {
+    id: "aquarium-center",
+    title: "Aquarium Center, Inc.",
+    brand: "Alpharetta, GA · Aquarium Services",
+    description:
+      "Full Next.js site for a mobile aquarium design, installation, and maintenance company serving north metro Atlanta. Request-a-quote form, service-area coverage, and creature/aquascape galleries.",
+    image: "/assets/portfolio-aquariumcenter.png",
+    href: "https://aquariumcenterinc.com",
+    services: ["web-design", "digital-marketing"],
+    aspect: "wide",
+    formats: ["website", "rfq-flow"],
+    industry: "home-services",
+  },
+  {
+    id: "wizardly-solutions",
+    title: "Wizardly Solutions Co.",
+    brand: "South Florida · Credit Repair",
+    description:
+      "Brand identity and site build for a flat-fee credit repair company — illustrated wizard mark, deep-navy and gold arcane look, and a three.js starfield hero behind the free-analysis intake flow.",
+    image: "/assets/portfolio-wizardly.png",
+    href: "https://wizardlysolutions.com",
+    services: ["web-design", "branding", "logo-design"],
+    aspect: "wide",
+    formats: ["website", "brand-system", "logo"],
+    industry: "financial-services",
+  },
+  {
+    id: "lc-institute",
+    title: "LC Institute — search visibility layer",
+    brand: "Alpharetta, GA · Corporate ESL Training",
+    description:
+      "Structured data, metadata, and crawlability work on an existing WordPress site for an on-site corporate English training provider. Schema built out across the business, its programs, and its 8-city service area.",
+    image: "/assets/portfolio-lcinstitute.png",
+    href: "https://thelcinstitute.com",
+    services: ["digital-marketing"],
+    aspect: "wide",
+    formats: ["schema", "metadata"],
+    industry: "education",
+  },
+  {
+    id: "lina-bloom",
+    title: "LinaBloom Candle Co.",
+    brand: "Cumming, GA · Candles & Soap",
+    description:
+      "Full Shopify storefront for a hand-poured candle and goat's-milk soap maker. Browse-by-scent-family filtering, bundles and gift sets, customer accounts, and a bilingual EN/ES storefront.",
+    image: "/assets/portfolio-linabloom.png",
+    href: "https://lina-bloom-candle.myshopify.com",
+    services: ["ecommerce", "web-design"],
+    aspect: "wide",
+    formats: ["website", "shopify"],
+    industry: "ecommerce-dtc",
+  },
 
   // ════════════════════════════════════════════════════════════════════════
   // BRANDING — full identity systems with packaging hero shots

@@ -90,6 +90,56 @@ const projects = [
     tags: ["Construction", "Web Design", "Government"],
     image: "/assets/portfolio-sharpedge.png",
   },
+  {
+    title: "J. S. Torres",
+    url: "joaquinstorres.com",
+    category: "Authors · Cover Art · Web Design",
+    description:
+      "Author website for the debut epic-fantasy novel The Bloodstone. Cover art, interior illustrations, a first-chapter excerpt, and a reader email list, all built around getting readers to the book.",
+    result: "Full author site · cover to launch",
+    tags: ["Authors", "Illustration", "Web Design"],
+    image: "/assets/portfolio-jstorres.png",
+  },
+  {
+    title: "Aquarium Center, Inc.",
+    url: "aquariumcenterinc.com",
+    category: "Local Atlanta · Web Design",
+    description:
+      "Mobile aquarium design, installation, and maintenance company serving north metro Atlanta. Full Next.js site with a request-a-quote form and creature and aquascape galleries.",
+    result: "Full site · quote-ready funnel",
+    tags: ["Local Atlanta", "Web Design", "Home Services"],
+    image: "/assets/portfolio-aquariumcenter.png",
+  },
+  {
+    title: "Wizardly Solutions Co.",
+    url: "wizardlysolutions.com",
+    category: "Branding · Web Design",
+    description:
+      "Flat-fee credit repair company. Illustrated wizard brand mark, deep-navy and gold identity, and a full site build with a starfield hero and a free-analysis intake flow.",
+    result: "Brand identity + site build",
+    tags: ["Branding", "Web Design", "Financial Services"],
+    image: "/assets/portfolio-wizardly.png",
+  },
+  {
+    title: "LC Institute",
+    url: "thelcinstitute.com",
+    category: "Digital Marketing · Schema",
+    description:
+      "On-site corporate English training provider on an existing WordPress site. Built out structured data, metadata, and crawlability across the business, its programs, and its service area.",
+    result: "Full schema + metadata layer",
+    tags: ["Digital Marketing", "Schema", "Education"],
+    image: "/assets/portfolio-lcinstitute.png",
+  },
+  {
+    title: "LinaBloom Candle Co.",
+    url: "lina-bloom-candle.myshopify.com",
+    category: "Ecommerce · Shopify",
+    description:
+      "Hand-poured candle and goat's-milk soap maker in Cumming, GA. Full Shopify storefront with browse-by-scent-family filtering, bundles and gift sets, customer accounts, and a bilingual EN/ES checkout.",
+    result: "Full Shopify storefront build",
+    tags: ["Ecommerce", "Shopify", "Local GA"],
+    image: "/assets/portfolio-linabloom.png",
+  },
 ];
 
 export default function Portfolio() {
@@ -151,7 +201,7 @@ export default function Portfolio() {
             </h2>
           </div>
           <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
-            Eight recent projects across construction, ecommerce, and B2B.
+            Thirteen recent projects across construction, ecommerce, authors, and B2B.
           </p>
         </div>
 

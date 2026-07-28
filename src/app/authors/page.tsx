@@ -511,6 +511,87 @@ export default function AuthorsPage() {
           </p>
         </Section>
 
+        {/* ─── REAL CLIENT PROOF ──────────────────────────────────────── */}
+        <Section theme="light" pad="spacious" id="proof" topRule>
+          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
+                Not a mockup
+              </span>
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] leading-[1.14] tracking-tight text-text-primary">
+                This is a real author site,{" "}
+                <span className="relative inline-block">
+                  live right now
+                  <span aria-hidden className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]" />
+                </span>
+                .
+              </h2>
+            </div>
+            <p className="measure text-[length:var(--text-body)] leading-relaxed text-text-secondary lg:col-span-5 lg:self-end">
+              J. S. Torres came to me with a manuscript. He left with cover
+              art, interior illustrations, and the website below — built the
+              same way I&rsquo;d build yours.
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
+            <div className="lg:col-span-7">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/portfolio-jstorres.png"
+                alt="J. S. Torres author website homepage showing the cover of The Bloodstone: The Leaf and the Tree of Old"
+                width={1280}
+                height={800}
+                loading="lazy"
+                className="aspect-[16/10] w-full rounded-2xl border border-[var(--color-hairline-strong)] object-cover object-top shadow-soft"
+              />
+            </div>
+
+            <div className="lg:col-span-5">
+              <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-neon-text)]">
+                J. S. Torres
+              </span>
+              <h3 className="mt-2 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-tight text-text-primary">
+                The Bloodstone: The Leaf and the Tree of Old
+              </h3>
+              <p className="mt-2 text-[length:var(--text-secondary)] text-text-dim">
+                Debut epic-fantasy novel, Book One
+              </p>
+
+              <ul className="mt-6 flex flex-col gap-3 border-t border-[var(--color-hairline)] pt-6">
+                {[
+                  "A book showcase with a “Start Reading” first-chapter excerpt and a “Get the Book” button",
+                  "About the author, a running Notes blog, and a Press page",
+                  "Reader email sign-up building the list for Book Two",
+                  "A school-visit and reading-assembly request flow for classroom bookings",
+                ].map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-start gap-2.5 text-[length:var(--text-body)] leading-relaxed text-text-secondary"
+                  >
+                    <CheckCircle
+                      size={16}
+                      weight="fill"
+                      className="mt-1 shrink-0 text-[var(--color-neon-text)]"
+                    />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="https://joaquinstorres.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-7 inline-flex items-center gap-2 text-[length:var(--text-body)] font-semibold text-text-primary hover:text-[var(--color-neon-text)]"
+              >
+                See the live site — joaquinstorres.com
+                <ArrowRight size={16} weight="bold" className="transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </div>
+        </Section>
+
         {/* ─── READER LIST & LAUNCH EMAILS ────────────────────────────── */}
         <Section
           theme="dark"
