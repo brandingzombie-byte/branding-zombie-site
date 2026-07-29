@@ -171,12 +171,11 @@ export default function ContactPage() {
                   homepage Testimonials; source: src/data/reviews.ts). */}
               <figure className="mt-8 border-l-2 border-[var(--color-neon)] pl-4">
                 <blockquote className="text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
-                  &ldquo;Def recommend for marketing, designs, branding,
-                  websites, printing. He knows his stuff and his turnover time
-                  is hella fast.&rdquo;
+                  &ldquo;He&rsquo;s quick, professional, easy to work with, and
+                  consistently delivers high-quality results.&rdquo;
                 </blockquote>
                 <figcaption className="mt-2 text-[length:var(--text-caption)] uppercase tracking-[0.2em] text-text-dim">
-                  Mary Jeimz · 5.0 ★ Google review
+                  Joaquin Torres · 5.0 ★ Google review
                 </figcaption>
               </figure>
 

@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
 import LocationCtas from "@/components/locations/LocationCtas";
 import { SITE_URL, BUSINESS_NAME } from "@/lib/site";
-import { REVIEWS } from "@/data/reviews";
+import { REVIEWS, reviewSource } from "@/data/reviews";
 import { getServiceAeo, getServiceComparison } from "@/data/service-aeo";
 import { getSiblingLocations, type Location } from "@/data/locations";
 import type { LocationService } from "@/data/location-services";
@@ -42,9 +42,9 @@ export default function LocationPageBody({
   // Prefer reviews from this city / county; fall back to the strongest three.
   const localReviews = REVIEWS.filter(
     (r) =>
-      r.location.includes(loc.city) ||
-      r.location.includes(loc.county) ||
-      r.location.includes("North Metro Atlanta"),
+      (r.location ?? "").includes(loc.city) ||
+      (r.location ?? "").includes(loc.county) ||
+      (r.location ?? "").includes("North Metro Atlanta"),
   );
   const reviews = (localReviews.length >= 2 ? localReviews : REVIEWS).slice(0, 3);
 
@@ -267,7 +267,7 @@ export default function LocationPageBody({
                   {r.name}
                 </div>
                 <div className="text-[length:var(--text-caption)] text-text-dim">
-                  {r.business} · {r.location}
+                  {reviewSource(r)}
                 </div>
               </div>
             </li>

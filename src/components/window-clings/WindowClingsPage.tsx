@@ -31,7 +31,7 @@ import {
   ArrowUpRight,
 } from "@/components/icons";
 import { PHONE_DISPLAY, PHONE_HREF, CALENDLY_URL } from "@/lib/site";
-import { REVIEWS, REVIEW_AVG, REVIEW_COUNT, GOOGLE_REVIEWS_URL } from "@/data/reviews";
+import { REVIEWS, REVIEW_AVG, REVIEW_COUNT, GOOGLE_REVIEWS_URL, reviewSource } from "@/data/reviews";
 import { LOCATIONS, getSiblingLocations, type Location } from "@/data/locations";
 import {
   WINDOW_CLINGS_CITY_COPY,
@@ -55,7 +55,7 @@ const ICONS: Record<WCIconName, typeof Eye> = {
 };
 
 // Real reviews most relevant to print / signage work, in display order.
-const PROOF_REVIEW_NAMES = ["Mitch Marks", "Mary Jeimz", "Liz Marie"];
+const PROOF_REVIEW_NAMES = ["Mitch Marks", "Garrett McKay", "Liz Marie"];
 
 export default function WindowClingsPage({
   product,
@@ -498,7 +498,7 @@ export default function WindowClingsPage({
                     {r.name}
                   </div>
                   <div className="text-[length:var(--text-caption)] text-[var(--color-dark-text-dim)]">
-                    {r.business} · {r.location}
+                    {reviewSource(r)}
                   </div>
                 </div>
               </Reveal>

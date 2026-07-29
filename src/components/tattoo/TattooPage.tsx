@@ -33,7 +33,7 @@ import {
   ArrowUpRight,
 } from "@/components/icons";
 import { PHONE_DISPLAY, PHONE_HREF, CALENDLY_URL } from "@/lib/site";
-import { REVIEWS, REVIEW_AVG, REVIEW_COUNT, GOOGLE_REVIEWS_URL } from "@/data/reviews";
+import { REVIEWS, REVIEW_AVG, REVIEW_COUNT, GOOGLE_REVIEWS_URL, reviewSource } from "@/data/reviews";
 import { LOCATIONS, getSiblingLocations, type Location } from "@/data/locations";
 import {
   TATTOO_CITY_COPY,
@@ -59,7 +59,7 @@ const ICONS: Record<TattooIconName, typeof Target> = {
 };
 
 // Real reviews most relevant to brand / print / web work, in display order.
-const PROOF_REVIEW_NAMES = ["Mitch Marks", "Mary Jeimz", "Liz Marie"];
+const PROOF_REVIEW_NAMES = ["Mitch Marks", "Garrett McKay", "Liz Marie"];
 
 export default function TattooPage({
   product,
@@ -504,7 +504,7 @@ export default function TattooPage({
                     {r.name}
                   </div>
                   <div className="text-[length:var(--text-caption)] text-[var(--color-dark-text-dim)]">
-                    {r.business} · {r.location}
+                    {reviewSource(r)}
                   </div>
                 </div>
               </Reveal>
