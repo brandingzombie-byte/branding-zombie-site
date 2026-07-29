@@ -8,7 +8,7 @@ import IndustryWork from "@/components/industries/IndustryWork";
 import ImageSlot from "@/components/industries/ImageSlot";
 import { ArrowUpRight, ArrowRight, Phone, Check } from "@/components/icons";
 import type { Industry } from "@/data/industries";
-import type { Review } from "@/data/reviews";
+import { reviewSource, type Review } from "@/data/reviews";
 import { PHONE_DISPLAY, PHONE_HREF, PRIMARY_AREAS } from "@/lib/site";
 
 /**
@@ -206,7 +206,7 @@ export default function IndustryPageBody({
               “{testimonial.quote}”
             </blockquote>
             <figcaption className="mt-4 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-toxic-text)]">
-              {testimonial.name} · {testimonial.business} · {testimonial.location}
+              {testimonial.name} · {reviewSource(testimonial)}
             </figcaption>
           </figure>
         )}

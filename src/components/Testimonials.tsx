@@ -6,7 +6,7 @@ import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
 import { Star, ArrowUpRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
-import { REVIEWS, GOOGLE_REVIEWS_URL } from "@/data/reviews";
+import { REVIEWS, GOOGLE_REVIEWS_URL, reviewByline, reviewTag } from "@/data/reviews";
 import ZombieHand from "@/components/ZombieHand";
 import { HANDS } from "@/data/hands";
 
@@ -133,11 +133,14 @@ export default function Testimonials() {
         <div className="relative mt-16 grid grid-cols-1 gap-x-12 gap-y-8 lg:grid-cols-12">
           {/* LEFT: stars + quote, spans 8 of 12 */}
           <div className="relative lg:col-span-8">
-            {/* Watermark quotation mark */}
+            {/* Watermark quotation mark — sized/positioned as background texture, not
+                a second headline. Pushed further up (-top-16) into the whitespace
+                above the star row instead of over it, and capped well under the
+                old 12rem max so it never fights the star row or first quote line. */}
             <span
               aria-hidden
-              className="pointer-events-none absolute -top-12 -left-2 select-none font-[family-name:var(--font-display)] leading-none text-text-primary opacity-[0.05]"
-              style={{ fontSize: "clamp(7rem, 15vw, 12rem)" }}
+              className="pointer-events-none absolute -top-16 -left-3 select-none font-[family-name:var(--font-display)] leading-none text-text-primary opacity-[0.045]"
+              style={{ fontSize: "clamp(5rem, 8vw, 7.5rem)" }}
             >
               &ldquo;
             </span>
@@ -164,7 +167,11 @@ export default function Testimonials() {
               <blockquote
                 key={active}
                 className="relative animate-fade-up opacity-0 font-[family-name:var(--font-display)] leading-[1.35] tracking-tight text-text-primary motion-reduce:animate-none motion-reduce:opacity-100"
-                style={{ fontSize: "clamp(1.5rem, 1rem + 1.6vw, 2.25rem)" }}
+                // Stepped down from the h2's register (clamp 2rem→3.25rem) so the
+                // quote reads as a pull-quote, not a second headline — max eases
+                // off at 2rem (32px), a full tier below h2's 52px ceiling, and
+                // holds up for the longer ~370-char quotes without walling out.
+                style={{ fontSize: "clamp(1.375rem, 1rem + 1.2vw, 2rem)" }}
                 dangerouslySetInnerHTML={{
                   __html: `&ldquo;${current.quote}&rdquo;`,
                 }}
@@ -174,7 +181,7 @@ export default function Testimonials() {
                   {current.name}
                 </span>
                 <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-text-dim">
-                  {current.business} · {current.location} · {current.date}
+                  {reviewByline(current)}
                 </span>
               </figcaption>
             </figure>
@@ -259,7 +266,14 @@ export default function Testimonials() {
           />
         </div>
 
-        {/* ── Byline switcher — horizontal press strip ── */}
+        {/* ── Byline switcher — responsive tab grid ──
+            8 reviews (was 5) broke the old flex-wrap row — flex-1 items on a
+            wrapped last row stretched unevenly. A grid holds any item count
+            cleanly at fixed column counts per breakpoint (2 → 4 → 8, all
+            factors of 8, so rows are always full — no orphaned last row).
+            Grid lines come from the "gap as border" trick (hairline-colored
+            gap showing through between opaque cells) instead of per-cell
+            border-r + last:border-r-0, which only works for a single row. */}
         <nav
           aria-label="Testimonial navigation"
           className="mt-14 border-t-2 border-[var(--color-text-primary)] pt-4"
@@ -269,21 +283,22 @@ export default function Testimonials() {
             role="tablist"
             aria-orientation="horizontal"
             onKeyDown={onKeyDown}
-            className="flex flex-wrap items-stretch"
+            className="grid grid-cols-2 gap-px border-2 border-[var(--color-text-primary)] bg-[var(--color-hairline-strong)] sm:grid-cols-4 xl:grid-cols-8"
           >
             {testimonials.map((t, i) => {
               const isActive = i === active;
+              const tag = reviewTag(t);
               return (
-                <li key={t.name} role="none" className="flex-1 min-w-[170px]">
+                <li key={t.name} role="none">
                   <button
                     role="tab"
                     aria-selected={isActive}
                     tabIndex={isActive ? 0 : -1}
                     onClick={() => setActive(i)}
                     className={cn(
-                      "group relative h-full w-full border-r border-[var(--color-hairline-strong)] px-5 py-4 text-left",
+                      "group relative h-full w-full bg-[var(--color-fog)] px-5 py-4 text-left",
                       "transition-[background-color,transform] duration-[var(--duration-fast)] ease-[var(--ease-out-quart)]",
-                      "last:border-r-0 hover:bg-[var(--color-cloud)] active:scale-[0.99]",
+                      "hover:bg-[var(--color-cloud)] active:scale-[0.99]",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-neon-text)] focus-visible:ring-inset",
                       "motion-reduce:transition-none motion-reduce:active:scale-100",
                       isActive && "bg-[var(--color-cloud)]",
@@ -307,9 +322,7 @@ export default function Testimonials() {
                       {t.name}
                     </span>
                     <span className="mt-0.5 block font-mono text-[length:var(--text-caption)] uppercase tracking-[0.14em] text-text-dim">
-                      {t.business.length > 28
-                        ? `${t.business.slice(0, 26)}…`
-                        : t.business}
+                      {tag.length > 28 ? `${tag.slice(0, 26)}…` : tag}
                     </span>
                   </button>
                 </li>

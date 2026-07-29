@@ -1043,7 +1043,7 @@ export const INDUSTRIES: Industry[] = [
       "enigma-computers",
       "miami-pavement-logo",
     ],
-    testimonialName: "Mary Jeimz",
+    testimonialName: "Andrew Allen",
 
     pricingTitle: "Flat prices, quoted before we start",
     pricingNote:

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
@@ -145,7 +145,22 @@ const projects = [
 export default function Portfolio() {
   const { ref, isInView } = useInView(0.05);
   const [active, setActive] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const didMount = useRef(false);
   const current = projects[active];
+
+  // Keep the selected project visible once the rail is scroll-capped. Skipped
+  // on mount so landing on the page can never scroll-jack, and `block: "nearest"`
+  // so an already-visible tab doesn't move at all.
+  useEffect(() => {
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
+    }
+    scrollContainerRef.current
+      ?.querySelector('[role="tab"][aria-selected="true"]')
+      ?.scrollIntoView({ block: "nearest" });
+  }, [active]);
 
   return (
     <Section
@@ -259,44 +274,68 @@ export default function Portfolio() {
             </div>
           </figure>
 
-          {/* Vertical thumbnail rail */}
-          <ul role="tablist" className="lg:col-span-4">
-            {projects.map((p, i) => {
-              const isActive = i === active;
-              return (
-                <li key={p.title}>
-                  <button
-                    role="tab"
-                    aria-selected={isActive}
-                    onClick={() => setActive(i)}
-                    className={cn(
-                      "group relative flex w-full items-center gap-4 border-b border-[var(--color-dark-border)] py-4 text-left",
-                      isActive ? "text-[var(--color-dark-text-primary)]" : "text-[var(--color-dark-text-dim)] hover:text-[var(--color-dark-text-primary)]",
-                    )}
-                  >
-                    <span
-                      aria-hidden
-                      className={cn(
-                        "absolute left-0 top-1/2 h-[60%] w-[2px] -translate-y-1/2 transition-colors",
-                        isActive ? "bg-[var(--color-toxic)]" : "bg-transparent",
-                      )}
-                    />
-                    <span className="tabular pl-3 text-[length:var(--text-caption)] uppercase tracking-[0.18em]">
-                      0{i + 1}
-                    </span>
-                    <span className="flex min-w-0 flex-1 flex-col">
-                      <span className="text-[length:var(--text-body)] font-semibold">
-                        {p.title}
-                      </span>
-                      <span className="text-[length:var(--text-caption)] uppercase tracking-[0.18em]">
-                        {p.category}
-                      </span>
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+          {/* Scroll-capped project rail. The fade lives on the OUTER wrapper,
+              not inside the scroller — an absolute child of a scrolling box is
+              positioned against the scrollable content, so it would ride to the
+              very bottom of the list instead of pinning to the visible edge. */}
+          {/* self-start matters: as a stretched grid item this wrapper would be
+              as tall as the feature column, and the fade below would anchor to
+              the wrapper's bottom instead of the rail's. */}
+          <div className="relative self-start lg:col-span-4">
+            <div
+              ref={scrollContainerRef}
+              className="max-h-[380px] overflow-y-auto overscroll-contain lg:max-h-[520px]"
+              style={{
+                scrollbarWidth: "thin",
+                scrollbarColor: "var(--color-elevated) var(--color-grave)",
+              }}
+            >
+              <ul role="tablist">
+                {projects.map((p, i) => {
+                  const isActive = i === active;
+                  return (
+                    <li key={p.title}>
+                      <button
+                        role="tab"
+                        aria-selected={isActive}
+                        onClick={() => setActive(i)}
+                        className={cn(
+                          "group relative flex w-full items-center gap-4 border-b border-[var(--color-dark-border)] py-4 text-left",
+                          isActive ? "text-[var(--color-dark-text-primary)]" : "text-[var(--color-dark-text-dim)] hover:text-[var(--color-dark-text-primary)]",
+                        )}
+                      >
+                        <span
+                          aria-hidden
+                          className={cn(
+                            "absolute left-0 top-1/2 h-[60%] w-[2px] -translate-y-1/2 transition-colors",
+                            isActive ? "bg-[var(--color-toxic)]" : "bg-transparent",
+                          )}
+                        />
+                        <span className="tabular pl-3 text-[length:var(--text-caption)] uppercase tracking-[0.18em]">
+                          0{i + 1}
+                        </span>
+                        <span className="flex min-w-0 flex-1 flex-col">
+                          <span className="text-[length:var(--text-body)] font-semibold">
+                            {p.title}
+                          </span>
+                          <span className="text-[length:var(--text-caption)] uppercase tracking-[0.18em]">
+                            {p.category}
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            {/* Fades the last row so the rail reads as "more below", not as a
+                hard clip. Matches the dark Section background exactly. */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-[var(--color-grave)]"
+            />
+          </div>
         </div>
 
         {/* Prominent gateway to the full filterable portfolio */}
