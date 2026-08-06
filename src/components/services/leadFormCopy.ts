@@ -107,6 +107,15 @@ export const LEAD_FORM: Record<string, LeadFormCopy> = {
     cta: "Get my call back",
     value: 75,
   },
+  "launch-package": {
+    eyebrow: "Logo, site, cards — one bite",
+    headline: "Start the whole thing here.",
+    blurb:
+      "Tell us about the business and we'll confirm the kit fits — logo, five-page site, cards, flyers, and Google Business Profile, live in four weeks.",
+    messagePlaceholder: "What's the business, and when do you want to launch?",
+    cta: "Get my call back",
+    value: 100,
+  },
   "digital-marketing": {
     eyebrow: "No dashboards until we talk",
     headline: "Tell us what isn't working.",

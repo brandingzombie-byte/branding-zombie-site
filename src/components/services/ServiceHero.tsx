@@ -11,6 +11,8 @@ import {
 } from "framer-motion";
 import { ArrowUpRight } from "@/components/icons";
 import Section from "@/components/Section";
+import ZombieHand from "@/components/ZombieHand";
+import { HANDS } from "@/data/hands";
 import type { Service } from "@/data/services";
 import { getServiceHeroShowcase, type HeroShowcaseItem } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -72,6 +74,29 @@ export default function ServiceHero({
         className="pointer-events-none absolute inset-0 -z-10 animate-ambient"
         style={{ background: ACCENT_BG[service.themeAccent] }}
       />
+
+      {/* "Count three" hand reaching in from the right edge, hovering in
+          the empty band above the form card — three fields, that's it.
+          Cursor-following on desktop, hidden on mobile. */}
+      {formSlot && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 overflow-x-clip"
+        >
+          <ZombieHand
+            src={HANDS["zh32-count-three-r"].src}
+            width={HANDS["zh32-count-three-r"].width}
+            height={HANDS["zh32-count-three-r"].height}
+            edge="right"
+            behaviors={["peek", "idle", "follow"]}
+            offset="8%"
+            bleed="-28px"
+            displayWidth={235}
+            rotate={-8}
+            followStrength={26}
+          />
+        </div>
+      )}
 
       <div
         ref={heroRef}

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import SectionSeparator from "@/components/SectionSeparator";
-import BrandTrackRecord from "@/components/services/BrandTrackRecord";
+import ServiceLeadFormSection from "@/components/services/ServiceLeadFormSection";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
 import LaunchPackageCtas from "./LaunchPackageCtas";
 import IncludedList from "./IncludedList";
@@ -359,7 +359,10 @@ export default function LaunchPackagePage() {
 
         <SectionSeparator id={4} />
 
-        <BrandTrackRecord />
+        <ServiceLeadFormSection
+          slug="launch-package"
+          serviceName="Local Business Kit"
+        />
 
         <SectionSeparator id={6} />
 

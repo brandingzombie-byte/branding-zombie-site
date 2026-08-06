@@ -105,15 +105,13 @@ export default async function ServicePage({
           <ServiceHero
             service={service}
             formSlot={
-              service.slug === "web-design" ? (
-                <ServiceLeadForm
-                  key="hero-lead-form"
-                  slug={service.slug}
-                  serviceName={service.name}
-                  variant="hero"
-                  tone="dark"
-                />
-              ) : undefined
+              <ServiceLeadForm
+                key="hero-lead-form"
+                slug={service.slug}
+                serviceName={service.name}
+                variant="hero"
+                tone="dark"
+              />
             }
           />
           <ServiceAuthority slug={service.slug} />
