@@ -21,6 +21,12 @@ import {
 // with one Offer per actual catalog product. Each Offer carries price,
 // category, and turnaround so AI assistants can answer "do they print X?"
 // and "how much is X?" without having to read the page.
+//
+// itemOffered is deliberately typed Service, NOT Product: Google validates
+// every Product it finds against product-snippet/merchant-listing rules
+// (fixed price, offers nested inside the Product, shipping, returns), and
+// quote-based "from $X" print work can't honestly satisfy them — Search
+// Console flagged all ~23 items as invalid when these were Products.
 function buildPrintOfferCatalog(pageUrl: string) {
   const catalogUrl = `${pageUrl}#print-catalog`;
   return {
@@ -45,11 +51,13 @@ function buildPrintOfferCatalog(pageUrl: string) {
             description: `${p.startingPrice}, ${p.turnaround} turnaround`,
           },
           itemOffered: {
-            "@type": "Product",
+            "@type": "Service",
+            serviceType: "Print design and production",
             name: p.name,
             description: p.blurb,
             image: `${SITE_URL}${p.image}`,
             category: cat.name,
+            provider: { "@id": LOCALBIZ_ID },
             brand: { "@id": ORG_ID },
           },
           availability: "https://schema.org/InStock",
