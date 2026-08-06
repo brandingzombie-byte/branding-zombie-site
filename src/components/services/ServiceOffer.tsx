@@ -2,6 +2,7 @@
 
 import { ArrowUpRight } from "@/components/icons";
 import Section from "@/components/Section";
+import { trackEvent } from "@/lib/analytics";
 import { useReveal } from "@/lib/useReveal";
 import { cn } from "@/lib/utils";
 import type { Service } from "@/data/services";
@@ -88,11 +89,12 @@ export default function ServiceOffer({ service }: { service: Service }) {
               {service.pricing.note}
             </p>
           </div>
+          {/* Anchors down to the on-page lead form — no new tab, no extra
+              page load between interest and the three fields. */}
           <a
-            href={service.hero.ctaHref}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#lead-form"
             role="button"
+            onClick={() => trackEvent("cta_form_jump", { location: "pricing_band" })}
             className="inline-flex items-center gap-2 rounded-full bg-[var(--color-text-primary)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-cloud)] hover:bg-[var(--color-neon-text)]"
           >
             Talk about your project
