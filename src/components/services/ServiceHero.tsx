@@ -36,7 +36,19 @@ const ACCENT_TEXT: Record<Service["themeAccent"], string> = {
 
 const AUTO_ADVANCE_MS = 5000;
 
-export default function ServiceHero({ service }: { service: Service }) {
+export default function ServiceHero({
+  service,
+  formSlot,
+}: {
+  service: Service;
+  /**
+   * Optional above-the-fold lead form. When provided it replaces the
+   * showcase carousel in the right column and becomes the hero's single
+   * conversion action (the CTA button row is dropped; the audit link
+   * survives as a quiet text link).
+   */
+  formSlot?: React.ReactNode;
+}) {
   const heroRef = useRef<HTMLDivElement>(null);
   const showcase = getServiceHeroShowcase(service.slug, 5);
 
@@ -89,18 +101,27 @@ export default function ServiceHero({ service }: { service: Service }) {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 font-[family-name:var(--font-display)] text-[length:var(--text-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]"
+            className={cn(
+              "mt-6 font-[family-name:var(--font-display)] leading-[1.1] tracking-tight text-[var(--color-dark-text-primary)]",
+              // With an above-the-fold form the headline steps down one size so
+              // the whole conversion moment (headline → subhead → form) fits in
+              // the first viewport instead of scrolling past it.
+              formSlot
+                ? "text-[length:var(--text-h2)] lg:text-[length:clamp(2.5rem,1.9rem+2.4vw,3.9rem)]"
+                : "text-[length:var(--text-display)]",
+            )}
           >
             {service.hero.headline}{" "}
+            {/* Period lives inside the inline-block so it can never wrap
+                onto its own orphan line after the underlined word. */}
             <span className="relative inline-block">
-              {service.hero.highlightWord}
+              {service.hero.highlightWord}.
               <span
                 aria-hidden
-                className="absolute -bottom-1 left-0 h-[3px] w-full"
+                className="absolute -bottom-1 left-0 h-[3px] w-[calc(100%-0.3em)]"
                 style={{ backgroundColor: ACCENT_LINE[service.themeAccent] }}
               />
             </span>
-            .
           </motion.h1>
 
           <motion.p
@@ -112,26 +133,50 @@ export default function ServiceHero({ service }: { service: Service }) {
             {service.hero.subhead}
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
-          >
-            <a
-              href={service.hero.ctaHref}
-              target={service.hero.ctaHref.startsWith("http") ? "_blank" : undefined}
-              rel={service.hero.ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
-              role="button"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          {formSlot ? (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-10 flex flex-col items-start gap-3"
             >
-              {service.hero.ctaLabel}
-              <ArrowUpRight size={16} weight="bold" />
-            </a>
-            <p className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
-              {service.hero.microProof}
-            </p>
-          </motion.div>
+              <p className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
+                {service.hero.microProof}
+              </p>
+              <a
+                href={service.hero.ctaHref}
+                className="group inline-flex items-center gap-1.5 text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)] underline decoration-[var(--color-dark-border-strong)] underline-offset-4 transition-colors duration-200 hover:text-[var(--color-toxic-text)] hover:decoration-current"
+              >
+                Not ready to talk? {service.hero.ctaLabel.toLowerCase()} instead
+                <ArrowUpRight
+                  size={14}
+                  weight="bold"
+                  className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                />
+              </a>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
+            >
+              <a
+                href={service.hero.ctaHref}
+                target={service.hero.ctaHref.startsWith("http") ? "_blank" : undefined}
+                rel={service.hero.ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
+                role="button"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+              >
+                {service.hero.ctaLabel}
+                <ArrowUpRight size={16} weight="bold" />
+              </a>
+              <p className="tabular text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
+                {service.hero.microProof}
+              </p>
+            </motion.div>
+          )}
         </div>
 
         {/* Hero showcase — carousel of real projects when we have them,
@@ -142,8 +187,18 @@ export default function ServiceHero({ service }: { service: Service }) {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-5"
         >
-          <motion.div style={{ y: imgY }}>
-            {showcase.length >= 2 ? (
+          <motion.div style={{ y: formSlot ? undefined : imgY }}>
+            {formSlot ? (
+              <div className="relative border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)] p-6 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] md:p-8">
+                {/* Accent seam along the top — reads as "start here" */}
+                <span
+                  aria-hidden
+                  className="absolute inset-x-0 top-0 h-[3px]"
+                  style={{ backgroundColor: ACCENT_LINE[service.themeAccent] }}
+                />
+                {formSlot}
+              </div>
+            ) : showcase.length >= 2 ? (
               <HeroShowcaseCarousel
                 items={showcase}
                 accent={service.themeAccent}

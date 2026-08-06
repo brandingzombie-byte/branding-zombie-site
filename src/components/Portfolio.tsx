@@ -31,6 +31,16 @@ const projects = [
     image: "/assets/portfolio-enigma.png",
   },
   {
+    title: "Adams Detailing",
+    url: "adamsdetailingga.com",
+    category: "Local Cumming · Auto & Marine Detailing",
+    description:
+      "Mobile auto and marine detailing crew serving Cumming and the Lake Lanier corridor. Full site with services, pricing, gallery, service-area pages, and a request-a-quote flow.",
+    result: "Quote requests wired to the owner's inbox",
+    tags: ["Local Cumming", "Home Services", "RFQ Flow"],
+    image: "/assets/portfolio-adamsdetailing.png",
+  },
+  {
     title: "Planters Etc.",
     url: "plantersetc.com",
     category: "Branding · Ecommerce",
@@ -216,7 +226,7 @@ export default function Portfolio() {
             </h2>
           </div>
           <p className="measure-tight text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)]">
-            Thirteen recent projects across construction, ecommerce, authors, and B2B.
+            Fourteen recent projects across construction, ecommerce, authors, and B2B.
           </p>
         </div>
 

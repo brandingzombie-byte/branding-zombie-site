@@ -20,10 +20,13 @@ import TierCards from "@/components/services/TierCards";
 import PrintCategoryBands from "@/components/services/PrintCategoryBands";
 import PrintCatalog from "@/components/services/PrintCatalog";
 import CustomQuoteCta from "@/components/services/CustomQuoteCta";
-import BrandTrackRecord from "@/components/services/BrandTrackRecord";
 import CrossSellBlock from "@/components/services/CrossSellBlock";
+import WebsiteShowcase from "@/components/services/WebsiteShowcase";
+import ServiceLeadForm from "@/components/services/ServiceLeadForm";
+import ServiceLeadFormSection from "@/components/services/ServiceLeadFormSection";
 import SectionSeparator from "@/components/SectionSeparator";
 import { getServiceBySlug, getAllSlugs } from "@/data/services";
+import { getPortfolioItems, WEBSITE_SHOWCASE_IDS } from "@/data/portfolio";
 import { SITE_URL } from "@/lib/site";
 
 // Prerender all 6 service pages at build time, and 404 on anything else.
@@ -99,7 +102,20 @@ export default async function ServicePage({
       <ServiceJsonLd service={service} />
       <main id="main-content" tabIndex={-1}>
         <ServicePageClient>
-          <ServiceHero service={service} />
+          <ServiceHero
+            service={service}
+            formSlot={
+              service.slug === "web-design" ? (
+                <ServiceLeadForm
+                  key="hero-lead-form"
+                  slug={service.slug}
+                  serviceName={service.name}
+                  variant="hero"
+                  tone="dark"
+                />
+              ) : undefined
+            }
+          />
           <ServiceAuthority slug={service.slug} />
           {service.whoThisIsFor && service.whoThisIsFor.length > 0 && (
             <>
@@ -110,6 +126,8 @@ export default async function ServicePage({
           )}
           <ServicePainPoints service={service} />
           <SectionSeparator id={8} />
+          <ServiceLeadFormSection slug={service.slug} serviceName={service.name} />
+          <SectionSeparator id={2} />
           <ServiceOffer service={service} />
           {service.tiers && service.tiers.length > 0 && (
             <>
@@ -137,26 +155,21 @@ export default async function ServicePage({
               <PrintCatalog />
             </>
           )}
-          {(service.tiers || service.categoryBands) ? (
+          <SectionSeparator id={4} />
+          <CustomQuoteCta serviceSlug={service.slug} />
+          <SectionSeparator id={8} />
+          {service.slug === "web-design" ? (
             <>
-              <SectionSeparator id={4} />
-              <CustomQuoteCta serviceSlug={service.slug} />
-              <SectionSeparator id={2} />
-              <BrandTrackRecord />
-              <SectionSeparator id={4} />
-            </>
-          ) : (
-            <>
-              <SectionSeparator id={4} />
-              <CustomQuoteCta serviceSlug={service.slug} />
-              <SectionSeparator id={8} />
-            </>
-          )}
-          {service.gallery.items.length >= 3 && (
-            <>
-              <ServiceGallery service={service} />
+              <WebsiteShowcase items={getPortfolioItems(WEBSITE_SHOWCASE_IDS)} />
               <SectionSeparator id={3} />
             </>
+          ) : (
+            service.gallery.items.length >= 3 && (
+              <>
+                <ServiceGallery service={service} />
+                <SectionSeparator id={3} />
+              </>
+            )
           )}
           <ServiceProcess service={service} />
           <ServiceComparison slug={service.slug} />
