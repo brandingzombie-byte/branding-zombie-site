@@ -2,6 +2,8 @@
 
 import { ArrowUpRight } from "@/components/icons";
 import Section from "@/components/Section";
+import { getLeadFormCopy } from "@/components/services/leadFormCopy";
+import { trackEvent } from "@/lib/analytics";
 import { useReveal } from "@/lib/useReveal";
 import { cn } from "@/lib/utils";
 import type { Service } from "@/data/services";
@@ -40,18 +42,32 @@ export default function ServiceFinalCTA({ service }: { service: Service }) {
           {service.finalCta.subhead}
         </p>
 
+        {/* Primary action anchors up to the on-page form; the original
+            destination (audit / Calendly) survives as a quiet secondary. */}
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <a
+            href="#lead-form"
+            role="button"
+            onClick={() => trackEvent("cta_form_jump", { location: "final_cta" })}
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            {getLeadFormCopy(service.slug).cta}
+            <ArrowUpRight size={18} weight="bold" />
+          </a>
           <a
             href={service.hero.ctaHref}
             target={service.hero.ctaHref.startsWith("http") ? "_blank" : undefined}
             rel={service.hero.ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
-            role="button"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-9 py-4 text-[length:var(--text-body)] font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+            className="group inline-flex items-center gap-1.5 text-[length:var(--text-secondary)] text-[var(--color-dark-text-secondary)] underline decoration-[var(--color-dark-border-strong)] underline-offset-4 transition-colors duration-200 hover:text-[var(--color-toxic-text)] hover:decoration-current"
           >
             {service.finalCta.ctaLabel}
-            <ArrowUpRight size={18} weight="bold" />
+            <ArrowUpRight
+              size={14}
+              weight="bold"
+              className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
           </a>
-          <p className="text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
+          <p className="w-full text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-[var(--color-dark-text-dim)]">
             No pitch · No pressure · Just a straight answer
           </p>
         </div>

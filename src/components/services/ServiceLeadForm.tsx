@@ -123,6 +123,13 @@ const LABEL_CLASS =
 const FIELD_BASE =
   "min-h-[46px] w-full rounded-md border px-4 py-3 text-[length:var(--text-body)] outline-none transition-colors duration-150 focus-visible:ring-2";
 
+/**
+ * Name of the CustomEvent other components dispatch to pre-seed the message
+ * field and pull focus (e.g. a tier card CTA that anchors to #lead-form).
+ * detail: { message: string }
+ */
+export const LEAD_PREFILL_EVENT = "bzd:lead-prefill";
+
 export default function ServiceLeadForm({
   slug,
   serviceName,
@@ -140,8 +147,28 @@ export default function ServiceLeadForm({
 }) {
   const [state, formAction, pending] = useActionState(submitServiceLead, INITIAL);
   const [preferred, setPreferred] = useState<PreferredContact>("call");
+  const [message, setMessage] = useState("");
   const trackedRef = useRef(false);
+  const nameRef = useRef<HTMLInputElement>(null);
   const uid = useId();
+
+  // Only the mid-page section variant (the #lead-form anchor target)
+  // responds to prefill events — the hero instance stays untouched so the
+  // two forms never fight over focus.
+  useEffect(() => {
+    if (variant !== "section") return;
+    const onPrefill = (e: Event) => {
+      const detail = (e as CustomEvent<{ message?: string }>).detail;
+      if (detail?.message) setMessage(detail.message);
+      // Let the smooth scroll land before pulling focus, and don't scroll
+      // again — the anchor navigation already did.
+      window.setTimeout(() => {
+        nameRef.current?.focus({ preventScroll: true });
+      }, 650);
+    };
+    window.addEventListener(LEAD_PREFILL_EVENT, onPrefill);
+    return () => window.removeEventListener(LEAD_PREFILL_EVENT, onPrefill);
+  }, [variant]);
 
   const copy = getLeadFormCopy(slug);
   const t = TONES[tone];
@@ -280,6 +307,7 @@ export default function ServiceLeadForm({
             Your name
           </label>
           <input
+            ref={nameRef}
             id={`${uid}-name`}
             name="name"
             type="text"
@@ -379,6 +407,8 @@ export default function ServiceLeadForm({
               type="text"
               maxLength={1000}
               placeholder={copy.messagePlaceholder}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className={cn(FIELD_BASE, t.field)}
             />
           ) : (
@@ -388,6 +418,8 @@ export default function ServiceLeadForm({
               rows={3}
               maxLength={1000}
               placeholder={copy.messagePlaceholder}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className={cn(FIELD_BASE, "min-h-[88px] leading-relaxed", t.field)}
             />
           )}

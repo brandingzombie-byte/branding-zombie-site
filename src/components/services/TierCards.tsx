@@ -6,6 +6,7 @@ import { Check, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { CALENDLY_URL } from "@/lib/site";
 import { trackEvent } from "@/lib/analytics";
+import { LEAD_PREFILL_EVENT } from "@/components/services/ServiceLeadForm";
 import type { Tier } from "@/data/services";
 
 // Renders the 3-tier pricing grid specified in the service-pages build spec:
@@ -237,18 +238,26 @@ function TierCard({ tier, desktopOrder }: { tier: Tier; desktopOrder: number }) 
         </p>
       </div>
 
+      {/* Straight to the on-page form — the tier choice rides along in the
+          message field so the lead arrives pre-qualified. Calendly still
+          reachable via the "free discovery call" line under the cards. */}
       <a
-        href={CALENDLY_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#lead-form"
         role="button"
-        onClick={() =>
+        onClick={() => {
           trackEvent("select_tier", {
             tier: tier.name,
             price: tier.price,
             featured: feature,
-          })
-        }
+          });
+          window.dispatchEvent(
+            new CustomEvent(LEAD_PREFILL_EVENT, {
+              detail: {
+                message: `Interested in the ${tier.name} tier (${tier.price}).`,
+              },
+            }),
+          );
+        }}
         className={cn(
           "mt-6 inline-flex items-center justify-between gap-2 rounded-full px-6 py-3.5 text-[length:var(--text-secondary)] font-semibold uppercase tracking-wider",
           feature

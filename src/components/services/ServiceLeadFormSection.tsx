@@ -21,7 +21,8 @@ export default function ServiceLeadFormSection({
     <Section
       theme="light"
       pad="standard"
-      className="overflow-hidden bg-[var(--color-fog)]"
+      id="lead-form"
+      className="scroll-mt-20 overflow-hidden bg-[var(--color-fog)]"
     >
       {/* Beckoning hand from the right edge — "come here" (desktop only) */}
       <div
