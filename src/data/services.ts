@@ -261,10 +261,10 @@ export const SERVICES: Service[] = [
       "Built in Next.js or Webflow — fast, secure, and easy to update. No theme marketplaces, no plugin chaos.",
     hero: {
       eyebrow: "Web Design · Cumming, GA",
-      headline: "Websites that actually make you money — shipped in",
-      highlightWord: "weeks, not months",
+      headline: "Websites that make you",
+      highlightWord: "money",
       subhead:
-        "Custom small-business websites built in Next.js, Webflow, or Shopify. Fast, mobile-first, search-engine friendly, and tuned to turn visitors into customers. Based in Cumming, GA — serving Forsyth County, Alpharetta, Roswell, and North Metro Atlanta.",
+        "Custom small-business websites built in Next.js, Webflow, or Shopify — fast, mobile-first, and tuned to turn visitors into customers. Based in Cumming, GA, serving Forsyth County and North Metro Atlanta.",
       ctaLabel: "Get a free site audit",
       ctaHref: "/free-site-audit",
       heroImage: {
@@ -330,6 +330,7 @@ export const SERVICES: Service[] = [
         pinned: [
           "papas-kitchen",
           "enigma-computers",
+          "adams-detailing",
           "aquarium-center",
           "jay-scotts",
           "sharp-edge",
@@ -342,7 +343,7 @@ export const SERVICES: Service[] = [
           "ezbeauty-banner",
           "goape-banner",
         ],
-        limit: 13,
+        limit: 14,
       }),
     },
     processEyebrow: "How it works",

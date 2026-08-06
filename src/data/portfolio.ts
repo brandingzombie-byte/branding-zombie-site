@@ -173,6 +173,19 @@ export const PORTFOLIO: PortfolioItem[] = [
     industry: "home-services",
   },
   {
+    id: "adams-detailing",
+    title: "Adams Detailing — Auto & Marine",
+    brand: "Cumming, GA · Mobile Detailing",
+    description:
+      "Full site for a mobile auto and marine detailing crew serving Cumming and the Lake Lanier corridor. Service and pricing pages, gallery, service-area coverage, and a request-a-quote flow front and center.",
+    image: "/assets/portfolio-adamsdetailing.png",
+    href: "https://adamsdetailingga.com",
+    services: ["web-design"],
+    aspect: "wide",
+    formats: ["website", "rfq-flow"],
+    industry: "automotive",
+  },
+  {
     id: "wizardly-solutions",
     title: "Wizardly Solutions Co.",
     brand: "South Florida · Credit Repair",
@@ -1319,4 +1332,30 @@ export function getServiceGalleryItems(
     href: p.href,
     image: enc(p.image),
   }));
+}
+
+/**
+ * Curated case-study list for the web-design page's WebsiteShowcase —
+ * full websites only (no banner one-offs), ordered so a featured piece
+ * leads and local Cumming/Forsyth work stays near the top.
+ */
+export const WEBSITE_SHOWCASE_IDS: string[] = [
+  "enigma-computers",
+  "adams-detailing",
+  "papas-kitchen",
+  "aquarium-center",
+  "wizardly-solutions",
+  "sharp-edge",
+  "muscleology",
+  "pure-blanco",
+  "js-torres",
+];
+
+/** Resolve an ordered list of portfolio ids to full items (unknown ids dropped). */
+export function getPortfolioItems(ids: string[]): PortfolioItem[] {
+  const byId = new Map(PORTFOLIO.map((p) => [p.id, p]));
+  return ids
+    .map((id) => byId.get(id))
+    .filter((p): p is PortfolioItem => Boolean(p))
+    .map((p) => ({ ...p, image: enc(p.image) }));
 }
