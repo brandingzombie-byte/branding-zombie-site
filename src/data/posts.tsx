@@ -20106,6 +20106,615 @@ function LocalSeoStatistics2026Content() {
   );
 }
 
+// ─── Post — How Long Does It Take to Build a Website? ──────────────────
+
+function HowLongWebsiteTakesContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long does it take to build a website from scratch?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most small businesses, 2 to 8 weeks with a professional. A simple 1–5 page brochure site runs 1–2 weeks; a 5–15 page small business website runs 4–8 weeks. Ecommerce takes 8–16 weeks. Starting from scratch adds time mainly because copy and photos don't exist yet.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a website be built in a week?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, for a single-page site when your copy and photos are already done and one person approves decisions quickly. Our $997 Startup Special launches a one-page site in 10 days. A five-page site from scratch in one week isn't realistic — content and revision rounds alone take longer than that.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does a 5-page small business website take?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Typically 4 to 8 weeks from kickoff to launch. Our $4,500 Launch Package delivers a five-page website, logo suite, brand basics, and a 90-day content calendar in 4 weeks. Larger 10–20 page corporate redesigns are a different animal and commonly run 8–12 weeks or more.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do website projects take so long?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually not the build. Slow client feedback is the biggest cause — waiting 2+ weeks on one approval adds weeks overall, and decisive clients finish 30–40% faster. Missing content, unshot photos, mid-project scope additions, and too many decision-makers account for most of the rest.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long before my new website shows up on Google?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Indexing usually takes days to a few weeks. Google says some changes take hours while others take months, and advises waiting a few weeks to judge results. Ranking for competitive local terms like 'web design Cumming GA' takes months of consistent SEO work, not days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What do I need to have ready to make my website launch faster?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Your services and prices in writing, real photos of your team and work, existing logo files, domain access, two or three example sites you like, and one person with final approval authority. Handing that over at kickoff routinely cuts weeks off a website build timeline.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        <strong>How long does it take to build a website?</strong> For most small
+        businesses, roughly <strong>2 to 8 weeks</strong> from kickoff to launch
+        with a professional — the range depends on page count and how fast your
+        content shows up. At{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>{" "}
+        serving Forsyth County and North Metro Atlanta, we commit to real dates:
+        the <strong>$997 Startup Special ships in 10 days</strong> and the{" "}
+        <strong>$4,500 Launch Package ships in 4 weeks</strong>.
+      </p>
+      <p>
+        Here&apos;s the part almost nobody tells you up front: the{" "}
+        <em>building</em> is rarely the slow part. Content, photos, and slow
+        feedback rounds are what turn a four-week project into a four-month
+        project.
+      </p>
+      <p>
+        So this article gives you two things — a realistic{" "}
+        <strong>website build timeline</strong>, and the honest list of what
+        makes it slip.
+      </p>
+
+      <h2 id="timeline-table">
+        The short version: website build timeline by project size
+      </h2>
+      <div className="my-8 overflow-x-auto">
+        <table className="w-full min-w-[560px] border-collapse text-left text-[length:var(--text-body)] leading-relaxed">
+          <thead>
+            <tr className="border-b-2 border-[var(--color-neon)]">
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                Project size
+              </th>
+              <th className="py-3 font-semibold text-text-primary">
+                Typical professional timeline
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                1-page site / landing page
+              </td>
+              <td className="py-3 whitespace-nowrap">1&ndash;2 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                5-page small business website
+              </td>
+              <td className="py-3 whitespace-nowrap">4&ndash;8 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                10&ndash;15 page site with blog + integrations
+              </td>
+              <td className="py-3 whitespace-nowrap">6&ndash;10 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Ecommerce store (10&ndash;100 products)
+              </td>
+              <td className="py-3 whitespace-nowrap">8&ndash;16 weeks</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Custom web app
+              </td>
+              <td className="py-3 whitespace-nowrap">4&ndash;6+ months</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Those are industry-wide ranges. Our committed dates sit at the fast end
+        of them, which is the whole point of publishing them.
+      </p>
+
+      <h2 id="from-scratch">
+        How long does it take to build a website from scratch?
+      </h2>
+      <p>
+        <strong>From scratch</strong> means no existing brand, no copy, no
+        photos — you&apos;re starting at zero. That&apos;s the honest scenario
+        for most first-time small business owners, and it&apos;s why timelines
+        stretch.
+      </p>
+      <p>
+        Elementor&apos;s 2026 build-time breakdown puts a simple 1&ndash;5 page
+        brochure site at <strong>1&ndash;2 weeks</strong> with a professional, a
+        5&ndash;15 page small business website at <strong>4&ndash;8 weeks</strong>,
+        ecommerce at <strong>8&ndash;16 weeks</strong>, and a custom web app at{" "}
+        <strong>4&ndash;6+ months</strong>.
+      </p>
+      <p>
+        They also break it into phases, which is a useful way to see where the
+        weeks actually go:
+      </p>
+      <ul>
+        <li>
+          <strong>Strategy and planning:</strong> 1&ndash;2 weeks
+        </li>
+        <li>
+          <strong>Design:</strong> 1&ndash;4 weeks
+        </li>
+        <li>
+          <strong>Development:</strong> 1&ndash;8+ weeks
+        </li>
+        <li>
+          <strong>Content population:</strong> 1&ndash;3 weeks
+        </li>
+        <li>
+          <strong>QA and testing:</strong> 1&ndash;2 weeks
+        </li>
+        <li>
+          <strong>Launch:</strong> 1 day to 1 week
+        </li>
+      </ul>
+      {/* Elementor: independent industry source (published June 29, 2026) confirming the professional build ranges by page count and the phase-by-phase breakdown cited here; used as directional industry data, not a quote for our work */}
+      <p>
+        Read it yourself:{" "}
+        <ExternalLink href="https://elementor.com/blog/how-long-does-it-take-to-build-a-website/">
+          Elementor — How long does it take to build a website?
+        </ExternalLink>
+      </p>
+      <p>
+        Notice that content population is its own phase. Elementor names content
+        preparation as the number-one bottleneck — and after a decade of doing
+        this, we&apos;d agree.
+      </p>
+
+      <h2 id="cumming-timeline">
+        What a website build timeline looks like in Cumming, GA
+      </h2>
+      <p>
+        Big-agency timelines are built around big-agency process: account
+        managers, committee approvals, handoffs between three teams. A solo
+        studio in Cumming, GA skips most of that.
+      </p>
+      <p>Here&apos;s what our two committed builds actually look like week by week.</p>
+      <p>
+        <strong>
+          <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+          — 10 days.
+        </strong>{" "}
+        Logo, brand kit, 100 business cards, 100 flyers, a one-page website,
+        domain, and a full year of hosting. Days 1&ndash;2 are kickoff and brand
+        direction. Days 3&ndash;6 are logo plus page design. Days 7&ndash;9 are
+        build, content, and revisions. Day 10 is launch and print files to the
+        press. It&apos;s fast because the scope is fixed and small — that&apos;s
+        the trade.
+      </p>
+      <p>
+        <strong>
+          <InternalLink href="/services/launch-package">
+            $4,500 Launch Package
+          </InternalLink>{" "}
+          — 4 weeks.
+        </strong>{" "}
+        Logo suite, brand basics, a five-page website, and a 90-day content
+        calendar. Week 1: discovery, sitemap, brand direction. Week 2: logo suite
+        and homepage design. Week 3: remaining pages built, content loaded. Week
+        4: revisions, QA on mobile, launch, plus your content calendar.
+      </p>
+      <p>
+        Two different products, two different jobs. The Startup Special is a
+        fast, budget on-ramp with a one-page site. The Launch Package is the full
+        five-page build. Standalone{" "}
+        <InternalLink href="/services/web-design">web design</InternalLink>{" "}
+        starts around <strong>$1,500</strong>, with site tiers commonly landing
+        at $2,500 / $4,500 / $7,500+ depending on page count and features — full
+        breakdown in our guide to{" "}
+        <InternalLink href="/blog/website-cost-cumming-ga-2026">
+          what a website costs in Cumming, GA
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="one-week">Can a website be built in a week?</h2>
+      <p>
+        Yes — with conditions. A single-page site with copy already written,
+        photos already shot, and one decision-maker who answers same-day can
+        launch in about a week.
+      </p>
+      <p>
+        What can&apos;t happen in a week: a five-page site, from scratch, for a
+        business that hasn&apos;t decided what it sells, with three partners who
+        need to &quot;circle back.&quot;
+      </p>
+      <p>
+        DIY builders promise a weekend launch, and technically they deliver —
+        you&apos;ll have <em>a</em> site. Whether it converts is another
+        question, one we broke down in{" "}
+        <InternalLink href="/blog/custom-website-vs-squarespace">
+          custom website vs. Squarespace
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="why-delays">Why do website projects take so long?</h2>
+      <p>
+        This is the section owners actually need. Delays are almost never the
+        developer sitting idle.
+      </p>
+      <p>
+        <strong>Feedback is the biggest one.</strong> Clique Studios reports that
+        waiting 2+ weeks for a single approval adds weeks to the total timeline,
+        and that{" "}
+        <strong>
+          projects with engaged, decisive clients finish 30&ndash;40% faster
+        </strong>
+        . Same designer, same scope, wildly different calendars.
+      </p>
+      <p>
+        <strong>Content isn&apos;t ready.</strong> Copy, service descriptions,
+        staff bios, real photos of real work. If it doesn&apos;t exist at
+        kickoff, your build pauses while it gets written.
+      </p>
+      <p>
+        <strong>Scope grows mid-project.</strong> &quot;Can we add a booking
+        system? What about a shop?&quot; Every yes resets a phase.
+      </p>
+      <p>
+        <strong>Too many decision-makers.</strong> Three opinions turn a two-day
+        approval into a two-week negotiation.
+      </p>
+      {/* Clique Studios: agency FAQ documenting the concrete causes of website project delays — client feedback lag, unprepared content, mid-project scope expansion — used to support the "why projects slip" section */}
+      <p>
+        One caveat on published agency timelines: Clique lists 8&ndash;12 weeks
+        for a 10&ndash;20 page redesign and 6&ndash;12 months for enterprise.
+        Those are <strong>large corporate redesigns</strong> — not what a Cumming
+        small business pays for or waits for. Read the source:{" "}
+        <ExternalLink href="https://cliquestudios.com/faq/website-redesign-timeline-and-process">
+          Clique Studios — Website redesign timeline and process
+        </ExternalLink>
+        .
+      </p>
+      <p>
+        Picking the right partner up front prevents most of this. Our guide on{" "}
+        <InternalLink href="/blog/how-to-pick-a-web-design-company">
+          how to pick a web design company
+        </InternalLink>{" "}
+        covers the questions that expose a slow process before you sign — and{" "}
+        <InternalLink href="/blog/who-legally-owns-your-website">
+          who legally owns your website
+        </InternalLink>{" "}
+        covers the one that costs people the most later.
+      </p>
+
+      <h2 id="launch-faster">What do you need ready to launch faster?</h2>
+      <p>Want the short timeline? Bring these to kickoff:</p>
+      <ul>
+        <li>
+          <strong>Your services and prices</strong>, written out plainly
+        </li>
+        <li>
+          <strong>Real photos</strong> — your team, your work, your storefront
+          (phone photos beat stock)
+        </li>
+        <li>
+          <strong>Logo files</strong> if you have them, or the budget line for{" "}
+          <InternalLink href="/services/logo-design">logo design</InternalLink>
+        </li>
+        <li>
+          <strong>One decision-maker</strong> with authority to approve
+        </li>
+        <li>
+          <strong>Your domain and any existing logins</strong>
+        </li>
+        <li>
+          <strong>Two or three sites you like</strong>, and why
+        </li>
+      </ul>
+      <p>
+        That&apos;s it. Businesses that hand this over on day one routinely
+        finish weeks ahead of ones that don&apos;t. If your brand itself is the
+        missing piece,{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> usually
+        needs to come first — and if you&apos;re mid-pivot, read{" "}
+        <InternalLink href="/blog/when-and-why-to-rebrand">
+          when and why to rebrand
+        </InternalLink>{" "}
+        before you start a build you&apos;ll redo.
+      </p>
+
+      <h2 id="google-timeline">
+        Built isn&apos;t found: how long before your website shows up on Google?
+      </h2>
+      <p>
+        Launch day is not finish-line day. Being <em>live</em> and being{" "}
+        <em>findable</em> are two different milestones, separated by months.
+      </p>
+      <p>
+        Google&apos;s own SEO Starter Guide is blunt about it: &quot;Some changes
+        might take effect in a few hours, others could take several
+        months,&quot; and Google advises that you &quot;likely want to wait a few
+        weeks to assess whether your work had beneficial effects in Google Search
+        results.&quot;
+      </p>
+      <p>Realistically, for a new small business website:</p>
+      <ul>
+        <li>
+          <strong>Indexing</strong> (Google knows you exist): days to a few weeks
+        </li>
+        <li>
+          <strong>Branded searches</strong> (your business name): usually within
+          weeks
+        </li>
+        <li>
+          <strong>Competitive local terms</strong> like{" "}
+          <em>web design cumming ga</em> or <em>plumber near me</em>: months of
+          consistent work
+        </li>
+      </ul>
+      {/* Google Search Central: the authoritative first-party source on indexing and ranking lag, used to set honest expectations in the "built ≠ found" section */}
+      <p>
+        Source:{" "}
+        <ExternalLink href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">
+          Google Search Central — SEO Starter Guide
+        </ExternalLink>
+        .
+      </p>
+      <p>
+        There&apos;s also a newer layer: AI answers. People now ask ChatGPT and
+        Google&apos;s AI overviews for a recommendation instead of scrolling ten
+        blue links — we covered that shift in{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          Google&apos;s AI is calling your business
+        </InternalLink>
+        . Getting cited by an AI engine takes structured content, real answers,
+        and time.
+      </p>
+      <p>
+        So the honest answer to &quot;how many weeks until my website makes me
+        money&quot; is: <strong>weeks to launch, months to rank.</strong> Budget
+        for both. Our{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>{" "}
+        service handles the SEO/AEO side, and{" "}
+        <InternalLink href="/blog/seo-cumming-ga">
+          SEO in Cumming, GA
+        </InternalLink>{" "}
+        explains the local ranking work in plain English.
+      </p>
+
+      <h2 id="one-roof">
+        Does one shop under one roof actually build faster?
+      </h2>
+      <p>
+        Yes — for scheduling reasons, not marketing ones. The classic small
+        business delay is vendor ping-pong: the logo designer runs late, so the
+        web person can&apos;t start, so the print shop can&apos;t run cards, so
+        your signs miss opening day.
+      </p>
+      <p>
+        At Branding Zombie Designs, logo + website + shirts + signs live under
+        one roof. One designer, one invoice, one text message — no handoffs to
+        wait on. That&apos;s why a 10-day Startup Special is even possible: the
+        logo, the site, and the{" "}
+        <InternalLink href="/services/print-design">print design</InternalLink>{" "}
+        all move on the same calendar.
+      </p>
+      <p>
+        It matters most against a hard date —{" "}
+        <InternalLink href="/industries/trades-contractors">
+          trades and contractors
+        </InternalLink>{" "}
+        opening a service area,{" "}
+        <InternalLink href="/industries/home-services">
+          home services
+        </InternalLink>{" "}
+        companies heading into busy season,{" "}
+        <InternalLink href="/industries/restaurants">restaurants</InternalLink>{" "}
+        with a set opening day.
+      </p>
+      <p>
+        Two things to plan for after launch: your site has about{" "}
+        <InternalLink href="/blog/3-second-rule-website-design">
+          three seconds
+        </InternalLink>{" "}
+        to earn attention, and it needs{" "}
+        <InternalLink href="/blog/website-maintenance-cost">
+          ongoing maintenance
+        </InternalLink>{" "}
+        from roughly $100/month.
+      </p>
+
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        <li>
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            What a website costs in Cumming, GA (2026)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/web-design-cumming-ga-guide">
+            Web design in Cumming, GA — the full guide
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-to-pick-a-web-design-company">
+            How to pick a web design company
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/custom-website-vs-squarespace">
+            Custom website vs. Squarespace
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/7-cs-of-website-design">
+            The 7 C&apos;s of website design
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+            How your website is costing you customers
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/website-maintenance-cost">
+            Website maintenance cost
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/seo-cumming-ga">
+            SEO in Cumming, GA
+          </InternalLink>
+        </li>
+      </ul>
+      <p>
+        Not sure where your current site stands? Grab a{" "}
+        <InternalLink href="/free-site-audit">free site audit</InternalLink> or{" "}
+        <InternalLink href="/services/request-quote">
+          request a quote
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="faq">FAQ: Website Build Timelines in Cumming, GA</h2>
+
+      <h3 id="faq-from-scratch">
+        How long does it take to build a website from scratch?
+      </h3>
+      <p>
+        For most small businesses, 2 to 8 weeks with a professional. A simple
+        1&ndash;5 page brochure site runs 1&ndash;2 weeks; a 5&ndash;15 page
+        small business website runs 4&ndash;8 weeks. Ecommerce takes
+        8&ndash;16 weeks. Starting from scratch adds time mainly because copy and
+        photos don&apos;t exist yet.
+      </p>
+
+      <h3 id="faq-one-week">Can a website be built in a week?</h3>
+      <p>
+        Yes, for a single-page site when your copy and photos are already done
+        and one person approves decisions quickly. Our $997 Startup Special
+        launches a one-page site in 10 days. A five-page site from scratch in one
+        week isn&apos;t realistic — content and revision rounds alone take longer
+        than that.
+      </p>
+
+      <h3 id="faq-five-page">
+        How long does a 5-page small business website take?
+      </h3>
+      <p>
+        Typically 4 to 8 weeks from kickoff to launch. Our $4,500 Launch Package
+        delivers a five-page website, logo suite, brand basics, and a 90-day
+        content calendar in 4 weeks. Larger 10&ndash;20 page corporate redesigns
+        are a different animal and commonly run 8&ndash;12 weeks or more.
+      </p>
+
+      <h3 id="faq-delays">Why do website projects take so long?</h3>
+      <p>
+        Usually not the build. Slow client feedback is the biggest cause —
+        waiting 2+ weeks on one approval adds weeks overall, and decisive clients
+        finish 30&ndash;40% faster. Missing content, unshot photos, mid-project
+        scope additions, and too many decision-makers account for most of the
+        rest.
+      </p>
+
+      <h3 id="faq-google">
+        How long before my new website shows up on Google?
+      </h3>
+      <p>
+        Indexing usually takes days to a few weeks. Google says some changes take
+        hours while others take months, and advises waiting a few weeks to judge
+        results. Ranking for competitive local terms like &apos;web design
+        Cumming GA&apos; takes months of consistent SEO work, not days.
+      </p>
+
+      <h3 id="faq-ready">
+        What do I need to have ready to make my website launch faster?
+      </h3>
+      <p>
+        Your services and prices in writing, real photos of your team and work,
+        existing logo files, domain access, two or three example sites you like,
+        and one person with final approval authority. Handing that over at
+        kickoff routinely cuts weeks off a website build timeline.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Stop letting your launch date shamble along.
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          We give you a date. Then we hit it.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Most website projects don&apos;t die of complexity — they starve
+          waiting on approvals, photos, and three vendors pointing at each other.
+          Ten days for the Startup Special. Four weeks for the Launch Package.
+          One designer, one invoice, no vendor ping-pong. Text Gerry for a
+          timeline on your project, and let&apos;s get you above ground.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, owner and lead designer at Branding Zombie Designs,
+        a bilingual (English/Spanish), Latino-owned graphic + web design studio
+        in Cumming, GA serving Forsyth County and North Metro Atlanta since 2015.
+        He builds logos, websites, signs, and print for local businesses under
+        one roof — one designer, one invoice. Call or text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
   {
     meta: {
@@ -22074,6 +22683,44 @@ export const POSTS: Post[] = [
         "What makes a good logo — the five tests every logo should pass — Branding Zombie Designs",
     },
     Content: WhatMakesAGoodLogoContent,
+  },
+  {
+    meta: {
+      slug: "how-long-does-a-website-take",
+      title:
+        "How Long Does It Take to Build a Website? A Real Timeline for Cumming, GA Small Businesses",
+      seoTitle:
+        "How Long Does It Take to Build a Website? Cumming, GA | Branding Zombie Designs",
+      seoDescription:
+        "Most small business sites take 2-8 weeks. Our Cumming, GA studio ships a 1-page site in 10 days and a 5-page site in 4 weeks. Here's the real timeline.",
+      excerpt:
+        "How long does it take to build a website? For most small businesses, 2-8 weeks — but the building is rarely the slow part. Here's a real week-by-week timeline for Cumming, GA, and what actually causes delays.",
+      keywords: [
+        "how long does it take to build a website",
+        "website build timeline",
+        "how long does it take to build a website from scratch",
+        "how long does a 5-page small business website take",
+        "why do website projects get delayed",
+        "how long before my new website shows up on Google",
+        "web design cumming ga",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-08-17",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "website timeline",
+        "project planning",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-how-long-does-a-website-take.jpg",
+      ogImageAlt:
+        "How long does it take to build a website - real timelines for Cumming, GA small businesses - Branding Zombie Designs",
+    },
+    Content: HowLongWebsiteTakesContent,
   },
 ];
 
