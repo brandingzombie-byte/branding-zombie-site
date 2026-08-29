@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { useInView } from "@/lib/useInView";
 import Section from "@/components/Section";
-import { Warning } from "@/components/icons";
+import { Warning, ArrowUpRight } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import ZombieHand from "@/components/ZombieHand";
 import { HANDS } from "@/data/hands";
@@ -52,23 +52,50 @@ interface StatRow {
 
 const stats: StatRow[] = [
   {
-    numericValue: 75,
+    numericValue: 81,
     suffix: "%",
-    label: "of people judge a business by its website.",
-    source: "Stanford Web Credibility Project",
+    label: "of customers have to trust a brand before they'll even consider buying.",
+    source: "Edelman Trust Barometer",
   },
   {
-    numericValue: 53,
+    numericValue: 23,
     suffix: "%",
-    label: "leave if your site takes over 3 seconds to load.",
-    source: "Google / SOASTA",
+    label: "average revenue lift for brands that show up consistently everywhere.",
+    source: "Marq, State of Brand Consistency",
   },
   {
-    numericValue: 76,
+    numericValue: 80,
     suffix: "%",
     label:
-      "who search a nearby business on their phone visit one within a day. Can they find you?",
-    source: "Google / Think with Google",
+      "better brand recognition from a signature color alone. Would anyone recognize yours?",
+    source: "University of Loyola, Maryland",
+  },
+];
+
+// ── "Get started" band — three equal-weight next steps, replacing the old
+// single-CTA-plus-demoted-text-link pattern now that this section pitches
+// branding/marketing broadly instead of just "your website is slow." ───────
+interface GetStartedOption {
+  title: string;
+  href: string;
+  sub: string;
+}
+
+const getStartedOptions: GetStartedOption[] = [
+  {
+    title: "Brand Checkup Quiz",
+    href: "/brand-checkup",
+    sub: "5-minute self-scoring quiz",
+  },
+  {
+    title: "Free Site Audit",
+    href: "/free-site-audit",
+    sub: "Instant grade in ~60 seconds",
+  },
+  {
+    title: "View Services",
+    href: "#services",
+    sub: "See everything we raise from the dead",
   },
 ];
 
@@ -119,6 +146,7 @@ function StatRowItem({ stat, index }: { stat: StatRow; index: number }) {
 // ── Section ───────────────────────────────────────────────────────────────────
 export default function PainPoints() {
   const { ref: headRef, isInView: headInView } = useInView(0.2);
+  const { ref: ctaRef, isInView: ctaInView } = useInView(0.25);
 
   return (
     <Section theme="light" pad="spacious" className="bg-[var(--color-fog)]">
@@ -175,21 +203,21 @@ export default function PainPoints() {
           className="mt-6 max-w-[22ch] font-[family-name:var(--font-display)] leading-[1.15] tracking-tight text-text-primary"
           style={{ fontSize: "clamp(2rem, 4vw + 0.5rem, 3.25rem)" }}
         >
-          If your website looks like it&apos;s from{" "}
+          A forgettable brand isn&apos;t neutral. It&apos;s{" "}
           <span className="relative inline-block">
-            2016
+            dead
             <span
               aria-hidden
               className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
             />
-          </span>
-          , your customers already noticed.
+          </span>{" "}
+          on arrival.
         </h2>
 
         <p className="measure mt-6 text-[length:var(--text-body)] leading-relaxed text-text-secondary">
-          You&apos;re not losing customers because your product isn&apos;t good.
-          You&apos;re losing them in the seven seconds it takes to load your
-          homepage on a phone.
+          Your work is good. But customers don&apos;t buy the best business —
+          they buy the one they remember and trust. That decision happens
+          before you ever get to say a word.
         </p>
       </div>
 
@@ -220,46 +248,73 @@ export default function PainPoints() {
       </div>
 
       {/* Stats — editorial data spread */}
-      <ul className="mt-4 md:mt-10" aria-label="Industry statistics">
+      <ul className="mt-4 md:mt-10" aria-label="Branding statistics">
         {stats.map((stat, i) => (
           <StatRowItem key={stat.label} stat={stat} index={i} />
         ))}
       </ul>
 
-      {/* Free instant Site Audit — THE primary "free audit" CTA site-wide.
-          The Brand Checkup quiz is intentionally demoted to a secondary text
-          link so the homepage has one next step, not two competing tools. */}
-      <div className="mt-4 flex flex-col items-start gap-5 border-t border-[var(--color-hairline-strong)] pt-10 sm:flex-row sm:items-center sm:justify-between">
-        <div className="max-w-[48ch]">
-          <p className="text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
-            Wondering if this is{" "}
-            <span className="relative inline-block">
-              your
-              <span
-                aria-hidden
-                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[var(--color-neon)]"
-              />
-            </span>{" "}
-            site? The free instant audit grades it in about 60 seconds —
-            instant results, no sales call required.
-          </p>
-          <p className="mt-2 text-[length:var(--text-secondary)] leading-relaxed text-text-secondary">
-            Want the bigger picture instead?{" "}
-            <a
-              href="/brand-checkup"
-              className="font-semibold text-[var(--color-neon-text)] underline underline-offset-2 hover:no-underline"
-            >
-              Take the 5-minute Brand Checkup →
-            </a>
-          </p>
+      {/* Get-started band — three equal-weight next steps (quiz / audit /
+          services) instead of one primary CTA button plus a demoted text
+          link. Different visitors are ready for different next steps, so all
+          three get the same visual weight. */}
+      <div
+        ref={ctaRef}
+        className="mt-4 border-t border-[var(--color-hairline-strong)] pt-10"
+      >
+        <div className="flex items-center gap-3">
+          <span aria-hidden className="h-px w-8 bg-[var(--color-neon-text)]" />
+          <span className="font-mono text-[length:var(--text-caption)] uppercase tracking-[0.22em] text-text-dim">
+            Get started
+          </span>
         </div>
-        <a
-          href="/free-site-audit"
-          role="button"
-          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--color-text-primary)] px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-cloud)] transition-colors hover:bg-[var(--color-neon-text)]"
-        >
-          Get my free site audit →
-        </a>
+        <p className="mt-4 max-w-[48ch] text-[length:var(--text-lead)] font-medium leading-snug text-text-primary">
+          Three ways to un-dead your brand. Pick your poison.
+        </p>
+
+        <div className="mt-8 grid grid-cols-1 border-2 border-[var(--color-text-primary)] sm:grid-cols-3">
+          {getStartedOptions.map((option, i) => (
+            <div
+              key={option.title}
+              className={cn(
+                "border-[var(--color-text-primary)]",
+                i > 0 && "border-t-2 sm:border-t-0 sm:border-l-2",
+                "transition-[opacity,transform] duration-[var(--duration-slower)] ease-[var(--ease-out-expo)] motion-reduce:transition-none",
+                ctaInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-4",
+              )}
+              style={{ transitionDelay: `${i * 50}ms` }}
+            >
+              <a
+                href={option.href}
+                className={cn(
+                  "group flex h-full min-h-[11rem] flex-col justify-between gap-6 p-6 sm:p-7",
+                  "transition-[background-color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)]",
+                  "hover:bg-[var(--color-neon)] active:scale-[0.99]",
+                  "motion-reduce:transition-none motion-reduce:active:scale-100",
+                )}
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border-2 border-[var(--color-text-primary)] transition-[background-color] duration-[var(--duration-base)] group-hover:bg-[var(--color-text-primary)]">
+                  <ArrowUpRight
+                    aria-hidden
+                    size={18}
+                    weight="bold"
+                    className="text-text-primary transition-[color,transform] duration-[var(--duration-base)] ease-[var(--ease-out-quart)] group-hover:text-[var(--color-neon)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.05] tracking-tight text-text-primary">
+                    {option.title}
+                  </h3>
+                  <p className="mt-2 text-[length:var(--text-caption)] uppercase tracking-[0.16em] text-text-dim transition-colors duration-[var(--duration-base)] group-hover:text-text-primary">
+                    {option.sub}
+                  </p>
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );
