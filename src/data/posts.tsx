@@ -21403,6 +21403,638 @@ function BrandColorPsychologyContent() {
   );
 }
 
+function EmailMarketingSmallBusinessContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is email marketing still worth it for a small business in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Email is the only audience you actually own — no algorithm decides who sees it, and nobody can suspend your account and take your list with them. For a small business in Cumming, GA, a list of 300 real local customers usually outperforms a few thousand passive social followers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How often should I email my customers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Twice a month is the sweet spot for most local businesses. It's frequent enough that people remember who you are, and rare enough that you never run out of things to say. Start there, stay consistent for 90 days, then adjust based on opens, clicks, and unsubscribes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What should I actually send in a small business newsletter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Send what you'd tell a regular customer standing at your counter: what's new, what's on special, a seasonal reminder, a quick tip, or a job you just finished with photos. One idea per email, one clear call to action, and keep it under 200 words.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does email marketing cost per month for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Entry plans from the major providers generally start somewhere around $12–$20 a month and scale with list size, but pricing changes often, so check current rates before you commit. Your real cost is the time spent writing and designing. Done-for-you email marketing from Branding Zombie Designs starts at $499/month with a flat $350 setup, month-to-month.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do my emails go to the spam folder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually authentication. Google requires every sender to set up SPF or DKIM on their sending domain and keep spam complaints below 0.3%. Sending from a real email platform on your own domain, with a clear unsubscribe link and a list of people who opted in, fixes most of it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get people to sign up for my email list?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Give them a reason and put the ask where they already are: a form on your website, a QR code on the counter, table tent, or invoice, and a line on the receipt. Offer something small — 10% off the next visit, or first look at new products.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <p>
+        Getting started with <strong>email marketing for small business</strong>{" "}
+        owners in <strong>Cumming, GA</strong> comes down to three moves: pick
+        one email platform, put a signup offer where your customers already are
+        (your website, your counter, your invoice, your receipt), and send one
+        short, useful email two to four times a month. That&apos;s it. At{" "}
+        <strong>
+          Branding Zombie Designs, a graphic + web design studio in Cumming, GA
+        </strong>
+        , we set this up for Forsyth County restaurants, trades contractors,
+        salons, and CPG brands all the time — and the businesses that win
+        aren&apos;t the clever ones, they&apos;re the consistent ones.
+      </p>
+
+      <p>
+        You do not need a funnel, an automation map, or a 12-week content
+        calendar to start. You need one platform, one signup offer, and one
+        email on the calendar.
+      </p>
+
+      <h2 id="does-it-work">
+        Does email marketing still work, or is it dead?
+      </h2>
+      <p>
+        It works, and here&apos;s the honest reason why: it&apos;s the only
+        marketing asset you actually own.
+      </p>
+      <p>
+        Your Facebook page belongs to Meta. Your Google ranking belongs to
+        Google, and Google keeps changing what &quot;ranking&quot; even means —{" "}
+        <InternalLink href="/blog/google-ai-is-calling-your-business">
+          we wrote about AI answer engines rewriting local search here
+        </InternalLink>
+        . Your Instagram following can vanish with one account suspension you
+        had nothing to do with.
+      </p>
+      <p>
+        A list of email addresses sits in a spreadsheet you can export. No
+        algorithm decides who sees it.
+      </p>
+      <p>
+        That&apos;s the whole pitch. Not a hockey-stick ROI stat — ownership.
+        For a small business in <strong>Cumming, GA</strong> with 300 real local
+        customers on a list, that&apos;s 300 people you can reach on a Tuesday
+        when the schedule is soft.
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-body)] italic leading-relaxed text-text-primary">
+          Aside: social platforms are rented land. Email is the plot you
+          actually bought. Build on the one nobody can evict you from.
+        </p>
+      </aside>
+
+      <h2 id="how-to-start">
+        Email marketing for small business: how do I start in Cumming, GA?
+      </h2>
+      <p>Four steps. Do them in this order and don&apos;t skip ahead.</p>
+      <ol>
+        <li>
+          <strong>Pick one platform.</strong> Mailchimp, Constant Contact,
+          Klaviyo, Brevo, MailerLite — they all work. The best one is the one
+          you&apos;ll actually log into. Do not send marketing email by
+          BCC&apos;ing 200 people from your Gmail. More on why in a second.
+        </li>
+        <li>
+          <strong>Connect it to your own domain.</strong> Send as
+          you@yourbusiness.com, not yourbusiness@gmail.com. This is a
+          deliverability thing and a credibility thing at the same time. If you
+          don&apos;t have a business domain yet, that&apos;s part of what comes
+          with a real site — see{" "}
+          <InternalLink href="/services/web-design">web design</InternalLink> or
+          the{" "}
+          <InternalLink href="/startup-special">
+            $997 Startup Special
+          </InternalLink>
+          , which includes a 1-page site with domain and a year of hosting.
+        </li>
+        <li>
+          <strong>Put the signup ask where people already are.</strong> Website
+          form, yes. But also the counter, the invoice, the estimate, the
+          receipt, and a QR code on a table tent, yard sign, door hanger, or
+          truck door. This is the part most small businesses skip, and it&apos;s
+          the part that fills the list fastest.
+        </li>
+        <li>
+          <strong>Send your first email this week.</strong> Not the perfect one.
+          The first one.
+        </li>
+      </ol>
+      {/* SBA is a U.S. federal agency and a neutral, non-vendor primary source for permission-based list building, opt-out, incentives, and A/B testing — safer to cite than a marketing blog */}
+      <p>
+        The U.S. Small Business Administration&apos;s{" "}
+        <ExternalLink href="https://www.sba.gov/blog/email-marketing-basics-small-business">
+          email marketing basics guide
+        </ExternalLink>{" "}
+        makes the same core points: build the list with permission, always give
+        people a way to opt out, incentivize signups with something like a
+        discount code, and A/B test your subject lines instead of guessing.
+      </p>
+
+      <h2 id="what-to-send">
+        What do I even send? (Real examples for Forsyth County businesses)
+      </h2>
+      <p>
+        This is the question that stalls everyone. &quot;What do I even
+        send&quot; is the actual phrasing people type, and the actual answer is
+        boring: send what you&apos;d tell a regular customer standing in front
+        of you.
+      </p>
+      <ul>
+        <li>
+          <strong>Restaurant or coffee shop:</strong> this week&apos;s special, a
+          new menu item, a holiday hours heads-up, a Sunday brunch reminder. See{" "}
+          <InternalLink href="/industries/restaurants">restaurants</InternalLink>
+          .
+        </li>
+        <li>
+          <strong>HVAC, plumbing, electrical, or any trade:</strong> a seasonal
+          maintenance reminder, &quot;book your tune-up before the first
+          freeze,&quot; a before/after from a recent job. See{" "}
+          <InternalLink href="/industries/trades-contractors">
+            trades &amp; contractors
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Salon or barbershop:</strong> openings this week, a new
+          stylist, a product you just started carrying. See{" "}
+          <InternalLink href="/industries/salons-barbershops">
+            salons &amp; barbershops
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Gym or studio:</strong> a challenge starting Monday, a class
+          schedule change, a member spotlight. See{" "}
+          <InternalLink href="/industries/gyms-fitness">
+            gyms &amp; fitness
+          </InternalLink>
+          .
+        </li>
+        <li>
+          <strong>Supplement or CPG brand:</strong> a new flavor drop, a restock
+          alert, a wholesale account announcement. See{" "}
+          <InternalLink href="/industries/supplement-cpg-brands">
+            supplement &amp; CPG brands
+          </InternalLink>
+          .
+        </li>
+      </ul>
+      <p>
+        The rules for all of them are the same: one idea per email, one clear
+        call to action, under 200 words, and a subject line that says what&apos;s
+        inside instead of trying to be witty.
+      </p>
+      <p>
+        If your brand looks different in every email than it does on your sign,
+        your menu, and your truck, you have a bigger problem than open rates.
+        That&apos;s a{" "}
+        <InternalLink href="/services/branding">branding</InternalLink> and{" "}
+        <InternalLink href="/services/logo-design">logo design</InternalLink>{" "}
+        conversation, not an email conversation.
+      </p>
+
+      <h2 id="how-often">How often should I email my customers?</h2>
+      <p>Twice a month. Start there.</p>
+      <p>
+        That&apos;s frequent enough that people remember who you are and rare
+        enough that you never run out of things to say. Weekly is fine if you
+        have real news weekly. Once a quarter is basically the same as not doing
+        it, because people forget they signed up and mark you as spam.
+      </p>
+      <p>
+        Pick two dates. Put them on the calendar as recurring appointments.
+        Treat them like a job you booked.
+      </p>
+      <p>
+        The honest tradeoff: email works because it&apos;s boring and
+        consistent, not because it&apos;s clever. The business that sends a
+        mediocre email on the 1st and the 15th for a year beats the business
+        that spends three months designing the perfect newsletter and never
+        ships it.
+      </p>
+
+      <h2 id="build-list">
+        How do I build an email list when most of my customers walk in the door?
+      </h2>
+      <p>
+        Online forms only catch online people. Most <strong>Cumming, GA</strong>{" "}
+        and Forsyth County businesses collect the majority of their emails
+        offline, and almost nobody sets that up on purpose.
+      </p>
+      <p>Places the ask actually belongs:</p>
+      <ul>
+        <li>
+          A short form on your homepage and your contact page — not buried in
+          the footer.
+        </li>
+        <li>
+          The point of sale: &quot;Want 10% off next time? I&apos;ll text or
+          email you the code.&quot;
+        </li>
+        <li>
+          The invoice and the estimate. Trades contractors: this is your
+          highest-converting spot and it&apos;s free.
+        </li>
+        <li>
+          A QR code on a table tent, counter card, door hanger, yard sign, or
+          the door of your truck.
+        </li>
+        <li>The receipt, digital or printed.</li>
+      </ul>
+      <p>
+        That last cluster is where design and print stop being decoration and
+        start being lead gen. If you need table tents, counter cards, door
+        hangers, or vehicle lettering with a scannable code on them, that&apos;s{" "}
+        <InternalLink href="/services/print-design">print design</InternalLink>{" "}
+        — and it&apos;s the cheapest list-building tool most local businesses
+        never buy.
+      </p>
+      <p>
+        Give people a reason to hand over the address. &quot;Join our
+        newsletter&quot; converts poorly. &quot;10% off your next visit&quot; or
+        &quot;first look at new drops&quot; converts.
+      </p>
+      <p>
+        And be honest about what they&apos;re signing up for. Permission-based
+        lists are the entire game, both legally and practically.
+      </p>
+
+      <h2 id="spam">Why do my emails go to spam?</h2>
+      <p>
+        Usually because of authentication, not because of what you wrote.
+      </p>
+      {/* Google's own sender guidelines — primary source for the SPF/DKIM requirement, the TLS/DNS requirements, the 0.3% spam-rate threshold, and the 5,000/day bulk-sender definition. Not a third-party summary */}
+      <p>
+        Google&apos;s{" "}
+        <ExternalLink href="https://support.google.com/a/answer/81126">
+          email sender guidelines
+        </ExternalLink>{" "}
+        require <strong>all</strong> senders to Gmail — not just big ones — to
+        set up SPF or DKIM authentication on their sending domain, use a TLS
+        connection, keep valid forward and reverse DNS records, and keep spam
+        complaint rates below 0.3% (Google says to aim under 0.10%). Senders
+        pushing 5,000+ messages a day to Gmail count as &quot;bulk senders&quot;
+        and face stricter rules: both SPF <strong>and</strong> DKIM, DMARC with
+        domain alignment, and one-click unsubscribe headers.
+      </p>
+      <p>
+        Here&apos;s the practical translation for a local business: you are
+        almost certainly <em>not</em> a bulk sender. But the authentication and
+        spam-rate rules apply to everyone anyway.
+      </p>
+      <p>
+        Which is exactly why blasting BCC from a personal Gmail is a bad idea
+        and a real email platform on your own domain is a good one. The platform
+        handles SPF, DKIM, unsubscribe headers, and complaint tracking for you.
+        Your Gmail account does not.
+      </p>
+      <p>
+        If DNS records aren&apos;t your idea of a good weekend, this is the
+        first thing we set up on every{" "}
+        <InternalLink href="/services/email-marketing">
+          email marketing
+        </InternalLink>{" "}
+        engagement — authentication before the first campaign ever goes out.
+      </p>
+      <p>
+        Other common causes: buying a list (don&apos;t), emailing people who
+        haven&apos;t heard from you in two years, and using a subject line that
+        reads like a scam.
+      </p>
+
+      <h2 id="rules">What rules do I have to follow?</h2>
+      {/* FTC is the federal agency that enforces CAN-SPAM — the authoritative primary source for the header/subject-line, physical-address, opt-out, and third-party-liability requirements */}
+      <p>
+        Commercial email in the U.S. is governed by CAN-SPAM, and the FTC&apos;s{" "}
+        <ExternalLink href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business">
+          compliance guide for business
+        </ExternalLink>{" "}
+        is short enough to read in one sitting.
+      </p>
+      <p>The short version:</p>
+      <ul>
+        <li>
+          Don&apos;t use false or misleading header information (your
+          &quot;From,&quot; &quot;To,&quot; and routing info must be accurate).
+        </li>
+        <li>Don&apos;t use deceptive subject lines.</li>
+        <li>Identify the message as an ad.</li>
+        <li>Include a valid physical postal address.</li>
+        <li>
+          Give a clear, obvious way to opt out — and honor it promptly.
+        </li>
+        <li>
+          You stay legally responsible even if you hire someone else to send on
+          your behalf.
+        </li>
+      </ul>
+      <p>
+        That last bullet matters if you&apos;re hiring an agency. It&apos;s your
+        business on the line, not theirs.
+      </p>
+
+      <h2 id="email-vs-social">
+        Email marketing vs social media: which should a small business do first?
+      </h2>
+      <p>Do both, but understand what each one is for.</p>
+      <p>
+        Social media is reach — it&apos;s how strangers find you. Email is depth
+        — it&apos;s how people who already like you keep buying. Social gets you
+        the address; email does the work after that.
+      </p>
+      <p>
+        If your budget only covers one right now, start with the one that
+        compounds. Social followers reset every time the algorithm changes. An
+        email list only grows.
+      </p>
+      <p>
+        That said, most local businesses in{" "}
+        <strong>North Metro Atlanta</strong> run both, and the two feed each
+        other: post the offer on social, capture the email, nurture by email. If
+        you&apos;re weighing budgets, our breakdown of{" "}
+        <InternalLink href="/blog/social-media-management-cost-cumming">
+          social media management cost in Cumming
+        </InternalLink>{" "}
+        and the{" "}
+        <InternalLink href="/services/social-media">social media</InternalLink>{" "}
+        service page will help. And if search visibility is the missing piece,{" "}
+        <InternalLink href="/services/digital-marketing">
+          digital marketing
+        </InternalLink>{" "}
+        and{" "}
+        <InternalLink href="/blog/how-to-get-more-google-reviews">
+          getting more Google reviews
+        </InternalLink>{" "}
+        are the other two legs of the stool.
+      </p>
+
+      <h2 id="cost">How much does email marketing cost per month?</h2>
+      <p>Two costs: software and time.</p>
+      <p>
+        <strong>Software:</strong> entry-level plans from the major providers
+        generally start somewhere in the <strong>$12–$20/month</strong> range
+        and scale up with your list size. Most have a free tier for small lists.
+        Provider pricing changes regularly, so check current rates on their sites
+        before you commit — don&apos;t take a blog post&apos;s word for it,
+        including this one.
+      </p>
+      <p>
+        <strong>Time:</strong> this is the real cost. Two emails a month,
+        written and designed well, is a few hours of work. That&apos;s the part
+        most owners underestimate and the part that quietly kills the habit by
+        month three.
+      </p>
+      <p>
+        <strong>Done-for-you:</strong> if you&apos;d rather not own the habit
+        yourself, our{" "}
+        <InternalLink href="/services/email-marketing">
+          email marketing
+        </InternalLink>{" "}
+        service starts at <strong>$499/month</strong>, month-to-month, with a
+        flat <strong>$350 one-time setup</strong> (platform, template, and a
+        welcome series). That covers campaign design, copywriting, automation,
+        and reporting on Klaviyo, Mailchimp, or Resend — and deliverability
+        (SPF, DKIM, DMARC) gets configured as step one, so the spam problem
+        above is handled before the first send. You own the list and every
+        subscriber on it, always.
+      </p>
+      <p>
+        Not sure which side of that line you&apos;re on?{" "}
+        <InternalLink href="/services/request-quote">
+          Request a quote
+        </InternalLink>{" "}
+        or text Gerry at <strong>{PHONE_DISPLAY}</strong> and we&apos;ll tell
+        you honestly whether you should just do it yourself.
+      </p>
+      <p>
+        If you&apos;re at the very beginning — no logo, no site, no list — the{" "}
+        <InternalLink href="/startup-special">$997 Startup Special</InternalLink>{" "}
+        covers logo, brand kit, 100 business cards, 100 flyers, and a 1-page site
+        with domain and a year of hosting in 10 days. If you want the full build
+        with a 5-page site and a 90-day content calendar, that&apos;s the{" "}
+        <InternalLink href="/services/launch-package">
+          $4,500 Launch Package
+        </InternalLink>
+        .
+      </p>
+
+      <h2 id="first-30-days">A realistic first 30 days</h2>
+      <ul>
+        <li>
+          <strong>Week 1:</strong> pick a platform, connect your domain, add a
+          signup form to your website.
+        </li>
+        <li>
+          <strong>Week 2:</strong> put the ask offline — counter card, invoice
+          line, QR code, receipt.
+        </li>
+        <li>
+          <strong>Week 3:</strong> send email #1. Announce something. Keep it
+          under 200 words.
+        </li>
+        <li>
+          <strong>Week 4:</strong> send email #2. Look at opens, clicks, and
+          unsubscribes. Adjust one thing.
+        </li>
+      </ul>
+      <p>
+        That&apos;s it. Do that for six months and you&apos;ll have something no
+        platform can take away from you.
+      </p>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3 id="faq-still-worth-it">
+        Is email marketing still worth it for a small business in 2026?
+      </h3>
+      <p>
+        Yes. Email is the only audience you actually own — no algorithm decides
+        who sees it, and nobody can suspend your account and take your list with
+        them. For a small business in Cumming, GA, a list of 300 real local
+        customers usually outperforms a few thousand passive social followers.
+      </p>
+
+      <h3 id="faq-how-often">How often should I email my customers?</h3>
+      <p>
+        Twice a month is the sweet spot for most local businesses. It&apos;s
+        frequent enough that people remember who you are, and rare enough that
+        you never run out of things to say. Start there, stay consistent for 90
+        days, then adjust based on opens, clicks, and unsubscribes.
+      </p>
+
+      <h3 id="faq-what-to-send">
+        What should I actually send in a small business newsletter?
+      </h3>
+      <p>
+        Send what you&apos;d tell a regular customer standing at your counter:
+        what&apos;s new, what&apos;s on special, a seasonal reminder, a quick
+        tip, or a job you just finished with photos. One idea per email, one
+        clear call to action, and keep it under 200 words.
+      </p>
+
+      <h3 id="faq-cost">
+        How much does email marketing cost per month for a small business?
+      </h3>
+      <p>
+        Entry plans from the major providers generally start somewhere around
+        $12–$20 a month and scale with list size, but pricing changes often, so
+        check current rates before you commit. Your real cost is the time spent
+        writing and designing. Done-for-you email marketing from Branding Zombie
+        Designs starts at $499/month with a flat $350 setup, month-to-month.
+      </p>
+
+      <h3 id="faq-spam">Why do my emails go to the spam folder?</h3>
+      <p>
+        Usually authentication. Google requires every sender to set up SPF or
+        DKIM on their sending domain and keep spam complaints below 0.3%.
+        Sending from a real email platform on your own domain, with a clear
+        unsubscribe link and a list of people who opted in, fixes most of it.
+      </p>
+
+      <h3 id="faq-signups">How do I get people to sign up for my email list?</h3>
+      <p>
+        Give them a reason and put the ask where they already are: a form on
+        your website, a QR code on the counter, table tent, or invoice, and a
+        line on the receipt. Offer something small — 10% off the next visit, or
+        first look at new products.
+      </p>
+
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        <li>
+          <InternalLink href="/services/email-marketing">
+            Email marketing, done for you (from $499/mo)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/google-ai-is-calling-your-business">
+            Google AI is calling your business
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/website-cost-cumming-ga-2026">
+            What a website costs in Cumming, GA (2026)
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-your-website-is-costing-you-customers">
+            How your website is costing you customers
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/how-to-get-more-google-reviews">
+            How to get more Google reviews
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/blog/marketing-plan-cumming-ga-business">
+            Building a marketing plan for a Cumming, GA business
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/services/print-design">
+            Print design: table tents, door hangers, signage
+          </InternalLink>
+        </li>
+        <li>
+          <InternalLink href="/free-site-audit">Free site audit</InternalLink>
+        </li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Stop letting the algorithm decide who hears from you.
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Let&apos;s build you a list nobody can take away.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Signup forms on the site, QR codes on the print, and a brand that
+          looks the same everywhere it shows up. Whether you want it{" "}
+          <a
+            href="/services/email-marketing"
+            className="font-medium text-[var(--color-toxic-text)] underline decoration-[var(--color-toxic)]/50 decoration-2 underline-offset-4 hover:decoration-[var(--color-toxic)]"
+          >
+            done for you
+          </a>{" "}
+          or just want the{" "}
+          <a
+            href="/free-site-audit"
+            className="font-medium text-[var(--color-toxic-text)] underline decoration-[var(--color-toxic)]/50 decoration-2 underline-offset-4 hover:decoration-[var(--color-toxic)]"
+          >
+            free site audit
+          </a>{" "}
+          that tells you exactly where your signup form should live,{" "}
+          <strong>text or call Gerry at {PHONE_DISPLAY}</strong>.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Text Gerry {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        By Gerry Betancourt, owner and lead designer at Branding Zombie Designs,
+        a bilingual (English/Spanish), Latino-owned graphic + web design studio
+        in Cumming, GA serving Forsyth County and North Metro Atlanta. Solo
+        owner-operator since 2015, he builds logos, websites, signs, and print
+        for local businesses under one roof — one designer, one invoice. Call or
+        text {PHONE_DISPLAY}.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
   {
     meta: {
@@ -23447,6 +24079,44 @@ export const POSTS: Post[] = [
         "Brand color psychology - what actually makes people buy - Branding Zombie Designs, Cumming GA",
     },
     Content: BrandColorPsychologyContent,
+  },
+  {
+    meta: {
+      slug: "email-marketing-for-small-business",
+      title:
+        "Email Marketing for Small Business: A Simple Starter Playbook for Cumming, GA Owners",
+      seoTitle:
+        "Email Marketing for Small Business: Cumming, GA Playbook | Branding Zombie Designs",
+      seoDescription:
+        "Email marketing for small business in Cumming, GA, made simple: pick one platform, add a signup offer where customers already are, and send twice a month.",
+      excerpt:
+        "Pick one platform, put a signup offer where your customers already are, and send one short email twice a month. A Cumming, GA designer on what to send, how often, why your email lands in spam, and what it really costs.",
+      keywords: [
+        "email marketing for small business",
+        "how often should I email my customers",
+        "what to send in a small business newsletter",
+        "build an email list",
+        "why do my emails go to spam",
+        "email marketing cost per month",
+        "small business web design",
+        "graphic design cumming",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-08-29",
+      readingTimeMinutes: 8,
+      category: "Marketing",
+      tags: [
+        "email marketing",
+        "small business",
+        "marketing",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-email-marketing-for-small-business.jpg",
+      ogImageAlt:
+        "Email marketing for small business - the list nobody can take from you - Branding Zombie Designs, Cumming GA",
+    },
+    Content: EmailMarketingSmallBusinessContent,
   },
 ];
 
