@@ -134,6 +134,9 @@ export default function PlayPage() {
               <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.3em] text-[var(--color-toxic-text)]">
                 Free browser game · No download · No signup
               </p>
+              <p className="mx-auto mt-3 inline-block border-2 border-[var(--color-toxic-text)] px-3 py-1 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-[var(--color-toxic-text)]">
+                New update: power-ups, spam flyers, slime &amp; the night shift
+              </p>
               <h1 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] leading-[1.02] text-[var(--color-dark-text-primary)]">
                 The Branding Zombie
                 <span className="block text-[length:var(--text-h3)] text-[var(--color-dark-text-dim)]">
