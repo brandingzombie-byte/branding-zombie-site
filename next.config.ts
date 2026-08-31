@@ -31,6 +31,14 @@ const nextConfig: NextConfig = {
         destination: "/services/logo-design",
         permanent: true,
       },
+      // digital-marketing → seo rename (Aug 2026): GSC showed ~2,000
+      // impressions of "seo cumming" queries with no /services/seo page.
+      // :path* also matches the bare URL and covers the city sub-pages.
+      {
+        source: "/services/digital-marketing/:path*",
+        destination: "/services/seo/:path*",
+        permanent: true,
+      },
       {
         source: "/services/print-services",
         destination: "/services/print-design",

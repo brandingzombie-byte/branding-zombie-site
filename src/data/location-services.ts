@@ -229,7 +229,7 @@ const WEB_DESIGN: LocationService = {
       a: "We write it. Clear, on-brand page copy is included in the build — you're not handed an empty template. We'll interview you, pull from what you already have, and write pages that actually sell. You review and approve before launch.",
     },
   ],
-  relatedServices: ["logo-design", "branding", "digital-marketing", "ecommerce"],
+  relatedServices: ["logo-design", "branding", "seo", "ecommerce"],
   schema: {
     serviceType: "Web design and development",
     category: "Web Design",
@@ -403,7 +403,7 @@ const BRANDING: LocationService = {
 // ─── Local SEO & Digital Marketing — the most fleshed-out service (recurring,
 // high-ticket; built to out-depth competitors who stop at basic local SEO). ──
 const SEO: LocationService = {
-  slug: "digital-marketing",
+  slug: "seo",
   label: "Local SEO",
   noun: "search presence",
   metaTagline: "Local SEO & AI Search",
@@ -869,7 +869,7 @@ const ECOMMERCE: LocationService = {
       a: "Yes. You own the store and can run it yourself, and we offer ongoing optimization, email flows, and care plans month-to-month when you want a hand growing it.",
     },
   ],
-  relatedServices: ["web-design", "branding", "digital-marketing", "social-media"],
+  relatedServices: ["web-design", "branding", "seo", "social-media"],
   schema: {
     serviceType: "Ecommerce web design and development",
     category: "Ecommerce",
@@ -879,7 +879,7 @@ const ECOMMERCE: LocationService = {
 export const LOCATION_SERVICES: Partial<Record<ServiceSlug, LocationService>> = {
   "web-design": WEB_DESIGN,
   branding: BRANDING,
-  "digital-marketing": SEO,
+  "seo": SEO,
   "print-design": PRINT_DESIGN,
   "logo-design": LOGO_DESIGN,
   ecommerce: ECOMMERCE,

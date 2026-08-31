@@ -40,7 +40,7 @@ function matches(item: PortfolioItem, cat: CatId): boolean {
       return has(services, ["web-design", "ecommerce"]);
     case "social":
       return (
-        has(services, ["social-media", "digital-marketing"]) ||
+        has(services, ["social-media", "seo"]) ||
         has(formats, ["lifestyle", "campaign", "banner", "social-creative"])
       );
   }

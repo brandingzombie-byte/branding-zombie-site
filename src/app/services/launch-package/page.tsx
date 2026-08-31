@@ -120,7 +120,7 @@ const serviceSchema = {
         itemOffered: {
           "@type": "Service",
           name: "Google Business Profile Setup + Basic SEO",
-          url: `${SITE_URL}/services/digital-marketing`,
+          url: `${SITE_URL}/services/seo`,
         },
       },
     ],

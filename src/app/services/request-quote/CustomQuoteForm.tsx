@@ -27,7 +27,7 @@ const SERVICE_OPTIONS: { slug: string; label: string }[] = [
   { slug: "ecommerce", label: "Ecommerce" },
   { slug: "print-design", label: "Print Design" },
   { slug: "social-media", label: "Social Media" },
-  { slug: "digital-marketing", label: "Digital Marketing" },
+  { slug: "seo", label: "SEO & Digital Marketing" },
   { slug: "ai-workflows", label: "AI Workflows" },
   { slug: "launch-package", label: "Local Business Kit" },
   { slug: "not-sure", label: "Not sure / mix" },
