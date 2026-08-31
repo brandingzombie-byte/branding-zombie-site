@@ -12,7 +12,7 @@ const services = [
   { label: "Social Media", href: "/services/social-media" },
   { label: "Email Marketing", href: "/services/email-marketing" },
   { label: "Shopify Ecommerce", href: "/services/ecommerce" },
-  { label: "SEO & Digital Marketing", href: "/services/digital-marketing" },
+  { label: "SEO & Digital Marketing", href: "/services/seo" },
   { label: "AI Workflows", href: "/services/ai-workflows" },
 ];
 

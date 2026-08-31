@@ -129,7 +129,7 @@ export const INDUSTRIES: Industry[] = [
       "print-design",
       "web-design",
       "branding",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "Your brand, everywhere it needs to be",
@@ -560,7 +560,7 @@ export const INDUSTRIES: Industry[] = [
       "ecommerce",
       "web-design",
       "social-media",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "The work, in the wild",
@@ -708,7 +708,7 @@ export const INDUSTRIES: Industry[] = [
       "web-design",
       "print-design",
       "social-media",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "The brand, in the building and on the feed",
@@ -854,7 +854,7 @@ export const INDUSTRIES: Industry[] = [
       "branding",
       "web-design",
       "print-design",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "What it looks like out on the lot",
@@ -993,7 +993,7 @@ export const INDUSTRIES: Industry[] = [
       "branding",
       "web-design",
       "print-design",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "The brand the whole street sees",
@@ -1140,7 +1140,7 @@ export const INDUSTRIES: Industry[] = [
       "branding",
       "web-design",
       "print-design",
-      "digital-marketing",
+      "seo",
     ],
 
     showcaseTitle: "Care that looks the part",
@@ -1282,7 +1282,7 @@ export const INDUSTRIES: Industry[] = [
       "ecommerce",
       "web-design",
       "branding",
-      "digital-marketing",
+      "seo",
       "social-media",
       "logo-design",
     ],

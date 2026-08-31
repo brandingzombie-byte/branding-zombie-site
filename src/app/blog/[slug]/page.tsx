@@ -154,7 +154,7 @@ export default async function BlogPostPage({
                 </a>{" "}
                 and{" "}
                 <a
-                  href="/services/digital-marketing"
+                  href="/services/seo"
                   className="font-medium text-[var(--color-neon-text)] underline decoration-[var(--color-neon)]/40 decoration-2 underline-offset-4 hover:decoration-[var(--color-neon)]"
                 >
                   local SEO

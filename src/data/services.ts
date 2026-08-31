@@ -15,7 +15,7 @@ export type ServiceSlug =
   | "print-design"
   | "social-media"
   | "email-marketing"
-  | "digital-marketing"
+  | "seo"
   | "ai-workflows"
   | "launch-package";
 
@@ -45,6 +45,15 @@ export interface ServiceHero {
   ctaHref: string;
   heroImage: { src: string; alt: string };
   microProof: string;
+  /** Optional real-project screenshot plate rendered under the hero form —
+   *  "here's the latest live build" proof with an outbound link. */
+  proofImage?: {
+    src: string;
+    alt: string;
+    href: string;
+    label: string;
+    note?: string;
+  };
 }
 
 export interface PainPoint {
@@ -120,6 +129,10 @@ export interface Service {
   tagline: string;
   iconSvg: string;
   themeAccent: ThemeAccent;
+  /** Optional WebGL texture over the hero (lazy-loaded, reduced-motion aware). */
+  heroFx?: "glitter";
+  /** Render the page-length parallax zombie-hand layer (see ServicePageClient). */
+  edgeHands?: boolean;
   homeCardPrice: string;
   homeCardDescription: string;
   hook?: string;              // one-line value prop per spec Section 5.A
@@ -1583,7 +1596,7 @@ export const SERVICES: Service[] = [
         "Book a free 15-minute call. We'll do a straight-up list autopsy — what you have, what it's worth, and what we'd send first — and give you an honest plan either way.",
       ctaLabel: "Book a free 15-min call",
     },
-    related: ["social-media", "digital-marketing", "ecommerce"],
+    related: ["social-media", "seo", "ecommerce"],
     meta: {
       seoTitle:
         "Email Marketing for Small Businesses in Cumming, GA — From $499/mo",
@@ -2444,13 +2457,17 @@ export const SERVICES: Service[] = [
   },
 
   // ════════════════════════════════════════════════════════════════════════
-  // DIGITAL MARKETING / SEO
+  // SEO / DIGITAL MARKETING (slug renamed digital-marketing → seo; the old
+  // URL 308s here. GSC showed 42 "seo cumming" queries / ~2,000 impressions
+  // landing on a blog post because no /services/seo page existed.)
   // ════════════════════════════════════════════════════════════════════════
   {
-    slug: "digital-marketing",
-    name: "Digital Marketing",
+    slug: "seo",
+    name: "SEO & Digital Marketing",
     shortName: "SEO",
     tagline: "Get found on Google — and on ChatGPT",
+    heroFx: "glitter",
+    edgeHands: true,
     iconSvg: "/assets/SVG/ai-workflows-icon.svg",
     themeAccent: "cyan",
     homeCardPrice: "from $499/mo",
@@ -2461,7 +2478,7 @@ export const SERVICES: Service[] = [
       "Local Cumming and Forsyth County businesses wanting to show up in 'near me' searches",
       "Businesses that have a website but get zero organic traffic from it",
       "Anyone who's been burned by cheap SEO services that never actually delivered",
-      "Owners who've noticed customers saying 'ChatGPT recommended you' and want more of that",
+      "Owners who'd rather hire an SEO company that's actually in Cumming than an Atlanta agency that's never driven GA-400 past exit 13",
     ],
     tiers: [
       {
@@ -2517,26 +2534,33 @@ export const SERVICES: Service[] = [
       },
     ],
     calloutText:
-      "One of the only agencies in Forsyth County actively optimizing for AI answer engines — not just Google. Your customers are asking ChatGPT for recommendations. Getting mentioned is the new ranking.",
+      "Most 'Cumming SEO companies' are Atlanta or Alpharetta agencies with a city page. We're an actual Cumming studio — the businesses we optimize are our neighbors along GA-400, from downtown Cumming and the Cumming City Center out to Vickery Village and The Collection at Forsyth. And we're one of the only shops in Forsyth County actively optimizing for AI answer engines, not just Google.",
     hero: {
-      eyebrow: "Digital Marketing · Cumming, GA",
-      headline: "Get found on Google —",
-      highlightWord: "and on ChatGPT",
+      eyebrow: "SEO Company · Cumming, GA",
+      headline: "The SEO company that's",
+      highlightWord: "actually in Cumming",
       subhead:
-        "Local SEO and AI-search optimization for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Ranking in the maps pack is still the core — but in 2026 you also need to show up when your customer asks Claude or ChatGPT.",
+        "Local SEO and AI-search optimization for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Ranking in Google's map pack is still the core — but in 2026 you also need to show up when your customer asks ChatGPT or Claude who to hire. We do both, from $499/month, with the pricing right here on the page.",
       ctaLabel: "Book a free 15-min call",
       ctaHref: CALENDLY_URL,
       heroImage: {
-        src: "/assets/services/digital-marketing/hero.png",
-        alt: "Local SEO dashboard with rising traffic graph — Branding Zombie Designs digital marketing in Cumming, GA",
+        src: "/assets/services/seo/hero.png",
+        alt: "adamsdetailingga.com — latest local SEO build by Branding Zombie Designs, Cumming, GA",
       },
       microProof: "From $499/mo · 3-month minimum · GEO-ready",
+      proofImage: {
+        src: "/assets/services/seo/adams-detailing-live.png",
+        alt: "adamsdetailingga.com homepage — mobile auto & marine detailing site built and optimized for local SEO in Cumming, GA",
+        href: "https://adamsdetailingga.com",
+        label: "Latest local SEO build",
+        note: "Adams Detailing · adamsdetailingga.com",
+      },
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your competitor",
     painPointsHighlight: "shows up, you don't",
     painPointsIntro:
-      "Local search is brutal. You can have the better business, the better prices, and the better reviews, and still lose because your competitor hired someone who actually knows what they're doing.",
+      "Local search in Forsyth County is brutal. You can have the better business, the better prices, and the better reviews, and still lose because your competitor hired someone who actually knows what they're doing.",
     painPoints: [
       { text: "You Google your own business and your competitor shows up in the maps pack above you." },
       { text: "Your Google Business Profile is set up but 'not maximized' — whatever that means." },
@@ -2585,7 +2609,7 @@ export const SERVICES: Service[] = [
       title: "Campaigns and creative we've shipped.",
       description:
         "Paid social, mailers, banners, and lifecycle work for DTC supplement brands, service businesses, and B2B teams. Real assets that ran in real markets.",
-      items: getServiceGalleryItems("digital-marketing", {
+      items: getServiceGalleryItems("seo", {
         pinned: [
           "pruvit-mailer",
           "ans-ad",
@@ -2641,6 +2665,18 @@ export const SERVICES: Service[] = [
     faqHeadline: "Questions owners ask",
     faqHighlight: "before they sign",
     faqs: [
+      {
+        q: "How much do SEO services cost in Cumming, GA?",
+        a: "Our local SEO plans are $499/mo (Starter), $999/mo (Growth), or $1,999/mo (Full SEO + GEO), each with a 3-month minimum and then month-to-month. For context, most agencies serving Cumming charge $1,500–$3,500/month and won't publish a number until you've sat through a sales call. Ours are on this page because you shouldn't need a discovery call to learn a price.",
+      },
+      {
+        q: "Why hire a Cumming SEO company instead of an Atlanta agency?",
+        a: "Most agencies ranking for 'SEO Cumming' are based in Atlanta or Alpharetta with a city landing page. We're physically in Cumming — we know the difference between marketing a shop in downtown Cumming versus Vickery Village versus a service business running all of Forsyth County. Local SEO is about proving to Google you belong to a place; it helps when your SEO company actually does.",
+      },
+      {
+        q: "Do you only work with businesses in Cumming?",
+        a: "No — Cumming and Forsyth County are home base, but we run SEO for businesses across North Metro Atlanta: Alpharetta, Johns Creek, Suwanee, Milton, Roswell, and Gainesville. Local SEO tactics travel; the point is ranking you where YOUR customers are.",
+      },
       {
         q: "How long does SEO take to actually work?",
         a: "90 days for early signals, 6–9 months for meaningful traction, 12+ months for compounding authority. Anyone promising page-1 rankings in 30 days is either lying or breaking Google's guidelines in a way that'll bite you later. Local SEO (GBP) can move faster — sometimes 60 days — because the ranking factors are different.",
@@ -2699,22 +2735,26 @@ export const SERVICES: Service[] = [
     },
     related: ["email-marketing", "web-design", "social-media"],
     meta: {
-      seoTitle: "Local SEO + GEO for Cumming, GA — From $499/mo",
+      seoTitle: "SEO Company in Cumming, GA — Local SEO + GEO From $499/mo",
       seoDescription:
-        "Local SEO and AI-search (GEO) optimization for small businesses in Cumming, GA & Forsyth County. Google Business Profile, on-page, content, AI answer-engine optimization. Starter $499/mo · Growth $999/mo · Full $1,999/mo. Call (770) 744-2536.",
+        "SEO company based in Cumming, GA — not an Atlanta agency with a city page. Local SEO, Google Business Profile, and AI-search (GEO) optimization for Forsyth County small businesses. Starter $499/mo · Growth $999/mo · Full $1,999/mo. Call (770) 744-2536.",
       keywords: [
+        "SEO company Cumming GA",
+        "SEO services Cumming GA",
+        "SEO agency Cumming",
         "local SEO Cumming GA",
+        "search engine optimization Cumming GA",
         "SEO Forsyth County",
-        "AI search optimization North Atlanta",
+        "digital marketing agency Cumming GA",
         "Google Business Profile Cumming",
         "GEO optimization Atlanta",
       ],
-      ogImage: "/assets/services/digital-marketing/hero.png",
+      ogImage: "/assets/services/seo/hero.png",
       ogImageAlt:
         "Local SEO and AI-search optimization for Cumming, GA small businesses — Branding Zombie Designs",
     },
     schema: {
-      serviceType: "Local SEO & Digital Marketing",
+      serviceType: "Search Engine Optimization (SEO)",
       category: "Digital Marketing & SEO",
       description:
         "Local SEO and AI answer-engine optimization (GEO) for small businesses in Cumming, GA and across North Metro Atlanta — Google Business Profile management, on-page SEO, local citations, monthly content, review management, and ChatGPT/Perplexity citation strategy. From $499/mo.",

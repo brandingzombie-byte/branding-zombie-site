@@ -335,7 +335,7 @@ function WebsiteCostingCustomersContent() {
       </p>
       <p>
         We bundle{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO and Google Business setup
         </InternalLink>{" "}
         into every website build. It&apos;s not an upsell — it&apos;s the
@@ -844,7 +844,7 @@ function GoogleAICallingBusinessContent() {
         AI doesn&apos;t have to call you to get it.</strong> Most won&apos;t.
         Fill it out completely — every field, every question, every
         category. We bundle this into every{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO setup
         </InternalLink>
         .
@@ -1078,7 +1078,7 @@ function GoogleAICallingBusinessContent() {
         with structured data and built-in FAQ. {" "}
         <InternalLink href="/services/ai-workflows">AI workflows</InternalLink>
         {" "}for the after-hours chatbot and lead capture. {" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           Local SEO and Google Business Profile
         </InternalLink>
         {" "}fully set up. {" "}
@@ -1440,7 +1440,7 @@ function WebsiteCostCummingGA2026Content() {
           (without the bundle) — from $1,500
         </li>
         <li>
-          <InternalLink href="/services/digital-marketing">Local SEO &amp; ongoing marketing</InternalLink>{" "}
+          <InternalLink href="/services/seo">Local SEO &amp; ongoing marketing</InternalLink>{" "}
           — month-to-month
         </li>
       </ul>
@@ -1679,7 +1679,7 @@ function WebsiteCostCummingGA2026Content() {
         A Cumming HVAC company we shipped a Growth-tier site for in 2025
         averages one extra service call a week traceable to the new site
         and the connected{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           Google Business Profile
         </InternalLink>
         . Average ticket: about $380. That&apos;s ~$19,800/year in
@@ -1808,7 +1808,7 @@ function WebsiteCostCummingGA2026Content() {
           AI workflows
         </InternalLink>{" "}
         in month two, layer in{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO
         </InternalLink>{" "}
         when you&apos;re ready. This guide covers the website itself; if you
@@ -3105,7 +3105,7 @@ function WebsiteDesignSeoCostContent() {
         to do when the site launches. But ranking and staying ranked is a habit,
         not an event. Think of the build as planting and SEO as watering. If
         you&apos;d rather compare notes with an{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           SEO company in Cumming
         </InternalLink>{" "}
         before committing to a monthly number, that&apos;s exactly what our
@@ -3423,7 +3423,7 @@ function AdvertiseCummingContent() {
         County. Then post updates weekly and answer questions. A complete, active
         profile beats a half-finished one every time. (Want it handled for you?
         That&apos;s part of our{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO in Cumming
         </InternalLink>{" "}
         service.)
@@ -4411,7 +4411,7 @@ function WillAiReplaceDesignersContent() {
       <p>
         So the irony is brutal and beautiful: relying on AI to <em>be</em> your
         brand makes you invisible to AI, while investing in real branding and{" "}
-        <InternalLink href="/services/digital-marketing">SEO/AEO</InternalLink>{" "}
+        <InternalLink href="/services/seo">SEO/AEO</InternalLink>{" "}
         makes AI start recommending <em>you.</em> I broke this whole shift down
         in{" "}
         <InternalLink href="/blog/google-ai-is-calling-your-business">
@@ -4707,7 +4707,7 @@ function SeoCummingGaContent() {
       </p>
       <p>
         For reference, our own{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO plans
         </InternalLink>{" "}
         are published flat rates: <strong>Local SEO Starter at $499/mo</strong>,
@@ -4818,7 +4818,7 @@ function SeoCummingGaContent() {
       <p>
         Since we just told you to demand specifics from any SEO company, here
         are ours. Every{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO plan
         </InternalLink>{" "}
         we run for Cumming and Forsyth County businesses covers the same
@@ -5338,7 +5338,7 @@ function WebDesignCummingGaContent() {
       </ul>
       <p>
         If you also want ongoing search visibility,{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO plans
         </InternalLink>{" "}
         run <strong>$499&ndash;$1,999/mo</strong> depending on how deep you go.
@@ -5915,7 +5915,7 @@ function IsSeoDead2026Content() {
           <strong>SEO/AEO:</strong> <strong>$500–$1,500/mo</strong>, depending on
           how competitive your niche is and how much content we&apos;re
           producing. Details on{" "}
-          <InternalLink href="/services/digital-marketing">
+          <InternalLink href="/services/seo">
             digital marketing
           </InternalLink>
           .
@@ -6258,7 +6258,7 @@ function CanChatgptDoSeoContent() {
       </ul>
       <p>
         That&apos;s where we come in. Our{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing service
         </InternalLink>{" "}
         handles the parts ChatGPT can&apos;t: Google Business Profile, local
@@ -6544,7 +6544,7 @@ function HowToPickWebDesignCompanyContent() {
         a Google Business Profile setup should be baked in. Ongoing local SEO is
         a separate, optional service — ours runs <strong>$500–$1,500/mo</strong>{" "}
         depending on how aggressive you want to be (
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>
         ). Just make sure you know which side of the line your designer puts it
@@ -6867,7 +6867,7 @@ function ImproveVisibilityForsythContent() {
       <p>
         A complete profile beats a half-empty one almost every time. This is the
         foundation of{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO in Cumming
         </InternalLink>
         , and it&apos;s where I tell every new client to start.
@@ -8803,7 +8803,7 @@ function MedSpaMarketingGaContent() {
       <p>
         SEO is a flywheel, not a switch — plan on 3 to 6 months for real
         movement. At Branding Zombie Designs, SEO lives inside{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing services
         </InternalLink>{" "}
         and pairs with the site itself, since a slow or confusing website caps
@@ -9573,7 +9573,7 @@ function BestMarketingAgenciesCummingContent() {
         One-roof solo studio: brand, website, print, signage, and apparel,
         plus managed{" "}
         <InternalLink href="/services/social-media">social</InternalLink>,{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO/AEO
         </InternalLink>
         , and{" "}
@@ -9706,7 +9706,7 @@ function BestMarketingAgenciesCummingContent() {
           $1,500&ndash;$3,500 per month, while leaner SEO-only plans start
           around $500 per month. Bigger Atlanta agencies charge more. Our own
           published{" "}
-          <InternalLink href="/services/digital-marketing">
+          <InternalLink href="/services/seo">
             local SEO tiers
           </InternalLink>{" "}
           run $499&ndash;$1,999 per month. Full breakdown of what moves
@@ -9758,7 +9758,7 @@ function BestMarketingAgenciesCummingContent() {
         <InternalLink href="/services/branding">brand identity</InternalLink>,{" "}
         <InternalLink href="/services/logo-design">logo design</InternalLink>,{" "}
         <InternalLink href="/services/web-design">web design</InternalLink>, and{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing / SEO
         </InternalLink>
         , plus signage, apparel, and print, from one person who&apos;s served
@@ -14132,7 +14132,7 @@ function GoogleBusinessProfileCummingContent() {
       </p>
       <p>
         Profile management is part of our{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           local SEO in Cumming
         </InternalLink>{" "}
         service — that&apos;s the page to start on if you want help, plus a free{" "}
@@ -14632,7 +14632,7 @@ function HowToGetMoreGoogleReviewsContent() {
         <li>
           <strong>Profile and local-search management</strong> — claiming,
           optimizing, and keeping your review velocity steady — lives under our{" "}
-          <InternalLink href="/services/digital-marketing">
+          <InternalLink href="/services/seo">
             digital marketing &amp; local SEO services
           </InternalLink>
           . That&apos;s the page to start on if you&apos;d rather hand it off.
@@ -14986,7 +14986,7 @@ function BusinessNotShowingGoogleMapsContent() {
         Pick <strong>one</strong> exact format and make it identical everywhere.
         This is grunt work, but it&apos;s some of the highest-leverage local-SEO
         work you can do in Cumming, GA. It&apos;s the backbone of what an{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           SEO company in Cumming
         </InternalLink>{" "}
         actually does for you.
@@ -15562,7 +15562,7 @@ function HowToGetCitedByChatgptContent() {
         Where owners get stuck is the site itself: the plain-English answer content,
         the schema markup, and a structure AI can actually parse. That&apos;s a
         build problem, not a listing problem — and it&apos;s exactly what our{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing / SEO + AEO service
         </InternalLink>{" "}
         is built for. If your site is the weak link, our{" "}
@@ -15977,7 +15977,7 @@ function GoogleAiOverviewsSmallBusinessContent() {
         loads fast and converts,{" "}
         <InternalLink href="/services/branding">branding</InternalLink> that makes
         you the name people search by, and{" "}
-        <InternalLink href="/services/digital-marketing">SEO/AEO</InternalLink> that
+        <InternalLink href="/services/seo">SEO/AEO</InternalLink> that
         gets you cited and clicked. One designer, one invoice — logo, website,
         shirts, and signs that all point back to the same memorable brand.
       </p>
@@ -16351,7 +16351,7 @@ function AutoRepairShopBrandingContent() {
         for years; your ad spend is the monthly fuel. Don&apos;t confuse the two, and
         don&apos;t let a &quot;cheap&quot; ad package talk you out of a solid brand
         foundation. For{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>{" "}
         (SEO/AEO/local), we can quote that separately once your brand is set.
@@ -16818,7 +16818,7 @@ function SalonBarbershopBrandingContent() {
       </ul>
       <p>
         Separate line item: <strong>ongoing marketing</strong> (ads, boosted posts,{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>
         ) is a monthly budget you control — not part of the one-time build. GlossGenius
@@ -16925,7 +16925,7 @@ function SalonBarbershopBrandingContent() {
         <li>
           <strong>Before/after photos + Reels.</strong> Fresh cuts and color
           transformations are your best content. Pair them with on-brand{" "}
-          <InternalLink href="/services/digital-marketing">
+          <InternalLink href="/services/seo">
             social + digital marketing
           </InternalLink>
           .
@@ -17335,7 +17335,7 @@ function ThreeSecondRuleContent() {
         <InternalLink href="/services/branding">branding</InternalLink> ties your look
         together so the trust signal is there at a glance. Want it found, too?
         That&apos;s where{" "}
-        <InternalLink href="/services/digital-marketing">SEO and local search</InternalLink>{" "}
+        <InternalLink href="/services/seo">SEO and local search</InternalLink>{" "}
         come in. Not sure which fits?{" "}
         <InternalLink href="/services/request-quote">Request a quote</InternalLink> and
         we&apos;ll talk.
@@ -17666,7 +17666,7 @@ function GymMartialArtsBrandingContent() {
       <p>
         Separate line item: <strong>ongoing marketing</strong> (ads, boosted
         posts,{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>
         ) is a monthly budget you control — not part of the one-time build.
@@ -17798,7 +17798,7 @@ function GymMartialArtsBrandingContent() {
         <li>
           <strong>Instagram Reels.</strong> Short class clips and transformations
           pull real engagement — pair them with on-brand{" "}
-          <InternalLink href="/services/digital-marketing">
+          <InternalLink href="/services/seo">
             social + digital marketing
           </InternalLink>
           .
@@ -18158,7 +18158,7 @@ function HomeServicesMarketingForsythContent() {
       <p>
         <strong>The marketing budget (ongoing / monthly):</strong> ads and
         management live in a separate{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>{" "}
         budget you control. Per Hook Agency, most home-service businesses spend
@@ -18736,7 +18736,7 @@ function SocialMediaManagementCostContent() {
         So a &quot;$800/mo&quot; package plus $600/mo in ads is really $1,400/mo out the
         door. Ask up front, in writing, what the fee covers and what&apos;s extra. A good
         manager will tell you straight. For the paid-ads side specifically, see our{" "}
-        <InternalLink href="/services/digital-marketing">digital marketing</InternalLink>{" "}
+        <InternalLink href="/services/seo">digital marketing</InternalLink>{" "}
         page — running ads well is a different skill than organic posting.
       </p>
 
@@ -19113,7 +19113,7 @@ function WebsiteMaintenanceCostContent() {
         If your site itself is dated before you even think about upkeep, our{" "}
         <InternalLink href="/services/web-design">web design</InternalLink> page
         covers a rebuild, and{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>{" "}
         covers the SEO upkeep side.
@@ -19737,7 +19737,7 @@ function WhenToRebrandContent() {
         <InternalLink href="/services/web-design">website</InternalLink>,{" "}
         <InternalLink href="/services/print-design">print</InternalLink>,
         signage, and{" "}
-        <InternalLink href="/services/digital-marketing">marketing</InternalLink>{" "}
+        <InternalLink href="/services/seo">marketing</InternalLink>{" "}
         all come out of one shop in Cumming, GA. When everything&apos;s built
         together, everything stays consistent — the whole point of rebranding in
         the first place. No mismatched greens. No &quot;why does the sign look
@@ -20097,7 +20097,7 @@ function LocalSeoStatistics2026Content() {
       <p>
         That is exactly what we build for local businesses. If you want help,
         see our{" "}
-        <a href="/services/digital-marketing">local SEO and digital marketing</a>{" "}
+        <a href="/services/seo">local SEO and digital marketing</a>{" "}
         and <a href="/services/web-design">web design in Cumming, GA</a>, or
         grab a <a href="/free-site-audit">free site audit</a> to see where you
         stand.
@@ -20502,7 +20502,7 @@ function HowLongWebsiteTakesContent() {
         So the honest answer to &quot;how many weeks until my website makes me
         money&quot; is: <strong>weeks to launch, months to rank.</strong> Budget
         for both. Our{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>{" "}
         service handles the SEO/AEO side, and{" "}
@@ -21219,7 +21219,7 @@ function BrandColorPsychologyContent() {
         The one-shop advantage matters more here than almost anywhere else. When
         the same person handles your <strong>branding and web design</strong>{" "}
         plus your print, signs, and{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           marketing graphics
         </InternalLink>
         , your greens actually match across all of them. One designer, one
@@ -21791,7 +21791,7 @@ function EmailMarketingSmallBusinessContent() {
         and the{" "}
         <InternalLink href="/services/social-media">social media</InternalLink>{" "}
         service page will help. And if search visibility is the missing piece,{" "}
-        <InternalLink href="/services/digital-marketing">
+        <InternalLink href="/services/seo">
           digital marketing
         </InternalLink>{" "}
         and{" "}
@@ -22071,7 +22071,7 @@ export const POSTS: Post[] = [
       ogImage: "/assets/og-image.png",
       ogImageAlt:
         "Local SEO Statistics 2026 — sourced data on local search, Google Business Profile, reviews, and AI — Branding Zombie Designs",
-      relatedServices: ["digital-marketing", "web-design"],
+      relatedServices: ["seo", "web-design"],
     },
     Content: LocalSeoStatistics2026Content,
   },
@@ -24155,12 +24155,12 @@ const CATEGORY_RELATED_SERVICES: Record<string, ServiceSlug[]> = {
   "Web Design": ["web-design", "ecommerce", "ai-workflows"],
   Branding: ["branding", "logo-design", "print-design"],
   "Logo Design": ["logo-design", "branding", "print-design"],
-  SEO: ["digital-marketing", "web-design", "social-media"],
-  "Local SEO": ["digital-marketing", "web-design", "social-media"],
-  "AI Search": ["digital-marketing", "ai-workflows", "web-design"],
-  "AI Workflows": ["ai-workflows", "web-design", "digital-marketing"],
+  SEO: ["seo", "web-design", "social-media"],
+  "Local SEO": ["seo", "web-design", "social-media"],
+  "AI Search": ["seo", "ai-workflows", "web-design"],
+  "AI Workflows": ["ai-workflows", "web-design", "seo"],
   "AI & Design": ["logo-design", "branding", "ai-workflows"],
-  Marketing: ["digital-marketing", "social-media", "email-marketing"],
+  Marketing: ["seo", "social-media", "email-marketing"],
   "Print & Apparel": ["print-design", "branding", "logo-design"],
   "Print & Signage": ["print-design", "branding", "logo-design"],
 };
@@ -24168,7 +24168,7 @@ const CATEGORY_RELATED_SERVICES: Record<string, ServiceSlug[]> = {
 const DEFAULT_RELATED_SERVICES: ServiceSlug[] = [
   "web-design",
   "logo-design",
-  "digital-marketing",
+  "seo",
 ];
 
 /** Service slugs to feature on a post page — explicit meta wins, then the

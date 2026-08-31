@@ -33,7 +33,7 @@ const INCLUDED = [
     value: "Included",
     description:
       "Google Business Profile set up and verified, schema markup, meta tags, and page-level optimization so your new site starts showing up for your town.",
-    link: "/services/digital-marketing" as const,
+    link: "/services/seo" as const,
   },
 ];
 

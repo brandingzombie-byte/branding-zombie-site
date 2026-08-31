@@ -25,7 +25,11 @@ export default function Reveal({
   as?: "div" | "li" | "section";
 }) {
   const { ref, isInView } = useReveal();
-  const Comp = as as React.ElementType;
+  // Typed against "div" (not React.ElementType): with @react-three/fiber's
+  // JSX augmentation in the program, the broad ElementType union collapses
+  // this tag's inferred props to `never`. div/li/section share every prop
+  // used here, and the real tag still renders at runtime.
+  const Comp = as as "div";
   return (
     <Comp
       ref={ref}

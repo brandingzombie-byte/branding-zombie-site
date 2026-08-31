@@ -58,7 +58,7 @@ export default function CrossSellBlock({ currentSlug }: { currentSlug?: ServiceS
           )}
 
           <a
-            href="/services/digital-marketing"
+            href="/services/seo"
             className="group relative flex min-h-[14rem] flex-col justify-between bg-[var(--color-surface-0)] p-8 transition-colors hover:bg-[var(--color-mist)] lg:p-10"
           >
             <div>

@@ -116,7 +116,7 @@ export const LEAD_FORM: Record<string, LeadFormCopy> = {
     cta: "Get my call back",
     value: 100,
   },
-  "digital-marketing": {
+  "seo": {
     eyebrow: "No dashboards until we talk",
     headline: "Tell us what isn't working.",
     blurb:

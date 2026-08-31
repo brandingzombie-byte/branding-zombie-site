@@ -101,7 +101,7 @@ export default async function ServicePage({
       <Navbar />
       <ServiceJsonLd service={service} />
       <main id="main-content" tabIndex={-1}>
-        <ServicePageClient>
+        <ServicePageClient edgeHands={service.edgeHands}>
           <ServiceHero
             service={service}
             formSlot={

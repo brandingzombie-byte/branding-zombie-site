@@ -130,9 +130,9 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
       "A brand isn't a logo — it's why a customer recognizes you on a shelf, a truck, and a feed without reading the name. I build the rules that make that happen, then make them easy to follow.",
     ),
   },
-  "digital-marketing": {
+  "seo": {
     answerFirst:
-      "Digital marketing from Branding Zombie Designs is local SEO, AEO (AI-search optimization), Google Business Profile management, and content for small businesses in Cumming, GA and across North Metro Atlanta — built to get you found on Google and cited by AI engines like ChatGPT and Gemini, from $499/month. Honest scope, no long contracts.",
+      "SEO services from Branding Zombie Designs are local SEO, AEO (AI-search optimization), Google Business Profile management, and content for small businesses in Cumming, GA and across North Metro Atlanta — from an SEO company physically based in Cumming, built to get you found on Google and cited by AI engines like ChatGPT and Gemini, from $499/month with published pricing. Honest scope, no long contracts.",
     stats: [
       { value: "$499/mo", label: "Local SEO & AEO from" },
       { value: "Google + AI", label: "Ranked and cited" },
@@ -269,7 +269,7 @@ export const SERVICE_COMPARISON: Partial<
       { label: "Recognition", us: "Known without the name", them: "Logo only" },
     ],
   },
-  "digital-marketing": {
+  "seo": {
     title: "Local SEO + AEO vs. doing nothing",
     intro:
       "What managed local search from Branding Zombie changes versus leaving it alone.",
