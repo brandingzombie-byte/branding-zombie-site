@@ -226,7 +226,7 @@ const MARTIAL_ARTS_MARKETING: MartialArtsProduct = {
     "karate school website",
     "how much does it cost to brand a martial arts school",
   ],
-  ogImage: `${IMG_BASE}/hero.png`,
+  ogImage: `${IMG_BASE}/hero.jpg`,
 
   hero: {
     eyebrow: "Martial arts schools & fitness studios · Georgia",
@@ -238,7 +238,7 @@ const MARTIAL_ARTS_MARKETING: MartialArtsProduct = {
       "Logo $750 · Brand system $2,500 · Website from $1,500 — one studio, flat pricing",
     ctaLabel: "Book a free brand teardown",
     image: {
-      src: `${IMG_BASE}/hero.png`,
+      src: `${IMG_BASE}/hero.jpg`,
       alt: "Martial arts gym and fitness studio branding in Georgia — brand concept visual by Branding Zombie Designs",
     },
   },
@@ -262,7 +262,7 @@ const MARTIAL_ARTS_MARKETING: MartialArtsProduct = {
       ctaLabel: "See martial arts brand packages",
       ctaHref: "#packages",
       image: {
-        src: `${IMG_BASE}/segment-dojo.png`,
+        src: `${IMG_BASE}/segment-dojo.jpg`,
         alt: "Martial arts school and dojo branding concept — belt, patch and mat-wall brand system by Branding Zombie Designs",
       },
     },
@@ -273,7 +273,7 @@ const MARTIAL_ARTS_MARKETING: MartialArtsProduct = {
       ctaLabel: "See gym brand packages",
       ctaHref: "#packages",
       image: {
-        src: `${IMG_BASE}/segment-gym.png`,
+        src: `${IMG_BASE}/segment-gym.jpg`,
         alt: "Gym and fitness studio branding concept — member-ready logo and brand system by Branding Zombie Designs",
       },
     },
