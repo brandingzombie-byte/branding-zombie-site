@@ -45,6 +45,15 @@ export interface ServiceHero {
   ctaHref: string;
   heroImage: { src: string; alt: string };
   microProof: string;
+  /** Optional real-project screenshot plate rendered under the hero form —
+   *  "here's the latest live build" proof with an outbound link. */
+  proofImage?: {
+    src: string;
+    alt: string;
+    href: string;
+    label: string;
+    note?: string;
+  };
 }
 
 export interface PainPoint {
@@ -120,6 +129,10 @@ export interface Service {
   tagline: string;
   iconSvg: string;
   themeAccent: ThemeAccent;
+  /** Optional WebGL texture over the hero (lazy-loaded, reduced-motion aware). */
+  heroFx?: "glitter";
+  /** Render the page-length parallax zombie-hand layer (see ServicePageClient). */
+  edgeHands?: boolean;
   homeCardPrice: string;
   homeCardDescription: string;
   hook?: string;              // one-line value prop per spec Section 5.A
@@ -2453,6 +2466,8 @@ export const SERVICES: Service[] = [
     name: "SEO & Digital Marketing",
     shortName: "SEO",
     tagline: "Get found on Google — and on ChatGPT",
+    heroFx: "glitter",
+    edgeHands: true,
     iconSvg: "/assets/SVG/ai-workflows-icon.svg",
     themeAccent: "cyan",
     homeCardPrice: "from $499/mo",
@@ -2530,9 +2545,16 @@ export const SERVICES: Service[] = [
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/seo/hero.png",
-        alt: "Local SEO dashboard with rising traffic graph — Branding Zombie Designs digital marketing in Cumming, GA",
+        alt: "adamsdetailingga.com — latest local SEO build by Branding Zombie Designs, Cumming, GA",
       },
       microProof: "From $499/mo · 3-month minimum · GEO-ready",
+      proofImage: {
+        src: "/assets/services/seo/adams-detailing-live.png",
+        alt: "adamsdetailingga.com homepage — mobile auto & marine detailing site built and optimized for local SEO in Cumming, GA",
+        href: "https://adamsdetailingga.com",
+        label: "Latest local SEO build",
+        note: "Adams Detailing · adamsdetailingga.com",
+      },
     },
     painPointsEyebrow: "Sound familiar?",
     painPointsHeadline: "Your competitor",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import {
   AnimatePresence,
@@ -16,6 +17,16 @@ import { HANDS } from "@/data/hands";
 import type { Service } from "@/data/services";
 import { getServiceHeroShowcase, type HeroShowcaseItem } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
+
+// WebGL glitter texture — client-only and lazy so three.js never lands in the
+// bundle of service pages that don't opt in via `service.heroFx`.
+const GlitterOverlay = dynamic(
+  () =>
+    import("@/components/ui/animated-hero-with-web-gl-glitter").then(
+      (m) => m.GlitterOverlay,
+    ),
+  { ssr: false },
+);
 
 const ACCENT_BG: Record<Service["themeAccent"], string> = {
   neon: "radial-gradient(60% 50% at 25% 30%, rgba(192,237,8,0.10), transparent 70%), radial-gradient(50% 40% at 80% 70%, rgba(0,255,212,0.06), transparent 70%)",
@@ -38,6 +49,20 @@ const ACCENT_TEXT: Record<Service["themeAccent"], string> = {
 
 const AUTO_ADVANCE_MS = 5000;
 
+/** True on ≥768px viewports after mount — gates the WebGL glitter so phones
+ *  never even download the three.js chunk. */
+function useDesktop(): boolean {
+  const [desktop, setDesktop] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const update = () => setDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+  return desktop;
+}
+
 export default function ServiceHero({
   service,
   formSlot,
@@ -53,6 +78,7 @@ export default function ServiceHero({
 }) {
   const heroRef = useRef<HTMLDivElement>(null);
   const showcase = getServiceHeroShowcase(service.slug, 5);
+  const isDesktop = useDesktop();
 
   // Subtle parallax on hero image
   const { scrollYProgress } = useScroll({
@@ -74,6 +100,33 @@ export default function ServiceHero({
         className="pointer-events-none absolute inset-0 -z-10 animate-ambient"
         style={{ background: ACCENT_BG[service.themeAccent] }}
       />
+
+      {/* WebGL glitter texture — sits between the ambient wash and content.
+          Desktop-only: the dynamic import means phones never fetch three.js. */}
+      {service.heroFx === "glitter" && isDesktop && (
+        <GlitterOverlay className="-z-[5]" opacity={0.35} speed={0.6} />
+      )}
+
+      {/* Left-gutter hand pointing at the headline — page-alive treatment. */}
+      {service.edgeHands && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 overflow-x-clip"
+        >
+          <ZombieHand
+            src={HANDS["zh25-point-diag"].src}
+            width={HANDS["zh25-point-diag"].width}
+            height={HANDS["zh25-point-diag"].height}
+            edge="left"
+            behaviors={["peek", "idle", "parallax"]}
+            offset="62%"
+            bleed="-34px"
+            displayWidth={215}
+            rotate={-4}
+            parallaxSpeed={0.1}
+          />
+        </div>
+      )}
 
       {/* "Count three" hand reaching in from the right edge, hovering in
           the empty band above the form card — three fields, that's it.
@@ -214,15 +267,59 @@ export default function ServiceHero({
         >
           <motion.div style={{ y: formSlot ? undefined : imgY }}>
             {formSlot ? (
-              <div className="relative border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)] p-6 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] md:p-8">
-                {/* Accent seam along the top — reads as "start here" */}
-                <span
-                  aria-hidden
-                  className="absolute inset-x-0 top-0 h-[3px]"
-                  style={{ backgroundColor: ACCENT_LINE[service.themeAccent] }}
-                />
-                {formSlot}
-              </div>
+              <>
+                <div className="relative border border-[var(--color-dark-border-strong)] bg-[var(--color-surface)] p-6 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] md:p-8">
+                  {/* Accent seam along the top — reads as "start here" */}
+                  <span
+                    aria-hidden
+                    className="absolute inset-x-0 top-0 h-[3px]"
+                    style={{ backgroundColor: ACCENT_LINE[service.themeAccent] }}
+                  />
+                  {formSlot}
+                </div>
+                {service.hero.proofImage && (
+                  <a
+                    href={service.hero.proofImage.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/proof mt-4 block border border-[var(--color-dark-border)] bg-[var(--color-surface)] transition-colors hover:border-[var(--color-dark-border-strong)]"
+                  >
+                    <span className="relative block aspect-[16/8] overflow-hidden">
+                      <Image
+                        src={service.hero.proofImage.src}
+                        alt={service.hero.proofImage.alt}
+                        fill
+                        className="object-cover object-top transition-transform duration-500 group-hover/proof:scale-[1.03]"
+                        sizes="(min-width: 1024px) 32vw, 90vw"
+                      />
+                      <span
+                        aria-hidden
+                        className="absolute inset-0 bg-gradient-to-t from-[var(--color-grave)]/60 to-transparent"
+                      />
+                    </span>
+                    <span className="flex items-center justify-between gap-3 px-4 py-3">
+                      <span className="flex flex-col">
+                        <span
+                          className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em]"
+                          style={{ color: ACCENT_TEXT[service.themeAccent] }}
+                        >
+                          {service.hero.proofImage.label}
+                        </span>
+                        {service.hero.proofImage.note && (
+                          <span className="text-[length:var(--text-caption)] text-[var(--color-dark-text-dim)]">
+                            {service.hero.proofImage.note}
+                          </span>
+                        )}
+                      </span>
+                      <ArrowUpRight
+                        size={16}
+                        weight="bold"
+                        className="shrink-0 text-[var(--color-dark-text-dim)] transition-transform duration-200 group-hover/proof:-translate-y-0.5 group-hover/proof:translate-x-0.5"
+                      />
+                    </span>
+                  </a>
+                )}
+              </>
             ) : showcase.length >= 2 ? (
               <HeroShowcaseCarousel
                 items={showcase}
