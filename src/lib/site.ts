@@ -7,12 +7,24 @@ export const SITE_URL = "https://brandingzombiedesigns.com";
 export const BUSINESS_NAME = "Branding Zombie Designs";
 export const FOUNDER_NAME = "Gerry Betancourt";
 
-// The ONE city whose landing-page variants are indexable. Every other city
-// variant (services × city, direct-mail, eddm, window-clings, tattoo) is
-// served noindex,follow and omitted from the sitemap — ~100 near-duplicate
-// doorway pages were consuming crawl priority while core service pages sat
-// in "Discovered — currently not indexed". The city templates' robots meta
-// and src/app/sitemap.ts must both read this constant so they never drift.
+// The city/county landing-page variants that are indexable, for the
+// /services/[slug]/[city] hub-and-spoke pages. Every other city variant
+// (services × city, direct-mail, eddm, window-clings, tattoo) is served
+// noindex,follow and omitted from the sitemap — ~100 near-duplicate doorway
+// pages were consuming crawl priority while core service pages sat in
+// "Discovered — currently not indexed". src/app/sitemap.ts and the
+// services/[slug]/[city] robots meta both read INDEXABLE_CITIES so they
+// never drift. "forsyth-county" joined "cumming-ga" 8/31/26 — AI-agent buyer
+// queries and competitors phrase intent county-wide ("...website in Forsyth
+// County"), and the site had zero dedicated county-level page.
+export const INDEXABLE_CITIES: string[] = ["cumming-ga", "forsyth-county"];
+
+// Back-compat single-city constant. windowClingsMeta.ts, tattooMeta.ts, and
+// mailerMeta.ts (direct-mail/eddm/window-clings/tattoo city templates) each
+// only ever launched the Cumming variant and have no forsyth-county copy in
+// their own city-copy datasets — they intentionally keep reading this single
+// constant rather than INDEXABLE_CITIES so they don't silently pick up new
+// indexable cities meant only for the services location pages.
 export const INDEXABLE_CITY = "cumming-ga";
 
 // Schema.org @id references for graph linking across pages.

@@ -78,6 +78,36 @@ function ExternalLink({
   );
 }
 
+/**
+ * AEO answer capsule — a 40-60 word, answer-first paragraph placed directly
+ * under the H1 (top of Content) so both readers and AI crawlers get the
+ * direct answer in one pass, before any narrative windup. Distinct from the
+ * longer "TL;DR — The Short Version" bulleted aside used further down some
+ * posts; this is the compact, single-paragraph capsule pattern from
+ * src/data/service-aeo.ts's `answerFirst` field, adapted for blog posts.
+ */
+function AnswerCapsule({ children }: { children: ReactNode }) {
+  return (
+    <aside className="my-8 rounded-2xl border border-[var(--color-hairline-strong)] bg-[var(--color-surface-1)] p-6 shadow-sm">
+      <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+        Quick answer
+      </p>
+      <p className="mt-3 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+        {children}
+      </p>
+    </aside>
+  );
+}
+
+/** Visible freshness line — pairs with meta.dateModified feeding Article/BlogPosting schema. */
+function LastUpdated({ label }: { label: string }) {
+  return (
+    <p className="mb-6 text-[length:var(--text-caption)] uppercase tracking-[0.18em] text-text-dim">
+      Last updated: {label}
+    </p>
+  );
+}
+
 // ─── Post #1 — How Your Website Is Costing You Customers ──────────────────
 
 function WebsiteCostingCustomersContent() {
@@ -1102,8 +1132,85 @@ function GoogleAICallingBusinessContent() {
 // ─── Post #3 — How Much Does a Small-Business Website Actually Cost in Cumming, GA? ──
 
 function WebsiteCostCummingGA2026Content() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What's the cheapest you'll build a website for?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our floor is $2,500 for the Starter tier (5-page custom site). Below that, you're better off on Squarespace — and we'll say that on the call. We don't take projects we can't ship well.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer payment plans?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Standard split is 50% to start, 50% on launch. For larger projects ($7,500+) we can split into thirds. We also work with net-30 invoicing for established businesses.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you compare to Wix or Squarespace?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Speed, SEO, and ownership. Template builders lock you into their platform, drag your Core Web Vitals scores down, and still leave you paying $25-$70/month forever. Our builds are typically faster, rank better, and cost about $20/month after launch — and you own the source code.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are there ongoing fees after launch?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Just hosting (usually $0-$20/month on Vercel) and your domain ($12-$30/year). No retainer required. You can hand the site off to another shop or your in-house person on day one if you want — the code is yours.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does your pricing compare to industry averages?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Industry research from WebFX puts \"basic web design\" at $6,500-$15,000 nationally. Our Growth tier at $4,500 lands well below that mid-market band for comparable scope — because we're a small shop with low overhead in Cumming, not a 30-person agency in Buckhead.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I have to do everything at once?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. You can start with the website, add AI workflows in month two, layer in local SEO when you're ready. The Local Business Kit exists for owners who want the whole thing done once — but it's a choice, not a requirement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I actually get a quote?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Three options: book a free 15-minute call, request a custom quote through the form on any service page, or call (770) 744-2536. We answer during normal hours and respond to forms within 24 hours, usually faster.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        A real small-business website in Cumming, GA costs $1,500-$8,000+
+        depending on scope — DIY builders run $200-$800/year, local
+        freelancers $800-$3,500. Branding Zombie Designs&apos; flat tiers
+        start at $1,500 (Landing) up to $7,500+ (Premium), with most sites
+        live in 2-3 weeks. Full tier breakdown in our{" "}
+        <InternalLink href="/packages">
+          Small Business Website Packages
+        </InternalLink>
+        .
+      </AnswerCapsule>
+
       <p>
         <strong>
           &quot;What does a website cost?&quot; is the first question we get
@@ -1830,6 +1937,11 @@ function WebsiteCostCummingGA2026Content() {
         . We answer during normal hours and respond to forms within 24
         hours, usually faster.
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
@@ -2574,8 +2686,66 @@ function ForsythLicenseChecklistContent() {
 }
 
 function ChatGptWebsiteContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can ChatGPT actually create a website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can create the pieces — copy, layout ideas, basic HTML and CSS, color suggestions. It cannot host it, register your domain, deploy it live, design an original logo, or get you ranked on Google. You get a draft, not a launched, findable business website.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it worth paying for a website designer if AI is free?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For a real business, yes. AI is free for raw materials, but hosting, branding, local SEO, photography, conversion design, and ongoing maintenance are where revenue is won or lost. A designer takes the AI scaffolding and turns it into a site that's actually yours and gets found.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will AI replace web designers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No — it's changing the job, not ending it. AI handles drafts and grunt work fast, which frees designers for strategy, brand, conversion, and getting you found. The designers who use AI well are getting better, not extinct.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can ChatGPT do SEO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can write SEO-flavored text and explain best practices. It cannot set up your Google Business Profile, earn local citations and reviews, analyze live competitors in Cumming, or technically optimize a real site. On-page words are a fraction of actually ranking in Forsyth County.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who owns a website ChatGPT builds for you?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You own the output you generate — the copy and code. But \"owning a draft\" isn't owning a live business asset. You still need to own the domain, the hosting account, and ideally an original logo. A vague AI logo can leave you with thin or unclear ownership of your own brand mark.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        Can ChatGPT build me a website? Sort of — it drafts copy, a page
+        structure, and basic HTML/CSS, but it can&apos;t buy your domain,
+        deploy the site, design an original logo, or set up local SEO.
+        Branding Zombie Designs, a Cumming, GA studio, tested it on a real
+        Forsyth County business — here&apos;s exactly where it helped and
+        where a human still had to ship it.
+      </AnswerCapsule>
+
       <p>
         <strong>
           Can ChatGPT build me a website? Sort of — it can write copy, sketch a
@@ -2908,6 +3078,11 @@ function ChatGptWebsiteContent() {
         the domain, the hosting account, and ideally an original logo. A vague AI
         logo can leave you with thin or unclear ownership of your own brand mark.
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
@@ -4539,8 +4714,98 @@ function WillAiReplaceDesignersContent() {
 }
 
 function SeoCummingGaContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is SEO worth it for a small business in Cumming?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most local businesses, yes — especially the free parts. A fully optimized Google Business Profile and a steady flow of reviews can win the map pack with little or no spend. Paid ongoing SEO ($500-$1,500/mo) is worth it when you're ready to grow beyond word of mouth.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does local SEO cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Real local SEO in Cumming, GA runs $500-$1,500 per month as an ongoing service, based on how competitive your category is. Avoid $99 \"SEO\" plans — they're usually automated spam that can hurt you. SEO is a monthly investment, not a one-time fix.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does an SEO company in Cumming charge?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most legitimate SEO companies serving Cumming charge $500-$1,500/month, usually on a retainer. Our own published plans start at $499/mo (Starter), $999/mo (Growth), and $1,999/mo (Full SEO + GEO), each with a 3-month minimum. Be wary of anyone who won't publish pricing or list deliverables.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does SEO take to work?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Expect 3 to 6 months for meaningful movement, longer in competitive markets. Google Business Profile improvements show fastest — sometimes within weeks. Website and content rankings build slower but last far longer than ads. Anyone promising results in days is selling something else.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I do SEO myself?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — the basics. Claim and complete your Google Business Profile, ask customers for reviews, keep your name/address/phone consistent everywhere, and add real photos. That free work moves the needle. Hire out technical fixes, ongoing content, and strategy when they start eating your week.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between SEO and Google Business Profile?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Your Google Business Profile is your free listing that powers the map pack — name, hours, reviews, photos. SEO is the broader work of ranking your website and listings everywhere. The profile is one (huge) piece of local SEO, not a replacement for it. You want both.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does an SEO expert in Cumming do?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A real SEO expert in Cumming optimizes your Google Business Profile, keeps your citations consistent, fixes on-page issues (titles, schema, speed, internal links), publishes content that answers local search questions, and increasingly handles AEO/GEO so AI tools cite your business.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is the best SEO company in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There's no single \"best\" — the right SEO company in Cumming, GA is the one that shows you real local results, explains the work in plain English, and lets you keep ownership of your site and accounts. Branding Zombie Designs handles your logo, website, and local SEO under one roof in Cumming.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is SEO dead with AI search?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. AI answer engines like ChatGPT and Google's AI overviews pull from the same signals SEO builds — clear websites, complete profiles, real reviews, helpful content. That's AEO/GEO. The label is evolving, but being clear, findable, and trusted matters more in 2026, not less.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        Most Cumming, GA small businesses need local SEO, not national. Real
+        local SEO runs $500-$1,500/month as an ongoing service, and your
+        Google Business Profile is the single biggest free lever. Branding
+        Zombie Designs, a Cumming, GA studio, breaks down what actually
+        moves rankings — including our own{" "}
+        <InternalLink href="/services/seo">SEO plans from $499/month</InternalLink>.
+      </AnswerCapsule>
+
       <p>
         <strong>
           Most small businesses in Cumming, GA do need SEO — but probably not
@@ -5098,6 +5363,11 @@ function SeoCummingGaContent() {
         not less.
       </p>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
       <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
@@ -5110,8 +5380,93 @@ function SeoCummingGaContent() {
 }
 
 function WebDesignCummingGaContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does web design cost in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Web design in Cumming, GA generally starts around $1,500 for a 1-2 page landing site, with multi-page builds at $2,500 and $4,500 and larger Premium builds at $7,500+. Dedicated e-commerce stores start at $3,000. The $997 Startup Special includes a 1-page site plus logo and print, and ongoing local SEO is a separate $499-$1,999/mo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I own my website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You should — fully. With Branding Zombie Designs you own the finished site and the domain, and you can host it anywhere. Beware cheap shops and \"free website\" deals that keep ownership: cancel the plan and the site disappears. Always get ownership confirmed in writing before paying.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to build a website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A 1-page site can launch in about 7 days, a 5-page Starter site in 2-3 weeks, and larger Growth and Premium builds in 4-6 weeks. Dedicated e-commerce stores usually take 3-6 weeks. The biggest delay is usually waiting on your photos and content, so come prepared to move fast.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Squarespace vs. custom — which is better?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Squarespace is cheap and quick but template-limited, shallow on local SEO, and rented monthly. A custom site is built around your business with real Forsyth County SEO and full ownership. Start on Squarespace if budget is tight; go custom once leads matter.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between web design and web development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Web design is how the site looks and converts — layout, branding, and the mobile experience. Web development is how it works — custom features, integrations, and e-commerce functionality. Most small businesses shopping for website development in Cumming actually need both, which is why a studio that designs and builds in one place saves money and handoffs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can AI build my website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI can draft a decent-looking site fast, but it tends to produce generic copy, weak local signals, and no real strategy for ranking in Cumming. It's a starting point, not a finished marketing tool.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pick a web designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Look for real local work, clear tiered pricing, mobile-first and fast builds, local SEO and schema included, and — non-negotiable — full ownership of your site and domain. One designer and one invoice beats a faceless template marketplace when something breaks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is the best web design company in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The best web design company in Cumming, GA is the one that builds you a fast, mobile-first site, includes local SEO, and hands you full ownership of your domain and files. Branding Zombie Designs does web design, logos, signage, and apparel under one roof in Cumming — so your whole brand stays consistent and you deal with one designer, not three vendors.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        Web design in Cumming, GA starts around $1,500 for a landing page
+        and runs $2,500-$7,500+ for multi-page custom builds, e-commerce
+        from $3,000. Branding Zombie Designs, a Cumming, GA studio, breaks
+        down every tier — plus who should actually own the finished site —
+        in our{" "}
+        <InternalLink href="/packages">
+          Small Business Website Packages
+        </InternalLink>
+        .
+      </AnswerCapsule>
+
       <p>
         <strong>
           Web design in Cumming, GA typically starts around $1,500
@@ -5673,6 +6028,11 @@ function WebDesignCummingGaContent() {
         whole brand stays consistent and you deal with one designer, not three
         vendors.
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
@@ -7110,8 +7470,73 @@ function ImproveVisibilityForsythContent() {
 }
 
 function CustomWebsiteVsSquarespaceContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Squarespace cheaper than a custom website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Up front, yes — a Squarespace Business plan runs roughly $23/mo (billed annually, approximate). But over three years, transaction fees, paid apps, and your own build-and-upkeep time push the real total toward $2,000-$4,000+, which often overlaps a mid-tier custom build you own outright.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you switch from Squarespace to a custom site?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can export your text content and images and rebuild on an owned custom platform. Design and platform-specific features don't transfer cleanly, so it's a rebuild, not a copy-paste. Most owners do this once the site is proven and the monthly fees and limits start to pinch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Wix or Squarespace better for SEO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Both can rank, and both have improved. Squarespace tends to feel cleaner structurally; Wix gives more layout freedom. But both share template-level limits on the deep technical SEO and schema that win competitive local searches. For a tough Cumming category, a custom build usually has the higher ceiling.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I own my Squarespace website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You own your content, but not the site itself — you're renting the platform. Stop paying and the live site comes down. You can export some material, but the design and structure stay behind. With a custom build from Branding Zombie Designs, the finished site and domain are fully yours.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does a custom website cost in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Custom web design in Cumming, GA starts around $1,500 for a 1-2 page site, with tiers around $2,500, $4,500, and $7,500+ for larger and e-commerce builds. The $997 Startup Special includes a 1-page site plus logo and print. Optional maintenance runs from about $100/mo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is a custom website worth it for a brand-new business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not always. If you're testing an idea on a tiny budget and will DIY, a builder is a smart first step. Go custom once the site needs to generate leads, you're selling online, or you're done renting and want to own what you built.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        Is a custom website worth it over Squarespace? Month one, Squarespace
+        wins on price — but by year three, transaction fees, paid apps, and
+        your own time push its real total near $2,000-$4,000+, overlapping a
+        custom build from Branding Zombie Designs (from $1,500 in Cumming,
+        GA) that you own outright instead of rent.
+      </AnswerCapsule>
+
       <p>
         <strong>The honest answer on custom website vs Squarespace:</strong> over
         three years the costs are closer than they look. Squarespace and Wix win
@@ -7517,6 +7942,11 @@ function CustomWebsiteVsSquarespaceContent() {
         leads, you&apos;re selling online, or you&apos;re done renting and want to
         own what you built.
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
@@ -9349,8 +9779,73 @@ function MedSpaWebDesignGaContent() {
 }
 
 function BestMarketingAgenciesCummingContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What's the best marketing agency in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There's no single best for everyone. Match the provider type to your stage: a full-service agency for ongoing ad spend, a solo design studio for brand-plus-website-plus-print under one roof, or a freelancer for one narrow task. Then pick whoever is specific about deliverables and lets you own the work.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between a marketing agency and a design studio?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A full-service agency typically manages ongoing campaigns and ad spend with a larger team. A solo design studio builds your foundation — logo, website, signage, apparel — with one accountable person. Agencies suit scaling budgets; studios suit new and growing local businesses needing it built right once.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does digital marketing in Cumming, GA cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It varies by scope. Ongoing local SEO and digital marketing retainers around Cumming commonly run $500-$3,500 per month depending on what's included, logos start around $750, and websites commonly fall in the $1,500-$7,500+ range. A budget launch like the Startup Special starts at $997. Ask any provider for a written, specific quote rather than a vague monthly number.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which marketing agencies are actually based in Cumming, GA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Of the providers in this roundup, Market Complete, Bandicoot Marketing, Simpleman Digital Marketing, and Branding Zombie Designs are based in Cumming proper. SangFroid Web (Alpharetta) and Make It Loud (Buford) are nearby and actively serve Cumming businesses. \"Based here\" matters most when local knowledge drives the work.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I hire a Cumming agency or a bigger Atlanta agency?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Atlanta agencies bring bigger teams and suit five-figure monthly ad budgets. For most Cumming small businesses, a local provider wins: they know how Forsyth County actually searches, you're a meaningful client instead of the smallest account on the roster, and you can meet face to face. Go bigger when your budget genuinely needs a media-buying team.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get my Cumming business recommended by ChatGPT or Gemini?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI engines recommend businesses with clear, consistent, trustworthy information across the web — a complete Google Business Profile, a clean website, real reviews, and content that plainly answers local questions. That's AEO. Pick a marketing partner who understands it, not just traditional SEO.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        The best marketing agency in Cumming, GA depends on your stage: a
+        full-service agency for ongoing ad spend, a solo studio for
+        brand-plus-website-plus-print, or a freelancer for one task. Below:
+        six real local providers compared by name, 2026 costs, and how to
+        choose — from Branding Zombie Designs, a one-roof Cumming, GA studio.
+      </AnswerCapsule>
+
       <p>
         <strong>
           The best marketing agency in Cumming, GA for your business is the one
@@ -9583,9 +10078,11 @@ function BestMarketingAgenciesCummingContent() {
         — at published flat rates, month-to-month, with productized kits.
         Recent local builds are on the{" "}
         <InternalLink href="/work">work page</InternalLink>, so you can judge
-        the output instead of the pitch. A fit when you want the foundation
-        built fast by one accountable person. Honestly not the pick if you
-        need a big team running five-figure monthly ad spend.
+        the output instead of the pitch. BBB Accredited (A-), 15+ years in
+        business, and 80+ projects delivered — the kind of longevity you can
+        verify instead of taking our word for it. A fit when you want the
+        foundation built fast by one accountable person. Honestly not the
+        pick if you need a big team running five-figure monthly ad spend.
       </p>
 
       <div className="my-8 overflow-x-auto rounded-2xl border border-[var(--color-hairline-strong)]">
@@ -9942,6 +10439,11 @@ function BestMarketingAgenciesCummingContent() {
         That&apos;s AEO. Pick a marketing partner who understands it, not just
         traditional SEO.
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <hr className="my-14 border-[var(--color-hairline-strong)]" />
 
@@ -14872,6 +15374,17 @@ function BusinessNotShowingGoogleMapsContent() {
 
   return (
     <>
+      <LastUpdated label="August 2026" />
+
+      <AnswerCapsule>
+        Why isn&apos;t your business showing on Google Maps? Usually it&apos;s
+        an unverified Google Business Profile, mismatched name/address/phone
+        across the web, or the wrong primary category. Branding Zombie
+        Designs, a web design studio in Cumming, GA, walks through the exact
+        fix below — most listings recover within days once the real issue is
+        corrected.
+      </AnswerCapsule>
+
       <p>
         If you&apos;re asking &quot;why isn&apos;t my business showing on Google
         Maps,&quot; the answer is almost always one of three things: an{" "}
@@ -22416,6 +22929,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-29",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 8,
       category: "Local SEO",
       tags: [
@@ -22617,7 +23131,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      dateModified: "2026-07-18",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 11,
       category: "Marketing",
       tags: [
@@ -23030,6 +23544,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-17",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 8,
       category: "Web Design",
       tags: [
@@ -23150,7 +23665,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      dateModified: "2026-07-18",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 9,
       category: "SEO",
       tags: [
@@ -23195,7 +23710,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
-      dateModified: "2026-07-18",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 9,
       category: "Web Design",
       tags: [
@@ -23396,6 +23911,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-06-23",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 8,
       category: "Web Design",
       tags: [
@@ -23600,6 +24116,7 @@ export const POSTS: Post[] = [
       ],
       author: "Gerry Betancourt",
       datePublished: "2026-05-08",
+      dateModified: "2026-08-31",
       readingTimeMinutes: 10,
       category: "Web Design",
       tags: [

@@ -14,6 +14,8 @@ const services = [
   { label: "Shopify Ecommerce", href: "/services/ecommerce" },
   { label: "SEO & Digital Marketing", href: "/services/seo" },
   { label: "AI Workflows", href: "/services/ai-workflows" },
+  { label: "Website Packages", href: "/packages" },
+  { label: "Website Management", href: "/website-management" },
 ];
 
 const company = [

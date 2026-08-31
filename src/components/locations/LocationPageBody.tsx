@@ -6,7 +6,12 @@ import LocationCtas from "@/components/locations/LocationCtas";
 import { SITE_URL, BUSINESS_NAME } from "@/lib/site";
 import { REVIEWS, reviewSource } from "@/data/reviews";
 import { getServiceAeo, getServiceComparison } from "@/data/service-aeo";
-import { getSiblingLocations, type Location } from "@/data/locations";
+import {
+  getSiblingLocations,
+  cityCountyLabel,
+  cityAndCountyLabel,
+  type Location,
+} from "@/data/locations";
 import type { LocationService } from "@/data/location-services";
 
 // Inline check glyph — keep this a server component (no Phosphor import in RSC).
@@ -48,7 +53,7 @@ export default function LocationPageBody({
   );
   const reviews = (localReviews.length >= 2 ? localReviews : REVIEWS).slice(0, 3);
 
-  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is ${svc.summary}, built for ${loc.city} and ${loc.county} small businesses ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${loc.introHook} ${svc.ownershipLine}`;
+  const answerFirst = `${svc.label} from ${BUSINESS_NAME} for ${cityState} is ${svc.summary}, built for ${cityAndCountyLabel(loc)} small businesses ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${loc.introHook} ${svc.ownershipLine}`;
   const heroSubhead = svc.heroSubhead.replace("{city}", loc.city);
 
   const allFaqs = [...loc.cityFaqs, ...svc.serviceFaqs];
@@ -119,7 +124,7 @@ export default function LocationPageBody({
         <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <span className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.2em] text-text-dim">
-              {svc.label} in {loc.city}, {loc.county}
+              {svc.label} in {cityCountyLabel(loc)}
             </span>
             <p className="measure mt-4 text-[length:var(--text-h4)] leading-snug text-text-primary">
               {answerFirst}
@@ -194,8 +199,9 @@ export default function LocationPageBody({
               </ul>
             </div>
             <p className="mt-7 text-[length:var(--text-secondary)] text-text-dim">
-              Also serving{" "}
-              {loc.nearby.join(", ")} and the surrounding {loc.county} area.
+              {loc.isCounty
+                ? `Covering ${loc.nearby.join(", ")}, and everywhere else in ${loc.county}.`
+                : `Also serving ${loc.nearby.join(", ")} and the surrounding ${loc.county} area.`}
             </p>
           </div>
         </div>
@@ -431,7 +437,7 @@ export default function LocationPageBody({
           <LocationCtas primaryLabel={`Get your ${loc.city} quote`} size="lg" />
           <p className="text-[length:var(--text-caption)] text-[var(--color-dark-text-secondary)]/70">
             {BUSINESS_NAME} · {SITE_URL.replace("https://", "")} · serving{" "}
-            {loc.city} and {loc.county}, {loc.state}
+            {cityAndCountyLabel(loc)}, {loc.state}
           </p>
         </div>
       </Section>

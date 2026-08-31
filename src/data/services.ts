@@ -2197,9 +2197,9 @@ export const SERVICES: Service[] = [
       "A full brand identity — not just a logo. Colors, voice, typography, and the guidelines that keep it consistent.",
     hook: "A complete brand identity — logo, colors, voice, and the rules that keep it all consistent.",
     whoThisIsFor: [
-      "Founders launching a new product or service brand",
+      "Founders launching a new brand in Cumming or Forsyth County — and preparing to scale before the visual inconsistency catches up",
       "Small businesses tired of looking inconsistent across touchpoints",
-      "Companies preparing to scale — and needing guidelines in place before they do",
+      "Anyone who wants branding and web design under one roof instead of stitching together two vendors",
       "Restaurants, salons, and service businesses that want to look like a brand, not a storefront",
     ],
     tiers: [
@@ -2250,18 +2250,18 @@ export const SERVICES: Service[] = [
       },
     ],
     calloutText:
-      "Built by a creative director with 15+ years across CPG, retail, restaurants, and service businesses — a system that holds up when your business grows faster than your design team.",
+      "Built by a creative director with 15+ years across CPG, retail, restaurants, and service businesses — a system that holds up when your business grows faster than your design team. We're a branding agency actually based in Cumming, not an Atlanta shop with a city page: the storefronts we're branding are down GA-400 from Vickery Village to The Collection at Forsyth to downtown Cumming and the Cumming City Center.",
     hero: {
-      eyebrow: "Branding · Cumming, GA",
-      headline: "Look like a brand,",
-      highlightWord: "not a side project",
+      eyebrow: "Branding Agency · Cumming, GA",
+      headline: "Cumming's branding agency,",
+      highlightWord: "not Atlanta's",
       subhead:
-        "Full brand identity for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Logo, colors, voice, typography, and the guidelines that keep everything consistent when you're not the one making the next asset.",
+        "Full brand identity for small businesses in Cumming, Forsyth County, and across North Metro Atlanta. Logo, colors, voice, typography, and the guidelines that keep everything consistent when you're not the one making the next asset — from $2,500, with the pricing right here on the page.",
       ctaLabel: "Book a free brand review",
       ctaHref: CALENDLY_URL,
       heroImage: {
         src: "/assets/services/branding/hero.png",
-        alt: "Brand identity system pages and collateral mockups — Branding Zombie Designs in Cumming, GA",
+        alt: "Brand identity system pages and collateral mockups — Branding Zombie Designs, a branding agency in Cumming, GA",
       },
       microProof: "From $2,500 · 2–6 week delivery · 80+ projects delivered",
     },
@@ -2269,13 +2269,13 @@ export const SERVICES: Service[] = [
     painPointsHeadline: "Your brand looks like",
     painPointsHighlight: "five different companies",
     painPointsIntro:
-      "You've got a logo. A website. A Facebook page. A storefront. Business cards from 2019. And none of them feel like they belong to the same business — because they don't, not really.",
+      "You've got a logo. A website. A Facebook page. A storefront somewhere between downtown Cumming and Vickery Village. Business cards from 2019. And none of them feel like they belong to the same business — because they don't, not really.",
     painPoints: [
       { text: "Your website, your Instagram, and your business card use three different versions of your logo." },
       { text: "You can't answer the question 'what colors is your brand' without looking at something." },
       { text: "Every new piece of collateral starts from scratch because you can't find the file from last time." },
       { text: "You hired a new designer and they asked 'what's your brand' and you realized you had no good answer." },
-      { text: "Your business is growing and the visual inconsistency is starting to look like a tell." },
+      { text: "Your business is growing — maybe out toward The Collection at Forsyth or Lake Lanier — and the visual inconsistency is starting to look like a tell." },
     ],
     offerEyebrow: "What you get",
     offerHeadline: "A system,",
@@ -2377,12 +2377,24 @@ export const SERVICES: Service[] = [
     faqHighlight: "before they commit",
     faqs: [
       {
+        q: "How much does branding cost in Cumming, GA?",
+        a: "A full brand system starts at $2,500 (Starter — logo suite, color, typography, and a 1-page brand sheet), $4,500 at Growth (adds full written guidelines, brand voice, and collateral templates), and $7,500+ at Premium (adds brand strategy and launch support). If you only need a logo, that's its own service starting at $750 — see /services/logo-design. No sales call required to learn a number; it's on this page.",
+      },
+      {
+        q: "Do I need a branding agency or just a logo?",
+        a: "If it's just you, forever, and one or two places your mark ever shows up, a standalone logo (from $750, see /services/logo-design) is usually enough. If you've got a website, social, print, signage, or a team that makes assets without you — or you're planning to grow — a full brand system (from $2,500) is what keeps all of that consistent instead of drifting into five different-looking businesses. Most clients start with the logo question and land here once they see how much of their week goes to fixing inconsistency.",
+      },
+      {
+        q: "Why hire a Cumming branding agency instead of an Atlanta one?",
+        a: "Most agencies ranking for 'branding agency' near here are Atlanta or Alpharetta shops with a Cumming city page bolted on — or just directory listings, no dedicated studio at all. We're an actual Cumming studio: the businesses we brand are along GA-400, from downtown Cumming and the Cumming City Center out to Vickery Village, The Collection at Forsyth, and Lake Lanier. You can meet in person, and your brand strategy comes from someone who knows the market you're actually selling into.",
+      },
+      {
         q: "Why do I need 'brand guidelines' — I just want a logo?",
         a: "A logo without guidelines ends up being used ten different ways by ten different people within six months. Guidelines are the operating manual that keeps your brand consistent across your website, your Instagram, your employee's Canva design, and the signage your new freelancer is making. If you're a one-person show forever, skip the guidelines. If you're building something, you'll need them eventually — and it's cheaper to do it now than to untangle inconsistency later.",
       },
       {
         q: "What's the difference between branding and just a logo?",
-        a: "A logo is one asset. Branding is the system every asset lives in — colors, typography, voice, imagery style, collateral templates, and rules for how they fit together. Logo design answers 'what's your mark?' Branding answers 'what does your business feel like across every place it shows up?'",
+        a: "A logo is one asset. Branding is the system every asset lives in — colors, typography, voice, imagery style, collateral templates, and rules for how they fit together. Logo design answers 'what's your mark?' Branding answers 'what does your business feel like across every place it shows up?' See /services/logo-design if a standalone mark is really all you need right now.",
       },
       {
         q: "Can you work with my existing logo and build out from there?",
@@ -2434,25 +2446,30 @@ export const SERVICES: Service[] = [
     },
     related: ["logo-design", "web-design", "print-design"],
     meta: {
-      seoTitle: "Brand Identity Design in Cumming, GA — From $2,500",
+      seoTitle: "Branding Agency in Cumming, GA — Brand Identity From $2,500",
       seoDescription:
-        "Full brand identity systems for small businesses in Cumming, GA & Forsyth County. Logo suites, color, typography, voice, and guidelines. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
+        "Branding agency based in Cumming, GA — not an Atlanta agency with a city page. Full brand identity systems for Forsyth County small businesses: logo suites, color, typography, voice, and guidelines. Starter $2,500 · Growth $4,500 · Premium $7,500+. Call (770) 744-2536.",
       keywords: [
+        "branding agency Cumming GA",
+        "branding agency Forsyth County",
+        "branding and web design",
         "brand identity Cumming GA",
+        "brand identity design Cumming",
         "brand identity designer Forsyth County",
-        "branding agency North Atlanta",
-        "rebranding Cumming Georgia",
+        "small business branding",
         "small business branding North Atlanta",
+        "rebranding Cumming Georgia",
+        "logo design Cumming GA",
       ],
       ogImage: "/assets/services/branding/hero.png",
       ogImageAlt:
-        "Brand identity design for small businesses in Cumming, GA — Branding Zombie Designs",
+        "Branding agency in Cumming, GA — brand identity design by Branding Zombie Designs",
     },
     schema: {
-      serviceType: "Brand Identity Design",
+      serviceType: "Branding Agency",
       category: "Brand Identity & Guidelines",
       description:
-        "Full brand identity systems for small businesses in Cumming, GA and across North Metro Atlanta — logo suites, color palettes, typography systems, brand voice guides, collateral templates, and written guidelines. Built by a creative director with 15+ years across CPG, retail, and service businesses. From $2,500.",
+        "Branding agency in Cumming, GA delivering full brand identity systems for small businesses across Forsyth County and North Metro Atlanta — logo suites, color palettes, typography systems, brand voice guides, collateral templates, and written guidelines. Built by a creative director with 15+ years across CPG, retail, and service businesses. From $2,500.",
     },
   },
 
