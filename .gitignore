@@ -75,3 +75,4 @@ next-env.d.ts
 /BZD_Social Media Templates.ai
 *.aep
 *.ai
+__pycache__/
