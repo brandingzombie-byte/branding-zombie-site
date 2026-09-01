@@ -36,7 +36,7 @@ export default function LocationsServed({ slug }: { slug: string }) {
                 {loc.city}
               </span>
               <span className="text-[length:var(--text-caption)] text-text-dim">
-                {svc.label} · {loc.county}
+                {svc.label} · {loc.isCounty ? "county-wide" : loc.county}
               </span>
             </Link>
           </li>

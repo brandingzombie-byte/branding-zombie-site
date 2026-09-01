@@ -8,7 +8,7 @@
 //  4. WebPage — ties the page to the founder + website graph.
 
 import { SITE_URL, LOCALBIZ_ID, ORG_ID, WEBSITE_ID, FOUNDER_ID } from "@/lib/site";
-import type { Location } from "@/data/locations";
+import { cityCountyLabel, type Location } from "@/data/locations";
 import type { LocationService } from "@/data/location-services";
 
 export default function LocationJsonLd({
@@ -22,20 +22,26 @@ export default function LocationJsonLd({
   const cityLabel = `${loc.city}, ${loc.state}`;
   const serviceName = `${svc.label} in ${cityLabel}`;
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${pageUrl}#service`,
-    name: serviceName,
-    description: `${svc.label} for ${loc.city}, ${loc.county} businesses — ${svc.summary}. ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${svc.ownershipLine}`,
-    serviceType: svc.schema.serviceType,
-    category: svc.schema.category,
-    url: pageUrl,
-    image: `${SITE_URL}${svc.heroImage.src}`,
-    provider: { "@id": LOCALBIZ_ID },
-    brand: { "@id": ORG_ID },
-    areaServed: [
-      {
+  // A county-wide entry (e.g. forsyth-county) IS the administrative area, not
+  // a City contained inside itself — swap the schema @type/nesting so we
+  // never emit a "City" named "Forsyth County" wrapped in a duplicate
+  // "Forsyth County" AdministrativeArea.
+  const primaryAreaServed = loc.isCounty
+    ? {
+        "@type": "AdministrativeArea",
+        name: loc.county,
+        ...(loc.lat && loc.lon
+          ? {
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: loc.lat,
+                longitude: loc.lon,
+              },
+            }
+          : {}),
+        containedInPlace: { "@type": "State", name: loc.state },
+      }
+    : {
         "@type": "City",
         name: loc.city,
         ...(loc.lat && loc.lon
@@ -51,12 +57,30 @@ export default function LocationJsonLd({
           "@type": "AdministrativeArea",
           name: `${loc.county}, ${loc.state}`,
         },
-      },
+      };
+  const subAreaServed = loc.isCounty
+    ? { "@type": "AdministrativeArea", name: loc.county }
+    : { "@type": "City", name: loc.city };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: serviceName,
+    description: `${svc.label} for ${cityCountyLabel(loc)} businesses — ${svc.summary}. ${svc.priceAnchor}, ${svc.deliveryPhrase}. ${svc.ownershipLine}`,
+    serviceType: svc.schema.serviceType,
+    category: svc.schema.category,
+    url: pageUrl,
+    image: `${SITE_URL}${svc.heroImage.src}`,
+    provider: { "@id": LOCALBIZ_ID },
+    brand: { "@id": ORG_ID },
+    areaServed: [
+      primaryAreaServed,
       ...loc.nearby.map((name) => ({ "@type": "Place", name })),
     ],
     audience: {
       "@type": "BusinessAudience",
-      audienceType: `Small businesses in ${loc.city}, ${loc.county} and North Metro Atlanta`,
+      audienceType: `Small businesses in ${cityCountyLabel(loc)} and North Metro Atlanta`,
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -67,7 +91,7 @@ export default function LocationJsonLd({
           "@type": "Service",
           name: s.name,
           description: s.blurb,
-          areaServed: { "@type": "City", name: loc.city },
+          areaServed: subAreaServed,
         },
       })),
     },
@@ -77,7 +101,7 @@ export default function LocationJsonLd({
       price: svc.priceAnchor.replace(/[^\d]/g, ""),
       description: `${svc.label} ${svc.priceAnchor}`,
       availability: "https://schema.org/InStock",
-      areaServed: { "@type": "City", name: loc.city },
+      areaServed: subAreaServed,
       url: pageUrl,
     },
   };

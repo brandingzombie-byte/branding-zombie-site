@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL, INDEXABLE_CITY } from "@/lib/site";
+import { SITE_URL, INDEXABLE_CITY, INDEXABLE_CITIES } from "@/lib/site";
 import { getAllSlugs } from "@/data/services";
 import { getAllPosts } from "@/data/posts";
 import { getAllIndustrySlugs } from "@/data/industries";
@@ -7,12 +7,13 @@ import { getAllLocationServiceSlugs } from "@/data/location-services";
 import { getAllMailerSlugs } from "@/data/mailer-products";
 import { WINDOW_CLINGS_CITY_COPY } from "@/data/window-clings";
 import { TATTOO_CITY_COPY } from "@/data/tattoo-marketing";
+import { MARTIAL_ARTS_CITY_COPY } from "@/data/martial-arts-marketing";
 
 // Dynamic sitemap. Canonical pages only — Google does not index URL
 // fragments (#services, #pricing, etc.) as separate entries, so they are
-// omitted here. City variants outside INDEXABLE_CITY are noindexed (see the
-// city templates' robots meta) and therefore excluded too: a noindexed URL
-// in the sitemap is a contradiction Google flags.
+// omitted here. City variants outside INDEXABLE_CITY / INDEXABLE_CITIES are
+// noindexed (see the city templates' robots meta) and therefore excluded
+// too: a noindexed URL in the sitemap is a contradiction Google flags.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -39,14 +40,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // City landing pages: every enabled service × the indexable city only.
-  // The other 9 city variants per service are noindexed.
-  const locationPages = getAllLocationServiceSlugs().map((slug) => ({
-    url: `${SITE_URL}/services/${slug}/${INDEXABLE_CITY}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.88,
-  }));
+  // City/county landing pages: every enabled service × every indexable
+  // location (INDEXABLE_CITIES = cumming-ga + forsyth-county). The other
+  // town variants per service stay noindexed (see the city page robots meta).
+  const locationPages = getAllLocationServiceSlugs().flatMap((slug) =>
+    INDEXABLE_CITIES.map((city) => ({
+      url: `${SITE_URL}/services/${slug}/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    })),
+  );
 
   // Direct Mail & EDDM: pillar pages + the indexable city variation only.
   const mailerPillars = getAllMailerSlugs().map((slug) => ({
@@ -94,6 +98,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.88,
     }));
 
+  // Martial arts gym branding: pillar page + the indexable city only.
+  const martialArtsPillar = {
+    url: `${SITE_URL}/martial-arts-gym-branding`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const martialArtsCityPages = Object.keys(MARTIAL_ARTS_CITY_COPY)
+    .filter((city) => city === INDEXABLE_CITY)
+    .map((city) => ({
+      url: `${SITE_URL}/martial-arts-gym-branding/${city}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    }));
+
   return [
     {
       url: SITE_URL,
@@ -128,6 +148,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...windowClingsCityPages,
     tattooPillar,
     ...tattooCityPages,
+    martialArtsPillar,
+    ...martialArtsCityPages,
+    {
+      url: `${SITE_URL}/packages`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${SITE_URL}/website-management`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/services/vehicle-wraps`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     {
       url: `${SITE_URL}/services/launch-package`,
       lastModified: now,

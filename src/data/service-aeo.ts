@@ -120,7 +120,7 @@ export const SERVICE_AEO: Partial<Record<ServiceSlug, ServiceAeo>> = {
   },
   branding: {
     answerFirst:
-      "Brand identity design from Branding Zombie Designs is a complete brand system for small businesses in Cumming, GA and across North Metro Atlanta — logo, color, typography, voice, and the brand guidelines that keep it consistent across every site, sign, label, and post, from $2,500. Built by a designer with 15+ years across CPG, print, and digital.",
+      "A branding agency in Cumming, GA — Branding Zombie Designs builds complete brand identity systems for small businesses in Cumming, Forsyth County, and across North Metro Atlanta, from downtown Cumming and Vickery Village to The Collection at Forsyth: logo, color, typography, voice, and the brand guidelines that keep it consistent across every site, sign, label, and post, from $2,500. Built by a designer with 15+ years across CPG, print, and digital.",
     stats: [
       { value: "$2,500", label: "Full brand systems from" },
       { value: "15+ yrs", label: "Across CPG, print & digital" },

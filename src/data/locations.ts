@@ -42,6 +42,30 @@ export interface Location {
   localAngle: string;
   /** 2–3 city-specific FAQs (answers reference local specifics). */
   cityFaqs: CityFaq[];
+  /** True when this entry represents a COUNTY-wide area rather than a single
+   *  town (e.g. "forsyth-county", where `city` === `county` === "Forsyth
+   *  County"). Page copy and schema check this flag to avoid rendering
+   *  "Forsyth County, Forsyth County" — see `cityCountyLabel()` below. */
+  isCounty?: boolean;
+}
+
+/**
+ * "{city}, {county}" for a normal town, or just "{county}" when the location
+ * itself IS the county — avoids "Forsyth County, Forsyth County" anywhere
+ * city + county are combined in copy or schema (meta description, answer-
+ * first band, JSON-LD). Use this instead of hand-rolling the template.
+ */
+export function cityCountyLabel(loc: Location): string {
+  return loc.isCounty ? loc.county : `${loc.city}, ${loc.county}`;
+}
+
+/**
+ * Same idea for the "{city} and {county}" join used in a couple of spots
+ * (answer-first sentence, footer line) where "and" reads more naturally
+ * than a comma.
+ */
+export function cityAndCountyLabel(loc: Location): string {
+  return loc.isCounty ? loc.county : `${loc.city} and ${loc.county}`;
 }
 
 export const LOCATIONS: Location[] = [
@@ -74,6 +98,50 @@ export const LOCATIONS: Location[] = [
       {
         q: "Can we meet in person in Cumming?",
         a: "Absolutely. We're local to Cumming and Forsyth County, so we can meet for a coffee on Market Place Blvd or come to your shop. Most of the build happens online so it's fast, but face-to-face kickoff and photo days are easy when you want them.",
+      },
+    ],
+  },
+  {
+    slug: "forsyth-county",
+    city: "Forsyth County",
+    county: "Forsyth County",
+    state: "GA",
+    isCounty: true,
+    lat: 34.26,
+    lon: -84.125,
+    nearby: [
+      "Cumming",
+      "Vickery Village",
+      "Halcyon",
+      "South Forsyth",
+      "Coal Mountain",
+      "Matt",
+      "Lake Lanier",
+    ],
+    localIndustries: [
+      "restaurants & retail (Halcyon, Vickery Village, The Collection)",
+      "Lake Lanier marinas & marine services",
+      "medical, dental & wellness",
+      "home-service contractors & builders",
+      "boutique & specialty retail",
+      "gyms & fitness",
+    ],
+    introHook:
+      "Search \"website designer in Forsyth County\" or ask an AI assistant, and we want it to point here — we're headquartered in the county, not passing through.",
+    localAngle:
+      "Forsyth County isn't one town — it's Cumming's Main Street and The Collection at Forsyth, Vickery Village's walkable shops, Halcyon's restaurants and breweries off GA-400 Exit 13, the fast-growing south Forsyth corridor, and the quieter north end around Coal Mountain and Matt near Lake Lanier's west shore. We're headquartered in Cumming, so every part of the county is a short drive, not a service-area ZIP code we cover from an Atlanta office. Whether you're a Halcyon restaurant, a south Forsyth medical practice, or a Coal Mountain contractor, you get built for by the same local designer who actually lives here.",
+    cityFaqs: [
+      {
+        q: "Who should I hire to build a small business website in Forsyth County?",
+        a: "A studio that's actually based here. Branding Zombie Designs is headquartered in Cumming, inside Forsyth County — not an out-of-county agency running ads into the area. We build custom, fast, local-SEO-ready websites for businesses anywhere in the county, from Vickery Village to Coal Mountain, starting at $1,500 (or $995 on our startup special), with logo design from $750 and full branding from $2,500.",
+      },
+      {
+        q: "Do you work with businesses outside Cumming proper, like Vickery Village, Halcyon, or south Forsyth?",
+        a: "Yes — the whole county. Cumming is home base, but we build for businesses across Forsyth County: the shops and restaurants around Vickery Village and Halcyon, the medical and professional practices growing along the south Forsyth corridor, and the contractors and home-service businesses working out toward Coal Mountain, Matt, and Lake Lanier's west shore.",
+      },
+      {
+        q: "Is a \"Forsyth County\" website different from a \"Cumming\" website?",
+        a: "Not in how we build it — every site is custom design either way. The difference is how we write and optimize it: a business that draws customers from across Forsyth County gets copy and local SEO tuned to the whole county — not just one ZIP code — so you show up for both \"near me\" and county-wide searches.",
       },
     ],
   },
