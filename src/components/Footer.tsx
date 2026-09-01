@@ -16,6 +16,7 @@ const services = [
   { label: "AI Workflows", href: "/services/ai-workflows" },
   { label: "Website Packages", href: "/packages" },
   { label: "Website Management", href: "/website-management" },
+  { label: "Vehicle Wraps", href: "/services/vehicle-wraps" },
 ];
 
 const company = [

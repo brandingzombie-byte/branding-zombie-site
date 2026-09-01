@@ -18254,6 +18254,15 @@ function GymMartialArtsBrandingContent() {
         gym version leans more toward energy, results, and community. Same toolkit
         — different tone.
       </p>
+      <p>
+        Running a dojo or martial arts school specifically? We built a dedicated
+        page walking through logo, brand, and sign-up-site pricing for that exact
+        world — see{" "}
+        <InternalLink href="/martial-arts-gym-branding">
+          martial arts &amp; gym branding
+        </InternalLink>{" "}
+        for the full-stack breakdown.
+      </p>
 
       <h2 id="signage-apparel-experience">
         Gym signage, custom apparel, and the in-studio experience
@@ -22548,6 +22557,1084 @@ function EmailMarketingSmallBusinessContent() {
   );
 }
 
+// ─── Post — DIY Website Builder vs. Hiring a Designer ──────────────────────
+
+function WebsiteBuilderVsDesignerContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best small business website builder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There isn't one universal \"best\" — it depends on budget, time, and how permanent the site needs to be. Well-known builders (Squarespace, Wix, GoDaddy) run roughly $16-$40/mo and are a reasonable first step for testing an idea. Once the site needs to earn, most owners outgrow the builder and move to a custom build they own.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is an easy small business website builder actually free?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Rarely in practice. Free tiers exist but usually carry a builder-branded URL, no custom domain, and limited features — not something you'd hand a customer. A usable paid plan runs roughly $16-$40/mo, plus transaction fees and paid apps once you need bookings, reviews, or advanced forms.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does a DIY website builder cost over 2 years?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A realistic 2-year total is roughly $1,250-$4,400+: the monthly plan ($384-$960 over 2 years), transaction fees if you sell anything, paid apps for booking or reviews ($120-$1,440), and your own time to build and maintain it. The plan price is rarely the real number.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When should I use a website builder instead of hiring a designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use a builder when you're testing an idea on a near-zero budget, genuinely enjoy and have time to DIY, and aren't yet counting on the site for leads. Hire a designer once the site needs to generate calls and bookings, you're tired of the template editor, or you want to own what you built instead of renting it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I switch from a website builder to a custom site later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can carry over your text and images, but the design and platform-specific features don't transfer — it's a rebuild, not a copy-paste. Most owners make the switch once the builder's fees, limits, and app subscriptions start outweighing what they were saving.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does a custom website cost compared to a DIY builder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "At Branding Zombie Designs, custom sites start at $1,500 for a focused 1-2 page build, with tiers around $2,500, $4,500, and $7,500+. The $997 Startup Special bundles a logo, print, and a 1-page site. Unlike a builder, there's no recurring plan fee — the build is a one-time cost you own.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <LastUpdated label="September 2026" />
+
+      <AnswerCapsule>
+        There&apos;s no single &quot;best&quot; small business website
+        builder — it depends on budget and time. A builder like Squarespace
+        or Wix runs roughly $16-$40/mo and is a fair first step. But over 2
+        years, fees, apps, and your own hours often push the real total past
+        $1,500-$4,000+ — the same range as a custom build from Branding
+        Zombie Designs (from $997) that you own outright instead of rent.
+      </AnswerCapsule>
+
+      <p>
+        <strong>
+          The honest answer on DIY website builder vs. hiring a designer:
+        </strong>{" "}
+        the sticker price you see on a builder&apos;s pricing page is not
+        the number that matters. What matters is the number after 2 years —
+        plan fees, transaction cuts, paid apps, and the hours you actually
+        spend building and babysitting it. This breakdown comes from
+        Branding Zombie Designs, a graphic + web design studio in Cumming,
+        GA, and it&apos;s deliberately fair — for plenty of first-time
+        owners, a DIY builder is genuinely the right call.
+      </p>
+
+      <p>
+        If you&apos;re staring at &quot;easy small business website
+        builder&quot; search results and wondering whether to just pay
+        someone to build it right the first time, here&apos;s the real math.
+      </p>
+
+      <p>
+        <em>
+          Note: builder pricing below is approximate public pricing as of
+          2026 — always confirm current rates before you sign up.
+        </em>
+      </p>
+
+      <aside className="my-10 rounded-2xl border-l-4 border-[var(--color-neon)] bg-[var(--color-fog)] p-7">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-neon-text)]">
+          TL;DR — The Short Version
+        </p>
+        <ul className="mt-4 space-y-2.5 text-[length:var(--text-body)] leading-relaxed text-text-primary">
+          <li>
+            <strong>The monthly fee is never the real cost.</strong> Add fees,
+            apps, and your own hours and the picture changes fast.
+          </li>
+          <li>
+            <strong>Over 2 years, a builder often lands near $1,250-$4,400+</strong>{" "}
+            — in the same range as a one-time custom build.
+          </li>
+          <li>
+            <strong>A builder is rented; a custom build is owned.</strong> One
+            keeps billing you, the other doesn&apos;t.
+          </li>
+          <li>
+            <strong>DIY genuinely wins</strong> when you&apos;re testing an
+            idea on a tiny budget and will actually maintain it yourself.
+          </li>
+          <li>
+            <strong>Hiring wins</strong> once the site needs to generate real
+            leads, or your time is worth more than the hours it eats.
+          </li>
+        </ul>
+      </aside>
+
+      <h2 id="best-builder">
+        What Is the Best Small Business Website Builder?
+      </h2>
+      <p>
+        Honest answer: there isn&apos;t a single best one — the right builder
+        depends on what you&apos;re selling, how much you&apos;re willing to
+        learn, and how long you plan to stay on it. Squarespace, Wix, and
+        GoDaddy are the names most first-time owners land on, typically in
+        the $16-$40/mo range depending on the plan.
+      </p>
+      <p>
+        They&apos;re genuinely easy to start with — drag-and-drop sections,
+        built-in templates, hosting included. The catch isn&apos;t the
+        starting price. It&apos;s what gets added on top once your business
+        needs more than a template can do out of the box.
+      </p>
+
+      <h2 id="two-year-cost">
+        What Does a DIY Website Builder Actually Cost Over 2 Years?
+      </h2>
+      <p>
+        Here&apos;s the comparison nobody puts on the pricing page — a
+        realistic 2-year total for a small service or retail business,
+        builder vs. a custom build. Builder figures are approximate public
+        ranges; the custom figures use only Branding Zombie Designs pricing.
+      </p>
+
+      <div className="my-8 overflow-x-auto">
+        <table className="w-full min-w-[620px] border-collapse text-left text-[length:var(--text-body)] leading-relaxed">
+          <thead>
+            <tr className="border-b-2 border-[var(--color-neon)]">
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                2-year line item
+              </th>
+              <th className="py-3 pr-4 font-semibold text-text-primary">
+                DIY builder (typical)
+              </th>
+              <th className="py-3 font-semibold text-text-primary">
+                Custom build (BZD)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Plan / build
+              </td>
+              <td className="py-3 pr-4">$16-$40/mo &times; 24 &asymp; $384-$960</td>
+              <td className="py-3">
+                One-time, from <strong>$997</strong> (Startup Special) or{" "}
+                <strong>$1,500</strong> (Landing tier)
+              </td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Transaction fees
+              </td>
+              <td className="py-3 pr-4">
+                ~2-3% per sale on lower tiers if you sell anything
+              </td>
+              <td className="py-3">$0 — you pick your own processor</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Paid apps / add-ons
+              </td>
+              <td className="py-3 pr-4">
+                ~$5-$30/mo each (booking, reviews, popups) &asymp;
+                $120-$1,440 over 2 years
+              </td>
+              <td className="py-3">Built into scope, not rented monthly</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Your build + upkeep time
+              </td>
+              <td className="py-3 pr-4">
+                ~15-30 hrs at $50/hr &asymp; $750-$1,500
+              </td>
+              <td className="py-3">$0 — it&apos;s built for you</td>
+            </tr>
+            <tr className="border-b border-[var(--color-hairline-strong)] align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Hosting
+              </td>
+              <td className="py-3 pr-4">Included in the plan</td>
+              <td className="py-3">
+                Included at launch; optional care plans from{" "}
+                <strong>$100/mo</strong> if you want us to keep it fresh
+              </td>
+            </tr>
+            <tr className="align-top">
+              <td className="py-3 pr-4 font-semibold text-text-primary">
+                Rough 2-year total
+              </td>
+              <td className="py-3 pr-4 font-semibold">
+                ~$1,254-$4,380+ (swings hard with apps and fees)
+              </td>
+              <td className="py-3 font-semibold">
+                $997-$1,500 one-time, nothing more required
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Look at that last row again. A busy DIY build with a few paid apps
+        and a real time cost can land in the exact same range as a
+        one-time custom site — except the builder total keeps climbing into
+        year three, while the custom build is already paid off. See{" "}
+        <InternalLink href="/blog/custom-website-vs-squarespace">
+          the deeper Squarespace-specific 3-year breakdown
+        </InternalLink>{" "}
+        if you want the numbers taken one platform at a time.
+      </p>
+
+      <h2 id="diy-wins">When a DIY Website Builder Genuinely Wins</h2>
+      <p>
+        I said this would be fair, so here it is straight — a builder is the
+        smarter move if you are:
+      </p>
+      <ul>
+        <li>Very early — testing whether the business idea even has legs.</li>
+        <li>On a near-zero budget with no cash for an up-front build.</li>
+        <li>
+          Genuinely willing to learn the editor and keep it updated
+          yourself.
+        </li>
+        <li>
+          Not yet counting on the site for leads — word-of-mouth or foot
+          traffic still carries you.
+        </li>
+        <li>Selling one or two simple products with no custom features.</li>
+      </ul>
+
+      <h2 id="hiring-wins">When Hiring a Designer Wins</h2>
+      <p>Go custom once you are:</p>
+      <ul>
+        <li>Counting on the site to actually generate calls and bookings.</li>
+        <li>
+          Selling online at real volume and feeling the transaction-fee
+          bite.
+        </li>
+        <li>
+          Tired of nights and weekends fighting a template editor that
+          fights back.
+        </li>
+        <li>
+          Competing in a crowded local category where{" "}
+          <InternalLink href="/services/seo">local SEO</InternalLink> and AI
+          visibility decide who gets the call.
+        </li>
+        <li>Ready to own the site instead of renting the platform under it.</li>
+      </ul>
+      <p>
+        Your time is the variable that swings this the most. If an hour of
+        your time is worth $50-$100 to your business, every hour spent
+        fighting a builder&apos;s editor is a real cost — even though it
+        never shows up on a receipt.
+      </p>
+
+      <h2 id="custom-cost">
+        What Does Hiring a Web Designer Actually Cost?
+      </h2>
+      <p>
+        No mystery pricing.{" "}
+        <InternalLink href="/services/web-design">
+          Web design
+        </InternalLink>{" "}
+        at Branding Zombie Designs is priced in clear tiers — see the full
+        breakdown on{" "}
+        <InternalLink href="/packages">the packages page</InternalLink>:
+      </p>
+      <ul>
+        <li>
+          <strong>From $1,500</strong> — a focused 1-2 page landing site.
+        </li>
+        <li>
+          <strong>Around $2,500</strong> — up to 5 pages, the right fit for
+          most first-time businesses.
+        </li>
+        <li>
+          <strong>Around $4,500</strong> — our most popular Growth tier,
+          deeper local SEO and integrations.
+        </li>
+        <li>
+          <strong>$7,500+</strong> — e-commerce, booking systems, larger
+          custom builds.
+        </li>
+      </ul>
+      <p>
+        If you&apos;re launching from zero, the{" "}
+        <InternalLink href="/startup-special">
+          Startup Special — $997
+        </InternalLink>{" "}
+        bundles a logo, brand kit, 100 business cards, 100 flyers, and a
+        1-page site with domain and a year of hosting, in about 10 days. It
+        occupies the same price zone as two years of a builder plan with a
+        couple of paid apps — except you own it when it&apos;s done.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Not Sure Which Side of the Math You&apos;re On?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          We&apos;ll tell you straight — even if it&apos;s &quot;stick with
+          the builder for now.&quot;
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          One designer, one invoice, and a build that&apos;s yours for keeps
+          when you&apos;re ready to stop renting.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Book a free consult
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-best-builder">
+        What is the best small business website builder?
+      </h3>
+      <p>
+        There isn&apos;t one universal &quot;best&quot; — it depends on
+        budget, time, and how permanent the site needs to be. Well-known
+        builders (Squarespace, Wix, GoDaddy) run roughly $16-$40/mo and are
+        a reasonable first step for testing an idea. Once the site needs to
+        earn, most owners outgrow the builder and move to a custom build
+        they own.
+      </p>
+
+      <h3 id="faq-free">
+        Is an easy small business website builder actually free?
+      </h3>
+      <p>
+        Rarely in practice. Free tiers exist but usually carry a
+        builder-branded URL, no custom domain, and limited features — not
+        something you&apos;d hand a customer. A usable paid plan runs
+        roughly $16-$40/mo, plus transaction fees and paid apps once you
+        need bookings, reviews, or advanced forms.
+      </p>
+
+      <h3 id="faq-2yr-cost">
+        How much does a DIY website builder cost over 2 years?
+      </h3>
+      <p>
+        A realistic 2-year total is roughly $1,250-$4,400+: the monthly plan
+        ($384-$960 over 2 years), transaction fees if you sell anything,
+        paid apps for booking or reviews ($120-$1,440), and your own time to
+        build and maintain it. The plan price is rarely the real number.
+      </p>
+
+      <h3 id="faq-when-builder">
+        When should I use a website builder instead of hiring a designer?
+      </h3>
+      <p>
+        Use a builder when you&apos;re testing an idea on a near-zero
+        budget, genuinely enjoy and have time to DIY, and aren&apos;t yet
+        counting on the site for leads. Hire a designer once the site needs
+        to generate calls and bookings, you&apos;re tired of the template
+        editor, or you want to own what you built instead of renting it.
+      </p>
+
+      <h3 id="faq-switch">
+        Can I switch from a website builder to a custom site later?
+      </h3>
+      <p>
+        Yes. You can carry over your text and images, but the design and
+        platform-specific features don&apos;t transfer — it&apos;s a
+        rebuild, not a copy-paste. Most owners make the switch once the
+        builder&apos;s fees, limits, and app subscriptions start outweighing
+        what they were saving.
+      </p>
+
+      <h3 id="faq-custom-cost">
+        What does a custom website cost compared to a DIY builder?
+      </h3>
+      <p>
+        At Branding Zombie Designs, custom sites start at $1,500 for a
+        focused 1-2 page build, with tiers around $2,500, $4,500, and
+        $7,500+. The $997 Startup Special bundles a logo, print, and a
+        1-page site. Unlike a builder, there&apos;s no recurring plan fee —
+        the build is a one-time cost you own.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), building logos,
+        websites, signage, and apparel for small businesses across Forsyth
+        County and North Metro Atlanta since 2015. Text or call (770)
+        744-2536.
+      </p>
+    </>
+  );
+}
+
+// ─── Post — What's Included in a $1,500 Website ────────────────────────────
+
+function WhatsIncludedIn1500WebsiteContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What do you actually get for a $1,500 website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "At Branding Zombie Designs, the $1,500 Landing tier is a custom-designed 1-2 page site with hero, services, and contact sections, mobile-first design that passes Core Web Vitals, a contact form wired to your inbox, on-page SEO foundation, and SSL, domain, and hosting setup — live in about 7 days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is a $1,500 website enough for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For a single-offer business, a launch, or an owner who needs one credible page to send people to, yes. If you need multiple service pages, a blog, or a CMS you update yourself, the $2,500 Starter tier (5 pages) is the better fit — it's the next step up, not a different company.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What do cheap $300 websites usually skip?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cheap template sites commonly skip real mobile testing, Core Web Vitals performance work, local SEO schema, a contact form actually wired to your inbox, and any handoff or ownership transfer — you're often left renting a template account you don't fully control.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I own the website after I pay for it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You own the domain, the site files, the content, and the accounts. On handoff everything transfers into your name — no proprietary lock-in, no vendor-hostage scenarios if you ever want to move it or hire someone else.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do agencies charge $5,000+ for a similar-sounding website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Traditional agencies often quote 8+ weeks because they're managing account managers, discovery workshops, and layers of approval most small businesses don't need. A solo studio with a tight process can deliver comparable custom work faster and at a fraction of the overhead cost.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens to my website after it launches?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It's yours to keep running as-is, or you can add a monthly care plan starting at $100/mo if you'd rather hand off updates, backups, and small edits. There's no requirement to sign up for ongoing care — the site works and belongs to you either way.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <LastUpdated label="September 2026" />
+
+      <AnswerCapsule>
+        A $1,500 website at Branding Zombie Designs (the Landing tier) is a
+        custom-designed 1-2 page site — hero, services, and contact — that&apos;s
+        mobile-first, passes Core Web Vitals, ships with a working contact
+        form and on-page SEO foundation, and includes SSL, domain, and
+        hosting setup. It goes live in about 7 days and you own it outright.
+      </AnswerCapsule>
+
+      <p>
+        <strong>
+          What&apos;s actually included in a $1,500 website?
+        </strong>{" "}
+        This is the line-by-line breakdown we give clients before they sign
+        anything — no vague &quot;custom solution&quot; language, no
+        surprise add-ons discovered in week 3. Every item below is a real
+        deliverable in the Landing tier at Branding Zombie Designs, a
+        graphic + web design studio in Cumming, GA.
+      </p>
+
+      <p>
+        If you&apos;ve been quoted $300 on one end and $5,000+ on the other
+        and can&apos;t tell what&apos;s actually different, this is written
+        for you.
+      </p>
+
+      <h2 id="whats-in-it">
+        What&apos;s Included in a $1,500 Website, Line by Line
+      </h2>
+      <p>
+        The $1,500 Landing tier is a focused 1-2 page site built for a
+        single offer, a launch, or an owner who needs one credible page to
+        send people to. Here&apos;s every deliverable:
+      </p>
+      <ul>
+        <li>
+          <strong>Custom design, not a template.</strong> Built around your
+          brand and your customers — never a reskinned Squarespace or
+          template-marketplace theme.
+        </li>
+        <li>
+          <strong>1-2 focused pages.</strong> Hero, services, and contact,
+          all built to answer &quot;who are you and how do I reach
+          you&quot; on one clean scroll.
+        </li>
+        <li>
+          <strong>Mobile-first design, Core Web Vitals pass.</strong> Built
+          for the phone first, since that&apos;s where most local traffic
+          lands, and tuned to pass Google&apos;s speed and stability
+          benchmarks.
+        </li>
+        <li>
+          <strong>A contact form that actually reaches you.</strong> Wired
+          straight to your inbox — no third-party form service quietly
+          swallowing leads.
+        </li>
+        <li>
+          <strong>On-page SEO foundation.</strong> Meta tags, headings, and
+          page structure set up so Google has something real to index from
+          day one.
+        </li>
+        <li>
+          <strong>SSL, domain, and hosting setup.</strong> The technical
+          plumbing handled — you don&apos;t need to know what any of that
+          means.
+        </li>
+        <li>
+          <strong>You own it on handoff.</strong> The domain, the site
+          files, the content, and the accounts transfer into your name — no
+          proprietary lock-in.
+        </li>
+      </ul>
+      <p>
+        Landing tier sites typically go live in about <strong>7 days</strong>.
+        Across every tier — Landing through Growth — most Branding Zombie
+        Designs sites launch in roughly{" "}
+        <strong>2-3 weeks</strong>, depending on scope. See the full lineup
+        on{" "}
+        <InternalLink href="/packages">the packages page</InternalLink> or{" "}
+        <InternalLink href="/services/web-design">
+          the web design service page
+        </InternalLink>
+        .
+      </p>
+      <p>
+        Need more than 1-2 pages? The next tier up, Starter at $2,500,
+        covers 5 pages and adds a CMS you can update yourself — same
+        studio, same designer, no separate sales pitch.
+      </p>
+
+      <h2 id="cheap-vs-1500">
+        What a $300 Website Usually Skips
+      </h2>
+      <p>
+        A $300 template site isn&apos;t automatically a scam — but it&apos;s
+        rarely apples-to-apples with a $1,500 custom build. What tends to
+        get skipped:
+      </p>
+      <ul>
+        <li>
+          <strong>Real mobile testing.</strong> &quot;Looks fine on
+          desktop&quot; and &quot;works well on a phone&quot; are different
+          claims, and phones are where most of your traffic actually is.
+        </li>
+        <li>
+          <strong>Core Web Vitals performance work.</strong> A slow site
+          quietly loses visitors before they see your offer — and Google
+          notices too.
+        </li>
+        <li>
+          <strong>Local SEO schema and structure.</strong> Without it,
+          you&apos;re invisible to the local search signals Google actually
+          weighs.
+        </li>
+        <li>
+          <strong>A form that reaches your inbox reliably.</strong> Leads
+          silently vanishing into a form nobody checks is a common,
+          expensive failure.
+        </li>
+        <li>
+          <strong>Real ownership on handoff.</strong> Cheap builds are often
+          on a shared or template-locked account you don&apos;t fully
+          control — closer to renting than owning.
+        </li>
+      </ul>
+
+      <h2 id="1500-vs-5000">
+        What a $5,000+ Agency Website Adds — And Whether You Need It
+      </h2>
+      <p>
+        On the other end, traditional agencies often quote $5,000+ and 8+
+        weeks for work that, functionally, isn&apos;t far from what a
+        focused custom build delivers — the extra cost is frequently
+        account managers, discovery workshops, and approval layers most
+        small businesses don&apos;t need. A solo studio without that
+        overhead can deliver comparable custom work faster and closer to
+        cost. That gap widens further once you&apos;re paying for pages and
+        features you&apos;ll never use.
+      </p>
+      <p>
+        The honest question isn&apos;t &quot;cheap or expensive&quot; —
+        it&apos;s &quot;what does my business actually need right now.&quot;
+        A single-offer launch rarely needs a 10-page site with a booking
+        portal. A growing multi-service business usually does.
+      </p>
+
+      <h2 id="after-launch">After Launch: What Happens Next?</h2>
+      <p>
+        The site is yours the day it launches — full stop. If you&apos;d
+        rather not touch it again, that&apos;s fine; nothing further is
+        required. If you want someone keeping it fresh — content updates,
+        backups, small edits — optional{" "}
+        <InternalLink href="/website-management">
+          website care plans
+        </InternalLink>{" "}
+        start from <strong>$100/mo</strong>, no lock-in required.
+      </p>
+      <p>
+        Either way, you&apos;re not stuck. You own the domain and the files,
+        so if you ever want to move the site or bring in someone else, you
+        take it all with you.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Want the Line Items for Your Exact Scope?
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          One designer, one invoice, nothing buried in the fine print.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Tell us what you&apos;re building and we&apos;ll tell you exactly
+          which tier fits — and what&apos;s included at that price, in
+          writing.
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/services/request-quote"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Request a quote
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-included">
+        What do you actually get for a $1,500 website?
+      </h3>
+      <p>
+        At Branding Zombie Designs, the $1,500 Landing tier is a
+        custom-designed 1-2 page site with hero, services, and contact
+        sections, mobile-first design that passes Core Web Vitals, a
+        contact form wired to your inbox, on-page SEO foundation, and SSL,
+        domain, and hosting setup — live in about 7 days.
+      </p>
+
+      <h3 id="faq-enough">
+        Is a $1,500 website enough for a small business?
+      </h3>
+      <p>
+        For a single-offer business, a launch, or an owner who needs one
+        credible page to send people to, yes. If you need multiple service
+        pages, a blog, or a CMS you update yourself, the $2,500 Starter tier
+        (5 pages) is the better fit — it&apos;s the next step up, not a
+        different company.
+      </p>
+
+      <h3 id="faq-cheap-skips">
+        What do cheap $300 websites usually skip?
+      </h3>
+      <p>
+        Cheap template sites commonly skip real mobile testing, Core Web
+        Vitals performance work, local SEO schema, a contact form actually
+        wired to your inbox, and any handoff or ownership transfer —
+        you&apos;re often left renting a template account you don&apos;t
+        fully control.
+      </p>
+
+      <h3 id="faq-own">Do I own the website after I pay for it?</h3>
+      <p>
+        Yes. You own the domain, the site files, the content, and the
+        accounts. On handoff everything transfers into your name — no
+        proprietary lock-in, no vendor-hostage scenarios if you ever want to
+        move it or hire someone else.
+      </p>
+
+      <h3 id="faq-agency-price">
+        Why do agencies charge $5,000+ for a similar-sounding website?
+      </h3>
+      <p>
+        Traditional agencies often quote 8+ weeks because they&apos;re
+        managing account managers, discovery workshops, and layers of
+        approval most small businesses don&apos;t need. A solo studio with a
+        tight process can deliver comparable custom work faster and at a
+        fraction of the overhead cost.
+      </p>
+
+      <h3 id="faq-after">What happens to my website after it launches?</h3>
+      <p>
+        It&apos;s yours to keep running as-is, or you can add a monthly care
+        plan starting at $100/mo if you&apos;d rather hand off updates,
+        backups, and small edits. There&apos;s no requirement to sign up for
+        ongoing care — the site works and belongs to you either way.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), building logos,
+        websites, signage, and apparel for small businesses across Forsyth
+        County and North Metro Atlanta since 2015. Text or call (770)
+        744-2536.
+      </p>
+    </>
+  );
+}
+
+// ─── Post — The Monthly Cost of Not Having a Website ───────────────────────
+
+function CostOfNotHavingWebsiteContent() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does it actually cost a small business to not have a website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There's no single dollar figure, but the pattern is consistent: people research before they buy, a Google Business Profile without a website converts fewer of its viewers, and referrals who \"just look you up first\" find nothing to confirm you're legitimate. Each of those is a lead that quietly goes to a competitor instead.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I run a small business with just a Google Business Profile and no website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can operate, but you're leaving conversions on the table. Google's own data shows a complete Business Profile makes customers 70% more likely to visit and 2.7 times more likely to consider a business reputable — and a website is one of the core fields that completeness includes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do customers really check a business's website before buying?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — checking before committing is now standard behavior, not the exception. Even a warm referral from a friend usually gets a quick search first. No website (or a broken, outdated one) is often the moment that referral quietly picks a competitor instead.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it worth having a website if most of my business comes from referrals?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Especially then. A referral already trusts the person who sent them — a missing or broken website is often the first thing that breaks that trust before you ever get the call. A simple site confirms what your referral already believes about you.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the cheapest way to fix not having a website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The $997 Startup Special includes a logo, brand kit, 100 business cards, 100 flyers, and a 1-page website with domain and a year of hosting — live in about 10 days. It's built for exactly this: a business that's been running on word-of-mouth and a Google listing and needs a credible front door fast.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I know if my current site is actually hurting me?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Run a free site audit. It checks your current site (or lack of one) against what actually converts — speed, mobile experience, local SEO basics, and whether a visitor can tell what you do and how to reach you in the first few seconds.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <LastUpdated label="September 2026" />
+
+      <AnswerCapsule>
+        Not having a website doesn&apos;t show up as one bill — it shows up
+        as leads you never see. People check online before they buy, a
+        Google Business Profile without a website converts fewer viewers
+        into visits, and referrals who look you up first find nothing to
+        confirm you&apos;re real. Each is a small, recurring, monthly leak.
+      </AnswerCapsule>
+
+      <p>
+        <strong>What does not having a website actually cost you?</strong>{" "}
+        Not a single number — a pattern of small, repeated losses that never
+        show up on a bank statement. This is the honest version, from
+        Branding Zombie Designs, a graphic + web design studio in Cumming,
+        GA: no invented statistics, just the plain logic of how people
+        actually decide who to call.
+      </p>
+
+      <p>
+        <em>
+          Your business isn&apos;t dead without a website. It&apos;s
+          undead — running, but quietly leaking customers you never see
+          go.
+        </em>
+      </p>
+
+      <h2 id="research-before-buy">
+        People Research Before They Call, Every Time
+      </h2>
+      <p>
+        Nobody picks a business off a bumper sticker anymore, not even a
+        referral. Someone hears your name from a friend, from a Facebook
+        group, from a truck they saw on the road — and the very next thing
+        they do is check. That check is a website, and if there isn&apos;t
+        one, the moment of trust you were owed just quietly evaporated.
+      </p>
+      <p>
+        It doesn&apos;t cost you the sale outright. It costs you the{" "}
+        <em>easy</em> version of the sale — the one where the customer
+        arrives already convinced instead of arriving skeptical, or not
+        arriving at all.
+      </p>
+
+      <h2 id="gbp-without-site">
+        A Google Business Profile Without a Website Converts Worse
+      </h2>
+      <p>
+        Plenty of Cumming, GA businesses lean entirely on their{" "}
+        <InternalLink href="/blog/google-business-profile-optimization-cumming">
+          Google Business Profile
+        </InternalLink>{" "}
+        and skip the site. A profile alone still shows up — but a complete
+        profile, which includes a website, makes customers{" "}
+        <strong>70% more likely to visit</strong> and{" "}
+        <strong>2.7 times more likely to consider the business reputable</strong>{" "}
+        (Google, 2026). Skip the website and you&apos;re asking your Maps
+        pin to do a job it was never built to finish alone.
+      </p>
+      <p>
+        See the full{" "}
+        <InternalLink href="/blog/local-seo-statistics-2026">
+          2026 local SEO statistics
+        </InternalLink>{" "}
+        for more on how completeness and trust connect to actual visits.
+      </p>
+
+      <h2 id="stale-info-cost">
+        No Website Means Whatever&apos;s Out There Is All They Get
+      </h2>
+      <p>
+        Without a site you control, customers are stitching your business
+        together from whatever they can find — an old directory listing, a
+        review from three years ago, a Facebook post that never updated
+        your hours. If any of it&apos;s wrong or missing, that&apos;s the
+        version of you a stranger decides to trust or skip.
+      </p>
+      <p>
+        A website is the one place where the story is entirely yours — your
+        hours, your services, your prices, your proof. Nobody else gets to
+        write it for you.
+      </p>
+
+      <h2 id="referrals-check-you-out">
+        Even Your Best Referrals Check You Out First
+      </h2>
+      <p>
+        This is the one that stings most. Your happiest customer sends a
+        friend your way — the easiest lead you&apos;ll ever get — and that
+        friend still opens a browser before they open their wallet.
+        No website, or a broken one, is often the exact moment a warm
+        referral quietly cools off and calls the next name on the list
+        instead.
+      </p>
+      <p>
+        A referral doesn&apos;t need a fancy site. They need one page that
+        confirms what they already believe: you&apos;re real, you&apos;re
+        local, and you do the thing they were told you do.
+      </p>
+
+      <h2 id="monthly-not-onetime">
+        Why This Reads as a Monthly Cost, Not a One-Time One
+      </h2>
+      <p>
+        Every month you go without a site, the same pattern repeats — new
+        searches, new referrals, new Google Business Profile views, all
+        making the same silent decision without you in the room. It&apos;s
+        not one lost sale. It&apos;s a recurring leak that resets every 30
+        days, whether you notice it or not.
+      </p>
+      <p>
+        The fix doesn&apos;t require a huge budget or months of build time.
+        It requires one credible page that answers who you are, what you
+        do, and how to reach you — plugged into the searches and referrals
+        already happening around your business right now.
+      </p>
+
+      <aside className="my-12 rounded-2xl bg-[var(--color-grave)] p-10 text-[var(--color-dark-text-primary)]">
+        <p className="text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.22em] text-[var(--color-toxic-text)]">
+          Find Out What It&apos;s Costing You
+        </p>
+        <h3 className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] leading-[1.1] tracking-tight">
+          Free site audit — or a fast, honest fix if there&apos;s nothing to
+          audit yet.
+        </h3>
+        <p className="mt-4 text-[length:var(--text-body)] leading-relaxed text-[var(--color-dark-text-secondary)]">
+          Already have a site? Get the{" "}
+          <InternalLink href="/free-site-audit">
+            free site audit
+          </InternalLink>{" "}
+          and see exactly what&apos;s leaking. Starting from zero? The{" "}
+          <InternalLink href="/startup-special">
+            Startup Special — $997
+          </InternalLink>{" "}
+          gets you a real front door in about 10 days. Not sure where your
+          brand stands overall? Run the{" "}
+          <InternalLink href="/brand-checkup">
+            free Brand Checkup
+          </InternalLink>
+          .
+        </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="/free-site-audit"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--color-toxic)] px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-[var(--color-grave)] hover:bg-[var(--color-toxic-deep)]"
+          >
+            Get my free site audit
+          </a>
+          <a
+            href={PHONE_HREF}
+            className="tabular inline-flex items-center gap-2 rounded-full border border-[var(--color-toxic)] px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[var(--color-toxic-text)] hover:bg-[var(--color-toxic)]/10"
+          >
+            Call {PHONE_DISPLAY}
+          </a>
+        </div>
+      </aside>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 id="faq-actual-cost">
+        What does it actually cost a small business to not have a website?
+      </h3>
+      <p>
+        There&apos;s no single dollar figure, but the pattern is consistent:
+        people research before they buy, a Google Business Profile without
+        a website converts fewer of its viewers, and referrals who
+        &quot;just look you up first&quot; find nothing to confirm
+        you&apos;re legitimate. Each of those is a lead that quietly goes to
+        a competitor instead.
+      </p>
+
+      <h3 id="faq-gbp-only">
+        Can I run a small business with just a Google Business Profile and
+        no website?
+      </h3>
+      <p>
+        You can operate, but you&apos;re leaving conversions on the table.
+        Google&apos;s own data shows a complete Business Profile makes
+        customers 70% more likely to visit and 2.7 times more likely to
+        consider a business reputable — and a website is one of the core
+        fields that completeness includes.
+      </p>
+
+      <h3 id="faq-check-first">
+        Do customers really check a business&apos;s website before buying?
+      </h3>
+      <p>
+        Yes — checking before committing is now standard behavior, not the
+        exception. Even a warm referral from a friend usually gets a quick
+        search first. No website (or a broken, outdated one) is often the
+        moment that referral quietly picks a competitor instead.
+      </p>
+
+      <h3 id="faq-referrals">
+        Is it worth having a website if most of my business comes from
+        referrals?
+      </h3>
+      <p>
+        Especially then. A referral already trusts the person who sent them
+        — a missing or broken website is often the first thing that breaks
+        that trust before you ever get the call. A simple site confirms
+        what your referral already believes about you.
+      </p>
+
+      <h3 id="faq-cheapest-fix">
+        What&apos;s the cheapest way to fix not having a website?
+      </h3>
+      <p>
+        The $997 Startup Special includes a logo, brand kit, 100 business
+        cards, 100 flyers, and a 1-page website with domain and a year of
+        hosting — live in about 10 days. It&apos;s built for exactly this: a
+        business that&apos;s been running on word-of-mouth and a Google
+        listing and needs a credible front door fast.
+      </p>
+
+      <h3 id="faq-audit">
+        How do I know if my current site is actually hurting me?
+      </h3>
+      <p>
+        Run a free site audit. It checks your current site (or lack of one)
+        against what actually converts — speed, mobile experience, local
+        SEO basics, and whether a visitor can tell what you do and how to
+        reach you in the first few seconds.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+
+      <hr className="my-14 border-[var(--color-hairline-strong)]" />
+
+      <p className="text-[length:var(--text-secondary)] italic text-text-secondary">
+        Written by Gerry Betancourt, solo owner of Branding Zombie Designs.
+        Based in Cumming, GA. Bilingual (English/Spanish), building logos,
+        websites, signage, and apparel for small businesses across Forsyth
+        County and North Metro Atlanta since 2015. Text or call (770)
+        744-2536.
+      </p>
+    </>
+  );
+}
+
 export const POSTS: Post[] = [
   {
     meta: {
@@ -24634,6 +25721,120 @@ export const POSTS: Post[] = [
         "Email marketing for small business - the list nobody can take from you - Branding Zombie Designs, Cumming GA",
     },
     Content: EmailMarketingSmallBusinessContent,
+  },
+  {
+    meta: {
+      slug: "website-builder-vs-web-designer",
+      title: "DIY Website Builder vs. Hiring a Designer: 2-Year Cost",
+      seoTitle:
+        "DIY Website Builder vs. Hiring a Designer: Real Cost | Branding Zombie Designs",
+      seoDescription:
+        "Is a DIY website builder actually cheaper than hiring a designer? An honest 2-year cost breakdown — plan fees, apps, transaction fees, and your own time.",
+      excerpt:
+        "An honest 2-year total-cost comparison of a DIY website builder vs. hiring a designer — plan fees, transaction fees, paid apps, and your own time, plus when DIY genuinely wins.",
+      keywords: [
+        "what is the best small business website builder",
+        "easy small business website builder",
+        "small business website builder cost",
+        "diy website builder vs web designer",
+        "website builder vs custom website",
+        "web design Cumming GA",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-09-01",
+      readingTimeMinutes: 8,
+      category: "Web Design",
+      tags: [
+        "website builder",
+        "web design",
+        "DIY website",
+        "website cost",
+        "Cumming GA",
+        "small business",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "DIY website builder vs. hiring a designer — the real 2-year cost — Branding Zombie Designs",
+      relatedServices: ["web-design", "logo-design", "ai-workflows"],
+    },
+    Content: WebsiteBuilderVsDesignerContent,
+  },
+  {
+    meta: {
+      slug: "whats-included-in-a-1500-website",
+      title: "What's Included in a $1,500 Website (Line by Line)",
+      seoTitle:
+        "What's Included in a $1,500 Website, Line by Line | Branding Zombie Designs",
+      seoDescription:
+        "What's actually included in a $1,500 website? A line-by-line breakdown of the deliverables — design, mobile, SEO, forms, hosting — from a Cumming, GA studio.",
+      excerpt:
+        "A transparent, line-by-line breakdown of what's actually included in a $1,500 website — design, mobile-first, Core Web Vitals, SEO, forms, hosting, and ownership on handoff.",
+      keywords: [
+        "what's included in a $1500 website",
+        "$1500 website deliverables",
+        "cheap website vs custom website",
+        "website cost breakdown",
+        "how much does a website cost",
+        "web design Cumming GA",
+        "small business web design",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-09-01",
+      readingTimeMinutes: 7,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "website cost",
+        "pricing",
+        "transparency",
+        "Cumming GA",
+        "small business",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "What's included in a $1,500 website, line by line — Branding Zombie Designs, Cumming GA",
+      relatedServices: ["web-design", "logo-design", "seo"],
+    },
+    Content: WhatsIncludedIn1500WebsiteContent,
+  },
+  {
+    meta: {
+      slug: "cost-of-not-having-a-website",
+      title: "The Monthly Cost of Not Having a Website in Cumming, GA",
+      seoTitle:
+        "The Cost of Not Having a Website | Branding Zombie Designs, Cumming GA",
+      seoDescription:
+        "What does it cost a small business to not have a website? People research before they buy, GBP alone converts worse, and referrals check you out first.",
+      excerpt:
+        "Not having a website isn't one bill — it's a recurring monthly leak. Why people research before they buy, why a Google Business Profile alone converts worse, and why even referrals check you out first.",
+      keywords: [
+        "small business without website",
+        "cost of not having a website",
+        "do I need a website for my small business",
+        "google business profile without website",
+        "why does my business need a website",
+        "web design Cumming GA",
+        "free site audit",
+      ],
+      author: "Gerry Betancourt",
+      datePublished: "2026-09-01",
+      readingTimeMinutes: 6,
+      category: "Web Design",
+      tags: [
+        "web design",
+        "small business",
+        "Google Business Profile",
+        "local SEO",
+        "Cumming GA",
+        "Forsyth County",
+      ],
+      ogImage: "/assets/og-image.png",
+      ogImageAlt:
+        "The monthly cost of not having a website — Branding Zombie Designs, Cumming GA",
+      relatedServices: ["web-design", "seo", "logo-design"],
+    },
+    Content: CostOfNotHavingWebsiteContent,
   },
 ];
 
