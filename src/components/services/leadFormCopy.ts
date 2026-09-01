@@ -116,6 +116,15 @@ export const LEAD_FORM: Record<string, LeadFormCopy> = {
     cta: "Get my call back",
     value: 100,
   },
+  "vehicle-wraps": {
+    eyebrow: "Free wrap quote",
+    headline: "What are we wrapping?",
+    blurb:
+      "Tell us the vehicle and what you want it to say about your business. We'll come back with a straight design + wrap quote — no showroom upsell.",
+    messagePlaceholder: "Year/make/model, and what the business does",
+    cta: "Get my wrap quote",
+    value: 150,
+  },
   "seo": {
     eyebrow: "No dashboards until we talk",
     headline: "Tell us what isn't working.",

@@ -4,12 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LocationPageBody from "@/components/locations/LocationPageBody";
 import LocationJsonLd from "@/components/locations/LocationJsonLd";
-import { SITE_URL, INDEXABLE_CITY } from "@/lib/site";
+import { SITE_URL, INDEXABLE_CITIES } from "@/lib/site";
 import {
   getLocationService,
   getAllLocationServiceSlugs,
 } from "@/data/location-services";
-import { getLocationBySlug, getAllLocationSlugs } from "@/data/locations";
+import {
+  getLocationBySlug,
+  getAllLocationSlugs,
+  cityCountyLabel,
+} from "@/data/locations";
 
 // Prerender every enabled service × city combo; 404 on anything else. Launching
 // web-design first means this generates web-design × all cities. Enabling more
@@ -44,13 +48,14 @@ export async function generateMetadata({
   // the document <title>.
   const title = `${svc.label} in ${cityState} | ${svc.metaTagline} ${svc.priceAnchor}`;
   const ogTitle = `${title} | Branding Zombie Designs`;
-  const description = `${svc.label} for ${loc.city}, ${loc.county} businesses, ${svc.priceAnchor} — ${svc.summary}. Free quote from a local studio you can actually call.`;
+  const description = `${svc.label} for ${cityCountyLabel(loc)} businesses, ${svc.priceAnchor} — ${svc.summary}. Free quote from a local studio you can actually call.`;
 
-  // Index diet: only the Cumming variant of each service is indexable. The
-  // other 9 city variants stay live and crawlable (follow) but noindexed so
-  // they stop burning crawl priority as near-duplicate doorways. Canonical
-  // stays self-referential — Google ignores canonicals on noindexed pages.
-  const indexable = loc.slug === INDEXABLE_CITY;
+  // Index diet: only INDEXABLE_CITIES variants of each service are indexable
+  // (Cumming + Forsyth County). The other town variants stay live and
+  // crawlable (follow) but noindexed so they stop burning crawl priority as
+  // near-duplicate doorways. Canonical stays self-referential — Google
+  // ignores canonicals on noindexed pages.
+  const indexable = INDEXABLE_CITIES.includes(loc.slug);
 
   return {
     title,
